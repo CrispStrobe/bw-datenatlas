@@ -112,6 +112,9 @@ jobs:
       - name: Wanderungs- und Einbürgerungskontext aufbereiten
         run: python scripts/prepare_bw_migration_context.py
 
+      - name: Ausländerzentralregister je Kreis aufbereiten
+        run: python scripts/prepare_district_azr.py
+
       - name: Wanderungsbewegung aus dem amtlichen Bericht lesen
         run: python scripts/prepare_bw_migration_flows.py
 
@@ -183,6 +186,7 @@ jobs:
             docs/data/institutions.json \
             docs/data/bw-migration-context.json \
             docs/data/bw-migration-flows-2023.json \
+            docs/data/district-azr-2025.json \
             docs/data/bases.json \
             docs/data/external-references.json \
             docs/data/district-timeseries.json \
