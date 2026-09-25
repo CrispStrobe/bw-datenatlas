@@ -188,10 +188,19 @@ with sync_playwright() as pw:
     # An SVG <text> is not an HTMLElement, so inner_text does not apply to it.
     check('a group shows how many it holds',
           page.locator('.inst-cluster .inst-cluster-count').first.text_content().strip().isdigit())
+    # Ein Bündel lässt sich hier nicht immer aufteilen, und das ist kein Mangel.
+    # Seit die Karte auf Ortsebene steht, liegen alle Einrichtungen einer Gemeinde auf
+    # genau demselben Punkt — dem Beschriftungspunkt der Gemeinde. Kein Hineinzoomen
+    # trennt sie, und die Karte zoomt in diesem Fall auch nicht, sondern öffnet die
+    # Liste. Bündel aus benachbarten Gemeinden lassen sich dagegen weiterhin auftrennen.
+    # Geprüft wird deshalb, dass eines von beidem geschieht — und nichts passiert nur,
+    # wenn der Klick ins Leere ging.
     before=page.locator('.inst-point').count()
     page.locator('.inst-cluster').first.dispatch_event('click')
     page.wait_for_timeout(400)
-    check('choosing a group zooms in and splits it',page.locator('.inst-point').count()>before)
+    split=page.locator('.inst-point').count()>before
+    listed='einrichtung' in page.locator('#detail-kind').inner_text().strip().lower()
+    check('choosing a group either splits it or lists what it holds',split or listed)
     page.evaluate("Atlas.getState && document.getElementById('zoom-reset').click()")
     page.wait_for_timeout(300)
     # Points sit close together, so a neighbouring circle can cover the one being
