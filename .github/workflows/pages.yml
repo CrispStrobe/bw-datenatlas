@@ -112,6 +112,9 @@ jobs:
       - name: Wanderungs- und Einbürgerungskontext aufbereiten
         run: python scripts/prepare_bw_migration_context.py
 
+      - name: Staatsangehörigkeiten je Kreis aufbereiten
+        run: python scripts/prepare_district_nationalities.py
+
       - name: Herkunftsgruppen je Kreis aufbereiten
         run: python scripts/prepare_district_origin_groups.py
 
@@ -198,6 +201,7 @@ jobs:
             docs/data/district-azr-2025.json \
             docs/data/municipal-foreign-share-2025.json \
             docs/data/district-origin-groups-2025.json \
+            docs/data/district-nationalities-2025.json \
             docs/data/bases.json \
             docs/data/external-references.json \
             docs/data/district-timeseries.json \
