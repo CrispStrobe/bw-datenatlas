@@ -1,0 +1,2384 @@
+{
+ "type": "bw_migration_flows",
+ "schema_version": "1.0",
+ "reference_period": "2023",
+ "source": "Statistisches Landesamt Baden-Württemberg, Statistischer Bericht A III 1 - j/23: Wanderungsbewegung in Baden-Württemberg 2023, veröffentlicht 22.11.2024",
+ "source_url": "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/314523001.pdf",
+ "source_page": "https://www.statistik-bw.de/leben-und-arbeiten/bevoelkerung-und-gebiet/migration-und-nationalitaet/",
+ "licence": "© Statistisches Landesamt Baden-Württemberg; Vervielfältigung und Verbreitung, auch auszugsweise, mit Quellenangabe gestattet",
+ "what_is_counted": "Zu- und Fortzüge, wie die Meldebehörden sie übermitteln. Gezählt werden Meldevorgänge, nicht Personen: Wer zweimal im Jahr umzieht, steht zweimal darin. Der Saldo ist kein Bevölkerungswachstum.",
+ "not_a_religion_measure": "Wanderung sagt nichts über Religion. Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein.",
+ "state_series": [
+  {
+   "year": 1995,
+   "across_state_border_thousands": 599.9,
+   "within_state_thousands": 505.8,
+   "total_thousands": 1105.7,
+   "total_per_1000_inhabitants": 107.7
+  },
+  {
+   "year": 1996,
+   "across_state_border_thousands": 515.6,
+   "within_state_thousands": 492.4,
+   "total_thousands": 1008.0,
+   "total_per_1000_inhabitants": 97.2
+  },
+  {
+   "year": 1997,
+   "across_state_border_thousands": 511.4,
+   "within_state_thousands": 485.3,
+   "total_thousands": 996.7,
+   "total_per_1000_inhabitants": 95.9
+  },
+  {
+   "year": 1998,
+   "across_state_border_thousands": 511.9,
+   "within_state_thousands": 478.9,
+   "total_thousands": 990.8,
+   "total_per_1000_inhabitants": 95.2
+  },
+  {
+   "year": 1999,
+   "across_state_border_thousands": 509.7,
+   "within_state_thousands": 468.2,
+   "total_thousands": 977.9,
+   "total_per_1000_inhabitants": 93.6
+  },
+  {
+   "year": 2000,
+   "across_state_border_thousands": 510.9,
+   "within_state_thousands": 448.4,
+   "total_thousands": 959.3,
+   "total_per_1000_inhabitants": 91.1
+  },
+  {
+   "year": 2001,
+   "across_state_border_thousands": 508.3,
+   "within_state_thousands": 429.4,
+   "total_thousands": 937.7,
+   "total_per_1000_inhabitants": 88.8
+  },
+  {
+   "year": 2002,
+   "across_state_border_thousands": 501.3,
+   "within_state_thousands": 428.4,
+   "total_thousands": 929.7,
+   "total_per_1000_inhabitants": 87.5
+  },
+  {
+   "year": 2003,
+   "across_state_border_thousands": 479.2,
+   "within_state_thousands": 431.5,
+   "total_thousands": 910.7,
+   "total_per_1000_inhabitants": 85.3
+  },
+  {
+   "year": 2004,
+   "across_state_border_thousands": 475.7,
+   "within_state_thousands": 433.2,
+   "total_thousands": 908.9,
+   "total_per_1000_inhabitants": 84.9
+  },
+  {
+   "year": 2005,
+   "across_state_border_thousands": 469.5,
+   "within_state_thousands": 429.8,
+   "total_thousands": 899.3,
+   "total_per_1000_inhabitants": 83.8
+  },
+  {
+   "year": 2006,
+   "across_state_border_thousands": 465.1,
+   "within_state_thousands": 422.4,
+   "total_thousands": 887.5,
+   "total_per_1000_inhabitants": 82.6
+  },
+  {
+   "year": 2007,
+   "across_state_border_thousands": 473.7,
+   "within_state_thousands": 423.1,
+   "total_thousands": 896.8,
+   "total_per_1000_inhabitants": 83.5
+  },
+  {
+   "year": 2008,
+   "across_state_border_thousands": 494.9,
+   "within_state_thousands": 424.5,
+   "total_thousands": 919.4,
+   "total_per_1000_inhabitants": 85.5
+  },
+  {
+   "year": 2009,
+   "across_state_border_thousands": 476.5,
+   "within_state_thousands": 426.6,
+   "total_thousands": 903.1,
+   "total_per_1000_inhabitants": 84.0
+  },
+  {
+   "year": 2010,
+   "across_state_border_thousands": 485.8,
+   "within_state_thousands": 423.2,
+   "total_thousands": 909.0,
+   "total_per_1000_inhabitants": 84.6
+  },
+  {
+   "year": 2011,
+   "across_state_border_thousands": 529.4,
+   "within_state_thousands": 444.0,
+   "total_thousands": 973.4,
+   "total_per_1000_inhabitants": 92.7
+  },
+  {
+   "year": 2012,
+   "across_state_border_thousands": 564.6,
+   "within_state_thousands": 446.0,
+   "total_thousands": 1010.5,
+   "total_per_1000_inhabitants": 95.9
+  },
+  {
+   "year": 2013,
+   "across_state_border_thousands": 605.0,
+   "within_state_thousands": 462.8,
+   "total_thousands": 1067.8,
+   "total_per_1000_inhabitants": 100.7
+  },
+  {
+   "year": 2014,
+   "across_state_border_thousands": 672.5,
+   "within_state_thousands": 485.7,
+   "total_thousands": 1158.2,
+   "total_per_1000_inhabitants": 108.5
+  },
+  {
+   "year": 2015,
+   "across_state_border_thousands": 772.6,
+   "within_state_thousands": 546.0,
+   "total_thousands": 1318.6,
+   "total_per_1000_inhabitants": 122.1
+  },
+  {
+   "year": 2016,
+   "across_state_border_thousands": 772.6,
+   "within_state_thousands": 560.9,
+   "total_thousands": 1333.5,
+   "total_per_1000_inhabitants": 122.2
+  },
+  {
+   "year": 2017,
+   "across_state_border_thousands": 682.6,
+   "within_state_thousands": 508.9,
+   "total_thousands": 1191.5,
+   "total_per_1000_inhabitants": 108.4
+  },
+  {
+   "year": 2018,
+   "across_state_border_thousands": 698.7,
+   "within_state_thousands": 500.9,
+   "total_thousands": 1199.5,
+   "total_per_1000_inhabitants": 108.6
+  },
+  {
+   "year": 2019,
+   "across_state_border_thousands": 699.5,
+   "within_state_thousands": 489.7,
+   "total_thousands": 1189.3,
+   "total_per_1000_inhabitants": 107.3
+  },
+  {
+   "year": 2020,
+   "across_state_border_thousands": 580.1,
+   "within_state_thousands": 485.3,
+   "total_thousands": 1065.4,
+   "total_per_1000_inhabitants": 96.0
+  },
+  {
+   "year": 2021,
+   "across_state_border_thousands": 600.6,
+   "within_state_thousands": 482.9,
+   "total_thousands": 1083.6,
+   "total_per_1000_inhabitants": 97.5
+  },
+  {
+   "year": 2022,
+   "across_state_border_thousands": 830.4,
+   "within_state_thousands": 521.2,
+   "total_thousands": 1351.6,
+   "total_per_1000_inhabitants": 120.7
+  },
+  {
+   "year": 2023,
+   "across_state_border_thousands": 727.8,
+   "within_state_thousands": 530.0,
+   "total_thousands": 1257.8,
+   "total_per_1000_inhabitants": 111.2
+  }
+ ],
+ "districts_total_population": [
+  {
+   "name": "Stuttgart, Landeshauptstadt",
+   "kind": "district",
+   "arrivals": 45365,
+   "arrivals_per_1000": 71.6,
+   "departures": 44063,
+   "departures_per_1000": 69.6,
+   "balance": 1302,
+   "balance_per_1000": 2.1
+  },
+  {
+   "name": "Böblingen",
+   "kind": "district",
+   "arrivals": 31748,
+   "arrivals_per_1000": 79.4,
+   "departures": 28827,
+   "departures_per_1000": 72.1,
+   "balance": 2921,
+   "balance_per_1000": 7.3
+  },
+  {
+   "name": "Esslingen",
+   "kind": "district",
+   "arrivals": 41051,
+   "arrivals_per_1000": 75.8,
+   "departures": 37674,
+   "departures_per_1000": 69.6,
+   "balance": 3377,
+   "balance_per_1000": 6.2
+  },
+  {
+   "name": "Göppingen",
+   "kind": "district",
+   "arrivals": 20861,
+   "arrivals_per_1000": 79.4,
+   "departures": 18298,
+   "departures_per_1000": 69.6,
+   "balance": 2563,
+   "balance_per_1000": 9.8
+  },
+  {
+   "name": "Ludwigsburg",
+   "kind": "district",
+   "arrivals": 43772,
+   "arrivals_per_1000": 79.2,
+   "departures": 40814,
+   "departures_per_1000": 73.9,
+   "balance": 2958,
+   "balance_per_1000": 5.4
+  },
+  {
+   "name": "Rems-Murr-Kreis",
+   "kind": "district",
+   "arrivals": 31262,
+   "arrivals_per_1000": 72.1,
+   "departures": 28231,
+   "departures_per_1000": 65.1,
+   "balance": 3031,
+   "balance_per_1000": 7.0
+  },
+  {
+   "name": "Region Stuttgart",
+   "kind": "region",
+   "arrivals": 214059,
+   "arrivals_per_1000": 75.8,
+   "departures": 197907,
+   "departures_per_1000": 70.1,
+   "balance": 16152,
+   "balance_per_1000": 5.7
+  },
+  {
+   "name": "Heilbronn",
+   "kind": "district",
+   "arrivals": 11526,
+   "arrivals_per_1000": 89.2,
+   "departures": 9673,
+   "departures_per_1000": 74.9,
+   "balance": 1853,
+   "balance_per_1000": 14.3
+  },
+  {
+   "name": "Heilbronn",
+   "kind": "district",
+   "arrivals": 31734,
+   "arrivals_per_1000": 89.6,
+   "departures": 29122,
+   "departures_per_1000": 82.2,
+   "balance": 2612,
+   "balance_per_1000": 7.4
+  },
+  {
+   "name": "Hohenlohekreis",
+   "kind": "district",
+   "arrivals": 8995,
+   "arrivals_per_1000": 77.9,
+   "departures": 8063,
+   "departures_per_1000": 69.9,
+   "balance": 932,
+   "balance_per_1000": 8.1
+  },
+  {
+   "name": "Schwäbisch Hall",
+   "kind": "district",
+   "arrivals": 16055,
+   "arrivals_per_1000": 78.8,
+   "departures": 13890,
+   "departures_per_1000": 68.2,
+   "balance": 2165,
+   "balance_per_1000": 10.6
+  },
+  {
+   "name": "Main-Tauber-Kreis",
+   "kind": "district",
+   "arrivals": 9190,
+   "arrivals_per_1000": 68.0,
+   "departures": 7952,
+   "departures_per_1000": 58.9,
+   "balance": 1238,
+   "balance_per_1000": 9.2
+  },
+  {
+   "name": "Region Heilbronn-Franken",
+   "kind": "region",
+   "arrivals": 77500,
+   "arrivals_per_1000": 82.6,
+   "departures": 68700,
+   "departures_per_1000": 73.3,
+   "balance": 8800,
+   "balance_per_1000": 9.4
+  },
+  {
+   "name": "Heidenheim",
+   "kind": "district",
+   "arrivals": 11397,
+   "arrivals_per_1000": 84.3,
+   "departures": 10434,
+   "departures_per_1000": 77.1,
+   "balance": 963,
+   "balance_per_1000": 7.1
+  },
+  {
+   "name": "Ostalbkreis",
+   "kind": "district",
+   "arrivals": 25361,
+   "arrivals_per_1000": 79.2,
+   "departures": 23844,
+   "departures_per_1000": 74.5,
+   "balance": 1517,
+   "balance_per_1000": 4.7
+  },
+  {
+   "name": "Region Ostwürttemberg",
+   "kind": "region",
+   "arrivals": 36758,
+   "arrivals_per_1000": 80.7,
+   "departures": 34278,
+   "departures_per_1000": 75.3,
+   "balance": 2480,
+   "balance_per_1000": 5.4
+  },
+  {
+   "name": "Baden-Baden",
+   "kind": "district",
+   "arrivals": 4532,
+   "arrivals_per_1000": 79.2,
+   "departures": 3682,
+   "departures_per_1000": 64.3,
+   "balance": 850,
+   "balance_per_1000": 14.9
+  },
+  {
+   "name": "Karlsruhe",
+   "kind": "district",
+   "arrivals": 25345,
+   "arrivals_per_1000": 81.9,
+   "departures": 23219,
+   "departures_per_1000": 75.1,
+   "balance": 2126,
+   "balance_per_1000": 6.9
+  },
+  {
+   "name": "Karlsruhe",
+   "kind": "district",
+   "arrivals": 35694,
+   "arrivals_per_1000": 78.4,
+   "departures": 32292,
+   "departures_per_1000": 70.9,
+   "balance": 3402,
+   "balance_per_1000": 7.5
+  },
+  {
+   "name": "Rastatt",
+   "kind": "district",
+   "arrivals": 17188,
+   "arrivals_per_1000": 73.1,
+   "departures": 15636,
+   "departures_per_1000": 66.5,
+   "balance": 1552,
+   "balance_per_1000": 6.6
+  },
+  {
+   "name": "Region Mittlerer Oberrhein",
+   "kind": "region",
+   "arrivals": 82759,
+   "arrivals_per_1000": 78.3,
+   "departures": 74829,
+   "departures_per_1000": 70.8,
+   "balance": 7930,
+   "balance_per_1000": 7.5
+  },
+  {
+   "name": "Heidelberg",
+   "kind": "district",
+   "arrivals": 35226,
+   "arrivals_per_1000": 216.6,
+   "departures": 34515,
+   "departures_per_1000": 212.2,
+   "balance": 711,
+   "balance_per_1000": 4.4
+  },
+  {
+   "name": "Mannheim",
+   "kind": "district",
+   "arrivals": 25465,
+   "arrivals_per_1000": 80.5,
+   "departures": 23671,
+   "departures_per_1000": 74.9,
+   "balance": 1794,
+   "balance_per_1000": 5.7
+  },
+  {
+   "name": "Neckar-Odenwald-Kreis",
+   "kind": "district",
+   "arrivals": 10693,
+   "arrivals_per_1000": 73.3,
+   "departures": 9549,
+   "departures_per_1000": 65.5,
+   "balance": 1144,
+   "balance_per_1000": 7.8
+  },
+  {
+   "name": "Rhein-Neckar-Kreis",
+   "kind": "district",
+   "arrivals": 43743,
+   "arrivals_per_1000": 78.7,
+   "departures": 40443,
+   "departures_per_1000": 72.7,
+   "balance": 3300,
+   "balance_per_1000": 5.9
+  },
+  {
+   "name": "Region Rhein-Neckar2)",
+   "kind": "region",
+   "arrivals": 115127,
+   "arrivals_per_1000": 97.5,
+   "departures": 108178,
+   "departures_per_1000": 91.6,
+   "balance": 6949,
+   "balance_per_1000": 5.9
+  },
+  {
+   "name": "Pforzheim",
+   "kind": "district",
+   "arrivals": 9608,
+   "arrivals_per_1000": 74.8,
+   "departures": 8284,
+   "departures_per_1000": 64.5,
+   "balance": 1324,
+   "balance_per_1000": 10.3
+  },
+  {
+   "name": "Calw",
+   "kind": "district",
+   "arrivals": 13705,
+   "arrivals_per_1000": 83.9,
+   "departures": 12341,
+   "departures_per_1000": 75.6,
+   "balance": 1364,
+   "balance_per_1000": 8.4
+  },
+  {
+   "name": "Enzkreis",
+   "kind": "district",
+   "arrivals": 15969,
+   "arrivals_per_1000": 78.7,
+   "departures": 14487,
+   "departures_per_1000": 71.4,
+   "balance": 1482,
+   "balance_per_1000": 7.3
+  },
+  {
+   "name": "Freudenstadt",
+   "kind": "district",
+   "arrivals": 9312,
+   "arrivals_per_1000": 76.7,
+   "departures": 8489,
+   "departures_per_1000": 69.9,
+   "balance": 823,
+   "balance_per_1000": 6.8
+  },
+  {
+   "name": "Region Nordschwarzwald",
+   "kind": "region",
+   "arrivals": 48594,
+   "arrivals_per_1000": 78.9,
+   "departures": 43601,
+   "departures_per_1000": 70.8,
+   "balance": 4993,
+   "balance_per_1000": 8.1
+  },
+  {
+   "name": "Freiburg im Breisgau",
+   "kind": "district",
+   "arrivals": 25663,
+   "arrivals_per_1000": 108.4,
+   "departures": 24582,
+   "departures_per_1000": 103.9,
+   "balance": 1081,
+   "balance_per_1000": 4.6
+  },
+  {
+   "name": "Breisgau-Hochschwarzwald",
+   "kind": "district",
+   "arrivals": 24949,
+   "arrivals_per_1000": 92.0,
+   "departures": 21976,
+   "departures_per_1000": 81.1,
+   "balance": 2973,
+   "balance_per_1000": 11.0
+  },
+  {
+   "name": "Emmendingen",
+   "kind": "district",
+   "arrivals": 12946,
+   "arrivals_per_1000": 75.4,
+   "departures": 11118,
+   "departures_per_1000": 64.8,
+   "balance": 1828,
+   "balance_per_1000": 10.6
+  },
+  {
+   "name": "Ortenaukreis",
+   "kind": "district",
+   "arrivals": 33123,
+   "arrivals_per_1000": 74.7,
+   "departures": 29322,
+   "departures_per_1000": 66.2,
+   "balance": 3801,
+   "balance_per_1000": 8.6
+  },
+  {
+   "name": "Region Südlicher Oberrhein",
+   "kind": "region",
+   "arrivals": 96681,
+   "arrivals_per_1000": 86.1,
+   "departures": 86998,
+   "departures_per_1000": 77.5,
+   "balance": 9683,
+   "balance_per_1000": 8.6
+  },
+  {
+   "name": "Rottweil",
+   "kind": "district",
+   "arrivals": 10754,
+   "arrivals_per_1000": 75.3,
+   "departures": 10072,
+   "departures_per_1000": 70.5,
+   "balance": 682,
+   "balance_per_1000": 4.8
+  },
+  {
+   "name": "Schwarzwald-Baar-Kreis",
+   "kind": "district",
+   "arrivals": 17125,
+   "arrivals_per_1000": 78.6,
+   "departures": 14808,
+   "departures_per_1000": 67.9,
+   "balance": 2317,
+   "balance_per_1000": 10.6
+  },
+  {
+   "name": "Tuttlingen",
+   "kind": "district",
+   "arrivals": 11358,
+   "arrivals_per_1000": 78.1,
+   "departures": 10022,
+   "departures_per_1000": 68.9,
+   "balance": 1336,
+   "balance_per_1000": 9.2
+  },
+  {
+   "name": "Region Schwarzwald-Baar-Heuberg",
+   "kind": "region",
+   "arrivals": 39237,
+   "arrivals_per_1000": 77.5,
+   "departures": 34902,
+   "departures_per_1000": 68.9,
+   "balance": 4335,
+   "balance_per_1000": 8.6
+  },
+  {
+   "name": "Konstanz",
+   "kind": "district",
+   "arrivals": 27182,
+   "arrivals_per_1000": 92.7,
+   "departures": 24568,
+   "departures_per_1000": 83.7,
+   "balance": 2614,
+   "balance_per_1000": 8.9
+  },
+  {
+   "name": "Lörrach",
+   "kind": "district",
+   "arrivals": 19687,
+   "arrivals_per_1000": 84.1,
+   "departures": 16941,
+   "departures_per_1000": 72.4,
+   "balance": 2746,
+   "balance_per_1000": 11.7
+  },
+  {
+   "name": "Waldshut",
+   "kind": "district",
+   "arrivals": 14439,
+   "arrivals_per_1000": 83.0,
+   "departures": 12676,
+   "departures_per_1000": 72.9,
+   "balance": 1763,
+   "balance_per_1000": 10.1
+  },
+  {
+   "name": "Region Hochrhein-Bodensee",
+   "kind": "region",
+   "arrivals": 61308,
+   "arrivals_per_1000": 87.4,
+   "departures": 54185,
+   "departures_per_1000": 77.3,
+   "balance": 7123,
+   "balance_per_1000": 10.2
+  },
+  {
+   "name": "Reutlingen",
+   "kind": "district",
+   "arrivals": 22027,
+   "arrivals_per_1000": 75.3,
+   "departures": 19448,
+   "departures_per_1000": 66.5,
+   "balance": 2579,
+   "balance_per_1000": 8.8
+  },
+  {
+   "name": "Tübingen",
+   "kind": "district",
+   "arrivals": 22100,
+   "arrivals_per_1000": 94.6,
+   "departures": 20285,
+   "departures_per_1000": 86.8,
+   "balance": 1815,
+   "balance_per_1000": 7.8
+  },
+  {
+   "name": "Zollernalbkreis",
+   "kind": "district",
+   "arrivals": 13699,
+   "arrivals_per_1000": 70.8,
+   "departures": 12454,
+   "departures_per_1000": 64.4,
+   "balance": 1245,
+   "balance_per_1000": 6.4
+  },
+  {
+   "name": "Region Neckar-Alb",
+   "kind": "region",
+   "arrivals": 57826,
+   "arrivals_per_1000": 80.3,
+   "departures": 52187,
+   "departures_per_1000": 72.5,
+   "balance": 5639,
+   "balance_per_1000": 7.8
+  },
+  {
+   "name": "Ulm",
+   "kind": "district",
+   "arrivals": 11556,
+   "arrivals_per_1000": 89.3,
+   "departures": 10539,
+   "departures_per_1000": 81.4,
+   "balance": 1017,
+   "balance_per_1000": 7.9
+  },
+  {
+   "name": "Alb-Donau-Kreis",
+   "kind": "district",
+   "arrivals": 15524,
+   "arrivals_per_1000": 76.4,
+   "departures": 13931,
+   "departures_per_1000": 68.6,
+   "balance": 1593,
+   "balance_per_1000": 7.8
+  },
+  {
+   "name": "Biberach",
+   "kind": "district",
+   "arrivals": 16110,
+   "arrivals_per_1000": 77.7,
+   "departures": 14334,
+   "departures_per_1000": 69.1,
+   "balance": 1776,
+   "balance_per_1000": 8.6
+  },
+  {
+   "name": "Region Donau-Iller2)",
+   "kind": "region",
+   "arrivals": 43190,
+   "arrivals_per_1000": 80.0,
+   "departures": 38804,
+   "departures_per_1000": 71.9,
+   "balance": 4386,
+   "balance_per_1000": 8.1
+  },
+  {
+   "name": "Bodenseekreis",
+   "kind": "district",
+   "arrivals": 20016,
+   "arrivals_per_1000": 89.6,
+   "departures": 17970,
+   "departures_per_1000": 80.4,
+   "balance": 2046,
+   "balance_per_1000": 9.2
+  },
+  {
+   "name": "Ravensburg",
+   "kind": "district",
+   "arrivals": 24799,
+   "arrivals_per_1000": 84.9,
+   "departures": 22139,
+   "departures_per_1000": 75.8,
+   "balance": 2660,
+   "balance_per_1000": 9.1
+  },
+  {
+   "name": "Sigmaringen",
+   "kind": "district",
+   "arrivals": 17844,
+   "arrivals_per_1000": 133.0,
+   "departures": 17399,
+   "departures_per_1000": 129.7,
+   "balance": 445,
+   "balance_per_1000": 3.3
+  },
+  {
+   "name": "Region Bodensee-Oberschwaben",
+   "kind": "region",
+   "arrivals": 62659,
+   "arrivals_per_1000": 96.5,
+   "departures": 57508,
+   "departures_per_1000": 88.5,
+   "balance": 5151,
+   "balance_per_1000": 7.9
+  },
+  {
+   "name": "Baden-Württemberg",
+   "kind": "state",
+   "arrivals": 935698,
+   "arrivals_per_1000": 82.7,
+   "departures": 852077,
+   "departures_per_1000": 75.3,
+   "balance": 83621,
+   "balance_per_1000": 7.4
+  }
+ ],
+ "districts_foreign_nationals": [
+  {
+   "name": "Stuttgart, Landeshauptstadt",
+   "kind": "district",
+   "arrivals": 26549,
+   "arrivals_per_1000": 153.1,
+   "departures": 19587,
+   "departures_per_1000": 112.9,
+   "balance": 6962,
+   "balance_per_1000": 40.1
+  },
+  {
+   "name": "Böblingen",
+   "kind": "district",
+   "arrivals": 18223,
+   "arrivals_per_1000": 216.9,
+   "departures": 13702,
+   "departures_per_1000": 163.1,
+   "balance": 4521,
+   "balance_per_1000": 53.8
+  },
+  {
+   "name": "Esslingen",
+   "kind": "district",
+   "arrivals": 21528,
+   "arrivals_per_1000": 202.2,
+   "departures": 16320,
+   "departures_per_1000": 153.3,
+   "balance": 5208,
+   "balance_per_1000": 48.9
+  },
+  {
+   "name": "Göppingen",
+   "kind": "district",
+   "arrivals": 11607,
+   "arrivals_per_1000": 226.5,
+   "departures": 8662,
+   "departures_per_1000": 169.0,
+   "balance": 2945,
+   "balance_per_1000": 57.5
+  },
+  {
+   "name": "Ludwigsburg",
+   "kind": "district",
+   "arrivals": 23290,
+   "arrivals_per_1000": 207.3,
+   "departures": 18681,
+   "departures_per_1000": 166.3,
+   "balance": 4609,
+   "balance_per_1000": 41.0
+  },
+  {
+   "name": "Rems-Murr-Kreis",
+   "kind": "district",
+   "arrivals": 15363,
+   "arrivals_per_1000": 196.6,
+   "departures": 11442,
+   "departures_per_1000": 146.4,
+   "balance": 3921,
+   "balance_per_1000": 50.2
+  },
+  {
+   "name": "Region Stuttgart",
+   "kind": "region",
+   "arrivals": 116560,
+   "arrivals_per_1000": 192.5,
+   "departures": 88394,
+   "departures_per_1000": 145.9,
+   "balance": 28166,
+   "balance_per_1000": 46.5
+  },
+  {
+   "name": "Heilbronn",
+   "kind": "district",
+   "arrivals": 7265,
+   "arrivals_per_1000": 188.4,
+   "departures": 4716,
+   "departures_per_1000": 122.3,
+   "balance": 2549,
+   "balance_per_1000": 66.1
+  },
+  {
+   "name": "Heilbronn",
+   "kind": "district",
+   "arrivals": 17699,
+   "arrivals_per_1000": 293.8,
+   "departures": 14825,
+   "departures_per_1000": 246.1,
+   "balance": 2874,
+   "balance_per_1000": 47.7
+  },
+  {
+   "name": "Hohenlohekreis",
+   "kind": "district",
+   "arrivals": 4744,
+   "arrivals_per_1000": 292.1,
+   "departures": 3719,
+   "departures_per_1000": 229.0,
+   "balance": 1025,
+   "balance_per_1000": 63.1
+  },
+  {
+   "name": "Schwäbisch Hall",
+   "kind": "district",
+   "arrivals": 8477,
+   "arrivals_per_1000": 278.6,
+   "departures": 6460,
+   "departures_per_1000": 212.3,
+   "balance": 2017,
+   "balance_per_1000": 66.3
+  },
+  {
+   "name": "Main-Tauber-Kreis",
+   "kind": "district",
+   "arrivals": 4554,
+   "arrivals_per_1000": 272.2,
+   "departures": 3367,
+   "departures_per_1000": 201.3,
+   "balance": 1187,
+   "balance_per_1000": 71.0
+  },
+  {
+   "name": "Region Heilbronn-Franken",
+   "kind": "region",
+   "arrivals": 42739,
+   "arrivals_per_1000": 263.5,
+   "departures": 33087,
+   "departures_per_1000": 204.0,
+   "balance": 9652,
+   "balance_per_1000": 59.5
+  },
+  {
+   "name": "Heidenheim",
+   "kind": "district",
+   "arrivals": 7160,
+   "arrivals_per_1000": 281.0,
+   "departures": 6062,
+   "departures_per_1000": 237.9,
+   "balance": 1098,
+   "balance_per_1000": 43.1
+  },
+  {
+   "name": "Ostalbkreis",
+   "kind": "district",
+   "arrivals": 14112,
+   "arrivals_per_1000": 329.2,
+   "departures": 12306,
+   "departures_per_1000": 287.1,
+   "balance": 1806,
+   "balance_per_1000": 42.1
+  },
+  {
+   "name": "Region Ostwürttemberg",
+   "kind": "region",
+   "arrivals": 21272,
+   "arrivals_per_1000": 311.3,
+   "departures": 18368,
+   "departures_per_1000": 268.8,
+   "balance": 2904,
+   "balance_per_1000": 42.5
+  },
+  {
+   "name": "Baden-Baden",
+   "kind": "district",
+   "arrivals": 2605,
+   "arrivals_per_1000": 185.5,
+   "departures": 1609,
+   "departures_per_1000": 114.6,
+   "balance": 996,
+   "balance_per_1000": 70.9
+  },
+  {
+   "name": "Karlsruhe",
+   "kind": "district",
+   "arrivals": 14320,
+   "arrivals_per_1000": 226.0,
+   "departures": 11117,
+   "departures_per_1000": 175.5,
+   "balance": 3203,
+   "balance_per_1000": 50.6
+  },
+  {
+   "name": "Karlsruhe",
+   "kind": "district",
+   "arrivals": 19323,
+   "arrivals_per_1000": 266.8,
+   "departures": 16117,
+   "departures_per_1000": 222.5,
+   "balance": 3206,
+   "balance_per_1000": 44.3
+  },
+  {
+   "name": "Rastatt",
+   "kind": "district",
+   "arrivals": 9330,
+   "arrivals_per_1000": 234.8,
+   "departures": 7337,
+   "departures_per_1000": 184.6,
+   "balance": 1993,
+   "balance_per_1000": 50.2
+  },
+  {
+   "name": "Region Mittlerer Oberrhein",
+   "kind": "region",
+   "arrivals": 45578,
+   "arrivals_per_1000": 240.4,
+   "departures": 36180,
+   "departures_per_1000": 190.9,
+   "balance": 9398,
+   "balance_per_1000": 49.6
+  },
+  {
+   "name": "Heidelberg",
+   "kind": "district",
+   "arrivals": 26867,
+   "arrivals_per_1000": 777.1,
+   "departures": 25395,
+   "departures_per_1000": 734.5,
+   "balance": 1472,
+   "balance_per_1000": 42.6
+  },
+  {
+   "name": "Mannheim",
+   "kind": "district",
+   "arrivals": 14562,
+   "arrivals_per_1000": 173.6,
+   "departures": 11343,
+   "departures_per_1000": 135.3,
+   "balance": 3219,
+   "balance_per_1000": 38.4
+  },
+  {
+   "name": "Neckar-Odenwald-Kreis",
+   "kind": "district",
+   "arrivals": 5199,
+   "arrivals_per_1000": 286.1,
+   "departures": 4105,
+   "departures_per_1000": 225.9,
+   "balance": 1094,
+   "balance_per_1000": 60.2
+  },
+  {
+   "name": "Rhein-Neckar-Kreis",
+   "kind": "district",
+   "arrivals": 21029,
+   "arrivals_per_1000": 257.4,
+   "departures": 17049,
+   "departures_per_1000": 208.7,
+   "balance": 3980,
+   "balance_per_1000": 48.7
+  },
+  {
+   "name": "Region Rhein-Neckar2)",
+   "kind": "region",
+   "arrivals": 67657,
+   "arrivals_per_1000": 309.9,
+   "departures": 57892,
+   "departures_per_1000": 265.2,
+   "balance": 9765,
+   "balance_per_1000": 44.7
+  },
+  {
+   "name": "Pforzheim",
+   "kind": "district",
+   "arrivals": 6251,
+   "arrivals_per_1000": 158.7,
+   "departures": 4114,
+   "departures_per_1000": 104.5,
+   "balance": 2137,
+   "balance_per_1000": 54.3
+  },
+  {
+   "name": "Calw",
+   "kind": "district",
+   "arrivals": 6830,
+   "arrivals_per_1000": 237.5,
+   "departures": 5580,
+   "departures_per_1000": 194.1,
+   "balance": 1250,
+   "balance_per_1000": 43.5
+  },
+  {
+   "name": "Enzkreis",
+   "kind": "district",
+   "arrivals": 8304,
+   "arrivals_per_1000": 271.9,
+   "departures": 6763,
+   "departures_per_1000": 221.4,
+   "balance": 1541,
+   "balance_per_1000": 50.5
+  },
+  {
+   "name": "Freudenstadt",
+   "kind": "district",
+   "arrivals": 4979,
+   "arrivals_per_1000": 274.2,
+   "departures": 3826,
+   "departures_per_1000": 210.7,
+   "balance": 1153,
+   "balance_per_1000": 63.5
+  },
+  {
+   "name": "Region Nordschwarzwald",
+   "kind": "region",
+   "arrivals": 26364,
+   "arrivals_per_1000": 225.6,
+   "departures": 20283,
+   "departures_per_1000": 173.6,
+   "balance": 6081,
+   "balance_per_1000": 52.0
+  },
+  {
+   "name": "Freiburg im Breisgau",
+   "kind": "district",
+   "arrivals": 14271,
+   "arrivals_per_1000": 320.6,
+   "departures": 13116,
+   "departures_per_1000": 294.7,
+   "balance": 1155,
+   "balance_per_1000": 25.9
+  },
+  {
+   "name": "Breisgau-Hochschwarzwald",
+   "kind": "district",
+   "arrivals": 12623,
+   "arrivals_per_1000": 325.5,
+   "departures": 10083,
+   "departures_per_1000": 260.0,
+   "balance": 2540,
+   "balance_per_1000": 65.5
+  },
+  {
+   "name": "Emmendingen",
+   "kind": "district",
+   "arrivals": 6114,
+   "arrivals_per_1000": 267.9,
+   "departures": 4468,
+   "departures_per_1000": 195.8,
+   "balance": 1646,
+   "balance_per_1000": 72.1
+  },
+  {
+   "name": "Ortenaukreis",
+   "kind": "district",
+   "arrivals": 16749,
+   "arrivals_per_1000": 253.3,
+   "departures": 12981,
+   "departures_per_1000": 196.3,
+   "balance": 3768,
+   "balance_per_1000": 57.0
+  },
+  {
+   "name": "Region Südlicher Oberrhein",
+   "kind": "region",
+   "arrivals": 49757,
+   "arrivals_per_1000": 288.9,
+   "departures": 40648,
+   "departures_per_1000": 236.0,
+   "balance": 9109,
+   "balance_per_1000": 52.9
+  },
+  {
+   "name": "Rottweil",
+   "kind": "district",
+   "arrivals": 5613,
+   "arrivals_per_1000": 269.1,
+   "departures": 4643,
+   "departures_per_1000": 222.6,
+   "balance": 970,
+   "balance_per_1000": 46.5
+  },
+  {
+   "name": "Schwarzwald-Baar-Kreis",
+   "kind": "district",
+   "arrivals": 9268,
+   "arrivals_per_1000": 222.3,
+   "departures": 6826,
+   "departures_per_1000": 163.7,
+   "balance": 2442,
+   "balance_per_1000": 58.6
+  },
+  {
+   "name": "Tuttlingen",
+   "kind": "district",
+   "arrivals": 6403,
+   "arrivals_per_1000": 219.0,
+   "departures": 4851,
+   "departures_per_1000": 165.9,
+   "balance": 1552,
+   "balance_per_1000": 53.1
+  },
+  {
+   "name": "Region Schwarzwald-Baar-Heuberg",
+   "kind": "region",
+   "arrivals": 21284,
+   "arrivals_per_1000": 231.9,
+   "departures": 16320,
+   "departures_per_1000": 177.8,
+   "balance": 4964,
+   "balance_per_1000": 54.1
+  },
+  {
+   "name": "Konstanz",
+   "kind": "district",
+   "arrivals": 13400,
+   "arrivals_per_1000": 257.6,
+   "departures": 10510,
+   "departures_per_1000": 202.1,
+   "balance": 2890,
+   "balance_per_1000": 55.6
+  },
+  {
+   "name": "Lörrach",
+   "kind": "district",
+   "arrivals": 10141,
+   "arrivals_per_1000": 233.6,
+   "departures": 6981,
+   "departures_per_1000": 160.8,
+   "balance": 3160,
+   "balance_per_1000": 72.8
+  },
+  {
+   "name": "Waldshut",
+   "kind": "district",
+   "arrivals": 7023,
+   "arrivals_per_1000": 215.9,
+   "departures": 5159,
+   "departures_per_1000": 158.6,
+   "balance": 1864,
+   "balance_per_1000": 57.3
+  },
+  {
+   "name": "Region Hochrhein-Bodensee",
+   "kind": "region",
+   "arrivals": 30564,
+   "arrivals_per_1000": 238.9,
+   "departures": 22650,
+   "departures_per_1000": 177.0,
+   "balance": 7914,
+   "balance_per_1000": 61.9
+  },
+  {
+   "name": "Reutlingen",
+   "kind": "district",
+   "arrivals": 11582,
+   "arrivals_per_1000": 220.4,
+   "departures": 8681,
+   "departures_per_1000": 165.2,
+   "balance": 2901,
+   "balance_per_1000": 55.2
+  },
+  {
+   "name": "Tübingen",
+   "kind": "district",
+   "arrivals": 10482,
+   "arrivals_per_1000": 290.5,
+   "departures": 8416,
+   "departures_per_1000": 233.3,
+   "balance": 2066,
+   "balance_per_1000": 57.3
+  },
+  {
+   "name": "Zollernalbkreis",
+   "kind": "district",
+   "arrivals": 7085,
+   "arrivals_per_1000": 234.0,
+   "departures": 5761,
+   "departures_per_1000": 190.3,
+   "balance": 1324,
+   "balance_per_1000": 43.7
+  },
+  {
+   "name": "Region Neckar-Alb",
+   "kind": "region",
+   "arrivals": 29149,
+   "arrivals_per_1000": 245.2,
+   "departures": 22858,
+   "departures_per_1000": 192.2,
+   "balance": 6291,
+   "balance_per_1000": 52.9
+  },
+  {
+   "name": "Ulm",
+   "kind": "district",
+   "arrivals": 6196,
+   "arrivals_per_1000": 205.3,
+   "departures": 4469,
+   "departures_per_1000": 148.1,
+   "balance": 1727,
+   "balance_per_1000": 57.2
+  },
+  {
+   "name": "Alb-Donau-Kreis",
+   "kind": "district",
+   "arrivals": 8211,
+   "arrivals_per_1000": 256.1,
+   "departures": 6810,
+   "departures_per_1000": 212.4,
+   "balance": 1401,
+   "balance_per_1000": 43.7
+  },
+  {
+   "name": "Biberach",
+   "kind": "district",
+   "arrivals": 7743,
+   "arrivals_per_1000": 283.7,
+   "departures": 6028,
+   "departures_per_1000": 220.9,
+   "balance": 1715,
+   "balance_per_1000": 62.8
+  },
+  {
+   "name": "Region Donau-Iller2)",
+   "kind": "region",
+   "arrivals": 22150,
+   "arrivals_per_1000": 247.4,
+   "departures": 17307,
+   "departures_per_1000": 193.3,
+   "balance": 4843,
+   "balance_per_1000": 54.1
+  },
+  {
+   "name": "Bodenseekreis",
+   "kind": "district",
+   "arrivals": 10127,
+   "arrivals_per_1000": 277.3,
+   "departures": 8088,
+   "departures_per_1000": 221.5,
+   "balance": 2039,
+   "balance_per_1000": 55.8
+  },
+  {
+   "name": "Ravensburg",
+   "kind": "district",
+   "arrivals": 11934,
+   "arrivals_per_1000": 300.6,
+   "departures": 9515,
+   "departures_per_1000": 239.7,
+   "balance": 2419,
+   "balance_per_1000": 60.9
+  },
+  {
+   "name": "Sigmaringen",
+   "kind": "district",
+   "arrivals": 12506,
+   "arrivals_per_1000": 684.0,
+   "departures": 11949,
+   "departures_per_1000": 653.5,
+   "balance": 557,
+   "balance_per_1000": 30.5
+  },
+  {
+   "name": "Region Bodensee-Oberschwaben",
+   "kind": "region",
+   "arrivals": 34567,
+   "arrivals_per_1000": 365.8,
+   "departures": 29552,
+   "departures_per_1000": 312.7,
+   "balance": 5015,
+   "balance_per_1000": 53.1
+  },
+  {
+   "name": "Baden-Württemberg",
+   "kind": "state",
+   "arrivals": 507641,
+   "arrivals_per_1000": 246.9,
+   "departures": 403539,
+   "departures_per_1000": 196.3,
+   "balance": 104102,
+   "balance_per_1000": 50.6
+  }
+ ],
+ "by_country": [
+  {
+   "area": "Bundesgebiet",
+   "level": 0,
+   "arrivals": 116854,
+   "arrivals_male": 60558,
+   "arrivals_foreign": 38020,
+   "departures": 121342,
+   "departures_male": 61896,
+   "departures_foreign": 35943,
+   "balance": -4488
+  },
+  {
+   "area": "Bayern",
+   "level": 1,
+   "arrivals": 35242,
+   "arrivals_male": 18304,
+   "arrivals_foreign": 10933,
+   "departures": 37717,
+   "departures_male": 19422,
+   "departures_foreign": 11016,
+   "balance": -2475
+  },
+  {
+   "area": "Berlin",
+   "level": 1,
+   "arrivals": 5430,
+   "arrivals_male": 2693,
+   "arrivals_foreign": 1721,
+   "departures": 6061,
+   "departures_male": 2973,
+   "departures_foreign": 1601,
+   "balance": -631
+  },
+  {
+   "area": "Brandenburg",
+   "level": 1,
+   "arrivals": 2047,
+   "arrivals_male": 1122,
+   "arrivals_foreign": 846,
+   "departures": 1891,
+   "departures_male": 1034,
+   "departures_foreign": 442,
+   "balance": 156
+  },
+  {
+   "area": "Bremen",
+   "level": 1,
+   "arrivals": 836,
+   "arrivals_male": 439,
+   "arrivals_foreign": 310,
+   "departures": 824,
+   "departures_male": 426,
+   "departures_foreign": 273,
+   "balance": 12
+  },
+  {
+   "area": "Hamburg",
+   "level": 1,
+   "arrivals": 2448,
+   "arrivals_male": 1214,
+   "arrivals_foreign": 645,
+   "departures": 3271,
+   "departures_male": 1621,
+   "departures_foreign": 826,
+   "balance": -823
+  },
+  {
+   "area": "Hessen",
+   "level": 1,
+   "arrivals": 15856,
+   "arrivals_male": 8098,
+   "arrivals_foreign": 4795,
+   "departures": 16235,
+   "departures_male": 8118,
+   "departures_foreign": 4847,
+   "balance": -379
+  },
+  {
+   "area": "Mecklenburg-Vorpommern",
+   "level": 1,
+   "arrivals": 1240,
+   "arrivals_male": 655,
+   "arrivals_foreign": 414,
+   "departures": 1365,
+   "departures_male": 665,
+   "departures_foreign": 244,
+   "balance": -125
+  },
+  {
+   "area": "Niedersachsen",
+   "level": 1,
+   "arrivals": 8583,
+   "arrivals_male": 4424,
+   "arrivals_foreign": 3196,
+   "departures": 7376,
+   "departures_male": 3817,
+   "departures_foreign": 2276,
+   "balance": 1207
+  },
+  {
+   "area": "Nordrhein-Westfalen",
+   "level": 1,
+   "arrivals": 17998,
+   "arrivals_male": 9425,
+   "arrivals_foreign": 6308,
+   "departures": 17818,
+   "departures_male": 9081,
+   "departures_foreign": 6685,
+   "balance": 180
+  },
+  {
+   "area": "Rheinland-Pfalz",
+   "level": 1,
+   "arrivals": 14636,
+   "arrivals_male": 7584,
+   "arrivals_foreign": 4338,
+   "departures": 15837,
+   "departures_male": 8157,
+   "departures_foreign": 4620,
+   "balance": -1201
+  },
+  {
+   "area": "Saarland",
+   "level": 1,
+   "arrivals": 1758,
+   "arrivals_male": 886,
+   "arrivals_foreign": 531,
+   "departures": 1584,
+   "departures_male": 784,
+   "departures_foreign": 438,
+   "balance": 174
+  },
+  {
+   "area": "Sachsen",
+   "level": 1,
+   "arrivals": 4109,
+   "arrivals_male": 2214,
+   "arrivals_foreign": 1478,
+   "departures": 4380,
+   "departures_male": 2257,
+   "departures_foreign": 902,
+   "balance": -271
+  },
+  {
+   "area": "Sachsen-Anhalt",
+   "level": 1,
+   "arrivals": 1768,
+   "arrivals_male": 977,
+   "arrivals_foreign": 788,
+   "departures": 1771,
+   "departures_male": 929,
+   "departures_foreign": 513,
+   "balance": -3
+  },
+  {
+   "area": "Schleswig-Holstein",
+   "level": 1,
+   "arrivals": 2535,
+   "arrivals_male": 1285,
+   "arrivals_foreign": 767,
+   "departures": 2939,
+   "departures_male": 1421,
+   "departures_foreign": 650,
+   "balance": -404
+  },
+  {
+   "area": "Thüringen",
+   "level": 1,
+   "arrivals": 2368,
+   "arrivals_male": 1238,
+   "arrivals_foreign": 950,
+   "departures": 2273,
+   "departures_male": 1191,
+   "departures_foreign": 610,
+   "balance": 95
+  },
+  {
+   "area": "Ausland",
+   "level": 0,
+   "arrivals": 288842,
+   "arrivals_male": 170732,
+   "arrivals_foreign": 262559,
+   "departures": 200733,
+   "departures_male": 120185,
+   "departures_foreign": 160534,
+   "balance": 88109
+  },
+  {
+   "area": "Europäisches Ausland",
+   "level": 1,
+   "arrivals": 206382,
+   "arrivals_male": 119376,
+   "arrivals_foreign": 196126,
+   "departures": 152656,
+   "departures_male": 89399,
+   "departures_foreign": 132715,
+   "balance": 53726
+  },
+  {
+   "area": "Europäische Union",
+   "level": 2,
+   "arrivals": 102888,
+   "arrivals_male": 64246,
+   "arrivals_foreign": 97772,
+   "departures": 96652,
+   "departures_male": 61197,
+   "departures_foreign": 87172,
+   "balance": 6236
+  },
+  {
+   "area": "Bulgarien",
+   "level": 2,
+   "arrivals": 7561,
+   "arrivals_male": 4838,
+   "arrivals_foreign": 7494,
+   "departures": 7637,
+   "departures_male": 4971,
+   "departures_foreign": 7488,
+   "balance": -76
+  },
+  {
+   "area": "Dänemark",
+   "level": 2,
+   "arrivals": 301,
+   "arrivals_male": 145,
+   "arrivals_foreign": 213,
+   "departures": 478,
+   "departures_male": 222,
+   "departures_foreign": 208,
+   "balance": -177
+  },
+  {
+   "area": "Estland",
+   "level": 2,
+   "arrivals": 93,
+   "arrivals_male": 53,
+   "arrivals_foreign": 79,
+   "departures": 101,
+   "departures_male": 51,
+   "departures_foreign": 85,
+   "balance": -8
+  },
+  {
+   "area": "Finnland",
+   "level": 2,
+   "arrivals": 329,
+   "arrivals_male": 171,
+   "arrivals_foreign": 294,
+   "departures": 313,
+   "departures_male": 175,
+   "departures_foreign": 242,
+   "balance": 16
+  },
+  {
+   "area": "Frankreich",
+   "level": 2,
+   "arrivals": 4105,
+   "arrivals_male": 2209,
+   "arrivals_foreign": 2984,
+   "departures": 4303,
+   "departures_male": 2278,
+   "departures_foreign": 2579,
+   "balance": -198
+  },
+  {
+   "area": "Griechenland",
+   "level": 2,
+   "arrivals": 3986,
+   "arrivals_male": 2422,
+   "arrivals_foreign": 3878,
+   "departures": 3650,
+   "departures_male": 2164,
+   "departures_foreign": 3344,
+   "balance": 336
+  },
+  {
+   "area": "Irland",
+   "level": 2,
+   "arrivals": 410,
+   "arrivals_male": 213,
+   "arrivals_foreign": 322,
+   "departures": 367,
+   "departures_male": 176,
+   "departures_foreign": 269,
+   "balance": 43
+  },
+  {
+   "area": "Italien",
+   "level": 2,
+   "arrivals": 9005,
+   "arrivals_male": 5503,
+   "arrivals_foreign": 8660,
+   "departures": 7776,
+   "departures_male": 4779,
+   "departures_foreign": 7153,
+   "balance": 1229
+  },
+  {
+   "area": "Kroatien",
+   "level": 2,
+   "arrivals": 4652,
+   "arrivals_male": 2961,
+   "arrivals_foreign": 4553,
+   "departures": 5303,
+   "departures_male": 3532,
+   "departures_foreign": 5080,
+   "balance": -651
+  },
+  {
+   "area": "Lettland",
+   "level": 2,
+   "arrivals": 571,
+   "arrivals_male": 350,
+   "arrivals_foreign": 551,
+   "departures": 435,
+   "departures_male": 268,
+   "departures_foreign": 424,
+   "balance": 136
+  },
+  {
+   "area": "Litauen",
+   "level": 2,
+   "arrivals": 934,
+   "arrivals_male": 596,
+   "arrivals_foreign": 919,
+   "departures": 762,
+   "departures_male": 514,
+   "departures_foreign": 748,
+   "balance": 172
+  },
+  {
+   "area": "Luxemburg",
+   "level": 2,
+   "arrivals": 265,
+   "arrivals_male": 138,
+   "arrivals_foreign": 225,
+   "departures": 268,
+   "departures_male": 136,
+   "departures_foreign": 204,
+   "balance": -3
+  },
+  {
+   "area": "Malta",
+   "level": 2,
+   "arrivals": 83,
+   "arrivals_male": 65,
+   "arrivals_foreign": 63,
+   "departures": 52,
+   "departures_male": 30,
+   "departures_foreign": 17,
+   "balance": 31
+  },
+  {
+   "area": "Niederlande",
+   "level": 2,
+   "arrivals": 1006,
+   "arrivals_male": 580,
+   "arrivals_foreign": 778,
+   "departures": 1134,
+   "departures_male": 601,
+   "departures_foreign": 730,
+   "balance": -128
+  },
+  {
+   "area": "Österreich",
+   "level": 2,
+   "arrivals": 2477,
+   "arrivals_male": 1286,
+   "arrivals_foreign": 1585,
+   "departures": 3595,
+   "departures_male": 1837,
+   "departures_foreign": 1747,
+   "balance": -1118
+  },
+  {
+   "area": "Polen",
+   "level": 2,
+   "arrivals": 11066,
+   "arrivals_male": 7086,
+   "arrivals_foreign": 10904,
+   "departures": 9916,
+   "departures_male": 6579,
+   "departures_foreign": 9469,
+   "balance": 1150
+  },
+  {
+   "area": "Portugal",
+   "level": 2,
+   "arrivals": 1603,
+   "arrivals_male": 970,
+   "arrivals_foreign": 1352,
+   "departures": 1702,
+   "departures_male": 1024,
+   "departures_foreign": 1258,
+   "balance": -99
+  },
+  {
+   "area": "Rumänien",
+   "level": 2,
+   "arrivals": 37286,
+   "arrivals_male": 23999,
+   "arrivals_foreign": 37164,
+   "departures": 34197,
+   "departures_male": 22733,
+   "departures_foreign": 33867,
+   "balance": 3089
+  },
+  {
+   "area": "Schweden",
+   "level": 2,
+   "arrivals": 754,
+   "arrivals_male": 392,
+   "arrivals_foreign": 620,
+   "departures": 672,
+   "departures_male": 351,
+   "departures_foreign": 335,
+   "balance": 82
+  },
+  {
+   "area": "Slowakei",
+   "level": 2,
+   "arrivals": 1442,
+   "arrivals_male": 970,
+   "arrivals_foreign": 1427,
+   "departures": 1400,
+   "departures_male": 999,
+   "departures_foreign": 1365,
+   "balance": 42
+  },
+  {
+   "area": "Slowenien",
+   "level": 2,
+   "arrivals": 854,
+   "arrivals_male": 600,
+   "arrivals_foreign": 842,
+   "departures": 461,
+   "departures_male": 301,
+   "departures_foreign": 425,
+   "balance": 393
+  },
+  {
+   "area": "Spanien",
+   "level": 2,
+   "arrivals": 4360,
+   "arrivals_male": 2379,
+   "arrivals_foreign": 3532,
+   "departures": 4092,
+   "departures_male": 2128,
+   "departures_foreign": 2785,
+   "balance": 268
+  },
+  {
+   "area": "Tschechische Republik",
+   "level": 2,
+   "arrivals": 1157,
+   "arrivals_male": 688,
+   "arrivals_foreign": 1084,
+   "departures": 924,
+   "departures_male": 570,
+   "departures_foreign": 803,
+   "balance": 233
+  },
+  {
+   "area": "Ungarn",
+   "level": 2,
+   "arrivals": 7896,
+   "arrivals_male": 5250,
+   "arrivals_foreign": 7737,
+   "departures": 6414,
+   "departures_male": 4416,
+   "departures_foreign": 6108,
+   "balance": 1482
+  },
+  {
+   "area": "Zypern",
+   "level": 2,
+   "arrivals": 162,
+   "arrivals_male": 89,
+   "arrivals_foreign": 117,
+   "departures": 170,
+   "departures_male": 95,
+   "departures_foreign": 75,
+   "balance": -8
+  },
+  {
+   "area": "EFTA-Staaten",
+   "level": 1,
+   "arrivals": 4986,
+   "arrivals_male": 2733,
+   "arrivals_foreign": 1980,
+   "departures": 11359,
+   "departures_male": 6052,
+   "departures_foreign": 3132,
+   "balance": -6373
+  },
+  {
+   "area": "Island",
+   "level": 2,
+   "arrivals": 26,
+   "arrivals_male": 10,
+   "arrivals_foreign": 15,
+   "departures": 46,
+   "departures_male": 22,
+   "departures_foreign": 20,
+   "balance": -20
+  },
+  {
+   "area": "Liechtenstein",
+   "level": 2,
+   "arrivals": 10,
+   "arrivals_male": 5,
+   "arrivals_foreign": 3,
+   "departures": 16,
+   "departures_male": 9,
+   "departures_foreign": 6,
+   "balance": -6
+  },
+  {
+   "area": "Norwegen",
+   "level": 2,
+   "arrivals": 343,
+   "arrivals_male": 174,
+   "arrivals_foreign": 257,
+   "departures": 418,
+   "departures_male": 209,
+   "departures_foreign": 259,
+   "balance": -75
+  },
+  {
+   "area": "Schweiz",
+   "level": 2,
+   "arrivals": 4607,
+   "arrivals_male": 2544,
+   "arrivals_foreign": 1705,
+   "departures": 10879,
+   "departures_male": 5812,
+   "departures_foreign": 2847,
+   "balance": -6272
+  },
+  {
+   "area": "übriges europäisches Ausland",
+   "level": 1,
+   "arrivals": 98508,
+   "arrivals_male": 52397,
+   "arrivals_foreign": 96374,
+   "departures": 44645,
+   "departures_male": 22150,
+   "departures_foreign": 42411,
+   "balance": 53863
+  },
+  {
+   "area": "Albanien",
+   "level": 2,
+   "arrivals": 2551,
+   "arrivals_male": 1507,
+   "arrivals_foreign": 2530,
+   "departures": 793,
+   "departures_male": 526,
+   "departures_foreign": 777,
+   "balance": 1758
+  },
+  {
+   "area": "Bosnien und Herzegowina",
+   "level": 2,
+   "arrivals": 4712,
+   "arrivals_male": 2863,
+   "arrivals_foreign": 4689,
+   "departures": 2309,
+   "departures_male": 1644,
+   "departures_foreign": 2258,
+   "balance": 2403
+  },
+  {
+   "area": "Kosovo",
+   "level": 2,
+   "arrivals": 5998,
+   "arrivals_male": 3548,
+   "arrivals_foreign": 5969,
+   "departures": 1270,
+   "departures_male": 920,
+   "departures_foreign": 1237,
+   "balance": 4728
+  },
+  {
+   "area": "Moldau",
+   "level": 2,
+   "arrivals": 1899,
+   "arrivals_male": 1075,
+   "arrivals_foreign": 1888,
+   "departures": 1424,
+   "departures_male": 852,
+   "departures_foreign": 1421,
+   "balance": 475
+  },
+  {
+   "area": "Nordmazedonien",
+   "level": 2,
+   "arrivals": 5258,
+   "arrivals_male": 2881,
+   "arrivals_foreign": 5248,
+   "departures": 2881,
+   "departures_male": 1626,
+   "departures_foreign": 2862,
+   "balance": 2377
+  },
+  {
+   "area": "Russland",
+   "level": 2,
+   "arrivals": 2666,
+   "arrivals_male": 1340,
+   "arrivals_foreign": 2386,
+   "departures": 1276,
+   "departures_male": 667,
+   "departures_foreign": 820,
+   "balance": 1390
+  },
+  {
+   "area": "Serbien",
+   "level": 2,
+   "arrivals": 4759,
+   "arrivals_male": 3043,
+   "arrivals_foreign": 4718,
+   "departures": 2644,
+   "departures_male": 1740,
+   "departures_foreign": 2574,
+   "balance": 2115
+  },
+  {
+   "area": "Türkei",
+   "level": 2,
+   "arrivals": 22601,
+   "arrivals_male": 13985,
+   "arrivals_foreign": 21400,
+   "departures": 6262,
+   "departures_male": 4292,
+   "departures_foreign": 5334,
+   "balance": 16339
+  },
+  {
+   "area": "Ukraine",
+   "level": 2,
+   "arrivals": 45969,
+   "arrivals_male": 21011,
+   "arrivals_foreign": 45924,
+   "departures": 23958,
+   "departures_male": 8890,
+   "departures_foreign": 23932,
+   "balance": 22011
+  },
+  {
+   "area": "Außereuropäisches Ausland",
+   "level": 0,
+   "arrivals": 68269,
+   "arrivals_male": 40917,
+   "arrivals_foreign": 62761,
+   "departures": 28058,
+   "departures_male": 16618,
+   "departures_foreign": 21649,
+   "balance": 40211
+  },
+  {
+   "area": "Afrika",
+   "level": 1,
+   "arrivals": 12949,
+   "arrivals_male": 8380,
+   "arrivals_foreign": 12267,
+   "departures": 4820,
+   "departures_male": 3866,
+   "departures_foreign": 4242,
+   "balance": 8129
+  },
+  {
+   "area": "Marokko",
+   "level": 2,
+   "arrivals": 1831,
+   "arrivals_male": 1291,
+   "arrivals_foreign": 1792,
+   "departures": 639,
+   "departures_male": 534,
+   "departures_foreign": 587,
+   "balance": 1192
+  },
+  {
+   "area": "Tunesien",
+   "level": 2,
+   "arrivals": 2107,
+   "arrivals_male": 1484,
+   "arrivals_foreign": 2067,
+   "departures": 827,
+   "departures_male": 697,
+   "departures_foreign": 790,
+   "balance": 1280
+  },
+  {
+   "area": "Amerika",
+   "level": 1,
+   "arrivals": 10960,
+   "arrivals_male": 5426,
+   "arrivals_foreign": 8394,
+   "departures": 9320,
+   "departures_male": 4815,
+   "departures_foreign": 6366,
+   "balance": 1640
+  },
+  {
+   "area": "Brasilien",
+   "level": 2,
+   "arrivals": 1980,
+   "arrivals_male": 947,
+   "arrivals_foreign": 1720,
+   "departures": 1219,
+   "departures_male": 640,
+   "departures_foreign": 1031,
+   "balance": 761
+  },
+  {
+   "area": "Mexiko",
+   "level": 2,
+   "arrivals": 992,
+   "arrivals_male": 488,
+   "arrivals_foreign": 806,
+   "departures": 679,
+   "departures_male": 354,
+   "departures_foreign": 515,
+   "balance": 313
+  },
+  {
+   "area": "Vereinigte Staaten",
+   "level": 2,
+   "arrivals": 4038,
+   "arrivals_male": 2114,
+   "arrivals_foreign": 2892,
+   "departures": 4562,
+   "departures_male": 2359,
+   "departures_foreign": 2974,
+   "balance": -524
+  },
+  {
+   "area": "Asien",
+   "level": 1,
+   "arrivals": 43583,
+   "arrivals_male": 26714,
+   "arrivals_foreign": 41730,
+   "departures": 12946,
+   "departures_male": 7459,
+   "departures_foreign": 10698,
+   "balance": 30637
+  },
+  {
+   "area": "Afghanistan",
+   "level": 2,
+   "arrivals": 6219,
+   "arrivals_male": 5204,
+   "arrivals_foreign": 6208,
+   "departures": 45,
+   "departures_male": 34,
+   "departures_foreign": 40,
+   "balance": 6174
+  },
+  {
+   "area": "China",
+   "level": 2,
+   "arrivals": 3096,
+   "arrivals_male": 1469,
+   "arrivals_foreign": 2789,
+   "departures": 1845,
+   "departures_male": 990,
+   "departures_foreign": 1580,
+   "balance": 1251
+  },
+  {
+   "area": "Georgien",
+   "level": 2,
+   "arrivals": 2148,
+   "arrivals_male": 1312,
+   "arrivals_foreign": 2117,
+   "departures": 1285,
+   "departures_male": 849,
+   "departures_foreign": 1267,
+   "balance": 863
+  },
+  {
+   "area": "Indien",
+   "level": 2,
+   "arrivals": 7992,
+   "arrivals_male": 4570,
+   "arrivals_foreign": 7925,
+   "departures": 3073,
+   "departures_male": 2082,
+   "departures_foreign": 2959,
+   "balance": 4919
+  },
+  {
+   "area": "Irak",
+   "level": 2,
+   "arrivals": 1126,
+   "arrivals_male": 663,
+   "arrivals_foreign": 1073,
+   "departures": 237,
+   "departures_male": 143,
+   "departures_foreign": 153,
+   "balance": 889
+  },
+  {
+   "area": "Iran",
+   "level": 2,
+   "arrivals": 1807,
+   "arrivals_male": 924,
+   "arrivals_foreign": 1784,
+   "departures": 102,
+   "departures_male": 55,
+   "departures_foreign": 77,
+   "balance": 1705
+  },
+  {
+   "area": "Syrien",
+   "level": 2,
+   "arrivals": 9410,
+   "arrivals_male": 7052,
+   "arrivals_foreign": 9402,
+   "departures": 104,
+   "departures_male": 68,
+   "departures_foreign": 86,
+   "balance": 9306
+  },
+  {
+   "area": "Vietnam",
+   "level": 2,
+   "arrivals": 1137,
+   "arrivals_male": 486,
+   "arrivals_foreign": 1100,
+   "departures": 386,
+   "departures_male": 189,
+   "departures_foreign": 314,
+   "balance": 751
+  },
+  {
+   "area": "Australien und Ozeanien",
+   "level": 1,
+   "arrivals": 777,
+   "arrivals_male": 397,
+   "arrivals_foreign": 370,
+   "departures": 972,
+   "departures_male": 478,
+   "departures_foreign": 343,
+   "balance": -195
+  },
+  {
+   "area": "Angabe",
+   "level": 0,
+   "arrivals": 14191,
+   "arrivals_male": 10439,
+   "arrivals_foreign": 3672,
+   "departures": 20019,
+   "departures_male": 14168,
+   "departures_foreign": 6170,
+   "balance": -5828
+  }
+ ],
+ "by_age_group": [
+  {
+   "age_group": "unter 5",
+   "arrivals": 18672,
+   "arrivals_foreign": 12959,
+   "departures": 13224,
+   "departures_foreign": 6966,
+   "balance": 5448,
+   "balance_foreign": 5993
+  },
+  {
+   "age_group": "5",
+   "arrivals": 17198,
+   "arrivals_foreign": 13667,
+   "departures": 12001,
+   "departures_foreign": 7549,
+   "balance": 5197,
+   "balance_foreign": 6118
+  },
+  {
+   "age_group": "10",
+   "arrivals": 15160,
+   "arrivals_foreign": 12481,
+   "departures": 9224,
+   "departures_foreign": 6343,
+   "balance": 5936,
+   "balance_foreign": 6138
+  },
+  {
+   "age_group": "15",
+   "arrivals": 29381,
+   "arrivals_foreign": 22004,
+   "departures": 15725,
+   "departures_foreign": 9340,
+   "balance": 13656,
+   "balance_foreign": 12664
+  },
+  {
+   "age_group": "20",
+   "arrivals": 70864,
+   "arrivals_foreign": 51708,
+   "departures": 52615,
+   "departures_foreign": 30214,
+   "balance": 18249,
+   "balance_foreign": 21494
+  },
+  {
+   "age_group": "25",
+   "arrivals": 67115,
+   "arrivals_foreign": 48371,
+   "departures": 53319,
+   "departures_foreign": 29482,
+   "balance": 13796,
+   "balance_foreign": 18889
+  },
+  {
+   "age_group": "30",
+   "arrivals": 48992,
+   "arrivals_foreign": 36364,
+   "departures": 40378,
+   "departures_foreign": 24949,
+   "balance": 8614,
+   "balance_foreign": 11415
+  },
+  {
+   "age_group": "35",
+   "arrivals": 37309,
+   "arrivals_foreign": 28897,
+   "departures": 30429,
+   "departures_foreign": 20106,
+   "balance": 6880,
+   "balance_foreign": 8791
+  },
+  {
+   "age_group": "40",
+   "arrivals": 28054,
+   "arrivals_foreign": 22617,
+   "departures": 23144,
+   "departures_foreign": 16381,
+   "balance": 4910,
+   "balance_foreign": 6236
+  },
+  {
+   "age_group": "45",
+   "arrivals": 21904,
+   "arrivals_foreign": 18252,
+   "departures": 18884,
+   "departures_foreign": 14251,
+   "balance": 3020,
+   "balance_foreign": 4001
+  },
+  {
+   "age_group": "50",
+   "arrivals": 16460,
+   "arrivals_foreign": 13112,
+   "departures": 15520,
+   "departures_foreign": 11253,
+   "balance": 940,
+   "balance_foreign": 1859
+  },
+  {
+   "age_group": "55",
+   "arrivals": 11990,
+   "arrivals_foreign": 8356,
+   "departures": 12261,
+   "departures_foreign": 7563,
+   "balance": -271,
+   "balance_foreign": 793
+  },
+  {
+   "age_group": "60",
+   "arrivals": 8494,
+   "arrivals_foreign": 5342,
+   "departures": 9415,
+   "departures_foreign": 4994,
+   "balance": -921,
+   "balance_foreign": 348
+  },
+  {
+   "age_group": "65",
+   "arrivals": 5557,
+   "arrivals_foreign": 3045,
+   "departures": 6361,
+   "departures_foreign": 3195,
+   "balance": -804,
+   "balance_foreign": -150
+  },
+  {
+   "age_group": "70",
+   "arrivals": 3201,
+   "arrivals_foreign": 1682,
+   "departures": 3313,
+   "departures_foreign": 1633,
+   "balance": -112,
+   "balance_foreign": 49
+  },
+  {
+   "age_group": "75 – 80",
+   "arrivals": 1924,
+   "arrivals_foreign": 899,
+   "departures": 2182,
+   "departures_foreign": 1025,
+   "balance": -258,
+   "balance_foreign": -126
+  },
+  {
+   "age_group": "80 – 85",
+   "arrivals": 1762,
+   "arrivals_foreign": 521,
+   "departures": 2010,
+   "departures_foreign": 721,
+   "balance": -248,
+   "balance_foreign": -200
+  },
+  {
+   "age_group": "85 – 90",
+   "arrivals": 1139,
+   "arrivals_foreign": 240,
+   "departures": 1383,
+   "departures_foreign": 366,
+   "balance": -244,
+   "balance_foreign": -126
+  }
+ ]
+}

@@ -57,6 +57,12 @@ jobs:
           path: .cache/stala-auslaender-j24.pdf
           key: stala-auslaender-j24-v1
 
+      - name: Amtlichen Wanderungsbericht zwischenspeichern
+        uses: actions/cache@v4
+        with:
+          path: .cache/stala-wanderung-a3-1j-2023.pdf
+          key: stala-wanderung-a3-1j-2023-v1
+
       - name: Zensus-Gitter zu Staatsangehörigkeit zwischenspeichern
         uses: actions/cache@v4
         with:
@@ -105,6 +111,9 @@ jobs:
       # Gemeindegrenzen.
       - name: Wanderungs- und Einbürgerungskontext aufbereiten
         run: python scripts/prepare_bw_migration_context.py
+
+      - name: Wanderungsbewegung aus dem amtlichen Bericht lesen
+        run: python scripts/prepare_bw_migration_flows.py
 
       - name: Einrichtungsverzeichnis auf Ortsebene aufbauen
         run: python scripts/build_town_institutions.py
@@ -173,6 +182,7 @@ jobs:
             docs/data/municipal-demography-2022.json \
             docs/data/institutions.json \
             docs/data/bw-migration-context.json \
+            docs/data/bw-migration-flows-2023.json \
             docs/data/bases.json \
             docs/data/external-references.json \
             docs/data/district-timeseries.json \
