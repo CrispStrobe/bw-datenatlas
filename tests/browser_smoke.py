@@ -180,7 +180,13 @@ with sync_playwright() as pw:
     # The gaps must be on the page. A thin map with no explanation misleads.
     coverage=page.locator('#inst-coverage')
     check('the layer names the directories it read',coverage.is_visible())
-    check('the coverage panel names the directories read','DITIB' in coverage.inner_text())
+    # Die Quellenliste ist jetzt zugeklappt, damit sie nicht die halbe Karte verdeckt.
+    # Der Test klappt sie auf und prüft damit beides: dass sie sich öffnen lässt und
+    # dass die Verzeichnisse darin stehen.
+    page.locator('#inst-coverage summary').click()
+    page.wait_for_timeout(150)
+    check('the coverage panel opens and names the directories read',
+          'DITIB' in coverage.inner_text())
     # Every point must lead back to where it came from, or the layer is an assertion.
     # Close-together institutions are grouped into one circle carrying their number;
     # 581 dots at state scale is an ink blot in which a city is one smudge.
