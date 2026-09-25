@@ -115,6 +115,9 @@ jobs:
       - name: Ausländerzentralregister je Kreis aufbereiten
         run: python scripts/prepare_district_azr.py
 
+      - name: Herkünfte je Kreis gegen das Bundesregister prüfen
+        run: python scripts/check_district_origins_against_azr.py
+
       - name: Wanderungsbewegung aus dem amtlichen Bericht lesen
         run: python scripts/prepare_bw_migration_flows.py
 
