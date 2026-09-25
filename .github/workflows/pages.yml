@@ -103,6 +103,9 @@ jobs:
       # Hier wird nur der Auszug auf Ortsebene zur Karte gebaut — ohne Netz, ohne
       # Geokodierung, allein aus der eingecheckten Eingabedatei und den amtlichen
       # Gemeindegrenzen.
+      - name: Wanderungs- und Einbürgerungskontext aufbereiten
+        run: python scripts/prepare_bw_migration_context.py
+
       - name: Einrichtungsverzeichnis auf Ortsebene aufbauen
         run: python scripts/build_town_institutions.py
 
@@ -169,6 +172,7 @@ jobs:
             docs/data/state-age-pyramid-2025.json \
             docs/data/municipal-demography-2022.json \
             docs/data/institutions.json \
+            docs/data/bw-migration-context.json \
             docs/data/bases.json \
             docs/data/external-references.json \
             docs/data/district-timeseries.json \

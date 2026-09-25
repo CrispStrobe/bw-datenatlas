@@ -20,6 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 READ_BY_THE_BUILD = [
     'inputs/institutions-town.json',
     'inputs/postcodes-bw.json',
+    'inputs/stala-aufenthaltsdauer-staatsangehoerigkeit-2024.csv',
+    'inputs/stala-einbuergerungen-2000-2025.csv',
     'inputs/landtag-affiliation-corroboration.json',
     'inputs/igmg-landtag-15-362.json',
 ]
