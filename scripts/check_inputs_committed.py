@@ -23,6 +23,7 @@ READ_BY_THE_BUILD = [
     'inputs/stala-aufenthaltsdauer-staatsangehoerigkeit-2024.csv',
     'inputs/stala-einbuergerungen-2000-2025.csv',
     'inputs/destatis-migration-integration-regionen.zip',
+    'inputs/stala-auslaenderanteil-gemeinden-2025.csv',
     'inputs/landtag-affiliation-corroboration.json',
     'inputs/igmg-landtag-15-362.json',
 ]

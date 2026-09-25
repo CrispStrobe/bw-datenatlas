@@ -1,6 +1,6 @@
 # BW-Datenatlas: muslimische Bevölkerung und demografische Grundlagen
 
-**Statisches GitHub-Pages-Projekt · Version 1.0.0 · zusammengestellt am 23.09.2026**
+**Statisches GitHub-Pages-Projekt · zusammengestellt am 25.09.2026**
 
 Interaktive Kartenansichten, Herkunftsdiagramme, Datenexplorer, Quellenprüfung und CSV-/JSON-/SVG-Exporte. HTML, CSS und JavaScript ohne Frontend-Framework, ohne API-Schlüssel, ohne Kartenkachelserver und ohne externe Browserbibliotheken. Die Benutzeroberfläche ist deutsch und für Desktop und Smartphone angelegt.
 
@@ -12,6 +12,29 @@ Interaktive Kartenansichten, Herkunftsdiagramme, Datenexplorer, Quellenprüfung 
 - GitHub Pages: https://crispstrobe.github.io/bw-datenatlas/
 
 Der GitHub-Workflow baut jede abgeleitete Datei aus den Originalquellen neu auf — BKG-Archiv, amtlicher Ausländerbericht, Zensus-Gitter — und bricht ab, wenn eine Modelldatei nicht byteidentisch reproduziert wird. 44 von 44 Kreisen und 1.101 von 1.101 Gemeinden sind den amtlichen Geometrien zugeordnet, ohne offene Fälle.
+
+## Zwei Repositories
+
+Dieses Repository veröffentlicht den Atlas. Die Modellrechnung, die amtlichen Geometrien
+und die Zensus-Auswertungen liegen vollständig hier und werden bei jedem Push neu gebaut
+und gegen das Eingecheckte geprüft.
+
+Das Einrichtungsverzeichnis steht **auf Ortsebene**: welche Einrichtung es gibt, in
+welcher Gemeinde, in welchem Verband, mit welchen Belegen — ohne Straße. Die
+Straßenanschriften, die Prüfskripte und die Verbandsverzeichnisse liegen in einem
+getrennten, nicht öffentlichen Repository, das den Auszug für dieses hier erzeugt.
+
+Der Grund ist nicht die Lizenz — das Verzeichnis bleibt ODbL, weil OpenStreetMap darin
+steckt — sondern was eine einzelne Datei leicht macht. Sechshundert Impressen und eine
+gepflegte Landesliste sind verschiedene Gegenstände, und es ist der zweite, dessen
+Veröffentlichung der Zentralrat der Muslime mit Verweis auf Sicherheitsgründe eingestellt
+hat; das Bundeskriminalamt zählte für 2025 vorläufig 53 Angriffe auf Moscheen
+(Bundestags-Drucksachen 21/5917, 21/2705). Dieser Atlas zeigt deshalb, wo es Gemeinden
+gibt, und verlinkt für alles Weitere die Quelle.
+
+Was das kostet, steht dazu: Die Ortsebenen-Datei ist für dieses Repository eine
+**Eingabe**, keine Ableitung. Alles, was darauf aufbaut, wird weiterhin byteidentisch
+nachgebaut und geprüft; die Datei selbst kann die CI hier nicht neu herleiten.
 
 ## Was der Atlas zeigt und was er nicht zeigt
 
@@ -35,8 +58,31 @@ Ebenso bleibt Tabelle 2 des BAMF-Berichts eine Herkunftsstatistik für **Deutsch
 | Unter 25-Jährige mit Migrationshintergrund | 44 Kreise, Mikrozensus 2024 | Altersgliederung; schraffiert, wo zu viele Altersgruppen geheim gehalten sind. |
 | Zweite Generation mit deutschem Pass | 44 Kreise, Mikrozensus 2024 | Der Teil der Bevölkerung, den die Ausländerstatistik nicht sieht. |
 | Veränderung Migrationshintergrund | 44 Kreise, 2021–2025 | Entwicklung in Prozentpunkten; das Religionsmodell wird nicht rückgerechnet. |
+| Ausländische Staatsangehörige · Gemeindeanteil | 1.101 Gemeinden, 2025 | Gemessen, nicht modelliert — die einzige direkt erhobene Größe, die neben der Modellrechnung auf derselben Ebene steht. |
+| Aus den Anwerbestaaten | 44 Kreise, AZR 31.12.2025 | Anteil **an der ausländischen Bevölkerung des Kreises**, nicht an seinen Einwohnern. |
+| Türkische Staatsangehörige | 44 Kreise, AZR 31.12.2025 | Ebenso ein Anteil an den Ausländern; Eingebürgerte haben einen deutschen Pass und fehlen. |
+| Seit 25 Jahren oder länger hier | 44 Kreise, AZR 31.12.2025 | Verweildauer der ausländischen Bevölkerung; Bundesmedian als Strich im Balken. |
+| Islamische und alevitische Einrichtungen | Ortsebene, 1.101 Gemeinden | Punkt in der Ortsmitte, kein Gebäude; jeder Eintrag verlinkt seinen Beleg. |
 
-Dazu Herkunftsdiagramme für Deutschland und BW, ein Datenexplorer mit allen 6.367 Beobachtungen aus 40 Datensätzen, Gebietstabellen sowie CSV-, JSON- und SVG-Exporte.
+Dazu Herkunftsdiagramme für Deutschland und BW, ein Datenexplorer mit allen 6.367
+Beobachtungen aus 40 Datensätzen, Gebietstabellen sowie CSV-, JSON- und SVG-Exporte.
+
+Seit September 2026 außerdem, alles amtlich und quellenverlinkt: Wanderungsbewegung 2023
+nach Kreisen, Herkunfts- und Zielgebieten und Altersgruppen aus dem Bericht A III 1-j;
+Zu- und Fortzüge des Landes seit 1995; durchschnittliche Aufenthaltsdauer nach
+Staatsangehörigkeit; Einbürgerungen seit 2000; und die Kennzahlen des
+Ausländerzentralregisters je Kreis.
+
+**Warum die Modellrechnung nicht auf neuere Registerdaten wechselt.** Der Landesbericht
+A I 4-j nennt 25 Staatsangehörigkeiten je Kreis, darunter Kosovo, Bosnien-Herzegowina,
+Afghanistan, Irak und Nordmazedonien. Die frei herunterladbaren Alternativen nennen
+weniger: die Kartendatei des Bundes fünf, der nationale Jahresbericht die fünf größten je
+Kreis, und die GENESIS-Tabellen des Landes kennen überhaupt keine Kreisgliederung. Die
+vollständige Tabelle (GENESIS 12521-0041, rund 215 Staatsangehörigkeiten je Kreis)
+existiert, ihr direkter CSV-Abruf ist aber zurückgezogen. Ein Wechsel würde das Modell
+also vergröbern, nicht verfeinern. Geprüft wird es trotzdem: 220 Vergleiche über 44
+Kreise und fünf Länder gegen das Bundesregister, alle innerhalb der Toleranz, die ein
+Jahr Abstand zwischen den Stichtagen zulässt.
 
 Die neuesten Religionsmodellwerte beziehen sich auf **2025**. Der Projektstand 2026 ist kein neues Religionsmessjahr.
 

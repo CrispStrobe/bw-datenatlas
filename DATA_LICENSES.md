@@ -93,30 +93,52 @@ beziehungsweise liegen als reduzierte Auszüge in `inputs/`.
 
 ## Einrichtungsverzeichnis
 
-Ausschließlich **Einrichtungsdaten** aus den Verzeichnissen, die die Verbände selbst
-veröffentlichen. Namentliche Ansprechpartner, private E-Mail-Adressen und Mobilnummern
-werden nicht erhoben, nicht gespeichert und nicht veröffentlicht: Die Verknüpfung
-benannter Personen mit einer Religionsgemeinschaft wäre eine besondere Kategorie
-personenbezogener Daten nach Artikel 9 DSGVO.
+Das Verzeichnis steht hier **auf Ortsebene**: welche Einrichtung es gibt, in welcher
+Gemeinde, in welchem Verband und mit welchen Belegen. Straßen stehen nicht darin, und
+das ist Absicht.
 
-- Alevitische Gemeinde Deutschland, Ortsgemeinden: https://alevi.com/unsere-ortsgemeinden/
-- LBE-BW e.V., Mitgliederverzeichnis: https://lbe-bw.de/mitglieder-lbe/
+Einzeln veröffentlichte Anschriften und eine gepflegte Landesliste sind nicht dasselbe.
+Sechshundert Impressen und eine Datei sind verschiedene Gegenstände, und es ist der
+zweite, dessen Veröffentlichung der Zentralrat der Muslime mit Verweis auf
+Sicherheitsgründe eingestellt hat. Das Bundeskriminalamt zählte für 2025 vorläufig 53
+Angriffe auf Moscheen (Bundestags-Drucksachen 21/5917 und 21/2705). Dieser Atlas nennt
+deshalb den Ort und verlinkt den Beleg; wer die Anschrift sucht, folgt ihm zu der Seite,
+auf der die Einrichtung selbst oder eine Behörde sie nennt. Zusammengeführt wird sie
+hier nicht.
 
-**Aufnahmeregel:** Aufgenommen wird nur, wer seine Anwesenheit selbst veröffentlicht.
-Für Einrichtungen im Umfeld der Hizmet-Bewegung gilt das besonders. Der Bundesverband
-(Stiftung Dialog und Bildung) veröffentlicht kein Verzeichnis einzelner Vereine;
-aufgenommen sind ausschließlich jene, die die LBE-BW selbst mit Anschrift auf ihrer
-Website führt. Eine aus Drittquellen zusammengetragene Liste würde Menschen erfassen,
-die sich bewusst nicht öffentlich zeigen.
+Die Prüfarbeit — Verzeichnisse abrufen, Anschriften gegen zwei unabhängige Quellen
+halten, geokodieren — liegt in einem getrennten, nicht öffentlichen Repository. Von dort
+kommt der Auszug, den dieses Repository veröffentlicht.
+
+**Keine Personenangaben.** Namentliche Ansprechpartner, private E-Mail-Adressen und
+Mobilnummern werden nicht erhoben, nicht gespeichert und nicht veröffentlicht: Die
+Verknüpfung benannter Personen mit einer Religionsgemeinschaft wäre eine besondere
+Kategorie personenbezogener Daten nach Artikel 9 DSGVO. Wo die einzige auffindbare
+Anschrift die Privatwohnung einer namentlich genannten Person war, ist die Einrichtung
+ohne Anschrift geblieben.
+
+**Aufnahmeregel:** Aufgenommen wird, was öffentlich bekannt und öffentlich belegt ist.
+Jeder Eintrag nennt die Quelle, aus der er stammt; wo ein zweiter, unabhängiger Beleg
+gefunden wurde, steht auch der dabei.
+
+**Verbandszugehörigkeit ist eine eigene Aussage.** Dass an einem Ort eine Einrichtung
+besteht, und dass sie einem bestimmten Verband angehört, sind zwei Behauptungen. Die
+zweite braucht eine Quelle, die sie auch trifft, und sie wird mit Urheber und Datum
+zitiert — nicht von diesem Atlas behauptet. Dasselbe gilt für Aussagen, die Behörden über
+eine Einrichtung gemacht haben: Sie stehen wörtlich da, mit Stand, oder gar nicht.
+
+**Punkte auf der Karte.** Jeder Punkt liegt auf dem Beschriftungspunkt seiner Gemeinde
+aus den amtlichen Grenzen (BKG VG250) und bezeichnet kein Gebäude. Der Bau rechnet die
+Koordinate selbst aus und bricht ab, wenn in einem Feld eine Anschrift steht — auch im
+Fließtext einer Fußnote.
 
 Die Liste ist bewusst unvollständig und nennt die nicht erfassten Verbände ausdrücklich.
-Eine Einrichtung ist keine Bevölkerungszahl; die Punkte gehen nicht in die
-Modellrechnung ein.
+Eine Einrichtung ist keine Bevölkerungszahl; die Punkte gehen in keine Modellrechnung
+ein.
 
-Koordinaten: soweit der Verband selbst welche veröffentlicht, werden diese übernommen;
-sonst einmalig über Nominatim ermittelt und im Repository zwischengespeichert.
-Quellenvermerk: © OpenStreetMap-Mitwirkende, ODbL. Jeder Treffer muss in
-Baden-Württemberg liegen und durch Ort oder exakte Postleitzahl bestätigt sein.
+Das Verzeichnis enthält Daten aus OpenStreetMap und wird deshalb als abgeleitete
+Datenbank unter der Open Database License (ODbL) 1.0 bereitgestellt;
+© OpenStreetMap-Mitwirkende.
 
 ## Externe Gegenproben
 
