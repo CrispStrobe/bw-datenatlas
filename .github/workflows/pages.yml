@@ -112,6 +112,9 @@ jobs:
       - name: Wanderungs- und Einbürgerungskontext aufbereiten
         run: python scripts/prepare_bw_migration_context.py
 
+      - name: Herkunftsgruppen je Kreis aufbereiten
+        run: python scripts/prepare_district_origin_groups.py
+
       - name: Ausländeranteil je Gemeinde aufbereiten
         run: python scripts/prepare_municipal_foreign_share.py
 
@@ -194,6 +197,7 @@ jobs:
             docs/data/bw-migration-flows-2023.json \
             docs/data/district-azr-2025.json \
             docs/data/municipal-foreign-share-2025.json \
+            docs/data/district-origin-groups-2025.json \
             docs/data/bases.json \
             docs/data/external-references.json \
             docs/data/district-timeseries.json \

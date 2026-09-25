@@ -194,6 +194,23 @@ function renderDetail(){
         `<div class="cohort-row"><span>${esc(name)}</span><span class="cohort-track"><i style="width:${max?(100*v.share_of_foreign_percent/max).toFixed(1):0}%"></i></span><span class="cohort-value">${pf.format(v.share_of_foreign_percent)} %</span></div>`
       ).join('')+'</div>'
       +`<span class="meta"><span class="kind-tag kind-register">Register</span> Ausländerzentralregister, Stand 31.12.2024: ${integer(nat.foreign_total)} Personen. Die Karte oben zeigt ${integer(d.foreign)} aus der Bevölkerungsfortschreibung zum 30.11.2024 — beide Quellen zählen nicht dasselbe zum selben Stichtag (<a href="#grundlagen">Grundlagen</a>). ${pf.format(100*named/nat.foreign_total)} % entfallen auf die ${rows.length} ausgewiesenen Staatsangehörigkeiten, der Rest auf alle übrigen Staaten. Staatsangehörigkeit ist keine Religionszugehörigkeit.${state.layer==='foreign_share'?'':' Ebene „Ausländische Staatsangehörige“ zeigt alle.'}</span></div>`;
+  // Die 25 genannten Staaten sind 83 Prozent der ausländischen Bevölkerung des Landes
+  // und in den Universitätsstädten nur zwei Drittel. Was sie offenlassen, steht hier —
+  // nach Weltregionen, weil feiner nichts vorliegt, und ausdrücklich als das, was die
+  // Länderliste nicht beschreibt.
+  const groups=OGR?OGR.districts.find(r=>r.id===d.id):null;
+  if(groups&&nat){
+   const named=rows.reduce((a,r)=>a+r.value,0);
+   const rest=nat.foreign_total-named;
+   if(rest>0){
+    const regions=OGR.disjoint_groups.map(name=>[name,groups.groups[name]]).filter(([,v])=>v);
+    html+=metric('Was die Länderliste offenlässt',integer(rest)+' Personen',
+      '<span class="kind-tag kind-register">Register</span> Die '+rows.length+' ausgewiesenen Staatsangehörigkeiten beschreiben '
+      +pf.format(100*named/nat.foreign_total)+' % der ausländischen Bevölkerung dieses Kreises. Für den Rest gibt es keine Länderangabe, wohl aber Weltregionen: '
+      +regions.map(([name,value])=>esc(name)+' '+integer(value)).join(' · ')
+      +'. Stand '+esc(OGR.reference_date)+', GENESIS 12521-0041. Diese Regionen überschneiden sich nicht und ergeben zusammen die Gesamtzahl; andere Gruppen derselben Tabelle tun das nicht.');
+   }
+  }
   }
   const ctx=CTX?CTX.districts[d.id]:null;
   if(ctx&&ctx.mh&&ctx.mh.employed_pct!==null){
@@ -498,6 +515,7 @@ function renderOrigins(){const v=originView();$('origin-chart-title').textConten
 function renderContext(){renderComposition();renderBwNationalities();renderDistrictAzr();renderResidence();renderNaturalisations();renderAreaFlows();renderFlows();}
 const AZR=typeof window!=='undefined'?window.ATLAS_DISTRICT_AZR:null;
 const MUNI_FOREIGN=typeof window!=='undefined'?window.ATLAS_MUNICIPAL_FOREIGN:null;
+const OGR=typeof window!=='undefined'?window.ATLAS_ORIGIN_GROUPS:null;
 // Jeder Anteil hier bezieht sich auf die ausländische Bevölkerung des Kreises, nicht auf
 // seine Einwohner. Das ist die naheliegendste Fehllesart dieser Zahlen, also steht der
 // Nenner in jeder Beschriftung und nicht nur in der Fußnote.
