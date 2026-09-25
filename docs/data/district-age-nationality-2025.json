@@ -1,0 +1,5183 @@
+{
+ "type": "district_population_by_age_and_nationality",
+ "schema_version": "1.0",
+ "reference_date": "2025-12-31",
+ "source": "Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle 12411-03-03-4-B: Bevölkerung nach Geschlecht, Nationalität und Altersgruppen, Fortschreibung des Bevölkerungsstandes",
+ "source_url": "https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B",
+ "licence": "Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0), © Statistisches Bundesamt (Destatis)",
+ "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+ "what_foreign_means": "„Ausländisch“ heißt ohne deutschen Pass. Eingebürgerte und ihre in Deutschland geborenen Kinder zählen hier als Deutsche. Der Altersaufbau einer Herkunftsgruppe ist deshalb nicht der hier gezeigte: Gerade die älteren Jahrgänge lange ansässiger Gemeinschaften fehlen in der Spalte.",
+ "age_group_order": [
+  "unter 3 Jahre",
+  "3 bis unter 6 Jahre",
+  "6 bis unter 10 Jahre",
+  "10 bis unter 15 Jahre",
+  "15 bis unter 18 Jahre",
+  "18 bis unter 20 Jahre",
+  "20 bis unter 25 Jahre",
+  "25 bis unter 30 Jahre",
+  "30 bis unter 35 Jahre",
+  "35 bis unter 40 Jahre",
+  "40 bis unter 45 Jahre",
+  "45 bis unter 50 Jahre",
+  "50 bis unter 55 Jahre",
+  "55 bis unter 60 Jahre",
+  "60 bis unter 65 Jahre",
+  "65 bis unter 70 Jahre",
+  "70 bis unter 75 Jahre",
+  "75 bis unter 80 Jahre",
+  "80 bis unter 85 Jahre",
+  "85 bis unter 90 Jahre",
+  "90 Jahre und mehr"
+ ],
+ "districts": [
+  {
+   "id": "08111",
+   "name": "Stuttgart, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 15099,
+     "german": 12288,
+     "foreign": 2811
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 15839,
+     "german": 12671,
+     "foreign": 3168
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 21613,
+     "german": 17100,
+     "foreign": 4513
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 26051,
+     "german": 20888,
+     "foreign": 5163
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 16346,
+     "german": 13183,
+     "foreign": 3163
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 11991,
+     "german": 9370,
+     "foreign": 2621
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 39600,
+     "german": 28875,
+     "foreign": 10725
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 52281,
+     "german": 34592,
+     "foreign": 17689
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 51344,
+     "german": 33681,
+     "foreign": 17663
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 47524,
+     "german": 31224,
+     "foreign": 16300
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 41795,
+     "german": 27338,
+     "foreign": 14457
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 39436,
+     "german": 25846,
+     "foreign": 13590
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 37712,
+     "german": 25432,
+     "foreign": 12280
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 40572,
+     "german": 30109,
+     "foreign": 10463
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 38005,
+     "german": 29688,
+     "foreign": 8317
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 29973,
+     "german": 23747,
+     "foreign": 6226
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 23889,
+     "german": 18443,
+     "foreign": 5446
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 20459,
+     "german": 15310,
+     "foreign": 5149
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 17987,
+     "german": 15084,
+     "foreign": 2903
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 15000,
+     "german": 13304,
+     "foreign": 1696
+    },
+    "90 Jahre und mehr": {
+     "total": 6849,
+     "german": 6139,
+     "foreign": 710
+    }
+   },
+   "population": 609365,
+   "german": 444312,
+   "foreign": 165053,
+   "foreign_share_percent": 27.1,
+   "under_25_share_foreign_percent": 19.5,
+   "under_25_share_german_percent": 25.7
+  },
+  {
+   "id": "08115",
+   "name": "Böblingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 11273,
+     "german": 9447,
+     "foreign": 1826
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 12523,
+     "german": 10347,
+     "foreign": 2176
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 16969,
+     "german": 13976,
+     "foreign": 2993
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 20057,
+     "german": 16585,
+     "foreign": 3472
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 11792,
+     "german": 9895,
+     "foreign": 1897
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 7827,
+     "german": 6488,
+     "foreign": 1339
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 18808,
+     "german": 15109,
+     "foreign": 3699
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 22349,
+     "german": 15812,
+     "foreign": 6537
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 24960,
+     "german": 16962,
+     "foreign": 7998
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 28204,
+     "german": 19695,
+     "foreign": 8509
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 26897,
+     "german": 18975,
+     "foreign": 7922
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 25386,
+     "german": 18080,
+     "foreign": 7306
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 24607,
+     "german": 18237,
+     "foreign": 6370
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 29745,
+     "german": 24520,
+     "foreign": 5225
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 29046,
+     "german": 24988,
+     "foreign": 4058
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 23513,
+     "german": 20550,
+     "foreign": 2963
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 18282,
+     "german": 15636,
+     "foreign": 2646
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 14815,
+     "german": 12359,
+     "foreign": 2456
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 12966,
+     "german": 11622,
+     "foreign": 1344
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 10489,
+     "german": 9802,
+     "foreign": 687
+    },
+    "90 Jahre und mehr": {
+     "total": 4221,
+     "german": 4009,
+     "foreign": 212
+    }
+   },
+   "population": 394729,
+   "german": 313094,
+   "foreign": 81635,
+   "foreign_share_percent": 20.7,
+   "under_25_share_foreign_percent": 21.3,
+   "under_25_share_german_percent": 26.1
+  },
+  {
+   "id": "08116",
+   "name": "Esslingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 14326,
+     "german": 12245,
+     "foreign": 2081
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 15906,
+     "german": 13482,
+     "foreign": 2424
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 21178,
+     "german": 17907,
+     "foreign": 3271
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 25387,
+     "german": 21397,
+     "foreign": 3990
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 15577,
+     "german": 13081,
+     "foreign": 2496
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 10473,
+     "german": 8783,
+     "foreign": 1690
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 27914,
+     "german": 21874,
+     "foreign": 6040
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 32504,
+     "german": 22870,
+     "foreign": 9634
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 34653,
+     "german": 23786,
+     "foreign": 10867
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 36747,
+     "german": 26205,
+     "foreign": 10542
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 34846,
+     "german": 24989,
+     "foreign": 9857
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 33559,
+     "german": 24267,
+     "foreign": 9292
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 34058,
+     "german": 25555,
+     "foreign": 8503
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 41436,
+     "german": 34423,
+     "foreign": 7013
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 40666,
+     "german": 35221,
+     "foreign": 5445
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 32326,
+     "german": 28404,
+     "foreign": 3922
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 25120,
+     "german": 21887,
+     "foreign": 3233
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 21217,
+     "german": 18059,
+     "foreign": 3158
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 17686,
+     "german": 15963,
+     "foreign": 1723
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 14560,
+     "german": 13673,
+     "foreign": 887
+    },
+    "90 Jahre und mehr": {
+     "total": 6189,
+     "german": 5886,
+     "foreign": 303
+    }
+   },
+   "population": 536328,
+   "german": 429957,
+   "foreign": 106371,
+   "foreign_share_percent": 19.8,
+   "under_25_share_foreign_percent": 20.7,
+   "under_25_share_german_percent": 25.3
+  },
+  {
+   "id": "08117",
+   "name": "Göppingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 6886,
+     "german": 5703,
+     "foreign": 1183
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 7714,
+     "german": 6319,
+     "foreign": 1395
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 10791,
+     "german": 8810,
+     "foreign": 1981
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 12575,
+     "german": 10233,
+     "foreign": 2342
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 7478,
+     "german": 6170,
+     "foreign": 1308
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 5062,
+     "german": 4157,
+     "foreign": 905
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 12778,
+     "german": 10150,
+     "foreign": 2628
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 14517,
+     "german": 10384,
+     "foreign": 4133
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 15557,
+     "german": 11053,
+     "foreign": 4504
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 17137,
+     "german": 12216,
+     "foreign": 4921
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 16313,
+     "german": 11837,
+     "foreign": 4476
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 15381,
+     "german": 11073,
+     "foreign": 4308
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 15856,
+     "german": 11944,
+     "foreign": 3912
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 19816,
+     "german": 16623,
+     "foreign": 3193
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 20251,
+     "german": 17642,
+     "foreign": 2609
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 16993,
+     "german": 15230,
+     "foreign": 1763
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 13417,
+     "german": 11949,
+     "foreign": 1468
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 10696,
+     "german": 9329,
+     "foreign": 1367
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 8539,
+     "german": 7808,
+     "foreign": 731
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7284,
+     "german": 6924,
+     "foreign": 360
+    },
+    "90 Jahre und mehr": {
+     "total": 3007,
+     "german": 2871,
+     "foreign": 136
+    }
+   },
+   "population": 258048,
+   "german": 208425,
+   "foreign": 49623,
+   "foreign_share_percent": 19.2,
+   "under_25_share_foreign_percent": 23.7,
+   "under_25_share_german_percent": 24.7
+  },
+  {
+   "id": "08118",
+   "name": "Ludwigsburg, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 14901,
+     "german": 12877,
+     "foreign": 2024
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 16668,
+     "german": 14119,
+     "foreign": 2549
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 22170,
+     "german": 18545,
+     "foreign": 3625
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 26539,
+     "german": 22239,
+     "foreign": 4300
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 16097,
+     "german": 13340,
+     "foreign": 2757
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 10505,
+     "german": 8734,
+     "foreign": 1771
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 26112,
+     "german": 20584,
+     "foreign": 5528
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 30840,
+     "german": 21674,
+     "foreign": 9166
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 33914,
+     "german": 23154,
+     "foreign": 10760
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 37409,
+     "german": 26322,
+     "foreign": 11087
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 35312,
+     "german": 25291,
+     "foreign": 10021
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 34562,
+     "german": 25035,
+     "foreign": 9527
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 33676,
+     "german": 24733,
+     "foreign": 8943
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 41540,
+     "german": 34231,
+     "foreign": 7309
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 39852,
+     "german": 34265,
+     "foreign": 5587
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 32343,
+     "german": 28386,
+     "foreign": 3957
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 25120,
+     "german": 21818,
+     "foreign": 3302
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 20261,
+     "german": 17315,
+     "foreign": 2946
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 17031,
+     "german": 15372,
+     "foreign": 1659
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 13896,
+     "german": 13023,
+     "foreign": 873
+    },
+    "90 Jahre und mehr": {
+     "total": 5706,
+     "german": 5451,
+     "foreign": 255
+    }
+   },
+   "population": 534454,
+   "german": 426508,
+   "foreign": 107946,
+   "foreign_share_percent": 20.2,
+   "under_25_share_foreign_percent": 20.9,
+   "under_25_share_german_percent": 25.9
+  },
+  {
+   "id": "08119",
+   "name": "Rems-Murr-Kreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 11432,
+     "german": 9927,
+     "foreign": 1505
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 13184,
+     "german": 11247,
+     "foreign": 1937
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 18034,
+     "german": 15019,
+     "foreign": 3015
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 21159,
+     "german": 17786,
+     "foreign": 3373
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 12519,
+     "german": 10476,
+     "foreign": 2043
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 8526,
+     "german": 7116,
+     "foreign": 1410
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 21746,
+     "german": 17488,
+     "foreign": 4258
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 24697,
+     "german": 18136,
+     "foreign": 6561
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 26982,
+     "german": 19489,
+     "foreign": 7493
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 29242,
+     "german": 21421,
+     "foreign": 7821
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 27806,
+     "german": 20476,
+     "foreign": 7330
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 26789,
+     "german": 19655,
+     "foreign": 7134
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 27364,
+     "german": 20663,
+     "foreign": 6701
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 34824,
+     "german": 29194,
+     "foreign": 5630
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 35236,
+     "german": 30859,
+     "foreign": 4377
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 27868,
+     "german": 24660,
+     "foreign": 3208
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 21807,
+     "german": 19213,
+     "foreign": 2594
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 17628,
+     "german": 15262,
+     "foreign": 2366
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 14535,
+     "german": 13283,
+     "foreign": 1252
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 12273,
+     "german": 11655,
+     "foreign": 618
+    },
+    "90 Jahre und mehr": {
+     "total": 5222,
+     "german": 4986,
+     "foreign": 236
+    }
+   },
+   "population": 438873,
+   "german": 358011,
+   "foreign": 80862,
+   "foreign_share_percent": 18.4,
+   "under_25_share_foreign_percent": 21.7,
+   "under_25_share_german_percent": 24.9
+  },
+  {
+   "id": "08121",
+   "name": "Heilbronn, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3744,
+     "german": 2888,
+     "foreign": 856
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3924,
+     "german": 2881,
+     "foreign": 1043
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5476,
+     "german": 3978,
+     "foreign": 1498
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6465,
+     "german": 4741,
+     "foreign": 1724
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3936,
+     "german": 2902,
+     "foreign": 1034
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3009,
+     "german": 2129,
+     "foreign": 880
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 8856,
+     "german": 5644,
+     "foreign": 3212
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 9891,
+     "german": 5618,
+     "foreign": 4273
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 9853,
+     "german": 5525,
+     "foreign": 4328
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9816,
+     "german": 5734,
+     "foreign": 4082
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8860,
+     "german": 5270,
+     "foreign": 3590
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8427,
+     "german": 5073,
+     "foreign": 3354
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8068,
+     "german": 4964,
+     "foreign": 3104
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 8510,
+     "german": 6091,
+     "foreign": 2419
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 8313,
+     "german": 6518,
+     "foreign": 1795
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 6932,
+     "german": 5807,
+     "foreign": 1125
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 5533,
+     "german": 4687,
+     "foreign": 846
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 4551,
+     "german": 3775,
+     "foreign": 776
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3707,
+     "german": 3239,
+     "foreign": 468
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3280,
+     "german": 3021,
+     "foreign": 259
+    },
+    "90 Jahre und mehr": {
+     "total": 1365,
+     "german": 1290,
+     "foreign": 75
+    }
+   },
+   "population": 132516,
+   "german": 91775,
+   "foreign": 40741,
+   "foreign_share_percent": 30.7,
+   "under_25_share_foreign_percent": 25.2,
+   "under_25_share_german_percent": 27.4
+  },
+  {
+   "id": "08125",
+   "name": "Heilbronn, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 9744,
+     "german": 8507,
+     "foreign": 1237
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 11564,
+     "german": 9920,
+     "foreign": 1644
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 15212,
+     "german": 12968,
+     "foreign": 2244
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 17594,
+     "german": 14807,
+     "foreign": 2787
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 10298,
+     "german": 8668,
+     "foreign": 1630
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 6808,
+     "german": 5674,
+     "foreign": 1134
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 17196,
+     "german": 14025,
+     "foreign": 3171
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 19928,
+     "german": 14879,
+     "foreign": 5049
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 21848,
+     "german": 16075,
+     "foreign": 5773
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 24833,
+     "german": 18853,
+     "foreign": 5980
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 23365,
+     "german": 17779,
+     "foreign": 5586
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 22252,
+     "german": 16847,
+     "foreign": 5405
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 22076,
+     "german": 17063,
+     "foreign": 5013
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 27438,
+     "german": 23468,
+     "foreign": 3970
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 27782,
+     "german": 25022,
+     "foreign": 2760
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 22697,
+     "german": 20868,
+     "foreign": 1829
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 17911,
+     "german": 16519,
+     "foreign": 1392
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 13685,
+     "german": 12454,
+     "foreign": 1231
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 9809,
+     "german": 9164,
+     "foreign": 645
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 8208,
+     "german": 7873,
+     "foreign": 335
+    },
+    "90 Jahre und mehr": {
+     "total": 3456,
+     "german": 3351,
+     "foreign": 105
+    }
+   },
+   "population": 353704,
+   "german": 294784,
+   "foreign": 58920,
+   "foreign_share_percent": 16.7,
+   "under_25_share_foreign_percent": 23.5,
+   "under_25_share_german_percent": 25.3
+  },
+  {
+   "id": "08126",
+   "name": "Hohenlohekreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3174,
+     "german": 2801,
+     "foreign": 373
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3600,
+     "german": 3114,
+     "foreign": 486
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 4803,
+     "german": 4104,
+     "foreign": 699
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 5551,
+     "german": 4726,
+     "foreign": 825
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3447,
+     "german": 2939,
+     "foreign": 508
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2301,
+     "german": 1963,
+     "foreign": 338
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 5941,
+     "german": 4770,
+     "foreign": 1171
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 6873,
+     "german": 5288,
+     "foreign": 1585
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 7236,
+     "german": 5596,
+     "foreign": 1640
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 8020,
+     "german": 6355,
+     "foreign": 1665
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 7306,
+     "german": 5753,
+     "foreign": 1553
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 6865,
+     "german": 5413,
+     "foreign": 1452
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 7135,
+     "german": 5810,
+     "foreign": 1325
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 8933,
+     "german": 7894,
+     "foreign": 1039
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 9236,
+     "german": 8582,
+     "foreign": 654
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 7809,
+     "german": 7373,
+     "foreign": 436
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 6120,
+     "german": 5811,
+     "foreign": 309
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 4328,
+     "german": 4077,
+     "foreign": 251
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3076,
+     "german": 2918,
+     "foreign": 158
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 2720,
+     "german": 2653,
+     "foreign": 67
+    },
+    "90 Jahre und mehr": {
+     "total": 1127,
+     "german": 1115,
+     "foreign": 12
+    }
+   },
+   "population": 115601,
+   "german": 99055,
+   "foreign": 16546,
+   "foreign_share_percent": 14.3,
+   "under_25_share_foreign_percent": 26.6,
+   "under_25_share_german_percent": 24.6
+  },
+  {
+   "id": "08127",
+   "name": "Schwäbisch Hall, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5548,
+     "german": 4779,
+     "foreign": 769
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6387,
+     "german": 5414,
+     "foreign": 973
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8562,
+     "german": 7151,
+     "foreign": 1411
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 9998,
+     "german": 8382,
+     "foreign": 1616
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 5885,
+     "german": 4967,
+     "foreign": 918
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4005,
+     "german": 3291,
+     "foreign": 714
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 10270,
+     "german": 8065,
+     "foreign": 2205
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 11682,
+     "german": 8685,
+     "foreign": 2997
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 12751,
+     "german": 9497,
+     "foreign": 3254
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 14034,
+     "german": 10811,
+     "foreign": 3223
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 13488,
+     "german": 10620,
+     "foreign": 2868
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 12213,
+     "german": 9568,
+     "foreign": 2645
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 12206,
+     "german": 9862,
+     "foreign": 2344
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 15109,
+     "german": 13359,
+     "foreign": 1750
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 15635,
+     "german": 14516,
+     "foreign": 1119
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 13372,
+     "german": 12653,
+     "foreign": 719
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 10731,
+     "german": 10242,
+     "foreign": 489
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 7780,
+     "german": 7379,
+     "foreign": 401
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5074,
+     "german": 4866,
+     "foreign": 208
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4501,
+     "german": 4402,
+     "foreign": 99
+    },
+    "90 Jahre und mehr": {
+     "total": 1833,
+     "german": 1796,
+     "foreign": 37
+    }
+   },
+   "population": 201064,
+   "german": 170305,
+   "foreign": 30759,
+   "foreign_share_percent": 15.3,
+   "under_25_share_foreign_percent": 28.0,
+   "under_25_share_german_percent": 24.7
+  },
+  {
+   "id": "08128",
+   "name": "Main-Tauber-Kreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3332,
+     "german": 2898,
+     "foreign": 434
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3775,
+     "german": 3206,
+     "foreign": 569
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5253,
+     "german": 4458,
+     "foreign": 795
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6085,
+     "german": 5137,
+     "foreign": 948
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3678,
+     "german": 3142,
+     "foreign": 536
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2463,
+     "german": 2079,
+     "foreign": 384
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 6304,
+     "german": 5258,
+     "foreign": 1046
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 6962,
+     "german": 5485,
+     "foreign": 1477
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 7604,
+     "german": 5825,
+     "foreign": 1779
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 8503,
+     "german": 6783,
+     "foreign": 1720
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8234,
+     "german": 6741,
+     "foreign": 1493
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 7683,
+     "german": 6342,
+     "foreign": 1341
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8089,
+     "german": 6821,
+     "foreign": 1268
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 10367,
+     "german": 9391,
+     "foreign": 976
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 11069,
+     "german": 10425,
+     "foreign": 644
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 9768,
+     "german": 9308,
+     "foreign": 460
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 8137,
+     "german": 7773,
+     "foreign": 364
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 6194,
+     "german": 5955,
+     "foreign": 239
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 4074,
+     "german": 3963,
+     "foreign": 111
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3767,
+     "german": 3704,
+     "foreign": 63
+    },
+    "90 Jahre und mehr": {
+     "total": 1535,
+     "german": 1520,
+     "foreign": 15
+    }
+   },
+   "population": 132876,
+   "german": 116214,
+   "foreign": 16662,
+   "foreign_share_percent": 12.5,
+   "under_25_share_foreign_percent": 28.3,
+   "under_25_share_german_percent": 22.5
+  },
+  {
+   "id": "08135",
+   "name": "Heidenheim, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3362,
+     "german": 2857,
+     "foreign": 505
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3954,
+     "german": 3198,
+     "foreign": 756
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5394,
+     "german": 4317,
+     "foreign": 1077
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6598,
+     "german": 5284,
+     "foreign": 1314
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3994,
+     "german": 3212,
+     "foreign": 782
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2665,
+     "german": 2120,
+     "foreign": 545
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 6960,
+     "german": 5249,
+     "foreign": 1711
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 7619,
+     "german": 5392,
+     "foreign": 2227
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 8218,
+     "german": 5775,
+     "foreign": 2443
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9133,
+     "german": 6607,
+     "foreign": 2526
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8760,
+     "german": 6297,
+     "foreign": 2463
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8275,
+     "german": 5971,
+     "foreign": 2304
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8277,
+     "german": 6291,
+     "foreign": 1986
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 10113,
+     "german": 8562,
+     "foreign": 1551
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 10383,
+     "german": 9278,
+     "foreign": 1105
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 8875,
+     "german": 8153,
+     "foreign": 722
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 7104,
+     "german": 6515,
+     "foreign": 589
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 5624,
+     "german": 5087,
+     "foreign": 537
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 4242,
+     "german": 3966,
+     "foreign": 276
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3815,
+     "german": 3661,
+     "foreign": 154
+    },
+    "90 Jahre und mehr": {
+     "total": 1710,
+     "german": 1662,
+     "foreign": 48
+    }
+   },
+   "population": 135075,
+   "german": 109454,
+   "foreign": 25621,
+   "foreign_share_percent": 19.0,
+   "under_25_share_foreign_percent": 26.1,
+   "under_25_share_german_percent": 24.0
+  },
+  {
+   "id": "08136",
+   "name": "Ostalbkreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 8456,
+     "german": 7596,
+     "foreign": 860
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 9716,
+     "german": 8581,
+     "foreign": 1135
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 12714,
+     "german": 11142,
+     "foreign": 1572
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 15094,
+     "german": 13112,
+     "foreign": 1982
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 9252,
+     "german": 8114,
+     "foreign": 1138
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 6272,
+     "german": 5470,
+     "foreign": 802
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 16404,
+     "german": 13780,
+     "foreign": 2624
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 18287,
+     "german": 14835,
+     "foreign": 3452
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 19338,
+     "german": 15432,
+     "foreign": 3906
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 20891,
+     "german": 16788,
+     "foreign": 4103
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 19977,
+     "german": 16076,
+     "foreign": 3901
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 19064,
+     "german": 15343,
+     "foreign": 3721
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 19831,
+     "german": 16447,
+     "foreign": 3384
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 24365,
+     "german": 21745,
+     "foreign": 2620
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 24816,
+     "german": 22811,
+     "foreign": 2005
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 21225,
+     "german": 19815,
+     "foreign": 1410
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 16730,
+     "german": 15692,
+     "foreign": 1038
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 12812,
+     "german": 11808,
+     "foreign": 1004
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 9680,
+     "german": 9157,
+     "foreign": 523
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7943,
+     "german": 7689,
+     "foreign": 254
+    },
+    "90 Jahre und mehr": {
+     "total": 3461,
+     "german": 3382,
+     "foreign": 79
+    }
+   },
+   "population": 316328,
+   "german": 274815,
+   "foreign": 41513,
+   "foreign_share_percent": 13.1,
+   "under_25_share_foreign_percent": 24.4,
+   "under_25_share_german_percent": 24.7
+  },
+  {
+   "id": "08211",
+   "name": "Baden-Baden, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 1189,
+     "german": 926,
+     "foreign": 263
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 1474,
+     "german": 1111,
+     "foreign": 363
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 1928,
+     "german": 1466,
+     "foreign": 462
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 2445,
+     "german": 1766,
+     "foreign": 679
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 1476,
+     "german": 1093,
+     "foreign": 383
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 1044,
+     "german": 753,
+     "foreign": 291
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 2478,
+     "german": 1700,
+     "foreign": 778
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 2925,
+     "german": 1794,
+     "foreign": 1131
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 3106,
+     "german": 1819,
+     "foreign": 1287
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 3550,
+     "german": 2192,
+     "foreign": 1358
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 3510,
+     "german": 2228,
+     "foreign": 1282
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 3493,
+     "german": 2255,
+     "foreign": 1238
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 3482,
+     "german": 2350,
+     "foreign": 1132
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 4534,
+     "german": 3547,
+     "foreign": 987
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 4647,
+     "german": 3836,
+     "foreign": 811
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 4029,
+     "german": 3439,
+     "foreign": 590
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 3345,
+     "german": 2932,
+     "foreign": 413
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 2944,
+     "german": 2524,
+     "foreign": 420
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 2335,
+     "german": 2123,
+     "foreign": 212
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 2099,
+     "german": 1931,
+     "foreign": 168
+    },
+    "90 Jahre und mehr": {
+     "total": 919,
+     "german": 856,
+     "foreign": 63
+    }
+   },
+   "population": 56952,
+   "german": 42641,
+   "foreign": 14311,
+   "foreign_share_percent": 25.1,
+   "under_25_share_foreign_percent": 22.5,
+   "under_25_share_german_percent": 20.7
+  },
+  {
+   "id": "08212",
+   "name": "Karlsruhe, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 6780,
+     "german": 5926,
+     "foreign": 854
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 7337,
+     "german": 6186,
+     "foreign": 1151
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 10116,
+     "german": 8516,
+     "foreign": 1600
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 12230,
+     "german": 10332,
+     "foreign": 1898
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 7586,
+     "german": 6314,
+     "foreign": 1272
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 6604,
+     "german": 5142,
+     "foreign": 1462
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 24709,
+     "german": 18733,
+     "foreign": 5976
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 28532,
+     "german": 20217,
+     "foreign": 8315
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 24433,
+     "german": 17270,
+     "foreign": 7163
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 21721,
+     "german": 15440,
+     "foreign": 6281
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 19558,
+     "german": 14110,
+     "foreign": 5448
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 18218,
+     "german": 13067,
+     "foreign": 5151
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 17749,
+     "german": 13117,
+     "foreign": 4632
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 21265,
+     "german": 17544,
+     "foreign": 3721
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 20752,
+     "german": 17909,
+     "foreign": 2843
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 16875,
+     "german": 14796,
+     "foreign": 2079
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 13537,
+     "german": 11970,
+     "foreign": 1567
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 11065,
+     "german": 9631,
+     "foreign": 1434
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 8961,
+     "german": 8164,
+     "foreign": 797
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7692,
+     "german": 7195,
+     "foreign": 497
+    },
+    "90 Jahre und mehr": {
+     "total": 3527,
+     "german": 3301,
+     "foreign": 226
+    }
+   },
+   "population": 309247,
+   "german": 244880,
+   "foreign": 64367,
+   "foreign_share_percent": 20.8,
+   "under_25_share_foreign_percent": 22.1,
+   "under_25_share_german_percent": 25.0
+  },
+  {
+   "id": "08215",
+   "name": "Karlsruhe, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 11195,
+     "german": 9770,
+     "foreign": 1425
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 13268,
+     "german": 11522,
+     "foreign": 1746
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 17912,
+     "german": 15442,
+     "foreign": 2470
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 21989,
+     "german": 18776,
+     "foreign": 3213
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 12882,
+     "german": 10995,
+     "foreign": 1887
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 8799,
+     "german": 7378,
+     "foreign": 1421
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 21125,
+     "german": 16970,
+     "foreign": 4155
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 24304,
+     "german": 18339,
+     "foreign": 5965
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 27134,
+     "german": 20164,
+     "foreign": 6970
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 30981,
+     "german": 23360,
+     "foreign": 7621
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 30232,
+     "german": 23203,
+     "foreign": 7029
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 28166,
+     "german": 21503,
+     "foreign": 6663
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 28643,
+     "german": 22354,
+     "foreign": 6289
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 36094,
+     "german": 31126,
+     "foreign": 4968
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 37272,
+     "german": 33667,
+     "foreign": 3605
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 30672,
+     "german": 28353,
+     "foreign": 2319
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 24588,
+     "german": 22750,
+     "foreign": 1838
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 19430,
+     "german": 17854,
+     "foreign": 1576
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 14090,
+     "german": 13239,
+     "foreign": 851
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 12361,
+     "german": 11912,
+     "foreign": 449
+    },
+    "90 Jahre und mehr": {
+     "total": 5087,
+     "german": 4945,
+     "foreign": 142
+    }
+   },
+   "population": 456224,
+   "german": 383622,
+   "foreign": 72602,
+   "foreign_share_percent": 15.9,
+   "under_25_share_foreign_percent": 22.5,
+   "under_25_share_german_percent": 23.7
+  },
+  {
+   "id": "08216",
+   "name": "Rastatt, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5519,
+     "german": 4727,
+     "foreign": 792
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6577,
+     "german": 5477,
+     "foreign": 1100
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8985,
+     "german": 7398,
+     "foreign": 1587
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10984,
+     "german": 9052,
+     "foreign": 1932
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6487,
+     "german": 5362,
+     "foreign": 1125
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4301,
+     "german": 3518,
+     "foreign": 783
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 10679,
+     "german": 8356,
+     "foreign": 2323
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 11859,
+     "german": 8696,
+     "foreign": 3163
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 13322,
+     "german": 9749,
+     "foreign": 3573
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 15038,
+     "german": 11198,
+     "foreign": 3840
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 15041,
+     "german": 11262,
+     "foreign": 3779
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 14068,
+     "german": 10359,
+     "foreign": 3709
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 14092,
+     "german": 10855,
+     "foreign": 3237
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 18228,
+     "german": 15687,
+     "foreign": 2541
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 19240,
+     "german": 17506,
+     "foreign": 1734
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 16391,
+     "german": 15207,
+     "foreign": 1184
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 13142,
+     "german": 12073,
+     "foreign": 1069
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 9690,
+     "german": 8750,
+     "foreign": 940
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 7086,
+     "german": 6672,
+     "foreign": 414
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 6314,
+     "german": 6072,
+     "foreign": 242
+    },
+    "90 Jahre und mehr": {
+     "total": 2720,
+     "german": 2655,
+     "foreign": 65
+    }
+   },
+   "population": 229763,
+   "german": 190631,
+   "foreign": 39132,
+   "foreign_share_percent": 17.0,
+   "under_25_share_foreign_percent": 24.6,
+   "under_25_share_german_percent": 23.0
+  },
+  {
+   "id": "08221",
+   "name": "Heidelberg, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3652,
+     "german": 3020,
+     "foreign": 632
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3750,
+     "german": 3122,
+     "foreign": 628
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5241,
+     "german": 4372,
+     "foreign": 869
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6209,
+     "german": 5213,
+     "foreign": 996
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3651,
+     "german": 3059,
+     "foreign": 592
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4224,
+     "german": 3145,
+     "foreign": 1079
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 18015,
+     "german": 13663,
+     "foreign": 4352
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 17263,
+     "german": 12091,
+     "foreign": 5172
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 13831,
+     "german": 9285,
+     "foreign": 4546
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 11088,
+     "german": 7638,
+     "foreign": 3450
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 9610,
+     "german": 6935,
+     "foreign": 2675
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8328,
+     "german": 6230,
+     "foreign": 2098
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 7655,
+     "german": 5805,
+     "foreign": 1850
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 8720,
+     "german": 7336,
+     "foreign": 1384
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 8515,
+     "german": 7402,
+     "foreign": 1113
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 7160,
+     "german": 6351,
+     "foreign": 809
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 5996,
+     "german": 5357,
+     "foreign": 639
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 4906,
+     "german": 4372,
+     "foreign": 534
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3954,
+     "german": 3662,
+     "foreign": 292
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3027,
+     "german": 2841,
+     "foreign": 186
+    },
+    "90 Jahre und mehr": {
+     "total": 1297,
+     "german": 1209,
+     "foreign": 88
+    }
+   },
+   "population": 156092,
+   "german": 122108,
+   "foreign": 33984,
+   "foreign_share_percent": 21.8,
+   "under_25_share_foreign_percent": 26.9,
+   "under_25_share_german_percent": 29.1
+  },
+  {
+   "id": "08222",
+   "name": "Mannheim, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 8111,
+     "german": 6716,
+     "foreign": 1395
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 8419,
+     "german": 6725,
+     "foreign": 1694
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 11375,
+     "german": 9102,
+     "foreign": 2273
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 13416,
+     "german": 10613,
+     "foreign": 2803
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 8061,
+     "german": 6293,
+     "foreign": 1768
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 6590,
+     "german": 5124,
+     "foreign": 1466
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 23690,
+     "german": 17419,
+     "foreign": 6271
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 27132,
+     "german": 17494,
+     "foreign": 9638
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 25533,
+     "german": 16085,
+     "foreign": 9448
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 23731,
+     "german": 14950,
+     "foreign": 8781
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 21566,
+     "german": 13636,
+     "foreign": 7930
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 19612,
+     "german": 12220,
+     "foreign": 7392
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 19020,
+     "german": 12059,
+     "foreign": 6961
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 21723,
+     "german": 15861,
+     "foreign": 5862
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 21290,
+     "german": 16656,
+     "foreign": 4634
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 16951,
+     "german": 13716,
+     "foreign": 3235
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 13478,
+     "german": 10897,
+     "foreign": 2581
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 11193,
+     "german": 8965,
+     "foreign": 2228
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 8456,
+     "german": 7114,
+     "foreign": 1342
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 6933,
+     "german": 6234,
+     "foreign": 699
+    },
+    "90 Jahre und mehr": {
+     "total": 3256,
+     "german": 2908,
+     "foreign": 348
+    }
+   },
+   "population": 319536,
+   "german": 230787,
+   "foreign": 88749,
+   "foreign_share_percent": 27.8,
+   "under_25_share_foreign_percent": 19.9,
+   "under_25_share_german_percent": 26.9
+  },
+  {
+   "id": "08225",
+   "name": "Neckar-Odenwald-Kreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3580,
+     "german": 3214,
+     "foreign": 366
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 4177,
+     "german": 3659,
+     "foreign": 518
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5781,
+     "german": 4995,
+     "foreign": 786
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6687,
+     "german": 5714,
+     "foreign": 973
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 4060,
+     "german": 3477,
+     "foreign": 583
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2886,
+     "german": 2469,
+     "foreign": 417
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 7181,
+     "german": 5974,
+     "foreign": 1207
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 7690,
+     "german": 6162,
+     "foreign": 1528
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 8313,
+     "german": 6613,
+     "foreign": 1700
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9199,
+     "german": 7429,
+     "foreign": 1770
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8869,
+     "german": 7186,
+     "foreign": 1683
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8418,
+     "german": 6806,
+     "foreign": 1612
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8791,
+     "german": 7450,
+     "foreign": 1341
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 11435,
+     "german": 10293,
+     "foreign": 1142
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 12461,
+     "german": 11644,
+     "foreign": 817
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 10863,
+     "german": 10303,
+     "foreign": 560
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 8370,
+     "german": 7989,
+     "foreign": 381
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 6376,
+     "german": 5988,
+     "foreign": 388
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 4295,
+     "german": 4099,
+     "foreign": 196
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3899,
+     "german": 3787,
+     "foreign": 112
+    },
+    "90 Jahre und mehr": {
+     "total": 1578,
+     "german": 1554,
+     "foreign": 24
+    }
+   },
+   "population": 144909,
+   "german": 126805,
+   "foreign": 18104,
+   "foreign_share_percent": 12.5,
+   "under_25_share_foreign_percent": 26.8,
+   "under_25_share_german_percent": 23.3
+  },
+  {
+   "id": "08226",
+   "name": "Rhein-Neckar-Kreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 13470,
+     "german": 11872,
+     "foreign": 1598
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 16036,
+     "german": 13931,
+     "foreign": 2105
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 22590,
+     "german": 19460,
+     "foreign": 3130
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 27362,
+     "german": 23521,
+     "foreign": 3841
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 16138,
+     "german": 13839,
+     "foreign": 2299
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 10959,
+     "german": 9298,
+     "foreign": 1661
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 26678,
+     "german": 21970,
+     "foreign": 4708
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 30043,
+     "german": 22998,
+     "foreign": 7045
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 32764,
+     "german": 24555,
+     "foreign": 8209
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 36794,
+     "german": 28386,
+     "foreign": 8408
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 36428,
+     "german": 28642,
+     "foreign": 7786
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 34959,
+     "german": 27397,
+     "foreign": 7562
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 34031,
+     "german": 27405,
+     "foreign": 6626
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 44658,
+     "german": 39105,
+     "foreign": 5553
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 45111,
+     "german": 40871,
+     "foreign": 4240
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 37375,
+     "german": 34422,
+     "foreign": 2953
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 29419,
+     "german": 27258,
+     "foreign": 2161
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 24370,
+     "german": 22482,
+     "foreign": 1888
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 18443,
+     "german": 17299,
+     "foreign": 1144
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 15278,
+     "german": 14715,
+     "foreign": 563
+    },
+    "90 Jahre und mehr": {
+     "total": 6191,
+     "german": 5994,
+     "foreign": 197
+    }
+   },
+   "population": 559097,
+   "german": 475420,
+   "foreign": 83677,
+   "foreign_share_percent": 15.0,
+   "under_25_share_foreign_percent": 23.1,
+   "under_25_share_german_percent": 24.0
+  },
+  {
+   "id": "08231",
+   "name": "Pforzheim, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3745,
+     "german": 2708,
+     "foreign": 1037
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 4241,
+     "german": 2918,
+     "foreign": 1323
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5657,
+     "german": 3899,
+     "foreign": 1758
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6854,
+     "german": 4714,
+     "foreign": 2140
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 4022,
+     "german": 2837,
+     "foreign": 1185
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2916,
+     "german": 2043,
+     "foreign": 873
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 8353,
+     "german": 5441,
+     "foreign": 2912
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 9420,
+     "german": 5284,
+     "foreign": 4136
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 9371,
+     "german": 5037,
+     "foreign": 4334
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9402,
+     "german": 5230,
+     "foreign": 4172
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8668,
+     "german": 5047,
+     "foreign": 3621
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8160,
+     "german": 4739,
+     "foreign": 3421
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 7916,
+     "german": 4864,
+     "foreign": 3052
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 9065,
+     "german": 6444,
+     "foreign": 2621
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 9058,
+     "german": 7160,
+     "foreign": 1898
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 7630,
+     "german": 6314,
+     "foreign": 1316
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 6133,
+     "german": 5150,
+     "foreign": 983
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 4950,
+     "german": 4136,
+     "foreign": 814
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3830,
+     "german": 3405,
+     "foreign": 425
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3405,
+     "german": 3161,
+     "foreign": 244
+    },
+    "90 Jahre und mehr": {
+     "total": 1626,
+     "german": 1527,
+     "foreign": 99
+    }
+   },
+   "population": 134422,
+   "german": 92058,
+   "foreign": 42364,
+   "foreign_share_percent": 31.5,
+   "under_25_share_foreign_percent": 26.5,
+   "under_25_share_german_percent": 26.7
+  },
+  {
+   "id": "08235",
+   "name": "Calw, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 4426,
+     "german": 3883,
+     "foreign": 543
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 5108,
+     "german": 4406,
+     "foreign": 702
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 6556,
+     "german": 5548,
+     "foreign": 1008
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 7819,
+     "german": 6478,
+     "foreign": 1341
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 4777,
+     "german": 3982,
+     "foreign": 795
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3089,
+     "german": 2539,
+     "foreign": 550
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 7965,
+     "german": 6431,
+     "foreign": 1534
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 8560,
+     "german": 6403,
+     "foreign": 2157
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 9407,
+     "german": 6939,
+     "foreign": 2468
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 10787,
+     "german": 7979,
+     "foreign": 2808
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 10308,
+     "german": 7662,
+     "foreign": 2646
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 9531,
+     "german": 7043,
+     "foreign": 2488
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 9837,
+     "german": 7477,
+     "foreign": 2360
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 12229,
+     "german": 10353,
+     "foreign": 1876
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 13340,
+     "german": 11819,
+     "foreign": 1521
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 11137,
+     "german": 10148,
+     "foreign": 989
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 8799,
+     "german": 7905,
+     "foreign": 894
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 6435,
+     "german": 5640,
+     "foreign": 795
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 4704,
+     "german": 4266,
+     "foreign": 438
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4155,
+     "german": 3980,
+     "foreign": 175
+    },
+    "90 Jahre und mehr": {
+     "total": 1797,
+     "german": 1735,
+     "foreign": 62
+    }
+   },
+   "population": 160766,
+   "german": 132616,
+   "foreign": 28150,
+   "foreign_share_percent": 17.5,
+   "under_25_share_foreign_percent": 23.0,
+   "under_25_share_german_percent": 25.1
+  },
+  {
+   "id": "08236",
+   "name": "Enzkreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5351,
+     "german": 4797,
+     "foreign": 554
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6402,
+     "german": 5677,
+     "foreign": 725
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8643,
+     "german": 7525,
+     "foreign": 1118
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 9666,
+     "german": 8405,
+     "foreign": 1261
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 5797,
+     "german": 5005,
+     "foreign": 792
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3745,
+     "german": 3188,
+     "foreign": 557
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 9355,
+     "german": 7735,
+     "foreign": 1620
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 10424,
+     "german": 8073,
+     "foreign": 2351
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 11334,
+     "german": 8692,
+     "foreign": 2642
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 13044,
+     "german": 10197,
+     "foreign": 2847
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 12775,
+     "german": 10025,
+     "foreign": 2750
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 11748,
+     "german": 9151,
+     "foreign": 2597
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 11883,
+     "german": 9447,
+     "foreign": 2436
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 16024,
+     "german": 13848,
+     "foreign": 2176
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 16569,
+     "german": 14956,
+     "foreign": 1613
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 13594,
+     "german": 12482,
+     "foreign": 1112
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 10578,
+     "german": 9706,
+     "foreign": 872
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 8096,
+     "german": 7290,
+     "foreign": 806
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 6506,
+     "german": 6065,
+     "foreign": 441
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 5300,
+     "german": 5110,
+     "foreign": 190
+    },
+    "90 Jahre und mehr": {
+     "total": 2316,
+     "german": 2241,
+     "foreign": 75
+    }
+   },
+   "population": 199150,
+   "german": 169615,
+   "foreign": 29535,
+   "foreign_share_percent": 14.8,
+   "under_25_share_foreign_percent": 22.4,
+   "under_25_share_german_percent": 25.0
+  },
+  {
+   "id": "08237",
+   "name": "Freudenstadt, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3082,
+     "german": 2631,
+     "foreign": 451
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3582,
+     "german": 3066,
+     "foreign": 516
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 4850,
+     "german": 4075,
+     "foreign": 775
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 5745,
+     "german": 4844,
+     "foreign": 901
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3585,
+     "german": 3012,
+     "foreign": 573
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2414,
+     "german": 2040,
+     "foreign": 374
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 6382,
+     "german": 5027,
+     "foreign": 1355
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 6968,
+     "german": 5246,
+     "foreign": 1722
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 7481,
+     "german": 5757,
+     "foreign": 1724
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 7811,
+     "german": 6085,
+     "foreign": 1726
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 7538,
+     "german": 5839,
+     "foreign": 1699
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 7143,
+     "german": 5564,
+     "foreign": 1579
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 7543,
+     "german": 6082,
+     "foreign": 1461
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 9617,
+     "german": 8423,
+     "foreign": 1194
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 10193,
+     "german": 9391,
+     "foreign": 802
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 8457,
+     "german": 7914,
+     "foreign": 543
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 6466,
+     "german": 6048,
+     "foreign": 418
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 4776,
+     "german": 4357,
+     "foreign": 419
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3459,
+     "german": 3239,
+     "foreign": 220
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3223,
+     "german": 3111,
+     "foreign": 112
+    },
+    "90 Jahre und mehr": {
+     "total": 1331,
+     "german": 1303,
+     "foreign": 28
+    }
+   },
+   "population": 121646,
+   "german": 103054,
+   "foreign": 18592,
+   "foreign_share_percent": 15.3,
+   "under_25_share_foreign_percent": 26.6,
+   "under_25_share_german_percent": 24.0
+  },
+  {
+   "id": "08311",
+   "name": "Freiburg im Breisgau, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 6135,
+     "german": 5506,
+     "foreign": 629
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6537,
+     "german": 5723,
+     "foreign": 814
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8520,
+     "german": 7276,
+     "foreign": 1244
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10127,
+     "german": 8432,
+     "foreign": 1695
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6170,
+     "german": 5064,
+     "foreign": 1106
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 5274,
+     "german": 4238,
+     "foreign": 1036
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 21619,
+     "german": 17406,
+     "foreign": 4213
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 23226,
+     "german": 17458,
+     "foreign": 5768
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 20518,
+     "german": 15313,
+     "foreign": 5205
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 17815,
+     "german": 13437,
+     "foreign": 4378
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 14990,
+     "german": 11424,
+     "foreign": 3566
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 13001,
+     "german": 9836,
+     "foreign": 3165
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 12292,
+     "german": 9428,
+     "foreign": 2864
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 14437,
+     "german": 12092,
+     "foreign": 2345
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 14421,
+     "german": 12700,
+     "foreign": 1721
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 12329,
+     "german": 10988,
+     "foreign": 1341
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 9932,
+     "german": 8969,
+     "foreign": 963
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 7639,
+     "german": 6842,
+     "foreign": 797
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 6148,
+     "german": 5742,
+     "foreign": 406
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4958,
+     "german": 4729,
+     "foreign": 229
+    },
+    "90 Jahre und mehr": {
+     "total": 2211,
+     "german": 2126,
+     "foreign": 85
+    }
+   },
+   "population": 238299,
+   "german": 194729,
+   "foreign": 43570,
+   "foreign_share_percent": 18.3,
+   "under_25_share_foreign_percent": 24.6,
+   "under_25_share_german_percent": 27.5
+  },
+  {
+   "id": "08315",
+   "name": "Breisgau-Hochschwarzwald, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 7084,
+     "german": 6168,
+     "foreign": 916
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 8318,
+     "german": 7273,
+     "foreign": 1045
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 11338,
+     "german": 9806,
+     "foreign": 1532
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 13385,
+     "german": 11683,
+     "foreign": 1702
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 8077,
+     "german": 7090,
+     "foreign": 987
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 5422,
+     "german": 4636,
+     "foreign": 786
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 13101,
+     "german": 10496,
+     "foreign": 2605
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 14549,
+     "german": 10905,
+     "foreign": 3644
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 16127,
+     "german": 12107,
+     "foreign": 4020
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 17526,
+     "german": 13770,
+     "foreign": 3756
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 17061,
+     "german": 13707,
+     "foreign": 3354
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 15964,
+     "german": 12912,
+     "foreign": 3052
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 16131,
+     "german": 13259,
+     "foreign": 2872
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 21349,
+     "german": 18928,
+     "foreign": 2421
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 21767,
+     "german": 19978,
+     "foreign": 1789
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 18493,
+     "german": 17256,
+     "foreign": 1237
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 15300,
+     "german": 14360,
+     "foreign": 940
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 11698,
+     "german": 10886,
+     "foreign": 812
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 9169,
+     "german": 8703,
+     "foreign": 466
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7666,
+     "german": 7431,
+     "foreign": 235
+    },
+    "90 Jahre und mehr": {
+     "total": 3182,
+     "german": 3104,
+     "foreign": 78
+    }
+   },
+   "population": 272707,
+   "german": 234458,
+   "foreign": 38249,
+   "foreign_share_percent": 14.0,
+   "under_25_share_foreign_percent": 25.0,
+   "under_25_share_german_percent": 24.4
+  },
+  {
+   "id": "08316",
+   "name": "Emmendingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 4498,
+     "german": 3977,
+     "foreign": 521
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 5314,
+     "german": 4642,
+     "foreign": 672
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 7091,
+     "german": 6148,
+     "foreign": 943
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 8182,
+     "german": 7118,
+     "foreign": 1064
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 4830,
+     "german": 4172,
+     "foreign": 658
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3305,
+     "german": 2794,
+     "foreign": 511
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 8282,
+     "german": 6549,
+     "foreign": 1733
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 9396,
+     "german": 7130,
+     "foreign": 2266
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 10052,
+     "german": 7667,
+     "foreign": 2385
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 11415,
+     "german": 9090,
+     "foreign": 2325
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 11054,
+     "german": 8939,
+     "foreign": 2115
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 10039,
+     "german": 8120,
+     "foreign": 1919
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 10350,
+     "german": 8632,
+     "foreign": 1718
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 13298,
+     "german": 11936,
+     "foreign": 1362
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 13782,
+     "german": 12784,
+     "foreign": 998
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 11593,
+     "german": 10940,
+     "foreign": 653
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 9491,
+     "german": 8962,
+     "foreign": 529
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 6940,
+     "german": 6581,
+     "foreign": 359
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5359,
+     "german": 5136,
+     "foreign": 223
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4406,
+     "german": 4298,
+     "foreign": 108
+    },
+    "90 Jahre und mehr": {
+     "total": 1786,
+     "german": 1748,
+     "foreign": 38
+    }
+   },
+   "population": 170463,
+   "german": 147363,
+   "foreign": 23100,
+   "foreign_share_percent": 13.6,
+   "under_25_share_foreign_percent": 26.4,
+   "under_25_share_german_percent": 24.0
+  },
+  {
+   "id": "08317",
+   "name": "Ortenaukreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 11759,
+     "german": 10127,
+     "foreign": 1632
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 13504,
+     "german": 11482,
+     "foreign": 2022
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 18236,
+     "german": 15275,
+     "foreign": 2961
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 21715,
+     "german": 18241,
+     "foreign": 3474
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 13109,
+     "german": 11017,
+     "foreign": 2092
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 8943,
+     "german": 7471,
+     "foreign": 1472
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 22236,
+     "german": 17359,
+     "foreign": 4877
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 25663,
+     "german": 19028,
+     "foreign": 6635
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 27125,
+     "german": 20232,
+     "foreign": 6893
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 29880,
+     "german": 23064,
+     "foreign": 6816
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 28176,
+     "german": 21927,
+     "foreign": 6249
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 26046,
+     "german": 20217,
+     "foreign": 5829
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 26685,
+     "german": 21600,
+     "foreign": 5085
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 34531,
+     "german": 30129,
+     "foreign": 4402
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 35707,
+     "german": 32767,
+     "foreign": 2940
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 30358,
+     "german": 28299,
+     "foreign": 2059
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 24796,
+     "german": 23246,
+     "foreign": 1550
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 17814,
+     "german": 16604,
+     "foreign": 1210
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 12779,
+     "german": 12112,
+     "foreign": 667
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 11893,
+     "german": 11531,
+     "foreign": 362
+    },
+    "90 Jahre und mehr": {
+     "total": 4900,
+     "german": 4780,
+     "foreign": 120
+    }
+   },
+   "population": 445855,
+   "german": 376508,
+   "foreign": 69347,
+   "foreign_share_percent": 15.6,
+   "under_25_share_foreign_percent": 26.7,
+   "under_25_share_german_percent": 24.2
+  },
+  {
+   "id": "08325",
+   "name": "Rottweil, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 4028,
+     "german": 3541,
+     "foreign": 487
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 4558,
+     "german": 3867,
+     "foreign": 691
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5945,
+     "german": 4982,
+     "foreign": 963
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6990,
+     "german": 5905,
+     "foreign": 1085
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 4033,
+     "german": 3417,
+     "foreign": 616
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2733,
+     "german": 2312,
+     "foreign": 421
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 6542,
+     "german": 5308,
+     "foreign": 1234
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 7672,
+     "german": 6009,
+     "foreign": 1663
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 8217,
+     "german": 6503,
+     "foreign": 1714
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9202,
+     "german": 7252,
+     "foreign": 1950
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8602,
+     "german": 6871,
+     "foreign": 1731
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8109,
+     "german": 6448,
+     "foreign": 1661
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8517,
+     "german": 7002,
+     "foreign": 1515
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 11026,
+     "german": 9791,
+     "foreign": 1235
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 11515,
+     "german": 10626,
+     "foreign": 889
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 9475,
+     "german": 8831,
+     "foreign": 644
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 7343,
+     "german": 6799,
+     "foreign": 544
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 5592,
+     "german": 5160,
+     "foreign": 432
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 4318,
+     "german": 4088,
+     "foreign": 230
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3834,
+     "german": 3714,
+     "foreign": 120
+    },
+    "90 Jahre und mehr": {
+     "total": 1473,
+     "german": 1444,
+     "foreign": 29
+    }
+   },
+   "population": 139724,
+   "german": 119870,
+   "foreign": 19854,
+   "foreign_share_percent": 14.2,
+   "under_25_share_foreign_percent": 27.7,
+   "under_25_share_german_percent": 24.5
+  },
+  {
+   "id": "08326",
+   "name": "Schwarzwald-Baar-Kreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5729,
+     "german": 4812,
+     "foreign": 917
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6591,
+     "german": 5353,
+     "foreign": 1238
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8772,
+     "german": 7025,
+     "foreign": 1747
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10307,
+     "german": 8222,
+     "foreign": 2085
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6355,
+     "german": 5106,
+     "foreign": 1249
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4213,
+     "german": 3342,
+     "foreign": 871
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 11089,
+     "german": 8380,
+     "foreign": 2709
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 12474,
+     "german": 8960,
+     "foreign": 3514
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 12920,
+     "german": 9155,
+     "foreign": 3765
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 14151,
+     "german": 10310,
+     "foreign": 3841
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 13391,
+     "german": 9701,
+     "foreign": 3690
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 12461,
+     "german": 9005,
+     "foreign": 3456
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 12241,
+     "german": 9214,
+     "foreign": 3027
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 15625,
+     "german": 13180,
+     "foreign": 2445
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 16508,
+     "german": 14693,
+     "foreign": 1815
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 14587,
+     "german": 13172,
+     "foreign": 1415
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 11544,
+     "german": 10385,
+     "foreign": 1159
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 8896,
+     "german": 7745,
+     "foreign": 1151
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 6924,
+     "german": 6333,
+     "foreign": 591
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 6256,
+     "german": 5988,
+     "foreign": 268
+    },
+    "90 Jahre und mehr": {
+     "total": 2646,
+     "german": 2568,
+     "foreign": 78
+    }
+   },
+   "population": 213680,
+   "german": 172649,
+   "foreign": 41031,
+   "foreign_share_percent": 19.2,
+   "under_25_share_foreign_percent": 26.4,
+   "under_25_share_german_percent": 24.5
+  },
+  {
+   "id": "08327",
+   "name": "Tuttlingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 4204,
+     "german": 3428,
+     "foreign": 776
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 4835,
+     "german": 3844,
+     "foreign": 991
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 6318,
+     "german": 4984,
+     "foreign": 1334
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 7683,
+     "german": 6154,
+     "foreign": 1529
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 4542,
+     "german": 3636,
+     "foreign": 906
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3073,
+     "german": 2451,
+     "foreign": 622
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 7587,
+     "german": 5712,
+     "foreign": 1875
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 8536,
+     "german": 5934,
+     "foreign": 2602
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 8829,
+     "german": 6153,
+     "foreign": 2676
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9977,
+     "german": 7061,
+     "foreign": 2916
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 9315,
+     "german": 6680,
+     "foreign": 2635
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 8900,
+     "german": 6442,
+     "foreign": 2458
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8881,
+     "german": 6711,
+     "foreign": 2170
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 10455,
+     "german": 8760,
+     "foreign": 1695
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 10827,
+     "german": 9650,
+     "foreign": 1177
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 9283,
+     "german": 8398,
+     "foreign": 885
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 7332,
+     "german": 6658,
+     "foreign": 674
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 5309,
+     "german": 4686,
+     "foreign": 623
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3984,
+     "german": 3689,
+     "foreign": 295
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3606,
+     "german": 3470,
+     "foreign": 136
+    },
+    "90 Jahre und mehr": {
+     "total": 1526,
+     "german": 1471,
+     "foreign": 55
+    }
+   },
+   "population": 145002,
+   "german": 115972,
+   "foreign": 29030,
+   "foreign_share_percent": 20.0,
+   "under_25_share_foreign_percent": 27.7,
+   "under_25_share_german_percent": 26.0
+  },
+  {
+   "id": "08335",
+   "name": "Konstanz, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 7089,
+     "german": 5947,
+     "foreign": 1142
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 8283,
+     "german": 6879,
+     "foreign": 1404
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 11434,
+     "german": 9506,
+     "foreign": 1928
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 13634,
+     "german": 11275,
+     "foreign": 2359
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 8014,
+     "german": 6680,
+     "foreign": 1334
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 6125,
+     "german": 5111,
+     "foreign": 1014
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 18773,
+     "german": 15065,
+     "foreign": 3708
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 19255,
+     "german": 14269,
+     "foreign": 4986
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 18358,
+     "german": 13014,
+     "foreign": 5344
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 18900,
+     "german": 13943,
+     "foreign": 4957
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 17918,
+     "german": 13503,
+     "foreign": 4415
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 16372,
+     "german": 12332,
+     "foreign": 4040
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 16528,
+     "german": 12710,
+     "foreign": 3818
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 22242,
+     "german": 18763,
+     "foreign": 3479
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 22783,
+     "german": 20215,
+     "foreign": 2568
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 18626,
+     "german": 16826,
+     "foreign": 1800
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 14802,
+     "german": 13364,
+     "foreign": 1438
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 11747,
+     "german": 10471,
+     "foreign": 1276
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 9545,
+     "german": 8797,
+     "foreign": 748
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7983,
+     "german": 7597,
+     "foreign": 386
+    },
+    "90 Jahre und mehr": {
+     "total": 3456,
+     "german": 3306,
+     "foreign": 150
+    }
+   },
+   "population": 291867,
+   "german": 239573,
+   "foreign": 52294,
+   "foreign_share_percent": 17.9,
+   "under_25_share_foreign_percent": 24.6,
+   "under_25_share_german_percent": 25.2
+  },
+  {
+   "id": "08336",
+   "name": "Lörrach, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5455,
+     "german": 4483,
+     "foreign": 972
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 7244,
+     "german": 5959,
+     "foreign": 1285
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 10331,
+     "german": 8514,
+     "foreign": 1817
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 12286,
+     "german": 10106,
+     "foreign": 2180
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 7445,
+     "german": 6061,
+     "foreign": 1384
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4738,
+     "german": 3884,
+     "foreign": 854
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 11282,
+     "german": 8581,
+     "foreign": 2701
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 13114,
+     "german": 9234,
+     "foreign": 3880
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 14620,
+     "german": 10144,
+     "foreign": 4476
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 16165,
+     "german": 11670,
+     "foreign": 4495
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 15534,
+     "german": 11390,
+     "foreign": 4144
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 14207,
+     "german": 10507,
+     "foreign": 3700
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 14369,
+     "german": 10970,
+     "foreign": 3399
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 18756,
+     "german": 15783,
+     "foreign": 2973
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 19124,
+     "german": 16861,
+     "foreign": 2263
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 15954,
+     "german": 14357,
+     "foreign": 1597
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 12285,
+     "german": 10867,
+     "foreign": 1418
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 9241,
+     "german": 8096,
+     "foreign": 1145
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 7095,
+     "german": 6428,
+     "foreign": 667
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 6176,
+     "german": 5803,
+     "foreign": 373
+    },
+    "90 Jahre und mehr": {
+     "total": 2721,
+     "german": 2574,
+     "foreign": 147
+    }
+   },
+   "population": 238142,
+   "german": 192272,
+   "foreign": 45870,
+   "foreign_share_percent": 19.3,
+   "under_25_share_foreign_percent": 24.4,
+   "under_25_share_german_percent": 24.8
+  },
+  {
+   "id": "08337",
+   "name": "Waldshut, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3732,
+     "german": 3037,
+     "foreign": 695
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 5238,
+     "german": 4298,
+     "foreign": 940
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 7634,
+     "german": 6380,
+     "foreign": 1254
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 9028,
+     "german": 7521,
+     "foreign": 1507
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 5442,
+     "german": 4547,
+     "foreign": 895
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3498,
+     "german": 2919,
+     "foreign": 579
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 8086,
+     "german": 6427,
+     "foreign": 1659
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 8944,
+     "german": 6521,
+     "foreign": 2423
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 10101,
+     "german": 7157,
+     "foreign": 2944
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 11345,
+     "german": 8436,
+     "foreign": 2909
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 11204,
+     "german": 8468,
+     "foreign": 2736
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 10156,
+     "german": 7663,
+     "foreign": 2493
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 10101,
+     "german": 7706,
+     "foreign": 2395
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 12960,
+     "german": 10874,
+     "foreign": 2086
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 13779,
+     "german": 12022,
+     "foreign": 1757
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 11982,
+     "german": 10571,
+     "foreign": 1411
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 9713,
+     "german": 8542,
+     "foreign": 1171
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 7102,
+     "german": 6072,
+     "foreign": 1030
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5118,
+     "german": 4565,
+     "foreign": 553
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4488,
+     "german": 4196,
+     "foreign": 292
+    },
+    "90 Jahre und mehr": {
+     "total": 1862,
+     "german": 1754,
+     "foreign": 108
+    }
+   },
+   "population": 171513,
+   "german": 139676,
+   "foreign": 31837,
+   "foreign_share_percent": 18.6,
+   "under_25_share_foreign_percent": 23.6,
+   "under_25_share_german_percent": 25.2
+  },
+  {
+   "id": "08415",
+   "name": "Reutlingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 7744,
+     "german": 6683,
+     "foreign": 1061
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 8944,
+     "german": 7570,
+     "foreign": 1374
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 12185,
+     "german": 10284,
+     "foreign": 1901
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 14147,
+     "german": 11826,
+     "foreign": 2321
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 8636,
+     "german": 7250,
+     "foreign": 1386
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 5960,
+     "german": 4968,
+     "foreign": 992
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 15634,
+     "german": 12261,
+     "foreign": 3373
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 17114,
+     "german": 12329,
+     "foreign": 4785
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 17877,
+     "german": 12769,
+     "foreign": 5108
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 19372,
+     "german": 14246,
+     "foreign": 5126
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 18706,
+     "german": 13916,
+     "foreign": 4790
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 17457,
+     "german": 13005,
+     "foreign": 4452
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 18364,
+     "german": 14185,
+     "foreign": 4179
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 22625,
+     "german": 19111,
+     "foreign": 3514
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 22923,
+     "german": 20350,
+     "foreign": 2573
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 19149,
+     "german": 17253,
+     "foreign": 1896
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 14981,
+     "german": 13395,
+     "foreign": 1586
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 11422,
+     "german": 9949,
+     "foreign": 1473
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 8930,
+     "german": 8084,
+     "foreign": 846
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7856,
+     "german": 7443,
+     "foreign": 413
+    },
+    "90 Jahre und mehr": {
+     "total": 3501,
+     "german": 3342,
+     "foreign": 159
+    }
+   },
+   "population": 293527,
+   "german": 240219,
+   "foreign": 53308,
+   "foreign_share_percent": 18.2,
+   "under_25_share_foreign_percent": 23.3,
+   "under_25_share_german_percent": 25.3
+  },
+  {
+   "id": "08416",
+   "name": "Tübingen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5928,
+     "german": 5313,
+     "foreign": 615
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6764,
+     "german": 5964,
+     "foreign": 800
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 9435,
+     "german": 8249,
+     "foreign": 1186
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10805,
+     "german": 9393,
+     "foreign": 1412
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6414,
+     "german": 5556,
+     "foreign": 858
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 5206,
+     "german": 4492,
+     "foreign": 714
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 19486,
+     "german": 16122,
+     "foreign": 3364
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 18437,
+     "german": 14176,
+     "foreign": 4261
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 16035,
+     "german": 12220,
+     "foreign": 3815
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 15632,
+     "german": 12135,
+     "foreign": 3497
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 14487,
+     "german": 11469,
+     "foreign": 3018
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 12726,
+     "german": 10177,
+     "foreign": 2549
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 12828,
+     "german": 10462,
+     "foreign": 2366
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 15919,
+     "german": 14053,
+     "foreign": 1866
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 16498,
+     "german": 14988,
+     "foreign": 1510
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 14267,
+     "german": 13099,
+     "foreign": 1168
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 11199,
+     "german": 10242,
+     "foreign": 957
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 8121,
+     "german": 7302,
+     "foreign": 819
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5985,
+     "german": 5589,
+     "foreign": 396
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 5233,
+     "german": 4997,
+     "foreign": 236
+    },
+    "90 Jahre und mehr": {
+     "total": 2188,
+     "german": 2109,
+     "foreign": 79
+    }
+   },
+   "population": 233593,
+   "german": 198107,
+   "foreign": 35486,
+   "foreign_share_percent": 15.2,
+   "under_25_share_foreign_percent": 25.2,
+   "under_25_share_german_percent": 27.8
+  },
+  {
+   "id": "08417",
+   "name": "Zollernalbkreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 4924,
+     "german": 4282,
+     "foreign": 642
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 5939,
+     "german": 5076,
+     "foreign": 863
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 7707,
+     "german": 6496,
+     "foreign": 1211
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 9124,
+     "german": 7633,
+     "foreign": 1491
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 5486,
+     "german": 4591,
+     "foreign": 895
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 3819,
+     "german": 3222,
+     "foreign": 597
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 9430,
+     "german": 7659,
+     "foreign": 1771
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 10284,
+     "german": 8036,
+     "foreign": 2248
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 11613,
+     "german": 9030,
+     "foreign": 2583
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 12706,
+     "german": 9837,
+     "foreign": 2869
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 11985,
+     "german": 9222,
+     "foreign": 2763
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 11098,
+     "german": 8546,
+     "foreign": 2552
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 11951,
+     "german": 9651,
+     "foreign": 2300
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 14947,
+     "german": 13038,
+     "foreign": 1909
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 16120,
+     "german": 14585,
+     "foreign": 1535
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 13684,
+     "german": 12579,
+     "foreign": 1105
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 10709,
+     "german": 9831,
+     "foreign": 878
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 8097,
+     "german": 7391,
+     "foreign": 706
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5814,
+     "german": 5410,
+     "foreign": 404
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 5320,
+     "german": 5123,
+     "foreign": 197
+    },
+    "90 Jahre und mehr": {
+     "total": 2339,
+     "german": 2274,
+     "foreign": 65
+    }
+   },
+   "population": 193096,
+   "german": 163512,
+   "foreign": 29584,
+   "foreign_share_percent": 15.3,
+   "under_25_share_foreign_percent": 25.3,
+   "under_25_share_german_percent": 23.8
+  },
+  {
+   "id": "08421",
+   "name": "Ulm, Stadtkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3438,
+     "german": 2762,
+     "foreign": 676
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3565,
+     "german": 2785,
+     "foreign": 780
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 4690,
+     "german": 3714,
+     "foreign": 976
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 5930,
+     "german": 4696,
+     "foreign": 1234
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3558,
+     "german": 2791,
+     "foreign": 767
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2766,
+     "german": 2244,
+     "foreign": 522
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 9333,
+     "german": 7094,
+     "foreign": 2239
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 11498,
+     "german": 7884,
+     "foreign": 3614
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 10563,
+     "german": 7070,
+     "foreign": 3493
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 9277,
+     "german": 6174,
+     "foreign": 3103
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 8382,
+     "german": 5764,
+     "foreign": 2618
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 7804,
+     "german": 5328,
+     "foreign": 2476
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 7608,
+     "german": 5427,
+     "foreign": 2181
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 8443,
+     "german": 6672,
+     "foreign": 1771
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 7882,
+     "german": 6639,
+     "foreign": 1243
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 6674,
+     "german": 5770,
+     "foreign": 904
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 5672,
+     "german": 4770,
+     "foreign": 902
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 4788,
+     "german": 3982,
+     "foreign": 806
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3885,
+     "german": 3472,
+     "foreign": 413
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3147,
+     "german": 2924,
+     "foreign": 223
+    },
+    "90 Jahre und mehr": {
+     "total": 1385,
+     "german": 1327,
+     "foreign": 58
+    }
+   },
+   "population": 130288,
+   "german": 99289,
+   "foreign": 30999,
+   "foreign_share_percent": 23.8,
+   "under_25_share_foreign_percent": 23.2,
+   "under_25_share_german_percent": 26.3
+  },
+  {
+   "id": "08425",
+   "name": "Alb-Donau-Kreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5636,
+     "german": 4943,
+     "foreign": 693
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6807,
+     "german": 5898,
+     "foreign": 909
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8801,
+     "german": 7470,
+     "foreign": 1331
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10264,
+     "german": 8683,
+     "foreign": 1581
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6184,
+     "german": 5202,
+     "foreign": 982
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4073,
+     "german": 3412,
+     "foreign": 661
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 10394,
+     "german": 8402,
+     "foreign": 1992
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 11642,
+     "german": 8885,
+     "foreign": 2757
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 12292,
+     "german": 9311,
+     "foreign": 2981
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 13990,
+     "german": 10778,
+     "foreign": 3212
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 13173,
+     "german": 10096,
+     "foreign": 3077
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 12586,
+     "german": 9515,
+     "foreign": 3071
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 12547,
+     "german": 9979,
+     "foreign": 2568
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 15283,
+     "german": 13351,
+     "foreign": 1932
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 15851,
+     "german": 14421,
+     "foreign": 1430
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 12961,
+     "german": 12076,
+     "foreign": 885
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 10113,
+     "german": 9404,
+     "foreign": 709
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 7577,
+     "german": 6968,
+     "foreign": 609
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5528,
+     "german": 5234,
+     "foreign": 294
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4829,
+     "german": 4684,
+     "foreign": 145
+    },
+    "90 Jahre und mehr": {
+     "total": 2023,
+     "german": 1984,
+     "foreign": 39
+    }
+   },
+   "population": 202554,
+   "german": 170696,
+   "foreign": 31858,
+   "foreign_share_percent": 15.7,
+   "under_25_share_foreign_percent": 25.6,
+   "under_25_share_german_percent": 25.8
+  },
+  {
+   "id": "08426",
+   "name": "Biberach, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5837,
+     "german": 5260,
+     "foreign": 577
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6752,
+     "german": 5949,
+     "foreign": 803
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 9300,
+     "german": 8086,
+     "foreign": 1214
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10727,
+     "german": 9275,
+     "foreign": 1452
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6408,
+     "german": 5517,
+     "foreign": 891
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4099,
+     "german": 3526,
+     "foreign": 573
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 10276,
+     "german": 8486,
+     "foreign": 1790
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 11684,
+     "german": 9419,
+     "foreign": 2265
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 12898,
+     "german": 10382,
+     "foreign": 2516
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 14694,
+     "german": 11957,
+     "foreign": 2737
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 13707,
+     "german": 11158,
+     "foreign": 2549
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 12570,
+     "german": 10170,
+     "foreign": 2400
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 12981,
+     "german": 10851,
+     "foreign": 2130
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 15840,
+     "german": 14271,
+     "foreign": 1569
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 15636,
+     "german": 14662,
+     "foreign": 974
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 13481,
+     "german": 12790,
+     "foreign": 691
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 10440,
+     "german": 9939,
+     "foreign": 501
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 7620,
+     "german": 7193,
+     "foreign": 427
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 5277,
+     "german": 5066,
+     "foreign": 211
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 4946,
+     "german": 4831,
+     "foreign": 115
+    },
+    "90 Jahre und mehr": {
+     "total": 2030,
+     "german": 1989,
+     "foreign": 41
+    }
+   },
+   "population": 207203,
+   "german": 180777,
+   "foreign": 26426,
+   "foreign_share_percent": 12.8,
+   "under_25_share_foreign_percent": 27.6,
+   "under_25_share_german_percent": 25.5
+  },
+  {
+   "id": "08435",
+   "name": "Bodenseekreis, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 5586,
+     "german": 4881,
+     "foreign": 705
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 6404,
+     "german": 5447,
+     "foreign": 957
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 8520,
+     "german": 7270,
+     "foreign": 1250
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 10332,
+     "german": 8651,
+     "foreign": 1681
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 6453,
+     "german": 5327,
+     "foreign": 1126
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 4426,
+     "german": 3563,
+     "foreign": 863
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 10238,
+     "german": 8118,
+     "foreign": 2120
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 11645,
+     "german": 8612,
+     "foreign": 3033
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 12655,
+     "german": 9294,
+     "foreign": 3361
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 14257,
+     "german": 10723,
+     "foreign": 3534
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 13938,
+     "german": 10567,
+     "foreign": 3371
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 13320,
+     "german": 10184,
+     "foreign": 3136
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 13200,
+     "german": 10525,
+     "foreign": 2675
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 17304,
+     "german": 15077,
+     "foreign": 2227
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 17503,
+     "german": 15888,
+     "foreign": 1615
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 14819,
+     "german": 13612,
+     "foreign": 1207
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 12102,
+     "german": 11112,
+     "foreign": 990
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 10183,
+     "german": 9226,
+     "foreign": 957
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 8545,
+     "german": 8009,
+     "foreign": 536
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 6921,
+     "german": 6702,
+     "foreign": 219
+    },
+    "90 Jahre und mehr": {
+     "total": 2544,
+     "german": 2463,
+     "foreign": 81
+    }
+   },
+   "population": 220895,
+   "german": 185251,
+   "foreign": 35644,
+   "foreign_share_percent": 16.1,
+   "under_25_share_foreign_percent": 24.4,
+   "under_25_share_german_percent": 23.4
+  },
+  {
+   "id": "08436",
+   "name": "Ravensburg, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 7901,
+     "german": 6990,
+     "foreign": 911
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 9039,
+     "german": 7949,
+     "foreign": 1090
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 12247,
+     "german": 10656,
+     "foreign": 1591
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 14168,
+     "german": 12317,
+     "foreign": 1851
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 8675,
+     "german": 7567,
+     "foreign": 1108
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 5836,
+     "german": 4995,
+     "foreign": 841
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 15932,
+     "german": 12688,
+     "foreign": 3244
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 17813,
+     "german": 13820,
+     "foreign": 3993
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 18169,
+     "german": 14125,
+     "foreign": 4044
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 19570,
+     "german": 15622,
+     "foreign": 3948
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 18258,
+     "german": 14608,
+     "foreign": 3650
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 17135,
+     "german": 13754,
+     "foreign": 3381
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 17836,
+     "german": 14836,
+     "foreign": 3000
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 22431,
+     "german": 20070,
+     "foreign": 2361
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 22281,
+     "german": 20590,
+     "foreign": 1691
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 18621,
+     "german": 17488,
+     "foreign": 1133
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 14912,
+     "german": 13961,
+     "foreign": 951
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 11690,
+     "german": 10783,
+     "foreign": 907
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 8821,
+     "german": 8353,
+     "foreign": 468
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 7237,
+     "german": 7020,
+     "foreign": 217
+    },
+    "90 Jahre und mehr": {
+     "total": 3028,
+     "german": 2962,
+     "foreign": 66
+    }
+   },
+   "population": 291600,
+   "german": 251154,
+   "foreign": 40446,
+   "foreign_share_percent": 13.9,
+   "under_25_share_foreign_percent": 26.3,
+   "under_25_share_german_percent": 25.1
+  },
+  {
+   "id": "08437",
+   "name": "Sigmaringen, Landkreis",
+   "age_groups": {
+    "unter 3 Jahre": {
+     "total": 3465,
+     "german": 3071,
+     "foreign": 394
+    },
+    "3 bis unter 6 Jahre": {
+     "total": 3976,
+     "german": 3497,
+     "foreign": 479
+    },
+    "6 bis unter 10 Jahre": {
+     "total": 5269,
+     "german": 4659,
+     "foreign": 610
+    },
+    "10 bis unter 15 Jahre": {
+     "total": 6373,
+     "german": 5625,
+     "foreign": 748
+    },
+    "15 bis unter 18 Jahre": {
+     "total": 3904,
+     "german": 3390,
+     "foreign": 514
+    },
+    "18 bis unter 20 Jahre": {
+     "total": 2628,
+     "german": 2220,
+     "foreign": 408
+    },
+    "20 bis unter 25 Jahre": {
+     "total": 6677,
+     "german": 5513,
+     "foreign": 1164
+    },
+    "25 bis unter 30 Jahre": {
+     "total": 7497,
+     "german": 6003,
+     "foreign": 1494
+    },
+    "30 bis unter 35 Jahre": {
+     "total": 7985,
+     "german": 6444,
+     "foreign": 1541
+    },
+    "35 bis unter 40 Jahre": {
+     "total": 8606,
+     "german": 7024,
+     "foreign": 1582
+    },
+    "40 bis unter 45 Jahre": {
+     "total": 7999,
+     "german": 6474,
+     "foreign": 1525
+    },
+    "45 bis unter 50 Jahre": {
+     "total": 7538,
+     "german": 5992,
+     "foreign": 1546
+    },
+    "50 bis unter 55 Jahre": {
+     "total": 8016,
+     "german": 6676,
+     "foreign": 1340
+    },
+    "55 bis unter 60 Jahre": {
+     "total": 10340,
+     "german": 9320,
+     "foreign": 1020
+    },
+    "60 bis unter 65 Jahre": {
+     "total": 11221,
+     "german": 10387,
+     "foreign": 834
+    },
+    "65 bis unter 70 Jahre": {
+     "total": 9332,
+     "german": 8775,
+     "foreign": 557
+    },
+    "70 bis unter 75 Jahre": {
+     "total": 7197,
+     "german": 6768,
+     "foreign": 429
+    },
+    "75 bis unter 80 Jahre": {
+     "total": 5309,
+     "german": 4979,
+     "foreign": 330
+    },
+    "80 bis unter 85 Jahre": {
+     "total": 3770,
+     "german": 3596,
+     "foreign": 174
+    },
+    "85 bis unter 90 Jahre": {
+     "total": 3461,
+     "german": 3377,
+     "foreign": 84
+    },
+    "90 Jahre und mehr": {
+     "total": 1425,
+     "german": 1400,
+     "foreign": 25
+    }
+   },
+   "population": 131988,
+   "german": 115190,
+   "foreign": 16798,
+   "foreign_share_percent": 12.7,
+   "under_25_share_foreign_percent": 25.7,
+   "under_25_share_german_percent": 24.3
+  }
+ ]
+}

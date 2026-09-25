@@ -26,6 +26,7 @@ READ_BY_THE_BUILD = [
     'inputs/stala-auslaenderanteil-gemeinden-2025.csv',
     'inputs/genesis-12521-0041-auslaender-kreise-2025.csv',
     'inputs/genesis-12521-0041-staatsangehoerigkeit-bw-2025.csv.gz',
+    'inputs/genesis-12411-bevoelkerung-alter-nationalitaet-bw-2025.csv.gz',
     'inputs/landtag-affiliation-corroboration.json',
     'inputs/igmg-landtag-15-362.json',
 ]

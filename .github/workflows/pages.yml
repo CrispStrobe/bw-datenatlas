@@ -112,6 +112,9 @@ jobs:
       - name: Wanderungs- und Einbürgerungskontext aufbereiten
         run: python scripts/prepare_bw_migration_context.py
 
+      - name: Altersaufbau nach Nationalität je Kreis aufbereiten
+        run: python scripts/prepare_district_age_nationality.py
+
       - name: Staatsangehörigkeiten je Kreis aufbereiten
         run: python scripts/prepare_district_nationalities.py
 
@@ -202,6 +205,7 @@ jobs:
             docs/data/municipal-foreign-share-2025.json \
             docs/data/district-origin-groups-2025.json \
             docs/data/district-nationalities-2025.json \
+            docs/data/district-age-nationality-2025.json \
             docs/data/bases.json \
             docs/data/external-references.json \
             docs/data/district-timeseries.json \

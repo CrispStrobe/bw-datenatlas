@@ -48,6 +48,10 @@ function sourceFor(layer){return D.sources[layer.source]||layer.sourceInfo||AZR_
 const layers={
  religion_state:{title:'Muslimische Bevölkerung · Landeswert',badge:'Veröffentlichte Modellspanne',date:'Bezugsjahr 2025 · veröffentlicht 2026',source:'bamf_fb55',note:'Die einheitliche Landesfläche bedeutet nicht, dass jeder Kreis denselben Muslimanteil hat. Für Kreise und Gemeinden fehlen entsprechende Quellendaten.'},
 
+ foreign_share_2025:{title:'Ausländische Staatsangehörige · Kreisanteil 2025',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'Staatsangehörigkeit ist keine Religionszugehörigkeit.'},thresholds:[10,15,20,25,30],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit, Stichtag 31.12.2025. Dieselbe Größe wie die Ebene für 2024, ein Jahr später und vom Bund statt vom Land fortgeschrieben. Der Unterschied ist klein: Der Median der Kreise liegt in beiden Jahren bei 17,2 Prozent, die größte Abweichung eines Kreises beträgt 0,4 Prozentpunkte. Beide Ebenen stehen nebeneinander, damit das prüfbar ist und nicht behauptet werden muss.'},
+
+ foreign_under25:{title:'Unter 25-Jährige unter den Ausländern · Kreisanteil',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'„Ausländisch“ heißt ohne deutschen Pass.'},thresholds:[20,23,26,29,32],unit:'percent',note:'Anteil der unter 25-Jährigen an der ausländischen Bevölkerung des Kreises. Landesweit sind das 24,6 Prozent — bei der deutschen Bevölkerung 24,9 Prozent, also praktisch dasselbe. Das ist zum Teil ein Artefakt der Zählweise: Kinder von Zugewanderten, die eingebürgert oder als Deutsche geboren sind, zählen auf der deutschen Seite und fehlen auf der ausländischen. Ein Vergleich der Altersstruktur von Herkunftsgruppen ist das ausdrücklich nicht.'},
+
  municipal_foreign_share:{title:'Ausländische Staatsangehörige · Gemeindeanteil',badge:'Amtliche Bevölkerungsdaten',date:'2025 · 1.101 Gemeinden',source:'stala_gemeinden_2024_06',sourceInfo:{title:'Anteil Ausländerinnen und Ausländer je Gemeinde 2025',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2026',url:'https://www.statistik-bw.de/leben-und-arbeiten/bevoelkerung-und-gebiet/migration-und-nationalitaet/',limitation:'Staatsangehörigkeit ist keine Religionszugehörigkeit und keine Herkunft.'},thresholds:[6,9,12,16,22],unit:'percent',note:'Anteil der Einwohnerinnen und Einwohner ohne deutsche Staatsangehörigkeit, je Gemeinde. Eingebürgerte und ihre in Deutschland geborenen Kinder zählen als Deutsche und sind hier unsichtbar — in den lange ansässigen Gemeinschaften ist das die Mehrheit. Eine Gemeinde mit niedrigem Ausländeranteil kann eine lange ansässige Zuwanderungsbevölkerung haben. Dies ist gemessen, nicht modelliert: die einzige direkt erhobene Größe, die der Atlas auf Gemeindeebene neben die Modellrechnung stellen kann.'},
 
  azr_recruitment:{title:'Aus den Anwerbestaaten · Anteil an den Ausländern',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_azr_regionen',sourceInfo:AZR_SOURCE,sourceInfo:AZR_SOURCE,sourceInfo:AZR_SOURCE,thresholds:[30,35,40,45,50],unit:'percent',note:'Anteil der ausländischen Bevölkerung des Kreises, der aus den Gastarbeiter-Anwerbestaaten stammt — Türkei, Italien, Griechenland, Spanien, Portugal, Marokko, Tunesien, ehemaliges Jugoslawien. Der Nenner ist die ausländische Bevölkerung des Kreises, nicht seine Einwohnerschaft. Staatsangehörigkeit ist keine Religionszugehörigkeit.'},
@@ -285,6 +289,11 @@ function valueForFeature(f){const p=f.properties;
  if(state.layer==='mh_under25'){const g=AGE?AGE.districts[p.id]:null;return g&&g.mh?g.mh.u25:null;}
  if(state.layer==='second_generation'){const g=GEN?GEN.districts[p.id]:null;return g?g.second_pct:null;}
  if(state.layer==='mh_change'){const t=TS?TS.districts[p.id]:null;return t?t.change:null;}
+ if(state.layer==='foreign_share_2025'||state.layer==='foreign_under25'){
+  const a=AGENAT?AGENAT.districts.find(r=>r.id===p.id):null;
+  if(!a)return null;
+  return state.layer==='foreign_share_2025'?a.foreign_share_percent:a.under_25_share_foreign_percent;
+ }
  if(state.layer==='municipal_foreign_share'){
   const m=MUNI_FOREIGN?MUNI_FOREIGN.municipalities[p.id]:null;
   return m?m.foreign_share_percent:null;
@@ -516,6 +525,7 @@ function renderContext(){renderComposition();renderBwNationalities();renderDistr
 const AZR=typeof window!=='undefined'?window.ATLAS_DISTRICT_AZR:null;
 const MUNI_FOREIGN=typeof window!=='undefined'?window.ATLAS_MUNICIPAL_FOREIGN:null;
 const OGR=typeof window!=='undefined'?window.ATLAS_ORIGIN_GROUPS:null;
+const AGENAT=typeof window!=='undefined'?window.ATLAS_DISTRICT_AGE_NAT:null;
 // Jeder Anteil hier bezieht sich auf die ausländische Bevölkerung des Kreises, nicht auf
 // seine Einwohner. Das ist die naheliegendste Fehllesart dieser Zahlen, also steht der
 // Nenner in jeder Beschriftung und nicht nur in der Fußnote.
