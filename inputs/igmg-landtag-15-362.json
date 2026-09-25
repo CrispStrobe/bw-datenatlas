@@ -1,0 +1,287 @@
+{
+ "type": "igmg_associations_named_by_the_state_government",
+ "schema_version": "1.0",
+ "source": "Landtag von Baden-Württemberg, Drucksache 15/362 vom 27. Juli 2011: Kleine Anfrage des Abg. Thaddäus Kunzmann CDU und Antwort des Innenministeriums, „Extremistische Bestrebungen in Moscheevereinen“, Antwort zu Frage 2.",
+ "source_url": "https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP15/Drucksachen/0000/15_0362_D.pdf",
+ "wording_in_the_source": "„Folgende eingetragene Ortsvereine in Baden-Württemberg sind der IGMG zuzurechnen“ — die Zuordnung stammt wörtlich vom Innenministerium des Landes.",
+ "what_it_adds": "Die IGMG führt ein eigenes Verzeichnis, aus dem die Anschriften dieses Atlas stammen. Diese Liste fügt keine Anschrift hinzu — die Drucksache nennt keine —, wohl aber eine amtliche Nennung je Ort und Vereinsnamen. Sie dient hier als Abgleich: 49 der 55 genannten Orte sind bereits mit einer IGMG-Einrichtung erfasst.",
+ "age_warning": "Stand 2011. Vereine können seither aufgelöst, umbenannt oder umgezogen sein.",
+ "named_associations": 55,
+ "associations": [
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Aalen",
+   "name": "Muslimische Gemeinde Aalen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Backnang",
+   "name": "IGMG Ortsverein Backnang e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Esslingen",
+   "name": "Die Welt des Islam – Fatih Mescidi Esslingen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Fellbach",
+   "name": "Muslimischer Solidaritätsverein Fatih Moschee Fellbach e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Göppingen",
+   "name": "IGMG Ortsverein Göppingen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Heidenheim",
+   "name": "AMGT Ortsverein e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Heilbronn",
+   "name": "Islamische Gemeinde Heilbronn e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Herrenberg",
+   "name": "IGMG Ortsverein Herrenberg e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Lauffen",
+   "name": "Türkischer Kulturverein Lauffen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Ludwigsburg",
+   "name": "Islamische Gemeinschaft u. U. Ludwigsburg e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Möckmühl",
+   "name": "Islamisch-Türkische Kulturvereine Möckmühl e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Mögglingen",
+   "name": "IGMG Ortsverein Mögglingen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Nürtingen",
+   "name": "Islamische Gemeinschaft Nürtingen u. U. e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Pleidelsheim",
+   "name": "AMGT Ortsverein Pleidelsheim e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Schorndorf",
+   "name": "IGMG Ortsverein Schorndorf e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Schwäbisch Gmünd",
+   "name": "IGMG Ortsverein Schwäbisch Gmünd e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Sindelfingen",
+   "name": "IGMG Ortsverein Sindelfingen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Sindelfingen",
+   "name": "Sportverein Milli Genclik Spor e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Stuttgart",
+   "name": "Islamische Solidarität in Baden-Württemberg e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Vaihingen an der Enz",
+   "name": "IGMG Ortsverein Enzweihingen e. V."
+  },
+  {
+   "regierungsbezirk": "Stuttgart",
+   "city": "Waiblingen",
+   "name": "Moslemische Kultur und soziale Vereinigung in Waiblingen e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Albstadt",
+   "name": "Moslem Gemeinde Ebingen e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Balingen",
+   "name": "IGMG Ortsverein Balingen e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Biberach",
+   "name": "Türkischer Elternverein Biberach e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Blaubeuren",
+   "name": "IGMG Ortsverein Blaubeuren e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Haigerloch",
+   "name": "Islamische Gemeinschaft – Haigerlocher Moschee e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Langenau",
+   "name": "IGMG Verband islamischer Kulturvereine und Glaubensgemeinschaf- ten Schwaben OV Langenau e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Mössingen",
+   "name": "IGMG Ortsverein Mössingen e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Ravensburg",
+   "name": "Verband islamischer Kulturvereine und Glaubensgemeinschaften Schwaben OV Ravensburg e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Reutlingen",
+   "name": "Deutsch-Türkisch und Internationaler Kultur- und Familienverein e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Tübingen",
+   "name": "IGMG Ortsverein Tübingen e. V."
+  },
+  {
+   "regierungsbezirk": "Tübingen",
+   "city": "Ulm",
+   "name": "IGMG Verband islamischer Kulturvereine und Glaubensgemeinschaften Schwaben OV Ulm e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Althengstett",
+   "name": "AMGT Ortsverein e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Bretten",
+   "name": "Islamischer Sozial- und Kulturverein e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Bruchsal",
+   "name": "Muslim Gemeinde Bruchsal e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Karlsruhe",
+   "name": "Hagia-Sophia-Moschee Islamische Union e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Mannheim",
+   "name": "IGMG Ortsverein Mannheim-Zentrum e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Mannheim",
+   "name": "Islamisches Gemeinde Zentrum e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Mühlacker",
+   "name": "Islamischer Solidaritätsverein Mühlacker e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Nagold",
+   "name": "IGMG Ortsverein Nagold e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Pforzheim",
+   "name": "IGMG Ortsverein Pforzheim e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Philippsburg",
+   "name": "IGMG Zweigstelle Philippsburg e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Philippsburg-Huttenheim",
+   "name": "Türkisch Islamischer Bund e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Rastatt",
+   "name": "IGMG Ortsverein Rastatt e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Sinsheim",
+   "name": "IGMG Ortsverein Sinsheim e. V."
+  },
+  {
+   "regierungsbezirk": "Karlsruhe",
+   "city": "Walldorf",
+   "name": "IGMG Ortsverein Walldorf e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Achern",
+   "name": "Islamischer Kulturverein Achern e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Aldingen",
+   "name": "Islamische Union Aldingen u. U. e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Blumberg",
+   "name": "Türkisch islamischer Verein Fatih Moschee e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Freiburg",
+   "name": "Islamisches Zentrum Freiburg e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Hüfingen",
+   "name": "IGMG Ortsverein Hüfingen Tuna Moschee e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Lauchringen",
+   "name": "Muslim-Gemeinde Lauchringen-Unterlauchringen e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Lörrach",
+   "name": "IGMG Islamische Gemeinschaft Milli Görüs – Islam Toplumu Milli Görüs – Ortsverein Fatih Camii e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Tuttlingen",
+   "name": "Verein zum Kauf und zur Aufrechterhaltung der Moschee in Tuttlin- gen e. V."
+  },
+  {
+   "regierungsbezirk": "Freiburg",
+   "city": "Villingen-Schwenningen",
+   "name": "Moslem-Gemeinde Villingen-Schwenningen e. V."
+  }
+ ]
+}

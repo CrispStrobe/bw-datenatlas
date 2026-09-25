@@ -1,0 +1,2127 @@
+{
+  "type": "modelled_district_muslim_population",
+  "schema_version": "1.0",
+  "is_model_not_measurement": true,
+  "headline": "Modellrechnung, keine amtliche Messung der Religionszugehörigkeit.",
+  "method": "Veröffentlichte Landessumme, verteilt nach Herkunftsschlüssel: ausländische Bevölkerung je Staatsangehörigkeit multipliziert mit dem bundesweiten muslimischen Anteil dieser Herkunftsgruppe.",
+  "state_total": {
+    "persons_low": 1133000,
+    "persons_high": 1197000,
+    "reference_period": "2025",
+    "source_id": "bamf_fb55"
+  },
+  "origin_source": {
+    "source": "Statistisches Landesamt Baden-Württemberg, Statistischer Bericht A I 4 - j/24",
+    "table": "Tabelle 4",
+    "reference_period": "2024-12-31",
+    "measurement": "citizenship_azr"
+  },
+  "share_source": {
+    "source": "BAMF Forschungsbericht 55, Tabelle 2",
+    "reference_period": "2019/2020",
+    "excluded": "Fünf abweichende Werte aus Tabelle 1, Spalte E."
+  },
+  "migration_source": {
+    "source": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0503, Grundprogramm des Mikrozensus",
+    "reference_period": "2024"
+  },
+  "origin_groups_used": {
+    "turkey": {
+      "group": "Türkei",
+      "share_percent": 87.2
+    },
+    "syria": {
+      "group": "Syrien",
+      "share_percent": 86.5
+    },
+    "kosovo": {
+      "group": "Kosovo",
+      "share_percent": 86.9
+    },
+    "bosnia_herzegovina": {
+      "group": "Bosnien-Herzegowina",
+      "share_percent": 57.2
+    },
+    "serbia": {
+      "group": "Serbien",
+      "share_percent": 48
+    },
+    "iraq": {
+      "group": "Irak",
+      "share_percent": 37.4
+    },
+    "afghanistan": {
+      "group": "Afghanistan",
+      "share_percent": 93.5
+    },
+    "north_macedonia": {
+      "group": "Nordmazedonien",
+      "share_percent": 80
+    }
+  },
+  "origin_groups_not_available_per_district": [
+    "Albanien",
+    "Bangladesch",
+    "Iran",
+    "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate",
+    "Jordanien",
+    "Libanon",
+    "Marokko",
+    "Montenegro",
+    "Pakistan",
+    "Ägypten/Algerien/Libyen/Tunesien"
+  ],
+  "naturalisation_ratios": {
+    "Afghanistan": {
+      "ratio": 1.025,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 44000,
+      "citizenship_persons": 42945
+    },
+    "Bosnien-Herzegowina": {
+      "ratio": 1.926,
+      "basis": "fallback_non_eu_europe_aggregate",
+      "migration_background_persons": 1465000,
+      "citizenship_persons": 760620
+    },
+    "Irak": {
+      "ratio": 1.599,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 49000,
+      "citizenship_persons": 30645
+    },
+    "Kosovo": {
+      "ratio": 1.907,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 170000,
+      "citizenship_persons": 89155
+    },
+    "Nordmazedonien": {
+      "ratio": 1.926,
+      "basis": "fallback_non_eu_europe_aggregate",
+      "migration_background_persons": 1465000,
+      "citizenship_persons": 760620
+    },
+    "Serbien": {
+      "ratio": 1.914,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 92000,
+      "citizenship_persons": 48055
+    },
+    "Syrien": {
+      "ratio": 1.242,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 122000,
+      "citizenship_persons": 98255
+    },
+    "Türkei": {
+      "ratio": 2.028,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 545000,
+      "citizenship_persons": 268725
+    }
+  },
+  "coverage": {
+    "explained_by_citizenship_persons": 525897,
+    "explained_with_naturalisation_persons": 936945,
+    "share_of_published_low_percent": 46.4,
+    "share_of_published_high_percent": 43.9,
+    "corrected_share_of_published_low_percent": 82.7,
+    "corrected_share_of_published_high_percent": 78.3,
+    "note": "Die Staatsangehörigkeitsdaten erklären nur diesen Teil der veröffentlichten Landessumme. Der Rest entfällt auf Eingebürgerte, in Deutschland geborene Nachkommen und Herkunftsgruppen ohne Kreisangabe. Genau dieser Rest wird in den beiden Varianten unterschiedlich verteilt."
+  },
+  "variants": {
+    "citizenship": "Nur Staatsangehörigkeit. Der nicht erklärte Rest wird wie die Staatsangehörigkeitsdaten selbst verteilt.",
+    "migration_background": "Jede Herkunftsgruppe wird mit ihrem eigenen Faktor aus Migrationshintergrund je Herkunft geteilt durch Staatsangehörige derselben Herkunft hochgerechnet. Der verbleibende Rest wird nach Bevölkerung mit Migrationshintergrund verteilt."
+  },
+  "limitations": [
+    "Keine amtliche Religionsstatistik auf Kreisebene; dies ist eine Modellrechnung.",
+    "Die muslimischen Anteile je Herkunftsgruppe sind bundesweite Werte von 2019/2020. Auch der BAMF-Bericht selbst rechnet seine Werte für 2025 mit diesen Anteilen; neuere liegen nicht vor. Das ist die größte Fehlerquelle des Ergebnisses.",
+    "Staatsangehörigkeit ist nicht Herkunft: Eingebürgerte fehlen in der Herkunftsquelle.",
+    "Nur 8 der 18 veröffentlichten Herkunftsgruppen haben eine Entsprechung je Kreis.",
+    "Die Bezugszeiten der Bausteine unterscheiden sich (2025, 31.12.2024, 2024, 2019/2020).",
+    "Der Mikrozensus ist eine Stichprobe; Rastatt und Baden-Baden teilen eine Region."
+  ],
+  "districts": [
+    {
+      "id": "08111",
+      "name": "Stuttgart (SKR)",
+      "population": 613205,
+      "explained_by_citizenship": 34340,
+      "explained_with_naturalisation": 61366,
+      "by_origin": {
+        "Türkei": 15565,
+        "Syrien": 4740,
+        "Kosovo": 3385,
+        "Bosnien-Herzegowina": 3037,
+        "Serbien": 2244,
+        "Irak": 1101,
+        "Afghanistan": 2959,
+        "Nordmazedonien": 1308
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 31568,
+        "Syrien": 5886,
+        "Kosovo": 6454,
+        "Bosnien-Herzegowina": 5850,
+        "Serbien": 4296,
+        "Irak": 1761,
+        "Afghanistan": 3032,
+        "Nordmazedonien": 2519
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 73983,
+          "persons_high": 78162,
+          "percent_low": 12.06,
+          "percent_high": 12.75
+        },
+        "migration_background": {
+          "persons_low": 75347,
+          "persons_high": 79911,
+          "percent_low": 12.29,
+          "percent_high": 13.03
+        }
+      },
+      "combined_low_persons": 73983,
+      "combined_high_persons": 79911,
+      "combined_low_percent": 12.06,
+      "combined_high_percent": 13.03
+    },
+    {
+      "id": "08115",
+      "name": "Böblingen (LKR)",
+      "population": 395351,
+      "explained_by_citizenship": 24428,
+      "explained_with_naturalisation": 44545,
+      "by_origin": {
+        "Türkei": 11816,
+        "Syrien": 2664,
+        "Kosovo": 3658,
+        "Bosnien-Herzegowina": 1530,
+        "Serbien": 962,
+        "Irak": 363,
+        "Afghanistan": 1870,
+        "Nordmazedonien": 1564
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 23963,
+        "Syrien": 3308,
+        "Kosovo": 6976,
+        "Bosnien-Herzegowina": 2947,
+        "Serbien": 1842,
+        "Irak": 580,
+        "Afghanistan": 1916,
+        "Nordmazedonien": 3012
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 52627,
+          "persons_high": 55600,
+          "percent_low": 13.31,
+          "percent_high": 14.06
+        },
+        "migration_background": {
+          "persons_low": 52567,
+          "persons_high": 55186,
+          "percent_low": 13.3,
+          "percent_high": 13.96
+        }
+      },
+      "combined_low_persons": 52567,
+      "combined_high_persons": 55600,
+      "combined_low_percent": 13.3,
+      "combined_high_percent": 14.06
+    },
+    {
+      "id": "08116",
+      "name": "Esslingen (LKR)",
+      "population": 537006,
+      "explained_by_citizenship": 31621,
+      "explained_with_naturalisation": 57096,
+      "by_origin": {
+        "Türkei": 15295,
+        "Syrien": 4991,
+        "Kosovo": 4845,
+        "Bosnien-Herzegowina": 1830,
+        "Serbien": 1222,
+        "Irak": 471,
+        "Afghanistan": 1875,
+        "Nordmazedonien": 1092
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 31019,
+        "Syrien": 6197,
+        "Kosovo": 9238,
+        "Bosnien-Herzegowina": 3525,
+        "Serbien": 2339,
+        "Irak": 753,
+        "Afghanistan": 1921,
+        "Nordmazedonien": 2103
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 68124,
+          "persons_high": 71972,
+          "percent_low": 12.69,
+          "percent_high": 13.4
+        },
+        "migration_background": {
+          "persons_low": 66814,
+          "persons_high": 69986,
+          "percent_low": 12.44,
+          "percent_high": 13.03
+        }
+      },
+      "combined_low_persons": 66814,
+      "combined_high_persons": 71972,
+      "combined_low_percent": 12.44,
+      "combined_high_percent": 13.4
+    },
+    {
+      "id": "08117",
+      "name": "Göppingen (LKR)",
+      "population": 258898,
+      "explained_by_citizenship": 16711,
+      "explained_with_naturalisation": 30506,
+      "by_origin": {
+        "Türkei": 8253,
+        "Syrien": 2201,
+        "Kosovo": 2677,
+        "Bosnien-Herzegowina": 1090,
+        "Serbien": 785,
+        "Irak": 228,
+        "Afghanistan": 977,
+        "Nordmazedonien": 500
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 16739,
+        "Syrien": 2733,
+        "Kosovo": 5104,
+        "Bosnien-Herzegowina": 2099,
+        "Serbien": 1502,
+        "Irak": 365,
+        "Afghanistan": 1001,
+        "Nordmazedonien": 963
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 36003,
+          "persons_high": 38036,
+          "percent_low": 13.91,
+          "percent_high": 14.69
+        },
+        "migration_background": {
+          "persons_low": 35273,
+          "persons_high": 36829,
+          "percent_low": 13.62,
+          "percent_high": 14.23
+        }
+      },
+      "combined_low_persons": 35273,
+      "combined_high_persons": 38036,
+      "combined_low_percent": 13.62,
+      "combined_high_percent": 14.69
+    },
+    {
+      "id": "08118",
+      "name": "Ludwigsburg (LKR)",
+      "population": 535684,
+      "explained_by_citizenship": 32725,
+      "explained_with_naturalisation": 59065,
+      "by_origin": {
+        "Türkei": 16350,
+        "Syrien": 4463,
+        "Kosovo": 4701,
+        "Bosnien-Herzegowina": 1544,
+        "Serbien": 1310,
+        "Irak": 514,
+        "Afghanistan": 2557,
+        "Nordmazedonien": 1284
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 33159,
+        "Syrien": 5542,
+        "Kosovo": 8964,
+        "Bosnien-Herzegowina": 2975,
+        "Serbien": 2509,
+        "Irak": 822,
+        "Afghanistan": 2620,
+        "Nordmazedonien": 2473
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 70503,
+          "persons_high": 74486,
+          "percent_low": 13.16,
+          "percent_high": 13.9
+        },
+        "migration_background": {
+          "persons_low": 69424,
+          "persons_high": 72806,
+          "percent_low": 12.96,
+          "percent_high": 13.59
+        }
+      },
+      "combined_low_persons": 69424,
+      "combined_high_persons": 74486,
+      "combined_low_percent": 12.96,
+      "combined_high_percent": 13.9
+    },
+    {
+      "id": "08119",
+      "name": "Rems-Murr-Kreis (LKR)",
+      "population": 440698,
+      "explained_by_citizenship": 22643,
+      "explained_with_naturalisation": 40402,
+      "by_origin": {
+        "Türkei": 8816,
+        "Syrien": 3750,
+        "Kosovo": 5140,
+        "Bosnien-Herzegowina": 1287,
+        "Serbien": 1099,
+        "Irak": 365,
+        "Afghanistan": 1454,
+        "Nordmazedonien": 732
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 17880,
+        "Syrien": 4656,
+        "Kosovo": 9801,
+        "Bosnien-Herzegowina": 2479,
+        "Serbien": 2104,
+        "Irak": 583,
+        "Afghanistan": 1490,
+        "Nordmazedonien": 1410
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 48782,
+          "persons_high": 51537,
+          "percent_low": 11.07,
+          "percent_high": 11.69
+        },
+        "migration_background": {
+          "persons_low": 48333,
+          "persons_high": 50921,
+          "percent_low": 10.97,
+          "percent_high": 11.55
+        }
+      },
+      "combined_low_persons": 48333,
+      "combined_high_persons": 51537,
+      "combined_low_percent": 10.97,
+      "combined_high_percent": 11.69
+    },
+    {
+      "id": "08121",
+      "name": "Heilbronn (SKR)",
+      "population": 132097,
+      "explained_by_citizenship": 13952,
+      "explained_with_naturalisation": 25537,
+      "by_origin": {
+        "Türkei": 6457,
+        "Syrien": 2085,
+        "Kosovo": 3211,
+        "Bosnien-Herzegowina": 761,
+        "Serbien": 329,
+        "Irak": 365,
+        "Afghanistan": 425,
+        "Nordmazedonien": 320
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 13096,
+        "Syrien": 2588,
+        "Kosovo": 6123,
+        "Bosnien-Herzegowina": 1465,
+        "Serbien": 629,
+        "Irak": 583,
+        "Afghanistan": 436,
+        "Nordmazedonien": 616
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 30059,
+          "persons_high": 31757,
+          "percent_low": 22.76,
+          "percent_high": 24.04
+        },
+        "migration_background": {
+          "persons_low": 28883,
+          "persons_high": 29975,
+          "percent_low": 21.87,
+          "percent_high": 22.69
+        }
+      },
+      "combined_low_persons": 28883,
+      "combined_high_persons": 31757,
+      "combined_low_percent": 21.86,
+      "combined_high_percent": 24.04
+    },
+    {
+      "id": "08125",
+      "name": "Heilbronn (LKR)",
+      "population": 354043,
+      "explained_by_citizenship": 19257,
+      "explained_with_naturalisation": 34910,
+      "by_origin": {
+        "Türkei": 10529,
+        "Syrien": 2833,
+        "Kosovo": 2785,
+        "Bosnien-Herzegowina": 752,
+        "Serbien": 473,
+        "Irak": 299,
+        "Afghanistan": 1286,
+        "Nordmazedonien": 300
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 21355,
+        "Syrien": 3517,
+        "Kosovo": 5311,
+        "Bosnien-Herzegowina": 1449,
+        "Serbien": 905,
+        "Irak": 478,
+        "Afghanistan": 1317,
+        "Nordmazedonien": 578
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 41488,
+          "persons_high": 43832,
+          "percent_low": 11.72,
+          "percent_high": 12.38
+        },
+        "migration_background": {
+          "persons_low": 41098,
+          "persons_high": 43119,
+          "percent_low": 11.61,
+          "percent_high": 12.18
+        }
+      },
+      "combined_low_persons": 41098,
+      "combined_high_persons": 43832,
+      "combined_low_percent": 11.61,
+      "combined_high_percent": 12.38
+    },
+    {
+      "id": "08126",
+      "name": "Hohenlohekreis (LKR)",
+      "population": 115715,
+      "explained_by_citizenship": 3325,
+      "explained_with_naturalisation": 5426,
+      "by_origin": {
+        "Türkei": 955,
+        "Syrien": 904,
+        "Kosovo": 443,
+        "Bosnien-Herzegowina": 149,
+        "Serbien": 230,
+        "Irak": 26,
+        "Afghanistan": 486,
+        "Nordmazedonien": 132
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 1937,
+        "Syrien": 1122,
+        "Kosovo": 845,
+        "Bosnien-Herzegowina": 286,
+        "Serbien": 441,
+        "Irak": 42,
+        "Afghanistan": 498,
+        "Nordmazedonien": 254
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 7164,
+          "persons_high": 7569,
+          "percent_low": 6.19,
+          "percent_high": 6.54
+        },
+        "migration_background": {
+          "persons_low": 7764,
+          "persons_high": 8527,
+          "percent_low": 6.71,
+          "percent_high": 7.37
+        }
+      },
+      "combined_low_persons": 7164,
+      "combined_high_persons": 8527,
+      "combined_low_percent": 6.19,
+      "combined_high_percent": 7.37
+    },
+    {
+      "id": "08127",
+      "name": "Schwäbisch Hall (LKR)",
+      "population": 200936,
+      "explained_by_citizenship": 6642,
+      "explained_with_naturalisation": 11300,
+      "by_origin": {
+        "Türkei": 2542,
+        "Syrien": 1207,
+        "Kosovo": 943,
+        "Bosnien-Herzegowina": 366,
+        "Serbien": 274,
+        "Irak": 180,
+        "Afghanistan": 940,
+        "Nordmazedonien": 192
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5155,
+        "Syrien": 1498,
+        "Kosovo": 1798,
+        "Bosnien-Herzegowina": 705,
+        "Serbien": 524,
+        "Irak": 287,
+        "Afghanistan": 963,
+        "Nordmazedonien": 370
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 14310,
+          "persons_high": 15119,
+          "percent_low": 7.12,
+          "percent_high": 7.52
+        },
+        "migration_background": {
+          "persons_low": 14417,
+          "persons_high": 15434,
+          "percent_low": 7.17,
+          "percent_high": 7.68
+        }
+      },
+      "combined_low_persons": 14310,
+      "combined_high_persons": 15434,
+      "combined_low_percent": 7.12,
+      "combined_high_percent": 7.68
+    },
+    {
+      "id": "08128",
+      "name": "Main-Tauber-Kreis (LKR)",
+      "population": 133235,
+      "explained_by_citizenship": 3794,
+      "explained_with_naturalisation": 6246,
+      "by_origin": {
+        "Türkei": 1343,
+        "Syrien": 1120,
+        "Kosovo": 326,
+        "Bosnien-Herzegowina": 143,
+        "Serbien": 168,
+        "Irak": 82,
+        "Afghanistan": 439,
+        "Nordmazedonien": 172
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 2723,
+        "Syrien": 1391,
+        "Kosovo": 621,
+        "Bosnien-Herzegowina": 275,
+        "Serbien": 322,
+        "Irak": 132,
+        "Afghanistan": 450,
+        "Nordmazedonien": 331
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 8173,
+          "persons_high": 8635,
+          "percent_low": 6.13,
+          "percent_high": 6.48
+        },
+        "migration_background": {
+          "persons_low": 8217,
+          "persons_high": 8860,
+          "percent_low": 6.17,
+          "percent_high": 6.65
+        }
+      },
+      "combined_low_persons": 8173,
+      "combined_high_persons": 8860,
+      "combined_low_percent": 6.13,
+      "combined_high_percent": 6.65
+    },
+    {
+      "id": "08135",
+      "name": "Heidenheim (LKR)",
+      "population": 135273,
+      "explained_by_citizenship": 6545,
+      "explained_with_naturalisation": 11574,
+      "by_origin": {
+        "Türkei": 3043,
+        "Syrien": 1626,
+        "Kosovo": 691,
+        "Bosnien-Herzegowina": 277,
+        "Serbien": 353,
+        "Irak": 110,
+        "Afghanistan": 196,
+        "Nordmazedonien": 248
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 6172,
+        "Syrien": 2019,
+        "Kosovo": 1317,
+        "Bosnien-Herzegowina": 534,
+        "Serbien": 675,
+        "Irak": 176,
+        "Afghanistan": 201,
+        "Nordmazedonien": 478
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 14101,
+          "persons_high": 14898,
+          "percent_low": 10.42,
+          "percent_high": 11.01
+        },
+        "migration_background": {
+          "persons_low": 13728,
+          "persons_high": 14431,
+          "percent_low": 10.15,
+          "percent_high": 10.67
+        }
+      },
+      "combined_low_persons": 13728,
+      "combined_high_persons": 14898,
+      "combined_low_percent": 10.15,
+      "combined_high_percent": 11.01
+    },
+    {
+      "id": "08136",
+      "name": "Ostalbkreis (LKR)",
+      "population": 317458,
+      "explained_by_citizenship": 11271,
+      "explained_with_naturalisation": 20730,
+      "by_origin": {
+        "Türkei": 5642,
+        "Syrien": 1414,
+        "Kosovo": 1808,
+        "Bosnien-Herzegowina": 741,
+        "Serbien": 391,
+        "Irak": 114,
+        "Afghanistan": 566,
+        "Nordmazedonien": 596
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11442,
+        "Syrien": 1756,
+        "Kosovo": 3447,
+        "Bosnien-Herzegowina": 1427,
+        "Serbien": 749,
+        "Irak": 182,
+        "Afghanistan": 580,
+        "Nordmazedonien": 1148
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 24283,
+          "persons_high": 25655,
+          "percent_low": 7.65,
+          "percent_high": 8.08
+        },
+        "migration_background": {
+          "persons_low": 25635,
+          "persons_high": 27236,
+          "percent_low": 8.08,
+          "percent_high": 8.58
+        }
+      },
+      "combined_low_persons": 24283,
+      "combined_high_persons": 27236,
+      "combined_low_percent": 7.65,
+      "combined_high_percent": 8.58
+    },
+    {
+      "id": "08211",
+      "name": "Baden-Baden (SKR)",
+      "population": 56852,
+      "explained_by_citizenship": 2198,
+      "explained_with_naturalisation": 3881,
+      "by_origin": {
+        "Türkei": 576,
+        "Syrien": 376,
+        "Kosovo": 452,
+        "Bosnien-Herzegowina": 186,
+        "Serbien": 175,
+        "Irak": 79,
+        "Afghanistan": 131,
+        "Nordmazedonien": 224
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 1167,
+        "Syrien": 467,
+        "Kosovo": 862,
+        "Bosnien-Herzegowina": 358,
+        "Serbien": 335,
+        "Irak": 126,
+        "Afghanistan": 134,
+        "Nordmazedonien": 431
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 4736,
+          "persons_high": 5003,
+          "percent_low": 8.33,
+          "percent_high": 8.8
+        },
+        "migration_background": {
+          "persons_low": 4923,
+          "persons_high": 5263,
+          "percent_low": 8.66,
+          "percent_high": 9.26
+        }
+      },
+      "combined_low_persons": 4736,
+      "combined_high_persons": 5263,
+      "combined_low_percent": 8.33,
+      "combined_high_percent": 9.26
+    },
+    {
+      "id": "08212",
+      "name": "Karlsruhe (SKR)",
+      "population": 309415,
+      "explained_by_citizenship": 11528,
+      "explained_with_naturalisation": 20623,
+      "by_origin": {
+        "Türkei": 5446,
+        "Syrien": 1648,
+        "Kosovo": 882,
+        "Bosnien-Herzegowina": 792,
+        "Serbien": 617,
+        "Irak": 264,
+        "Afghanistan": 996,
+        "Nordmazedonien": 884
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11044,
+        "Syrien": 2046,
+        "Kosovo": 1682,
+        "Bosnien-Herzegowina": 1526,
+        "Serbien": 1181,
+        "Irak": 422,
+        "Afghanistan": 1020,
+        "Nordmazedonien": 1703
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 24836,
+          "persons_high": 26239,
+          "percent_low": 8.03,
+          "percent_high": 8.48
+        },
+        "migration_background": {
+          "persons_low": 25987,
+          "persons_high": 27737,
+          "percent_low": 8.4,
+          "percent_high": 8.96
+        }
+      },
+      "combined_low_persons": 24836,
+      "combined_high_persons": 27737,
+      "combined_low_percent": 8.03,
+      "combined_high_percent": 8.96
+    },
+    {
+      "id": "08215",
+      "name": "Karlsruhe (LKR)",
+      "population": 456289,
+      "explained_by_citizenship": 17503,
+      "explained_with_naturalisation": 31791,
+      "by_origin": {
+        "Türkei": 8868,
+        "Syrien": 2357,
+        "Kosovo": 1890,
+        "Bosnien-Herzegowina": 1024,
+        "Serbien": 658,
+        "Irak": 273,
+        "Afghanistan": 1197,
+        "Nordmazedonien": 1236
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 17986,
+        "Syrien": 2927,
+        "Kosovo": 3604,
+        "Bosnien-Herzegowina": 1972,
+        "Serbien": 1259,
+        "Irak": 437,
+        "Afghanistan": 1226,
+        "Nordmazedonien": 2381
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 37708,
+          "persons_high": 39838,
+          "percent_low": 8.26,
+          "percent_high": 8.73
+        },
+        "migration_background": {
+          "persons_low": 38712,
+          "persons_high": 40972,
+          "percent_low": 8.48,
+          "percent_high": 8.98
+        }
+      },
+      "combined_low_persons": 37708,
+      "combined_high_persons": 40972,
+      "combined_low_percent": 8.26,
+      "combined_high_percent": 8.98
+    },
+    {
+      "id": "08216",
+      "name": "Rastatt (LKR)",
+      "population": 230759,
+      "explained_by_citizenship": 10092,
+      "explained_with_naturalisation": 17678,
+      "by_origin": {
+        "Türkei": 4020,
+        "Syrien": 1622,
+        "Kosovo": 1338,
+        "Bosnien-Herzegowina": 684,
+        "Serbien": 602,
+        "Irak": 217,
+        "Afghanistan": 1061,
+        "Nordmazedonien": 548
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8153,
+        "Syrien": 2014,
+        "Kosovo": 2552,
+        "Bosnien-Herzegowina": 1317,
+        "Serbien": 1153,
+        "Irak": 347,
+        "Afghanistan": 1087,
+        "Nordmazedonien": 1055
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 21743,
+          "persons_high": 22971,
+          "percent_low": 9.42,
+          "percent_high": 9.95
+        },
+        "migration_background": {
+          "persons_low": 21907,
+          "persons_high": 23288,
+          "percent_low": 9.49,
+          "percent_high": 10.09
+        }
+      },
+      "combined_low_persons": 21743,
+      "combined_high_persons": 23288,
+      "combined_low_percent": 9.42,
+      "combined_high_percent": 10.09
+    },
+    {
+      "id": "08221",
+      "name": "Heidelberg (SKR)",
+      "population": 155910,
+      "explained_by_citizenship": 4641,
+      "explained_with_naturalisation": 8186,
+      "by_origin": {
+        "Türkei": 2097,
+        "Syrien": 670,
+        "Kosovo": 478,
+        "Bosnien-Herzegowina": 283,
+        "Serbien": 276,
+        "Irak": 174,
+        "Afghanistan": 486,
+        "Nordmazedonien": 176
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4253,
+        "Syrien": 832,
+        "Kosovo": 911,
+        "Bosnien-Herzegowina": 545,
+        "Serbien": 528,
+        "Irak": 278,
+        "Afghanistan": 498,
+        "Nordmazedonien": 339
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 9998,
+          "persons_high": 10563,
+          "percent_low": 6.41,
+          "percent_high": 6.77
+        },
+        "migration_background": {
+          "persons_low": 11486,
+          "persons_high": 12564,
+          "percent_low": 7.37,
+          "percent_high": 8.06
+        }
+      },
+      "combined_low_persons": 9998,
+      "combined_high_persons": 12564,
+      "combined_low_percent": 6.41,
+      "combined_high_percent": 8.06
+    },
+    {
+      "id": "08222",
+      "name": "Mannheim (SKR)",
+      "population": 318392,
+      "explained_by_citizenship": 21596,
+      "explained_with_naturalisation": 40518,
+      "by_origin": {
+        "Türkei": 14122,
+        "Syrien": 2132,
+        "Kosovo": 1460,
+        "Bosnien-Herzegowina": 1195,
+        "Serbien": 701,
+        "Irak": 381,
+        "Afghanistan": 996,
+        "Nordmazedonien": 608
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 28641,
+        "Syrien": 2648,
+        "Kosovo": 2784,
+        "Bosnien-Herzegowina": 2303,
+        "Serbien": 1342,
+        "Irak": 610,
+        "Afghanistan": 1020,
+        "Nordmazedonien": 1171
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 46526,
+          "persons_high": 49154,
+          "percent_low": 14.61,
+          "percent_high": 15.44
+        },
+        "migration_background": {
+          "persons_low": 47577,
+          "persons_high": 49881,
+          "percent_low": 14.94,
+          "percent_high": 15.67
+        }
+      },
+      "combined_low_persons": 46526,
+      "combined_high_persons": 49881,
+      "combined_low_percent": 14.61,
+      "combined_high_percent": 15.67
+    },
+    {
+      "id": "08225",
+      "name": "Neckar-Odenwald-Kreis (LKR)",
+      "population": 145405,
+      "explained_by_citizenship": 4745,
+      "explained_with_naturalisation": 8134,
+      "by_origin": {
+        "Türkei": 2023,
+        "Syrien": 947,
+        "Kosovo": 604,
+        "Bosnien-Herzegowina": 212,
+        "Serbien": 137,
+        "Irak": 82,
+        "Afghanistan": 580,
+        "Nordmazedonien": 160
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4103,
+        "Syrien": 1176,
+        "Kosovo": 1152,
+        "Bosnien-Herzegowina": 408,
+        "Serbien": 262,
+        "Irak": 132,
+        "Afghanistan": 594,
+        "Nordmazedonien": 308
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 10222,
+          "persons_high": 10799,
+          "percent_low": 7.03,
+          "percent_high": 7.43
+        },
+        "migration_background": {
+          "persons_low": 10059,
+          "persons_high": 10688,
+          "percent_low": 6.92,
+          "percent_high": 7.35
+        }
+      },
+      "combined_low_persons": 10059,
+      "combined_high_persons": 10799,
+      "combined_low_percent": 6.92,
+      "combined_high_percent": 7.43
+    },
+    {
+      "id": "08226",
+      "name": "Rhein-Neckar-Kreis (LKR)",
+      "population": 558654,
+      "explained_by_citizenship": 22613,
+      "explained_with_naturalisation": 40573,
+      "by_origin": {
+        "Türkei": 12138,
+        "Syrien": 3265,
+        "Kosovo": 2729,
+        "Bosnien-Herzegowina": 758,
+        "Serbien": 689,
+        "Irak": 496,
+        "Afghanistan": 1954,
+        "Nordmazedonien": 584
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 24618,
+        "Syrien": 4055,
+        "Kosovo": 5203,
+        "Bosnien-Herzegowina": 1460,
+        "Serbien": 1319,
+        "Irak": 792,
+        "Afghanistan": 2002,
+        "Nordmazedonien": 1125
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 48717,
+          "persons_high": 51469,
+          "percent_low": 8.72,
+          "percent_high": 9.21
+        },
+        "migration_background": {
+          "persons_low": 49649,
+          "persons_high": 52612,
+          "percent_low": 8.89,
+          "percent_high": 9.42
+        }
+      },
+      "combined_low_persons": 48717,
+      "combined_high_persons": 52612,
+      "combined_low_percent": 8.72,
+      "combined_high_percent": 9.42
+    },
+    {
+      "id": "08231",
+      "name": "Pforzheim (SKR)",
+      "population": 134926,
+      "explained_by_citizenship": 10255,
+      "explained_with_naturalisation": 18293,
+      "by_origin": {
+        "Türkei": 4299,
+        "Syrien": 1358,
+        "Kosovo": 1386,
+        "Bosnien-Herzegowina": 317,
+        "Serbien": 439,
+        "Irak": 1288,
+        "Afghanistan": 570,
+        "Nordmazedonien": 596
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8719,
+        "Syrien": 1686,
+        "Kosovo": 2643,
+        "Bosnien-Herzegowina": 611,
+        "Serbien": 841,
+        "Irak": 2060,
+        "Afghanistan": 584,
+        "Nordmazedonien": 1148
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 22092,
+          "persons_high": 23340,
+          "percent_low": 16.37,
+          "percent_high": 17.3
+        },
+        "migration_background": {
+          "persons_low": 21960,
+          "persons_high": 23157,
+          "percent_low": 16.28,
+          "percent_high": 17.16
+        }
+      },
+      "combined_low_persons": 21960,
+      "combined_high_persons": 23340,
+      "combined_low_percent": 16.28,
+      "combined_high_percent": 17.3
+    },
+    {
+      "id": "08235",
+      "name": "Calw (LKR)",
+      "population": 161361,
+      "explained_by_citizenship": 7172,
+      "explained_with_naturalisation": 12842,
+      "by_origin": {
+        "Türkei": 3257,
+        "Syrien": 1029,
+        "Kosovo": 1086,
+        "Bosnien-Herzegowina": 521,
+        "Serbien": 331,
+        "Irak": 84,
+        "Afghanistan": 608,
+        "Nordmazedonien": 256
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 6605,
+        "Syrien": 1278,
+        "Kosovo": 2071,
+        "Bosnien-Herzegowina": 1003,
+        "Serbien": 634,
+        "Irak": 135,
+        "Afghanistan": 623,
+        "Nordmazedonien": 493
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 15452,
+          "persons_high": 16325,
+          "percent_low": 9.58,
+          "percent_high": 10.12
+        },
+        "migration_background": {
+          "persons_low": 15638,
+          "persons_high": 16551,
+          "percent_low": 9.69,
+          "percent_high": 10.26
+        }
+      },
+      "combined_low_persons": 15452,
+      "combined_high_persons": 16551,
+      "combined_low_percent": 9.58,
+      "combined_high_percent": 10.26
+    },
+    {
+      "id": "08236",
+      "name": "Enzkreis (LKR)",
+      "population": 199642,
+      "explained_by_citizenship": 8824,
+      "explained_with_naturalisation": 15548,
+      "by_origin": {
+        "Türkei": 4578,
+        "Syrien": 1453,
+        "Kosovo": 752,
+        "Bosnien-Herzegowina": 260,
+        "Serbien": 266,
+        "Irak": 297,
+        "Afghanistan": 893,
+        "Nordmazedonien": 324
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 9285,
+        "Syrien": 1804,
+        "Kosovo": 1433,
+        "Bosnien-Herzegowina": 501,
+        "Serbien": 510,
+        "Irak": 475,
+        "Afghanistan": 915,
+        "Nordmazedonien": 624
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 19010,
+          "persons_high": 20084,
+          "percent_low": 9.52,
+          "percent_high": 10.06
+        },
+        "migration_background": {
+          "persons_low": 18757,
+          "persons_high": 19804,
+          "percent_low": 9.4,
+          "percent_high": 9.92
+        }
+      },
+      "combined_low_persons": 18757,
+      "combined_high_persons": 20084,
+      "combined_low_percent": 9.4,
+      "combined_high_percent": 10.06
+    },
+    {
+      "id": "08237",
+      "name": "Freudenstadt (LKR)",
+      "population": 122000,
+      "explained_by_citizenship": 4637,
+      "explained_with_naturalisation": 8186,
+      "by_origin": {
+        "Türkei": 1984,
+        "Syrien": 783,
+        "Kosovo": 817,
+        "Bosnien-Herzegowina": 197,
+        "Serbien": 271,
+        "Irak": 65,
+        "Afghanistan": 411,
+        "Nordmazedonien": 108
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4023,
+        "Syrien": 972,
+        "Kosovo": 1558,
+        "Bosnien-Herzegowina": 380,
+        "Serbien": 519,
+        "Irak": 105,
+        "Afghanistan": 422,
+        "Nordmazedonien": 208
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 9990,
+          "persons_high": 10554,
+          "percent_low": 8.19,
+          "percent_high": 8.65
+        },
+        "migration_background": {
+          "persons_low": 10112,
+          "persons_high": 10740,
+          "percent_low": 8.29,
+          "percent_high": 8.8
+        }
+      },
+      "combined_low_persons": 9990,
+      "combined_high_persons": 10740,
+      "combined_low_percent": 8.19,
+      "combined_high_percent": 8.8
+    },
+    {
+      "id": "08311",
+      "name": "Freiburg im Breisgau (SKR)",
+      "population": 237833,
+      "explained_by_citizenship": 7464,
+      "explained_with_naturalisation": 12708,
+      "by_origin": {
+        "Türkei": 1953,
+        "Syrien": 1375,
+        "Kosovo": 1338,
+        "Bosnien-Herzegowina": 398,
+        "Serbien": 653,
+        "Irak": 346,
+        "Afghanistan": 865,
+        "Nordmazedonien": 536
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3961,
+        "Syrien": 1708,
+        "Kosovo": 2552,
+        "Bosnien-Herzegowina": 766,
+        "Serbien": 1250,
+        "Irak": 553,
+        "Afghanistan": 886,
+        "Nordmazedonien": 1032
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 16081,
+          "persons_high": 16989,
+          "percent_low": 6.76,
+          "percent_high": 7.14
+        },
+        "migration_background": {
+          "persons_low": 16879,
+          "persons_high": 18241,
+          "percent_low": 7.1,
+          "percent_high": 7.67
+        }
+      },
+      "combined_low_persons": 16081,
+      "combined_high_persons": 18241,
+      "combined_low_percent": 6.76,
+      "combined_high_percent": 7.67
+    },
+    {
+      "id": "08315",
+      "name": "Breisgau-Hochschwarzwald (LKR)",
+      "population": 272549,
+      "explained_by_citizenship": 8394,
+      "explained_with_naturalisation": 14515,
+      "by_origin": {
+        "Türkei": 2681,
+        "Syrien": 1285,
+        "Kosovo": 2238,
+        "Bosnien-Herzegowina": 346,
+        "Serbien": 350,
+        "Irak": 196,
+        "Afghanistan": 1038,
+        "Nordmazedonien": 260
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5438,
+        "Syrien": 1595,
+        "Kosovo": 4267,
+        "Bosnien-Herzegowina": 667,
+        "Serbien": 671,
+        "Irak": 314,
+        "Afghanistan": 1063,
+        "Nordmazedonien": 501
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 18085,
+          "persons_high": 19106,
+          "percent_low": 6.64,
+          "percent_high": 7.01
+        },
+        "migration_background": {
+          "persons_low": 18091,
+          "persons_high": 19258,
+          "percent_low": 6.64,
+          "percent_high": 7.07
+        }
+      },
+      "combined_low_persons": 18085,
+      "combined_high_persons": 19258,
+      "combined_low_percent": 6.64,
+      "combined_high_percent": 7.07
+    },
+    {
+      "id": "08316",
+      "name": "Emmendingen (LKR)",
+      "population": 169869,
+      "explained_by_citizenship": 6075,
+      "explained_with_naturalisation": 10269,
+      "by_origin": {
+        "Türkei": 1879,
+        "Syrien": 1492,
+        "Kosovo": 1230,
+        "Bosnien-Herzegowina": 174,
+        "Serbien": 254,
+        "Irak": 204,
+        "Afghanistan": 566,
+        "Nordmazedonien": 276
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3811,
+        "Syrien": 1853,
+        "Kosovo": 2345,
+        "Bosnien-Herzegowina": 336,
+        "Serbien": 487,
+        "Irak": 326,
+        "Afghanistan": 580,
+        "Nordmazedonien": 532
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 13089,
+          "persons_high": 13828,
+          "percent_low": 7.71,
+          "percent_high": 8.14
+        },
+        "migration_background": {
+          "persons_low": 12561,
+          "persons_high": 13309,
+          "percent_low": 7.39,
+          "percent_high": 7.83
+        }
+      },
+      "combined_low_persons": 12561,
+      "combined_high_persons": 13828,
+      "combined_low_percent": 7.39,
+      "combined_high_percent": 8.14
+    },
+    {
+      "id": "08317",
+      "name": "Ortenaukreis (LKR)",
+      "population": 444961,
+      "explained_by_citizenship": 16446,
+      "explained_with_naturalisation": 28326,
+      "by_origin": {
+        "Türkei": 5917,
+        "Syrien": 3287,
+        "Kosovo": 2776,
+        "Bosnien-Herzegowina": 635,
+        "Serbien": 576,
+        "Irak": 608,
+        "Afghanistan": 1604,
+        "Nordmazedonien": 1044
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11999,
+        "Syrien": 4081,
+        "Kosovo": 5294,
+        "Bosnien-Herzegowina": 1223,
+        "Serbien": 1103,
+        "Irak": 972,
+        "Afghanistan": 1643,
+        "Nordmazedonien": 2011
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 35432,
+          "persons_high": 37433,
+          "percent_low": 7.96,
+          "percent_high": 8.41
+        },
+        "migration_background": {
+          "persons_low": 35064,
+          "persons_high": 37264,
+          "percent_low": 7.88,
+          "percent_high": 8.37
+        }
+      },
+      "combined_low_persons": 35064,
+      "combined_high_persons": 37433,
+      "combined_low_percent": 7.88,
+      "combined_high_percent": 8.41
+    },
+    {
+      "id": "08325",
+      "name": "Rottweil (LKR)",
+      "population": 140321,
+      "explained_by_citizenship": 5217,
+      "explained_with_naturalisation": 9000,
+      "by_origin": {
+        "Türkei": 1801,
+        "Syrien": 1159,
+        "Kosovo": 895,
+        "Bosnien-Herzegowina": 252,
+        "Serbien": 199,
+        "Irak": 110,
+        "Afghanistan": 425,
+        "Nordmazedonien": 376
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3652,
+        "Syrien": 1439,
+        "Kosovo": 1707,
+        "Bosnien-Herzegowina": 485,
+        "Serbien": 381,
+        "Irak": 176,
+        "Afghanistan": 436,
+        "Nordmazedonien": 724
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 11241,
+          "persons_high": 11876,
+          "percent_low": 8.01,
+          "percent_high": 8.46
+        },
+        "migration_background": {
+          "persons_low": 11201,
+          "persons_high": 11919,
+          "percent_low": 7.98,
+          "percent_high": 8.49
+        }
+      },
+      "combined_low_persons": 11201,
+      "combined_high_persons": 11919,
+      "combined_low_percent": 7.98,
+      "combined_high_percent": 8.49
+    },
+    {
+      "id": "08326",
+      "name": "Schwarzwald-Baar-Kreis (LKR)",
+      "population": 214177,
+      "explained_by_citizenship": 9902,
+      "explained_with_naturalisation": 17360,
+      "by_origin": {
+        "Türkei": 3784,
+        "Syrien": 1938,
+        "Kosovo": 1230,
+        "Bosnien-Herzegowina": 709,
+        "Serbien": 782,
+        "Irak": 110,
+        "Afghanistan": 781,
+        "Nordmazedonien": 568
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7675,
+        "Syrien": 2406,
+        "Kosovo": 2345,
+        "Bosnien-Herzegowina": 1366,
+        "Serbien": 1498,
+        "Irak": 176,
+        "Afghanistan": 800,
+        "Nordmazedonien": 1094
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 21334,
+          "persons_high": 22539,
+          "percent_low": 9.96,
+          "percent_high": 10.52
+        },
+        "migration_background": {
+          "persons_low": 21348,
+          "persons_high": 22650,
+          "percent_low": 9.97,
+          "percent_high": 10.58
+        }
+      },
+      "combined_low_persons": 21334,
+      "combined_high_persons": 22650,
+      "combined_low_percent": 9.96,
+      "combined_high_percent": 10.58
+    },
+    {
+      "id": "08327",
+      "name": "Tuttlingen (LKR)",
+      "population": 145202,
+      "explained_by_citizenship": 7292,
+      "explained_with_naturalisation": 12906,
+      "by_origin": {
+        "Türkei": 2934,
+        "Syrien": 1259,
+        "Kosovo": 1025,
+        "Bosnien-Herzegowina": 420,
+        "Serbien": 422,
+        "Irak": 129,
+        "Afghanistan": 566,
+        "Nordmazedonien": 536
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5951,
+        "Syrien": 1563,
+        "Kosovo": 1955,
+        "Bosnien-Herzegowina": 810,
+        "Serbien": 809,
+        "Irak": 206,
+        "Afghanistan": 580,
+        "Nordmazedonien": 1032
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 15710,
+          "persons_high": 16597,
+          "percent_low": 10.82,
+          "percent_high": 11.43
+        },
+        "migration_background": {
+          "persons_low": 15885,
+          "persons_high": 16858,
+          "percent_low": 10.94,
+          "percent_high": 11.61
+        }
+      },
+      "combined_low_persons": 15710,
+      "combined_high_persons": 16858,
+      "combined_low_percent": 10.82,
+      "combined_high_percent": 11.61
+    },
+    {
+      "id": "08335",
+      "name": "Konstanz (LKR)",
+      "population": 292135,
+      "explained_by_citizenship": 12129,
+      "explained_with_naturalisation": 20518,
+      "by_origin": {
+        "Türkei": 3078,
+        "Syrien": 2811,
+        "Kosovo": 2355,
+        "Bosnien-Herzegowina": 489,
+        "Serbien": 612,
+        "Irak": 260,
+        "Afghanistan": 1216,
+        "Nordmazedonien": 1308
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 6243,
+        "Syrien": 3491,
+        "Kosovo": 4490,
+        "Bosnien-Herzegowina": 942,
+        "Serbien": 1172,
+        "Irak": 416,
+        "Afghanistan": 1245,
+        "Nordmazedonien": 2519
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 26131,
+          "persons_high": 27607,
+          "percent_low": 8.94,
+          "percent_high": 9.45
+        },
+        "migration_background": {
+          "persons_low": 25468,
+          "persons_high": 27085,
+          "percent_low": 8.72,
+          "percent_high": 9.27
+        }
+      },
+      "combined_low_persons": 25468,
+      "combined_high_persons": 27607,
+      "combined_low_percent": 8.72,
+      "combined_high_percent": 9.45
+    },
+    {
+      "id": "08336",
+      "name": "Lörrach (LKR)",
+      "population": 238367,
+      "explained_by_citizenship": 11344,
+      "explained_with_naturalisation": 20223,
+      "by_origin": {
+        "Türkei": 3976,
+        "Syrien": 1752,
+        "Kosovo": 2807,
+        "Bosnien-Herzegowina": 352,
+        "Serbien": 382,
+        "Irak": 151,
+        "Afghanistan": 804,
+        "Nordmazedonien": 1120
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8064,
+        "Syrien": 2175,
+        "Kosovo": 5352,
+        "Bosnien-Herzegowina": 678,
+        "Serbien": 731,
+        "Irak": 242,
+        "Afghanistan": 824,
+        "Nordmazedonien": 2157
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 24439,
+          "persons_high": 25820,
+          "percent_low": 10.25,
+          "percent_high": 10.83
+        },
+        "migration_background": {
+          "persons_low": 24623,
+          "persons_high": 26060,
+          "percent_low": 10.33,
+          "percent_high": 10.93
+        }
+      },
+      "combined_low_persons": 24439,
+      "combined_high_persons": 26060,
+      "combined_low_percent": 10.25,
+      "combined_high_percent": 10.93
+    },
+    {
+      "id": "08337",
+      "name": "Waldshut (LKR)",
+      "population": 171657,
+      "explained_by_citizenship": 7722,
+      "explained_with_naturalisation": 13548,
+      "by_origin": {
+        "Türkei": 2490,
+        "Syrien": 1821,
+        "Kosovo": 1695,
+        "Bosnien-Herzegowina": 163,
+        "Serbien": 283,
+        "Irak": 71,
+        "Afghanistan": 304,
+        "Nordmazedonien": 896
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5049,
+        "Syrien": 2261,
+        "Kosovo": 3231,
+        "Bosnien-Herzegowina": 314,
+        "Serbien": 542,
+        "Irak": 114,
+        "Afghanistan": 311,
+        "Nordmazedonien": 1726
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 16637,
+          "persons_high": 17576,
+          "percent_low": 9.69,
+          "percent_high": 10.24
+        },
+        "migration_background": {
+          "persons_low": 16207,
+          "persons_high": 17075,
+          "percent_low": 9.44,
+          "percent_high": 9.95
+        }
+      },
+      "combined_low_persons": 16207,
+      "combined_high_persons": 17576,
+      "combined_low_percent": 9.44,
+      "combined_high_percent": 10.24
+    },
+    {
+      "id": "08415",
+      "name": "Reutlingen (LKR)",
+      "population": 293651,
+      "explained_by_citizenship": 13722,
+      "explained_with_naturalisation": 23909,
+      "by_origin": {
+        "Türkei": 5428,
+        "Syrien": 2885,
+        "Kosovo": 2116,
+        "Bosnien-Herzegowina": 907,
+        "Serbien": 569,
+        "Irak": 204,
+        "Afghanistan": 1094,
+        "Nordmazedonien": 520
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11009,
+        "Syrien": 3582,
+        "Kosovo": 4035,
+        "Bosnien-Herzegowina": 1746,
+        "Serbien": 1089,
+        "Irak": 326,
+        "Afghanistan": 1121,
+        "Nordmazedonien": 1002
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 29563,
+          "persons_high": 31233,
+          "percent_low": 10.07,
+          "percent_high": 10.64
+        },
+        "migration_background": {
+          "persons_low": 29135,
+          "persons_high": 30841,
+          "percent_low": 9.92,
+          "percent_high": 10.5
+        }
+      },
+      "combined_low_persons": 29135,
+      "combined_high_persons": 31233,
+      "combined_low_percent": 9.92,
+      "combined_high_percent": 10.64
+    },
+    {
+      "id": "08416",
+      "name": "Tübingen (LKR)",
+      "population": 233706,
+      "explained_by_citizenship": 8062,
+      "explained_with_naturalisation": 14016,
+      "by_origin": {
+        "Türkei": 3466,
+        "Syrien": 1747,
+        "Kosovo": 978,
+        "Bosnien-Herzegowina": 449,
+        "Serbien": 372,
+        "Irak": 176,
+        "Afghanistan": 654,
+        "Nordmazedonien": 220
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7030,
+        "Syrien": 2170,
+        "Kosovo": 1864,
+        "Bosnien-Herzegowina": 865,
+        "Serbien": 712,
+        "Irak": 281,
+        "Afghanistan": 671,
+        "Nordmazedonien": 424
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 17370,
+          "persons_high": 18351,
+          "percent_low": 7.43,
+          "percent_high": 7.85
+        },
+        "migration_background": {
+          "persons_low": 17408,
+          "persons_high": 18515,
+          "percent_low": 7.45,
+          "percent_high": 7.92
+        }
+      },
+      "combined_low_persons": 17370,
+      "combined_high_persons": 18515,
+      "combined_low_percent": 7.43,
+      "combined_high_percent": 7.92
+    },
+    {
+      "id": "08417",
+      "name": "Zollernalbkreis (LKR)",
+      "population": 193390,
+      "explained_by_citizenship": 7175,
+      "explained_with_naturalisation": 13452,
+      "by_origin": {
+        "Türkei": 3963,
+        "Syrien": 653,
+        "Kosovo": 943,
+        "Bosnien-Herzegowina": 578,
+        "Serbien": 432,
+        "Irak": 49,
+        "Afghanistan": 318,
+        "Nordmazedonien": 240
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8038,
+        "Syrien": 811,
+        "Kosovo": 1798,
+        "Bosnien-Herzegowina": 1113,
+        "Serbien": 827,
+        "Irak": 78,
+        "Afghanistan": 326,
+        "Nordmazedonien": 462
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 15459,
+          "persons_high": 16332,
+          "percent_low": 7.99,
+          "percent_high": 8.45
+        },
+        "migration_background": {
+          "persons_low": 16798,
+          "persons_high": 17891,
+          "percent_low": 8.69,
+          "percent_high": 9.25
+        }
+      },
+      "combined_low_persons": 15459,
+      "combined_high_persons": 17891,
+      "combined_low_percent": 7.99,
+      "combined_high_percent": 9.25
+    },
+    {
+      "id": "08421",
+      "name": "Ulm (SKR)",
+      "population": 129951,
+      "explained_by_citizenship": 10094,
+      "explained_with_naturalisation": 17940,
+      "by_origin": {
+        "Türkei": 4072,
+        "Syrien": 1964,
+        "Kosovo": 1060,
+        "Bosnien-Herzegowina": 1244,
+        "Serbien": 470,
+        "Irak": 346,
+        "Afghanistan": 482,
+        "Nordmazedonien": 456
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8259,
+        "Syrien": 2438,
+        "Kosovo": 2022,
+        "Bosnien-Herzegowina": 2396,
+        "Serbien": 901,
+        "Irak": 553,
+        "Afghanistan": 493,
+        "Nordmazedonien": 878
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 21747,
+          "persons_high": 22975,
+          "percent_low": 16.73,
+          "percent_high": 17.68
+        },
+        "migration_background": {
+          "persons_low": 20645,
+          "persons_high": 21527,
+          "percent_low": 15.89,
+          "percent_high": 16.57
+        }
+      },
+      "combined_low_persons": 20645,
+      "combined_high_persons": 22975,
+      "combined_low_percent": 15.89,
+      "combined_high_percent": 17.68
+    },
+    {
+      "id": "08425",
+      "name": "Alb-Donau-Kreis (LKR)",
+      "population": 202416,
+      "explained_by_citizenship": 9739,
+      "explained_with_naturalisation": 17655,
+      "by_origin": {
+        "Türkei": 4561,
+        "Syrien": 1315,
+        "Kosovo": 1447,
+        "Bosnien-Herzegowina": 766,
+        "Serbien": 434,
+        "Irak": 150,
+        "Afghanistan": 650,
+        "Nordmazedonien": 416
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 9249,
+        "Syrien": 1633,
+        "Kosovo": 2759,
+        "Bosnien-Herzegowina": 1476,
+        "Serbien": 832,
+        "Irak": 239,
+        "Afghanistan": 666,
+        "Nordmazedonien": 801
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 20981,
+          "persons_high": 22166,
+          "percent_low": 10.37,
+          "percent_high": 10.95
+        },
+        "migration_background": {
+          "persons_low": 20405,
+          "persons_high": 21303,
+          "percent_low": 10.08,
+          "percent_high": 10.52
+        }
+      },
+      "combined_low_persons": 20405,
+      "combined_high_persons": 22166,
+      "combined_low_percent": 10.08,
+      "combined_high_percent": 10.95
+    },
+    {
+      "id": "08426",
+      "name": "Biberach (LKR)",
+      "population": 207481,
+      "explained_by_citizenship": 7055,
+      "explained_with_naturalisation": 12304,
+      "by_origin": {
+        "Türkei": 2520,
+        "Syrien": 1328,
+        "Kosovo": 1160,
+        "Bosnien-Herzegowina": 612,
+        "Serbien": 346,
+        "Irak": 144,
+        "Afghanistan": 622,
+        "Nordmazedonien": 324
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5111,
+        "Syrien": 1649,
+        "Kosovo": 2212,
+        "Bosnien-Herzegowina": 1179,
+        "Serbien": 662,
+        "Irak": 230,
+        "Afghanistan": 637,
+        "Nordmazedonien": 624
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 15200,
+          "persons_high": 16059,
+          "percent_low": 7.33,
+          "percent_high": 7.74
+        },
+        "migration_background": {
+          "persons_low": 15008,
+          "persons_high": 15891,
+          "percent_low": 7.23,
+          "percent_high": 7.66
+        }
+      },
+      "combined_low_persons": 15008,
+      "combined_high_persons": 16059,
+      "combined_low_percent": 7.23,
+      "combined_high_percent": 7.74
+    },
+    {
+      "id": "08435",
+      "name": "Bodenseekreis (LKR)",
+      "population": 221097,
+      "explained_by_citizenship": 9133,
+      "explained_with_naturalisation": 15851,
+      "by_origin": {
+        "Türkei": 3545,
+        "Syrien": 1842,
+        "Kosovo": 1277,
+        "Bosnien-Herzegowina": 752,
+        "Serbien": 389,
+        "Irak": 120,
+        "Afghanistan": 856,
+        "Nordmazedonien": 352
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7189,
+        "Syrien": 2288,
+        "Kosovo": 2436,
+        "Bosnien-Herzegowina": 1449,
+        "Serbien": 744,
+        "Irak": 191,
+        "Afghanistan": 877,
+        "Nordmazedonien": 678
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 19676,
+          "persons_high": 20787,
+          "percent_low": 8.9,
+          "percent_high": 9.4
+        },
+        "migration_background": {
+          "persons_low": 19381,
+          "persons_high": 20533,
+          "percent_low": 8.77,
+          "percent_high": 9.29
+        }
+      },
+      "combined_low_persons": 19381,
+      "combined_high_persons": 20787,
+      "combined_low_percent": 8.77,
+      "combined_high_percent": 9.4
+    },
+    {
+      "id": "08436",
+      "name": "Ravensburg (LKR)",
+      "population": 291186,
+      "explained_by_citizenship": 11342,
+      "explained_with_naturalisation": 19389,
+      "by_origin": {
+        "Türkei": 4064,
+        "Syrien": 2508,
+        "Kosovo": 1990,
+        "Bosnien-Herzegowina": 706,
+        "Serbien": 350,
+        "Irak": 123,
+        "Afghanistan": 1187,
+        "Nordmazedonien": 412
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8241,
+        "Syrien": 3115,
+        "Kosovo": 3795,
+        "Bosnien-Herzegowina": 1361,
+        "Serbien": 671,
+        "Irak": 197,
+        "Afghanistan": 1217,
+        "Nordmazedonien": 794
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 24435,
+          "persons_high": 25815,
+          "percent_low": 8.39,
+          "percent_high": 8.87
+        },
+        "migration_background": {
+          "persons_low": 23148,
+          "persons_high": 24375,
+          "percent_low": 7.95,
+          "percent_high": 8.37
+        }
+      },
+      "combined_low_persons": 23148,
+      "combined_high_persons": 25815,
+      "combined_low_percent": 7.95,
+      "combined_high_percent": 8.87
+    },
+    {
+      "id": "08437",
+      "name": "Sigmaringen (LKR)",
+      "population": 132277,
+      "explained_by_citizenship": 4532,
+      "explained_with_naturalisation": 8102,
+      "by_origin": {
+        "Türkei": 2202,
+        "Syrien": 930,
+        "Kosovo": 430,
+        "Bosnien-Herzegowina": 192,
+        "Serbien": 187,
+        "Irak": 45,
+        "Afghanistan": 210,
+        "Nordmazedonien": 336
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4465,
+        "Syrien": 1155,
+        "Kosovo": 820,
+        "Bosnien-Herzegowina": 369,
+        "Serbien": 358,
+        "Irak": 72,
+        "Afghanistan": 216,
+        "Nordmazedonien": 647
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 9764,
+          "persons_high": 10315,
+          "percent_low": 7.38,
+          "percent_high": 7.8
+        },
+        "migration_background": {
+          "persons_low": 9477,
+          "persons_high": 9926,
+          "percent_low": 7.16,
+          "percent_high": 7.5
+        }
+      },
+      "combined_low_persons": 9477,
+      "combined_high_persons": 10315,
+      "combined_low_percent": 7.16,
+      "combined_high_percent": 7.8
+    }
+  ]
+}

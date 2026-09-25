@@ -1,0 +1,10 @@
+{
+  "status": "prepared_from_supplied_or_downloaded_archive",
+  "built_at": "2026-09-23T05:37:17.723964+00:00",
+  "geometry_reference": "2024-01-01",
+  "archive_sha256": "34824d4467ead04dde0fdf27ae5384514370168006dc34a3ee9dc57b43c11c85",
+  "district_count": 44,
+  "statistical_municipalities_matched": 1101,
+  "unmatched_statistical_municipalities": [],
+  "note": "Archive provenance and data sources remain in geometry.json; synthetic archives are for isolated tests only."
+}

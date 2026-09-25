@@ -1,0 +1,1344 @@
+{
+  "type": "district_migration_background_timeseries",
+  "schema_version": "1.0",
+  "years": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "source": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0503, Grundprogramm des Mikrozensus",
+  "source_url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0503",
+  "population_base": "Bevölkerung in Hauptwohnsitzhaushalten",
+  "series_note": "Nur eine Reihe ist über alle Jahre vergleichbar: Bevölkerung mit Migrationshintergrund und ihr Anteil.",
+  "no_modelled_backcast": "Die Modellrechnung zur muslimischen Bevölkerung wird nicht in die Vergangenheit fortgeschrieben. Dafür fehlen die Herkunftsdaten und die veröffentlichte Landessumme für die früheren Jahre; letztere existiert nur für 2025.",
+  "sampling_note": "Stichprobenerhebung. Veränderungen einzelner Jahre liegen oft innerhalb des Zufallsfehlers; ausgewiesen wird die Veränderung über den gesamten Zeitraum in Prozentpunkten.",
+  "districts_without_usable_endpoints": [],
+  "change_points_range": [
+    -5.8,
+    9.82
+  ],
+  "districts": [
+    {
+      "id": "08111",
+      "name": "Stuttgart (SKR)",
+      "mikrozensus_region_code": "08111KRSI",
+      "mikrozensus_region_label": "Stuttgart, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 274,
+          "share_percent": 45.44
+        },
+        "2022": {
+          "migration_background_thousand": 290,
+          "share_percent": 47.85
+        },
+        "2023": {
+          "migration_background_thousand": 294,
+          "share_percent": 48.2
+        },
+        "2024": {
+          "migration_background_thousand": 305,
+          "share_percent": 49.76
+        },
+        "2025": {
+          "migration_background_thousand": 304,
+          "share_percent": 49.75
+        }
+      },
+      "change_points": 4.31
+    },
+    {
+      "id": "08115",
+      "name": "Böblingen (LKR)",
+      "mikrozensus_region_code": "08115KRSI",
+      "mikrozensus_region_label": "Böblingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 149,
+          "share_percent": 38.8
+        },
+        "2022": {
+          "migration_background_thousand": 150,
+          "share_percent": 38.56
+        },
+        "2023": {
+          "migration_background_thousand": 158,
+          "share_percent": 40.0
+        },
+        "2024": {
+          "migration_background_thousand": 175,
+          "share_percent": 44.19
+        },
+        "2025": {
+          "migration_background_thousand": 178,
+          "share_percent": 44.84
+        }
+      },
+      "change_points": 6.04
+    },
+    {
+      "id": "08116",
+      "name": "Esslingen (LKR)",
+      "mikrozensus_region_code": "08116KRSI",
+      "mikrozensus_region_label": "Esslingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 206,
+          "share_percent": 39.31
+        },
+        "2022": {
+          "migration_background_thousand": 196,
+          "share_percent": 36.98
+        },
+        "2023": {
+          "migration_background_thousand": 202,
+          "share_percent": 37.76
+        },
+        "2024": {
+          "migration_background_thousand": 212,
+          "share_percent": 39.41
+        },
+        "2025": {
+          "migration_background_thousand": 216,
+          "share_percent": 40.15
+        }
+      },
+      "change_points": 0.84
+    },
+    {
+      "id": "08117",
+      "name": "Göppingen (LKR)",
+      "mikrozensus_region_code": "08117KRSI",
+      "mikrozensus_region_label": "Göppingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 106,
+          "share_percent": 41.57
+        },
+        "2022": {
+          "migration_background_thousand": 103,
+          "share_percent": 40.08
+        },
+        "2023": {
+          "migration_background_thousand": 104,
+          "share_percent": 40.47
+        },
+        "2024": {
+          "migration_background_thousand": 104,
+          "share_percent": 40.47
+        },
+        "2025": {
+          "migration_background_thousand": 109,
+          "share_percent": 42.25
+        }
+      },
+      "change_points": 0.68
+    },
+    {
+      "id": "08118",
+      "name": "Ludwigsburg (LKR)",
+      "mikrozensus_region_code": "08118KRSI",
+      "mikrozensus_region_label": "Ludwigsburg, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 214,
+          "share_percent": 41.07
+        },
+        "2022": {
+          "migration_background_thousand": 210,
+          "share_percent": 40.08
+        },
+        "2023": {
+          "migration_background_thousand": 223,
+          "share_percent": 41.84
+        },
+        "2024": {
+          "migration_background_thousand": 226,
+          "share_percent": 42.4
+        },
+        "2025": {
+          "migration_background_thousand": 222,
+          "share_percent": 41.57
+        }
+      },
+      "change_points": 0.5
+    },
+    {
+      "id": "08119",
+      "name": "Rems-Murr-Kreis (LKR)",
+      "mikrozensus_region_code": "08119KRSI",
+      "mikrozensus_region_label": "Rems-Murr-Kreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 150,
+          "share_percent": 34.72
+        },
+        "2022": {
+          "migration_background_thousand": 144,
+          "share_percent": 32.88
+        },
+        "2023": {
+          "migration_background_thousand": 162,
+          "share_percent": 36.73
+        },
+        "2024": {
+          "migration_background_thousand": 173,
+          "share_percent": 39.05
+        },
+        "2025": {
+          "migration_background_thousand": 169,
+          "share_percent": 38.06
+        }
+      },
+      "change_points": 3.34
+    },
+    {
+      "id": "08121",
+      "name": "Heilbronn (SKR)",
+      "mikrozensus_region_code": "08121KRSI",
+      "mikrozensus_region_label": "Heilbronn, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 74,
+          "share_percent": 58.73
+        },
+        "2022": {
+          "migration_background_thousand": 71,
+          "share_percent": 56.35
+        },
+        "2023": {
+          "migration_background_thousand": 69,
+          "share_percent": 54.33
+        },
+        "2024": {
+          "migration_background_thousand": 73,
+          "share_percent": 56.59
+        },
+        "2025": {
+          "migration_background_thousand": 74,
+          "share_percent": 56.92
+        }
+      },
+      "change_points": -1.81
+    },
+    {
+      "id": "08125",
+      "name": "Heilbronn (LKR)",
+      "mikrozensus_region_code": "08125KRSI",
+      "mikrozensus_region_label": "Heilbronn, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 128,
+          "share_percent": 36.89
+        },
+        "2022": {
+          "migration_background_thousand": 134,
+          "share_percent": 38.18
+        },
+        "2023": {
+          "migration_background_thousand": 133,
+          "share_percent": 37.68
+        },
+        "2024": {
+          "migration_background_thousand": 135,
+          "share_percent": 38.35
+        },
+        "2025": {
+          "migration_background_thousand": 135,
+          "share_percent": 38.68
+        }
+      },
+      "change_points": 1.79
+    },
+    {
+      "id": "08126",
+      "name": "Hohenlohekreis (LKR)",
+      "mikrozensus_region_code": "08126KRSI",
+      "mikrozensus_region_label": "Hohenlohekreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 33,
+          "share_percent": 30.0
+        },
+        "2022": {
+          "migration_background_thousand": 43,
+          "share_percent": 38.39
+        },
+        "2023": {
+          "migration_background_thousand": 43,
+          "share_percent": 38.05
+        },
+        "2024": {
+          "migration_background_thousand": 51,
+          "share_percent": 43.97
+        },
+        "2025": {
+          "migration_background_thousand": 46,
+          "share_percent": 39.32
+        }
+      },
+      "change_points": 9.32
+    },
+    {
+      "id": "08127",
+      "name": "Schwäbisch Hall (LKR)",
+      "mikrozensus_region_code": "08127KRSI",
+      "mikrozensus_region_label": "Schwäbisch Hall, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 59,
+          "share_percent": 31.05
+        },
+        "2022": {
+          "migration_background_thousand": 61,
+          "share_percent": 31.77
+        },
+        "2023": {
+          "migration_background_thousand": 67,
+          "share_percent": 33.67
+        },
+        "2024": {
+          "migration_background_thousand": 68,
+          "share_percent": 34.0
+        },
+        "2025": {
+          "migration_background_thousand": 71,
+          "share_percent": 35.5
+        }
+      },
+      "change_points": 4.45
+    },
+    {
+      "id": "08128",
+      "name": "Main-Tauber-Kreis (LKR)",
+      "mikrozensus_region_code": "08128KRSI",
+      "mikrozensus_region_label": "Main-Tauber-Kreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 30,
+          "share_percent": 23.08
+        },
+        "2022": {
+          "migration_background_thousand": 36,
+          "share_percent": 27.27
+        },
+        "2023": {
+          "migration_background_thousand": 39,
+          "share_percent": 29.55
+        },
+        "2024": {
+          "migration_background_thousand": 43,
+          "share_percent": 32.09
+        },
+        "2025": {
+          "migration_background_thousand": 39,
+          "share_percent": 29.32
+        }
+      },
+      "change_points": 6.24
+    },
+    {
+      "id": "08135",
+      "name": "Heidenheim (LKR)",
+      "mikrozensus_region_code": "08135KRSI",
+      "mikrozensus_region_label": "Heidenheim, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 56,
+          "share_percent": 42.11
+        },
+        "2022": {
+          "migration_background_thousand": 60,
+          "share_percent": 44.44
+        },
+        "2023": {
+          "migration_background_thousand": 55,
+          "share_percent": 40.44
+        },
+        "2024": {
+          "migration_background_thousand": 47,
+          "share_percent": 34.56
+        },
+        "2025": {
+          "migration_background_thousand": 54,
+          "share_percent": 40.0
+        }
+      },
+      "change_points": -2.11
+    },
+    {
+      "id": "08136",
+      "name": "Ostalbkreis (LKR)",
+      "mikrozensus_region_code": "08136KRSI",
+      "mikrozensus_region_label": "Ostalbkreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 77,
+          "share_percent": 24.76
+        },
+        "2022": {
+          "migration_background_thousand": 90,
+          "share_percent": 28.66
+        },
+        "2023": {
+          "migration_background_thousand": 107,
+          "share_percent": 33.65
+        },
+        "2024": {
+          "migration_background_thousand": 107,
+          "share_percent": 33.75
+        },
+        "2025": {
+          "migration_background_thousand": 101,
+          "share_percent": 32.06
+        }
+      },
+      "change_points": 7.3
+    },
+    {
+      "id": "08212",
+      "name": "Karlsruhe (SKR)",
+      "mikrozensus_region_code": "08212KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 115,
+          "share_percent": 37.58
+        },
+        "2022": {
+          "migration_background_thousand": 116,
+          "share_percent": 37.54
+        },
+        "2023": {
+          "migration_background_thousand": 116,
+          "share_percent": 37.66
+        },
+        "2024": {
+          "migration_background_thousand": 117,
+          "share_percent": 37.99
+        },
+        "2025": {
+          "migration_background_thousand": 124,
+          "share_percent": 40.13
+        }
+      },
+      "change_points": 2.55
+    },
+    {
+      "id": "08215",
+      "name": "Karlsruhe (LKR)",
+      "mikrozensus_region_code": "08215KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 148,
+          "share_percent": 33.26
+        },
+        "2022": {
+          "migration_background_thousand": 145,
+          "share_percent": 32.08
+        },
+        "2023": {
+          "migration_background_thousand": 145,
+          "share_percent": 32.08
+        },
+        "2024": {
+          "migration_background_thousand": 151,
+          "share_percent": 33.19
+        },
+        "2025": {
+          "migration_background_thousand": 171,
+          "share_percent": 37.34
+        }
+      },
+      "change_points": 4.08
+    },
+    {
+      "id": "08211",
+      "name": "Baden-Baden (SKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 103,
+          "share_percent": 35.81
+        },
+        "2022": {
+          "migration_background_thousand": 107,
+          "share_percent": 37.2
+        },
+        "2023": {
+          "migration_background_thousand": 105,
+          "share_percent": 36.51
+        },
+        "2024": {
+          "migration_background_thousand": 115,
+          "share_percent": 39.98
+        },
+        "2025": {
+          "migration_background_thousand": 119,
+          "share_percent": 41.38
+        }
+      },
+      "change_points": 5.57
+    },
+    {
+      "id": "08216",
+      "name": "Rastatt (LKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 103,
+          "share_percent": 35.81
+        },
+        "2022": {
+          "migration_background_thousand": 107,
+          "share_percent": 37.2
+        },
+        "2023": {
+          "migration_background_thousand": 105,
+          "share_percent": 36.51
+        },
+        "2024": {
+          "migration_background_thousand": 115,
+          "share_percent": 39.98
+        },
+        "2025": {
+          "migration_background_thousand": 119,
+          "share_percent": 41.38
+        }
+      },
+      "change_points": 5.57
+    },
+    {
+      "id": "08221",
+      "name": "Heidelberg (SKR)",
+      "mikrozensus_region_code": "08221KRSI",
+      "mikrozensus_region_label": "Heidelberg, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 54,
+          "share_percent": 36.99
+        },
+        "2022": {
+          "migration_background_thousand": 62,
+          "share_percent": 40.79
+        },
+        "2023": {
+          "migration_background_thousand": 73,
+          "share_percent": 48.03
+        },
+        "2024": {
+          "migration_background_thousand": 72,
+          "share_percent": 47.06
+        },
+        "2025": {
+          "migration_background_thousand": 66,
+          "share_percent": 42.58
+        }
+      },
+      "change_points": 5.59
+    },
+    {
+      "id": "08222",
+      "name": "Mannheim (SKR)",
+      "mikrozensus_region_code": "08222KRSI",
+      "mikrozensus_region_label": "Mannheim, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 134,
+          "share_percent": 43.51
+        },
+        "2022": {
+          "migration_background_thousand": 147,
+          "share_percent": 46.82
+        },
+        "2023": {
+          "migration_background_thousand": 155,
+          "share_percent": 49.05
+        },
+        "2024": {
+          "migration_background_thousand": 154,
+          "share_percent": 48.43
+        },
+        "2025": {
+          "migration_background_thousand": 149,
+          "share_percent": 46.56
+        }
+      },
+      "change_points": 3.05
+    },
+    {
+      "id": "08225",
+      "name": "Neckar-Odenwald-Kreis (LKR)",
+      "mikrozensus_region_code": "08225KRSI",
+      "mikrozensus_region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 44,
+          "share_percent": 30.99
+        },
+        "2022": {
+          "migration_background_thousand": 37,
+          "share_percent": 25.87
+        },
+        "2023": {
+          "migration_background_thousand": 39,
+          "share_percent": 27.08
+        },
+        "2024": {
+          "migration_background_thousand": 42,
+          "share_percent": 28.97
+        },
+        "2025": {
+          "migration_background_thousand": 44,
+          "share_percent": 30.34
+        }
+      },
+      "change_points": -0.65
+    },
+    {
+      "id": "08226",
+      "name": "Rhein-Neckar-Kreis (LKR)",
+      "mikrozensus_region_code": "08226KRSI",
+      "mikrozensus_region_label": "Rhein-Neckar-Kreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 169,
+          "share_percent": 30.84
+        },
+        "2022": {
+          "migration_background_thousand": 174,
+          "share_percent": 31.29
+        },
+        "2023": {
+          "migration_background_thousand": 177,
+          "share_percent": 31.95
+        },
+        "2024": {
+          "migration_background_thousand": 198,
+          "share_percent": 35.55
+        },
+        "2025": {
+          "migration_background_thousand": 198,
+          "share_percent": 35.74
+        }
+      },
+      "change_points": 4.9
+    },
+    {
+      "id": "08231",
+      "name": "Pforzheim (SKR)",
+      "mikrozensus_region_code": "08231KRSI",
+      "mikrozensus_region_label": "Pforzheim, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 79,
+          "share_percent": 60.77
+        },
+        "2022": {
+          "migration_background_thousand": 71,
+          "share_percent": 55.47
+        },
+        "2023": {
+          "migration_background_thousand": 78,
+          "share_percent": 59.09
+        },
+        "2024": {
+          "migration_background_thousand": 80,
+          "share_percent": 59.7
+        },
+        "2025": {
+          "migration_background_thousand": 76,
+          "share_percent": 57.58
+        }
+      },
+      "change_points": -3.19
+    },
+    {
+      "id": "08235",
+      "name": "Calw (LKR)",
+      "mikrozensus_region_code": "08235KRSI",
+      "mikrozensus_region_label": "Calw, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 53,
+          "share_percent": 33.54
+        },
+        "2022": {
+          "migration_background_thousand": 59,
+          "share_percent": 37.11
+        },
+        "2023": {
+          "migration_background_thousand": 60,
+          "share_percent": 37.97
+        },
+        "2024": {
+          "migration_background_thousand": 61,
+          "share_percent": 38.85
+        },
+        "2025": {
+          "migration_background_thousand": 58,
+          "share_percent": 36.94
+        }
+      },
+      "change_points": 3.4
+    },
+    {
+      "id": "08236",
+      "name": "Enzkreis (LKR)",
+      "mikrozensus_region_code": "08236KRSI",
+      "mikrozensus_region_label": "Enzkreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 63,
+          "share_percent": 32.64
+        },
+        "2022": {
+          "migration_background_thousand": 66,
+          "share_percent": 33.33
+        },
+        "2023": {
+          "migration_background_thousand": 62,
+          "share_percent": 31.0
+        },
+        "2024": {
+          "migration_background_thousand": 70,
+          "share_percent": 34.83
+        },
+        "2025": {
+          "migration_background_thousand": 67,
+          "share_percent": 33.33
+        }
+      },
+      "change_points": 0.69
+    },
+    {
+      "id": "08237",
+      "name": "Freudenstadt (LKR)",
+      "mikrozensus_region_code": "08237KRSI",
+      "mikrozensus_region_label": "Freudenstadt, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 34,
+          "share_percent": 28.33
+        },
+        "2022": {
+          "migration_background_thousand": 37,
+          "share_percent": 30.33
+        },
+        "2023": {
+          "migration_background_thousand": 37,
+          "share_percent": 30.33
+        },
+        "2024": {
+          "migration_background_thousand": 42,
+          "share_percent": 34.43
+        },
+        "2025": {
+          "migration_background_thousand": 44,
+          "share_percent": 36.07
+        }
+      },
+      "change_points": 7.74
+    },
+    {
+      "id": "08311",
+      "name": "Freiburg im Breisgau (SKR)",
+      "mikrozensus_region_code": "08311KRSI",
+      "mikrozensus_region_label": "Freiburg im Breisgau, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 75,
+          "share_percent": 33.48
+        },
+        "2022": {
+          "migration_background_thousand": 82,
+          "share_percent": 35.81
+        },
+        "2023": {
+          "migration_background_thousand": 94,
+          "share_percent": 40.34
+        },
+        "2024": {
+          "migration_background_thousand": 91,
+          "share_percent": 38.4
+        },
+        "2025": {
+          "migration_background_thousand": 85,
+          "share_percent": 36.02
+        }
+      },
+      "change_points": 2.54
+    },
+    {
+      "id": "08315",
+      "name": "Breisgau-Hochschwarzwald (LKR)",
+      "mikrozensus_region_code": "08315KRSI",
+      "mikrozensus_region_label": "Breisgau-Hochschwarzwald, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 59,
+          "share_percent": 22.52
+        },
+        "2022": {
+          "migration_background_thousand": 63,
+          "share_percent": 23.6
+        },
+        "2023": {
+          "migration_background_thousand": 67,
+          "share_percent": 24.81
+        },
+        "2024": {
+          "migration_background_thousand": 78,
+          "share_percent": 28.89
+        },
+        "2025": {
+          "migration_background_thousand": 79,
+          "share_percent": 29.26
+        }
+      },
+      "change_points": 6.74
+    },
+    {
+      "id": "08316",
+      "name": "Emmendingen (LKR)",
+      "mikrozensus_region_code": "08316KRSI",
+      "mikrozensus_region_label": "Emmendingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 41,
+          "share_percent": 25.0
+        },
+        "2022": {
+          "migration_background_thousand": 42,
+          "share_percent": 25.3
+        },
+        "2023": {
+          "migration_background_thousand": 52,
+          "share_percent": 31.33
+        },
+        "2024": {
+          "migration_background_thousand": 50,
+          "share_percent": 29.76
+        },
+        "2025": {
+          "migration_background_thousand": 48,
+          "share_percent": 28.4
+        }
+      },
+      "change_points": 3.4
+    },
+    {
+      "id": "08317",
+      "name": "Ortenaukreis (LKR)",
+      "mikrozensus_region_code": "08317KRSI",
+      "mikrozensus_region_label": "Ortenaukreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 122,
+          "share_percent": 28.31
+        },
+        "2022": {
+          "migration_background_thousand": 123,
+          "share_percent": 28.28
+        },
+        "2023": {
+          "migration_background_thousand": 138,
+          "share_percent": 31.22
+        },
+        "2024": {
+          "migration_background_thousand": 147,
+          "share_percent": 33.33
+        },
+        "2025": {
+          "migration_background_thousand": 158,
+          "share_percent": 35.51
+        }
+      },
+      "change_points": 7.2
+    },
+    {
+      "id": "08325",
+      "name": "Rottweil (LKR)",
+      "mikrozensus_region_code": "08325KRSI",
+      "mikrozensus_region_label": "Rottweil, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 48,
+          "share_percent": 35.04
+        },
+        "2022": {
+          "migration_background_thousand": 57,
+          "share_percent": 41.01
+        },
+        "2023": {
+          "migration_background_thousand": 55,
+          "share_percent": 39.01
+        },
+        "2024": {
+          "migration_background_thousand": 48,
+          "share_percent": 34.29
+        },
+        "2025": {
+          "migration_background_thousand": 49,
+          "share_percent": 35.0
+        }
+      },
+      "change_points": -0.04
+    },
+    {
+      "id": "08326",
+      "name": "Schwarzwald-Baar-Kreis (LKR)",
+      "mikrozensus_region_code": "08326KRSI",
+      "mikrozensus_region_label": "Schwarzwald-Baar-Kreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 68,
+          "share_percent": 33.17
+        },
+        "2022": {
+          "migration_background_thousand": 73,
+          "share_percent": 34.6
+        },
+        "2023": {
+          "migration_background_thousand": 77,
+          "share_percent": 36.67
+        },
+        "2024": {
+          "migration_background_thousand": 87,
+          "share_percent": 40.65
+        },
+        "2025": {
+          "migration_background_thousand": 92,
+          "share_percent": 42.99
+        }
+      },
+      "change_points": 9.82
+    },
+    {
+      "id": "08327",
+      "name": "Tuttlingen (LKR)",
+      "mikrozensus_region_code": "08327KRSI",
+      "mikrozensus_region_label": "Tuttlingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 67,
+          "share_percent": 47.18
+        },
+        "2022": {
+          "migration_background_thousand": 66,
+          "share_percent": 46.15
+        },
+        "2023": {
+          "migration_background_thousand": 65,
+          "share_percent": 44.83
+        },
+        "2024": {
+          "migration_background_thousand": 65,
+          "share_percent": 45.14
+        },
+        "2025": {
+          "migration_background_thousand": 60,
+          "share_percent": 41.38
+        }
+      },
+      "change_points": -5.8
+    },
+    {
+      "id": "08335",
+      "name": "Konstanz (LKR)",
+      "mikrozensus_region_code": "08335KRSI",
+      "mikrozensus_region_label": "Konstanz, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 86,
+          "share_percent": 30.28
+        },
+        "2022": {
+          "migration_background_thousand": 92,
+          "share_percent": 31.83
+        },
+        "2023": {
+          "migration_background_thousand": 93,
+          "share_percent": 32.18
+        },
+        "2024": {
+          "migration_background_thousand": 108,
+          "share_percent": 37.24
+        },
+        "2025": {
+          "migration_background_thousand": 109,
+          "share_percent": 37.72
+        }
+      },
+      "change_points": 7.44
+    },
+    {
+      "id": "08336",
+      "name": "Lörrach (LKR)",
+      "mikrozensus_region_code": "08336KRSI",
+      "mikrozensus_region_label": "Lörrach, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 88,
+          "share_percent": 38.43
+        },
+        "2022": {
+          "migration_background_thousand": 95,
+          "share_percent": 40.77
+        },
+        "2023": {
+          "migration_background_thousand": 91,
+          "share_percent": 38.56
+        },
+        "2024": {
+          "migration_background_thousand": 96,
+          "share_percent": 40.34
+        },
+        "2025": {
+          "migration_background_thousand": 94,
+          "share_percent": 39.83
+        }
+      },
+      "change_points": 1.4
+    },
+    {
+      "id": "08337",
+      "name": "Waldshut (LKR)",
+      "mikrozensus_region_code": "08337KRSI",
+      "mikrozensus_region_label": "Waldshut, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 60,
+          "share_percent": 35.93
+        },
+        "2022": {
+          "migration_background_thousand": 62,
+          "share_percent": 36.9
+        },
+        "2023": {
+          "migration_background_thousand": 60,
+          "share_percent": 35.09
+        },
+        "2024": {
+          "migration_background_thousand": 58,
+          "share_percent": 33.92
+        },
+        "2025": {
+          "migration_background_thousand": 65,
+          "share_percent": 37.79
+        }
+      },
+      "change_points": 1.86
+    },
+    {
+      "id": "08415",
+      "name": "Reutlingen (LKR)",
+      "mikrozensus_region_code": "08415KRSI",
+      "mikrozensus_region_label": "Reutlingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 105,
+          "share_percent": 36.59
+        },
+        "2022": {
+          "migration_background_thousand": 110,
+          "share_percent": 37.93
+        },
+        "2023": {
+          "migration_background_thousand": 100,
+          "share_percent": 35.09
+        },
+        "2024": {
+          "migration_background_thousand": 114,
+          "share_percent": 39.86
+        },
+        "2025": {
+          "migration_background_thousand": 112,
+          "share_percent": 38.89
+        }
+      },
+      "change_points": 2.3
+    },
+    {
+      "id": "08416",
+      "name": "Tübingen (LKR)",
+      "mikrozensus_region_code": "08416KRSI",
+      "mikrozensus_region_label": "Tübingen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 66,
+          "share_percent": 29.07
+        },
+        "2022": {
+          "migration_background_thousand": 68,
+          "share_percent": 29.57
+        },
+        "2023": {
+          "migration_background_thousand": 68,
+          "share_percent": 29.31
+        },
+        "2024": {
+          "migration_background_thousand": 74,
+          "share_percent": 31.76
+        },
+        "2025": {
+          "migration_background_thousand": 69,
+          "share_percent": 29.61
+        }
+      },
+      "change_points": 0.54
+    },
+    {
+      "id": "08417",
+      "name": "Zollernalbkreis (LKR)",
+      "mikrozensus_region_code": "08417KRSI",
+      "mikrozensus_region_label": "Zollernalbkreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 61,
+          "share_percent": 32.45
+        },
+        "2022": {
+          "migration_background_thousand": 65,
+          "share_percent": 33.85
+        },
+        "2023": {
+          "migration_background_thousand": 69,
+          "share_percent": 35.75
+        },
+        "2024": {
+          "migration_background_thousand": 73,
+          "share_percent": 37.44
+        },
+        "2025": {
+          "migration_background_thousand": 68,
+          "share_percent": 34.87
+        }
+      },
+      "change_points": 2.42
+    },
+    {
+      "id": "08421",
+      "name": "Ulm (SKR)",
+      "mikrozensus_region_code": "08421KRSI",
+      "mikrozensus_region_label": "Ulm, Stadtkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 60,
+          "share_percent": 47.62
+        },
+        "2022": {
+          "migration_background_thousand": 55,
+          "share_percent": 43.31
+        },
+        "2023": {
+          "migration_background_thousand": 56,
+          "share_percent": 43.08
+        },
+        "2024": {
+          "migration_background_thousand": 59,
+          "share_percent": 45.38
+        },
+        "2025": {
+          "migration_background_thousand": 66,
+          "share_percent": 50.77
+        }
+      },
+      "change_points": 3.15
+    },
+    {
+      "id": "08425",
+      "name": "Alb-Donau-Kreis (LKR)",
+      "mikrozensus_region_code": "08425KRSI",
+      "mikrozensus_region_label": "Alb-Donau-Kreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 58,
+          "share_percent": 29.59
+        },
+        "2022": {
+          "migration_background_thousand": 59,
+          "share_percent": 30.1
+        },
+        "2023": {
+          "migration_background_thousand": 57,
+          "share_percent": 28.79
+        },
+        "2024": {
+          "migration_background_thousand": 60,
+          "share_percent": 29.7
+        },
+        "2025": {
+          "migration_background_thousand": 61,
+          "share_percent": 30.5
+        }
+      },
+      "change_points": 0.91
+    },
+    {
+      "id": "08426",
+      "name": "Biberach (LKR)",
+      "mikrozensus_region_code": "08426KRSI",
+      "mikrozensus_region_label": "Biberach, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 52,
+          "share_percent": 25.87
+        },
+        "2022": {
+          "migration_background_thousand": 60,
+          "share_percent": 29.56
+        },
+        "2023": {
+          "migration_background_thousand": 62,
+          "share_percent": 30.1
+        },
+        "2024": {
+          "migration_background_thousand": 59,
+          "share_percent": 28.64
+        },
+        "2025": {
+          "migration_background_thousand": 59,
+          "share_percent": 28.23
+        }
+      },
+      "change_points": 2.36
+    },
+    {
+      "id": "08435",
+      "name": "Bodenseekreis (LKR)",
+      "mikrozensus_region_code": "08435KRSI",
+      "mikrozensus_region_label": "Bodenseekreis, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 61,
+          "share_percent": 28.5
+        },
+        "2022": {
+          "migration_background_thousand": 68,
+          "share_percent": 31.19
+        },
+        "2023": {
+          "migration_background_thousand": 76,
+          "share_percent": 34.7
+        },
+        "2024": {
+          "migration_background_thousand": 77,
+          "share_percent": 34.68
+        },
+        "2025": {
+          "migration_background_thousand": 77,
+          "share_percent": 35.48
+        }
+      },
+      "change_points": 6.98
+    },
+    {
+      "id": "08436",
+      "name": "Ravensburg (LKR)",
+      "mikrozensus_region_code": "08436KRSI",
+      "mikrozensus_region_label": "Ravensburg, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 75,
+          "share_percent": 26.79
+        },
+        "2022": {
+          "migration_background_thousand": 76,
+          "share_percent": 26.86
+        },
+        "2023": {
+          "migration_background_thousand": 82,
+          "share_percent": 28.67
+        },
+        "2024": {
+          "migration_background_thousand": 82,
+          "share_percent": 28.37
+        },
+        "2025": {
+          "migration_background_thousand": 86,
+          "share_percent": 29.66
+        }
+      },
+      "change_points": 2.87
+    },
+    {
+      "id": "08437",
+      "name": "Sigmaringen (LKR)",
+      "mikrozensus_region_code": "08437KRSI",
+      "mikrozensus_region_label": "Sigmaringen, Landkreis",
+      "shared_region": false,
+      "series": {
+        "2021": {
+          "migration_background_thousand": 38,
+          "share_percent": 29.69
+        },
+        "2022": {
+          "migration_background_thousand": 41,
+          "share_percent": 31.06
+        },
+        "2023": {
+          "migration_background_thousand": 33,
+          "share_percent": 24.63
+        },
+        "2024": {
+          "migration_background_thousand": 30,
+          "share_percent": 22.9
+        },
+        "2025": {
+          "migration_background_thousand": 33,
+          "share_percent": 25.19
+        }
+      },
+      "change_points": -4.5
+    }
+  ]
+}

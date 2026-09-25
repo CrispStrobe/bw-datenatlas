@@ -1,0 +1,1102 @@
+﻿geo_id,official_municipality_code,municipality_name,municipality_name_in_source,district_code,district_name,reference_period,population_total,population_male,population_female,source_id,source_page,official_code_status
+DE08111000,08111000,Stuttgart,"Stuttgart, Landeshauptstadt",08111,Stuttgart (SKR),2024-06-30,612986,305064,307922,stala_gemeinden_2024_06,6,reused_from_v1
+LOCAL-BW-MUN-08115-aidlingen,,Aidlingen,Aidlingen,08115,Böblingen (LKR),2024-06-30,9326,4604,4722,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-altdorf,,Altdorf,Altdorf,08115,Böblingen (LKR),2024-06-30,4541,2249,2292,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-boblingen,,Böblingen,"Böblingen, Stadt",08115,Böblingen (LKR),2024-06-30,51616,25936,25680,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-bondorf,,Bondorf,Bondorf,08115,Böblingen (LKR),2024-06-30,6238,3101,3137,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-deckenpfronn,,Deckenpfronn,Deckenpfronn,08115,Böblingen (LKR),2024-06-30,3306,1646,1660,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-ehningen,,Ehningen,Ehningen,08115,Böblingen (LKR),2024-06-30,9271,4561,4710,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-gartringen,,Gärtringen,Gärtringen,08115,Böblingen (LKR),2024-06-30,12980,6401,6579,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-gaufelden,,Gäufelden,Gäufelden,08115,Böblingen (LKR),2024-06-30,9107,4631,4476,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-grafenau,,Grafenau,Grafenau,08115,Böblingen (LKR),2024-06-30,6581,3288,3293,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-herrenberg,,Herrenberg,"Herrenberg, Stadt",08115,Böblingen (LKR),2024-06-30,34102,16939,17163,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-hildrizhausen,,Hildrizhausen,Hildrizhausen,08115,Böblingen (LKR),2024-06-30,3567,1803,1764,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-holzgerlingen,,Holzgerlingen,"Holzgerlingen, Stadt",08115,Böblingen (LKR),2024-06-30,14147,6946,7201,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-jettingen,,Jettingen,Jettingen,08115,Böblingen (LKR),2024-06-30,8081,3997,4084,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-leonberg,,Leonberg,"Leonberg, Stadt",08115,Böblingen (LKR),2024-06-30,49213,24480,24733,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-magstadt,,Magstadt,Magstadt,08115,Böblingen (LKR),2024-06-30,9638,4905,4733,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-motzingen,,Mötzingen,Mötzingen,08115,Böblingen (LKR),2024-06-30,3746,1846,1900,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-nufringen,,Nufringen,Nufringen,08115,Böblingen (LKR),2024-06-30,5818,2914,2904,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-renningen,,Renningen,"Renningen, Stadt",08115,Böblingen (LKR),2024-06-30,18636,9263,9373,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-rutesheim,,Rutesheim,"Rutesheim, Stadt",08115,Böblingen (LKR),2024-06-30,11247,5564,5683,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-schonaich,,Schönaich,Schönaich,08115,Böblingen (LKR),2024-06-30,10461,5003,5458,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-sindelfingen,,Sindelfingen,"Sindelfingen, Stadt",08115,Böblingen (LKR),2024-06-30,61270,30418,30852,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-steinenbronn,,Steinenbronn,Steinenbronn,08115,Böblingen (LKR),2024-06-30,6407,3274,3133,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-waldenbuch,,Waldenbuch,"Waldenbuch, Stadt",08115,Böblingen (LKR),2024-06-30,8700,4267,4433,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-weil-der-stadt,,Weil der Stadt,"Weil der Stadt, Stadt",08115,Böblingen (LKR),2024-06-30,19456,9622,9834,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-weil-im-schonbuch,,Weil im Schönbuch,Weil im Schönbuch,08115,Böblingen (LKR),2024-06-30,10012,4984,5028,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08115-weissach,,Weissach,Weissach,08115,Böblingen (LKR),2024-06-30,7731,3870,3861,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-aichtal,,Aichtal,"Aichtal, Stadt",08116,Esslingen (LKR),2024-06-30,9623,4832,4791,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-aichwald,,Aichwald,Aichwald,08116,Esslingen (LKR),2024-06-30,7281,3504,3777,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-altbach,,Altbach,Altbach,08116,Esslingen (LKR),2024-06-30,6099,3086,3013,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-altdorf,,Altdorf,Altdorf,08116,Esslingen (LKR),2024-06-30,1691,863,828,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-altenriet,,Altenriet,Altenriet,08116,Esslingen (LKR),2024-06-30,1942,938,1004,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-baltmannsweiler,,Baltmannsweiler,Baltmannsweiler,08116,Esslingen (LKR),2024-06-30,5536,2733,2803,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-bempflingen,,Bempflingen,Bempflingen,08116,Esslingen (LKR),2024-06-30,3332,1638,1694,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-beuren,,Beuren,Beuren,08116,Esslingen (LKR),2024-06-30,3627,1778,1849,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-bissingen-an-der-teck,,Bissingen an der Teck,Bissingen an der Teck,08116,Esslingen (LKR),2024-06-30,3395,1732,1663,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-deizisau,,Deizisau,Deizisau,08116,Esslingen (LKR),2024-06-30,6736,3426,3310,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-denkendorf,,Denkendorf,Denkendorf,08116,Esslingen (LKR),2024-06-30,11190,5658,5532,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-dettingen-unter-teck,,Dettingen unter Teck,Dettingen unter Teck,08116,Esslingen (LKR),2024-06-30,6131,2982,3149,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-erkenbrechtsweiler,,Erkenbrechtsweiler,Erkenbrechtsweiler,08116,Esslingen (LKR),2024-06-30,2020,1022,998,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-esslingen-am-neckar,,Esslingen am Neckar,"Esslingen am Neckar, Stadt",08116,Esslingen (LKR),2024-06-30,96458,48839,47619,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-filderstadt,,Filderstadt,"Filderstadt, Stadt",08116,Esslingen (LKR),2024-06-30,46250,22968,23282,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-frickenhausen,,Frickenhausen,Frickenhausen,08116,Esslingen (LKR),2024-06-30,9151,4535,4616,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-grossbettlingen,,Großbettlingen,Großbettlingen,08116,Esslingen (LKR),2024-06-30,4209,2091,2118,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-hochdorf,,Hochdorf,Hochdorf,08116,Esslingen (LKR),2024-06-30,4788,2408,2380,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-holzmaden,,Holzmaden,Holzmaden,08116,Esslingen (LKR),2024-06-30,2294,1168,1126,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-kirchheim-unter-teck,,Kirchheim unter Teck,"Kirchheim unter Teck, Stadt",08116,Esslingen (LKR),2024-06-30,42314,20947,21367,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-kohlberg,,Kohlberg,Kohlberg,08116,Esslingen (LKR),2024-06-30,2253,1131,1122,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-kongen,,Köngen,Köngen,08116,Esslingen (LKR),2024-06-30,9604,4793,4811,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-leinfelden-echterdingen,,Leinfelden-Echterdingen,"Leinfelden-Echterdingen, Stadt",08116,Esslingen (LKR),2024-06-30,41176,20348,20828,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-lenningen,,Lenningen,Lenningen,08116,Esslingen (LKR),2024-06-30,7983,4041,3942,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-lichtenwald,,Lichtenwald,Lichtenwald,08116,Esslingen (LKR),2024-06-30,2560,1227,1333,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-neckartailfingen,,Neckartailfingen,Neckartailfingen,08116,Esslingen (LKR),2024-06-30,3832,1933,1899,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-neckartenzlingen,,Neckartenzlingen,Neckartenzlingen,08116,Esslingen (LKR),2024-06-30,6203,3081,3122,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-neidlingen,,Neidlingen,Neidlingen,08116,Esslingen (LKR),2024-06-30,1700,839,861,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-neuffen,,Neuffen,"Neuffen, Stadt",08116,Esslingen (LKR),2024-06-30,6109,3068,3041,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-neuhausen-auf-den-fildern,,Neuhausen auf den Fildern,Neuhausen auf den Fildern,08116,Esslingen (LKR),2024-06-30,12490,6169,6321,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-notzingen,,Notzingen,Notzingen,08116,Esslingen (LKR),2024-06-30,3657,1855,1802,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-nurtingen,,Nürtingen,"Nürtingen, Stadt",08116,Esslingen (LKR),2024-06-30,40763,20221,20542,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-oberboihingen,,Oberboihingen,Oberboihingen,08116,Esslingen (LKR),2024-06-30,5646,2840,2806,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-ohmden,,Ohmden,Ohmden,08116,Esslingen (LKR),2024-06-30,1752,884,868,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-ostfildern,,Ostfildern,"Ostfildern, Stadt",08116,Esslingen (LKR),2024-06-30,39657,19612,20045,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-owen,,Owen,"Owen, Stadt",08116,Esslingen (LKR),2024-06-30,3410,1706,1704,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-plochingen,,Plochingen,"Plochingen, Stadt",08116,Esslingen (LKR),2024-06-30,14410,7198,7212,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-reichenbach-an-der-fils,,Reichenbach an der Fils,Reichenbach an der Fils,08116,Esslingen (LKR),2024-06-30,8354,4168,4186,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-schlaitdorf,,Schlaitdorf,Schlaitdorf,08116,Esslingen (LKR),2024-06-30,1871,916,955,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-unterensingen,,Unterensingen,Unterensingen,08116,Esslingen (LKR),2024-06-30,4922,2509,2413,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-weilheim-an-der-teck,,Weilheim an der Teck,"Weilheim an der Teck, Stadt",08116,Esslingen (LKR),2024-06-30,9900,4949,4951,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-wendlingen-am-neckar,,Wendlingen am Neckar,"Wendlingen am Neckar, Stadt",08116,Esslingen (LKR),2024-06-30,15891,7864,8027,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-wernau-neckar,,Wernau (Neckar),"Wernau (Neckar), Stadt",08116,Esslingen (LKR),2024-06-30,12263,6082,6181,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08116-wolfschlugen,,Wolfschlugen,Wolfschlugen,08116,Esslingen (LKR),2024-06-30,6208,3040,3168,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-adelberg,,Adelberg,Adelberg,08117,Göppingen (LKR),2024-06-30,1953,966,987,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-aichelberg,,Aichelberg,Aichelberg,08117,Göppingen (LKR),2024-06-30,1292,661,631,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-albershausen,,Albershausen,Albershausen,08117,Göppingen (LKR),2024-06-30,4424,2181,2243,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-bad-boll,,Bad Boll,Bad Boll,08117,Göppingen (LKR),2024-06-30,5127,2427,2700,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-bad-ditzenbach,,Bad Ditzenbach,Bad Ditzenbach,08117,Göppingen (LKR),2024-06-30,3824,1920,1904,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-bad-uberkingen,,Bad Überkingen,Bad Überkingen,08117,Göppingen (LKR),2024-06-30,3794,1853,1941,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-birenbach,,Birenbach,Birenbach,08117,Göppingen (LKR),2024-06-30,1869,899,970,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-bohmenkirch,,Böhmenkirch,Böhmenkirch,08117,Göppingen (LKR),2024-06-30,5631,2832,2799,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-bortlingen,,Börtlingen,Börtlingen,08117,Göppingen (LKR),2024-06-30,1712,841,871,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-deggingen,,Deggingen,Deggingen,08117,Göppingen (LKR),2024-06-30,5064,2509,2555,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-donzdorf,,Donzdorf,"Donzdorf, Stadt",08117,Göppingen (LKR),2024-06-30,10607,5285,5322,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-drackenstein,,Drackenstein,Drackenstein,08117,Göppingen (LKR),2024-06-30,436,219,217,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-durnau,,Dürnau,Dürnau,08117,Göppingen (LKR),2024-06-30,2206,1085,1121,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-ebersbach-an-der-fils,,Ebersbach an der Fils,"Ebersbach an der Fils, Stadt",08117,Göppingen (LKR),2024-06-30,15407,7627,7780,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-eislingen-fils,,Eislingen/Fils,"Eislingen/Fils, Stadt",08117,Göppingen (LKR),2024-06-30,22358,11129,11229,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-eschenbach,,Eschenbach,Eschenbach,08117,Göppingen (LKR),2024-06-30,2135,1016,1119,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-gammelshausen,,Gammelshausen,Gammelshausen,08117,Göppingen (LKR),2024-06-30,1498,749,749,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-geislingen-an-der-steige,,Geislingen an der Steige,"Geislingen an der Steige, Stadt",08117,Göppingen (LKR),2024-06-30,27892,14109,13783,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-gingen-an-der-fils,,Gingen an der Fils,Gingen an der Fils,08117,Göppingen (LKR),2024-06-30,4440,2190,2250,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-goppingen,,Göppingen,"Göppingen, Stadt",08117,Göppingen (LKR),2024-06-30,58905,29279,29626,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-gruibingen,,Gruibingen,Gruibingen,08117,Göppingen (LKR),2024-06-30,2234,1127,1107,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-hattenhofen,,Hattenhofen,Hattenhofen,08117,Göppingen (LKR),2024-06-30,2925,1440,1485,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-heiningen,,Heiningen,Heiningen,08117,Göppingen (LKR),2024-06-30,5070,2475,2595,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-hohenstadt,,Hohenstadt,Hohenstadt,08117,Göppingen (LKR),2024-06-30,764,409,355,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-kuchen,,Kuchen,Kuchen,08117,Göppingen (LKR),2024-06-30,5598,2786,2812,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-lauterstein,,Lauterstein,"Lauterstein, Stadt",08117,Göppingen (LKR),2024-06-30,2513,1253,1260,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-muhlhausen-im-tale,,Mühlhausen im Täle,Mühlhausen im Täle,08117,Göppingen (LKR),2024-06-30,1109,535,574,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-ottenbach,,Ottenbach,Ottenbach,08117,Göppingen (LKR),2024-06-30,2358,1174,1184,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-rechberghausen,,Rechberghausen,Rechberghausen,08117,Göppingen (LKR),2024-06-30,5486,2624,2862,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-salach,,Salach,Salach,08117,Göppingen (LKR),2024-06-30,8084,4023,4061,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-schlat,,Schlat,Schlat,08117,Göppingen (LKR),2024-06-30,1664,823,841,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-schlierbach,,Schlierbach,Schlierbach,08117,Göppingen (LKR),2024-06-30,3890,1948,1942,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-sussen,,Süßen,"Süßen, Stadt",08117,Göppingen (LKR),2024-06-30,10210,5051,5159,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-uhingen,,Uhingen,"Uhingen, Stadt",08117,Göppingen (LKR),2024-06-30,14445,7132,7313,stala_gemeinden_2024_06,6,not_in_source_table
+LOCAL-BW-MUN-08117-wangen,,Wangen,Wangen,08117,Göppingen (LKR),2024-06-30,3198,1580,1618,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08117-waschenbeuren,,Wäschenbeuren,Wäschenbeuren,08117,Göppingen (LKR),2024-06-30,3902,1890,2012,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08117-wiesensteig,,Wiesensteig,"Wiesensteig, Stadt",08117,Göppingen (LKR),2024-06-30,1985,1011,974,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08117-zell-unter-aichelberg,,Zell unter Aichelberg,Zell unter Aichelberg,08117,Göppingen (LKR),2024-06-30,3105,1530,1575,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-affalterbach,,Affalterbach,Affalterbach,08118,Ludwigsburg (LKR),2024-06-30,4352,2129,2223,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-asperg,,Asperg,"Asperg, Stadt",08118,Ludwigsburg (LKR),2024-06-30,13573,6701,6872,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-benningen-am-neckar,,Benningen am Neckar,Benningen am Neckar,08118,Ludwigsburg (LKR),2024-06-30,6336,3153,3183,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-besigheim,,Besigheim,"Besigheim, Stadt",08118,Ludwigsburg (LKR),2024-06-30,12274,6174,6100,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-bietigheim-bissingen,,Bietigheim-Bissingen,"Bietigheim-Bissingen, Stadt",08118,Ludwigsburg (LKR),2024-06-30,43641,21545,22096,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-bonnigheim,,Bönnigheim,"Bönnigheim, Stadt",08118,Ludwigsburg (LKR),2024-06-30,8105,3967,4138,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-ditzingen,,Ditzingen,"Ditzingen, Stadt",08118,Ludwigsburg (LKR),2024-06-30,22741,11128,11613,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-eberdingen,,Eberdingen,Eberdingen,08118,Ludwigsburg (LKR),2024-06-30,6793,3408,3385,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-erdmannhausen,,Erdmannhausen,Erdmannhausen,08118,Ludwigsburg (LKR),2024-06-30,5234,2611,2623,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-erligheim,,Erligheim,Erligheim,08118,Ludwigsburg (LKR),2024-06-30,3079,1506,1573,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-freiberg-am-neckar,,Freiberg am Neckar,"Freiberg am Neckar, Stadt",08118,Ludwigsburg (LKR),2024-06-30,15537,7663,7874,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-freudental,,Freudental,Freudental,08118,Ludwigsburg (LKR),2024-06-30,2523,1262,1261,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-gemmrigheim,,Gemmrigheim,Gemmrigheim,08118,Ludwigsburg (LKR),2024-06-30,4627,2367,2260,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-gerlingen,,Gerlingen,"Gerlingen, Stadt",08118,Ludwigsburg (LKR),2024-06-30,18456,9027,9429,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-grossbottwar,,Großbottwar,"Großbottwar, Stadt",08118,Ludwigsburg (LKR),2024-06-30,7998,3932,4066,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-hemmingen,,Hemmingen,Hemmingen,08118,Ludwigsburg (LKR),2024-06-30,7929,3977,3952,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-hessigheim,,Hessigheim,Hessigheim,08118,Ludwigsburg (LKR),2024-06-30,2501,1264,1237,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-ingersheim,,Ingersheim,Ingersheim,08118,Ludwigsburg (LKR),2024-06-30,6216,3053,3163,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-kirchheim-am-neckar,,Kirchheim am Neckar,Kirchheim am Neckar,08118,Ludwigsburg (LKR),2024-06-30,5965,2981,2984,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-korntal-munchingen,,Korntal-Münchingen,"Korntal-Münchingen, Stadt",08118,Ludwigsburg (LKR),2024-06-30,19428,9728,9700,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-kornwestheim,,Kornwestheim,"Kornwestheim, Stadt",08118,Ludwigsburg (LKR),2024-06-30,33936,16765,17171,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-lochgau,,Löchgau,Löchgau,08118,Ludwigsburg (LKR),2024-06-30,5794,2867,2927,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-ludwigsburg,,Ludwigsburg,"Ludwigsburg, Stadt",08118,Ludwigsburg (LKR),2024-06-30,92915,45456,47459,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-marbach-am-neckar,,Marbach am Neckar,"Marbach am Neckar, Stadt",08118,Ludwigsburg (LKR),2024-06-30,15529,7611,7918,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-markgroningen,,Markgröningen,"Markgröningen, Stadt",08118,Ludwigsburg (LKR),2024-06-30,14204,7075,7129,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-moglingen,,Möglingen,Möglingen,08118,Ludwigsburg (LKR),2024-06-30,10778,5315,5463,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-mundelsheim,,Mundelsheim,Mundelsheim,08118,Ludwigsburg (LKR),2024-06-30,3535,1771,1764,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-murr,,Murr,Murr,08118,Ludwigsburg (LKR),2024-06-30,6572,3232,3340,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-oberriexingen,,Oberriexingen,"Oberriexingen, Stadt",08118,Ludwigsburg (LKR),2024-06-30,3291,1657,1634,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-oberstenfeld,,Oberstenfeld,Oberstenfeld,08118,Ludwigsburg (LKR),2024-06-30,7551,3692,3859,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-pleidelsheim,,Pleidelsheim,Pleidelsheim,08118,Ludwigsburg (LKR),2024-06-30,6059,3000,3059,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-remseck-am-neckar,,Remseck am Neckar,"Remseck am Neckar, Stadt",08118,Ludwigsburg (LKR),2024-06-30,26187,13021,13166,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-sachsenheim,,Sachsenheim,"Sachsenheim, Stadt",08118,Ludwigsburg (LKR),2024-06-30,18531,9225,9306,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-schwieberdingen,,Schwieberdingen,Schwieberdingen,08118,Ludwigsburg (LKR),2024-06-30,11357,5663,5694,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-sersheim,,Sersheim,Sersheim,08118,Ludwigsburg (LKR),2024-06-30,5439,2665,2774,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-steinheim-an-der-murr,,Steinheim an der Murr,"Steinheim an der Murr, Stadt",08118,Ludwigsburg (LKR),2024-06-30,11981,5911,6070,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-tamm,,Tamm,"Tamm, Stadt",08118,Ludwigsburg (LKR),2024-06-30,12220,6070,6150,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-vaihingen-an-der-enz,,Vaihingen an der Enz,"Vaihingen an der Enz, Stadt",08118,Ludwigsburg (LKR),2024-06-30,28841,14270,14571,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08118-walheim,,Walheim,Walheim,08118,Ludwigsburg (LKR),2024-06-30,3297,1654,1643,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-alfdorf,,Alfdorf,Alfdorf,08119,Rems-Murr-Kreis (LKR),2024-06-30,7216,3591,3625,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-allmersbach-im-tal,,Allmersbach im Tal,Allmersbach im Tal,08119,Rems-Murr-Kreis (LKR),2024-06-30,5011,2472,2539,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-althutte,,Althütte,Althütte,08119,Rems-Murr-Kreis (LKR),2024-06-30,4203,2082,2121,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-aspach,,Aspach,Aspach,08119,Rems-Murr-Kreis (LKR),2024-06-30,8262,4182,4080,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-auenwald,,Auenwald,Auenwald,08119,Rems-Murr-Kreis (LKR),2024-06-30,6805,3417,3388,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-backnang,,Backnang,"Backnang, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,38685,19271,19414,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-berglen,,Berglen,Berglen,08119,Rems-Murr-Kreis (LKR),2024-06-30,6861,3473,3388,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-burgstetten,,Burgstetten,Burgstetten,08119,Rems-Murr-Kreis (LKR),2024-06-30,3712,1865,1847,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-fellbach,,Fellbach,"Fellbach, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,47283,23256,24027,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-grosserlach,,Großerlach,Großerlach,08119,Rems-Murr-Kreis (LKR),2024-06-30,2703,1416,1287,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-kaisersbach,,Kaisersbach,Kaisersbach,08119,Rems-Murr-Kreis (LKR),2024-06-30,2398,1211,1187,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-kernen-im-remstal,,Kernen im Remstal,Kernen im Remstal,08119,Rems-Murr-Kreis (LKR),2024-06-30,15807,7917,7890,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-kirchberg-an-der-murr,,Kirchberg an der Murr,Kirchberg an der Murr,08119,Rems-Murr-Kreis (LKR),2024-06-30,4162,2079,2083,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-korb,,Korb,Korb,08119,Rems-Murr-Kreis (LKR),2024-06-30,11628,5738,5890,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-leutenbach,,Leutenbach,Leutenbach,08119,Rems-Murr-Kreis (LKR),2024-06-30,12134,6089,6045,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-murrhardt,,Murrhardt,"Murrhardt, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,14592,7266,7326,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-oppenweiler,,Oppenweiler,Oppenweiler,08119,Rems-Murr-Kreis (LKR),2024-06-30,4472,2268,2204,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-pluderhausen,,Plüderhausen,Plüderhausen,08119,Rems-Murr-Kreis (LKR),2024-06-30,9844,4902,4942,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-remshalden,,Remshalden,Remshalden,08119,Rems-Murr-Kreis (LKR),2024-06-30,14331,7080,7251,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-rudersberg,,Rudersberg,Rudersberg,08119,Rems-Murr-Kreis (LKR),2024-06-30,11671,5813,5858,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-schorndorf,,Schorndorf,"Schorndorf, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,41437,20496,20941,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-schwaikheim,,Schwaikheim,Schwaikheim,08119,Rems-Murr-Kreis (LKR),2024-06-30,10015,4902,5113,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-spiegelberg,,Spiegelberg,Spiegelberg,08119,Rems-Murr-Kreis (LKR),2024-06-30,2178,1137,1041,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-sulzbach-an-der-murr,,Sulzbach an der Murr,Sulzbach an der Murr,08119,Rems-Murr-Kreis (LKR),2024-06-30,5389,2726,2663,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-urbach,,Urbach,Urbach,08119,Rems-Murr-Kreis (LKR),2024-06-30,9259,4621,4638,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-waiblingen,,Waiblingen,"Waiblingen, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,57342,28200,29142,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-weinstadt,,Weinstadt,"Weinstadt, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,26957,13278,13679,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-weissach-im-tal,,Weissach im Tal,Weissach im Tal,08119,Rems-Murr-Kreis (LKR),2024-06-30,7526,3692,3834,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-welzheim,,Welzheim,"Welzheim, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,11278,5479,5799,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-winnenden,,Winnenden,"Winnenden, Stadt",08119,Rems-Murr-Kreis (LKR),2024-06-30,29829,14653,15176,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08119-winterbach,,Winterbach,Winterbach,08119,Rems-Murr-Kreis (LKR),2024-06-30,7657,3716,3941,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08121-heilbronn,,Heilbronn,"Heilbronn, Universitätsstadt",08121,Heilbronn (SKR),2024-06-30,131921,66796,65125,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-abstatt,,Abstatt,Abstatt,08125,Heilbronn (LKR),2024-06-30,4965,2493,2472,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-bad-friedrichshall,,Bad Friedrichshall,"Bad Friedrichshall, Stadt",08125,Heilbronn (LKR),2024-06-30,19733,10010,9723,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-bad-rappenau,,Bad Rappenau,"Bad Rappenau, Stadt",08125,Heilbronn (LKR),2024-06-30,22724,11166,11558,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-bad-wimpfen,,Bad Wimpfen,"Bad Wimpfen, Stadt",08125,Heilbronn (LKR),2024-06-30,7623,3748,3875,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-beilstein,,Beilstein,"Beilstein, Stadt",08125,Heilbronn (LKR),2024-06-30,6387,3171,3216,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-brackenheim,,Brackenheim,"Brackenheim, Stadt",08125,Heilbronn (LKR),2024-06-30,16800,8523,8277,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-cleebronn,,Cleebronn,Cleebronn,08125,Heilbronn (LKR),2024-06-30,3148,1598,1550,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-eberstadt,,Eberstadt,Eberstadt,08125,Heilbronn (LKR),2024-06-30,3200,1584,1616,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-ellhofen,,Ellhofen,Ellhofen,08125,Heilbronn (LKR),2024-06-30,4010,2017,1993,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-eppingen,,Eppingen,"Eppingen, Stadt",08125,Heilbronn (LKR),2024-06-30,22652,11376,11276,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-erlenbach,,Erlenbach,Erlenbach,08125,Heilbronn (LKR),2024-06-30,5154,2544,2610,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-flein,,Flein,Flein,08125,Heilbronn (LKR),2024-06-30,7411,3539,3872,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-gemmingen,,Gemmingen,Gemmingen,08125,Heilbronn (LKR),2024-06-30,5580,2820,2760,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-guglingen,,Güglingen,"Güglingen, Stadt",08125,Heilbronn (LKR),2024-06-30,6393,3244,3149,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-gundelsheim,,Gundelsheim,"Gundelsheim, Stadt",08125,Heilbronn (LKR),2024-06-30,7487,3720,3767,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-hardthausen-am-kocher,,Hardthausen am Kocher,Hardthausen am Kocher,08125,Heilbronn (LKR),2024-06-30,4504,2365,2139,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-ilsfeld,,Ilsfeld,Ilsfeld,08125,Heilbronn (LKR),2024-06-30,9793,4879,4914,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-ittlingen,,Ittlingen,Ittlingen,08125,Heilbronn (LKR),2024-06-30,2625,1332,1293,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-jagsthausen,,Jagsthausen,Jagsthausen,08125,Heilbronn (LKR),2024-06-30,1755,882,873,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-kirchardt,,Kirchardt,Kirchardt,08125,Heilbronn (LKR),2024-06-30,5954,3035,2919,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-langenbrettach,,Langenbrettach,Langenbrettach,08125,Heilbronn (LKR),2024-06-30,3918,1989,1929,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-lauffen-am-neckar,,Lauffen am Neckar,"Lauffen am Neckar, Stadt",08125,Heilbronn (LKR),2024-06-30,12143,6022,6121,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-lehrensteinsfeld,,Lehrensteinsfeld,Lehrensteinsfeld,08125,Heilbronn (LKR),2024-06-30,2760,1379,1381,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-leingarten,,Leingarten,"Leingarten, Stadt",08125,Heilbronn (LKR),2024-06-30,11662,5780,5882,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-lowenstein,,Löwenstein,"Löwenstein, Stadt",08125,Heilbronn (LKR),2024-06-30,3468,1725,1743,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-massenbachhausen,,Massenbachhausen,Massenbachhausen,08125,Heilbronn (LKR),2024-06-30,3767,1912,1855,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-mockmuhl,,Möckmühl,"Möckmühl, Stadt",08125,Heilbronn (LKR),2024-06-30,8712,4472,4240,stala_gemeinden_2024_06,7,not_in_source_table
+LOCAL-BW-MUN-08125-neckarsulm,,Neckarsulm,"Neckarsulm, Stadt",08125,Heilbronn (LKR),2024-06-30,26414,13126,13288,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-neckarwestheim,,Neckarwestheim,Neckarwestheim,08125,Heilbronn (LKR),2024-06-30,4115,2069,2046,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-neudenau,,Neudenau,"Neudenau, Stadt",08125,Heilbronn (LKR),2024-06-30,5525,2818,2707,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-neuenstadt-am-kocher,,Neuenstadt am Kocher,"Neuenstadt am Kocher, Stadt",08125,Heilbronn (LKR),2024-06-30,10443,5241,5202,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-nordheim,,Nordheim,Nordheim,08125,Heilbronn (LKR),2024-06-30,8455,4192,4263,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-obersulm,,Obersulm,Obersulm,08125,Heilbronn (LKR),2024-06-30,13758,6877,6881,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-oedheim,,Oedheim,Oedheim,08125,Heilbronn (LKR),2024-06-30,6637,3286,3351,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-offenau,,Offenau,Offenau,08125,Heilbronn (LKR),2024-06-30,2878,1454,1424,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-pfaffenhofen,,Pfaffenhofen,Pfaffenhofen,08125,Heilbronn (LKR),2024-06-30,2571,1323,1248,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-roigheim,,Roigheim,Roigheim,08125,Heilbronn (LKR),2024-06-30,1474,762,712,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-schwaigern,,Schwaigern,"Schwaigern, Stadt",08125,Heilbronn (LKR),2024-06-30,11632,5825,5807,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-siegelsbach,,Siegelsbach,Siegelsbach,08125,Heilbronn (LKR),2024-06-30,1652,830,822,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-talheim,,Talheim,Talheim,08125,Heilbronn (LKR),2024-06-30,5032,2523,2509,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-untereisesheim,,Untereisesheim,Untereisesheim,08125,Heilbronn (LKR),2024-06-30,4365,2164,2201,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-untergruppenbach,,Untergruppenbach,Untergruppenbach,08125,Heilbronn (LKR),2024-06-30,8666,4312,4354,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-weinsberg,,Weinsberg,"Weinsberg, Stadt",08125,Heilbronn (LKR),2024-06-30,13210,6613,6597,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-widdern,,Widdern,"Widdern, Stadt",08125,Heilbronn (LKR),2024-06-30,1793,940,853,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-wustenrot,,Wüstenrot,Wüstenrot,08125,Heilbronn (LKR),2024-06-30,6729,3295,3434,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08125-zaberfeld,,Zaberfeld,Zaberfeld,08125,Heilbronn (LKR),2024-06-30,4150,2053,2097,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-bretzfeld,,Bretzfeld,Bretzfeld,08126,Hohenlohekreis (LKR),2024-06-30,12558,6315,6243,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-dorzbach,,Dörzbach,Dörzbach,08126,Hohenlohekreis (LKR),2024-06-30,2554,1253,1301,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-forchtenberg,,Forchtenberg,"Forchtenberg, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,5379,2812,2567,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-ingelfingen,,Ingelfingen,"Ingelfingen, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,5472,2744,2728,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-krautheim,,Krautheim,"Krautheim, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,4620,2421,2199,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-kunzelsau,,Künzelsau,"Künzelsau, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,16331,8239,8092,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-kupferzell,,Kupferzell,Kupferzell,08126,Hohenlohekreis (LKR),2024-06-30,6610,3402,3208,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-mulfingen,,Mulfingen,Mulfingen,08126,Hohenlohekreis (LKR),2024-06-30,3616,1877,1739,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-neuenstein,,Neuenstein,"Neuenstein, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,6642,3358,3284,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-niedernhall,,Niedernhall,"Niedernhall, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,4241,2159,2082,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-ohringen,,Öhringen,"Öhringen, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,25665,12676,12989,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-pfedelbach,,Pfedelbach,Pfedelbach,08126,Hohenlohekreis (LKR),2024-06-30,9444,4688,4756,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-schontal,,Schöntal,Schöntal,08126,Hohenlohekreis (LKR),2024-06-30,5587,2848,2739,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-waldenburg,,Waldenburg,"Waldenburg, Stadt",08126,Hohenlohekreis (LKR),2024-06-30,3000,1525,1475,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-weissbach,,Weißbach,Weißbach,08126,Hohenlohekreis (LKR),2024-06-30,2042,1007,1035,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08126-zweiflingen,,Zweiflingen,Zweiflingen,08126,Hohenlohekreis (LKR),2024-06-30,1832,967,865,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-blaufelden,,Blaufelden,Blaufelden,08127,Schwäbisch Hall (LKR),2024-06-30,5384,2742,2642,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-braunsbach,,Braunsbach,Braunsbach,08127,Schwäbisch Hall (LKR),2024-06-30,2480,1257,1223,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-buhlertann,,Bühlertann,Bühlertann,08127,Schwäbisch Hall (LKR),2024-06-30,3063,1561,1502,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-buhlerzell,,Bühlerzell,Bühlerzell,08127,Schwäbisch Hall (LKR),2024-06-30,2071,1020,1051,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-crailsheim,,Crailsheim,"Crailsheim, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,35440,17947,17493,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-fichtenau,,Fichtenau,Fichtenau,08127,Schwäbisch Hall (LKR),2024-06-30,4573,2294,2279,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-fichtenberg,,Fichtenberg,Fichtenberg,08127,Schwäbisch Hall (LKR),2024-06-30,2908,1454,1454,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-frankenhardt,,Frankenhardt,Frankenhardt,08127,Schwäbisch Hall (LKR),2024-06-30,5043,2522,2521,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-gaildorf,,Gaildorf,"Gaildorf, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,12064,6009,6055,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-gerabronn,,Gerabronn,"Gerabronn, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,4455,2260,2195,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-ilshofen,,Ilshofen,"Ilshofen, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,7038,3562,3476,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-kirchberg-an-der-jagst,,Kirchberg an der Jagst,"Kirchberg an der Jagst, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,4231,2239,1992,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-kressberg,,Kreßberg,Kreßberg,08127,Schwäbisch Hall (LKR),2024-06-30,3995,2009,1986,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-langenburg,,Langenburg,"Langenburg, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,1794,913,881,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-mainhardt,,Mainhardt,Mainhardt,08127,Schwäbisch Hall (LKR),2024-06-30,6019,2990,3029,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-michelbach-an-der-bilz,,Michelbach an der Bilz,Michelbach an der Bilz,08127,Schwäbisch Hall (LKR),2024-06-30,3314,1616,1698,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-michelfeld,,Michelfeld,Michelfeld,08127,Schwäbisch Hall (LKR),2024-06-30,3750,1881,1869,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-oberrot,,Oberrot,Oberrot,08127,Schwäbisch Hall (LKR),2024-06-30,3484,1739,1745,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-obersontheim,,Obersontheim,Obersontheim,08127,Schwäbisch Hall (LKR),2024-06-30,5367,2702,2665,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-rosengarten,,Rosengarten,Rosengarten,08127,Schwäbisch Hall (LKR),2024-06-30,5288,2558,2730,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-rot-am-see,,Rot am See,Rot am See,08127,Schwäbisch Hall (LKR),2024-06-30,5504,2801,2703,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-satteldorf,,Satteldorf,Satteldorf,08127,Schwäbisch Hall (LKR),2024-06-30,5708,2875,2833,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-schrozberg,,Schrozberg,"Schrozberg, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,5784,2960,2824,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-schwabisch-hall,,Schwäbisch Hall,"Schwäbisch Hall, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,42547,20840,21707,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-stimpfach,,Stimpfach,Stimpfach,08127,Schwäbisch Hall (LKR),2024-06-30,2968,1510,1458,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-sulzbach-laufen,,Sulzbach-Laufen,Sulzbach-Laufen,08127,Schwäbisch Hall (LKR),2024-06-30,2551,1294,1257,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-untermunkheim,,Untermünkheim,Untermünkheim,08127,Schwäbisch Hall (LKR),2024-06-30,3053,1538,1515,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-vellberg,,Vellberg,"Vellberg, Stadt",08127,Schwäbisch Hall (LKR),2024-06-30,4722,2354,2368,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-wallhausen,,Wallhausen,Wallhausen,08127,Schwäbisch Hall (LKR),2024-06-30,3787,1918,1869,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08127-wolpertshausen,,Wolpertshausen,Wolpertshausen,08127,Schwäbisch Hall (LKR),2024-06-30,2344,1250,1094,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-ahorn,,Ahorn,Ahorn,08128,Main-Tauber-Kreis (LKR),2024-06-30,2213,1108,1105,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-assamstadt,,Assamstadt,Assamstadt,08128,Main-Tauber-Kreis (LKR),2024-06-30,2225,1103,1122,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-bad-mergentheim,,Bad Mergentheim,"Bad Mergentheim, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,24124,11801,12323,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-boxberg,,Boxberg,"Boxberg, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,6694,3420,3274,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-creglingen,,Creglingen,"Creglingen, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,4428,2262,2166,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-freudenberg,,Freudenberg,"Freudenberg, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,3614,1804,1810,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-grossrinderfeld,,Großrinderfeld,Großrinderfeld,08128,Main-Tauber-Kreis (LKR),2024-06-30,4076,2016,2060,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-grunsfeld,,Grünsfeld,"Grünsfeld, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,3633,1829,1804,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-igersheim,,Igersheim,Igersheim,08128,Main-Tauber-Kreis (LKR),2024-06-30,5493,2724,2769,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-konigheim,,Königheim,Königheim,08128,Main-Tauber-Kreis (LKR),2024-06-30,3011,1523,1488,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-kulsheim,,Külsheim,"Külsheim, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,5378,2772,2606,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-lauda-konigshofen,,Lauda-Königshofen,"Lauda-Königshofen, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,14217,7111,7106,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-niederstetten,,Niederstetten,"Niederstetten, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,4877,2499,2378,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-tauberbischofsheim,,Tauberbischofsheim,"Tauberbischofsheim, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,13440,6684,6756,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-weikersheim,,Weikersheim,"Weikersheim, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,7901,3975,3926,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-werbach,,Werbach,Werbach,08128,Main-Tauber-Kreis (LKR),2024-06-30,3203,1591,1612,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-wertheim,,Wertheim,"Wertheim, Stadt",08128,Main-Tauber-Kreis (LKR),2024-06-30,22973,11464,11509,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08128-wittighausen,,Wittighausen,Wittighausen,08128,Main-Tauber-Kreis (LKR),2024-06-30,1791,918,873,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-dischingen,,Dischingen,Dischingen,08135,Heidenheim (LKR),2024-06-30,4404,2230,2174,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-gerstetten,,Gerstetten,Gerstetten,08135,Heidenheim (LKR),2024-06-30,11608,5765,5843,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-giengen-an-der-brenz,,Giengen an der Brenz,"Giengen an der Brenz, Stadt",08135,Heidenheim (LKR),2024-06-30,19970,9977,9993,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-heidenheim-an-der-brenz,,Heidenheim an der Brenz,"Heidenheim an der Brenz, Stadt",08135,Heidenheim (LKR),2024-06-30,50324,25030,25294,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-herbrechtingen,,Herbrechtingen,"Herbrechtingen, Stadt",08135,Heidenheim (LKR),2024-06-30,13215,6589,6626,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-hermaringen,,Hermaringen,Hermaringen,08135,Heidenheim (LKR),2024-06-30,2330,1188,1142,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-konigsbronn,,Königsbronn,Königsbronn,08135,Heidenheim (LKR),2024-06-30,7035,3501,3534,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-nattheim,,Nattheim,Nattheim,08135,Heidenheim (LKR),2024-06-30,6592,3266,3326,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-niederstotzingen,,Niederstotzingen,"Niederstotzingen, Stadt",08135,Heidenheim (LKR),2024-06-30,4888,2426,2462,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-sontheim-an-der-brenz,,Sontheim an der Brenz,Sontheim an der Brenz,08135,Heidenheim (LKR),2024-06-30,5787,2895,2892,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08135-steinheim-am-albuch,,Steinheim am Albuch,Steinheim am Albuch,08135,Heidenheim (LKR),2024-06-30,8906,4425,4481,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08136-aalen,,Aalen,"Aalen, Stadt",08136,Ostalbkreis (LKR),2024-06-30,67697,33820,33877,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08136-abtsgmund,,Abtsgmünd,Abtsgmünd,08136,Ostalbkreis (LKR),2024-06-30,7478,3696,3782,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08136-adelmannsfelden,,Adelmannsfelden,Adelmannsfelden,08136,Ostalbkreis (LKR),2024-06-30,1719,885,834,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08136-bartholoma,,Bartholomä,Bartholomä,08136,Ostalbkreis (LKR),2024-06-30,2038,976,1062,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08136-bobingen-an-der-rems,,Böbingen an der Rems,Böbingen an der Rems,08136,Ostalbkreis (LKR),2024-06-30,4570,2277,2293,stala_gemeinden_2024_06,8,not_in_source_table
+LOCAL-BW-MUN-08136-bopfingen,,Bopfingen,"Bopfingen, Stadt",08136,Ostalbkreis (LKR),2024-06-30,11565,5749,5816,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-durlangen,,Durlangen,Durlangen,08136,Ostalbkreis (LKR),2024-06-30,2748,1413,1335,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-ellenberg,,Ellenberg,Ellenberg,08136,Ostalbkreis (LKR),2024-06-30,1825,933,892,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-ellwangen-jagst,,Ellwangen (Jagst),"Ellwangen (Jagst), Stadt",08136,Ostalbkreis (LKR),2024-06-30,24888,12515,12373,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-eschach,,Eschach,Eschach,08136,Ostalbkreis (LKR),2024-06-30,1904,981,923,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-essingen,,Essingen,Essingen,08136,Ostalbkreis (LKR),2024-06-30,6459,3174,3285,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-goggingen,,Göggingen,Göggingen,08136,Ostalbkreis (LKR),2024-06-30,2556,1249,1307,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-gschwend,,Gschwend,Gschwend,08136,Ostalbkreis (LKR),2024-06-30,4605,2286,2319,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-heubach,,Heubach,"Heubach, Stadt",08136,Ostalbkreis (LKR),2024-06-30,10153,4987,5166,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-heuchlingen,,Heuchlingen,Heuchlingen,08136,Ostalbkreis (LKR),2024-06-30,1839,931,908,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-huttlingen,,Hüttlingen,Hüttlingen,08136,Ostalbkreis (LKR),2024-06-30,6076,3010,3066,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-iggingen,,Iggingen,Iggingen,08136,Ostalbkreis (LKR),2024-06-30,2609,1308,1301,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-jagstzell,,Jagstzell,Jagstzell,08136,Ostalbkreis (LKR),2024-06-30,2363,1212,1151,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-kirchheim-am-ries,,Kirchheim am Ries,Kirchheim am Ries,08136,Ostalbkreis (LKR),2024-06-30,1756,893,863,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-lauchheim,,Lauchheim,"Lauchheim, Stadt",08136,Ostalbkreis (LKR),2024-06-30,4863,2442,2421,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-leinzell,,Leinzell,Leinzell,08136,Ostalbkreis (LKR),2024-06-30,2034,1040,994,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-lorch,,Lorch,"Lorch, Stadt",08136,Ostalbkreis (LKR),2024-06-30,10850,5477,5373,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-mogglingen,,Mögglingen,Mögglingen,08136,Ostalbkreis (LKR),2024-06-30,4330,2149,2181,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-mutlangen,,Mutlangen,Mutlangen,08136,Ostalbkreis (LKR),2024-06-30,6786,3324,3462,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-neresheim,,Neresheim,"Neresheim, Stadt",08136,Ostalbkreis (LKR),2024-06-30,7945,4070,3875,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-neuler,,Neuler,Neuler,08136,Ostalbkreis (LKR),2024-06-30,3245,1650,1595,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-obergroningen,,Obergröningen,Obergröningen,08136,Ostalbkreis (LKR),2024-06-30,432,226,206,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-oberkochen,,Oberkochen,"Oberkochen, Stadt",08136,Ostalbkreis (LKR),2024-06-30,7822,3919,3903,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-rainau,,Rainau,Rainau,08136,Ostalbkreis (LKR),2024-06-30,3362,1735,1627,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-riesburg,,Riesbürg,Riesbürg,08136,Ostalbkreis (LKR),2024-06-30,2217,1128,1089,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-rosenberg,,Rosenberg,Rosenberg,08136,Ostalbkreis (LKR),2024-06-30,2578,1339,1239,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-ruppertshofen,,Ruppertshofen,Ruppertshofen,08136,Ostalbkreis (LKR),2024-06-30,1927,991,936,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-schechingen,,Schechingen,Schechingen,08136,Ostalbkreis (LKR),2024-06-30,2235,1109,1126,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-schwabisch-gmund,,Schwäbisch Gmünd,"Schwäbisch Gmünd, Stadt",08136,Ostalbkreis (LKR),2024-06-30,64237,31325,32912,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-spraitbach,,Spraitbach,Spraitbach,08136,Ostalbkreis (LKR),2024-06-30,3341,1655,1686,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-stodtlen,,Stödtlen,Stödtlen,08136,Ostalbkreis (LKR),2024-06-30,1837,902,935,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-taferrot,,Täferrot,Täferrot,08136,Ostalbkreis (LKR),2024-06-30,1013,524,489,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-tannhausen,,Tannhausen,Tannhausen,08136,Ostalbkreis (LKR),2024-06-30,1789,870,919,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-unterschneidheim,,Unterschneidheim,Unterschneidheim,08136,Ostalbkreis (LKR),2024-06-30,4935,2523,2412,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-waldstetten,,Waldstetten,Waldstetten,08136,Ostalbkreis (LKR),2024-06-30,7065,3423,3642,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-westhausen,,Westhausen,Westhausen,08136,Ostalbkreis (LKR),2024-06-30,6181,3109,3072,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08136-wort,,Wört,Wört,08136,Ostalbkreis (LKR),2024-06-30,1507,771,736,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08211-baden-baden,,Baden-Baden,"Baden-Baden, Stadt",08211,Baden-Baden (SKR),2024-06-30,56738,27056,29682,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08212-karlsruhe,,Karlsruhe,"Karlsruhe, Stadt",08212,Karlsruhe (SKR),2024-06-30,308176,156450,151726,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-bad-schonborn,,Bad Schönborn,Bad Schönborn,08215,Karlsruhe (LKR),2024-06-30,13526,6867,6659,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-bretten,,Bretten,"Bretten, Stadt",08215,Karlsruhe (LKR),2024-06-30,30202,15043,15159,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-bruchsal,,Bruchsal,"Bruchsal, Stadt",08215,Karlsruhe (LKR),2024-06-30,47685,24049,23636,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-dettenheim,,Dettenheim,Dettenheim,08215,Karlsruhe (LKR),2024-06-30,6757,3374,3383,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-eggenstein-leopoldshafen,,Eggenstein-Leopoldshafen,Eggenstein-Leopoldshafen,08215,Karlsruhe (LKR),2024-06-30,16839,8317,8522,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-ettlingen,,Ettlingen,"Ettlingen, Stadt",08215,Karlsruhe (LKR),2024-06-30,38611,18676,19935,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-forst,,Forst,Forst,08215,Karlsruhe (LKR),2024-06-30,8097,4082,4015,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-gondelsheim,,Gondelsheim,Gondelsheim,08215,Karlsruhe (LKR),2024-06-30,4129,2075,2054,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-graben-neudorf,,Graben-Neudorf,Graben-Neudorf,08215,Karlsruhe (LKR),2024-06-30,12430,6229,6201,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-hambrucken,,Hambrücken,Hambrücken,08215,Karlsruhe (LKR),2024-06-30,5558,2796,2762,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-karlsbad,,Karlsbad,Karlsbad,08215,Karlsruhe (LKR),2024-06-30,16089,7909,8180,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-karlsdorf-neuthard,,Karlsdorf-Neuthard,Karlsdorf-Neuthard,08215,Karlsruhe (LKR),2024-06-30,10687,5374,5313,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-kraichtal,,Kraichtal,"Kraichtal, Stadt",08215,Karlsruhe (LKR),2024-06-30,14667,7256,7411,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-kronau,,Kronau,Kronau,08215,Karlsruhe (LKR),2024-06-30,5959,2944,3015,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-kurnbach,,Kürnbach,Kürnbach,08215,Karlsruhe (LKR),2024-06-30,2383,1194,1189,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-linkenheim-hochstetten,,Linkenheim-Hochstetten,Linkenheim-Hochstetten,08215,Karlsruhe (LKR),2024-06-30,12464,6103,6361,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-malsch,,Malsch,Malsch,08215,Karlsruhe (LKR),2024-06-30,14951,7679,7272,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-marxzell,,Marxzell,Marxzell,08215,Karlsruhe (LKR),2024-06-30,5060,2510,2550,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-oberderdingen,,Oberderdingen,"Oberderdingen, Stadt",08215,Karlsruhe (LKR),2024-06-30,11787,5830,5957,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-oberhausen-rheinhausen,,Oberhausen-Rheinhausen,Oberhausen-Rheinhausen,08215,Karlsruhe (LKR),2024-06-30,9576,4768,4808,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-ostringen,,Östringen,"Östringen, Stadt",08215,Karlsruhe (LKR),2024-06-30,13461,6835,6626,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-pfinztal,,Pfinztal,Pfinztal,08215,Karlsruhe (LKR),2024-06-30,18198,9096,9102,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-philippsburg,,Philippsburg,"Philippsburg, Stadt",08215,Karlsruhe (LKR),2024-06-30,13707,6957,6750,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-rheinstetten,,Rheinstetten,"Rheinstetten, Stadt",08215,Karlsruhe (LKR),2024-06-30,21181,10386,10795,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-stutensee,,Stutensee,"Stutensee, Stadt",08215,Karlsruhe (LKR),2024-06-30,25162,12680,12482,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-sulzfeld,,Sulzfeld,Sulzfeld,08215,Karlsruhe (LKR),2024-06-30,5118,2599,2519,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-ubstadt-weiher,,Ubstadt-Weiher,Ubstadt-Weiher,08215,Karlsruhe (LKR),2024-06-30,13205,6668,6537,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-waghausel,,Waghäusel,"Waghäusel, Stadt",08215,Karlsruhe (LKR),2024-06-30,22381,11263,11118,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-waldbronn,,Waldbronn,Waldbronn,08215,Karlsruhe (LKR),2024-06-30,13746,6775,6971,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-walzbachtal,,Walzbachtal,Walzbachtal,08215,Karlsruhe (LKR),2024-06-30,9938,4916,5022,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-weingarten-baden,,Weingarten (Baden),Weingarten (Baden),08215,Karlsruhe (LKR),2024-06-30,10403,5209,5194,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08215-zaisenhausen,,Zaisenhausen,Zaisenhausen,08215,Karlsruhe (LKR),2024-06-30,1834,924,910,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-au-am-rhein,,Au am Rhein,Au am Rhein,08216,Rastatt (LKR),2024-06-30,3380,1703,1677,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-bietigheim,,Bietigheim,Bietigheim,08216,Rastatt (LKR),2024-06-30,6502,3209,3293,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-bischweier,,Bischweier,Bischweier,08216,Rastatt (LKR),2024-06-30,2953,1452,1501,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-buhl,,Bühl,"Bühl, Stadt",08216,Rastatt (LKR),2024-06-30,28836,14100,14736,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-buhlertal,,Bühlertal,Bühlertal,08216,Rastatt (LKR),2024-06-30,7818,3933,3885,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-durmersheim,,Durmersheim,Durmersheim,08216,Rastatt (LKR),2024-06-30,11894,5927,5967,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-elchesheim-illingen,,Elchesheim-Illingen,Elchesheim-Illingen,08216,Rastatt (LKR),2024-06-30,3248,1648,1600,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-forbach,,Forbach,Forbach,08216,Rastatt (LKR),2024-06-30,4494,2303,2191,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-gaggenau,,Gaggenau,"Gaggenau, Stadt",08216,Rastatt (LKR),2024-06-30,29702,14652,15050,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-gernsbach,,Gernsbach,"Gernsbach, Stadt",08216,Rastatt (LKR),2024-06-30,14354,7126,7228,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-hugelsheim,,Hügelsheim,Hügelsheim,08216,Rastatt (LKR),2024-06-30,4990,2513,2477,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-iffezheim,,Iffezheim,Iffezheim,08216,Rastatt (LKR),2024-06-30,5200,2575,2625,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-kuppenheim,,Kuppenheim,"Kuppenheim, Stadt",08216,Rastatt (LKR),2024-06-30,8211,4042,4169,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-lichtenau,,Lichtenau,"Lichtenau, Stadt",08216,Rastatt (LKR),2024-06-30,5023,2488,2535,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-loffenau,,Loffenau,Loffenau,08216,Rastatt (LKR),2024-06-30,2496,1250,1246,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-muggensturm,,Muggensturm,Muggensturm,08216,Rastatt (LKR),2024-06-30,6116,3026,3090,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-otigheim,,Ötigheim,Ötigheim,08216,Rastatt (LKR),2024-06-30,5088,2534,2554,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-ottersweier,,Ottersweier,Ottersweier,08216,Rastatt (LKR),2024-06-30,6368,3203,3165,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-rastatt,,Rastatt,"Rastatt, Stadt",08216,Rastatt (LKR),2024-06-30,50828,25463,25365,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-rheinmunster,,Rheinmünster,Rheinmünster,08216,Rastatt (LKR),2024-06-30,6491,3262,3229,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-sinzheim,,Sinzheim,Sinzheim,08216,Rastatt (LKR),2024-06-30,11575,5656,5919,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-steinmauern,,Steinmauern,Steinmauern,08216,Rastatt (LKR),2024-06-30,3181,1628,1553,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08216-weisenbach,,Weisenbach,Weisenbach,08216,Rastatt (LKR),2024-06-30,2426,1223,1203,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08221-heidelberg,,Heidelberg,"Heidelberg, Stadt",08221,Heidelberg (SKR),2024-06-30,155662,74784,80878,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08222-mannheim,,Mannheim,"Mannheim, Universitätsstadt",08222,Mannheim (SKR),2024-06-30,316570,158378,158192,stala_gemeinden_2024_06,9,not_in_source_table
+LOCAL-BW-MUN-08225-adelsheim,,Adelsheim,"Adelsheim, Stadt",08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,5257,2807,2450,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-aglasterhausen,,Aglasterhausen,Aglasterhausen,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,4847,2355,2492,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-billigheim,,Billigheim,Billigheim,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,6082,3114,2968,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-binau,,Binau,Binau,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,1333,670,663,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-buchen-odenwald,,Buchen (Odenwald),"Buchen (Odenwald), Stadt",08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,18268,8895,9373,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-elztal,,Elztal,Elztal,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,5833,2916,2917,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-fahrenbach,,Fahrenbach,Fahrenbach,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,2659,1309,1350,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-hardheim,,Hardheim,Hardheim,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,6847,3503,3344,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-hassmersheim,,Haßmersheim,Haßmersheim,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,5036,2498,2538,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-hopfingen,,Höpfingen,Höpfingen,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,3068,1516,1552,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-huffenhardt,,Hüffenhardt,Hüffenhardt,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,2080,1025,1055,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-limbach,,Limbach,Limbach,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,4480,2236,2244,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-mosbach,,Mosbach,"Mosbach, Stadt",08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,24417,12248,12169,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-mudau,,Mudau,Mudau,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,4924,2506,2418,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-neckargerach,,Neckargerach,Neckargerach,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,2277,1118,1159,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-neckarzimmern,,Neckarzimmern,Neckarzimmern,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,1419,708,711,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-neunkirchen,,Neunkirchen,Neunkirchen,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,1823,887,936,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-obrigheim,,Obrigheim,Obrigheim,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,5370,2653,2717,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-osterburken,,Osterburken,"Osterburken, Stadt",08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,6639,3380,3259,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-ravenstein,,Ravenstein,"Ravenstein, Stadt",08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,2999,1537,1462,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-rosenberg,,Rosenberg,Rosenberg,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,2046,1028,1018,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-schefflenz,,Schefflenz,Schefflenz,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,3918,1992,1926,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-schwarzach,,Schwarzach,Schwarzach,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,2951,1544,1407,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-seckach,,Seckach,Seckach,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,4036,2040,1996,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-waldbrunn,,Waldbrunn,Waldbrunn,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,4693,2299,2394,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-walldurn,,Walldürn,"Walldürn, Stadt",08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,11588,5857,5731,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08225-zwingenberg,,Zwingenberg,Zwingenberg,08225,Neckar-Odenwald-Kreis (LKR),2024-06-30,633,318,315,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-altlussheim,,Altlußheim,Altlußheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,6359,3159,3200,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-angelbachtal,,Angelbachtal,Angelbachtal,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,5277,2598,2679,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-bammental,,Bammental,Bammental,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,6329,3000,3329,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-bruhl,,Brühl,Brühl,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,14302,6827,7475,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-dielheim,,Dielheim,Dielheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,9144,4521,4623,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-dossenheim,,Dossenheim,Dossenheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,12681,6064,6617,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-eberbach,,Eberbach,"Eberbach, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,14787,7286,7501,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-edingen-neckarhausen,,Edingen-Neckarhausen,Edingen-Neckarhausen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,14492,7112,7380,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-epfenbach,,Epfenbach,Epfenbach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2427,1209,1218,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-eppelheim,,Eppelheim,"Eppelheim, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,15657,7816,7841,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-eschelbronn,,Eschelbronn,Eschelbronn,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2757,1413,1344,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-gaiberg,,Gaiberg,Gaiberg,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2446,1197,1249,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-heddesbach,,Heddesbach,Heddesbach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,489,240,249,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-heddesheim,,Heddesheim,Heddesheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,12294,5991,6303,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-heiligkreuzsteinach,,Heiligkreuzsteinach,Heiligkreuzsteinach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2578,1275,1303,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-helmstadt-bargen,,Helmstadt-Bargen,Helmstadt-Bargen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,3877,1938,1939,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-hemsbach,,Hemsbach,"Hemsbach, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,11954,5823,6131,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-hirschberg-an-der-bergstrasse,,Hirschberg an der Bergstraße,Hirschberg an der Bergstraße,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,9642,4661,4981,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-hockenheim,,Hockenheim,"Hockenheim, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,21498,10639,10859,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-ilvesheim,,Ilvesheim,Ilvesheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,9195,4497,4698,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-ketsch,,Ketsch,Ketsch,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,13154,6372,6782,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-ladenburg,,Ladenburg,"Ladenburg, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,12877,6261,6616,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-laudenbach,,Laudenbach,Laudenbach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,6545,3231,3314,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-leimen,,Leimen,"Leimen, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,26929,13326,13603,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-lobbach,,Lobbach,Lobbach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2371,1175,1196,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-malsch,,Malsch,Malsch,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,3432,1707,1725,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-mauer,,Mauer,Mauer,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,4099,1987,2112,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-meckesheim,,Meckesheim,Meckesheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,5278,2660,2618,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-muhlhausen,,Mühlhausen,Mühlhausen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,8775,4399,4376,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-neckarbischofsheim,,Neckarbischofsheim,"Neckarbischofsheim, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,4186,2101,2085,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-neckargemund,,Neckargemünd,"Neckargemünd, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,13339,6509,6830,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-neidenstein,,Neidenstein,Neidenstein,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,1772,884,888,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-neulussheim,,Neulußheim,Neulußheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,7162,3575,3587,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-nussloch,,Nußloch,Nußloch,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,11372,5623,5749,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-oftersheim,,Oftersheim,Oftersheim,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,12268,5955,6313,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-plankstadt,,Plankstadt,Plankstadt,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,10603,5137,5466,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-rauenberg,,Rauenberg,"Rauenberg, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,8690,4275,4415,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-reichartshausen,,Reichartshausen,Reichartshausen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2160,1084,1076,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-reilingen,,Reilingen,Reilingen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,8322,4144,4178,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-sandhausen,,Sandhausen,Sandhausen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,15287,7447,7840,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-schonau,,Schönau,"Schönau, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,4369,2171,2198,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-schonbrunn,,Schönbrunn,Schönbrunn,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2911,1446,1465,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-schriesheim,,Schriesheim,"Schriesheim, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,15315,7513,7802,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-schwetzingen,,Schwetzingen,"Schwetzingen, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,21763,10722,11041,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-sinsheim,,Sinsheim,"Sinsheim, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,37195,18537,18658,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-spechbach,,Spechbach,Spechbach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,1774,880,894,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-st-leon-rot,,St. Leon-Rot,St. Leon-Rot,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,13993,6897,7096,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-waibstadt,,Waibstadt,"Waibstadt, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,5785,2885,2900,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-walldorf,,Walldorf,"Walldorf, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,16126,7982,8144,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-weinheim,,Weinheim,"Weinheim, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,45660,22198,23462,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-wiesenbach,,Wiesenbach,Wiesenbach,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,3158,1527,1631,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-wiesloch,,Wiesloch,"Wiesloch, Stadt",08226,Rhein-Neckar-Kreis (LKR),2024-06-30,27631,13750,13881,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-wilhelmsfeld,,Wilhelmsfeld,Wilhelmsfeld,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,3318,1602,1716,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08226-zuzenhausen,,Zuzenhausen,Zuzenhausen,08226,Rhein-Neckar-Kreis (LKR),2024-06-30,2338,1180,1158,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08231-pforzheim,,Pforzheim,"Pforzheim, Stadt",08231,Pforzheim (SKR),2024-06-30,134973,66462,68511,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-altensteig,,Altensteig,"Altensteig, Stadt",08235,Calw (LKR),2024-06-30,10836,5497,5339,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-althengstett,,Althengstett,Althengstett,08235,Calw (LKR),2024-06-30,7875,3974,3901,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-bad-herrenalb,,Bad Herrenalb,"Bad Herrenalb, Stadt",08235,Calw (LKR),2024-06-30,7702,3809,3893,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-bad-liebenzell,,Bad Liebenzell,"Bad Liebenzell, Stadt",08235,Calw (LKR),2024-06-30,9307,4500,4807,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-bad-teinach-zavelstein,,Bad Teinach-Zavelstein,"Bad Teinach-Zavelstein, Stadt",08235,Calw (LKR),2024-06-30,3156,1611,1545,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-bad-wildbad,,Bad Wildbad,"Bad Wildbad, Stadt",08235,Calw (LKR),2024-06-30,10421,5079,5342,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-calw,,Calw,"Calw, Stadt",08235,Calw (LKR),2024-06-30,25079,12641,12438,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-dobel,,Dobel,Dobel,08235,Calw (LKR),2024-06-30,2295,1129,1166,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-ebhausen,,Ebhausen,Ebhausen,08235,Calw (LKR),2024-06-30,4888,2478,2410,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-egenhausen,,Egenhausen,Egenhausen,08235,Calw (LKR),2024-06-30,2072,1038,1034,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-enzklosterle,,Enzklösterle,Enzklösterle,08235,Calw (LKR),2024-06-30,1280,681,599,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-gechingen,,Gechingen,Gechingen,08235,Calw (LKR),2024-06-30,3629,1795,1834,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-haiterbach,,Haiterbach,"Haiterbach, Stadt",08235,Calw (LKR),2024-06-30,5882,2953,2929,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-hofen-an-der-enz,,Höfen an der Enz,Höfen an der Enz,08235,Calw (LKR),2024-06-30,1640,806,834,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-nagold,,Nagold,"Nagold, Stadt",08235,Calw (LKR),2024-06-30,23877,11852,12025,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-neubulach,,Neubulach,"Neubulach, Stadt",08235,Calw (LKR),2024-06-30,5699,2760,2939,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-neuweiler,,Neuweiler,Neuweiler,08235,Calw (LKR),2024-06-30,3139,1612,1527,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-oberreichenbach,,Oberreichenbach,Oberreichenbach,08235,Calw (LKR),2024-06-30,2987,1484,1503,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-ostelsheim,,Ostelsheim,Ostelsheim,08235,Calw (LKR),2024-06-30,2563,1281,1282,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-rohrdorf,,Rohrdorf,Rohrdorf,08235,Calw (LKR),2024-06-30,1960,1004,956,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-schomberg,,Schömberg,Schömberg,08235,Calw (LKR),2024-06-30,7630,3708,3922,stala_gemeinden_2024_06,10,not_in_source_table
+LOCAL-BW-MUN-08235-simmersfeld,,Simmersfeld,Simmersfeld,08235,Calw (LKR),2024-06-30,2218,1135,1083,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08235-simmozheim,,Simmozheim,Simmozheim,08235,Calw (LKR),2024-06-30,2787,1364,1423,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08235-unterreichenbach,,Unterreichenbach,Unterreichenbach,08235,Calw (LKR),2024-06-30,2405,1214,1191,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08235-wildberg,,Wildberg,"Wildberg, Stadt",08235,Calw (LKR),2024-06-30,10023,5068,4955,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-birkenfeld,,Birkenfeld,Birkenfeld,08236,Enzkreis (LKR),2024-06-30,10222,4958,5264,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-eisingen,,Eisingen,Eisingen,08236,Enzkreis (LKR),2024-06-30,4671,2241,2430,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-engelsbrand,,Engelsbrand,Engelsbrand,08236,Enzkreis (LKR),2024-06-30,4449,2265,2184,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-friolzheim,,Friolzheim,Friolzheim,08236,Enzkreis (LKR),2024-06-30,4044,2035,2009,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-heimsheim,,Heimsheim,"Heimsheim, Stadt",08236,Enzkreis (LKR),2024-06-30,5484,2918,2566,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-illingen,,Illingen,Illingen,08236,Enzkreis (LKR),2024-06-30,7833,3931,3902,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-ispringen,,Ispringen,Ispringen,08236,Enzkreis (LKR),2024-06-30,5920,2816,3104,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-kampfelbach,,Kämpfelbach,Kämpfelbach,08236,Enzkreis (LKR),2024-06-30,6297,3138,3159,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-keltern,,Keltern,Keltern,08236,Enzkreis (LKR),2024-06-30,8710,4251,4459,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-kieselbronn,,Kieselbronn,Kieselbronn,08236,Enzkreis (LKR),2024-06-30,2992,1436,1556,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-knittlingen,,Knittlingen,"Knittlingen, Stadt",08236,Enzkreis (LKR),2024-06-30,8114,3992,4122,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-konigsbach-stein,,Königsbach-Stein,Königsbach-Stein,08236,Enzkreis (LKR),2024-06-30,10120,5051,5069,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-maulbronn,,Maulbronn,"Maulbronn, Stadt",08236,Enzkreis (LKR),2024-06-30,6420,3259,3161,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-monsheim,,Mönsheim,Mönsheim,08236,Enzkreis (LKR),2024-06-30,2921,1528,1393,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-muhlacker,,Mühlacker,"Mühlacker, Stadt",08236,Enzkreis (LKR),2024-06-30,26877,13435,13442,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-neuenburg,,Neuenbürg,"Neuenbürg, Stadt",08236,Enzkreis (LKR),2024-06-30,8116,4031,4085,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-neuhausen,,Neuhausen,Neuhausen,08236,Enzkreis (LKR),2024-06-30,5138,2503,2635,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-neulingen,,Neulingen,Neulingen,08236,Enzkreis (LKR),2024-06-30,6527,3125,3402,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-niefern-oschelbronn,,Niefern-Öschelbronn,Niefern-Öschelbronn,08236,Enzkreis (LKR),2024-06-30,12368,6122,6246,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-olbronn-durrn,,Ölbronn-Dürrn,Ölbronn-Dürrn,08236,Enzkreis (LKR),2024-06-30,3465,1681,1784,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-otisheim,,Ötisheim,Ötisheim,08236,Enzkreis (LKR),2024-06-30,4744,2373,2371,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-remchingen,,Remchingen,Remchingen,08236,Enzkreis (LKR),2024-06-30,11754,5810,5944,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-sternenfels,,Sternenfels,Sternenfels,08236,Enzkreis (LKR),2024-06-30,2781,1327,1454,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-straubenhardt,,Straubenhardt,Straubenhardt,08236,Enzkreis (LKR),2024-06-30,11397,5654,5743,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-tiefenbronn,,Tiefenbronn,Tiefenbronn,08236,Enzkreis (LKR),2024-06-30,5316,2591,2725,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-wiernsheim,,Wiernsheim,Wiernsheim,08236,Enzkreis (LKR),2024-06-30,6829,3436,3393,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-wimsheim,,Wimsheim,Wimsheim,08236,Enzkreis (LKR),2024-06-30,2837,1412,1425,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08236-wurmberg,,Wurmberg,Wurmberg,08236,Enzkreis (LKR),2024-06-30,3263,1621,1642,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-alpirsbach,,Alpirsbach,"Alpirsbach, Stadt",08237,Freudenstadt (LKR),2024-06-30,6179,3138,3041,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-bad-rippoldsau-schapbach,,Bad Rippoldsau-Schapbach,Bad Rippoldsau-Schapbach,08237,Freudenstadt (LKR),2024-06-30,2042,1050,992,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-baiersbronn,,Baiersbronn,Baiersbronn,08237,Freudenstadt (LKR),2024-06-30,15517,7773,7744,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-dornstetten,,Dornstetten,"Dornstetten, Stadt",08237,Freudenstadt (LKR),2024-06-30,8211,4055,4156,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-empfingen,,Empfingen,Empfingen,08237,Freudenstadt (LKR),2024-06-30,4271,2114,2157,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-eutingen-im-gau,,Eutingen im Gäu,Eutingen im Gäu,08237,Freudenstadt (LKR),2024-06-30,6080,3062,3018,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-freudenstadt,,Freudenstadt,"Freudenstadt, Stadt",08237,Freudenstadt (LKR),2024-06-30,24390,11904,12486,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-glatten,,Glatten,Glatten,08237,Freudenstadt (LKR),2024-06-30,2538,1298,1240,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-grombach,,Grömbach,Grömbach,08237,Freudenstadt (LKR),2024-06-30,653,332,321,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-horb-am-neckar,,Horb am Neckar,"Horb am Neckar, Stadt",08237,Freudenstadt (LKR),2024-06-30,25654,12963,12691,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-lossburg,,Loßburg,Loßburg,08237,Freudenstadt (LKR),2024-06-30,7854,3963,3891,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-pfalzgrafenweiler,,Pfalzgrafenweiler,Pfalzgrafenweiler,08237,Freudenstadt (LKR),2024-06-30,7267,3660,3607,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-schopfloch,,Schopfloch,Schopfloch,08237,Freudenstadt (LKR),2024-06-30,2624,1325,1299,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-seewald,,Seewald,Seewald,08237,Freudenstadt (LKR),2024-06-30,2119,1037,1082,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-waldachtal,,Waldachtal,Waldachtal,08237,Freudenstadt (LKR),2024-06-30,6306,3200,3106,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08237-wornersberg,,Wörnersberg,Wörnersberg,08237,Freudenstadt (LKR),2024-06-30,218,102,116,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08311-freiburg-im-breisgau,,Freiburg im Breisgau,"Freiburg im Breisgau, Stadt",08311,Freiburg im Breisgau (SKR),2024-06-30,236182,112622,123560,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-au,,Au,Au,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1490,734,756,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-auggen,,Auggen,Auggen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2831,1434,1397,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-bad-krozingen,,Bad Krozingen,"Bad Krozingen, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,22534,11063,11471,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-badenweiler,,Badenweiler,Badenweiler,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,4607,2240,2367,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-ballrechten-dottingen,,Ballrechten-Dottingen,Ballrechten-Dottingen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2483,1222,1261,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-bollschweil,,Bollschweil,Bollschweil,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2330,1189,1141,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-botzingen,,Bötzingen,Bötzingen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,5589,2788,2801,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-breisach-am-rhein,,Breisach am Rhein,"Breisach am Rhein, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,16447,8132,8315,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-breitnau,,Breitnau,Breitnau,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1820,898,922,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-buchenbach,,Buchenbach,Buchenbach,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,3151,1561,1590,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-buggingen,,Buggingen,Buggingen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,4432,2185,2247,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-ebringen,,Ebringen,Ebringen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2873,1401,1472,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-ehrenkirchen,,Ehrenkirchen,Ehrenkirchen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,7838,3994,3844,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-eichstetten-am-kaiserstuhl,,Eichstetten am Kaiserstuhl,Eichstetten am Kaiserstuhl,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,3763,1870,1893,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-eisenbach-hochschwarzwald,,Eisenbach (Hochschwarzwald),Eisenbach (Hochschwarzwald),08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2124,1067,1057,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-eschbach,,Eschbach,Eschbach,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2432,1209,1223,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-feldberg-schwarzwald,,Feldberg (Schwarzwald),Feldberg (Schwarzwald),08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1970,1004,966,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-friedenweiler,,Friedenweiler,Friedenweiler,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2070,1050,1020,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-glottertal,,Glottertal,Glottertal,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,3208,1610,1598,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-gottenheim,,Gottenheim,Gottenheim,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,3105,1563,1542,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-gundelfingen,,Gundelfingen,Gundelfingen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,12115,5876,6239,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-hartheim-am-rhein,,Hartheim am Rhein,Hartheim am Rhein,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,4950,2485,2465,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-heitersheim,,Heitersheim,"Heitersheim, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,6557,3249,3308,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-heuweiler,,Heuweiler,Heuweiler,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1156,582,574,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-hinterzarten,,Hinterzarten,Hinterzarten,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2509,1261,1248,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-horben,,Horben,Horben,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1211,582,629,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-ihringen,,Ihringen,Ihringen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,6270,3088,3182,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-kirchzarten,,Kirchzarten,Kirchzarten,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,10253,4869,5384,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-lenzkirch,,Lenzkirch,Lenzkirch,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,5167,2602,2565,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-loffingen,,Löffingen,"Löffingen, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,7749,3877,3872,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-march,,March,March,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,9338,4670,4668,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-merdingen,,Merdingen,Merdingen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2652,1303,1349,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-merzhausen,,Merzhausen,Merzhausen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,5568,2717,2851,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-mullheim-im-markgraflerland,,Müllheim im Markgräflerland,"Müllheim im Markgräflerland, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,20001,9650,10351,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-munstertal-schwarzwald,,Münstertal/Schwarzwald,Münstertal/Schwarzwald,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,5060,2497,2563,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-neuenburg-am-rhein,,Neuenburg am Rhein,"Neuenburg am Rhein, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,12667,6372,6295,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-oberried,,Oberried,Oberried,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2804,1400,1404,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-pfaffenweiler,,Pfaffenweiler,Pfaffenweiler,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2578,1272,1306,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-schallstadt,,Schallstadt,Schallstadt,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,6877,3346,3531,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-schluchsee,,Schluchsee,Schluchsee,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2593,1301,1292,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-solden,,Sölden,Sölden,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1280,617,663,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-st-margen,,St. Märgen,St. Märgen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1996,1004,992,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-st-peter,,St. Peter,St. Peter,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2711,1336,1375,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-staufen-im-breisgau,,Staufen im Breisgau,"Staufen im Breisgau, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,8481,4028,4453,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-stegen,,Stegen,Stegen,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,4411,2136,2275,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-sulzburg,,Sulzburg,"Sulzburg, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,2753,1326,1427,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-titisee-neustadt,,Titisee-Neustadt,"Titisee-Neustadt, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,12823,6343,6480,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-umkirch,,Umkirch,Umkirch,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,5756,2815,2941,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-vogtsburg-im-kaiserstuhl,,Vogtsburg im Kaiserstuhl,"Vogtsburg im Kaiserstuhl, Stadt",08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,6248,3148,3100,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08315-wittnau,,Wittnau,Wittnau,08315,Breisgau-Hochschwarzwald (LKR),2024-06-30,1470,728,742,stala_gemeinden_2024_06,11,not_in_source_table
+LOCAL-BW-MUN-08316-bahlingen-am-kaiserstuhl,,Bahlingen am Kaiserstuhl,Bahlingen am Kaiserstuhl,08316,Emmendingen (LKR),2024-06-30,4515,2266,2249,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-biederbach,,Biederbach,Biederbach,08316,Emmendingen (LKR),2024-06-30,1746,915,831,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-denzlingen,,Denzlingen,Denzlingen,08316,Emmendingen (LKR),2024-06-30,13720,6710,7010,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-elzach,,Elzach,"Elzach, Stadt",08316,Emmendingen (LKR),2024-06-30,7536,3748,3788,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-emmendingen,,Emmendingen,"Emmendingen, Stadt",08316,Emmendingen (LKR),2024-06-30,29573,14342,15231,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-endingen-am-kaiserstuhl,,Endingen am Kaiserstuhl,"Endingen am Kaiserstuhl, Stadt",08316,Emmendingen (LKR),2024-06-30,10388,5162,5226,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-forchheim,,Forchheim,Forchheim,08316,Emmendingen (LKR),2024-06-30,1412,710,702,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-freiamt,,Freiamt,Freiamt,08316,Emmendingen (LKR),2024-06-30,4230,2108,2122,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-gutach-im-breisgau,,Gutach im Breisgau,Gutach im Breisgau,08316,Emmendingen (LKR),2024-06-30,4619,2307,2312,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-herbolzheim,,Herbolzheim,"Herbolzheim, Stadt",08316,Emmendingen (LKR),2024-06-30,10779,5420,5359,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-kenzingen,,Kenzingen,"Kenzingen, Stadt",08316,Emmendingen (LKR),2024-06-30,10738,5289,5449,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-malterdingen,,Malterdingen,Malterdingen,08316,Emmendingen (LKR),2024-06-30,3455,1780,1675,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-reute,,Reute,Reute,08316,Emmendingen (LKR),2024-06-30,2960,1510,1450,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-rheinhausen,,Rheinhausen,Rheinhausen,08316,Emmendingen (LKR),2024-06-30,4314,2123,2191,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-riegel-am-kaiserstuhl,,Riegel am Kaiserstuhl,Riegel am Kaiserstuhl,08316,Emmendingen (LKR),2024-06-30,4066,2034,2032,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-sasbach-am-kaiserstuhl,,Sasbach am Kaiserstuhl,Sasbach am Kaiserstuhl,08316,Emmendingen (LKR),2024-06-30,3490,1796,1694,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-sexau,,Sexau,Sexau,08316,Emmendingen (LKR),2024-06-30,3514,1751,1763,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-simonswald,,Simonswald,Simonswald,08316,Emmendingen (LKR),2024-06-30,2939,1494,1445,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-teningen,,Teningen,Teningen,08316,Emmendingen (LKR),2024-06-30,11890,5958,5932,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-vorstetten,,Vörstetten,Vörstetten,08316,Emmendingen (LKR),2024-06-30,3202,1524,1678,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-waldkirch,,Waldkirch,"Waldkirch, Stadt",08316,Emmendingen (LKR),2024-06-30,21459,10377,11082,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-weisweil,,Weisweil,Weisweil,08316,Emmendingen (LKR),2024-06-30,2216,1104,1112,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-winden-im-elztal,,Winden im Elztal,Winden im Elztal,08316,Emmendingen (LKR),2024-06-30,2907,1498,1409,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08316-wyhl-am-kaiserstuhl,,Wyhl am Kaiserstuhl,Wyhl am Kaiserstuhl,08316,Emmendingen (LKR),2024-06-30,4063,2045,2018,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-achern,,Achern,"Achern, Stadt",08317,Ortenaukreis (LKR),2024-06-30,26491,13036,13455,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-appenweier,,Appenweier,Appenweier,08317,Ortenaukreis (LKR),2024-06-30,10349,5194,5155,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-bad-peterstal-griesbach,,Bad Peterstal-Griesbach,Bad Peterstal-Griesbach,08317,Ortenaukreis (LKR),2024-06-30,2554,1332,1222,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-berghaupten,,Berghaupten,Berghaupten,08317,Ortenaukreis (LKR),2024-06-30,2533,1289,1244,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-biberach,,Biberach,Biberach,08317,Ortenaukreis (LKR),2024-06-30,3791,1895,1896,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-durbach,,Durbach,Durbach,08317,Ortenaukreis (LKR),2024-06-30,4092,2002,2090,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-ettenheim,,Ettenheim,"Ettenheim, Stadt",08317,Ortenaukreis (LKR),2024-06-30,13697,6815,6882,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-fischerbach,,Fischerbach,Fischerbach,08317,Ortenaukreis (LKR),2024-06-30,1677,844,833,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-friesenheim,,Friesenheim,Friesenheim,08317,Ortenaukreis (LKR),2024-06-30,13900,7017,6883,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-gengenbach,,Gengenbach,"Gengenbach, Stadt",08317,Ortenaukreis (LKR),2024-06-30,11103,5379,5724,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-gutach-schwarzwaldbahn,,Gutach (Schwarzwaldbahn),Gutach (Schwarzwaldbahn),08317,Ortenaukreis (LKR),2024-06-30,2298,1139,1159,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-haslach-im-kinzigtal,,Haslach im Kinzigtal,"Haslach im Kinzigtal, Stadt",08317,Ortenaukreis (LKR),2024-06-30,7233,3575,3658,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-hausach,,Hausach,"Hausach, Stadt",08317,Ortenaukreis (LKR),2024-06-30,5802,2876,2926,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-hofstetten,,Hofstetten,Hofstetten,08317,Ortenaukreis (LKR),2024-06-30,1778,908,870,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-hohberg,,Hohberg,Hohberg,08317,Ortenaukreis (LKR),2024-06-30,8194,4152,4042,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-hornberg,,Hornberg,"Hornberg, Stadt",08317,Ortenaukreis (LKR),2024-06-30,4122,2070,2052,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-kappel-grafenhausen,,Kappel-Grafenhausen,Kappel-Grafenhausen,08317,Ortenaukreis (LKR),2024-06-30,5224,2677,2547,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-kappelrodeck,,Kappelrodeck,Kappelrodeck,08317,Ortenaukreis (LKR),2024-06-30,6358,3181,3177,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-kehl,,Kehl,"Kehl, Stadt",08317,Ortenaukreis (LKR),2024-06-30,39573,19592,19981,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-kippenheim,,Kippenheim,Kippenheim,08317,Ortenaukreis (LKR),2024-06-30,5539,2809,2730,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-lahr-schwarzwald,,Lahr/Schwarzwald,"Lahr/Schwarzwald, Stadt",08317,Ortenaukreis (LKR),2024-06-30,50354,25301,25053,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-lauf,,Lauf,Lauf,08317,Ortenaukreis (LKR),2024-06-30,4016,2003,2013,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-lautenbach,,Lautenbach,Lautenbach,08317,Ortenaukreis (LKR),2024-06-30,1987,1005,982,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-mahlberg,,Mahlberg,"Mahlberg, Stadt",08317,Ortenaukreis (LKR),2024-06-30,5253,2610,2643,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-meissenheim,,Meißenheim,Meißenheim,08317,Ortenaukreis (LKR),2024-06-30,4136,2129,2007,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-muhlenbach,,Mühlenbach,Mühlenbach,08317,Ortenaukreis (LKR),2024-06-30,1641,856,785,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-neuried,,Neuried,Neuried,08317,Ortenaukreis (LKR),2024-06-30,9908,4954,4954,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-nordrach,,Nordrach,Nordrach,08317,Ortenaukreis (LKR),2024-06-30,1957,1003,954,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-oberharmersbach,,Oberharmersbach,Oberharmersbach,08317,Ortenaukreis (LKR),2024-06-30,2416,1252,1164,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-oberkirch,,Oberkirch,"Oberkirch, Stadt",08317,Ortenaukreis (LKR),2024-06-30,19888,9881,10007,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-oberwolfach,,Oberwolfach,Oberwolfach,08317,Ortenaukreis (LKR),2024-06-30,2534,1299,1235,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-offenburg,,Offenburg,"Offenburg, Stadt",08317,Ortenaukreis (LKR),2024-06-30,62994,31309,31685,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-ohlsbach,,Ohlsbach,Ohlsbach,08317,Ortenaukreis (LKR),2024-06-30,3371,1664,1707,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-oppenau,,Oppenau,"Oppenau, Stadt",08317,Ortenaukreis (LKR),2024-06-30,4823,2420,2403,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-ortenberg,,Ortenberg,Ortenberg,08317,Ortenaukreis (LKR),2024-06-30,3517,1740,1777,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-ottenhofen-im-schwarzwald,,Ottenhöfen im Schwarzwald,Ottenhöfen im Schwarzwald,08317,Ortenaukreis (LKR),2024-06-30,3086,1528,1558,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-renchen,,Renchen,"Renchen, Stadt",08317,Ortenaukreis (LKR),2024-06-30,7574,3786,3788,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-rheinau,,Rheinau,"Rheinau, Stadt",08317,Ortenaukreis (LKR),2024-06-30,11307,5723,5584,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-ringsheim,,Ringsheim,Ringsheim,08317,Ortenaukreis (LKR),2024-06-30,2627,1316,1311,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-rust,,Rust,Rust,08317,Ortenaukreis (LKR),2024-06-30,4947,2440,2507,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-sasbach,,Sasbach,Sasbach,08317,Ortenaukreis (LKR),2024-06-30,5340,2609,2731,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-sasbachwalden,,Sasbachwalden,Sasbachwalden,08317,Ortenaukreis (LKR),2024-06-30,2531,1287,1244,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-schuttertal,,Schuttertal,Schuttertal,08317,Ortenaukreis (LKR),2024-06-30,3167,1581,1586,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-schutterwald,,Schutterwald,Schutterwald,08317,Ortenaukreis (LKR),2024-06-30,7296,3688,3608,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-schwanau,,Schwanau,Schwanau,08317,Ortenaukreis (LKR),2024-06-30,7109,3610,3499,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-seebach,,Seebach,Seebach,08317,Ortenaukreis (LKR),2024-06-30,1418,745,673,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-seelbach,,Seelbach,Seelbach,08317,Ortenaukreis (LKR),2024-06-30,4845,2386,2459,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-steinach,,Steinach,Steinach,08317,Ortenaukreis (LKR),2024-06-30,4025,1997,2028,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-willstatt,,Willstätt,Willstätt,08317,Ortenaukreis (LKR),2024-06-30,10047,5049,4998,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-wolfach,,Wolfach,"Wolfach, Stadt",08317,Ortenaukreis (LKR),2024-06-30,5600,2783,2817,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08317-zell-am-harmersbach,,Zell am Harmersbach,"Zell am Harmersbach, Stadt",08317,Ortenaukreis (LKR),2024-06-30,8171,4000,4171,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-aichhalden,,Aichhalden,Aichhalden,08325,Rottweil (LKR),2024-06-30,4229,2096,2133,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-bosingen,,Bösingen,Bösingen,08325,Rottweil (LKR),2024-06-30,3437,1749,1688,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-deisslingen,,Deißlingen,Deißlingen,08325,Rottweil (LKR),2024-06-30,6184,3103,3081,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-dietingen,,Dietingen,Dietingen,08325,Rottweil (LKR),2024-06-30,4207,2103,2104,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-dornhan,,Dornhan,"Dornhan, Stadt",08325,Rottweil (LKR),2024-06-30,6178,3053,3125,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-dunningen,,Dunningen,Dunningen,08325,Rottweil (LKR),2024-06-30,6488,3328,3160,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-epfendorf,,Epfendorf,Epfendorf,08325,Rottweil (LKR),2024-06-30,3137,1612,1525,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-eschbronn,,Eschbronn,Eschbronn,08325,Rottweil (LKR),2024-06-30,2096,1055,1041,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-fluorn-winzeln,,Fluorn-Winzeln,Fluorn-Winzeln,08325,Rottweil (LKR),2024-06-30,3085,1556,1529,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-hardt,,Hardt,Hardt,08325,Rottweil (LKR),2024-06-30,2482,1240,1242,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-lauterbach,,Lauterbach,Lauterbach,08325,Rottweil (LKR),2024-06-30,2725,1395,1330,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-oberndorf-am-neckar,,Oberndorf am Neckar,"Oberndorf am Neckar, Stadt",08325,Rottweil (LKR),2024-06-30,14803,7437,7366,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-rottweil,,Rottweil,"Rottweil, Stadt",08325,Rottweil (LKR),2024-06-30,25000,12291,12709,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-schenkenzell,,Schenkenzell,Schenkenzell,08325,Rottweil (LKR),2024-06-30,1872,965,907,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-schiltach,,Schiltach,"Schiltach, Stadt",08325,Rottweil (LKR),2024-06-30,3558,1758,1800,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-schramberg,,Schramberg,"Schramberg, Stadt",08325,Rottweil (LKR),2024-06-30,20607,10284,10323,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-sulz-am-neckar,,Sulz am Neckar,"Sulz am Neckar, Stadt",08325,Rottweil (LKR),2024-06-30,12863,6454,6409,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-villingendorf,,Villingendorf,Villingendorf,08325,Rottweil (LKR),2024-06-30,3377,1672,1705,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-vohringen,,Vöhringen,Vöhringen,08325,Rottweil (LKR),2024-06-30,4469,2225,2244,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-wellendingen,,Wellendingen,Wellendingen,08325,Rottweil (LKR),2024-06-30,3319,1697,1622,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08325-zimmern-ob-rottweil,,Zimmern ob Rottweil,Zimmern ob Rottweil,08325,Rottweil (LKR),2024-06-30,6321,3153,3168,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-bad-durrheim,,Bad Dürrheim,"Bad Dürrheim, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,13209,6322,6887,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-blumberg,,Blumberg,"Blumberg, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,9996,4998,4998,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-braunlingen,,Bräunlingen,"Bräunlingen, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,5794,2884,2910,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-brigachtal,,Brigachtal,Brigachtal,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,5044,2481,2563,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-dauchingen,,Dauchingen,Dauchingen,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,3808,1879,1929,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-donaueschingen,,Donaueschingen,"Donaueschingen, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,21860,10979,10881,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-furtwangen-im-schwarzwald,,Furtwangen im Schwarzwald,"Furtwangen im Schwarzwald, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,8500,4292,4208,stala_gemeinden_2024_06,12,not_in_source_table
+LOCAL-BW-MUN-08326-gutenbach,,Gütenbach,Gütenbach,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,1045,519,526,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-hufingen,,Hüfingen,"Hüfingen, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,7985,3957,4028,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-konigsfeld-im-schwarzwald,,Königsfeld im Schwarzwald,Königsfeld im Schwarzwald,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,5940,2882,3058,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-monchweiler,,Mönchweiler,Mönchweiler,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,2773,1361,1412,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-niedereschach,,Niedereschach,Niedereschach,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,5851,2909,2942,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-schonach-im-schwarzwald,,Schonach im Schwarzwald,Schonach im Schwarzwald,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,3884,1971,1913,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-schonwald-im-schwarzwald,,Schönwald im Schwarzwald,Schönwald im Schwarzwald,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,2563,1280,1283,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-st-georgen-im-schwarzwald,,St. Georgen im Schwarzwald,"St. Georgen im Schwarzwald, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,12376,6106,6270,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-triberg-im-schwarzwald,,Triberg im Schwarzwald,"Triberg im Schwarzwald, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,4614,2361,2253,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-tuningen,,Tuningen,Tuningen,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,3197,1574,1623,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-unterkirnach,,Unterkirnach,Unterkirnach,08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,2462,1258,1204,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-villingen-schwenningen,,Villingen-Schwenningen,"Villingen-Schwenningen, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,89599,44203,45396,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08326-vohrenbach,,Vöhrenbach,"Vöhrenbach, Stadt",08326,Schwarzwald-Baar-Kreis (LKR),2024-06-30,3633,1864,1769,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-aldingen,,Aldingen,Aldingen,08327,Tuttlingen (LKR),2024-06-30,7814,3950,3864,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-balgheim,,Balgheim,Balgheim,08327,Tuttlingen (LKR),2024-06-30,1306,659,647,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-barenthal,,Bärenthal,Bärenthal,08327,Tuttlingen (LKR),2024-06-30,486,249,237,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-bottingen,,Böttingen,Böttingen,08327,Tuttlingen (LKR),2024-06-30,1450,720,730,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-bubsheim,,Bubsheim,Bubsheim,08327,Tuttlingen (LKR),2024-06-30,1457,817,640,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-buchheim,,Buchheim,Buchheim,08327,Tuttlingen (LKR),2024-06-30,758,363,395,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-deilingen,,Deilingen,Deilingen,08327,Tuttlingen (LKR),2024-06-30,1887,985,902,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-denkingen,,Denkingen,Denkingen,08327,Tuttlingen (LKR),2024-06-30,3014,1495,1519,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-durbheim,,Dürbheim,Dürbheim,08327,Tuttlingen (LKR),2024-06-30,1732,876,856,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-durchhausen,,Durchhausen,Durchhausen,08327,Tuttlingen (LKR),2024-06-30,1071,560,511,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-egesheim,,Egesheim,Egesheim,08327,Tuttlingen (LKR),2024-06-30,630,317,313,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-emmingen-liptingen,,Emmingen-Liptingen,Emmingen-Liptingen,08327,Tuttlingen (LKR),2024-06-30,4845,2437,2408,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-fridingen-an-der-donau,,Fridingen an der Donau,"Fridingen an der Donau, Stadt",08327,Tuttlingen (LKR),2024-06-30,3185,1601,1584,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-frittlingen,,Frittlingen,Frittlingen,08327,Tuttlingen (LKR),2024-06-30,2151,1111,1040,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-geisingen,,Geisingen,"Geisingen, Stadt",08327,Tuttlingen (LKR),2024-06-30,6176,3119,3057,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-gosheim,,Gosheim,Gosheim,08327,Tuttlingen (LKR),2024-06-30,3732,1907,1825,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-gunningen,,Gunningen,Gunningen,08327,Tuttlingen (LKR),2024-06-30,782,404,378,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-hausen-ob-verena,,Hausen ob Verena,Hausen ob Verena,08327,Tuttlingen (LKR),2024-06-30,841,421,420,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-immendingen,,Immendingen,Immendingen,08327,Tuttlingen (LKR),2024-06-30,6487,3235,3252,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-irndorf,,Irndorf,Irndorf,08327,Tuttlingen (LKR),2024-06-30,689,346,343,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-kolbingen,,Kolbingen,Kolbingen,08327,Tuttlingen (LKR),2024-06-30,1232,602,630,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-konigsheim,,Königsheim,Königsheim,08327,Tuttlingen (LKR),2024-06-30,600,303,297,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-mahlstetten,,Mahlstetten,Mahlstetten,08327,Tuttlingen (LKR),2024-06-30,818,407,411,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-muhlheim-an-der-donau,,Mühlheim an der Donau,"Mühlheim an der Donau, Stadt",08327,Tuttlingen (LKR),2024-06-30,3611,1762,1849,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-neuhausen-ob-eck,,Neuhausen ob Eck,Neuhausen ob Eck,08327,Tuttlingen (LKR),2024-06-30,4170,2104,2066,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-reichenbach-am-heuberg,,Reichenbach am Heuberg,Reichenbach am Heuberg,08327,Tuttlingen (LKR),2024-06-30,453,222,231,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-renquishausen,,Renquishausen,Renquishausen,08327,Tuttlingen (LKR),2024-06-30,818,427,391,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-rietheim-weilheim,,Rietheim-Weilheim,Rietheim-Weilheim,08327,Tuttlingen (LKR),2024-06-30,2953,1469,1484,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-seitingen-oberflacht,,Seitingen-Oberflacht,Seitingen-Oberflacht,08327,Tuttlingen (LKR),2024-06-30,2601,1313,1288,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-spaichingen,,Spaichingen,"Spaichingen, Stadt",08327,Tuttlingen (LKR),2024-06-30,13697,6847,6850,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-talheim,,Talheim,Talheim,08327,Tuttlingen (LKR),2024-06-30,1315,670,645,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-trossingen,,Trossingen,"Trossingen, Stadt",08327,Tuttlingen (LKR),2024-06-30,17502,8671,8831,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-tuttlingen,,Tuttlingen,"Tuttlingen, Stadt",08327,Tuttlingen (LKR),2024-06-30,37128,18593,18535,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-wehingen,,Wehingen,Wehingen,08327,Tuttlingen (LKR),2024-06-30,3751,1919,1832,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08327-wurmlingen,,Wurmlingen,Wurmlingen,08327,Tuttlingen (LKR),2024-06-30,3940,1935,2005,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-aach,,Aach,"Aach, Stadt",08335,Konstanz (LKR),2024-06-30,2404,1206,1198,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-allensbach,,Allensbach,Allensbach,08335,Konstanz (LKR),2024-06-30,7419,3522,3897,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-bodman-ludwigshafen,,Bodman-Ludwigshafen,Bodman-Ludwigshafen,08335,Konstanz (LKR),2024-06-30,4805,2315,2490,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-busingen-am-hochrhein,,Büsingen am Hochrhein,Büsingen am Hochrhein,08335,Konstanz (LKR),2024-06-30,1416,682,734,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-eigeltingen,,Eigeltingen,Eigeltingen,08335,Konstanz (LKR),2024-06-30,3837,1906,1931,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-engen,,Engen,"Engen, Stadt",08335,Konstanz (LKR),2024-06-30,11377,5663,5714,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-gaienhofen,,Gaienhofen,Gaienhofen,08335,Konstanz (LKR),2024-06-30,3329,1590,1739,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-gailingen-am-hochrhein,,Gailingen am Hochrhein,Gailingen am Hochrhein,08335,Konstanz (LKR),2024-06-30,3060,1475,1585,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-gottmadingen,,Gottmadingen,Gottmadingen,08335,Konstanz (LKR),2024-06-30,10820,5316,5504,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-hilzingen,,Hilzingen,Hilzingen,08335,Konstanz (LKR),2024-06-30,9177,4495,4682,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-hohenfels,,Hohenfels,Hohenfels,08335,Konstanz (LKR),2024-06-30,2239,1123,1116,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-konstanz,,Konstanz,"Konstanz, Universitätsstadt",08335,Konstanz (LKR),2024-06-30,86845,41667,45178,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-moos,,Moos,Moos,08335,Konstanz (LKR),2024-06-30,3419,1690,1729,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-muhlhausen-ehingen,,Mühlhausen-Ehingen,Mühlhausen-Ehingen,08335,Konstanz (LKR),2024-06-30,4028,2042,1986,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-muhlingen,,Mühlingen,Mühlingen,08335,Konstanz (LKR),2024-06-30,2730,1418,1312,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-ohningen,,Öhningen,Öhningen,08335,Konstanz (LKR),2024-06-30,3613,1782,1831,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-orsingen-nenzingen,,Orsingen-Nenzingen,Orsingen-Nenzingen,08335,Konstanz (LKR),2024-06-30,3597,1762,1835,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-radolfzell-am-bodensee,,Radolfzell am Bodensee,"Radolfzell am Bodensee, Stadt",08335,Konstanz (LKR),2024-06-30,31714,15335,16379,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-reichenau,,Reichenau,Reichenau,08335,Konstanz (LKR),2024-06-30,5369,2756,2613,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-rielasingen-worblingen,,Rielasingen-Worblingen,Rielasingen-Worblingen,08335,Konstanz (LKR),2024-06-30,12280,6012,6268,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-singen-hohentwiel,,Singen (Hohentwiel),"Singen (Hohentwiel), Stadt",08335,Konstanz (LKR),2024-06-30,47569,23372,24197,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-steisslingen,,Steißlingen,Steißlingen,08335,Konstanz (LKR),2024-06-30,5130,2468,2662,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-stockach,,Stockach,"Stockach, Stadt",08335,Konstanz (LKR),2024-06-30,17721,8682,9039,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-tengen,,Tengen,"Tengen, Stadt",08335,Konstanz (LKR),2024-06-30,4810,2376,2434,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08335-volkertshausen,,Volkertshausen,Volkertshausen,08335,Konstanz (LKR),2024-06-30,3363,1659,1704,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-aitern,,Aitern,Aitern,08336,Lörrach (LKR),2024-06-30,491,245,246,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-bad-bellingen,,Bad Bellingen,Bad Bellingen,08336,Lörrach (LKR),2024-06-30,5063,2549,2514,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-binzen,,Binzen,Binzen,08336,Lörrach (LKR),2024-06-30,2998,1452,1546,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-bollen,,Böllen,Böllen,08336,Lörrach (LKR),2024-06-30,91,45,46,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-efringen-kirchen,,Efringen-Kirchen,Efringen-Kirchen,08336,Lörrach (LKR),2024-06-30,8717,4376,4341,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-eimeldingen,,Eimeldingen,Eimeldingen,08336,Lörrach (LKR),2024-06-30,2546,1258,1288,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-fischingen,,Fischingen,Fischingen,08336,Lörrach (LKR),2024-06-30,774,392,382,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-frohnd,,Fröhnd,Fröhnd,08336,Lörrach (LKR),2024-06-30,493,238,255,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-grenzach-wyhlen,,Grenzach-Wyhlen,Grenzach-Wyhlen,08336,Lörrach (LKR),2024-06-30,15427,7538,7889,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-hag-ehrsberg,,Häg-Ehrsberg,Häg-Ehrsberg,08336,Lörrach (LKR),2024-06-30,797,399,398,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-hasel,,Hasel,Hasel,08336,Lörrach (LKR),2024-06-30,1257,624,633,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-hausen-im-wiesental,,Hausen im Wiesental,Hausen im Wiesental,08336,Lörrach (LKR),2024-06-30,2363,1172,1191,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-inzlingen,,Inzlingen,Inzlingen,08336,Lörrach (LKR),2024-06-30,2519,1223,1296,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-kandern,,Kandern,"Kandern, Stadt",08336,Lörrach (LKR),2024-06-30,8573,4194,4379,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-kleines-wiesental,,Kleines Wiesental,Kleines Wiesental,08336,Lörrach (LKR),2024-06-30,2954,1505,1449,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-lorrach,,Lörrach,"Lörrach, Stadt",08336,Lörrach (LKR),2024-06-30,50923,24787,26136,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-malsburg-marzell,,Malsburg-Marzell,Malsburg-Marzell,08336,Lörrach (LKR),2024-06-30,1443,739,704,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-maulburg,,Maulburg,Maulburg,08336,Lörrach (LKR),2024-06-30,4376,2217,2159,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-rheinfelden-baden,,Rheinfelden (Baden),"Rheinfelden (Baden), Stadt",08336,Lörrach (LKR),2024-06-30,34961,17262,17699,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-rummingen,,Rümmingen,Rümmingen,08336,Lörrach (LKR),2024-06-30,1992,992,1000,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-schallbach,,Schallbach,Schallbach,08336,Lörrach (LKR),2024-06-30,849,397,452,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-schliengen,,Schliengen,Schliengen,08336,Lörrach (LKR),2024-06-30,6187,3008,3179,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-schonau-im-schwarzwald,,Schönau im Schwarzwald,"Schönau im Schwarzwald, Stadt",08336,Lörrach (LKR),2024-06-30,2526,1263,1263,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-schonenberg,,Schönenberg,Schönenberg,08336,Lörrach (LKR),2024-06-30,331,171,160,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-schopfheim,,Schopfheim,"Schopfheim, Stadt",08336,Lörrach (LKR),2024-06-30,20221,9854,10367,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-schworstadt,,Schwörstadt,Schwörstadt,08336,Lörrach (LKR),2024-06-30,2519,1257,1262,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-steinen,,Steinen,Steinen,08336,Lörrach (LKR),2024-06-30,10405,5129,5276,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-todtnau,,Todtnau,"Todtnau, Stadt",08336,Lörrach (LKR),2024-06-30,4953,2469,2484,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-tunau,,Tunau,Tunau,08336,Lörrach (LKR),2024-06-30,184,94,90,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-utzenfeld,,Utzenfeld,Utzenfeld,08336,Lörrach (LKR),2024-06-30,604,305,299,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-weil-am-rhein,,Weil am Rhein,"Weil am Rhein, Stadt",08336,Lörrach (LKR),2024-06-30,32064,15711,16353,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-wembach,,Wembach,Wembach,08336,Lörrach (LKR),2024-06-30,311,163,148,stala_gemeinden_2024_06,13,not_in_source_table
+LOCAL-BW-MUN-08336-wieden,,Wieden,Wieden,08336,Lörrach (LKR),2024-06-30,559,278,281,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08336-wittlingen,,Wittlingen,Wittlingen,08336,Lörrach (LKR),2024-06-30,941,472,469,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08336-zell-im-wiesental,,Zell im Wiesental,"Zell im Wiesental, Stadt",08336,Lörrach (LKR),2024-06-30,6226,3056,3170,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-albbruck,,Albbruck,Albbruck,08337,Waldshut (LKR),2024-06-30,7376,3731,3645,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-bad-sackingen,,Bad Säckingen,"Bad Säckingen, Stadt",08337,Waldshut (LKR),2024-06-30,17742,8545,9197,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-bernau-im-schwarzwald,,Bernau im Schwarzwald,Bernau im Schwarzwald,08337,Waldshut (LKR),2024-06-30,1823,925,898,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-bonndorf-im-schwarzwald,,Bonndorf im Schwarzwald,"Bonndorf im Schwarzwald, Stadt",08337,Waldshut (LKR),2024-06-30,6835,3456,3379,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-dachsberg-sudschwarzwald,,Dachsberg (Südschwarzwald),Dachsberg (Südschwarzwald),08337,Waldshut (LKR),2024-06-30,1382,644,738,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-dettighofen,,Dettighofen,Dettighofen,08337,Waldshut (LKR),2024-06-30,1130,569,561,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-dogern,,Dogern,Dogern,08337,Waldshut (LKR),2024-06-30,2267,1121,1146,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-eggingen,,Eggingen,Eggingen,08337,Waldshut (LKR),2024-06-30,1758,875,883,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-gorwihl,,Görwihl,Görwihl,08337,Waldshut (LKR),2024-06-30,4179,2068,2111,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-grafenhausen,,Grafenhausen,Grafenhausen,08337,Waldshut (LKR),2024-06-30,2261,1124,1137,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-hausern,,Häusern,Häusern,08337,Waldshut (LKR),2024-06-30,1305,645,660,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-herrischried,,Herrischried,Herrischried,08337,Waldshut (LKR),2024-06-30,2669,1323,1346,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-hochenschwand,,Höchenschwand,Höchenschwand,08337,Waldshut (LKR),2024-06-30,2565,1254,1311,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-hohentengen-am-hochrhein,,Hohentengen am Hochrhein,Hohentengen am Hochrhein,08337,Waldshut (LKR),2024-06-30,3699,1868,1831,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-ibach,,Ibach,Ibach,08337,Waldshut (LKR),2024-06-30,338,168,170,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-jestetten,,Jestetten,Jestetten,08337,Waldshut (LKR),2024-06-30,5283,2523,2760,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-klettgau,,Klettgau,Klettgau,08337,Waldshut (LKR),2024-06-30,7496,3757,3739,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-kussaberg,,Küssaberg,Küssaberg,08337,Waldshut (LKR),2024-06-30,5512,2694,2818,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-lauchringen,,Lauchringen,Lauchringen,08337,Waldshut (LKR),2024-06-30,8138,3998,4140,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-laufenburg-baden,,Laufenburg (Baden),"Laufenburg (Baden), Stadt",08337,Waldshut (LKR),2024-06-30,9302,4599,4703,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-lottstetten,,Lottstetten,Lottstetten,08337,Waldshut (LKR),2024-06-30,2288,1138,1150,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-murg,,Murg,Murg,08337,Waldshut (LKR),2024-06-30,6919,3429,3490,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-rickenbach,,Rickenbach,Rickenbach,08337,Waldshut (LKR),2024-06-30,3802,1919,1883,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-st-blasien,,St. Blasien,"St. Blasien, Stadt",08337,Waldshut (LKR),2024-06-30,3842,1861,1981,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-stuhlingen,,Stühlingen,"Stühlingen, Stadt",08337,Waldshut (LKR),2024-06-30,5394,2681,2713,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-todtmoos,,Todtmoos,Todtmoos,08337,Waldshut (LKR),2024-06-30,1970,1029,941,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-uhlingen-birkendorf,,Ühlingen-Birkendorf,Ühlingen-Birkendorf,08337,Waldshut (LKR),2024-06-30,5262,2668,2594,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-waldshut-tiengen,,Waldshut-Tiengen,"Waldshut-Tiengen, Stadt",08337,Waldshut (LKR),2024-06-30,25090,12322,12768,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-wehr,,Wehr,"Wehr, Stadt",08337,Waldshut (LKR),2024-06-30,13078,6403,6675,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-weilheim,,Weilheim,Weilheim,08337,Waldshut (LKR),2024-06-30,3147,1553,1594,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-wutach,,Wutach,Wutach,08337,Waldshut (LKR),2024-06-30,1196,615,581,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08337-wutoschingen,,Wutöschingen,Wutöschingen,08337,Waldshut (LKR),2024-06-30,6754,3347,3407,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-bad-urach,,Bad Urach,"Bad Urach, Stadt",08415,Reutlingen (LKR),2024-06-30,12785,6336,6449,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-dettingen-an-der-erms,,Dettingen an der Erms,Dettingen an der Erms,08415,Reutlingen (LKR),2024-06-30,10028,4932,5096,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-engstingen,,Engstingen,Engstingen,08415,Reutlingen (LKR),2024-06-30,5059,2517,2542,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-eningen-unter-achalm,,Eningen unter Achalm,Eningen unter Achalm,08415,Reutlingen (LKR),2024-06-30,11545,5703,5842,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-gomadingen,,Gomadingen,Gomadingen,08415,Reutlingen (LKR),2024-06-30,2174,1080,1094,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-grabenstetten,,Grabenstetten,Grabenstetten,08415,Reutlingen (LKR),2024-06-30,1729,887,842,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-grafenberg,,Grafenberg,Grafenberg,08415,Reutlingen (LKR),2024-06-30,2659,1310,1349,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-hayingen,,Hayingen,"Hayingen, Stadt",08415,Reutlingen (LKR),2024-06-30,2211,1092,1119,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-hohenstein,,Hohenstein,Hohenstein,08415,Reutlingen (LKR),2024-06-30,3801,1944,1857,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-hulben,,Hülben,Hülben,08415,Reutlingen (LKR),2024-06-30,3161,1597,1564,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-lichtenstein,,Lichtenstein,Lichtenstein,08415,Reutlingen (LKR),2024-06-30,9197,4540,4657,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-mehrstetten,,Mehrstetten,Mehrstetten,08415,Reutlingen (LKR),2024-06-30,1485,767,718,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-metzingen,,Metzingen,"Metzingen, Stadt",08415,Reutlingen (LKR),2024-06-30,23160,11361,11799,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-munsingen,,Münsingen,"Münsingen, Stadt",08415,Reutlingen (LKR),2024-06-30,14742,7305,7437,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-pfronstetten,,Pfronstetten,Pfronstetten,08415,Reutlingen (LKR),2024-06-30,1521,774,747,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-pfullingen,,Pfullingen,"Pfullingen, Stadt",08415,Reutlingen (LKR),2024-06-30,19679,9682,9997,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-pliezhausen,,Pliezhausen,Pliezhausen,08415,Reutlingen (LKR),2024-06-30,9814,4812,5002,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-reutlingen,,Reutlingen,"Reutlingen, Stadt",08415,Reutlingen (LKR),2024-06-30,118715,58823,59892,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-riederich,,Riederich,Riederich,08415,Reutlingen (LKR),2024-06-30,4227,2054,2173,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-romerstein,,Römerstein,Römerstein,08415,Reutlingen (LKR),2024-06-30,4093,2054,2039,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-sonnenbuhl,,Sonnenbühl,Sonnenbühl,08415,Reutlingen (LKR),2024-06-30,7013,3556,3457,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-st-johann,,St. Johann,St. Johann,08415,Reutlingen (LKR),2024-06-30,5187,2597,2590,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-trochtelfingen,,Trochtelfingen,"Trochtelfingen, Stadt",08415,Reutlingen (LKR),2024-06-30,6242,3122,3120,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-walddorfhaslach,,Walddorfhäslach,Walddorfhäslach,08415,Reutlingen (LKR),2024-06-30,5460,2699,2761,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-wannweil,,Wannweil,Wannweil,08415,Reutlingen (LKR),2024-06-30,5361,2646,2715,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08415-zwiefalten,,Zwiefalten,Zwiefalten,08415,Reutlingen (LKR),2024-06-30,2316,1218,1098,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-ammerbuch,,Ammerbuch,Ammerbuch,08416,Tübingen (LKR),2024-06-30,11605,5706,5899,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-bodelshausen,,Bodelshausen,Bodelshausen,08416,Tübingen (LKR),2024-06-30,5751,2840,2911,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-dettenhausen,,Dettenhausen,Dettenhausen,08416,Tübingen (LKR),2024-06-30,5546,2681,2865,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-dusslingen,,Dußlingen,Dußlingen,08416,Tübingen (LKR),2024-06-30,6175,3033,3142,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-gomaringen,,Gomaringen,Gomaringen,08416,Tübingen (LKR),2024-06-30,9087,4473,4614,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-hirrlingen,,Hirrlingen,Hirrlingen,08416,Tübingen (LKR),2024-06-30,3168,1617,1551,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-kirchentellinsfurt,,Kirchentellinsfurt,Kirchentellinsfurt,08416,Tübingen (LKR),2024-06-30,5534,2739,2795,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-kusterdingen,,Kusterdingen,Kusterdingen,08416,Tübingen (LKR),2024-06-30,8965,4430,4535,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-mossingen,,Mössingen,"Mössingen, Stadt",08416,Tübingen (LKR),2024-06-30,21756,10642,11114,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-nehren,,Nehren,Nehren,08416,Tübingen (LKR),2024-06-30,4408,2143,2265,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-neustetten,,Neustetten,Neustetten,08416,Tübingen (LKR),2024-06-30,3779,1913,1866,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-ofterdingen,,Ofterdingen,Ofterdingen,08416,Tübingen (LKR),2024-06-30,5527,2710,2817,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-rottenburg-am-neckar,,Rottenburg am Neckar,"Rottenburg am Neckar, Stadt",08416,Tübingen (LKR),2024-06-30,45521,22535,22986,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-starzach,,Starzach,Starzach,08416,Tübingen (LKR),2024-06-30,4394,2184,2210,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08416-tubingen,,Tübingen,"Tübingen, Universitätsstadt",08416,Tübingen (LKR),2024-06-30,91861,43337,48524,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-albstadt,,Albstadt,"Albstadt, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,46907,23246,23661,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-balingen,,Balingen,"Balingen, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,35537,17346,18191,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-bisingen,,Bisingen,Bisingen,08417,Zollernalbkreis (LKR),2024-06-30,9533,4695,4838,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-bitz,,Bitz,Bitz,08417,Zollernalbkreis (LKR),2024-06-30,3815,1860,1955,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-burladingen,,Burladingen,"Burladingen, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,12162,6054,6108,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-dautmergen,,Dautmergen,Dautmergen,08417,Zollernalbkreis (LKR),2024-06-30,458,233,225,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-dormettingen,,Dormettingen,Dormettingen,08417,Zollernalbkreis (LKR),2024-06-30,1093,531,562,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-dotternhausen,,Dotternhausen,Dotternhausen,08417,Zollernalbkreis (LKR),2024-06-30,1815,910,905,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-geislingen,,Geislingen,"Geislingen, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,5912,2941,2971,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-grosselfingen,,Grosselfingen,Grosselfingen,08417,Zollernalbkreis (LKR),2024-06-30,2192,1079,1113,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-haigerloch,,Haigerloch,"Haigerloch, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,10961,5444,5517,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-hausen-am-tann,,Hausen am Tann,Hausen am Tann,08417,Zollernalbkreis (LKR),2024-06-30,489,246,243,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-hechingen,,Hechingen,"Hechingen, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,19834,9864,9970,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-jungingen,,Jungingen,Jungingen,08417,Zollernalbkreis (LKR),2024-06-30,1420,681,739,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-messstetten,,Meßstetten,"Meßstetten, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,10834,5404,5430,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-nusplingen,,Nusplingen,Nusplingen,08417,Zollernalbkreis (LKR),2024-06-30,1910,971,939,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-obernheim,,Obernheim,Obernheim,08417,Zollernalbkreis (LKR),2024-06-30,1472,759,713,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-rangendingen,,Rangendingen,Rangendingen,08417,Zollernalbkreis (LKR),2024-06-30,5338,2625,2713,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-ratshausen,,Ratshausen,Ratshausen,08417,Zollernalbkreis (LKR),2024-06-30,774,420,354,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-rosenfeld,,Rosenfeld,"Rosenfeld, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,6375,3189,3186,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-schomberg,,Schömberg,"Schömberg, Stadt",08417,Zollernalbkreis (LKR),2024-06-30,4807,2451,2356,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-strassberg,,Straßberg,Straßberg,08417,Zollernalbkreis (LKR),2024-06-30,2466,1221,1245,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-weilen-unter-den-rinnen,,Weilen unter den Rinnen,Weilen unter den Rinnen,08417,Zollernalbkreis (LKR),2024-06-30,581,301,280,stala_gemeinden_2024_06,14,not_in_source_table
+LOCAL-BW-MUN-08417-winterlingen,,Winterlingen,Winterlingen,08417,Zollernalbkreis (LKR),2024-06-30,6365,3092,3273,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08417-zimmern-unter-der-burg,,Zimmern unter der Burg,Zimmern unter der Burg,08417,Zollernalbkreis (LKR),2024-06-30,449,238,211,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08421-ulm,,Ulm,"Ulm, Universitätsstadt",08421,Ulm (SKR),2024-06-30,129317,63810,65507,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-allmendingen,,Allmendingen,Allmendingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,4928,2511,2417,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-altheim,,Altheim,Altheim,08425,Alb-Donau-Kreis (LKR),2024-06-30,585,296,289,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-altheim-alb,,Altheim (Alb),Altheim (Alb),08425,Alb-Donau-Kreis (LKR),2024-06-30,1737,882,855,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-amstetten,,Amstetten,Amstetten,08425,Alb-Donau-Kreis (LKR),2024-06-30,4205,2088,2117,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-asselfingen,,Asselfingen,Asselfingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,1031,528,503,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-ballendorf,,Ballendorf,Ballendorf,08425,Alb-Donau-Kreis (LKR),2024-06-30,695,344,351,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-balzheim,,Balzheim,Balzheim,08425,Alb-Donau-Kreis (LKR),2024-06-30,2152,1094,1058,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-beimerstetten,,Beimerstetten,Beimerstetten,08425,Alb-Donau-Kreis (LKR),2024-06-30,2466,1215,1251,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-berghulen,,Berghülen,Berghülen,08425,Alb-Donau-Kreis (LKR),2024-06-30,2048,1041,1007,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-bernstadt,,Bernstadt,Bernstadt,08425,Alb-Donau-Kreis (LKR),2024-06-30,2306,1175,1131,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-blaubeuren,,Blaubeuren,"Blaubeuren, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,12657,6422,6235,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-blaustein,,Blaustein,"Blaustein, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,16576,8406,8170,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-borslingen,,Börslingen,Börslingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,171,85,86,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-breitingen,,Breitingen,Breitingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,350,171,179,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-dietenheim,,Dietenheim,"Dietenheim, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,6823,3405,3418,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-dornstadt,,Dornstadt,Dornstadt,08425,Alb-Donau-Kreis (LKR),2024-06-30,9225,4573,4652,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-ehingen-donau,,Ehingen (Donau),"Ehingen (Donau), Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,27866,14026,13840,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-emeringen,,Emeringen,Emeringen,08425,Alb-Donau-Kreis (LKR),2024-06-30,176,86,90,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-emerkingen,,Emerkingen,Emerkingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,811,407,404,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-erbach,,Erbach,"Erbach, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,14099,7070,7029,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-griesingen,,Griesingen,Griesingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,1001,496,505,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-grundsheim,,Grundsheim,Grundsheim,08425,Alb-Donau-Kreis (LKR),2024-06-30,202,94,108,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-hausen-am-bussen,,Hausen am Bussen,Hausen am Bussen,08425,Alb-Donau-Kreis (LKR),2024-06-30,279,140,139,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-heroldstatt,,Heroldstatt,Heroldstatt,08425,Alb-Donau-Kreis (LKR),2024-06-30,2910,1424,1486,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-holzkirch,,Holzkirch,Holzkirch,08425,Alb-Donau-Kreis (LKR),2024-06-30,282,138,144,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-huttisheim,,Hüttisheim,Hüttisheim,08425,Alb-Donau-Kreis (LKR),2024-06-30,1491,722,769,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-illerkirchberg,,Illerkirchberg,Illerkirchberg,08425,Alb-Donau-Kreis (LKR),2024-06-30,5055,2540,2515,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-illerrieden,,Illerrieden,Illerrieden,08425,Alb-Donau-Kreis (LKR),2024-06-30,3353,1652,1701,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-laichingen,,Laichingen,"Laichingen, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,12419,6279,6140,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-langenau,,Langenau,"Langenau, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,15300,7722,7578,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-lauterach,,Lauterach,Lauterach,08425,Alb-Donau-Kreis (LKR),2024-06-30,579,299,280,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-lonsee,,Lonsee,Lonsee,08425,Alb-Donau-Kreis (LKR),2024-06-30,5156,2602,2554,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-merklingen,,Merklingen,Merklingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,2071,1043,1028,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-munderkingen,,Munderkingen,"Munderkingen, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,5360,2654,2706,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-neenstetten,,Neenstetten,Neenstetten,08425,Alb-Donau-Kreis (LKR),2024-06-30,826,413,413,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-nellingen,,Nellingen,Nellingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,2030,1016,1014,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-nerenstetten,,Nerenstetten,Nerenstetten,08425,Alb-Donau-Kreis (LKR),2024-06-30,379,190,189,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-oberdischingen,,Oberdischingen,Oberdischingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,2286,1134,1152,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-obermarchtal,,Obermarchtal,Obermarchtal,08425,Alb-Donau-Kreis (LKR),2024-06-30,1323,686,637,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-oberstadion,,Oberstadion,Oberstadion,08425,Alb-Donau-Kreis (LKR),2024-06-30,1577,790,787,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-ollingen,,Öllingen,Öllingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,547,283,264,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-opfingen,,Öpfingen,Öpfingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,2277,1149,1128,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-rammingen,,Rammingen,Rammingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,1274,660,614,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-rechtenstein,,Rechtenstein,Rechtenstein,08425,Alb-Donau-Kreis (LKR),2024-06-30,290,149,141,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-rottenacker,,Rottenacker,Rottenacker,08425,Alb-Donau-Kreis (LKR),2024-06-30,2238,1139,1099,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-schelklingen,,Schelklingen,"Schelklingen, Stadt",08425,Alb-Donau-Kreis (LKR),2024-06-30,6533,3310,3223,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-schnurpflingen,,Schnürpflingen,Schnürpflingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,1433,735,698,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-setzingen,,Setzingen,Setzingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,759,392,367,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-staig,,Staig,Staig,08425,Alb-Donau-Kreis (LKR),2024-06-30,3282,1604,1678,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-untermarchtal,,Untermarchtal,Untermarchtal,08425,Alb-Donau-Kreis (LKR),2024-06-30,860,350,510,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-unterstadion,,Unterstadion,Unterstadion,08425,Alb-Donau-Kreis (LKR),2024-06-30,856,441,415,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-unterwachingen,,Unterwachingen,Unterwachingen,08425,Alb-Donau-Kreis (LKR),2024-06-30,192,96,96,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-weidenstetten,,Weidenstetten,Weidenstetten,08425,Alb-Donau-Kreis (LKR),2024-06-30,1416,734,682,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-westerheim,,Westerheim,Westerheim,08425,Alb-Donau-Kreis (LKR),2024-06-30,3067,1530,1537,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08425-westerstetten,,Westerstetten,Westerstetten,08425,Alb-Donau-Kreis (LKR),2024-06-30,2131,1069,1062,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-achstetten,,Achstetten,Achstetten,08426,Biberach (LKR),2024-06-30,5063,2525,2538,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-alleshausen,,Alleshausen,Alleshausen,08426,Biberach (LKR),2024-06-30,537,271,266,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-allmannsweiler,,Allmannsweiler,Allmannsweiler,08426,Biberach (LKR),2024-06-30,328,186,142,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-altheim,,Altheim,Altheim,08426,Biberach (LKR),2024-06-30,2135,1081,1054,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-attenweiler,,Attenweiler,Attenweiler,08426,Biberach (LKR),2024-06-30,1884,992,892,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-bad-buchau,,Bad Buchau,"Bad Buchau, Stadt",08426,Biberach (LKR),2024-06-30,4697,2376,2321,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-bad-schussenried,,Bad Schussenried,"Bad Schussenried, Stadt",08426,Biberach (LKR),2024-06-30,8973,4516,4457,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-berkheim,,Berkheim,Berkheim,08426,Biberach (LKR),2024-06-30,3243,1649,1594,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-betzenweiler,,Betzenweiler,Betzenweiler,08426,Biberach (LKR),2024-06-30,743,385,358,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-biberach-an-der-riss,,Biberach an der Riß,"Biberach an der Riß, Stadt",08426,Biberach (LKR),2024-06-30,34515,17061,17454,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-burgrieden,,Burgrieden,Burgrieden,08426,Biberach (LKR),2024-06-30,4255,2128,2127,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-dettingen-an-der-iller,,Dettingen an der Iller,Dettingen an der Iller,08426,Biberach (LKR),2024-06-30,2790,1421,1369,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-durmentingen,,Dürmentingen,Dürmentingen,08426,Biberach (LKR),2024-06-30,2661,1393,1268,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-durnau,,Dürnau,Dürnau,08426,Biberach (LKR),2024-06-30,475,239,236,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-eberhardzell,,Eberhardzell,Eberhardzell,08426,Biberach (LKR),2024-06-30,4557,2351,2206,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-erlenmoos,,Erlenmoos,Erlenmoos,08426,Biberach (LKR),2024-06-30,1785,903,882,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-erolzheim,,Erolzheim,Erolzheim,08426,Biberach (LKR),2024-06-30,3364,1697,1667,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-ertingen,,Ertingen,Ertingen,08426,Biberach (LKR),2024-06-30,5379,2695,2684,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-gutenzell-hurbel,,Gutenzell-Hürbel,Gutenzell-Hürbel,08426,Biberach (LKR),2024-06-30,1811,885,926,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-hochdorf,,Hochdorf,Hochdorf,08426,Biberach (LKR),2024-06-30,2386,1165,1221,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-ingoldingen,,Ingoldingen,Ingoldingen,08426,Biberach (LKR),2024-06-30,3159,1606,1553,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-kanzach,,Kanzach,Kanzach,08426,Biberach (LKR),2024-06-30,509,244,265,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-kirchberg-an-der-iller,,Kirchberg an der Iller,Kirchberg an der Iller,08426,Biberach (LKR),2024-06-30,2204,1110,1094,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-kirchdorf-an-der-iller,,Kirchdorf an der Iller,Kirchdorf an der Iller,08426,Biberach (LKR),2024-06-30,4032,2062,1970,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-langenenslingen,,Langenenslingen,Langenenslingen,08426,Biberach (LKR),2024-06-30,3679,1842,1837,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-laupheim,,Laupheim,"Laupheim, Stadt",08426,Biberach (LKR),2024-06-30,22967,11502,11465,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-maselheim,,Maselheim,Maselheim,08426,Biberach (LKR),2024-06-30,4768,2440,2328,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-mietingen,,Mietingen,Mietingen,08426,Biberach (LKR),2024-06-30,4722,2409,2313,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-mittelbiberach,,Mittelbiberach,Mittelbiberach,08426,Biberach (LKR),2024-06-30,4463,2227,2236,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-moosburg,,Moosburg,Moosburg,08426,Biberach (LKR),2024-06-30,231,108,123,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-ochsenhausen,,Ochsenhausen,"Ochsenhausen, Stadt",08426,Biberach (LKR),2024-06-30,9357,4805,4552,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-oggelshausen,,Oggelshausen,Oggelshausen,08426,Biberach (LKR),2024-06-30,900,462,438,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-riedlingen,,Riedlingen,"Riedlingen, Stadt",08426,Biberach (LKR),2024-06-30,11169,5679,5490,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-rot-an-der-rot,,Rot an der Rot,Rot an der Rot,08426,Biberach (LKR),2024-06-30,4528,2334,2194,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-schemmerhofen,,Schemmerhofen,Schemmerhofen,08426,Biberach (LKR),2024-06-30,8760,4418,4342,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-schwendi,,Schwendi,Schwendi,08426,Biberach (LKR),2024-06-30,7128,3706,3422,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-seekirch,,Seekirch,Seekirch,08426,Biberach (LKR),2024-06-30,290,158,132,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-steinhausen-an-der-rottum,,Steinhausen an der Rottum,Steinhausen an der Rottum,08426,Biberach (LKR),2024-06-30,2194,1138,1056,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-tannheim,,Tannheim,Tannheim,08426,Biberach (LKR),2024-06-30,2490,1276,1214,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-tiefenbach,,Tiefenbach,Tiefenbach,08426,Biberach (LKR),2024-06-30,536,274,262,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-ummendorf,,Ummendorf,Ummendorf,08426,Biberach (LKR),2024-06-30,4503,2269,2234,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-unlingen,,Unlingen,Unlingen,08426,Biberach (LKR),2024-06-30,2423,1207,1216,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-uttenweiler,,Uttenweiler,Uttenweiler,08426,Biberach (LKR),2024-06-30,3756,1903,1853,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-wain,,Wain,Wain,08426,Biberach (LKR),2024-06-30,1659,829,830,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08426-warthausen,,Warthausen,Warthausen,08426,Biberach (LKR),2024-06-30,5282,2651,2631,stala_gemeinden_2024_06,15,not_in_source_table
+LOCAL-BW-MUN-08435-bermatingen,,Bermatingen,Bermatingen,08435,Bodenseekreis (LKR),2024-06-30,4222,2152,2070,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-daisendorf,,Daisendorf,Daisendorf,08435,Bodenseekreis (LKR),2024-06-30,1514,747,767,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-deggenhausertal,,Deggenhausertal,Deggenhausertal,08435,Bodenseekreis (LKR),2024-06-30,4456,2230,2226,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-eriskirch,,Eriskirch,Eriskirch,08435,Bodenseekreis (LKR),2024-06-30,4834,2388,2446,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-frickingen,,Frickingen,Frickingen,08435,Bodenseekreis (LKR),2024-06-30,3088,1561,1527,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-friedrichshafen,,Friedrichshafen,"Friedrichshafen, Stadt",08435,Bodenseekreis (LKR),2024-06-30,62798,31108,31690,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-hagnau-am-bodensee,,Hagnau am Bodensee,Hagnau am Bodensee,08435,Bodenseekreis (LKR),2024-06-30,1443,691,752,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-heiligenberg,,Heiligenberg,Heiligenberg,08435,Bodenseekreis (LKR),2024-06-30,2832,1384,1448,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-immenstaad-am-bodensee,,Immenstaad am Bodensee,Immenstaad am Bodensee,08435,Bodenseekreis (LKR),2024-06-30,6476,3211,3265,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-kressbronn-am-bodensee,,Kressbronn am Bodensee,Kressbronn am Bodensee,08435,Bodenseekreis (LKR),2024-06-30,8828,4349,4479,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-langenargen,,Langenargen,Langenargen,08435,Bodenseekreis (LKR),2024-06-30,7567,3595,3972,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-markdorf,,Markdorf,"Markdorf, Stadt",08435,Bodenseekreis (LKR),2024-06-30,14401,7148,7253,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-meckenbeuren,,Meckenbeuren,Meckenbeuren,08435,Bodenseekreis (LKR),2024-06-30,13785,6875,6910,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-meersburg,,Meersburg,"Meersburg, Stadt",08435,Bodenseekreis (LKR),2024-06-30,5940,2807,3133,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-neukirch,,Neukirch,Neukirch,08435,Bodenseekreis (LKR),2024-06-30,2734,1385,1349,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-oberteuringen,,Oberteuringen,Oberteuringen,08435,Bodenseekreis (LKR),2024-06-30,4999,2527,2472,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-owingen,,Owingen,Owingen,08435,Bodenseekreis (LKR),2024-06-30,4508,2218,2290,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-salem,,Salem,Salem,08435,Bodenseekreis (LKR),2024-06-30,12225,6075,6150,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-sipplingen,,Sipplingen,Sipplingen,08435,Bodenseekreis (LKR),2024-06-30,2152,1066,1086,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-stetten,,Stetten,Stetten,08435,Bodenseekreis (LKR),2024-06-30,974,450,524,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-tettnang,,Tettnang,"Tettnang, Stadt",08435,Bodenseekreis (LKR),2024-06-30,20474,10242,10232,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-uberlingen,,Überlingen,"Überlingen, Stadt",08435,Bodenseekreis (LKR),2024-06-30,22874,10685,12189,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08435-uhldingen-muhlhofen,,Uhldingen-Mühlhofen,Uhldingen-Mühlhofen,08435,Bodenseekreis (LKR),2024-06-30,8286,4038,4248,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-achberg,,Achberg,Achberg,08436,Ravensburg (LKR),2024-06-30,1692,842,850,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-aichstetten,,Aichstetten,Aichstetten,08436,Ravensburg (LKR),2024-06-30,2845,1467,1378,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-aitrach,,Aitrach,Aitrach,08436,Ravensburg (LKR),2024-06-30,3019,1534,1485,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-altshausen,,Altshausen,Altshausen,08436,Ravensburg (LKR),2024-06-30,4031,2114,1917,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-amtzell,,Amtzell,Amtzell,08436,Ravensburg (LKR),2024-06-30,4244,2134,2110,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-argenbuhl,,Argenbühl,Argenbühl,08436,Ravensburg (LKR),2024-06-30,6665,3330,3335,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-aulendorf,,Aulendorf,"Aulendorf, Stadt",08436,Ravensburg (LKR),2024-06-30,10435,5252,5183,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-bad-waldsee,,Bad Waldsee,"Bad Waldsee, Stadt",08436,Ravensburg (LKR),2024-06-30,20879,10260,10619,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-bad-wurzach,,Bad Wurzach,"Bad Wurzach, Stadt",08436,Ravensburg (LKR),2024-06-30,15002,7595,7407,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-baienfurt,,Baienfurt,Baienfurt,08436,Ravensburg (LKR),2024-06-30,7350,3608,3742,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-baindt,,Baindt,Baindt,08436,Ravensburg (LKR),2024-06-30,5301,2652,2649,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-berg,,Berg,Berg,08436,Ravensburg (LKR),2024-06-30,4409,2216,2193,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-bergatreute,,Bergatreute,Bergatreute,08436,Ravensburg (LKR),2024-06-30,3207,1629,1578,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-bodnegg,,Bodnegg,Bodnegg,08436,Ravensburg (LKR),2024-06-30,3199,1632,1567,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-boms,,Boms,Boms,08436,Ravensburg (LKR),2024-06-30,729,381,348,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-ebenweiler,,Ebenweiler,Ebenweiler,08436,Ravensburg (LKR),2024-06-30,1351,706,645,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-ebersbach-musbach,,Ebersbach-Musbach,Ebersbach-Musbach,08436,Ravensburg (LKR),2024-06-30,1688,873,815,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-eichstegen,,Eichstegen,Eichstegen,08436,Ravensburg (LKR),2024-06-30,533,263,270,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-fleischwangen,,Fleischwangen,Fleischwangen,08436,Ravensburg (LKR),2024-06-30,660,336,324,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-fronreute,,Fronreute,Fronreute,08436,Ravensburg (LKR),2024-06-30,4994,2548,2446,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-grunkraut,,Grünkraut,Grünkraut,08436,Ravensburg (LKR),2024-06-30,3124,1583,1541,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-guggenhausen,,Guggenhausen,Guggenhausen,08436,Ravensburg (LKR),2024-06-30,191,95,96,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-horgenzell,,Horgenzell,Horgenzell,08436,Ravensburg (LKR),2024-06-30,6014,2968,3046,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-hosskirch,,Hoßkirch,Hoßkirch,08436,Ravensburg (LKR),2024-06-30,711,344,367,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-isny-im-allgau,,Isny im Allgäu,"Isny im Allgäu, Stadt",08436,Ravensburg (LKR),2024-06-30,15162,7602,7560,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-kisslegg,,Kißlegg,Kißlegg,08436,Ravensburg (LKR),2024-06-30,9488,4776,4712,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-konigseggwald,,Königseggwald,Königseggwald,08436,Ravensburg (LKR),2024-06-30,677,335,342,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-leutkirch-im-allgau,,Leutkirch im Allgäu,"Leutkirch im Allgäu, Stadt",08436,Ravensburg (LKR),2024-06-30,24130,12138,11992,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-ravensburg,,Ravensburg,"Ravensburg, Stadt",08436,Ravensburg (LKR),2024-06-30,50392,24995,25397,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-riedhausen,,Riedhausen,Riedhausen,08436,Ravensburg (LKR),2024-06-30,811,403,408,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-schlier,,Schlier,Schlier,08436,Ravensburg (LKR),2024-06-30,4053,2028,2025,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-unterwaldhausen,,Unterwaldhausen,Unterwaldhausen,08436,Ravensburg (LKR),2024-06-30,272,134,138,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-vogt,,Vogt,Vogt,08436,Ravensburg (LKR),2024-06-30,4717,2345,2372,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-waldburg,,Waldburg,Waldburg,08436,Ravensburg (LKR),2024-06-30,3284,1623,1661,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-wangen-im-allgau,,Wangen im Allgäu,"Wangen im Allgäu, Stadt",08436,Ravensburg (LKR),2024-06-30,28167,13675,14492,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-weingarten,,Weingarten,"Weingarten, Stadt",08436,Ravensburg (LKR),2024-06-30,24790,11903,12887,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-wilhelmsdorf,,Wilhelmsdorf,Wilhelmsdorf,08436,Ravensburg (LKR),2024-06-30,4769,2341,2428,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-wolfegg,,Wolfegg,Wolfegg,08436,Ravensburg (LKR),2024-06-30,3876,1937,1939,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08436-wolpertswende,,Wolpertswende,Wolpertswende,08436,Ravensburg (LKR),2024-06-30,4067,2082,1985,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-bad-saulgau,,Bad Saulgau,"Bad Saulgau, Stadt",08437,Sigmaringen (LKR),2024-06-30,17944,8889,9055,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-beuron,,Beuron,Beuron,08437,Sigmaringen (LKR),2024-06-30,656,343,313,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-bingen,,Bingen,Bingen,08437,Sigmaringen (LKR),2024-06-30,2716,1350,1366,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-gammertingen,,Gammertingen,"Gammertingen, Stadt",08437,Sigmaringen (LKR),2024-06-30,6220,3162,3058,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-herbertingen,,Herbertingen,Herbertingen,08437,Sigmaringen (LKR),2024-06-30,4746,2400,2346,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-herdwangen-schonach,,Herdwangen-Schönach,Herdwangen-Schönach,08437,Sigmaringen (LKR),2024-06-30,3393,1663,1730,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-hettingen,,Hettingen,"Hettingen, Stadt",08437,Sigmaringen (LKR),2024-06-30,1871,950,921,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-hohentengen,,Hohentengen,Hohentengen,08437,Sigmaringen (LKR),2024-06-30,4144,2095,2049,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-illmensee,,Illmensee,Illmensee,08437,Sigmaringen (LKR),2024-06-30,2020,1017,1003,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-inzigkofen,,Inzigkofen,Inzigkofen,08437,Sigmaringen (LKR),2024-06-30,2973,1481,1492,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-krauchenwies,,Krauchenwies,Krauchenwies,08437,Sigmaringen (LKR),2024-06-30,4994,2519,2475,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-leibertingen,,Leibertingen,Leibertingen,08437,Sigmaringen (LKR),2024-06-30,2205,1152,1053,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-mengen,,Mengen,"Mengen, Stadt",08437,Sigmaringen (LKR),2024-06-30,10162,5071,5091,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-messkirch,,Meßkirch,"Meßkirch, Stadt",08437,Sigmaringen (LKR),2024-06-30,8606,4377,4229,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-neufra,,Neufra,Neufra,08437,Sigmaringen (LKR),2024-06-30,1884,939,945,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-ostrach,,Ostrach,Ostrach,08437,Sigmaringen (LKR),2024-06-30,7076,3595,3481,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-pfullendorf,,Pfullendorf,"Pfullendorf, Stadt",08437,Sigmaringen (LKR),2024-06-30,13422,6625,6797,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-sauldorf,,Sauldorf,Sauldorf,08437,Sigmaringen (LKR),2024-06-30,2603,1318,1285,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-scheer,,Scheer,"Scheer, Stadt",08437,Sigmaringen (LKR),2024-06-30,2468,1245,1223,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-schwenningen,,Schwenningen,Schwenningen,08437,Sigmaringen (LKR),2024-06-30,1685,837,848,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-sigmaringen,,Sigmaringen,"Sigmaringen, Stadt",08437,Sigmaringen (LKR),2024-06-30,17483,8685,8798,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-sigmaringendorf,,Sigmaringendorf,Sigmaringendorf,08437,Sigmaringen (LKR),2024-06-30,3735,1891,1844,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-stetten-am-kalten-markt,,Stetten am kalten Markt,Stetten am kalten Markt,08437,Sigmaringen (LKR),2024-06-30,4853,2480,2373,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-veringenstadt,,Veringenstadt,"Veringenstadt, Stadt",08437,Sigmaringen (LKR),2024-06-30,2135,1056,1079,stala_gemeinden_2024_06,16,not_in_source_table
+LOCAL-BW-MUN-08437-wald,,Wald,Wald,08437,Sigmaringen (LKR),2024-06-30,2763,1377,1386,stala_gemeinden_2024_06,16,not_in_source_table

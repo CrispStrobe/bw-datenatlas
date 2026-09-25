@@ -1,0 +1,3309 @@
+{
+  "type": "district_age_structure_by_migration_status",
+  "schema_version": "1.0",
+  "reference_period": "2024",
+  "source": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0503, Grundprogramm des Mikrozensus",
+  "source_url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0503",
+  "population_base": "Bevölkerung in Hauptwohnsitzhaushalten, beide Geschlechter",
+  "unit_note": "Die Quelle veröffentlicht in Tausend.",
+  "survey_note": "Stichprobenerhebung mit Zufallsfehler; kleine Altersgruppen werden geheim gehalten.",
+  "share_basis": "Anteile beziehen sich auf die Summe der veröffentlichten Altersgruppen, nicht auf die Gesamtbevölkerung. Der Deckungsgrad steht je Kreis daneben.",
+  "not_a_muslim_age_structure": "Dies ist die Altersgliederung der Bevölkerung mit Migrationshintergrund, nicht die der modellierten muslimischen Bevölkerung. Für diese veröffentlicht keine hier verwendete Quelle eine Altersgliederung; es wird auch keine abgeleitet.",
+  "age_groups": [
+    "under_15",
+    "15_to_24",
+    "25_to_34",
+    "35_to_44",
+    "45_to_54",
+    "55_to_64",
+    "65_plus"
+  ],
+  "minimum_coverage_for_shares_percent": 90.0,
+  "derived_without_migration_background": "Insgesamt minus mit Migrationshintergrund, nur wo beide veröffentlicht sind.",
+  "combined_regions": {
+    "08217KRSI": [
+      "08211",
+      "08216"
+    ]
+  },
+  "partially_suppressed": [
+    {
+      "region_label": "Main-Tauber-Kreis, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "45_to_54",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Main-Tauber-Kreis, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "45_to_54",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Heidenheim, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "25_to_34",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Heidenheim, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "25_to_34",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Heidelberg, Stadtkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "55_to_64"
+      ],
+      "shares_withheld": false
+    },
+    {
+      "region_label": "Heidelberg, Stadtkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "55_to_64"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "45_to_54",
+        "55_to_64"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "45_to_54",
+        "55_to_64"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Freudenstadt, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Freudenstadt, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Emmendingen, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Emmendingen, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Rottweil, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Rottweil, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "15_to_24",
+        "25_to_34",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Waldshut, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "55_to_64"
+      ],
+      "shares_withheld": false
+    },
+    {
+      "region_label": "Waldshut, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "55_to_64"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Ulm, Stadtkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "55_to_64"
+      ],
+      "shares_withheld": false
+    },
+    {
+      "region_label": "Ulm, Stadtkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "55_to_64"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Alb-Donau-Kreis, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "65_plus"
+      ],
+      "shares_withheld": false
+    },
+    {
+      "region_label": "Alb-Donau-Kreis, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Biberach, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "25_to_34"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Biberach, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "25_to_34"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Sigmaringen, Landkreis",
+      "series": "with_migration_background",
+      "suppressed": [
+        "under_15",
+        "15_to_24",
+        "25_to_34",
+        "35_to_44",
+        "45_to_54",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    },
+    {
+      "region_label": "Sigmaringen, Landkreis",
+      "series": "without_migration_background",
+      "suppressed": [
+        "under_15",
+        "15_to_24",
+        "25_to_34",
+        "35_to_44",
+        "45_to_54",
+        "55_to_64",
+        "65_plus"
+      ],
+      "shares_withheld": true
+    }
+  ],
+  "districts": [
+    {
+      "id": "08111",
+      "name": "Stuttgart (SKR)",
+      "mikrozensus_region_code": "08111KRSI",
+      "mikrozensus_region_label": "Stuttgart, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 613,
+        "age_groups_thousand": {
+          "under_15": 73,
+          "15_to_24": 71,
+          "25_to_34": 109,
+          "35_to_44": 83,
+          "45_to_54": 80,
+          "55_to_64": 81,
+          "65_plus": 115
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 612,
+        "coverage_of_total_percent": 99.8,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.5,
+        "under_15_share_of_covered_percent": 11.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 305,
+        "age_groups_thousand": {
+          "under_15": 45,
+          "15_to_24": 40,
+          "25_to_34": 61,
+          "35_to_44": 47,
+          "45_to_54": 46,
+          "55_to_64": 30,
+          "65_plus": 37
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 306,
+        "coverage_of_total_percent": 100.3,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.8,
+        "under_15_share_of_covered_percent": 14.7,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 28,
+          "15_to_24": 31,
+          "25_to_34": 48,
+          "35_to_44": 36,
+          "45_to_54": 34,
+          "55_to_64": 51,
+          "65_plus": 78
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 306,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 19.3,
+        "under_15_share_of_covered_percent": 9.2,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08115",
+      "name": "Böblingen (LKR)",
+      "mikrozensus_region_code": "08115KRSI",
+      "mikrozensus_region_label": "Böblingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 396,
+        "age_groups_thousand": {
+          "under_15": 63,
+          "15_to_24": 38,
+          "25_to_34": 48,
+          "35_to_44": 55,
+          "45_to_54": 49,
+          "55_to_64": 61,
+          "65_plus": 82
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 396,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.5,
+        "under_15_share_of_covered_percent": 15.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 175,
+        "age_groups_thousand": {
+          "under_15": 35,
+          "15_to_24": 20,
+          "25_to_34": 23,
+          "35_to_44": 29,
+          "45_to_54": 24,
+          "55_to_64": 20,
+          "65_plus": 23
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 174,
+        "coverage_of_total_percent": 99.4,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.6,
+        "under_15_share_of_covered_percent": 20.1,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 28,
+          "15_to_24": 18,
+          "25_to_34": 25,
+          "35_to_44": 26,
+          "45_to_54": 25,
+          "55_to_64": 41,
+          "65_plus": 59
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 222,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.7,
+        "under_15_share_of_covered_percent": 12.6,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08116",
+      "name": "Esslingen (LKR)",
+      "mikrozensus_region_code": "08116KRSI",
+      "mikrozensus_region_label": "Esslingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 538,
+        "age_groups_thousand": {
+          "under_15": 69,
+          "15_to_24": 53,
+          "25_to_34": 73,
+          "35_to_44": 66,
+          "45_to_54": 71,
+          "55_to_64": 86,
+          "65_plus": 121
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 539,
+        "coverage_of_total_percent": 100.2,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 22.6,
+        "under_15_share_of_covered_percent": 12.8,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 212,
+        "age_groups_thousand": {
+          "under_15": 32,
+          "15_to_24": 26,
+          "25_to_34": 34,
+          "35_to_44": 31,
+          "45_to_54": 34,
+          "55_to_64": 25,
+          "65_plus": 29
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 211,
+        "coverage_of_total_percent": 99.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.5,
+        "under_15_share_of_covered_percent": 15.2,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 37,
+          "15_to_24": 27,
+          "25_to_34": 39,
+          "35_to_44": 35,
+          "45_to_54": 37,
+          "55_to_64": 61,
+          "65_plus": 92
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 328,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 19.5,
+        "under_15_share_of_covered_percent": 11.3,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08117",
+      "name": "Göppingen (LKR)",
+      "mikrozensus_region_code": "08117KRSI",
+      "mikrozensus_region_label": "Göppingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 257,
+        "age_groups_thousand": {
+          "under_15": 40,
+          "15_to_24": 22,
+          "25_to_34": 30,
+          "35_to_44": 39,
+          "45_to_54": 26,
+          "55_to_64": 42,
+          "65_plus": 58
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 257,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.1,
+        "under_15_share_of_covered_percent": 15.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 104,
+        "age_groups_thousand": {
+          "under_15": 22,
+          "15_to_24": 9,
+          "25_to_34": 14,
+          "35_to_44": 20,
+          "45_to_54": 11,
+          "55_to_64": 12,
+          "65_plus": 15
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 103,
+        "coverage_of_total_percent": 99.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 30.1,
+        "under_15_share_of_covered_percent": 21.4,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 13,
+          "25_to_34": 16,
+          "35_to_44": 19,
+          "45_to_54": 15,
+          "55_to_64": 30,
+          "65_plus": 43
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 154,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.1,
+        "under_15_share_of_covered_percent": 11.7,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08118",
+      "name": "Ludwigsburg (LKR)",
+      "mikrozensus_region_code": "08118KRSI",
+      "mikrozensus_region_label": "Ludwigsburg, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 533,
+        "age_groups_thousand": {
+          "under_15": 79,
+          "15_to_24": 55,
+          "25_to_34": 64,
+          "35_to_44": 68,
+          "45_to_54": 71,
+          "55_to_64": 85,
+          "65_plus": 111
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 533,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.1,
+        "under_15_share_of_covered_percent": 14.8,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 226,
+        "age_groups_thousand": {
+          "under_15": 42,
+          "15_to_24": 29,
+          "25_to_34": 34,
+          "35_to_44": 32,
+          "45_to_54": 33,
+          "55_to_64": 28,
+          "65_plus": 28
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 226,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.4,
+        "under_15_share_of_covered_percent": 18.6,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 37,
+          "15_to_24": 26,
+          "25_to_34": 30,
+          "35_to_44": 36,
+          "45_to_54": 38,
+          "55_to_64": 57,
+          "65_plus": 83
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 307,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.5,
+        "under_15_share_of_covered_percent": 12.1,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08119",
+      "name": "Rems-Murr-Kreis (LKR)",
+      "mikrozensus_region_code": "08119KRSI",
+      "mikrozensus_region_label": "Rems-Murr-Kreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 443,
+        "age_groups_thousand": {
+          "under_15": 69,
+          "15_to_24": 45,
+          "25_to_34": 57,
+          "35_to_44": 53,
+          "45_to_54": 59,
+          "55_to_64": 67,
+          "65_plus": 93
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 443,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.7,
+        "under_15_share_of_covered_percent": 15.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 173,
+        "age_groups_thousand": {
+          "under_15": 38,
+          "15_to_24": 21,
+          "25_to_34": 24,
+          "35_to_44": 25,
+          "45_to_54": 26,
+          "55_to_64": 17,
+          "65_plus": 20
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 171,
+        "coverage_of_total_percent": 98.8,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 34.5,
+        "under_15_share_of_covered_percent": 22.2,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 31,
+          "15_to_24": 24,
+          "25_to_34": 33,
+          "35_to_44": 28,
+          "45_to_54": 33,
+          "55_to_64": 50,
+          "65_plus": 73
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 272,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.2,
+        "under_15_share_of_covered_percent": 11.4,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08121",
+      "name": "Heilbronn (SKR)",
+      "mikrozensus_region_code": "08121KRSI",
+      "mikrozensus_region_label": "Heilbronn, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 129,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 16,
+          "25_to_34": 22,
+          "35_to_44": 19,
+          "45_to_54": 15,
+          "55_to_64": 17,
+          "65_plus": 22
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 129,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.4,
+        "under_15_share_of_covered_percent": 14.0,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 73,
+        "age_groups_thousand": {
+          "under_15": 13,
+          "15_to_24": 11,
+          "25_to_34": 12,
+          "35_to_44": 12,
+          "45_to_54": 10,
+          "55_to_64": 6,
+          "65_plus": 8
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 72,
+        "coverage_of_total_percent": 98.6,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 33.3,
+        "under_15_share_of_covered_percent": 18.1,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 5,
+          "15_to_24": 5,
+          "25_to_34": 10,
+          "35_to_44": 7,
+          "45_to_54": 5,
+          "55_to_64": 11,
+          "65_plus": 14
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 57,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 17.5,
+        "under_15_share_of_covered_percent": 8.8,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08125",
+      "name": "Heilbronn (LKR)",
+      "mikrozensus_region_code": "08125KRSI",
+      "mikrozensus_region_label": "Heilbronn, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 352,
+        "age_groups_thousand": {
+          "under_15": 53,
+          "15_to_24": 33,
+          "25_to_34": 47,
+          "35_to_44": 51,
+          "45_to_54": 46,
+          "55_to_64": 53,
+          "65_plus": 69
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 352,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.4,
+        "under_15_share_of_covered_percent": 15.1,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 135,
+        "age_groups_thousand": {
+          "under_15": 25,
+          "15_to_24": 17,
+          "25_to_34": 17,
+          "35_to_44": 23,
+          "45_to_54": 20,
+          "55_to_64": 15,
+          "65_plus": 17
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 134,
+        "coverage_of_total_percent": 99.3,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.3,
+        "under_15_share_of_covered_percent": 18.7,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 28,
+          "15_to_24": 16,
+          "25_to_34": 30,
+          "35_to_44": 28,
+          "45_to_54": 26,
+          "55_to_64": 38,
+          "65_plus": 52
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 218,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.2,
+        "under_15_share_of_covered_percent": 12.8,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08126",
+      "name": "Hohenlohekreis (LKR)",
+      "mikrozensus_region_code": "08126KRSI",
+      "mikrozensus_region_label": "Hohenlohekreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 116,
+        "age_groups_thousand": {
+          "under_15": 16,
+          "15_to_24": 14,
+          "25_to_34": 14,
+          "35_to_44": 14,
+          "45_to_54": 14,
+          "55_to_64": 18,
+          "65_plus": 25
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 115,
+        "coverage_of_total_percent": 99.1,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.1,
+        "under_15_share_of_covered_percent": 13.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 51,
+        "age_groups_thousand": {
+          "under_15": 10,
+          "15_to_24": 8,
+          "25_to_34": 6,
+          "35_to_44": 8,
+          "45_to_54": 7,
+          "55_to_64": 6,
+          "65_plus": 6
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 51,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 35.3,
+        "under_15_share_of_covered_percent": 19.6,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 6,
+          "15_to_24": 6,
+          "25_to_34": 8,
+          "35_to_44": 6,
+          "45_to_54": 7,
+          "55_to_64": 12,
+          "65_plus": 19
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 64,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 18.8,
+        "under_15_share_of_covered_percent": 9.4,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08127",
+      "name": "Schwäbisch Hall (LKR)",
+      "mikrozensus_region_code": "08127KRSI",
+      "mikrozensus_region_label": "Schwäbisch Hall, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 200,
+        "age_groups_thousand": {
+          "under_15": 34,
+          "15_to_24": 21,
+          "25_to_34": 26,
+          "35_to_44": 29,
+          "45_to_54": 26,
+          "55_to_64": 27,
+          "65_plus": 37
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 200,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.5,
+        "under_15_share_of_covered_percent": 17.0,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 68,
+        "age_groups_thousand": {
+          "under_15": 13,
+          "15_to_24": 7,
+          "25_to_34": 11,
+          "35_to_44": 11,
+          "45_to_54": 11,
+          "55_to_64": 7,
+          "65_plus": 7
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 67,
+        "coverage_of_total_percent": 98.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 29.9,
+        "under_15_share_of_covered_percent": 19.4,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 14,
+          "25_to_34": 15,
+          "35_to_44": 18,
+          "45_to_54": 15,
+          "55_to_64": 20,
+          "65_plus": 30
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 133,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.3,
+        "under_15_share_of_covered_percent": 15.8,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08128",
+      "name": "Main-Tauber-Kreis (LKR)",
+      "mikrozensus_region_code": "08128KRSI",
+      "mikrozensus_region_label": "Main-Tauber-Kreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 134,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 15,
+          "25_to_34": 15,
+          "35_to_44": 19,
+          "45_to_54": 19,
+          "55_to_64": 21,
+          "65_plus": 26
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 136,
+        "coverage_of_total_percent": 101.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.5,
+        "under_15_share_of_covered_percent": 15.4,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 43,
+        "age_groups_thousand": {
+          "under_15": 9,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 8,
+          "45_to_54": null,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 2,
+        "complete": false,
+        "covered_thousand": 17,
+        "coverage_of_total_percent": 39.5,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "45_to_54",
+          "55_to_64",
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 12,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 11,
+          "45_to_54": null,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 2,
+        "complete": false,
+        "covered_thousand": 23,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "45_to_54",
+          "55_to_64",
+          "65_plus"
+        ]
+      }
+    },
+    {
+      "id": "08135",
+      "name": "Heidenheim (LKR)",
+      "mikrozensus_region_code": "08135KRSI",
+      "mikrozensus_region_label": "Heidenheim, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 136,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 14,
+          "25_to_34": 17,
+          "35_to_44": 16,
+          "45_to_54": 18,
+          "55_to_64": 22,
+          "65_plus": 30
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 135,
+        "coverage_of_total_percent": 99.3,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.7,
+        "under_15_share_of_covered_percent": 13.3,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 47,
+        "age_groups_thousand": {
+          "under_15": 9,
+          "15_to_24": 7,
+          "25_to_34": null,
+          "35_to_44": 7,
+          "45_to_54": 8,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 4,
+        "complete": false,
+        "covered_thousand": 31,
+        "coverage_of_total_percent": 66.0,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "25_to_34",
+          "55_to_64",
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 9,
+          "15_to_24": 7,
+          "25_to_34": null,
+          "35_to_44": 9,
+          "45_to_54": 10,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 4,
+        "complete": false,
+        "covered_thousand": 35,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "25_to_34",
+          "55_to_64",
+          "65_plus"
+        ]
+      }
+    },
+    {
+      "id": "08136",
+      "name": "Ostalbkreis (LKR)",
+      "mikrozensus_region_code": "08136KRSI",
+      "mikrozensus_region_label": "Ostalbkreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 317,
+        "age_groups_thousand": {
+          "under_15": 49,
+          "15_to_24": 34,
+          "25_to_34": 37,
+          "35_to_44": 48,
+          "45_to_54": 36,
+          "55_to_64": 46,
+          "65_plus": 67
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 317,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.2,
+        "under_15_share_of_covered_percent": 15.5,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 107,
+        "age_groups_thousand": {
+          "under_15": 23,
+          "15_to_24": 15,
+          "25_to_34": 13,
+          "35_to_44": 19,
+          "45_to_54": 13,
+          "55_to_64": 11,
+          "65_plus": 14
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 108,
+        "coverage_of_total_percent": 100.9,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 35.2,
+        "under_15_share_of_covered_percent": 21.3,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 26,
+          "15_to_24": 19,
+          "25_to_34": 24,
+          "35_to_44": 29,
+          "45_to_54": 23,
+          "55_to_64": 35,
+          "65_plus": 53
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 209,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 21.5,
+        "under_15_share_of_covered_percent": 12.4,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08212",
+      "name": "Karlsruhe (SKR)",
+      "mikrozensus_region_code": "08212KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 308,
+        "age_groups_thousand": {
+          "under_15": 39,
+          "15_to_24": 37,
+          "25_to_34": 52,
+          "35_to_44": 41,
+          "45_to_54": 34,
+          "55_to_64": 45,
+          "65_plus": 60
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 308,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.7,
+        "under_15_share_of_covered_percent": 12.7,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 117,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 18,
+          "25_to_34": 19,
+          "35_to_44": 19,
+          "45_to_54": 14,
+          "55_to_64": 15,
+          "65_plus": 13
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 116,
+        "coverage_of_total_percent": 99.1,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.0,
+        "under_15_share_of_covered_percent": 15.5,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 19,
+          "25_to_34": 33,
+          "35_to_44": 22,
+          "45_to_54": 20,
+          "55_to_64": 30,
+          "65_plus": 47
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 192,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.8,
+        "under_15_share_of_covered_percent": 10.9,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08215",
+      "name": "Karlsruhe (LKR)",
+      "mikrozensus_region_code": "08215KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 455,
+        "age_groups_thousand": {
+          "under_15": 63,
+          "15_to_24": 47,
+          "25_to_34": 51,
+          "35_to_44": 56,
+          "45_to_54": 69,
+          "55_to_64": 71,
+          "65_plus": 98
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 455,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.2,
+        "under_15_share_of_covered_percent": 13.8,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 151,
+        "age_groups_thousand": {
+          "under_15": 27,
+          "15_to_24": 19,
+          "25_to_34": 21,
+          "35_to_44": 22,
+          "45_to_54": 28,
+          "55_to_64": 16,
+          "65_plus": 18
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 151,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 30.5,
+        "under_15_share_of_covered_percent": 17.9,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 36,
+          "15_to_24": 28,
+          "25_to_34": 30,
+          "35_to_44": 34,
+          "45_to_54": 41,
+          "55_to_64": 55,
+          "65_plus": 80
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 304,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 21.1,
+        "under_15_share_of_covered_percent": 11.8,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08211",
+      "name": "Baden-Baden (SKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "total": {
+        "population_thousand": 55,
+        "age_groups_thousand": {
+          "under_15": 39,
+          "15_to_24": 29,
+          "25_to_34": 34,
+          "35_to_44": 37,
+          "45_to_54": 35,
+          "55_to_64": 46,
+          "65_plus": 66
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 286,
+        "coverage_of_total_percent": 520.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.8,
+        "under_15_share_of_covered_percent": 13.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 115,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 15,
+          "25_to_34": 17,
+          "35_to_44": 18,
+          "45_to_54": 16,
+          "55_to_64": 13,
+          "65_plus": 16
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 116,
+        "coverage_of_total_percent": 100.9,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.0,
+        "under_15_share_of_covered_percent": 18.1,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 14,
+          "25_to_34": 17,
+          "35_to_44": 19,
+          "45_to_54": 19,
+          "55_to_64": 33,
+          "65_plus": 50
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 170,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 18.8,
+        "under_15_share_of_covered_percent": 10.6,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08216",
+      "name": "Rastatt (LKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "total": {
+        "population_thousand": 55,
+        "age_groups_thousand": {
+          "under_15": 39,
+          "15_to_24": 29,
+          "25_to_34": 34,
+          "35_to_44": 37,
+          "45_to_54": 35,
+          "55_to_64": 46,
+          "65_plus": 66
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 286,
+        "coverage_of_total_percent": 520.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.8,
+        "under_15_share_of_covered_percent": 13.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 115,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 15,
+          "25_to_34": 17,
+          "35_to_44": 18,
+          "45_to_54": 16,
+          "55_to_64": 13,
+          "65_plus": 16
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 116,
+        "coverage_of_total_percent": 100.9,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.0,
+        "under_15_share_of_covered_percent": 18.1,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 14,
+          "25_to_34": 17,
+          "35_to_44": 19,
+          "45_to_54": 19,
+          "55_to_64": 33,
+          "65_plus": 50
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 170,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 18.8,
+        "under_15_share_of_covered_percent": 10.6,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08221",
+      "name": "Heidelberg (SKR)",
+      "mikrozensus_region_code": "08221KRSI",
+      "mikrozensus_region_label": "Heidelberg, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 153,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 28,
+          "25_to_34": 28,
+          "35_to_44": 22,
+          "45_to_54": 18,
+          "55_to_64": 17,
+          "65_plus": 20
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 154,
+        "coverage_of_total_percent": 100.7,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.8,
+        "under_15_share_of_covered_percent": 13.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 72,
+        "age_groups_thousand": {
+          "under_15": 12,
+          "15_to_24": 12,
+          "25_to_34": 14,
+          "35_to_44": 13,
+          "45_to_54": 9,
+          "55_to_64": null,
+          "65_plus": 6
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 66,
+        "coverage_of_total_percent": 91.7,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 36.4,
+        "under_15_share_of_covered_percent": 18.2,
+        "suppressed_groups": [
+          "55_to_64"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 9,
+          "15_to_24": 16,
+          "25_to_34": 14,
+          "35_to_44": 9,
+          "45_to_54": 9,
+          "55_to_64": null,
+          "65_plus": 14
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 71,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "55_to_64"
+        ]
+      }
+    },
+    {
+      "id": "08222",
+      "name": "Mannheim (SKR)",
+      "mikrozensus_region_code": "08222KRSI",
+      "mikrozensus_region_label": "Mannheim, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 318,
+        "age_groups_thousand": {
+          "under_15": 37,
+          "15_to_24": 39,
+          "25_to_34": 56,
+          "35_to_44": 42,
+          "45_to_54": 39,
+          "55_to_64": 41,
+          "65_plus": 64
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 318,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.9,
+        "under_15_share_of_covered_percent": 11.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 154,
+        "age_groups_thousand": {
+          "under_15": 24,
+          "15_to_24": 22,
+          "25_to_34": 28,
+          "35_to_44": 25,
+          "45_to_54": 23,
+          "55_to_64": 15,
+          "65_plus": 18
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 155,
+        "coverage_of_total_percent": 100.6,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 29.7,
+        "under_15_share_of_covered_percent": 15.5,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 13,
+          "15_to_24": 17,
+          "25_to_34": 28,
+          "35_to_44": 17,
+          "45_to_54": 16,
+          "55_to_64": 26,
+          "65_plus": 46
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 163,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 18.4,
+        "under_15_share_of_covered_percent": 8.0,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08225",
+      "name": "Neckar-Odenwald-Kreis (LKR)",
+      "mikrozensus_region_code": "08225KRSI",
+      "mikrozensus_region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 145,
+        "age_groups_thousand": {
+          "under_15": 20,
+          "15_to_24": 13,
+          "25_to_34": 16,
+          "35_to_44": 19,
+          "45_to_54": 19,
+          "55_to_64": 27,
+          "65_plus": 32
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 146,
+        "coverage_of_total_percent": 100.7,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 22.6,
+        "under_15_share_of_covered_percent": 13.7,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 42,
+        "age_groups_thousand": {
+          "under_15": 9,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 7,
+          "45_to_54": null,
+          "55_to_64": null,
+          "65_plus": 7
+        },
+        "published_groups": 3,
+        "complete": false,
+        "covered_thousand": 23,
+        "coverage_of_total_percent": 54.8,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "45_to_54",
+          "55_to_64"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 11,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 12,
+          "45_to_54": null,
+          "55_to_64": null,
+          "65_plus": 25
+        },
+        "published_groups": 3,
+        "complete": false,
+        "covered_thousand": 48,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "45_to_54",
+          "55_to_64"
+        ]
+      }
+    },
+    {
+      "id": "08226",
+      "name": "Rhein-Neckar-Kreis (LKR)",
+      "mikrozensus_region_code": "08226KRSI",
+      "mikrozensus_region_label": "Rhein-Neckar-Kreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 557,
+        "age_groups_thousand": {
+          "under_15": 90,
+          "15_to_24": 52,
+          "25_to_34": 62,
+          "35_to_44": 76,
+          "45_to_54": 69,
+          "55_to_64": 90,
+          "65_plus": 117
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 556,
+        "coverage_of_total_percent": 99.8,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.5,
+        "under_15_share_of_covered_percent": 16.2,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 198,
+        "age_groups_thousand": {
+          "under_15": 42,
+          "15_to_24": 24,
+          "25_to_34": 28,
+          "35_to_44": 31,
+          "45_to_54": 27,
+          "55_to_64": 22,
+          "65_plus": 23
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 197,
+        "coverage_of_total_percent": 99.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 33.5,
+        "under_15_share_of_covered_percent": 21.3,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 48,
+          "15_to_24": 28,
+          "25_to_34": 34,
+          "35_to_44": 45,
+          "45_to_54": 42,
+          "55_to_64": 68,
+          "65_plus": 94
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 359,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 21.2,
+        "under_15_share_of_covered_percent": 13.4,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08231",
+      "name": "Pforzheim (SKR)",
+      "mikrozensus_region_code": "08231KRSI",
+      "mikrozensus_region_label": "Pforzheim, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 134,
+        "age_groups_thousand": {
+          "under_15": 20,
+          "15_to_24": 12,
+          "25_to_34": 21,
+          "35_to_44": 17,
+          "45_to_54": 17,
+          "55_to_64": 17,
+          "65_plus": 29
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 133,
+        "coverage_of_total_percent": 99.3,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.1,
+        "under_15_share_of_covered_percent": 15.0,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 80,
+        "age_groups_thousand": {
+          "under_15": 16,
+          "15_to_24": 9,
+          "25_to_34": 13,
+          "35_to_44": 12,
+          "45_to_54": 11,
+          "55_to_64": 9,
+          "65_plus": 10
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 80,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 31.2,
+        "under_15_share_of_covered_percent": 20.0,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 4,
+          "15_to_24": 3,
+          "25_to_34": 8,
+          "35_to_44": 5,
+          "45_to_54": 6,
+          "55_to_64": 8,
+          "65_plus": 19
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 53,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 13.2,
+        "under_15_share_of_covered_percent": 7.5,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08235",
+      "name": "Calw (LKR)",
+      "mikrozensus_region_code": "08235KRSI",
+      "mikrozensus_region_label": "Calw, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 157,
+        "age_groups_thousand": {
+          "under_15": 20,
+          "15_to_24": 17,
+          "25_to_34": 19,
+          "35_to_44": 20,
+          "45_to_54": 19,
+          "55_to_64": 29,
+          "65_plus": 32
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 156,
+        "coverage_of_total_percent": 99.4,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.7,
+        "under_15_share_of_covered_percent": 12.8,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 61,
+        "age_groups_thousand": {
+          "under_15": 9,
+          "15_to_24": 9,
+          "25_to_34": 9,
+          "35_to_44": 9,
+          "45_to_54": 9,
+          "55_to_64": 8,
+          "65_plus": 7
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 60,
+        "coverage_of_total_percent": 98.4,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 30.0,
+        "under_15_share_of_covered_percent": 15.0,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 11,
+          "15_to_24": 8,
+          "25_to_34": 10,
+          "35_to_44": 11,
+          "45_to_54": 10,
+          "55_to_64": 21,
+          "65_plus": 25
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 96,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 19.8,
+        "under_15_share_of_covered_percent": 11.5,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08236",
+      "name": "Enzkreis (LKR)",
+      "mikrozensus_region_code": "08236KRSI",
+      "mikrozensus_region_label": "Enzkreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 201,
+        "age_groups_thousand": {
+          "under_15": 31,
+          "15_to_24": 20,
+          "25_to_34": 22,
+          "35_to_44": 24,
+          "45_to_54": 27,
+          "55_to_64": 34,
+          "65_plus": 42
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 200,
+        "coverage_of_total_percent": 99.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.5,
+        "under_15_share_of_covered_percent": 15.5,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 70,
+        "age_groups_thousand": {
+          "under_15": 14,
+          "15_to_24": 10,
+          "25_to_34": 9,
+          "35_to_44": 10,
+          "45_to_54": 12,
+          "55_to_64": 7,
+          "65_plus": 7
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 69,
+        "coverage_of_total_percent": 98.6,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 34.8,
+        "under_15_share_of_covered_percent": 20.3,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 17,
+          "15_to_24": 10,
+          "25_to_34": 13,
+          "35_to_44": 14,
+          "45_to_54": 15,
+          "55_to_64": 27,
+          "65_plus": 35
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 131,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.6,
+        "under_15_share_of_covered_percent": 13.0,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08237",
+      "name": "Freudenstadt (LKR)",
+      "mikrozensus_region_code": "08237KRSI",
+      "mikrozensus_region_label": "Freudenstadt, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 122,
+        "age_groups_thousand": {
+          "under_15": 22,
+          "15_to_24": 12,
+          "25_to_34": 15,
+          "35_to_44": 15,
+          "45_to_54": 16,
+          "55_to_64": 20,
+          "65_plus": 22
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 122,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.9,
+        "under_15_share_of_covered_percent": 18.0,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 42,
+        "age_groups_thousand": {
+          "under_15": 10,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 7,
+          "45_to_54": 7,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 3,
+        "complete": false,
+        "covered_thousand": 24,
+        "coverage_of_total_percent": 57.1,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "55_to_64",
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 12,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 8,
+          "45_to_54": 9,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 3,
+        "complete": false,
+        "covered_thousand": 29,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "55_to_64",
+          "65_plus"
+        ]
+      }
+    },
+    {
+      "id": "08311",
+      "name": "Freiburg im Breisgau (SKR)",
+      "mikrozensus_region_code": "08311KRSI",
+      "mikrozensus_region_label": "Freiburg im Breisgau, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 237,
+        "age_groups_thousand": {
+          "under_15": 33,
+          "15_to_24": 38,
+          "25_to_34": 42,
+          "35_to_44": 31,
+          "45_to_54": 25,
+          "55_to_64": 29,
+          "65_plus": 37
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 235,
+        "coverage_of_total_percent": 99.2,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 30.2,
+        "under_15_share_of_covered_percent": 14.0,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 91,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": 16,
+          "25_to_34": 16,
+          "35_to_44": 14,
+          "45_to_54": 11,
+          "55_to_64": 9,
+          "65_plus": 9
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 90,
+        "coverage_of_total_percent": 98.9,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 34.4,
+        "under_15_share_of_covered_percent": 16.7,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 22,
+          "25_to_34": 26,
+          "35_to_44": 17,
+          "45_to_54": 14,
+          "55_to_64": 20,
+          "65_plus": 28
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 145,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.6,
+        "under_15_share_of_covered_percent": 12.4,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08315",
+      "name": "Breisgau-Hochschwarzwald (LKR)",
+      "mikrozensus_region_code": "08315KRSI",
+      "mikrozensus_region_label": "Breisgau-Hochschwarzwald, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 270,
+        "age_groups_thousand": {
+          "under_15": 45,
+          "15_to_24": 27,
+          "25_to_34": 29,
+          "35_to_44": 35,
+          "45_to_54": 31,
+          "55_to_64": 41,
+          "65_plus": 62
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 270,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.7,
+        "under_15_share_of_covered_percent": 16.7,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 78,
+        "age_groups_thousand": {
+          "under_15": 20,
+          "15_to_24": 10,
+          "25_to_34": 11,
+          "35_to_44": 13,
+          "45_to_54": 10,
+          "55_to_64": 7,
+          "65_plus": 8
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 79,
+        "coverage_of_total_percent": 101.3,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 38.0,
+        "under_15_share_of_covered_percent": 25.3,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 25,
+          "15_to_24": 17,
+          "25_to_34": 18,
+          "35_to_44": 22,
+          "45_to_54": 21,
+          "55_to_64": 34,
+          "65_plus": 54
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 191,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 22.0,
+        "under_15_share_of_covered_percent": 13.1,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08316",
+      "name": "Emmendingen (LKR)",
+      "mikrozensus_region_code": "08316KRSI",
+      "mikrozensus_region_label": "Emmendingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 168,
+        "age_groups_thousand": {
+          "under_15": 26,
+          "15_to_24": 17,
+          "25_to_34": 18,
+          "35_to_44": 23,
+          "45_to_54": 22,
+          "55_to_64": 26,
+          "65_plus": 36
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 168,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.6,
+        "under_15_share_of_covered_percent": 15.5,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 50,
+        "age_groups_thousand": {
+          "under_15": 11,
+          "15_to_24": null,
+          "25_to_34": 7,
+          "35_to_44": 9,
+          "45_to_54": 8,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 4,
+        "complete": false,
+        "covered_thousand": 35,
+        "coverage_of_total_percent": 70.0,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "55_to_64",
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": null,
+          "25_to_34": 11,
+          "35_to_44": 14,
+          "45_to_54": 14,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 4,
+        "complete": false,
+        "covered_thousand": 54,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "55_to_64",
+          "65_plus"
+        ]
+      }
+    },
+    {
+      "id": "08317",
+      "name": "Ortenaukreis (LKR)",
+      "mikrozensus_region_code": "08317KRSI",
+      "mikrozensus_region_label": "Ortenaukreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 441,
+        "age_groups_thousand": {
+          "under_15": 66,
+          "15_to_24": 46,
+          "25_to_34": 55,
+          "35_to_44": 57,
+          "45_to_54": 54,
+          "55_to_64": 71,
+          "65_plus": 93
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 442,
+        "coverage_of_total_percent": 100.2,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.3,
+        "under_15_share_of_covered_percent": 14.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 147,
+        "age_groups_thousand": {
+          "under_15": 30,
+          "15_to_24": 21,
+          "25_to_34": 19,
+          "35_to_44": 24,
+          "45_to_54": 20,
+          "55_to_64": 19,
+          "65_plus": 15
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 148,
+        "coverage_of_total_percent": 100.7,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 34.5,
+        "under_15_share_of_covered_percent": 20.3,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 36,
+          "15_to_24": 25,
+          "25_to_34": 36,
+          "35_to_44": 33,
+          "45_to_54": 34,
+          "55_to_64": 52,
+          "65_plus": 78
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 294,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.7,
+        "under_15_share_of_covered_percent": 12.2,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08325",
+      "name": "Rottweil (LKR)",
+      "mikrozensus_region_code": "08325KRSI",
+      "mikrozensus_region_label": "Rottweil, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 140,
+        "age_groups_thousand": {
+          "under_15": 22,
+          "15_to_24": 15,
+          "25_to_34": 13,
+          "35_to_44": 17,
+          "45_to_54": 18,
+          "55_to_64": 24,
+          "65_plus": 31
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 140,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.4,
+        "under_15_share_of_covered_percent": 15.7,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 48,
+        "age_groups_thousand": {
+          "under_15": 12,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 7,
+          "45_to_54": 7,
+          "55_to_64": 6,
+          "65_plus": null
+        },
+        "published_groups": 4,
+        "complete": false,
+        "covered_thousand": 32,
+        "coverage_of_total_percent": 66.7,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 10,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": 10,
+          "45_to_54": 11,
+          "55_to_64": 18,
+          "65_plus": null
+        },
+        "published_groups": 4,
+        "complete": false,
+        "covered_thousand": 49,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "15_to_24",
+          "25_to_34",
+          "65_plus"
+        ]
+      }
+    },
+    {
+      "id": "08326",
+      "name": "Schwarzwald-Baar-Kreis (LKR)",
+      "mikrozensus_region_code": "08326KRSI",
+      "mikrozensus_region_label": "Schwarzwald-Baar-Kreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 214,
+        "age_groups_thousand": {
+          "under_15": 33,
+          "15_to_24": 23,
+          "25_to_34": 27,
+          "35_to_44": 28,
+          "45_to_54": 24,
+          "55_to_64": 31,
+          "65_plus": 48
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 214,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.2,
+        "under_15_share_of_covered_percent": 15.4,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 87,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 12,
+          "25_to_34": 12,
+          "35_to_44": 15,
+          "45_to_54": 12,
+          "55_to_64": 8,
+          "65_plus": 10
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 87,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 34.5,
+        "under_15_share_of_covered_percent": 20.7,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": 11,
+          "25_to_34": 15,
+          "35_to_44": 13,
+          "45_to_54": 12,
+          "55_to_64": 23,
+          "65_plus": 38
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 127,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.5,
+        "under_15_share_of_covered_percent": 11.8,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08327",
+      "name": "Tuttlingen (LKR)",
+      "mikrozensus_region_code": "08327KRSI",
+      "mikrozensus_region_label": "Tuttlingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 144,
+        "age_groups_thousand": {
+          "under_15": 22,
+          "15_to_24": 17,
+          "25_to_34": 16,
+          "35_to_44": 21,
+          "45_to_54": 16,
+          "55_to_64": 23,
+          "65_plus": 28
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 143,
+        "coverage_of_total_percent": 99.3,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.3,
+        "under_15_share_of_covered_percent": 15.4,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 65,
+        "age_groups_thousand": {
+          "under_15": 14,
+          "15_to_24": 10,
+          "25_to_34": 7,
+          "35_to_44": 11,
+          "45_to_54": 8,
+          "55_to_64": 6,
+          "65_plus": 9
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 65,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 36.9,
+        "under_15_share_of_covered_percent": 21.5,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 8,
+          "15_to_24": 7,
+          "25_to_34": 9,
+          "35_to_44": 10,
+          "45_to_54": 8,
+          "55_to_64": 17,
+          "65_plus": 19
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 78,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 19.2,
+        "under_15_share_of_covered_percent": 10.3,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08335",
+      "name": "Konstanz (LKR)",
+      "mikrozensus_region_code": "08335KRSI",
+      "mikrozensus_region_label": "Konstanz, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 290,
+        "age_groups_thousand": {
+          "under_15": 41,
+          "15_to_24": 41,
+          "25_to_34": 34,
+          "35_to_44": 34,
+          "45_to_54": 36,
+          "55_to_64": 43,
+          "65_plus": 61
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 290,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 28.3,
+        "under_15_share_of_covered_percent": 14.1,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 108,
+        "age_groups_thousand": {
+          "under_15": 20,
+          "15_to_24": 15,
+          "25_to_34": 17,
+          "35_to_44": 15,
+          "45_to_54": 14,
+          "55_to_64": 11,
+          "65_plus": 16
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 108,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 32.4,
+        "under_15_share_of_covered_percent": 18.5,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 26,
+          "25_to_34": 17,
+          "35_to_44": 19,
+          "45_to_54": 22,
+          "55_to_64": 32,
+          "65_plus": 45
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 182,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.8,
+        "under_15_share_of_covered_percent": 11.5,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08336",
+      "name": "Lörrach (LKR)",
+      "mikrozensus_region_code": "08336KRSI",
+      "mikrozensus_region_label": "Lörrach, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 238,
+        "age_groups_thousand": {
+          "under_15": 33,
+          "15_to_24": 24,
+          "25_to_34": 29,
+          "35_to_44": 31,
+          "45_to_54": 31,
+          "55_to_64": 40,
+          "65_plus": 51
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 239,
+        "coverage_of_total_percent": 100.4,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.8,
+        "under_15_share_of_covered_percent": 13.8,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 96,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 13,
+          "25_to_34": 14,
+          "35_to_44": 14,
+          "45_to_54": 15,
+          "55_to_64": 10,
+          "65_plus": 12
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 96,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 32.3,
+        "under_15_share_of_covered_percent": 18.8,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": 11,
+          "25_to_34": 15,
+          "35_to_44": 17,
+          "45_to_54": 16,
+          "55_to_64": 30,
+          "65_plus": 39
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 143,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 18.2,
+        "under_15_share_of_covered_percent": 10.5,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08337",
+      "name": "Waldshut (LKR)",
+      "mikrozensus_region_code": "08337KRSI",
+      "mikrozensus_region_label": "Waldshut, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 171,
+        "age_groups_thousand": {
+          "under_15": 27,
+          "15_to_24": 16,
+          "25_to_34": 19,
+          "35_to_44": 21,
+          "45_to_54": 22,
+          "55_to_64": 22,
+          "65_plus": 44
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 171,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 25.1,
+        "under_15_share_of_covered_percent": 15.8,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 58,
+        "age_groups_thousand": {
+          "under_15": 12,
+          "15_to_24": 7,
+          "25_to_34": 7,
+          "35_to_44": 9,
+          "45_to_54": 9,
+          "55_to_64": null,
+          "65_plus": 9
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 53,
+        "coverage_of_total_percent": 91.4,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 35.8,
+        "under_15_share_of_covered_percent": 22.6,
+        "suppressed_groups": [
+          "55_to_64"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": 9,
+          "25_to_34": 12,
+          "35_to_44": 12,
+          "45_to_54": 13,
+          "55_to_64": null,
+          "65_plus": 35
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 96,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "55_to_64"
+        ]
+      }
+    },
+    {
+      "id": "08415",
+      "name": "Reutlingen (LKR)",
+      "mikrozensus_region_code": "08415KRSI",
+      "mikrozensus_region_label": "Reutlingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 286,
+        "age_groups_thousand": {
+          "under_15": 46,
+          "15_to_24": 31,
+          "25_to_34": 35,
+          "35_to_44": 36,
+          "45_to_54": 37,
+          "55_to_64": 43,
+          "65_plus": 58
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 286,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.9,
+        "under_15_share_of_covered_percent": 16.1,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 114,
+        "age_groups_thousand": {
+          "under_15": 25,
+          "15_to_24": 14,
+          "25_to_34": 16,
+          "35_to_44": 15,
+          "45_to_54": 16,
+          "55_to_64": 11,
+          "65_plus": 16
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 113,
+        "coverage_of_total_percent": 99.1,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 34.5,
+        "under_15_share_of_covered_percent": 22.1,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 17,
+          "25_to_34": 19,
+          "35_to_44": 21,
+          "45_to_54": 21,
+          "55_to_64": 32,
+          "65_plus": 42
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 173,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 22.0,
+        "under_15_share_of_covered_percent": 12.1,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08416",
+      "name": "Tübingen (LKR)",
+      "mikrozensus_region_code": "08416KRSI",
+      "mikrozensus_region_label": "Tübingen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 233,
+        "age_groups_thousand": {
+          "under_15": 33,
+          "15_to_24": 31,
+          "25_to_34": 40,
+          "35_to_44": 28,
+          "45_to_54": 22,
+          "55_to_64": 39,
+          "65_plus": 41
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 234,
+        "coverage_of_total_percent": 100.4,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 27.4,
+        "under_15_share_of_covered_percent": 14.1,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 74,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": 11,
+          "25_to_34": 13,
+          "35_to_44": 10,
+          "45_to_54": 8,
+          "55_to_64": 10,
+          "65_plus": 7
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 74,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 35.1,
+        "under_15_share_of_covered_percent": 20.3,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 18,
+          "15_to_24": 20,
+          "25_to_34": 27,
+          "35_to_44": 18,
+          "45_to_54": 14,
+          "55_to_64": 29,
+          "65_plus": 34
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 160,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 23.8,
+        "under_15_share_of_covered_percent": 11.2,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08417",
+      "name": "Zollernalbkreis (LKR)",
+      "mikrozensus_region_code": "08417KRSI",
+      "mikrozensus_region_label": "Zollernalbkreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 195,
+        "age_groups_thousand": {
+          "under_15": 31,
+          "15_to_24": 20,
+          "25_to_34": 20,
+          "35_to_44": 26,
+          "45_to_54": 23,
+          "55_to_64": 32,
+          "65_plus": 43
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 195,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.2,
+        "under_15_share_of_covered_percent": 15.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 73,
+        "age_groups_thousand": {
+          "under_15": 15,
+          "15_to_24": 11,
+          "25_to_34": 8,
+          "35_to_44": 11,
+          "45_to_54": 10,
+          "55_to_64": 9,
+          "65_plus": 9
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 73,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 35.6,
+        "under_15_share_of_covered_percent": 20.5,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 16,
+          "15_to_24": 9,
+          "25_to_34": 12,
+          "35_to_44": 15,
+          "45_to_54": 13,
+          "55_to_64": 23,
+          "65_plus": 34
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 122,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 20.5,
+        "under_15_share_of_covered_percent": 13.1,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08421",
+      "name": "Ulm (SKR)",
+      "mikrozensus_region_code": "08421KRSI",
+      "mikrozensus_region_label": "Ulm, Stadtkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 130,
+        "age_groups_thousand": {
+          "under_15": 19,
+          "15_to_24": 13,
+          "25_to_34": 23,
+          "35_to_44": 18,
+          "45_to_54": 16,
+          "55_to_64": 15,
+          "65_plus": 26
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 130,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.6,
+        "under_15_share_of_covered_percent": 14.6,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 59,
+        "age_groups_thousand": {
+          "under_15": 11,
+          "15_to_24": 8,
+          "25_to_34": 11,
+          "35_to_44": 10,
+          "45_to_54": 7,
+          "55_to_64": null,
+          "65_plus": 7
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 54,
+        "coverage_of_total_percent": 91.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 35.2,
+        "under_15_share_of_covered_percent": 20.4,
+        "suppressed_groups": [
+          "55_to_64"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 8,
+          "15_to_24": 5,
+          "25_to_34": 12,
+          "35_to_44": 8,
+          "45_to_54": 9,
+          "55_to_64": null,
+          "65_plus": 19
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 61,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "55_to_64"
+        ]
+      }
+    },
+    {
+      "id": "08425",
+      "name": "Alb-Donau-Kreis (LKR)",
+      "mikrozensus_region_code": "08425KRSI",
+      "mikrozensus_region_label": "Alb-Donau-Kreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 202,
+        "age_groups_thousand": {
+          "under_15": 30,
+          "15_to_24": 23,
+          "25_to_34": 25,
+          "35_to_44": 26,
+          "45_to_54": 25,
+          "55_to_64": 35,
+          "65_plus": 38
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 202,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.2,
+        "under_15_share_of_covered_percent": 14.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 60,
+        "age_groups_thousand": {
+          "under_15": 13,
+          "15_to_24": 8,
+          "25_to_34": 9,
+          "35_to_44": 9,
+          "45_to_54": 8,
+          "55_to_64": 7,
+          "65_plus": null
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 54,
+        "coverage_of_total_percent": 90.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 38.9,
+        "under_15_share_of_covered_percent": 24.1,
+        "suppressed_groups": [
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 17,
+          "15_to_24": 15,
+          "25_to_34": 16,
+          "35_to_44": 17,
+          "45_to_54": 17,
+          "55_to_64": 28,
+          "65_plus": null
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 110,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "65_plus"
+        ]
+      }
+    },
+    {
+      "id": "08426",
+      "name": "Biberach (LKR)",
+      "mikrozensus_region_code": "08426KRSI",
+      "mikrozensus_region_label": "Biberach, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 206,
+        "age_groups_thousand": {
+          "under_15": 31,
+          "15_to_24": 20,
+          "25_to_34": 23,
+          "35_to_44": 32,
+          "45_to_54": 23,
+          "55_to_64": 32,
+          "65_plus": 44
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 205,
+        "coverage_of_total_percent": 99.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.9,
+        "under_15_share_of_covered_percent": 15.1,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 59,
+        "age_groups_thousand": {
+          "under_15": 12,
+          "15_to_24": 7,
+          "25_to_34": null,
+          "35_to_44": 11,
+          "45_to_54": 7,
+          "55_to_64": 8,
+          "65_plus": 7
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 52,
+        "coverage_of_total_percent": 88.1,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "25_to_34"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 19,
+          "15_to_24": 13,
+          "25_to_34": null,
+          "35_to_44": 21,
+          "45_to_54": 16,
+          "55_to_64": 24,
+          "65_plus": 37
+        },
+        "published_groups": 6,
+        "complete": false,
+        "covered_thousand": 130,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "25_to_34"
+        ]
+      }
+    },
+    {
+      "id": "08435",
+      "name": "Bodenseekreis (LKR)",
+      "mikrozensus_region_code": "08435KRSI",
+      "mikrozensus_region_label": "Bodenseekreis, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 222,
+        "age_groups_thousand": {
+          "under_15": 27,
+          "15_to_24": 21,
+          "25_to_34": 26,
+          "35_to_44": 27,
+          "45_to_54": 30,
+          "55_to_64": 39,
+          "65_plus": 53
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 223,
+        "coverage_of_total_percent": 100.5,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 21.5,
+        "under_15_share_of_covered_percent": 12.1,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 77,
+        "age_groups_thousand": {
+          "under_15": 14,
+          "15_to_24": 9,
+          "25_to_34": 11,
+          "35_to_44": 12,
+          "45_to_54": 12,
+          "55_to_64": 10,
+          "65_plus": 8
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 76,
+        "coverage_of_total_percent": 98.7,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 30.3,
+        "under_15_share_of_covered_percent": 18.4,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 13,
+          "15_to_24": 12,
+          "25_to_34": 15,
+          "35_to_44": 15,
+          "45_to_54": 18,
+          "55_to_64": 29,
+          "65_plus": 45
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 147,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 17.0,
+        "under_15_share_of_covered_percent": 8.8,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08436",
+      "name": "Ravensburg (LKR)",
+      "mikrozensus_region_code": "08436KRSI",
+      "mikrozensus_region_label": "Ravensburg, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 289,
+        "age_groups_thousand": {
+          "under_15": 41,
+          "15_to_24": 29,
+          "25_to_34": 38,
+          "35_to_44": 37,
+          "45_to_54": 30,
+          "55_to_64": 47,
+          "65_plus": 66
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 288,
+        "coverage_of_total_percent": 99.7,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 24.3,
+        "under_15_share_of_covered_percent": 14.2,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 82,
+        "age_groups_thousand": {
+          "under_15": 14,
+          "15_to_24": 11,
+          "25_to_34": 13,
+          "35_to_44": 14,
+          "45_to_54": 10,
+          "55_to_64": 9,
+          "65_plus": 11
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 82,
+        "coverage_of_total_percent": 100.0,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 30.5,
+        "under_15_share_of_covered_percent": 17.1,
+        "suppressed_groups": []
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": 27,
+          "15_to_24": 18,
+          "25_to_34": 25,
+          "35_to_44": 23,
+          "45_to_54": 20,
+          "55_to_64": 38,
+          "65_plus": 55
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 206,
+        "coverage_of_total_percent": null,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 21.8,
+        "under_15_share_of_covered_percent": 13.1,
+        "suppressed_groups": []
+      }
+    },
+    {
+      "id": "08437",
+      "name": "Sigmaringen (LKR)",
+      "mikrozensus_region_code": "08437KRSI",
+      "mikrozensus_region_label": "Sigmaringen, Landkreis",
+      "shared_region": false,
+      "total": {
+        "population_thousand": 131,
+        "age_groups_thousand": {
+          "under_15": 21,
+          "15_to_24": 14,
+          "25_to_34": 16,
+          "35_to_44": 16,
+          "45_to_54": 16,
+          "55_to_64": 22,
+          "65_plus": 27
+        },
+        "published_groups": 7,
+        "complete": true,
+        "covered_thousand": 132,
+        "coverage_of_total_percent": 100.8,
+        "shares_reportable": true,
+        "under_25_share_of_covered_percent": 26.5,
+        "under_15_share_of_covered_percent": 15.9,
+        "suppressed_groups": []
+      },
+      "with_migration_background": {
+        "population_thousand": 30,
+        "age_groups_thousand": {
+          "under_15": null,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": null,
+          "45_to_54": null,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 0,
+        "complete": false,
+        "covered_thousand": null,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "under_15",
+          "15_to_24",
+          "25_to_34",
+          "35_to_44",
+          "45_to_54",
+          "55_to_64",
+          "65_plus"
+        ]
+      },
+      "without_migration_background": {
+        "population_thousand": null,
+        "age_groups_thousand": {
+          "under_15": null,
+          "15_to_24": null,
+          "25_to_34": null,
+          "35_to_44": null,
+          "45_to_54": null,
+          "55_to_64": null,
+          "65_plus": null
+        },
+        "published_groups": 0,
+        "complete": false,
+        "covered_thousand": null,
+        "coverage_of_total_percent": null,
+        "shares_reportable": false,
+        "under_25_share_of_covered_percent": null,
+        "under_15_share_of_covered_percent": null,
+        "suppressed_groups": [
+          "under_15",
+          "15_to_24",
+          "25_to_34",
+          "35_to_44",
+          "45_to_54",
+          "55_to_64",
+          "65_plus"
+        ]
+      }
+    }
+  ]
+}

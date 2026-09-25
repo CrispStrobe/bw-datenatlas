@@ -1,0 +1,238 @@
+name: Datenatlas auf GitHub Pages
+
+# Gebaut und geprüft wird bei jedem Push — das Reproduzierbarkeitstor ist nur etwas
+# wert, wenn es jede Änderung sieht. Veröffentlicht wird dagegen nur auf einer
+# Versionsmarke: Das kostenlose Kontingent bei Vercel zählt Bereitstellungen, nicht
+# Übersetzungen, und beide Ziele sollen dieselbe Fassung zeigen.
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Trotz fehlender Versionsmarke veröffentlichen'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# Per Referenz, nicht global. Mit einer gemeinsamen Gruppe bricht ein gewöhnlicher
+# Push nach main eine laufende Veröffentlichung auf einer Versionsmarke ab — genau das
+# ist hier schon dreimal passiert, als noch jeder Push veröffentlichte. Ein neuer Push
+# auf denselben Zweig soll den vorherigen Lauf weiterhin ablösen.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Ansichten aus unverändertem Datensnapshot bauen
+        run: python scripts/build_data.py
+      - name: Daten und Rechenexperiment prüfen
+        run: |
+          python -m unittest discover -s tests -p test_data.py -v
+          node --test tests/model.test.cjs
+          node --check docs/assets/app.js
+      - name: Werkzeuge für Berichte und Geodaten installieren
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install -r requirements-geography.txt
+
+      - name: Amtlichen Bericht zu Herkünften je Kreis zwischenspeichern
+        uses: actions/cache@v4
+        with:
+          path: .cache/stala-auslaender-j24.pdf
+          key: stala-auslaender-j24-v1
+
+      - name: Zensus-Gitter zu Staatsangehörigkeit zwischenspeichern
+        uses: actions/cache@v4
+        with:
+          path: .cache/zensus-staatsangehoerigkeit-100m.zip
+          key: zensus-staatsangehoerigkeit-100m-v1
+
+      - name: Zensus-Gitter zur Religion zwischenspeichern
+        uses: actions/cache@v4
+        with:
+          path: .cache/zensus-religion-100m.zip
+          key: zensus-religion-100m-v1
+      - name: BKG-Archiv zwischenspeichern
+        uses: actions/cache@v4
+        with:
+          path: .cache/vg250-2024.zip
+          key: bkg-vg250-2024-01-01-shape-v1
+      - name: Amtliche Grenzen beziehen und Gebietsschlüssel verbinden
+        run: python scripts/prepare_geometry.py
+      - name: Geodaten vor Veröffentlichung prüfen
+        run: python scripts/validate_geometry.py
+
+      - name: Herkünfte je Kreis aus dem amtlichen Bericht lesen
+        run: python scripts/prepare_district_origins.py
+
+      - name: Migrationshintergrund je Kreis aufbereiten
+        run: python scripts/prepare_district_migration.py
+
+      - name: Erwerbsbeteiligung und Bildungsstand je Kreis aufbereiten
+        run: python scripts/prepare_district_socioeconomics.py
+
+      - name: Altersgliederung je Kreis aufbereiten
+        run: python scripts/prepare_district_age.py
+
+      - name: Generationen und Familienstand je Kreis aufbereiten
+        run: python scripts/prepare_district_generations.py
+
+      - name: Altersaufbau des Landes aufbereiten
+        run: python scripts/prepare_state_age_pyramid.py
+
+      - name: Demografie je Gemeinde aufbereiten
+        run: python scripts/prepare_municipal_demography.py
+
+      # Die Anschriften liegen in einem getrennten, nicht öffentlichen Repository.
+      # Hier wird nur der Auszug auf Ortsebene zur Karte gebaut — ohne Netz, ohne
+      # Geokodierung, allein aus der eingecheckten Eingabedatei und den amtlichen
+      # Gemeindegrenzen.
+      - name: Einrichtungsverzeichnis auf Ortsebene aufbauen
+        run: python scripts/build_town_institutions.py
+
+      - name: Zensus-Gitter auf Gemeinden aggregieren
+        run: |
+          set -euo pipefail
+          ZIP=.cache/zensus-staatsangehoerigkeit-100m.zip
+          if [ ! -s "$ZIP" ]; then
+            curl -sSfL --retry 3 -o "$ZIP" \
+              'https://www.destatis.de/static/DE/zensus/gitterdaten/Staatsangehoerigkeit_nach_ausgewaehlten_Laendern.zip'
+          fi
+          unzip -o -q -j "$ZIP" '*100m-Gitter.csv' -d "$RUNNER_TEMP/zensusgrid"
+          python scripts/prepare_municipal_origins.py \
+            --grid "$RUNNER_TEMP/zensusgrid"/*100m-Gitter.csv
+          rm -rf "$RUNNER_TEMP/zensusgrid"
+
+      - name: Modellrechnung aufbauen
+        run: |
+          python scripts/build_estimate.py
+          python scripts/build_municipal_estimate.py
+          python scripts/build_timeseries.py
+          python scripts/build_bases.py
+
+      - name: Modellrechnung gegen die Zensus-Obergrenze prüfen
+        run: python scripts/check_religion_upper_bound.py
+
+      - name: Modellrechnung gegen externe Schätzungen prüfen
+        run: python scripts/check_external_references.py
+
+      # Tests the grid-to-municipality assignment that the municipal layer rests on,
+      # against an officially published table of the same quantity.
+      - name: Gitterzuordnung gegen die amtliche Gemeindetabelle prüfen
+        run: |
+          set -euo pipefail
+          ZIP=.cache/zensus-religion-100m.zip
+          if [ ! -s "$ZIP" ]; then
+            curl -sSfL --retry 3 -o "$ZIP" \
+              'https://www.destatis.de/static/DE/zensus/gitterdaten/Religion.zip'
+          fi
+          unzip -o -q -j "$ZIP" '*Religion_100m-Gitter.csv' -d "$RUNNER_TEMP/religiongrid"
+          python scripts/check_grid_aggregation.py \
+            --grid "$RUNNER_TEMP/religiongrid"/*Religion_100m-Gitter.csv
+          rm -rf "$RUNNER_TEMP/religiongrid"
+
+      - name: Modellrechnung prüfen
+        run: python -m unittest discover -s tests -p test_estimate.py -v
+
+      # Diese Dateien sind rein deterministisch aus Quellen und Skripten abgeleitet.
+      # geometry-status.json ist bewusst nicht dabei: es enthält einen Zeitstempel.
+      - name: Alle Eingangsdaten müssen im Repository liegen
+        run: python scripts/check_inputs_committed.py
+
+      - name: Modelldateien müssen reproduzierbar sein
+        run: |
+          git diff --exit-code -- \
+            docs/data/district-origins-2024-12.json \
+            docs/data/district-migration-2024.json \
+            docs/data/district-estimate.json \
+            docs/data/municipal-origins-2022.json \
+            docs/data/municipal-estimate.json \
+            docs/data/district-socioeconomics-2024.json \
+            docs/data/district-age-2024.json \
+            docs/data/district-generations-2024.json \
+            docs/data/state-age-pyramid-2025.json \
+            docs/data/municipal-demography-2022.json \
+            docs/data/institutions.json \
+            docs/data/bases.json \
+            docs/data/external-references.json \
+            docs/data/district-timeseries.json \
+            docs/data/municipal-religion-bound.json \
+          || (echo 'Neu aufgebaute Modelldateien weichen vom Repository ab.' && exit 1)
+      - name: Isolierte Parser-Tests (keine echten Kartengrenzen)
+        run: python -m unittest discover -s tests -p test_geometry.py -v
+      - name: Browserwerkzeuge installieren
+        run: |
+          python -m pip install 'playwright>=1.50,<2'
+          python -m playwright install --with-deps chromium
+      - name: SVG-Interaktion isoliert prüfen
+        run: python tests/renderer_smoke.py
+      - name: HTTP-Integration mit echten aufgebauten Geodaten testen
+        shell: bash
+        run: |
+          python -m http.server 8000 --directory docs >/tmp/atlas-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          sleep 2
+          python tests/browser_smoke.py --url http://127.0.0.1:8000 --require-geometry
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v') || inputs.deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Statische Website veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  vercel:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v') || inputs.deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: vercel
+      url: ${{ steps.deployment.outputs.url }}
+    steps:
+      - uses: actions/checkout@v6
+      # Die fertigen Dateien liegen im Repository; Vercel baut nichts, es stellt nur
+      # docs/ bereit. Deshalb --prebuilt-freie, einfache Bereitstellung des Ordners.
+      - name: Auf Vercel veröffentlichen
+        id: deployment
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          # Über die Umgebung, nicht über die Befehlszeile: ein Token im Kommando steht
+          # im Prozessbaum und in jedem Fehlerprotokoll.
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo 'Kein VERCEL_TOKEN hinterlegt — Schritt übersprungen.'
+            exit 0
+          fi
+          npx --yes vercel@latest deploy --prod --yes | tee /tmp/vercel.txt
+          echo "url=$(tail -1 /tmp/vercel.txt)" >> "$GITHUB_OUTPUT"

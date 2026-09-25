@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "official_archive_url": true,
+    "archived_reference_2024": true,
+    "sha256_recorded": true,
+    "district_keyset": true,
+    "district_count_44": true,
+    "municipal_match_minimum_1050": true,
+    "all_statistical_rows_accounted_for": true,
+    "unique_municipal_matches": true,
+    "valid_polygonal_types": true,
+    "no_synthetic_test_flag": true
+  },
+  "passed": true,
+  "matched_municipalities": 1101,
+  "unmatched": [],
+  "note": "Checks concern structural integrity and joins, not validation of population estimates. Archive URL and SHA are provenance records, not a digital signature."
+}

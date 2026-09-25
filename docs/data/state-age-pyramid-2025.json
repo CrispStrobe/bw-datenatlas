@@ -1,0 +1,327 @@
+{
+  "type": "state_age_pyramid_by_immigration_history",
+  "schema_version": "1.0",
+  "reference_period": "2025",
+  "geography": "Baden-Württemberg",
+  "source": "Statistisches Landesamt Baden-Württemberg, Mikrozensus 2025, \"Bevölkerung in Baden-Württemberg 2025 nach Altersgruppen, Geschlecht und Einwanderungsgeschichte\"",
+  "source_url": "https://www.statistik-bw.de/",
+  "unit_note": "Angaben in Tausend.",
+  "survey_note": "Mikrozensus, Stichprobenerhebung mit Zufallsfehler.",
+  "classification_note": "Einwanderungsgeschichte ist NICHT dasselbe wie Migrationshintergrund. „mit Einwanderungsgeschichte\" heißt: die Person oder beide Elternteile sind seit 1950 eingewandert; „einseitig\" heißt: ein Elternteil. Die Kreiswerte im übrigen Atlas verwenden den Migrationshintergrund und dürfen mit diesen Zahlen nicht vermischt werden.",
+  "not_a_religion_dataset": "Einwanderungsgeschichte ist keine Religionszugehörigkeit. Diese Zahlen gehen nicht in die Modellrechnung ein.",
+  "state_totals_thousand": {
+    "ohne Einwanderungsgeschichte": 6895,
+    "mit einseitiger Einwanderungsgeschichte": 708,
+    "mit Einwanderungsgeschichte": 3606
+  },
+  "state_total_thousand": 11209,
+  "age_table_sum_thousand": 11189,
+  "age_groups": [
+    "0–4",
+    "5–9",
+    "10–14",
+    "15–19",
+    "20–24",
+    "25–29",
+    "30–34",
+    "35–39",
+    "40–44",
+    "45–49",
+    "50–54",
+    "55–59",
+    "60–64",
+    "65–69",
+    "70–74",
+    "75–79",
+    "80–84",
+    "85 u. älter"
+  ],
+  "under_25_share_percent": {
+    "ohne Einwanderungsgeschichte": 22.0,
+    "mit einseitiger Einwanderungsgeschichte": 56.4,
+    "mit Einwanderungsgeschichte": 25.4
+  },
+  "suppressed_cells": [
+    {
+      "age_group": "65–69",
+      "sex": "Männlich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "70–74",
+      "sex": "Männlich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "70–74",
+      "sex": "Weiblich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "75–79",
+      "sex": "Männlich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "75–79",
+      "sex": "Weiblich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "80–84",
+      "sex": "Männlich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "80–84",
+      "sex": "Weiblich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "85 u. älter",
+      "sex": "Männlich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    },
+    {
+      "age_group": "85 u. älter",
+      "sex": "Weiblich",
+      "category": "mit einseitiger Einwanderungsgeschichte"
+    }
+  ],
+  "pyramid": [
+    {
+      "age_group": "0–4",
+      "Männlich": {
+        "without": 163,
+        "one_parent": 41,
+        "with": 72
+      },
+      "Weiblich": {
+        "without": 149,
+        "one_parent": 39,
+        "with": 67
+      }
+    },
+    {
+      "age_group": "5–9",
+      "Männlich": {
+        "without": 163,
+        "one_parent": 41,
+        "with": 89
+      },
+      "Weiblich": {
+        "without": 151,
+        "one_parent": 44,
+        "with": 89
+      }
+    },
+    {
+      "age_group": "10–14",
+      "Männlich": {
+        "without": 141,
+        "one_parent": 38,
+        "with": 92
+      },
+      "Weiblich": {
+        "without": 130,
+        "one_parent": 41,
+        "with": 87
+      }
+    },
+    {
+      "age_group": "15–19",
+      "Männlich": {
+        "without": 143,
+        "one_parent": 37,
+        "with": 102
+      },
+      "Weiblich": {
+        "without": 128,
+        "one_parent": 39,
+        "with": 90
+      }
+    },
+    {
+      "age_group": "20–24",
+      "Männlich": {
+        "without": 180,
+        "one_parent": 32,
+        "with": 121
+      },
+      "Weiblich": {
+        "without": 166,
+        "one_parent": 38,
+        "with": 106
+      }
+    },
+    {
+      "age_group": "25–29",
+      "Männlich": {
+        "without": 193,
+        "one_parent": 30,
+        "with": 143
+      },
+      "Weiblich": {
+        "without": 180,
+        "one_parent": 29,
+        "with": 130
+      }
+    },
+    {
+      "age_group": "30–34",
+      "Männlich": {
+        "without": 204,
+        "one_parent": 23,
+        "with": 161
+      },
+      "Weiblich": {
+        "without": 185,
+        "one_parent": 24,
+        "with": 144
+      }
+    },
+    {
+      "age_group": "35–39",
+      "Männlich": {
+        "without": 205,
+        "one_parent": 17,
+        "with": 166
+      },
+      "Weiblich": {
+        "without": 199,
+        "one_parent": 19,
+        "with": 158
+      }
+    },
+    {
+      "age_group": "40–44",
+      "Männlich": {
+        "without": 185,
+        "one_parent": 19,
+        "with": 164
+      },
+      "Weiblich": {
+        "without": 180,
+        "one_parent": 18,
+        "with": 161
+      }
+    },
+    {
+      "age_group": "45–49",
+      "Männlich": {
+        "without": 176,
+        "one_parent": 14,
+        "with": 147
+      },
+      "Weiblich": {
+        "without": 171,
+        "one_parent": 15,
+        "with": 156
+      }
+    },
+    {
+      "age_group": "50–54",
+      "Männlich": {
+        "without": 192,
+        "one_parent": 15,
+        "with": 133
+      },
+      "Weiblich": {
+        "without": 198,
+        "one_parent": 14,
+        "with": 138
+      }
+    },
+    {
+      "age_group": "55–59",
+      "Männlich": {
+        "without": 302,
+        "one_parent": 15,
+        "with": 109
+      },
+      "Weiblich": {
+        "without": 303,
+        "one_parent": 16,
+        "with": 109
+      }
+    },
+    {
+      "age_group": "60–64",
+      "Männlich": {
+        "without": 315,
+        "one_parent": 13,
+        "with": 101
+      },
+      "Weiblich": {
+        "without": 319,
+        "one_parent": 13,
+        "with": 97
+      }
+    },
+    {
+      "age_group": "65–69",
+      "Männlich": {
+        "without": 254,
+        "one_parent": null,
+        "with": 75
+      },
+      "Weiblich": {
+        "without": 273,
+        "one_parent": 7,
+        "with": 84
+      }
+    },
+    {
+      "age_group": "70–74",
+      "Männlich": {
+        "without": 196,
+        "one_parent": null,
+        "with": 56
+      },
+      "Weiblich": {
+        "without": 213,
+        "one_parent": null,
+        "with": 72
+      }
+    },
+    {
+      "age_group": "75–79",
+      "Männlich": {
+        "without": 150,
+        "one_parent": null,
+        "with": 39
+      },
+      "Weiblich": {
+        "without": 176,
+        "one_parent": null,
+        "with": 49
+      }
+    },
+    {
+      "age_group": "80–84",
+      "Männlich": {
+        "without": 125,
+        "one_parent": null,
+        "with": 22
+      },
+      "Weiblich": {
+        "without": 171,
+        "one_parent": null,
+        "with": 28
+      }
+    },
+    {
+      "age_group": "85 u. älter",
+      "Männlich": {
+        "without": 122,
+        "one_parent": null,
+        "with": 20
+      },
+      "Weiblich": {
+        "without": 192,
+        "one_parent": null,
+        "with": 28
+      }
+    }
+  ]
+}

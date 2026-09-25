@@ -1,0 +1,270 @@
+{
+  "type": "muslim_share_by_origin_group",
+  "schema_version": "1.0",
+  "source": "BAMF, Forschungsbericht 55, \"Zahl der Musliminnen und Muslime in Deutschland 2025\", Tabelle 2",
+  "reference_period": "2019/2020",
+  "population_base": "Bundesweit, Personen in privaten Hauptwohnsitzhaushalten (MLD)",
+  "extracted_from": "Datenpaket 4.0.0 (Schema 1.2.0)",
+  "note": "Auszug der benötigten Modellparameter aus dem Datenpaket. Die vollständige Sammlung wird nicht mitveröffentlicht, weil sie unveränderte Original-PDFs enthält.",
+  "excluded_parameters": "Die fünf abweichenden Werte aus Tabelle 1, Spalte E, sind nicht enthalten und werden nicht für Berechnungen verwendet.",
+  "caveat": "Bundesweite Anteile je Herkunftsgruppe. Sie sind keine lokalen Anteile und keine Aussage über einzelne Personen.",
+  "origin_groups": [
+    {
+      "origin_group": "Pakistan",
+      "origin_region": "Mittlerer Osten",
+      "share_percent": 96.3,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00106",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate",
+      "origin_region": "Naher Osten",
+      "share_percent": 96.2,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00128",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed",
+        "conflicting_parallel_cell_reference_identified"
+      ]
+    },
+    {
+      "origin_group": "Marokko",
+      "origin_region": "Nordafrika",
+      "share_percent": 95.1,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00134",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Afghanistan",
+      "origin_region": "Mittlerer Osten",
+      "share_percent": 93.5,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00094",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Libanon",
+      "origin_region": "Naher Osten",
+      "share_percent": 92.7,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00120",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed",
+        "conflicting_parallel_cell_reference_identified"
+      ]
+    },
+    {
+      "origin_group": "Jordanien",
+      "origin_region": "Naher Osten",
+      "share_percent": 89.3,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00116",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed",
+        "conflicting_parallel_cell_reference_identified"
+      ]
+    },
+    {
+      "origin_group": "Türkei",
+      "origin_region": "Türkei",
+      "share_percent": 87.2,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00170",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Kosovo",
+      "origin_region": "Südosteuropa",
+      "share_percent": 86.9,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00152",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Syrien",
+      "origin_region": "Naher Osten",
+      "share_percent": 86.5,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00124",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed",
+        "conflicting_parallel_cell_reference_identified"
+      ]
+    },
+    {
+      "origin_group": "Ägypten/Algerien/Libyen/Tunesien",
+      "origin_region": "Nordafrika",
+      "share_percent": 86.1,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00138",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Bangladesch",
+      "origin_region": "Mittlerer Osten",
+      "share_percent": 86,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00098",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Nordmazedonien",
+      "origin_region": "Südosteuropa",
+      "share_percent": 80,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00160",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Montenegro",
+      "origin_region": "Südosteuropa",
+      "share_percent": 64.4,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00156",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Albanien",
+      "origin_region": "Südosteuropa",
+      "share_percent": 58.1,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00144",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Bosnien-Herzegowina",
+      "origin_region": "Südosteuropa",
+      "share_percent": 57.2,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00148",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Serbien",
+      "origin_region": "Südosteuropa",
+      "share_percent": 48,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00164",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    },
+    {
+      "origin_group": "Irak",
+      "origin_region": "Naher Osten",
+      "share_percent": 37.4,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00112",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed",
+        "conflicting_parallel_cell_reference_identified"
+      ]
+    },
+    {
+      "origin_group": "Iran",
+      "origin_region": "Mittlerer Osten",
+      "share_percent": 29,
+      "observation_id": "v3_bamf_fb55_origin_model_2025_00102",
+      "source_locator": "Tabelle 2, gedruckte S. 22 / PDF-Seite 23, Spalte MLD-Anteil",
+      "quality_flags": [
+        "rounded_published",
+        "not_independent",
+        "private_main_residence_households",
+        "national_rate_not_local_rate",
+        "historical_mld_share_original_confirmed"
+      ]
+    }
+  ]
+}

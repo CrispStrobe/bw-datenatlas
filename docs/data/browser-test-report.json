@@ -1,0 +1,522 @@
+{
+  "passed": true,
+  "check_count": 128,
+  "checks": [
+    {
+      "name": "one real state outline rendered",
+      "passed": true
+    },
+    {
+      "name": "all 44 actual district polygons rendered",
+      "passed": true
+    },
+    {
+      "name": "actual district paths finite",
+      "passed": true
+    },
+    {
+      "name": "actual municipal geography present",
+      "passed": true
+    },
+    {
+      "name": "model layer not selected by default",
+      "passed": true
+    },
+    {
+      "name": "initial layer published BW state",
+      "passed": true
+    },
+    {
+      "name": "published BW range displayed",
+      "passed": true
+    },
+    {
+      "name": "initial national origin bars eight",
+      "passed": true
+    },
+    {
+      "name": "four national composition columns",
+      "passed": true
+    },
+    {
+      "name": "desktop body no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "geography status visible and honest",
+      "passed": true
+    },
+    {
+      "name": "map export matches geography availability",
+      "passed": true
+    },
+    {
+      "name": "all eighteen national origin groups visible",
+      "passed": true
+    },
+    {
+      "name": "origin scope de_regions correct row count",
+      "passed": true
+    },
+    {
+      "name": "origin scope bw_nationalities_2024 correct row count",
+      "passed": true
+    },
+    {
+      "name": "origin scope bw_nationalities_2025 correct row count",
+      "passed": true
+    },
+    {
+      "name": "origin scope bw_historical correct row count",
+      "passed": true
+    },
+    {
+      "name": "historical view visibly historical",
+      "passed": true
+    },
+    {
+      "name": "2025 nationality exact date uncertainty preserved",
+      "passed": true
+    },
+    {
+      "name": "district selection by real name",
+      "passed": true
+    },
+    {
+      "name": "district religion remains missing",
+      "passed": true
+    },
+    {
+      "name": "selecting district does not relabel national origins",
+      "passed": true
+    },
+    {
+      "name": "model controls appear with the model layer",
+      "passed": true
+    },
+    {
+      "name": "model states its coverage",
+      "passed": true
+    },
+    {
+      "name": "all 44 districts carry a modelled value",
+      "passed": true
+    },
+    {
+      "name": "model declares itself a model",
+      "passed": true
+    },
+    {
+      "name": "citizenship sums to the published lower bound",
+      "passed": true
+    },
+    {
+      "name": "citizenship sums to the published upper bound",
+      "passed": true
+    },
+    {
+      "name": "migration_background sums to the published lower bound",
+      "passed": true
+    },
+    {
+      "name": "migration_background sums to the published upper bound",
+      "passed": true
+    },
+    {
+      "name": "district shows a modelled band",
+      "passed": true
+    },
+    {
+      "name": "district profile says it is a model",
+      "passed": true
+    },
+    {
+      "name": "district profile shows the other variant too",
+      "passed": true
+    },
+    {
+      "name": "variant switch changes the displayed value",
+      "passed": true
+    },
+    {
+      "name": "variant is reflected in state",
+      "passed": true
+    },
+    {
+      "name": "municipal model renders every area",
+      "passed": true
+    },
+    {
+      "name": "municipality-free areas stay hatched",
+      "passed": true
+    },
+    {
+      "name": "municipal central values sum to the published midpoint",
+      "passed": true
+    },
+    {
+      "name": "municipality shows a modelled value",
+      "passed": true
+    },
+    {
+      "name": "municipality shows its band",
+      "passed": true
+    },
+    {
+      "name": "municipality profile says it is a model",
+      "passed": true
+    },
+    {
+      "name": "map export carries the model warning",
+      "passed": true
+    },
+    {
+      "name": "municipality shows the census ceiling",
+      "passed": true
+    },
+    {
+      "name": "ceiling is not sold as a Muslim share",
+      "passed": true
+    },
+    {
+      "name": "municipality search works",
+      "passed": true
+    },
+    {
+      "name": "municipal religion stays missing on a non-model layer",
+      "passed": true
+    },
+    {
+      "name": "employment layer covers all 44 districts",
+      "passed": true
+    },
+    {
+      "name": "employment layer disclaims religion",
+      "passed": true
+    },
+    {
+      "name": "profile shows employment for both groups",
+      "passed": true
+    },
+    {
+      "name": "profile shows education level",
+      "passed": true
+    },
+    {
+      "name": "no unemployment rate is invented",
+      "passed": true
+    },
+    {
+      "name": "profile breaks down nationalities",
+      "passed": true
+    },
+    {
+      "name": "largest nationality shown with its share",
+      "passed": true
+    },
+    {
+      "name": "named nationalities are declared partial",
+      "passed": true
+    },
+    {
+      "name": "nationality block disclaims religion",
+      "passed": true
+    },
+    {
+      "name": "other layers show only the largest nationalities",
+      "passed": true
+    },
+    {
+      "name": "removed empty coverage layer",
+      "passed": true
+    },
+    {
+      "name": "bases table lists every measure",
+      "passed": true
+    },
+    {
+      "name": "all source kinds are explained",
+      "passed": true
+    },
+    {
+      "name": "both foreign counts are named",
+      "passed": true
+    },
+    {
+      "name": "their difference is stated",
+      "passed": true
+    },
+    {
+      "name": "the official warning is quoted",
+      "passed": true
+    },
+    {
+      "name": "the different denominators are explained",
+      "passed": true
+    },
+    {
+      "name": "profile marks the projection figure",
+      "passed": true
+    },
+    {
+      "name": "profile marks the register figure",
+      "passed": true
+    },
+    {
+      "name": "profile reconciles the two",
+      "passed": true
+    },
+    {
+      "name": "basis tags render",
+      "passed": true
+    },
+    {
+      "name": "municipal age layer hatches only the genuinely missing",
+      "passed": true
+    },
+    {
+      "name": "municipal age layer is marked a full count",
+      "passed": true
+    },
+    {
+      "name": "profile shows the census age share",
+      "passed": true
+    },
+    {
+      "name": "profile states the census revision",
+      "passed": true
+    },
+    {
+      "name": "institutions drawn as points",
+      "passed": true
+    },
+    {
+      "name": "only the state outline behind them",
+      "passed": true
+    },
+    {
+      "name": "legend refuses a population reading",
+      "passed": true
+    },
+    {
+      "name": "layer note states the public-sourcing rule",
+      "passed": true
+    },
+    {
+      "name": "layer note names OpenStreetMap as the second source",
+      "passed": true
+    },
+    {
+      "name": "the layer names the directories it read",
+      "passed": true
+    },
+    {
+      "name": "the coverage panel names the directories read",
+      "passed": true
+    },
+    {
+      "name": "close institutions are grouped",
+      "passed": true
+    },
+    {
+      "name": "a group shows how many it holds",
+      "passed": true
+    },
+    {
+      "name": "choosing a group zooms in and splits it",
+      "passed": true
+    },
+    {
+      "name": "clicking an institution opens its record",
+      "passed": true
+    },
+    {
+      "name": "the record links to its public source",
+      "passed": true
+    },
+    {
+      "name": "the record refuses a population reading",
+      "passed": true
+    },
+    {
+      "name": "every institution carries a source link",
+      "passed": true
+    },
+    {
+      "name": "no personal data reaches the browser",
+      "passed": true
+    },
+    {
+      "name": "age structure drawn as three panels",
+      "passed": true
+    },
+    {
+      "name": "every panel draws every age group",
+      "passed": true
+    },
+    {
+      "name": "the three panels are named",
+      "passed": true
+    },
+    {
+      "name": "the panels share one scale",
+      "passed": true
+    },
+    {
+      "name": "pyramid legend names all three categories",
+      "passed": true
+    },
+    {
+      "name": "pyramid separates the two classifications",
+      "passed": true
+    },
+    {
+      "name": "pyramid reports suppression",
+      "passed": true
+    },
+    {
+      "name": "change layer covers all districts",
+      "passed": true
+    },
+    {
+      "name": "change layer refuses a backcast of the model",
+      "passed": true
+    },
+    {
+      "name": "profile shows the trend",
+      "passed": true
+    },
+    {
+      "name": "profile draws every year",
+      "passed": true
+    },
+    {
+      "name": "age layer hatches districts the source suppresses",
+      "passed": true
+    },
+    {
+      "name": "age layer disclaims a Muslim age structure",
+      "passed": true
+    },
+    {
+      "name": "profile compares under-25 shares",
+      "passed": true
+    },
+    {
+      "name": "profile draws all seven age cohorts",
+      "passed": true
+    },
+    {
+      "name": "second-generation layer covers all districts",
+      "passed": true
+    },
+    {
+      "name": "second-generation layer explains the correction",
+      "passed": true
+    },
+    {
+      "name": "profile names the second generation",
+      "passed": true
+    },
+    {
+      "name": "profile quantifies the invisible group",
+      "passed": true
+    },
+    {
+      "name": "forty datasets available",
+      "passed": true
+    },
+    {
+      "name": "raw percentage decimal preserved",
+      "passed": true
+    },
+    {
+      "name": "raw explorer filters not silently editing source",
+      "passed": true
+    },
+    {
+      "name": "demographic layer does not claim religion",
+      "passed": true
+    },
+    {
+      "name": "mobile body no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile main controls visible",
+      "passed": true
+    },
+    {
+      "name": "about dialog closed until requested",
+      "passed": true
+    },
+    {
+      "name": "about dialog opens from header",
+      "passed": true
+    },
+    {
+      "name": "provider identification present",
+      "passed": true
+    },
+    {
+      "name": "contact present",
+      "passed": true
+    },
+    {
+      "name": "privacy and disclaimer present",
+      "passed": true
+    },
+    {
+      "name": "BKG attribution and licence linked",
+      "passed": true
+    },
+    {
+      "name": "about states no local religion estimate is available",
+      "passed": true
+    },
+    {
+      "name": "about says the layers are modelled",
+      "passed": true
+    },
+    {
+      "name": "about build version from shipped data",
+      "passed": true
+    },
+    {
+      "name": "about reports the real geometry reference",
+      "passed": true
+    },
+    {
+      "name": "about reports a full archive checksum",
+      "passed": true
+    },
+    {
+      "name": "about dialog does not overflow on mobile",
+      "passed": true
+    },
+    {
+      "name": "about dialog closes via Escape",
+      "passed": true
+    },
+    {
+      "name": "about dialog reachable from footer",
+      "passed": true
+    },
+    {
+      "name": "about dialog closes via button",
+      "passed": true
+    },
+    {
+      "name": "no content security policy violations",
+      "passed": true
+    },
+    {
+      "name": "no uncaught browser errors",
+      "passed": true
+    }
+  ],
+  "uncaught_errors": [],
+  "mode": "normal_http",
+  "real_geometry_present": true,
+  "limitations": []
+}

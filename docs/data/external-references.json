@@ -1,0 +1,85 @@
+{
+  "type": "external_reference_checks",
+  "schema_version": "1.0",
+  "purpose": "Vergleich mit zwei unabhängigen Schätzungen, die nicht in das Modell eingehen. Beide sind älter; verglichen werden räumliches Muster und plausibles Wachstum, nicht die Werte selbst.",
+  "stuttgart": {
+    "persons": 59000,
+    "percent": 10.0,
+    "reference": "2017-12-31",
+    "source": "Landeshauptstadt Stuttgart, Statistisches Amt: \"Muslime in Stuttgart 2017\", Statistik und Informationsmanagement, Monatsheft 7/2019",
+    "method": "Schätzung aus dem städtischen Melderegister nach Herkunft",
+    "modelled_persons": 77629,
+    "modelled_percent": 12.7,
+    "growth_factor_2017_to_2025": 1.32,
+    "reading": "Die Stadt schätzte 2017 rund 10 Prozent. Das Modell kommt für 2025 auf gut 12 Prozent. Der Abstand entspricht dem Zuwachs der muslimischen Bevölkerung seit 2017 und widerspricht der städtischen Schätzung nicht."
+  },
+  "kartenseite": {
+    "source": "kartenseite.wordpress.com, \"Muslime in Baden-Württemberg, Gemeinden\" (2017), Zensus 2011 mal bundesweite Anteile von 18 Herkunftsländern",
+    "basis": "Zensus 2011",
+    "cities": [
+      {
+        "name": "Heilbronn",
+        "published_2011_percent": 13.3,
+        "modelled_percent": 22.31,
+        "factor": 1.68
+      },
+      {
+        "name": "Mannheim",
+        "published_2011_percent": 10.8,
+        "modelled_percent": 15.39,
+        "factor": 1.43
+      },
+      {
+        "name": "Ulm",
+        "published_2011_percent": 9.6,
+        "modelled_percent": 16.31,
+        "factor": 1.7
+      },
+      {
+        "name": "Pforzheim",
+        "published_2011_percent": 9.5,
+        "modelled_percent": 16.71,
+        "factor": 1.76
+      },
+      {
+        "name": "Stuttgart",
+        "published_2011_percent": 9.4,
+        "modelled_percent": 12.66,
+        "factor": 1.35
+      },
+      {
+        "name": "Reutlingen",
+        "published_2011_percent": 6.6,
+        "modelled_percent": 12.43,
+        "factor": 1.88
+      },
+      {
+        "name": "Heidelberg",
+        "published_2011_percent": 5.7,
+        "modelled_percent": 7.73,
+        "factor": 1.36
+      },
+      {
+        "name": "Karlsruhe",
+        "published_2011_percent": 5.7,
+        "modelled_percent": 8.72,
+        "factor": 1.53
+      },
+      {
+        "name": "Freiburg im Breisgau",
+        "published_2011_percent": 4.8,
+        "modelled_percent": 7.43,
+        "factor": 1.55
+      }
+    ],
+    "spearman_rank_correlation": 0.933,
+    "median_level_factor": 1.55,
+    "expected_factor_from_national_growth": 1.49,
+    "reading": "Die räumliche Reihenfolge stimmt fast vollständig überein. Das höhere Niveau entspricht dem bundesweiten Zuwachs zwischen den Bezugszeiten und ist kein Widerspruch."
+  },
+  "what_this_does_not_show": [
+    "Keine der beiden Referenzen belegt die Richtigkeit einzelner Gemeindewerte.",
+    "Die Stuttgarter Schätzung beruht auf Einzeldaten des Melderegisters, die diesem Projekt nicht vorliegen; sie ist die bessere Quelle für Stuttgart.",
+    "Die Karte von 2011 stützt sich je Gemeinde auf 18 Herkunftsländer, dieses Modell auf zwei. Bei der Binnenverteilung in den Kreisen ist ihre Datengrundlage die reichere."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-09-23T05:14:53.216472+00:00",
+  "local_checks_passed": true,
+  "named_tests_and_browser_assertions": 64,
+  "browser_tests_skipped": false,
+  "results": [
+    {
+      "name": "data_consistency",
+      "passed": true,
+      "test_count": 20,
+      "some_tests_skipped": false,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_data.py",
+        "-v"
+      ],
+      "output": "test_2026_flows_are_not_stock (test_data.DataTests.test_2026_flows_are_not_stock) ... ok\ntest_bw_estimate_is_published_range_not_point (test_data.DataTests.test_bw_estimate_is_published_range_not_point) ... ok\ntest_csv_view_matches_json (test_data.DataTests.test_csv_view_matches_json) ... ok\ntest_district_input_values_and_derived_percentages (test_data.DataTests.test_district_input_values_and_derived_percentages) ... ok\ntest_district_sums_match_published_state (test_data.DataTests.test_district_sums_match_published_state) ... ok\ntest_districts_unique_44 (test_data.DataTests.test_districts_unique_44) ... ok\ntest_fourteen_state_units_not_sixteen_invented_estimates (test_data.DataTests.test_fourteen_state_units_not_sixteen_invented_estimates) ... ok\ntest_input_observations_unchanged (test_data.DataTests.test_input_observations_unchanged) ... ok\ntest_input_snapshot_hash (test_data.DataTests.test_input_snapshot_hash) ... ok\ntest_municipalities_unique_1101 (test_data.DataTests.test_municipalities_unique_1101) ... ok\ntest_municipality_sums_and_dates (test_data.DataTests.test_municipality_sums_and_dates) ... ok\ntest_national_origins_are_national_not_bw (test_data.DataTests.test_national_origins_are_national_not_bw) ... ok\ntest_nationality_subsets_kept_separate (test_data.DataTests.test_nationality_subsets_kept_separate) ... ok\ntest_no_local_religion_observations (test_data.DataTests.test_no_local_religion_observations) ... ok\ntest_no_remote_browser_libraries_or_trackers (test_data.DataTests.test_no_remote_browser_libraries_or_trackers) ... ok\ntest_observation_counts_and_ids (test_data.DataTests.test_observation_counts_and_ids) ... ok\ntest_official_keys_not_invented_before_crosswalk (test_data.DataTests.test_official_keys_not_invented_before_crosswalk) ... ok\ntest_origin_shares_have_explicit_denominator (test_data.DataTests.test_origin_shares_have_explicit_denominator) ... ok\ntest_source_audit_comparison (test_data.DataTests.test_source_audit_comparison) ... ok\ntest_sources_and_observation_references_exist (test_data.DataTests.test_sources_and_observation_references_exist) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.553s\n\nOK\n"
+    },
+    {
+      "name": "scenario_model",
+      "passed": true,
+      "test_count": 8,
+      "some_tests_skipped": false,
+      "command": [
+        "node",
+        "--test",
+        "tests/model.test.cjs"
+      ],
+      "output": "TAP version 13\n# Subtest: scenario preserves total across 33 choices of weights and totals\nok 1 - scenario preserves total across 33 choices of weights and totals\n  ---\n  duration_ms: 5.674132\n  type: 'test'\n  ...\n# Subtest: weight zero is population-only and not an empirical local estimate\nok 2 - weight zero is population-only and not an empirical local estimate\n  ---\n  duration_ms: 0.735316\n  type: 'test'\n  ...\n# Subtest: weight one is foreign-citizenship-only\nok 3 - weight one is foreign-citizenship-only\n  ---\n  duration_ms: 2.5851\n  type: 'test'\n  ...\n# Subtest: the model does not mutate its source rows\nok 4 - the model does not mutate its source rows\n  ---\n  duration_ms: 0.971344\n  type: 'test'\n  ...\n# Subtest: nonfinite, negative and out-of-range controls rejected\nok 5 - nonfinite, negative and out-of-range controls rejected\n  ---\n  duration_ms: 0.798374\n  type: 'test'\n  ...\n# Subtest: empty, duplicate and invalid source rows rejected\nok 6 - empty, duplicate and invalid source rows rejected\n  ---\n  duration_ms: 0.568227\n  type: 'test'\n  ...\n# Subtest: zero is not treated as missing; null and NaN are missing\nok 7 - zero is not treated as missing; null and NaN are missing\n  ---\n  duration_ms: 0.428702\n  type: 'test'\n  ...\n# Subtest: search handles German diacritics\nok 8 - search handles German diacritics\n  ---\n  duration_ms: 0.868612\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 258.340454\n"
+    },
+    {
+      "name": "geometry_parser_synthetic",
+      "passed": true,
+      "test_count": 2,
+      "some_tests_skipped": false,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_geometry.py",
+        "-v"
+      ],
+      "output": "test_exact_name_normalization (test_geometry.GeometryUnitTests.test_exact_name_normalization) ... ok\ntest_pipeline_with_temporary_synthetic_archive (test_geometry.GeometryUnitTests.test_pipeline_with_temporary_synthetic_archive) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 6.690s\n\nOK\n"
+    },
+    {
+      "name": "javascript_syntax",
+      "passed": true,
+      "test_count": 0,
+      "some_tests_skipped": false,
+      "command": [
+        "node",
+        "--check",
+        "docs/assets/app.js"
+      ],
+      "output": ""
+    },
+    {
+      "name": "browser_controls",
+      "passed": true,
+      "test_count": 34,
+      "some_tests_skipped": false,
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/browser_smoke.py"
+      ],
+      "output": "PASS initial scenario consent off\nPASS initial layer published BW state\nPASS published BW range displayed\nPASS initial national origin bars eight\nPASS four national composition columns\nPASS desktop body no horizontal overflow\nPASS geography status visible and honest\nPASS map export matches geography availability\nPASS all eighteen national origin groups visible\nPASS origin scope de_regions correct row count\nPASS origin scope bw_nationalities_2024 correct row count\nPASS origin scope bw_nationalities_2025 correct row count\nPASS origin scope bw_historical correct row count\nPASS historical view visibly historical\nPASS 2025 nationality exact date uncertainty preserved\nPASS district selection by real name\nPASS district religion remains missing\nPASS selecting district does not relabel national origins\nPASS scenario requires explicit consent\nPASS scenario has 44 allocations\nPASS scenario warning in selected district\nPASS scenario sums to chosen total\nPASS weight slider updates explicit state\nPASS total slider updates allocations\nPASS withdraw consent removes allocations\nPASS municipality search works\nPASS municipal missing religion not replaced by scenario\nPASS forty datasets available\nPASS raw percentage decimal preserved\nPASS raw explorer filters not silently editing source\nPASS demographic layer does not claim religion\nPASS mobile body no horizontal overflow\nPASS mobile main controls visible\nPASS no uncaught browser errors\n{\"passed\": true, \"check_count\": 34, \"mode\": \"dom_injection_with_identical_local_research_json\", \"real_geometry_present\": false}\n"
+    }
+  ],
+  "real_bkg_archive_download_in_authoring_environment": "not_completed_network_blocked",
+  "actual_bkg_municipal_crosswalk": "not_verified_in_authoring_environment",
+  "real_http_github_pages_integration": "not_executed_in_authoring_environment",
+  "remote_repository_created": false,
+  "separate_renderer_report": "renderer-test-report.json; generated by a separate invocation, not part of this runner",
+  "release_status": "application_prepared_real_geodata_build_and_deployment_pending",
+  "interpretation": "Local consistency, model arithmetic, interface, and isolated artificial-shape tests. Not scientific validation of source estimates and not evidence of a completed real-map deployment."
+}

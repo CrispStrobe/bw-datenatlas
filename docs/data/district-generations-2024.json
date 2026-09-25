@@ -1,0 +1,1165 @@
+{
+  "type": "district_generations_and_marital_status",
+  "schema_version": "1.0",
+  "reference_period": "2024",
+  "source": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0504, Grundprogramm des Mikrozensus",
+  "source_url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0504",
+  "population_base": "Bevölkerung in Hauptwohnsitzhaushalten, beide Geschlechter",
+  "second_generation_definition": "Mit Migrationshintergrund, ohne eigene Migrationserfahrung, deutsche Staatsangehörigkeit: hier geboren und deutscher Pass.",
+  "invisible_definition": "Bevölkerung mit Migrationshintergrund abzüglich der ausländischen Staatsangehörigen desselben Kreises. Diese Menschen sind in der Ausländerstatistik nicht sichtbar.",
+  "why_it_matters": "Genau diese Gruppe begründet die Korrektur der Modellrechnung um Eingebürgerte und hier geborene Nachkommen.",
+  "not_used_for_religion_model": "Diese Angaben gehen nicht in die Modellrechnung ein. Der Familienstand ist kein Merkmal der Religionszugehörigkeit.",
+  "survey_note": "Stichprobenerhebung mit Zufallsfehler; Angaben in Tausend.",
+  "combined_regions": {
+    "08217KRSI": [
+      "08211",
+      "08216"
+    ]
+  },
+  "districts": [
+    {
+      "id": "08111",
+      "name": "Stuttgart (SKR)",
+      "mikrozensus_region_code": "08111KRSI",
+      "mikrozensus_region_label": "Stuttgart, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 305,
+      "second_generation_german_thousand": 84,
+      "second_generation_share_of_mh_percent": 27.5,
+      "foreign_citizens_persons": 171100,
+      "invisible_to_citizenship_persons": 133900,
+      "second_generation_share_of_invisible_percent": 62.7,
+      "marital_status_thousand": {
+        "ledig": 157,
+        "verheiratet": 116,
+        "geschieden": 22,
+        "verwitwet": 10
+      },
+      "marital_status_complete": true,
+      "marital_status_share_percent": {
+        "ledig": 51.5,
+        "verheiratet": 38.0,
+        "geschieden": 7.2,
+        "verwitwet": 3.3
+      }
+    },
+    {
+      "id": "08115",
+      "name": "Böblingen (LKR)",
+      "mikrozensus_region_code": "08115KRSI",
+      "mikrozensus_region_label": "Böblingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 175,
+      "second_generation_german_thousand": 58,
+      "second_generation_share_of_mh_percent": 33.1,
+      "foreign_citizens_persons": 88855,
+      "invisible_to_citizenship_persons": 86145,
+      "second_generation_share_of_invisible_percent": 67.3,
+      "marital_status_thousand": {
+        "ledig": 75,
+        "verheiratet": 82,
+        "geschieden": 11,
+        "verwitwet": 7
+      },
+      "marital_status_complete": true,
+      "marital_status_share_percent": {
+        "ledig": 42.9,
+        "verheiratet": 46.9,
+        "geschieden": 6.3,
+        "verwitwet": 4.0
+      }
+    },
+    {
+      "id": "08116",
+      "name": "Esslingen (LKR)",
+      "mikrozensus_region_code": "08116KRSI",
+      "mikrozensus_region_label": "Esslingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 212,
+      "second_generation_german_thousand": 62,
+      "second_generation_share_of_mh_percent": 29.2,
+      "foreign_citizens_persons": 114195,
+      "invisible_to_citizenship_persons": 97805,
+      "second_generation_share_of_invisible_percent": 63.4,
+      "marital_status_thousand": {
+        "ledig": 92,
+        "verheiratet": 97,
+        "geschieden": 14,
+        "verwitwet": 9
+      },
+      "marital_status_complete": true,
+      "marital_status_share_percent": {
+        "ledig": 43.4,
+        "verheiratet": 45.8,
+        "geschieden": 6.6,
+        "verwitwet": 4.2
+      }
+    },
+    {
+      "id": "08117",
+      "name": "Göppingen (LKR)",
+      "mikrozensus_region_code": "08117KRSI",
+      "mikrozensus_region_label": "Göppingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 104,
+      "second_generation_german_thousand": 33,
+      "second_generation_share_of_mh_percent": 31.7,
+      "foreign_citizens_persons": 53775,
+      "invisible_to_citizenship_persons": 50225,
+      "second_generation_share_of_invisible_percent": 65.7,
+      "marital_status_thousand": {
+        "ledig": 44,
+        "verheiratet": 49,
+        "geschieden": 6,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 44.4,
+        "verheiratet": 49.5,
+        "geschieden": 6.1,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08118",
+      "name": "Ludwigsburg (LKR)",
+      "mikrozensus_region_code": "08118KRSI",
+      "mikrozensus_region_label": "Ludwigsburg, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 226,
+      "second_generation_german_thousand": 80,
+      "second_generation_share_of_mh_percent": 35.4,
+      "foreign_citizens_persons": 120085,
+      "invisible_to_citizenship_persons": 105915,
+      "second_generation_share_of_invisible_percent": 75.5,
+      "marital_status_thousand": {
+        "ledig": 101,
+        "verheiratet": 104,
+        "geschieden": 13,
+        "verwitwet": 8
+      },
+      "marital_status_complete": true,
+      "marital_status_share_percent": {
+        "ledig": 44.7,
+        "verheiratet": 46.0,
+        "geschieden": 5.8,
+        "verwitwet": 3.5
+      }
+    },
+    {
+      "id": "08119",
+      "name": "Rems-Murr-Kreis (LKR)",
+      "mikrozensus_region_code": "08119KRSI",
+      "mikrozensus_region_label": "Rems-Murr-Kreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 173,
+      "second_generation_german_thousand": 63,
+      "second_generation_share_of_mh_percent": 36.4,
+      "foreign_citizens_persons": 84695,
+      "invisible_to_citizenship_persons": 88305,
+      "second_generation_share_of_invisible_percent": 71.3,
+      "marital_status_thousand": {
+        "ledig": 82,
+        "verheiratet": 76,
+        "geschieden": 9,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 49.1,
+        "verheiratet": 45.5,
+        "geschieden": 5.4,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08121",
+      "name": "Heilbronn (SKR)",
+      "mikrozensus_region_code": "08121KRSI",
+      "mikrozensus_region_label": "Heilbronn, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 73,
+      "second_generation_german_thousand": 21,
+      "second_generation_share_of_mh_percent": 28.8,
+      "foreign_citizens_persons": 43075,
+      "invisible_to_citizenship_persons": 29925,
+      "second_generation_share_of_invisible_percent": 70.2,
+      "marital_status_thousand": {
+        "ledig": 37,
+        "verheiratet": 28,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 56.9,
+        "verheiratet": 43.1,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08125",
+      "name": "Heilbronn (LKR)",
+      "mikrozensus_region_code": "08125KRSI",
+      "mikrozensus_region_label": "Heilbronn, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 135,
+      "second_generation_german_thousand": 43,
+      "second_generation_share_of_mh_percent": 31.9,
+      "foreign_citizens_persons": 65795,
+      "invisible_to_citizenship_persons": 69205,
+      "second_generation_share_of_invisible_percent": 62.1,
+      "marital_status_thousand": {
+        "ledig": 59,
+        "verheiratet": 62,
+        "geschieden": 7,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 46.1,
+        "verheiratet": 48.4,
+        "geschieden": 5.5,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08126",
+      "name": "Hohenlohekreis (LKR)",
+      "mikrozensus_region_code": "08126KRSI",
+      "mikrozensus_region_label": "Hohenlohekreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 51,
+      "second_generation_german_thousand": 13,
+      "second_generation_share_of_mh_percent": 25.5,
+      "foreign_citizens_persons": 17170,
+      "invisible_to_citizenship_persons": 33830,
+      "second_generation_share_of_invisible_percent": 38.4,
+      "marital_status_thousand": {
+        "ledig": 23,
+        "verheiratet": 24,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.9,
+        "verheiratet": 51.1,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08127",
+      "name": "Schwäbisch Hall (LKR)",
+      "mikrozensus_region_code": "08127KRSI",
+      "mikrozensus_region_label": "Schwäbisch Hall, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 68,
+      "second_generation_german_thousand": 19,
+      "second_generation_share_of_mh_percent": 27.9,
+      "foreign_citizens_persons": 32840,
+      "invisible_to_citizenship_persons": 35160,
+      "second_generation_share_of_invisible_percent": 54.0,
+      "marital_status_thousand": {
+        "ledig": 32,
+        "verheiratet": 31,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.8,
+        "verheiratet": 49.2,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08128",
+      "name": "Main-Tauber-Kreis (LKR)",
+      "mikrozensus_region_code": "08128KRSI",
+      "mikrozensus_region_label": "Main-Tauber-Kreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 43,
+      "second_generation_german_thousand": 11,
+      "second_generation_share_of_mh_percent": 25.6,
+      "foreign_citizens_persons": 17755,
+      "invisible_to_citizenship_persons": 25245,
+      "second_generation_share_of_invisible_percent": 43.6,
+      "marital_status_thousand": {
+        "ledig": 19,
+        "verheiratet": 20,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.7,
+        "verheiratet": 51.3,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08135",
+      "name": "Heidenheim (LKR)",
+      "mikrozensus_region_code": "08135KRSI",
+      "mikrozensus_region_label": "Heidenheim, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 47,
+      "second_generation_german_thousand": 16,
+      "second_generation_share_of_mh_percent": 34.0,
+      "foreign_citizens_persons": 26970,
+      "invisible_to_citizenship_persons": 20030,
+      "second_generation_share_of_invisible_percent": 79.9,
+      "marital_status_thousand": {
+        "ledig": 20,
+        "verheiratet": 21,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.8,
+        "verheiratet": 51.2,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08136",
+      "name": "Ostalbkreis (LKR)",
+      "mikrozensus_region_code": "08136KRSI",
+      "mikrozensus_region_label": "Ostalbkreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 107,
+      "second_generation_german_thousand": 36,
+      "second_generation_share_of_mh_percent": 33.6,
+      "foreign_citizens_persons": 45325,
+      "invisible_to_citizenship_persons": 61675,
+      "second_generation_share_of_invisible_percent": 58.4,
+      "marital_status_thousand": {
+        "ledig": 50,
+        "verheiratet": 46,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.1,
+        "verheiratet": 47.9,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08212",
+      "name": "Karlsruhe (SKR)",
+      "mikrozensus_region_code": "08212KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 117,
+      "second_generation_german_thousand": 35,
+      "second_generation_share_of_mh_percent": 29.9,
+      "foreign_citizens_persons": 69830,
+      "invisible_to_citizenship_persons": 47170,
+      "second_generation_share_of_invisible_percent": 74.2,
+      "marital_status_thousand": {
+        "ledig": 61,
+        "verheiratet": 44,
+        "geschieden": 9,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 53.5,
+        "verheiratet": 38.6,
+        "geschieden": 7.9,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08215",
+      "name": "Karlsruhe (LKR)",
+      "mikrozensus_region_code": "08215KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 151,
+      "second_generation_german_thousand": 46,
+      "second_generation_share_of_mh_percent": 30.5,
+      "foreign_citizens_persons": 76105,
+      "invisible_to_citizenship_persons": 74895,
+      "second_generation_share_of_invisible_percent": 61.4,
+      "marital_status_thousand": {
+        "ledig": 67,
+        "verheiratet": 69,
+        "geschieden": 10,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 45.9,
+        "verheiratet": 47.3,
+        "geschieden": 6.8,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08211",
+      "name": "Baden-Baden (SKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "migration_background_thousand": 115,
+      "second_generation_german_thousand": 33,
+      "second_generation_share_of_mh_percent": 28.7,
+      "foreign_citizens_persons": 57670,
+      "invisible_to_citizenship_persons": 57330,
+      "second_generation_share_of_invisible_percent": 57.6,
+      "marital_status_thousand": {
+        "ledig": 54,
+        "verheiratet": 48,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.9,
+        "verheiratet": 47.1,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08216",
+      "name": "Rastatt (LKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "migration_background_thousand": 115,
+      "second_generation_german_thousand": 33,
+      "second_generation_share_of_mh_percent": 28.7,
+      "foreign_citizens_persons": 57670,
+      "invisible_to_citizenship_persons": 57330,
+      "second_generation_share_of_invisible_percent": 57.6,
+      "marital_status_thousand": {
+        "ledig": 54,
+        "verheiratet": 48,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.9,
+        "verheiratet": 47.1,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08221",
+      "name": "Heidelberg (SKR)",
+      "mikrozensus_region_code": "08221KRSI",
+      "mikrozensus_region_label": "Heidelberg, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 72,
+      "second_generation_german_thousand": 18,
+      "second_generation_share_of_mh_percent": 25.0,
+      "foreign_citizens_persons": 33225,
+      "invisible_to_citizenship_persons": 38775,
+      "second_generation_share_of_invisible_percent": 46.4,
+      "marital_status_thousand": {
+        "ledig": 40,
+        "verheiratet": 23,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 63.5,
+        "verheiratet": 36.5,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08222",
+      "name": "Mannheim (SKR)",
+      "mikrozensus_region_code": "08222KRSI",
+      "mikrozensus_region_label": "Mannheim, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 154,
+      "second_generation_german_thousand": 46,
+      "second_generation_share_of_mh_percent": 29.9,
+      "foreign_citizens_persons": 96255,
+      "invisible_to_citizenship_persons": 57745,
+      "second_generation_share_of_invisible_percent": 79.7,
+      "marital_status_thousand": {
+        "ledig": 77,
+        "verheiratet": 64,
+        "geschieden": 9,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 51.3,
+        "verheiratet": 42.7,
+        "geschieden": 6.0,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08225",
+      "name": "Neckar-Odenwald-Kreis (LKR)",
+      "mikrozensus_region_code": "08225KRSI",
+      "mikrozensus_region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 42,
+      "second_generation_german_thousand": 12,
+      "second_generation_share_of_mh_percent": 28.6,
+      "foreign_citizens_persons": 19210,
+      "invisible_to_citizenship_persons": 22790,
+      "second_generation_share_of_invisible_percent": 52.7,
+      "marital_status_thousand": {
+        "ledig": 17,
+        "verheiratet": 21,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 44.7,
+        "verheiratet": 55.3,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08226",
+      "name": "Rhein-Neckar-Kreis (LKR)",
+      "mikrozensus_region_code": "08226KRSI",
+      "mikrozensus_region_label": "Rhein-Neckar-Kreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 198,
+      "second_generation_german_thousand": 71,
+      "second_generation_share_of_mh_percent": 35.9,
+      "foreign_citizens_persons": 87480,
+      "invisible_to_citizenship_persons": 110520,
+      "second_generation_share_of_invisible_percent": 64.2,
+      "marital_status_thousand": {
+        "ledig": 91,
+        "verheiratet": 89,
+        "geschieden": 11,
+        "verwitwet": 7
+      },
+      "marital_status_complete": true,
+      "marital_status_share_percent": {
+        "ledig": 46.0,
+        "verheiratet": 44.9,
+        "geschieden": 5.6,
+        "verwitwet": 3.5
+      }
+    },
+    {
+      "id": "08231",
+      "name": "Pforzheim (SKR)",
+      "mikrozensus_region_code": "08231KRSI",
+      "mikrozensus_region_label": "Pforzheim, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 80,
+      "second_generation_german_thousand": 22,
+      "second_generation_share_of_mh_percent": 27.5,
+      "foreign_citizens_persons": 42635,
+      "invisible_to_citizenship_persons": 37365,
+      "second_generation_share_of_invisible_percent": 58.9,
+      "marital_status_thousand": {
+        "ledig": 37,
+        "verheiratet": 34,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.1,
+        "verheiratet": 47.9,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08235",
+      "name": "Calw (LKR)",
+      "mikrozensus_region_code": "08235KRSI",
+      "mikrozensus_region_label": "Calw, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 61,
+      "second_generation_german_thousand": 19,
+      "second_generation_share_of_mh_percent": 31.1,
+      "foreign_citizens_persons": 30500,
+      "invisible_to_citizenship_persons": 30500,
+      "second_generation_share_of_invisible_percent": 62.3,
+      "marital_status_thousand": {
+        "ledig": 27,
+        "verheiratet": 27,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.0,
+        "verheiratet": 50.0,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08236",
+      "name": "Enzkreis (LKR)",
+      "mikrozensus_region_code": "08236KRSI",
+      "mikrozensus_region_label": "Enzkreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 70,
+      "second_generation_german_thousand": 25,
+      "second_generation_share_of_mh_percent": 35.7,
+      "foreign_citizens_persons": 32960,
+      "invisible_to_citizenship_persons": 37040,
+      "second_generation_share_of_invisible_percent": 67.5,
+      "marital_status_thousand": {
+        "ledig": 32,
+        "verheiratet": 32,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.0,
+        "verheiratet": 50.0,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08237",
+      "name": "Freudenstadt (LKR)",
+      "mikrozensus_region_code": "08237KRSI",
+      "mikrozensus_region_label": "Freudenstadt, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 42,
+      "second_generation_german_thousand": 14,
+      "second_generation_share_of_mh_percent": 33.3,
+      "foreign_citizens_persons": 19300,
+      "invisible_to_citizenship_persons": 22700,
+      "second_generation_share_of_invisible_percent": 61.7,
+      "marital_status_thousand": {
+        "ledig": 20,
+        "verheiratet": 18,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.6,
+        "verheiratet": 47.4,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08311",
+      "name": "Freiburg im Breisgau (SKR)",
+      "mikrozensus_region_code": "08311KRSI",
+      "mikrozensus_region_label": "Freiburg im Breisgau, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 91,
+      "second_generation_german_thousand": 28,
+      "second_generation_share_of_mh_percent": 30.8,
+      "foreign_citizens_persons": 45775,
+      "invisible_to_citizenship_persons": 45225,
+      "second_generation_share_of_invisible_percent": 61.9,
+      "marital_status_thousand": {
+        "ledig": 52,
+        "verheiratet": 30,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 63.4,
+        "verheiratet": 36.6,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08315",
+      "name": "Breisgau-Hochschwarzwald (LKR)",
+      "mikrozensus_region_code": "08315KRSI",
+      "mikrozensus_region_label": "Breisgau-Hochschwarzwald, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 78,
+      "second_generation_german_thousand": 28,
+      "second_generation_share_of_mh_percent": 35.9,
+      "foreign_citizens_persons": 40410,
+      "invisible_to_citizenship_persons": 37590,
+      "second_generation_share_of_invisible_percent": 74.5,
+      "marital_status_thousand": {
+        "ledig": 38,
+        "verheiratet": 33,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 53.5,
+        "verheiratet": 46.5,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08316",
+      "name": "Emmendingen (LKR)",
+      "mikrozensus_region_code": "08316KRSI",
+      "mikrozensus_region_label": "Emmendingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 50,
+      "second_generation_german_thousand": 15,
+      "second_generation_share_of_mh_percent": 30.0,
+      "foreign_citizens_persons": 24550,
+      "invisible_to_citizenship_persons": 25450,
+      "second_generation_share_of_invisible_percent": 58.9,
+      "marital_status_thousand": {
+        "ledig": 24,
+        "verheiratet": 22,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.2,
+        "verheiratet": 47.8,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08317",
+      "name": "Ortenaukreis (LKR)",
+      "mikrozensus_region_code": "08317KRSI",
+      "mikrozensus_region_label": "Ortenaukreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 147,
+      "second_generation_german_thousand": 45,
+      "second_generation_share_of_mh_percent": 30.6,
+      "foreign_citizens_persons": 72550,
+      "invisible_to_citizenship_persons": 74450,
+      "second_generation_share_of_invisible_percent": 60.4,
+      "marital_status_thousand": {
+        "ledig": 70,
+        "verheiratet": 63,
+        "geschieden": 8,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 49.6,
+        "verheiratet": 44.7,
+        "geschieden": 5.7,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08325",
+      "name": "Rottweil (LKR)",
+      "mikrozensus_region_code": "08325KRSI",
+      "mikrozensus_region_label": "Rottweil, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 48,
+      "second_generation_german_thousand": 14,
+      "second_generation_share_of_mh_percent": 29.2,
+      "foreign_citizens_persons": 21885,
+      "invisible_to_citizenship_persons": 26115,
+      "second_generation_share_of_invisible_percent": 53.6,
+      "marital_status_thousand": {
+        "ledig": 25,
+        "verheiratet": 18,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 58.1,
+        "verheiratet": 41.9,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08326",
+      "name": "Schwarzwald-Baar-Kreis (LKR)",
+      "mikrozensus_region_code": "08326KRSI",
+      "mikrozensus_region_label": "Schwarzwald-Baar-Kreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 87,
+      "second_generation_german_thousand": 23,
+      "second_generation_share_of_mh_percent": 26.4,
+      "foreign_citizens_persons": 44500,
+      "invisible_to_citizenship_persons": 42500,
+      "second_generation_share_of_invisible_percent": 54.1,
+      "marital_status_thousand": {
+        "ledig": 42,
+        "verheiratet": 38,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 52.5,
+        "verheiratet": 47.5,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08327",
+      "name": "Tuttlingen (LKR)",
+      "mikrozensus_region_code": "08327KRSI",
+      "mikrozensus_region_label": "Tuttlingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 65,
+      "second_generation_german_thousand": 20,
+      "second_generation_share_of_mh_percent": 30.8,
+      "foreign_citizens_persons": 30805,
+      "invisible_to_citizenship_persons": 34195,
+      "second_generation_share_of_invisible_percent": 58.5,
+      "marital_status_thousand": {
+        "ledig": 30,
+        "verheiratet": 29,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.8,
+        "verheiratet": 49.2,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08335",
+      "name": "Konstanz (LKR)",
+      "mikrozensus_region_code": "08335KRSI",
+      "mikrozensus_region_label": "Konstanz, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 108,
+      "second_generation_german_thousand": 31,
+      "second_generation_share_of_mh_percent": 28.7,
+      "foreign_citizens_persons": 55320,
+      "invisible_to_citizenship_persons": 52680,
+      "second_generation_share_of_invisible_percent": 58.8,
+      "marital_status_thousand": {
+        "ledig": 52,
+        "verheiratet": 46,
+        "geschieden": 7,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 49.5,
+        "verheiratet": 43.8,
+        "geschieden": 6.7,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08336",
+      "name": "Lörrach (LKR)",
+      "mikrozensus_region_code": "08336KRSI",
+      "mikrozensus_region_label": "Lörrach, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 96,
+      "second_generation_german_thousand": 30,
+      "second_generation_share_of_mh_percent": 31.2,
+      "foreign_citizens_persons": 47760,
+      "invisible_to_citizenship_persons": 48240,
+      "second_generation_share_of_invisible_percent": 62.2,
+      "marital_status_thousand": {
+        "ledig": 43,
+        "verheiratet": 44,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 49.4,
+        "verheiratet": 50.6,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08337",
+      "name": "Waldshut (LKR)",
+      "mikrozensus_region_code": "08337KRSI",
+      "mikrozensus_region_label": "Waldshut, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 58,
+      "second_generation_german_thousand": 18,
+      "second_generation_share_of_mh_percent": 31.0,
+      "foreign_citizens_persons": 33740,
+      "invisible_to_citizenship_persons": 24260,
+      "second_generation_share_of_invisible_percent": 74.2,
+      "marital_status_thousand": {
+        "ledig": 25,
+        "verheiratet": 27,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.1,
+        "verheiratet": 51.9,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08415",
+      "name": "Reutlingen (LKR)",
+      "mikrozensus_region_code": "08415KRSI",
+      "mikrozensus_region_label": "Reutlingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 114,
+      "second_generation_german_thousand": 36,
+      "second_generation_share_of_mh_percent": 31.6,
+      "foreign_citizens_persons": 56035,
+      "invisible_to_citizenship_persons": 57965,
+      "second_generation_share_of_invisible_percent": 62.1,
+      "marital_status_thousand": {
+        "ledig": 55,
+        "verheiratet": 46,
+        "geschieden": 9,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.0,
+        "verheiratet": 41.8,
+        "geschieden": 8.2,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08416",
+      "name": "Tübingen (LKR)",
+      "mikrozensus_region_code": "08416KRSI",
+      "mikrozensus_region_label": "Tübingen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 74,
+      "second_generation_german_thousand": 23,
+      "second_generation_share_of_mh_percent": 31.1,
+      "foreign_citizens_persons": 37550,
+      "invisible_to_citizenship_persons": 36450,
+      "second_generation_share_of_invisible_percent": 63.1,
+      "marital_status_thousand": {
+        "ledig": 37,
+        "verheiratet": 31,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 54.4,
+        "verheiratet": 45.6,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08417",
+      "name": "Zollernalbkreis (LKR)",
+      "mikrozensus_region_code": "08417KRSI",
+      "mikrozensus_region_label": "Zollernalbkreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 73,
+      "second_generation_german_thousand": 25,
+      "second_generation_share_of_mh_percent": 34.2,
+      "foreign_citizens_persons": 31045,
+      "invisible_to_citizenship_persons": 41955,
+      "second_generation_share_of_invisible_percent": 59.6,
+      "marital_status_thousand": {
+        "ledig": 31,
+        "verheiratet": 33,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.4,
+        "verheiratet": 51.6,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08421",
+      "name": "Ulm (SKR)",
+      "mikrozensus_region_code": "08421KRSI",
+      "mikrozensus_region_label": "Ulm, Stadtkreis",
+      "shared_region": false,
+      "migration_background_thousand": 59,
+      "second_generation_german_thousand": 17,
+      "second_generation_share_of_mh_percent": 28.8,
+      "foreign_citizens_persons": 34500,
+      "invisible_to_citizenship_persons": 24500,
+      "second_generation_share_of_invisible_percent": 69.4,
+      "marital_status_thousand": {
+        "ledig": 28,
+        "verheiratet": 26,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 51.9,
+        "verheiratet": 48.1,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08425",
+      "name": "Alb-Donau-Kreis (LKR)",
+      "mikrozensus_region_code": "08425KRSI",
+      "mikrozensus_region_label": "Alb-Donau-Kreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 60,
+      "second_generation_german_thousand": 18,
+      "second_generation_share_of_mh_percent": 30.0,
+      "foreign_citizens_persons": 34480,
+      "invisible_to_citizenship_persons": 25520,
+      "second_generation_share_of_invisible_percent": 70.5,
+      "marital_status_thousand": {
+        "ledig": 28,
+        "verheiratet": 27,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.9,
+        "verheiratet": 49.1,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08426",
+      "name": "Biberach (LKR)",
+      "mikrozensus_region_code": "08426KRSI",
+      "mikrozensus_region_label": "Biberach, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 59,
+      "second_generation_german_thousand": 16,
+      "second_generation_share_of_mh_percent": 27.1,
+      "foreign_citizens_persons": 28890,
+      "invisible_to_citizenship_persons": 30110,
+      "second_generation_share_of_invisible_percent": 53.1,
+      "marital_status_thousand": {
+        "ledig": 25,
+        "verheiratet": 29,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 46.3,
+        "verheiratet": 53.7,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08435",
+      "name": "Bodenseekreis (LKR)",
+      "mikrozensus_region_code": "08435KRSI",
+      "mikrozensus_region_label": "Bodenseekreis, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 77,
+      "second_generation_german_thousand": 22,
+      "second_generation_share_of_mh_percent": 28.6,
+      "foreign_citizens_persons": 39385,
+      "invisible_to_citizenship_persons": 37615,
+      "second_generation_share_of_invisible_percent": 58.5,
+      "marital_status_thousand": {
+        "ledig": 34,
+        "verheiratet": 36,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.6,
+        "verheiratet": 51.4,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08436",
+      "name": "Ravensburg (LKR)",
+      "mikrozensus_region_code": "08436KRSI",
+      "mikrozensus_region_label": "Ravensburg, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 82,
+      "second_generation_german_thousand": 22,
+      "second_generation_share_of_mh_percent": 26.8,
+      "foreign_citizens_persons": 42765,
+      "invisible_to_citizenship_persons": 39235,
+      "second_generation_share_of_invisible_percent": 56.1,
+      "marital_status_thousand": {
+        "ledig": 37,
+        "verheiratet": 39,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 48.7,
+        "verheiratet": 51.3,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    },
+    {
+      "id": "08437",
+      "name": "Sigmaringen (LKR)",
+      "mikrozensus_region_code": "08437KRSI",
+      "mikrozensus_region_label": "Sigmaringen, Landkreis",
+      "shared_region": false,
+      "migration_background_thousand": 30,
+      "second_generation_german_thousand": 10,
+      "second_generation_share_of_mh_percent": 33.3,
+      "foreign_citizens_persons": 19310,
+      "invisible_to_citizenship_persons": 10690,
+      "second_generation_share_of_invisible_percent": 93.5,
+      "marital_status_thousand": {
+        "ledig": 13,
+        "verheiratet": 13,
+        "geschieden": null,
+        "verwitwet": null
+      },
+      "marital_status_complete": false,
+      "marital_status_share_percent": {
+        "ledig": 50.0,
+        "verheiratet": 50.0,
+        "geschieden": null,
+        "verwitwet": null
+      }
+    }
+  ]
+}

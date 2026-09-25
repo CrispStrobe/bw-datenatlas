@@ -1,0 +1,41 @@
+{
+ "type": "affiliation_restated_by_the_state_government_in_a_later_drucksache",
+ "schema_version": "1.0",
+ "why_this_file": "Die Zuordnungen, auf denen dieser Atlas beruht, stammen aus den Drucksachen 15/362 und 15/383 von 2011. Sie sind damit vierzehn Jahre alt, und ein Leser kann zu Recht fragen, ob sie noch gelten. Wo dieselbe Zuordnung in einer späteren Drucksache erneut vom Innenministerium ausgesprochen wurde, steht das hier: nicht als neue Behauptung, sondern als Datum, zu dem die alte noch einmal bestätigt wurde. Die Drucksachen nennen Orte, keine Anschriften; die Anschrift bleibt je Eintrag einzeln belegt.",
+ "statements": [
+  {
+   "drucksache": "16/4674",
+   "datum": "2018-09-12",
+   "url": "https://www.landtag-bw.de/resource/blob/242096/15c33ccd1efa539f42b86da9354cee74/16_4674_D.pdf",
+   "volltext": "docs/data/quellen/landtag-bw-16-4674-2018.txt",
+   "urheber": "Ministerium für Inneres, Digitalisierung und Migration",
+   "organisation": "Islamische Gemeinschaft Millî Görüş (IGMG)",
+   "wortlaut": "„Die vom Landesamt für Verfassungsschutz (LfV) beobachteten Ortsvereine der ‚Islamischen Gemeinschaft Milli Görüs e. V.‘ (IGMG), die über die offizielle Vereinsbezeichnung hinaus intern als ‚Fatih-Moschee‘ bezeichnet werden, befinden sich in Aalen, Balingen, Blumberg, Esslingen, Fellbach, Heilbronn, Lörrach, Mannheim, Pleidelsheim und Ravensburg.“",
+   "orte": ["Aalen", "Balingen", "Blumberg", "Esslingen", "Fellbach", "Heilbronn",
+            "Lörrach", "Mannheim", "Pleidelsheim", "Ravensburg"]
+  },
+  {
+   "drucksache": "16/4674",
+   "datum": "2018-09-12",
+   "url": "https://www.landtag-bw.de/resource/blob/242096/15c33ccd1efa539f42b86da9354cee74/16_4674_D.pdf",
+   "volltext": "docs/data/quellen/landtag-bw-16-4674-2018.txt",
+   "urheber": "Ministerium für Inneres, Digitalisierung und Migration",
+   "organisation": "Türkisch-Demokratische Idealistenvereine (ADÜTDF)",
+   "wortlaut": "„Bei den in der Antwort zur Landtagsdrucksache 16/4331 erwähnten Ortsvereinen der ‚Föderation der Türkisch-Demokratischen Idealistenvereine in Deutschland e. V.‘ (ADÜTDF), die die Selbstbezeichnung ‚Fatih-Moschee‘ tragen, handelt es sich um die Vereine in Nürtingen, Rottenburg a. N. und Sindelfingen.“",
+   "orte": ["Nürtingen", "Rottenburg am Neckar", "Sindelfingen"]
+  },
+  {
+   "drucksache": "16/1209",
+   "datum": "2017-02-09",
+   "url": "https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP16/Drucksachen/1000/16_1209_D.pdf",
+   "volltext": "docs/data/quellen/landtag-bw-16-1209-2017.txt",
+   "urheber": "Ministerium für Kultus, Jugend und Sport",
+   "organisation": "Ahmadiyya Muslim Jamaat",
+   "wortlaut": "„Die Ahmadiyya-Muslim-Gemeinde unterhält in Baden-Württemberg Moscheen oder Gebetsräume in Aalen, Albstadt, Balingen, Böblingen, Bruchsal, Calw, Eppelheim, Freiburg i. Br., Gaggenau, Göppingen, Heidelberg, Heilbronn, Karlsruhe, Kirchheim/Teck, Mannheim, Pforzheim, Reutlingen, Schwetzingen, Stuttgart, Ulm, Waiblingen, Weil der Stadt und Weingarten.“",
+   "orte": ["Aalen", "Albstadt", "Balingen", "Böblingen", "Bruchsal", "Calw", "Eppelheim",
+            "Freiburg im Breisgau", "Gaggenau", "Göppingen", "Heidelberg", "Heilbronn",
+            "Karlsruhe", "Kirchheim unter Teck", "Mannheim", "Pforzheim", "Reutlingen",
+            "Schwetzingen", "Stuttgart", "Ulm", "Waiblingen", "Weil der Stadt", "Weingarten"]
+  }
+ ]
+}

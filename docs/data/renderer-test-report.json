@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "check_count": 16,
+  "checks": [
+    {
+      "name": "one state polygon rendered",
+      "passed": true
+    },
+    {
+      "name": "geometry warning hidden when a fixture is supplied",
+      "passed": true
+    },
+    {
+      "name": "SVG export enabled with fixture",
+      "passed": true
+    },
+    {
+      "name": "44 district polygons rendered",
+      "passed": true
+    },
+    {
+      "name": "district feature path finite",
+      "passed": true
+    },
+    {
+      "name": "44 demographic fills available",
+      "passed": true
+    },
+    {
+      "name": "keyboard district selection works",
+      "passed": true
+    },
+    {
+      "name": "keyboard selection shows real statistical district",
+      "passed": true
+    },
+    {
+      "name": "zoom changes viewBox",
+      "passed": true
+    },
+    {
+      "name": "zoom reset",
+      "passed": true
+    },
+    {
+      "name": "SVG export carries BKG license URL",
+      "passed": true
+    },
+    {
+      "name": "SVG export is well formed",
+      "passed": true
+    },
+    {
+      "name": "1101 municipal polygons render",
+      "passed": true
+    },
+    {
+      "name": "municipality values joined by source key",
+      "passed": true
+    },
+    {
+      "name": "mobile map does not overflow body",
+      "passed": true
+    },
+    {
+      "name": "no uncaught renderer errors",
+      "passed": true
+    }
+  ],
+  "mode": "synthetic_in_memory_svg_interaction_test",
+  "real_geography_tested": false,
+  "real_archive_tested": false,
+  "note": "Artificial rectangles test the rendering and interaction pipeline only; no synthetic map is published.",
+  "uncaught_errors": []
+}

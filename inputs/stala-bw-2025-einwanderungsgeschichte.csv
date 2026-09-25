@@ -1,0 +1,112 @@
+series,age_group,sex,category,value_thousand
+total,Insgesamt,Insgesamt,ohne Einwanderungsgeschichte,6895
+total,Insgesamt,Insgesamt,Mit einseitiger Einwanderungsgeschichte,708
+total,Insgesamt,Insgesamt,mit Einwanderungsgeschichte,3606
+age_sex,0–4,Männlich,mit einseitiger Einwanderungsgeschichte,41
+age_sex,0–4,Männlich,mit Einwanderungsgeschichte,72
+age_sex,0–4,Männlich,ohne Einwanderungsgeschichte,163
+age_sex,0–4,Weiblich,mit einseitiger Einwanderungsgeschichte,39
+age_sex,0–4,Weiblich,mit Einwanderungsgeschichte,67
+age_sex,0–4,Weiblich,ohne Einwanderungsgeschichte,149
+age_sex,5–9,Männlich,mit einseitiger Einwanderungsgeschichte,41
+age_sex,5–9,Männlich,mit Einwanderungsgeschichte,89
+age_sex,5–9,Männlich,ohne Einwanderungsgeschichte,163
+age_sex,5–9,Weiblich,mit einseitiger Einwanderungsgeschichte,44
+age_sex,5–9,Weiblich,mit Einwanderungsgeschichte,89
+age_sex,5–9,Weiblich,ohne Einwanderungsgeschichte,151
+age_sex,10–14,Männlich,mit einseitiger Einwanderungsgeschichte,38
+age_sex,10–14,Männlich,mit Einwanderungsgeschichte,92
+age_sex,10–14,Männlich,ohne Einwanderungsgeschichte,141
+age_sex,10–14,Weiblich,mit einseitiger Einwanderungsgeschichte,41
+age_sex,10–14,Weiblich,mit Einwanderungsgeschichte,87
+age_sex,10–14,Weiblich,ohne Einwanderungsgeschichte,130
+age_sex,15–19,Männlich,mit einseitiger Einwanderungsgeschichte,37
+age_sex,15–19,Männlich,mit Einwanderungsgeschichte,102
+age_sex,15–19,Männlich,ohne Einwanderungsgeschichte,143
+age_sex,15–19,Weiblich,mit einseitiger Einwanderungsgeschichte,39
+age_sex,15–19,Weiblich,mit Einwanderungsgeschichte,90
+age_sex,15–19,Weiblich,ohne Einwanderungsgeschichte,128
+age_sex,20–24,Männlich,mit einseitiger Einwanderungsgeschichte,32
+age_sex,20–24,Männlich,mit Einwanderungsgeschichte,121
+age_sex,20–24,Männlich,ohne Einwanderungsgeschichte,180
+age_sex,20–24,Weiblich,mit einseitiger Einwanderungsgeschichte,38
+age_sex,20–24,Weiblich,mit Einwanderungsgeschichte,106
+age_sex,20–24,Weiblich,ohne Einwanderungsgeschichte,166
+age_sex,25–29,Männlich,mit einseitiger Einwanderungsgeschichte,30
+age_sex,25–29,Männlich,mit Einwanderungsgeschichte,143
+age_sex,25–29,Männlich,ohne Einwanderungsgeschichte,193
+age_sex,25–29,Weiblich,mit einseitiger Einwanderungsgeschichte,29
+age_sex,25–29,Weiblich,mit Einwanderungsgeschichte,130
+age_sex,25–29,Weiblich,ohne Einwanderungsgeschichte,180
+age_sex,30–34,Männlich,mit einseitiger Einwanderungsgeschichte,23
+age_sex,30–34,Männlich,mit Einwanderungsgeschichte,161
+age_sex,30–34,Männlich,ohne Einwanderungsgeschichte,204
+age_sex,30–34,Weiblich,mit einseitiger Einwanderungsgeschichte,24
+age_sex,30–34,Weiblich,mit Einwanderungsgeschichte,144
+age_sex,30–34,Weiblich,ohne Einwanderungsgeschichte,185
+age_sex,35–39,Männlich,mit einseitiger Einwanderungsgeschichte,17
+age_sex,35–39,Männlich,mit Einwanderungsgeschichte,166
+age_sex,35–39,Männlich,ohne Einwanderungsgeschichte,205
+age_sex,35–39,Weiblich,mit einseitiger Einwanderungsgeschichte,19
+age_sex,35–39,Weiblich,mit Einwanderungsgeschichte,158
+age_sex,35–39,Weiblich,ohne Einwanderungsgeschichte,199
+age_sex,40–44,Männlich,mit einseitiger Einwanderungsgeschichte,19
+age_sex,40–44,Männlich,mit Einwanderungsgeschichte,164
+age_sex,40–44,Männlich,ohne Einwanderungsgeschichte,185
+age_sex,40–44,Weiblich,mit einseitiger Einwanderungsgeschichte,18
+age_sex,40–44,Weiblich,mit Einwanderungsgeschichte,161
+age_sex,40–44,Weiblich,ohne Einwanderungsgeschichte,180
+age_sex,45–49,Männlich,mit einseitiger Einwanderungsgeschichte,14
+age_sex,45–49,Männlich,mit Einwanderungsgeschichte,147
+age_sex,45–49,Männlich,ohne Einwanderungsgeschichte,176
+age_sex,45–49,Weiblich,mit einseitiger Einwanderungsgeschichte,15
+age_sex,45–49,Weiblich,mit Einwanderungsgeschichte,156
+age_sex,45–49,Weiblich,ohne Einwanderungsgeschichte,171
+age_sex,50–54,Männlich,mit einseitiger Einwanderungsgeschichte,15
+age_sex,50–54,Männlich,mit Einwanderungsgeschichte,133
+age_sex,50–54,Männlich,ohne Einwanderungsgeschichte,192
+age_sex,50–54,Weiblich,mit einseitiger Einwanderungsgeschichte,14
+age_sex,50–54,Weiblich,mit Einwanderungsgeschichte,138
+age_sex,50–54,Weiblich,ohne Einwanderungsgeschichte,198
+age_sex,55–59,Männlich,mit einseitiger Einwanderungsgeschichte,15
+age_sex,55–59,Männlich,mit Einwanderungsgeschichte,109
+age_sex,55–59,Männlich,ohne Einwanderungsgeschichte,302
+age_sex,55–59,Weiblich,mit einseitiger Einwanderungsgeschichte,16
+age_sex,55–59,Weiblich,mit Einwanderungsgeschichte,109
+age_sex,55–59,Weiblich,ohne Einwanderungsgeschichte,303
+age_sex,60–64,Männlich,mit einseitiger Einwanderungsgeschichte,13
+age_sex,60–64,Männlich,mit Einwanderungsgeschichte,101
+age_sex,60–64,Männlich,ohne Einwanderungsgeschichte,315
+age_sex,60–64,Weiblich,mit einseitiger Einwanderungsgeschichte,13
+age_sex,60–64,Weiblich,mit Einwanderungsgeschichte,97
+age_sex,60–64,Weiblich,ohne Einwanderungsgeschichte,319
+age_sex,65–69,Männlich,mit einseitiger Einwanderungsgeschichte,
+age_sex,65–69,Männlich,mit Einwanderungsgeschichte,75
+age_sex,65–69,Männlich,ohne Einwanderungsgeschichte,254
+age_sex,65–69,Weiblich,mit einseitiger Einwanderungsgeschichte,7
+age_sex,65–69,Weiblich,mit Einwanderungsgeschichte,84
+age_sex,65–69,Weiblich,ohne Einwanderungsgeschichte,273
+age_sex,70–74,Männlich,mit einseitiger Einwanderungsgeschichte,
+age_sex,70–74,Männlich,mit Einwanderungsgeschichte,56
+age_sex,70–74,Männlich,ohne Einwanderungsgeschichte,196
+age_sex,70–74,Weiblich,mit einseitiger Einwanderungsgeschichte,
+age_sex,70–74,Weiblich,mit Einwanderungsgeschichte,72
+age_sex,70–74,Weiblich,ohne Einwanderungsgeschichte,213
+age_sex,75–79,Männlich,mit einseitiger Einwanderungsgeschichte,
+age_sex,75–79,Männlich,mit Einwanderungsgeschichte,39
+age_sex,75–79,Männlich,ohne Einwanderungsgeschichte,150
+age_sex,75–79,Weiblich,mit einseitiger Einwanderungsgeschichte,
+age_sex,75–79,Weiblich,mit Einwanderungsgeschichte,49
+age_sex,75–79,Weiblich,ohne Einwanderungsgeschichte,176
+age_sex,80–84,Männlich,mit einseitiger Einwanderungsgeschichte,
+age_sex,80–84,Männlich,mit Einwanderungsgeschichte,22
+age_sex,80–84,Männlich,ohne Einwanderungsgeschichte,125
+age_sex,80–84,Weiblich,mit einseitiger Einwanderungsgeschichte,
+age_sex,80–84,Weiblich,mit Einwanderungsgeschichte,28
+age_sex,80–84,Weiblich,ohne Einwanderungsgeschichte,171
+age_sex,85 u. älter,Männlich,mit einseitiger Einwanderungsgeschichte,
+age_sex,85 u. älter,Männlich,mit Einwanderungsgeschichte,20
+age_sex,85 u. älter,Männlich,ohne Einwanderungsgeschichte,122
+age_sex,85 u. älter,Weiblich,mit einseitiger Einwanderungsgeschichte,
+age_sex,85 u. älter,Weiblich,mit Einwanderungsgeschichte,28
+age_sex,85 u. älter,Weiblich,ohne Einwanderungsgeschichte,192

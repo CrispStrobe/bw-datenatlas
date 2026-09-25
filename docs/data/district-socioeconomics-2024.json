@@ -1,0 +1,1403 @@
+{
+  "type": "district_socioeconomics_by_migration_status",
+  "schema_version": "1.0",
+  "reference_period": "2024",
+  "source": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0513, Grundprogramm des Mikrozensus",
+  "source_url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0513",
+  "population_base": "Bevölkerung ab 15 Jahren in Hauptwohnsitzhaushalten",
+  "unit_note": "Die Quelle veröffentlicht in Tausend.",
+  "survey_note": "Stichprobenerhebung mit Zufallsfehler.",
+  "not_used_for_religion_model": "Diese Angaben gehen nicht in die Modellrechnung zur muslimischen Bevölkerung ein. Bildung und Erwerbsbeteiligung sind keine Merkmale der Religionszugehörigkeit und werden nicht dafür verwendet.",
+  "no_unemployment_rate": "Eine Erwerbslosenquote wird nicht gebildet: die Quelle hält die Erwerbslosen in fast allen Kreisen wegen zu kleiner Fallzahlen geheim.",
+  "education_classification": "ISCED 2011, zusammengefasst zu niedrig, mittel und hoch.",
+  "combined_regions": {
+    "08217KRSI": [
+      "08211",
+      "08216"
+    ]
+  },
+  "incomplete_education_breakdowns": [
+    {
+      "region_label": "Main-Tauber-Kreis, Landkreis",
+      "migration_status": "mit Migrationshintergrund"
+    },
+    {
+      "region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "migration_status": "mit Migrationshintergrund"
+    },
+    {
+      "region_label": "Freudenstadt, Landkreis",
+      "migration_status": "mit Migrationshintergrund"
+    },
+    {
+      "region_label": "Sigmaringen, Landkreis",
+      "migration_status": "mit Migrationshintergrund"
+    }
+  ],
+  "districts": [
+    {
+      "id": "08111",
+      "name": "Stuttgart (SKR)",
+      "mikrozensus_region_code": "08111KRSI",
+      "mikrozensus_region_label": "Stuttgart, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 260,
+        "employed_thousand": 173,
+        "employed_share_percent": 66.5,
+        "education_thousand": {
+          "low": 92,
+          "medium": 86,
+          "high": 82
+        },
+        "education_high_share_percent": 31.5,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 280,
+        "employed_thousand": 178,
+        "employed_share_percent": 63.6,
+        "education_thousand": {
+          "low": 29,
+          "medium": 116,
+          "high": 135
+        },
+        "education_high_share_percent": 48.2,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08115",
+      "name": "Böblingen (LKR)",
+      "mikrozensus_region_code": "08115KRSI",
+      "mikrozensus_region_label": "Böblingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 139,
+        "employed_thousand": 87,
+        "employed_share_percent": 62.6,
+        "education_thousand": {
+          "low": 51,
+          "medium": 51,
+          "high": 37
+        },
+        "education_high_share_percent": 26.6,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 194,
+        "employed_thousand": 117,
+        "employed_share_percent": 60.3,
+        "education_thousand": {
+          "low": 26,
+          "medium": 101,
+          "high": 68
+        },
+        "education_high_share_percent": 35.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08116",
+      "name": "Esslingen (LKR)",
+      "mikrozensus_region_code": "08116KRSI",
+      "mikrozensus_region_label": "Esslingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 179,
+        "employed_thousand": 119,
+        "employed_share_percent": 66.5,
+        "education_thousand": {
+          "low": 68,
+          "medium": 69,
+          "high": 42
+        },
+        "education_high_share_percent": 23.5,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 290,
+        "employed_thousand": 176,
+        "employed_share_percent": 60.7,
+        "education_thousand": {
+          "low": 36,
+          "medium": 139,
+          "high": 115
+        },
+        "education_high_share_percent": 39.7,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08117",
+      "name": "Göppingen (LKR)",
+      "mikrozensus_region_code": "08117KRSI",
+      "mikrozensus_region_label": "Göppingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 82,
+        "employed_thousand": 48,
+        "employed_share_percent": 58.5,
+        "education_thousand": {
+          "low": 36,
+          "medium": 34,
+          "high": 12
+        },
+        "education_high_share_percent": 14.6,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 136,
+        "employed_thousand": 80,
+        "employed_share_percent": 58.8,
+        "education_thousand": {
+          "low": 21,
+          "medium": 76,
+          "high": 39
+        },
+        "education_high_share_percent": 28.7,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08118",
+      "name": "Ludwigsburg (LKR)",
+      "mikrozensus_region_code": "08118KRSI",
+      "mikrozensus_region_label": "Ludwigsburg, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 184,
+        "employed_thousand": 115,
+        "employed_share_percent": 62.5,
+        "education_thousand": {
+          "low": 78,
+          "medium": 67,
+          "high": 39
+        },
+        "education_high_share_percent": 21.2,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 270,
+        "employed_thousand": 166,
+        "employed_share_percent": 61.5,
+        "education_thousand": {
+          "low": 36,
+          "medium": 126,
+          "high": 107
+        },
+        "education_high_share_percent": 39.6,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08119",
+      "name": "Rems-Murr-Kreis (LKR)",
+      "mikrozensus_region_code": "08119KRSI",
+      "mikrozensus_region_label": "Rems-Murr-Kreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 135,
+        "employed_thousand": 86,
+        "employed_share_percent": 63.7,
+        "education_thousand": {
+          "low": 52,
+          "medium": 57,
+          "high": 26
+        },
+        "education_high_share_percent": 19.3,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 239,
+        "employed_thousand": 148,
+        "employed_share_percent": 61.9,
+        "education_thousand": {
+          "low": 32,
+          "medium": 123,
+          "high": 84
+        },
+        "education_high_share_percent": 35.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08121",
+      "name": "Heilbronn (SKR)",
+      "mikrozensus_region_code": "08121KRSI",
+      "mikrozensus_region_label": "Heilbronn, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 60,
+        "employed_thousand": 38,
+        "employed_share_percent": 63.3,
+        "education_thousand": {
+          "low": 24,
+          "medium": 25,
+          "high": 11
+        },
+        "education_high_share_percent": 18.3,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 51,
+        "employed_thousand": 33,
+        "employed_share_percent": 64.7,
+        "education_thousand": {
+          "low": 8,
+          "medium": 26,
+          "high": 17
+        },
+        "education_high_share_percent": 33.3,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08125",
+      "name": "Heilbronn (LKR)",
+      "mikrozensus_region_code": "08125KRSI",
+      "mikrozensus_region_label": "Heilbronn, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 109,
+        "employed_thousand": 73,
+        "employed_share_percent": 67.0,
+        "education_thousand": {
+          "low": 40,
+          "medium": 48,
+          "high": 22
+        },
+        "education_high_share_percent": 20.2,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 190,
+        "employed_thousand": 122,
+        "employed_share_percent": 64.2,
+        "education_thousand": {
+          "low": 25,
+          "medium": 104,
+          "high": 60
+        },
+        "education_high_share_percent": 31.6,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08126",
+      "name": "Hohenlohekreis (LKR)",
+      "mikrozensus_region_code": "08126KRSI",
+      "mikrozensus_region_label": "Hohenlohekreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 41,
+        "employed_thousand": 29,
+        "employed_share_percent": 70.7,
+        "education_thousand": {
+          "low": 17,
+          "medium": 17,
+          "high": 7
+        },
+        "education_high_share_percent": 17.1,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 59,
+        "employed_thousand": 37,
+        "employed_share_percent": 62.7,
+        "education_thousand": {
+          "low": 9,
+          "medium": 32,
+          "high": 17
+        },
+        "education_high_share_percent": 28.8,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08127",
+      "name": "Schwäbisch Hall (LKR)",
+      "mikrozensus_region_code": "08127KRSI",
+      "mikrozensus_region_label": "Schwäbisch Hall, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 54,
+        "employed_thousand": 38,
+        "employed_share_percent": 70.4,
+        "education_thousand": {
+          "low": 21,
+          "medium": 23,
+          "high": 11
+        },
+        "education_high_share_percent": 20.4,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 112,
+        "employed_thousand": 74,
+        "employed_share_percent": 66.1,
+        "education_thousand": {
+          "low": 18,
+          "medium": 63,
+          "high": 32
+        },
+        "education_high_share_percent": 28.6,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08128",
+      "name": "Main-Tauber-Kreis (LKR)",
+      "mikrozensus_region_code": "08128KRSI",
+      "mikrozensus_region_label": "Main-Tauber-Kreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 34,
+        "employed_thousand": 23,
+        "employed_share_percent": 67.6,
+        "education_thousand": {
+          "low": 13,
+          "medium": 14,
+          "high": null
+        },
+        "education_high_share_percent": null,
+        "education_incomplete": true
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 80,
+        "employed_thousand": 52,
+        "employed_share_percent": 65.0,
+        "education_thousand": {
+          "low": 14,
+          "medium": 44,
+          "high": 23
+        },
+        "education_high_share_percent": 28.8,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08135",
+      "name": "Heidenheim (LKR)",
+      "mikrozensus_region_code": "08135KRSI",
+      "mikrozensus_region_label": "Heidenheim, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 38,
+        "employed_thousand": 26,
+        "employed_share_percent": 68.4,
+        "education_thousand": {
+          "low": 13,
+          "medium": 17,
+          "high": 8
+        },
+        "education_high_share_percent": 21.1,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 79,
+        "employed_thousand": 48,
+        "employed_share_percent": 60.8,
+        "education_thousand": {
+          "low": 12,
+          "medium": 43,
+          "high": 24
+        },
+        "education_high_share_percent": 30.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08136",
+      "name": "Ostalbkreis (LKR)",
+      "mikrozensus_region_code": "08136KRSI",
+      "mikrozensus_region_label": "Ostalbkreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 84,
+        "employed_thousand": 53,
+        "employed_share_percent": 63.1,
+        "education_thousand": {
+          "low": 33,
+          "medium": 34,
+          "high": 17
+        },
+        "education_high_share_percent": 20.2,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 184,
+        "employed_thousand": 113,
+        "employed_share_percent": 61.4,
+        "education_thousand": {
+          "low": 33,
+          "medium": 95,
+          "high": 56
+        },
+        "education_high_share_percent": 30.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08212",
+      "name": "Karlsruhe (SKR)",
+      "mikrozensus_region_code": "08212KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 99,
+        "employed_thousand": 67,
+        "employed_share_percent": 67.7,
+        "education_thousand": {
+          "low": 33,
+          "medium": 36,
+          "high": 29
+        },
+        "education_high_share_percent": 29.3,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 171,
+        "employed_thousand": 107,
+        "employed_share_percent": 62.6,
+        "education_thousand": {
+          "low": 17,
+          "medium": 74,
+          "high": 79
+        },
+        "education_high_share_percent": 46.2,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08215",
+      "name": "Karlsruhe (LKR)",
+      "mikrozensus_region_code": "08215KRSI",
+      "mikrozensus_region_label": "Karlsruhe, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 124,
+        "employed_thousand": 80,
+        "employed_share_percent": 64.5,
+        "education_thousand": {
+          "low": 47,
+          "medium": 48,
+          "high": 29
+        },
+        "education_high_share_percent": 23.4,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 269,
+        "employed_thousand": 166,
+        "employed_share_percent": 61.7,
+        "education_thousand": {
+          "low": 45,
+          "medium": 142,
+          "high": 82
+        },
+        "education_high_share_percent": 30.5,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08211",
+      "name": "Baden-Baden (SKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "with_migration_background": {
+        "population_15plus_thousand": 95,
+        "employed_thousand": 59,
+        "employed_share_percent": 62.1,
+        "education_thousand": {
+          "low": 37,
+          "medium": 39,
+          "high": 19
+        },
+        "education_high_share_percent": 20.0,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 151,
+        "employed_thousand": 89,
+        "employed_share_percent": 58.9,
+        "education_thousand": {
+          "low": 26,
+          "medium": 85,
+          "high": 41
+        },
+        "education_high_share_percent": 27.2,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08216",
+      "name": "Rastatt (LKR)",
+      "mikrozensus_region_code": "08217KRSI",
+      "mikrozensus_region_label": "Landkreis Rastatt und Stadtkreis Baden-Baden",
+      "shared_region": true,
+      "with_migration_background": {
+        "population_15plus_thousand": 95,
+        "employed_thousand": 59,
+        "employed_share_percent": 62.1,
+        "education_thousand": {
+          "low": 37,
+          "medium": 39,
+          "high": 19
+        },
+        "education_high_share_percent": 20.0,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 151,
+        "employed_thousand": 89,
+        "employed_share_percent": 58.9,
+        "education_thousand": {
+          "low": 26,
+          "medium": 85,
+          "high": 41
+        },
+        "education_high_share_percent": 27.2,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08221",
+      "name": "Heidelberg (SKR)",
+      "mikrozensus_region_code": "08221KRSI",
+      "mikrozensus_region_label": "Heidelberg, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 60,
+        "employed_thousand": 38,
+        "employed_share_percent": 63.3,
+        "education_thousand": {
+          "low": 14,
+          "medium": 19,
+          "high": 27
+        },
+        "education_high_share_percent": 45.0,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 72,
+        "employed_thousand": 47,
+        "employed_share_percent": 65.3,
+        "education_thousand": {
+          "low": 7,
+          "medium": 30,
+          "high": 35
+        },
+        "education_high_share_percent": 48.6,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08222",
+      "name": "Mannheim (SKR)",
+      "mikrozensus_region_code": "08222KRSI",
+      "mikrozensus_region_label": "Mannheim, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 131,
+        "employed_thousand": 82,
+        "employed_share_percent": 62.6,
+        "education_thousand": {
+          "low": 48,
+          "medium": 48,
+          "high": 34
+        },
+        "education_high_share_percent": 26.0,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 150,
+        "employed_thousand": 88,
+        "employed_share_percent": 58.7,
+        "education_thousand": {
+          "low": 22,
+          "medium": 72,
+          "high": 56
+        },
+        "education_high_share_percent": 37.3,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08225",
+      "name": "Neckar-Odenwald-Kreis (LKR)",
+      "mikrozensus_region_code": "08225KRSI",
+      "mikrozensus_region_label": "Neckar-Odenwald-Kreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 33,
+        "employed_thousand": 21,
+        "employed_share_percent": 63.6,
+        "education_thousand": {
+          "low": 14,
+          "medium": 13,
+          "high": null
+        },
+        "education_high_share_percent": null,
+        "education_incomplete": true
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 92,
+        "employed_thousand": 59,
+        "employed_share_percent": 64.1,
+        "education_thousand": {
+          "low": 14,
+          "medium": 54,
+          "high": 24
+        },
+        "education_high_share_percent": 26.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08226",
+      "name": "Rhein-Neckar-Kreis (LKR)",
+      "mikrozensus_region_code": "08226KRSI",
+      "mikrozensus_region_label": "Rhein-Neckar-Kreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 156,
+        "employed_thousand": 100,
+        "employed_share_percent": 64.1,
+        "education_thousand": {
+          "low": 58,
+          "medium": 61,
+          "high": 38
+        },
+        "education_high_share_percent": 24.4,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 311,
+        "employed_thousand": 189,
+        "employed_share_percent": 60.8,
+        "education_thousand": {
+          "low": 42,
+          "medium": 154,
+          "high": 115
+        },
+        "education_high_share_percent": 37.0,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08231",
+      "name": "Pforzheim (SKR)",
+      "mikrozensus_region_code": "08231KRSI",
+      "mikrozensus_region_label": "Pforzheim, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 64,
+        "employed_thousand": 42,
+        "employed_share_percent": 65.6,
+        "education_thousand": {
+          "low": 26,
+          "medium": 25,
+          "high": 13
+        },
+        "education_high_share_percent": 20.3,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 49,
+        "employed_thousand": 27,
+        "employed_share_percent": 55.1,
+        "education_thousand": {
+          "low": 7,
+          "medium": 32,
+          "high": 11
+        },
+        "education_high_share_percent": 22.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08235",
+      "name": "Calw (LKR)",
+      "mikrozensus_region_code": "08235KRSI",
+      "mikrozensus_region_label": "Calw, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 51,
+        "employed_thousand": 33,
+        "employed_share_percent": 64.7,
+        "education_thousand": {
+          "low": 20,
+          "medium": 23,
+          "high": 9
+        },
+        "education_high_share_percent": 17.6,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 85,
+        "employed_thousand": 54,
+        "employed_share_percent": 63.5,
+        "education_thousand": {
+          "low": 13,
+          "medium": 50,
+          "high": 22
+        },
+        "education_high_share_percent": 25.9,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08236",
+      "name": "Enzkreis (LKR)",
+      "mikrozensus_region_code": "08236KRSI",
+      "mikrozensus_region_label": "Enzkreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 56,
+        "employed_thousand": 38,
+        "employed_share_percent": 67.9,
+        "education_thousand": {
+          "low": 22,
+          "medium": 22,
+          "high": 12
+        },
+        "education_high_share_percent": 21.4,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 113,
+        "employed_thousand": 70,
+        "employed_share_percent": 61.9,
+        "education_thousand": {
+          "low": 15,
+          "medium": 64,
+          "high": 34
+        },
+        "education_high_share_percent": 30.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08237",
+      "name": "Freudenstadt (LKR)",
+      "mikrozensus_region_code": "08237KRSI",
+      "mikrozensus_region_label": "Freudenstadt, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 32,
+        "employed_thousand": 20,
+        "employed_share_percent": 62.5,
+        "education_thousand": {
+          "low": 13,
+          "medium": 13,
+          "high": null
+        },
+        "education_high_share_percent": null,
+        "education_incomplete": true
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 69,
+        "employed_thousand": 47,
+        "employed_share_percent": 68.1,
+        "education_thousand": {
+          "low": 11,
+          "medium": 37,
+          "high": 21
+        },
+        "education_high_share_percent": 30.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08311",
+      "name": "Freiburg im Breisgau (SKR)",
+      "mikrozensus_region_code": "08311KRSI",
+      "mikrozensus_region_label": "Freiburg im Breisgau, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 75,
+        "employed_thousand": 49,
+        "employed_share_percent": 65.3,
+        "education_thousand": {
+          "low": 26,
+          "medium": 22,
+          "high": 27
+        },
+        "education_high_share_percent": 36.0,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 128,
+        "employed_thousand": 84,
+        "employed_share_percent": 65.6,
+        "education_thousand": {
+          "low": 11,
+          "medium": 53,
+          "high": 64
+        },
+        "education_high_share_percent": 50.0,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08315",
+      "name": "Breisgau-Hochschwarzwald (LKR)",
+      "mikrozensus_region_code": "08315KRSI",
+      "mikrozensus_region_label": "Breisgau-Hochschwarzwald, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 58,
+        "employed_thousand": 40,
+        "employed_share_percent": 69.0,
+        "education_thousand": {
+          "low": 20,
+          "medium": 23,
+          "high": 15
+        },
+        "education_high_share_percent": 25.9,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 167,
+        "employed_thousand": 106,
+        "employed_share_percent": 63.5,
+        "education_thousand": {
+          "low": 23,
+          "medium": 87,
+          "high": 57
+        },
+        "education_high_share_percent": 34.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08316",
+      "name": "Emmendingen (LKR)",
+      "mikrozensus_region_code": "08316KRSI",
+      "mikrozensus_region_label": "Emmendingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 39,
+        "employed_thousand": 29,
+        "employed_share_percent": 74.4,
+        "education_thousand": {
+          "low": 15,
+          "medium": 14,
+          "high": 9
+        },
+        "education_high_share_percent": 23.1,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 103,
+        "employed_thousand": 63,
+        "employed_share_percent": 61.2,
+        "education_thousand": {
+          "low": 17,
+          "medium": 55,
+          "high": 31
+        },
+        "education_high_share_percent": 30.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08317",
+      "name": "Ortenaukreis (LKR)",
+      "mikrozensus_region_code": "08317KRSI",
+      "mikrozensus_region_label": "Ortenaukreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 117,
+        "employed_thousand": 81,
+        "employed_share_percent": 69.2,
+        "education_thousand": {
+          "low": 46,
+          "medium": 47,
+          "high": 24
+        },
+        "education_high_share_percent": 20.5,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 258,
+        "employed_thousand": 165,
+        "employed_share_percent": 64.0,
+        "education_thousand": {
+          "low": 46,
+          "medium": 148,
+          "high": 64
+        },
+        "education_high_share_percent": 24.8,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08325",
+      "name": "Rottweil (LKR)",
+      "mikrozensus_region_code": "08325KRSI",
+      "mikrozensus_region_label": "Rottweil, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 36,
+        "employed_thousand": 23,
+        "employed_share_percent": 63.9,
+        "education_thousand": {
+          "low": 15,
+          "medium": 14,
+          "high": 7
+        },
+        "education_high_share_percent": 19.4,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 82,
+        "employed_thousand": 48,
+        "employed_share_percent": 58.5,
+        "education_thousand": {
+          "low": 16,
+          "medium": 43,
+          "high": 23
+        },
+        "education_high_share_percent": 28.0,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08326",
+      "name": "Schwarzwald-Baar-Kreis (LKR)",
+      "mikrozensus_region_code": "08326KRSI",
+      "mikrozensus_region_label": "Schwarzwald-Baar-Kreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 68,
+        "employed_thousand": 40,
+        "employed_share_percent": 58.8,
+        "education_thousand": {
+          "low": 32,
+          "medium": 22,
+          "high": 14
+        },
+        "education_high_share_percent": 20.6,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 112,
+        "employed_thousand": 66,
+        "employed_share_percent": 58.9,
+        "education_thousand": {
+          "low": 19,
+          "medium": 59,
+          "high": 34
+        },
+        "education_high_share_percent": 30.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08327",
+      "name": "Tuttlingen (LKR)",
+      "mikrozensus_region_code": "08327KRSI",
+      "mikrozensus_region_label": "Tuttlingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 51,
+        "employed_thousand": 32,
+        "employed_share_percent": 62.7,
+        "education_thousand": {
+          "low": 23,
+          "medium": 20,
+          "high": 8
+        },
+        "education_high_share_percent": 15.7,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 71,
+        "employed_thousand": 48,
+        "employed_share_percent": 67.6,
+        "education_thousand": {
+          "low": 13,
+          "medium": 38,
+          "high": 20
+        },
+        "education_high_share_percent": 28.2,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08335",
+      "name": "Konstanz (LKR)",
+      "mikrozensus_region_code": "08335KRSI",
+      "mikrozensus_region_label": "Konstanz, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 88,
+        "employed_thousand": 54,
+        "employed_share_percent": 61.4,
+        "education_thousand": {
+          "low": 30,
+          "medium": 39,
+          "high": 19
+        },
+        "education_high_share_percent": 21.6,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 160,
+        "employed_thousand": 98,
+        "employed_share_percent": 61.2,
+        "education_thousand": {
+          "low": 28,
+          "medium": 80,
+          "high": 53
+        },
+        "education_high_share_percent": 33.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08336",
+      "name": "Lörrach (LKR)",
+      "mikrozensus_region_code": "08336KRSI",
+      "mikrozensus_region_label": "Lörrach, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 78,
+        "employed_thousand": 48,
+        "employed_share_percent": 61.5,
+        "education_thousand": {
+          "low": 31,
+          "medium": 29,
+          "high": 19
+        },
+        "education_high_share_percent": 24.4,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 126,
+        "employed_thousand": 77,
+        "employed_share_percent": 61.1,
+        "education_thousand": {
+          "low": 21,
+          "medium": 68,
+          "high": 37
+        },
+        "education_high_share_percent": 29.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08337",
+      "name": "Waldshut (LKR)",
+      "mikrozensus_region_code": "08337KRSI",
+      "mikrozensus_region_label": "Waldshut, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 47,
+        "employed_thousand": 30,
+        "employed_share_percent": 63.8,
+        "education_thousand": {
+          "low": 17,
+          "medium": 20,
+          "high": 9
+        },
+        "education_high_share_percent": 19.1,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 97,
+        "employed_thousand": 58,
+        "employed_share_percent": 59.8,
+        "education_thousand": {
+          "low": 17,
+          "medium": 51,
+          "high": 30
+        },
+        "education_high_share_percent": 30.9,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08415",
+      "name": "Reutlingen (LKR)",
+      "mikrozensus_region_code": "08415KRSI",
+      "mikrozensus_region_label": "Reutlingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 89,
+        "employed_thousand": 53,
+        "employed_share_percent": 59.6,
+        "education_thousand": {
+          "low": 33,
+          "medium": 37,
+          "high": 19
+        },
+        "education_high_share_percent": 21.3,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 151,
+        "employed_thousand": 95,
+        "employed_share_percent": 62.9,
+        "education_thousand": {
+          "low": 23,
+          "medium": 74,
+          "high": 55
+        },
+        "education_high_share_percent": 36.4,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08416",
+      "name": "Tübingen (LKR)",
+      "mikrozensus_region_code": "08416KRSI",
+      "mikrozensus_region_label": "Tübingen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 59,
+        "employed_thousand": 39,
+        "employed_share_percent": 66.1,
+        "education_thousand": {
+          "low": 21,
+          "medium": 21,
+          "high": 18
+        },
+        "education_high_share_percent": 30.5,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 141,
+        "employed_thousand": 90,
+        "employed_share_percent": 63.8,
+        "education_thousand": {
+          "low": 15,
+          "medium": 62,
+          "high": 65
+        },
+        "education_high_share_percent": 46.1,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08417",
+      "name": "Zollernalbkreis (LKR)",
+      "mikrozensus_region_code": "08417KRSI",
+      "mikrozensus_region_label": "Zollernalbkreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 58,
+        "employed_thousand": 36,
+        "employed_share_percent": 62.1,
+        "education_thousand": {
+          "low": 25,
+          "medium": 24,
+          "high": 9
+        },
+        "education_high_share_percent": 15.5,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 106,
+        "employed_thousand": 64,
+        "employed_share_percent": 60.4,
+        "education_thousand": {
+          "low": 21,
+          "medium": 55,
+          "high": 30
+        },
+        "education_high_share_percent": 28.3,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08421",
+      "name": "Ulm (SKR)",
+      "mikrozensus_region_code": "08421KRSI",
+      "mikrozensus_region_label": "Ulm, Stadtkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 48,
+        "employed_thousand": 32,
+        "employed_share_percent": 66.7,
+        "education_thousand": {
+          "low": 16,
+          "medium": 17,
+          "high": 14
+        },
+        "education_high_share_percent": 29.2,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 63,
+        "employed_thousand": 40,
+        "employed_share_percent": 63.5,
+        "education_thousand": {
+          "low": 7,
+          "medium": 29,
+          "high": 27
+        },
+        "education_high_share_percent": 42.9,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08425",
+      "name": "Alb-Donau-Kreis (LKR)",
+      "mikrozensus_region_code": "08425KRSI",
+      "mikrozensus_region_label": "Alb-Donau-Kreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 48,
+        "employed_thousand": 30,
+        "employed_share_percent": 62.5,
+        "education_thousand": {
+          "low": 21,
+          "medium": 17,
+          "high": 9
+        },
+        "education_high_share_percent": 18.8,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 125,
+        "employed_thousand": 81,
+        "employed_share_percent": 64.8,
+        "education_thousand": {
+          "low": 18,
+          "medium": 66,
+          "high": 41
+        },
+        "education_high_share_percent": 32.8,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08426",
+      "name": "Biberach (LKR)",
+      "mikrozensus_region_code": "08426KRSI",
+      "mikrozensus_region_label": "Biberach, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 48,
+        "employed_thousand": 30,
+        "employed_share_percent": 62.5,
+        "education_thousand": {
+          "low": 17,
+          "medium": 19,
+          "high": 11
+        },
+        "education_high_share_percent": 22.9,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 128,
+        "employed_thousand": 84,
+        "employed_share_percent": 65.6,
+        "education_thousand": {
+          "low": 22,
+          "medium": 70,
+          "high": 35
+        },
+        "education_high_share_percent": 27.3,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08435",
+      "name": "Bodenseekreis (LKR)",
+      "mikrozensus_region_code": "08435KRSI",
+      "mikrozensus_region_label": "Bodenseekreis, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 63,
+        "employed_thousand": 41,
+        "employed_share_percent": 65.1,
+        "education_thousand": {
+          "low": 23,
+          "medium": 23,
+          "high": 17
+        },
+        "education_high_share_percent": 27.0,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 132,
+        "employed_thousand": 78,
+        "employed_share_percent": 59.1,
+        "education_thousand": {
+          "low": 16,
+          "medium": 64,
+          "high": 51
+        },
+        "education_high_share_percent": 38.6,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08436",
+      "name": "Ravensburg (LKR)",
+      "mikrozensus_region_code": "08436KRSI",
+      "mikrozensus_region_label": "Ravensburg, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 68,
+        "employed_thousand": 44,
+        "employed_share_percent": 64.7,
+        "education_thousand": {
+          "low": 27,
+          "medium": 27,
+          "high": 14
+        },
+        "education_high_share_percent": 20.6,
+        "education_incomplete": false
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 180,
+        "employed_thousand": 115,
+        "employed_share_percent": 63.9,
+        "education_thousand": {
+          "low": 26,
+          "medium": 95,
+          "high": 59
+        },
+        "education_high_share_percent": 32.8,
+        "education_incomplete": false
+      }
+    },
+    {
+      "id": "08437",
+      "name": "Sigmaringen (LKR)",
+      "mikrozensus_region_code": "08437KRSI",
+      "mikrozensus_region_label": "Sigmaringen, Landkreis",
+      "shared_region": false,
+      "with_migration_background": {
+        "population_15plus_thousand": 27,
+        "employed_thousand": 17,
+        "employed_share_percent": 63.0,
+        "education_thousand": {
+          "low": 9,
+          "medium": 13,
+          "high": null
+        },
+        "education_high_share_percent": null,
+        "education_incomplete": true
+      },
+      "without_migration_background": {
+        "population_15plus_thousand": 83,
+        "employed_thousand": 53,
+        "employed_share_percent": 63.9,
+        "education_thousand": {
+          "low": 16,
+          "medium": 41,
+          "high": 26
+        },
+        "education_high_share_percent": 31.3,
+        "education_incomplete": false
+      }
+    }
+  ]
+}
