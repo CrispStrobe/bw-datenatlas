@@ -24,15 +24,25 @@ welcher Gemeinde, in welchem Verband, mit welchen Belegen — ohne Straße. Die
 Straßenanschriften, die Prüfskripte und die Verbandsverzeichnisse liegen in einem
 getrennten, nicht öffentlichen Repository, das den Auszug für dieses hier erzeugt.
 
-Der Grund ist nicht die Lizenz — das Verzeichnis bleibt ODbL, weil OpenStreetMap darin
-steckt — sondern was eine einzelne Datei leicht macht. Sechshundert Impressen und eine
+Der Grund ist nicht die Lizenz — dazu unten mehr — sondern was eine einzelne Datei
+leicht macht. Sechshundert Impressen und eine
 gepflegte Landesliste sind verschiedene Gegenstände, und es ist der zweite, dessen
 Veröffentlichung der Zentralrat der Muslime mit Verweis auf Sicherheitsgründe eingestellt
 hat; das Bundeskriminalamt zählte für 2025 vorläufig 53 Angriffe auf Moscheen
 (Bundestags-Drucksachen 21/5917, 21/2705). Dieser Atlas zeigt deshalb, wo es Gemeinden
 gibt, und verlinkt für alles Weitere die Quelle.
 
-Was das kostet, steht dazu: Die Ortsebenen-Datei ist für dieses Repository eine
+**Zur Lizenz, korrigiert.** Frühere Fassungen dieser Datei erklärten das Verzeichnis zur
+abgeleiteten Datenbank von OpenStreetMap und stellten es unter ODbL, weil die
+Koordinaten über Nominatim geokodiert sind. Das war falsch. Die Geocoding-Richtlinie der
+OSM Foundation stellt fest, dass einzelne Geokodierungsergebnisse unwesentliche Auszüge
+sind und die Share-alike-Pflicht nicht auslösen (ODbL 4.4.b), solange der OSM-Bestand
+unverändert bleibt und daraus keine Datenbank entsteht, die OpenStreetMap wesentlich
+enthält. Beides trifft zu. Erforderlich bleibt die Namensnennung — © OpenStreetMap-
+Mitwirkende —, schon weil einzelne Einträge ihre Anschrift von dort haben. Die Punkte
+auf dieser Karte sind ohnehin BKG-Beschriftungspunkte und keine OSM-Koordinaten.
+
+Was die Aufteilung kostet, steht dazu: Die Ortsebenen-Datei ist für dieses Repository eine
 **Eingabe**, keine Ableitung. Alles, was darauf aufbaut, wird weiterhin byteidentisch
 nachgebaut und geprüft; die Datei selbst kann die CI hier nicht neu herleiten.
 

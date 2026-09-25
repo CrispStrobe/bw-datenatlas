@@ -136,9 +136,25 @@ Die Liste ist bewusst unvollständig und nennt die nicht erfassten Verbände aus
 Eine Einrichtung ist keine Bevölkerungszahl; die Punkte gehen in keine Modellrechnung
 ein.
 
-Das Verzeichnis enthält Daten aus OpenStreetMap und wird deshalb als abgeleitete
-Datenbank unter der Open Database License (ODbL) 1.0 bereitgestellt;
-© OpenStreetMap-Mitwirkende.
+**Namensnennung, aber kein Share-alike.** OpenStreetMap ist Quelle einzelner
+Einträge, und die Koordinaten der nicht veröffentlichten Vollfassung sind über
+Nominatim geokodiert. Beides erfordert die Namensnennung: © OpenStreetMap-Mitwirkende.
+
+Eine Share-alike-Pflicht nach ODbL entsteht dadurch nicht. Die Geocoding-Richtlinie der
+OSM Foundation stellt fest: „Individual Geocoding Results are insubstantial database
+extracts", und solange am OSM-Datenbestand nichts verändert wird und aus den Ergebnissen
+keine Datenbank entsteht, die OpenStreetMap ganz oder wesentlich enthält, werden „the
+share-alike obligations of the ODbL … not triggered (per Section 4.4.b of the ODbL)".
+Beide Bedingungen sind hier erfüllt.
+
+Diese Feststellung ist eine Korrektur. Frühere Fassungen dieser Datei erklärten das
+Verzeichnis zur abgeleiteten Datenbank und stellten es unter ODbL — mit der Begründung,
+die Nominatim-Koordinaten machten es dazu. Das war falsch.
+
+Richtlinie: <https://osmfoundation.org/wiki/Licence/Community_Guidelines/Geocoding_-_Guideline>
+
+Die Punkte auf der veröffentlichten Karte sind ohnehin keine OSM-Koordinaten, sondern
+die Beschriftungspunkte der Gemeinden aus den amtlichen Grenzen des BKG.
 
 ## Externe Gegenproben
 
