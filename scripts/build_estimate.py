@@ -65,11 +65,35 @@ MIKROZENSUS_ORIGIN = {
     'Serbien': 'Serbien',
     'Irak': 'Irak',
     'Afghanistan': 'Afghanistan',
+    # Published by the Mikrozensus and unusable until now: the state report never named
+    # Morocco, so the model had no district counts to pair the ratio with.
+    'Marokko': 'Marokko',
 }
 # Bosnien-Herzegowina and Nordmazedonien are not published separately. Both are
 # non-EU European origins of the same migration vintage as Kosovo and Serbien, so the
 # published "Sonstiges Europa" aggregate ratio is used and recorded as a fallback.
-FALLBACK_RATIO_GROUPS = ['Bosnien-Herzegowina', 'Nordmazedonien']
+FALLBACK_RATIO_GROUPS = ['Bosnien-Herzegowina', 'Nordmazedonien',
+                         'Albanien', 'Montenegro']
+
+# The eight groups the state report A I 4-j supports. GENESIS 12521-0041 supports all
+# eighteen; both are kept, because the difference between them is worth being able to
+# see rather than having to take on trust.
+ORIGIN_COLUMNS_FULL = {
+    'turkey': 'Türkei', 'syria': 'Syrien', 'kosovo': 'Kosovo', 'serbia': 'Serbien',
+    'iraq': 'Irak', 'afghanistan': 'Afghanistan',
+    'bosnia_herzegovina': 'Bosnien-Herzegowina', 'north_macedonia': 'Nordmazedonien',
+    'albania': 'Albanien', 'montenegro': 'Montenegro', 'morocco': 'Marokko',
+    'iran': 'Iran', 'pakistan': 'Pakistan', 'bangladesh': 'Bangladesch',
+    'lebanon': 'Libanon', 'jordan': 'Jordanien',
+    'gulf': 'Jemen/Saudi-Arabien/Vereinigte Arabische Emirate',
+    'north_africa': 'Ägypten/Algerien/Libyen/Tunesien',
+}
+# Groups whose naturalisation ratio has no published counterpart of its own. The first
+# list borrows the non-EU-Europe aggregate, the second the outside-Europe aggregate;
+# both are recorded per group as a fallback rather than presented as measured.
+FALLBACK_OUTSIDE_EUROPE = ['Iran', 'Pakistan', 'Bangladesch', 'Libanon', 'Jordanien',
+                           'Jemen/Saudi-Arabien/Vereinigte Arabische Emirate',
+                           'Ägypten/Algerien/Libyen/Tunesien']
 
 ORIGIN_COLUMNS = {
     'turkey': 'Türkei',
@@ -147,6 +171,17 @@ def naturalisation_ratios(origins: dict, year: str) -> tuple[dict, dict]:
                 provenance[group] = {'basis': 'fallback_non_eu_europe_aggregate',
                                      'migration_background_persons': mh['Sonstiges Europa'],
                                      'citizenship_persons': non_eu}
+    outside = (mh.get('Insgesamt', 0) - mh.get('Europa', 0))
+    az_outside = sum((d.get('foreign_total') or 0) - (d.get('europe') or 0)
+                     for d in origins['districts'])
+    if outside > 0 and az_outside > 0:
+        fallback = outside / az_outside
+        for group in FALLBACK_OUTSIDE_EUROPE:
+            if group in ORIGIN_COLUMNS.values() and group not in ratios:
+                ratios[group] = fallback
+                provenance[group] = {'basis': 'fallback_outside_europe_aggregate',
+                                     'migration_background_persons': outside,
+                                     'citizenship_persons': az_outside}
     missing = set(ORIGIN_COLUMNS.values()) - set(ratios)
     if missing:
         raise SystemExit(f'No naturalisation ratio available for: {sorted(missing)}')
@@ -164,10 +199,17 @@ def state_total(atlas: dict) -> tuple[int, int, str]:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--output', type=Path, default=ROOT / 'docs/data/district-estimate.json')
+    ap.add_argument('--origins', type=Path,
+                    default=ROOT / 'docs/data/district-origins-2024-12.json')
+    ap.add_argument('--all-groups', action='store_true',
+                    help='alle 18 BAMF-Herkunftsgruppen statt der acht des Landesberichts')
     args = ap.parse_args()
+    if args.all_groups:
+        global ORIGIN_COLUMNS
+        ORIGIN_COLUMNS = ORIGIN_COLUMNS_FULL
 
     atlas = json.loads((ROOT / 'docs/data/atlas.json').read_text(encoding='utf-8'))
-    origins = json.loads((ROOT / 'docs/data/district-origins-2024-12.json').read_text(encoding='utf-8'))
+    origins = json.loads(args.origins.read_text(encoding='utf-8'))
     migration = json.loads((ROOT / 'docs/data/district-migration-2024.json').read_text(encoding='utf-8'))
     shares = load_shares()
     t_low, t_high, total_source = state_total(atlas)

@@ -44,6 +44,10 @@ def main() -> None:
                     default=ROOT / 'inputs/zensus2022-religion-gemeinden-bw.csv')
     ap.add_argument('--output', type=Path,
                     default=ROOT / 'docs/data/municipal-religion-bound.json')
+    # The atlas keeps two municipal models; the ceiling must hold for whichever is
+    # being checked, and a model that breaches it cannot be published at all.
+    ap.add_argument('--estimate', type=Path,
+                    default=ROOT / 'docs/data/municipal-estimate.json')
     args = ap.parse_args()
 
     census = {}
@@ -57,7 +61,7 @@ def main() -> None:
             'residual_share_percent': round(100 * other / pop, 2) if pop else None,
         }
 
-    estimate = json.loads((ROOT / 'docs/data/municipal-estimate.json').read_text(encoding='utf-8'))
+    estimate = json.loads(args.estimate.read_text(encoding='utf-8'))
     crosswalk = {c['geo_id']: c['ags'] for c in json.loads(
         (ROOT / 'docs/data/municipality-ags-crosswalk.json').read_text(encoding='utf-8'))}
 

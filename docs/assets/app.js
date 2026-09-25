@@ -2,6 +2,7 @@
 'use strict';
 const D=window.ATLAS_DATA, G=window.ATLAS_GEOMETRY, M=window.AtlasModel;
 const EST=window.ATLAS_ESTIMATE||null;
+const EST18=window.ATLAS_ESTIMATE_18||null;
 const CTX=window.ATLAS_CONTEXT||null;
 const AGE=window.ATLAS_AGE||null;
 const GEN=window.ATLAS_GENERATIONS||null;
@@ -48,6 +49,8 @@ function sourceFor(layer){return D.sources[layer.source]||layer.sourceInfo||AZR_
 const layers={
  religion_state:{title:'Muslimische Bevölkerung · Landeswert',badge:'Veröffentlichte Modellspanne',date:'Bezugsjahr 2025 · veröffentlicht 2026',source:'bamf_fb55',note:'Die einheitliche Landesfläche bedeutet nicht, dass jeder Kreis denselben Muslimanteil hat. Für Kreise und Gemeinden fehlen entsprechende Quellendaten.'},
 
+ religion_estimate_18:{title:'Muslimische Bevölkerung · Modell je Kreis, 18 Herkunftsgruppen',badge:'Modellrechnung',date:'Herkunft 31.12.2025 · 44 Kreise',source:'bamf_fb55',thresholds:[6,8,10,13,16],unit:'percent',note:'Dieselbe Methode wie das Modell daneben, mit allen 18 Herkunftsgruppen des BAMF-Berichts statt der acht, die der Landesbericht je Kreis benennt. Die Herkunftsdaten erklären damit 96 statt 83 Prozent der veröffentlichten Landessumme; der Rest, der nach einem Ersatzschlüssel verteilt werden muss, schrumpft von einem Sechstel auf unter vier Prozent. Beide Modelle stehen nebeneinander, weil der Unterschied zwischen ihnen die Unsicherheit sichtbar macht, die in beiden steckt: Er beträgt im Mittel 0,46 Prozentpunkte und erreicht in Heidelberg 1,7. Für sieben Gruppen gibt es keine eigene Einbürgerungsquote; sie übernehmen die außereuropäische Sammelquote, was in der Datei je Gruppe vermerkt ist.'},
+
  foreign_share_2025:{title:'Ausländische Staatsangehörige · Kreisanteil 2025',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'Staatsangehörigkeit ist keine Religionszugehörigkeit.'},thresholds:[10,15,20,25,30],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit, Stichtag 31.12.2025. Dieselbe Größe wie die Ebene für 2024, ein Jahr später und vom Bund statt vom Land fortgeschrieben. Der Unterschied ist klein: Der Median der Kreise liegt in beiden Jahren bei 17,2 Prozent, die größte Abweichung eines Kreises beträgt 0,4 Prozentpunkte. Beide Ebenen stehen nebeneinander, damit das prüfbar ist und nicht behauptet werden muss.'},
 
  foreign_under25:{title:'Unter 25-Jährige unter den Ausländern · Kreisanteil',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'„Ausländisch“ heißt ohne deutschen Pass.'},thresholds:[20,23,26,29,32],unit:'percent',note:'Anteil der unter 25-Jährigen an der ausländischen Bevölkerung des Kreises. Landesweit sind das 24,6 Prozent — bei der deutschen Bevölkerung 24,9 Prozent, also praktisch dasselbe. Das ist zum Teil ein Artefakt der Zählweise: Kinder von Zugewanderten, die eingebürgert oder als Deutsche geboren sind, zählen auf der deutschen Seite und fehlen auf der ausländischen. Ein Vergleich der Altersstruktur von Herkunftsgruppen ist das ausdrücklich nicht.'},
@@ -84,7 +87,7 @@ function toCSV(rows){if(!rows.length)return '';const keys=Object.keys(rows[0]);c
 function table(headers,rows,caption=''){return `<table>${caption?`<caption>${esc(caption)}</caption>`:''}<thead><tr>${headers.map((h,i)=>`<th scope="col"${i?' class="numeric"':''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
 function metric(label,value,meta=''){return `<div class="detail-stat"><span class="label">${esc(label)}</span><strong>${esc(value)}</strong><span class="meta">${meta}</span></div>`;}
 function setSelected(type,id){state.selected={type,id};$('search-results').hidden=true;renderDetail();renderMap();}
-function isEstimate(){return state.layer==='religion_estimate'||state.layer==='religion_estimate_municipal';}
+function isEstimate(){return state.layer==='religion_estimate'||state.layer==='religion_estimate_municipal'||state.layer==='religion_estimate_18';}
 function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent='Herkunftsdaten erklären '+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
 function selectedPayload(){const base={atlas_version:D.version,built_on:D.built_on,layer:state.layer,definition:layers[state.layer].note,selected:state.selected,source:sourceFor(layers[state.layer])};if(state.selected.type==='institution')return {...base,institution:INST?INST.institutions[state.selected.id]:null,not_a_population_measure:INST?INST.not_a_population_measure:null};
  if(state.selected.type==='state')return {...base,religion_estimate_bw:D.bw,religion_share_bw:D.bw_pct,model:isEstimate()&&EST?EST.meta:null};if(state.selected.type==='district')return {...base,data:districts.get(state.selected.id),model:isEstimate()&&EST?{...EST.meta,result:estimateDistrict(state.selected.id)}:null};return {...base,data:municipalities.get(state.selected.id),muslim_count:null,muslim_pct:null,religion_status:'not_available'};}
@@ -289,6 +292,12 @@ function valueForFeature(f){const p=f.properties;
  if(state.layer==='mh_under25'){const g=AGE?AGE.districts[p.id]:null;return g&&g.mh?g.mh.u25:null;}
  if(state.layer==='second_generation'){const g=GEN?GEN.districts[p.id]:null;return g?g.second_pct:null;}
  if(state.layer==='mh_change'){const t=TS?TS.districts[p.id]:null;return t?t.change:null;}
+ if(state.layer==='religion_estimate_18'){
+  const e=EST18?EST18.districts[p.id]:null;
+  if(!e)return null;
+  const v=e.variants[state.variant];
+  return v?(v.pct_low+v.pct_high)/2:null;
+ }
  if(state.layer==='foreign_share_2025'||state.layer==='foreign_under25'){
   const a=AGENAT?AGENAT.districts.find(r=>r.id===p.id):null;
   if(!a)return null;

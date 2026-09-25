@@ -85,10 +85,15 @@ def census_ceilings() -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--output', type=Path, default=ROOT / 'docs/data/municipal-estimate.json')
+    # Which district model to distribute. The atlas keeps two — eight origin groups from
+    # the state report, eighteen from the federal register — and each needs its own
+    # municipal distribution to be checked against the census ceiling.
+    ap.add_argument('--district', type=Path,
+                    default=ROOT / 'docs/data/district-estimate.json')
     args = ap.parse_args()
 
     atlas = json.loads((ROOT / 'docs/data/atlas.json').read_text(encoding='utf-8'))
-    district = json.loads((ROOT / 'docs/data/district-estimate.json').read_text(encoding='utf-8'))
+    district = json.loads(args.district.read_text(encoding='utf-8'))
     grid = json.loads((ROOT / 'docs/data/municipal-origins-2022.json').read_text(encoding='utf-8'))
     shares = {g['origin_group']: g['share_percent']
               for g in json.loads((ROOT / 'inputs/muslim-shares-fb55-table2.json')
@@ -288,9 +293,14 @@ def main() -> None:
             'pct_low': m['percent_low'], 'pct_high': m['percent_high'],
         } for m in municipalities},
     }
-    js = args.output.with_name('estimate-data.js')
-    js.write_text('window.ATLAS_ESTIMATE=' + json.dumps(view, ensure_ascii=False,
-                                                        separators=(',', ':')) + ';\n', encoding='utf-8')
+    # The variable name follows the output file, so the eighteen-group model can be
+    # loaded beside the eight-group one instead of overwriting it.
+    variable, name = ('ATLAS_ESTIMATE', 'estimate-data.js')
+    if args.output.stem.endswith('-18'):
+        variable, name = 'ATLAS_ESTIMATE_18', 'estimate-18-data.js'
+    js = args.output.with_name(name)
+    js.write_text(f'window.{variable}=' + json.dumps(view, ensure_ascii=False,
+                                                     separators=(',', ':')) + ';\n', encoding='utf-8')
 
     ranked = sorted((m for m in municipalities if m['population'] >= 20000),
                     key=lambda m: -(m['percent_central'] or 0))

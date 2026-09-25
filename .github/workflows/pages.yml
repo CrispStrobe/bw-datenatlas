@@ -151,13 +151,26 @@ jobs:
 
       - name: Modellrechnung aufbauen
         run: |
+          python scripts/prepare_district_origins_full.py
           python scripts/build_estimate.py
+          python scripts/build_estimate.py --all-groups \
+            --origins docs/data/district-origins-full-2025.json \
+            --output docs/data/district-estimate-18.json
+          python scripts/build_municipal_estimate.py \
+            --district docs/data/district-estimate-18.json \
+            --output docs/data/municipal-estimate-18.json
           python scripts/build_municipal_estimate.py
           python scripts/build_timeseries.py
           python scripts/build_bases.py
 
+      # Beide Modelle müssen die Obergrenze halten. Ein Modell, das sie verletzt, darf
+      # nicht veröffentlicht werden — auch nicht als zweite Ebene neben einem, das sie hält.
       - name: Modellrechnung gegen die Zensus-Obergrenze prüfen
-        run: python scripts/check_religion_upper_bound.py
+        run: |
+          python scripts/check_religion_upper_bound.py
+          python scripts/check_religion_upper_bound.py \
+            --estimate docs/data/municipal-estimate-18.json \
+            --output docs/data/municipal-religion-bound-18.json
 
       - name: Modellrechnung gegen externe Schätzungen prüfen
         run: python scripts/check_external_references.py
@@ -191,6 +204,9 @@ jobs:
             docs/data/district-origins-2024-12.json \
             docs/data/district-migration-2024.json \
             docs/data/district-estimate.json \
+            docs/data/district-estimate-18.json \
+            docs/data/district-origins-full-2025.json \
+            docs/data/municipal-estimate-18.json \
             docs/data/municipal-origins-2022.json \
             docs/data/municipal-estimate.json \
             docs/data/district-socioeconomics-2024.json \

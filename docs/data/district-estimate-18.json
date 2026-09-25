@@ -1,0 +1,3096 @@
+{
+  "type": "modelled_district_muslim_population",
+  "schema_version": "1.0",
+  "is_model_not_measurement": true,
+  "headline": "Modellrechnung, keine amtliche Messung der Religionszugehörigkeit.",
+  "method": "Veröffentlichte Landessumme, verteilt nach Herkunftsschlüssel: ausländische Bevölkerung je Staatsangehörigkeit multipliziert mit dem bundesweiten muslimischen Anteil dieser Herkunftsgruppe.",
+  "state_total": {
+    "persons_low": 1133000,
+    "persons_high": 1197000,
+    "reference_period": "2025",
+    "source_id": "bamf_fb55"
+  },
+  "origin_source": {
+    "source": "Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle 12521-0041: Ausländer: Kreise, Stichtag, Geschlecht, Staatsangehörigkeit",
+    "table": "12521-0041",
+    "reference_period": "31.12.2025",
+    "measurement": "Ausländische Bevölkerung nach Staatsangehörigkeit, Ausländerzentralregister, zusammengefasst zu den 18 Herkunftsgruppen des BAMF-Forschungsberichts 55."
+  },
+  "share_source": {
+    "source": "BAMF Forschungsbericht 55, Tabelle 2",
+    "reference_period": "2019/2020",
+    "excluded": "Fünf abweichende Werte aus Tabelle 1, Spalte E."
+  },
+  "migration_source": {
+    "source": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0503, Grundprogramm des Mikrozensus",
+    "reference_period": "2024"
+  },
+  "origin_groups_used": {
+    "turkey": {
+      "group": "Türkei",
+      "share_percent": 87.2
+    },
+    "syria": {
+      "group": "Syrien",
+      "share_percent": 86.5
+    },
+    "kosovo": {
+      "group": "Kosovo",
+      "share_percent": 86.9
+    },
+    "serbia": {
+      "group": "Serbien",
+      "share_percent": 48
+    },
+    "iraq": {
+      "group": "Irak",
+      "share_percent": 37.4
+    },
+    "afghanistan": {
+      "group": "Afghanistan",
+      "share_percent": 93.5
+    },
+    "bosnia_herzegovina": {
+      "group": "Bosnien-Herzegowina",
+      "share_percent": 57.2
+    },
+    "north_macedonia": {
+      "group": "Nordmazedonien",
+      "share_percent": 80
+    },
+    "albania": {
+      "group": "Albanien",
+      "share_percent": 58.1
+    },
+    "montenegro": {
+      "group": "Montenegro",
+      "share_percent": 64.4
+    },
+    "morocco": {
+      "group": "Marokko",
+      "share_percent": 95.1
+    },
+    "iran": {
+      "group": "Iran",
+      "share_percent": 29
+    },
+    "pakistan": {
+      "group": "Pakistan",
+      "share_percent": 96.3
+    },
+    "bangladesh": {
+      "group": "Bangladesch",
+      "share_percent": 86
+    },
+    "lebanon": {
+      "group": "Libanon",
+      "share_percent": 92.7
+    },
+    "jordan": {
+      "group": "Jordanien",
+      "share_percent": 89.3
+    },
+    "gulf": {
+      "group": "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate",
+      "share_percent": 96.2
+    },
+    "north_africa": {
+      "group": "Ägypten/Algerien/Libyen/Tunesien",
+      "share_percent": 86.1
+    }
+  },
+  "origin_groups_not_available_per_district": [],
+  "naturalisation_ratios": {
+    "Afghanistan": {
+      "ratio": 0.998,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 44000,
+      "citizenship_persons": 44085
+    },
+    "Albanien": {
+      "ratio": 1.897,
+      "basis": "fallback_non_eu_europe_aggregate",
+      "migration_background_persons": 1465000,
+      "citizenship_persons": 772280
+    },
+    "Bangladesch": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    },
+    "Bosnien-Herzegowina": {
+      "ratio": 1.897,
+      "basis": "fallback_non_eu_europe_aggregate",
+      "migration_background_persons": 1465000,
+      "citizenship_persons": 772280
+    },
+    "Irak": {
+      "ratio": 1.678,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 49000,
+      "citizenship_persons": 29200
+    },
+    "Iran": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    },
+    "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    },
+    "Jordanien": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    },
+    "Kosovo": {
+      "ratio": 1.821,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 170000,
+      "citizenship_persons": 93370
+    },
+    "Libanon": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    },
+    "Marokko": {
+      "ratio": 1.871,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 16000,
+      "citizenship_persons": 8550
+    },
+    "Montenegro": {
+      "ratio": 1.897,
+      "basis": "fallback_non_eu_europe_aggregate",
+      "migration_background_persons": 1465000,
+      "citizenship_persons": 772280
+    },
+    "Nordmazedonien": {
+      "ratio": 1.897,
+      "basis": "fallback_non_eu_europe_aggregate",
+      "migration_background_persons": 1465000,
+      "citizenship_persons": 772280
+    },
+    "Pakistan": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    },
+    "Serbien": {
+      "ratio": 1.923,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 92000,
+      "citizenship_persons": 47835
+    },
+    "Syrien": {
+      "ratio": 1.301,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 122000,
+      "citizenship_persons": 93810
+    },
+    "Türkei": {
+      "ratio": 2.049,
+      "basis": "published_for_this_origin",
+      "migration_background_persons": 545000,
+      "citizenship_persons": 265980
+    },
+    "Ägypten/Algerien/Libyen/Tunesien": {
+      "ratio": 2.628,
+      "basis": "fallback_outside_europe_aggregate",
+      "migration_background_persons": 1389000,
+      "citizenship_persons": 528540
+    }
+  },
+  "coverage": {
+    "explained_by_citizenship_persons": 588877,
+    "explained_with_naturalisation_persons": 1089576,
+    "share_of_published_low_percent": 52.0,
+    "share_of_published_high_percent": 49.2,
+    "corrected_share_of_published_low_percent": 96.2,
+    "corrected_share_of_published_high_percent": 91.0,
+    "note": "Die Staatsangehörigkeitsdaten erklären nur diesen Teil der veröffentlichten Landessumme. Der Rest entfällt auf Eingebürgerte, in Deutschland geborene Nachkommen und Herkunftsgruppen ohne Kreisangabe. Genau dieser Rest wird in den beiden Varianten unterschiedlich verteilt."
+  },
+  "variants": {
+    "citizenship": "Nur Staatsangehörigkeit. Der nicht erklärte Rest wird wie die Staatsangehörigkeitsdaten selbst verteilt.",
+    "migration_background": "Jede Herkunftsgruppe wird mit ihrem eigenen Faktor aus Migrationshintergrund je Herkunft geteilt durch Staatsangehörige derselben Herkunft hochgerechnet. Der verbleibende Rest wird nach Bevölkerung mit Migrationshintergrund verteilt."
+  },
+  "limitations": [
+    "Keine amtliche Religionsstatistik auf Kreisebene; dies ist eine Modellrechnung.",
+    "Die muslimischen Anteile je Herkunftsgruppe sind bundesweite Werte von 2019/2020. Auch der BAMF-Bericht selbst rechnet seine Werte für 2025 mit diesen Anteilen; neuere liegen nicht vor. Das ist die größte Fehlerquelle des Ergebnisses.",
+    "Staatsangehörigkeit ist nicht Herkunft: Eingebürgerte fehlen in der Herkunftsquelle.",
+    "Nur 8 der 18 veröffentlichten Herkunftsgruppen haben eine Entsprechung je Kreis.",
+    "Die Bezugszeiten der Bausteine unterscheiden sich (2025, 31.12.2024, 2024, 2019/2020).",
+    "Der Mikrozensus ist eine Stichprobe; Rastatt und Baden-Baden teilen eine Region."
+  ],
+  "districts": [
+    {
+      "id": "08111",
+      "name": "Stuttgart, kreisfreie Stadt",
+      "population": 613205,
+      "explained_by_citizenship": 40648,
+      "explained_with_naturalisation": 76364,
+      "by_origin": {
+        "Türkei": 15679,
+        "Syrien": 4783,
+        "Kosovo": 3567,
+        "Serbien": 2246,
+        "Irak": 1081,
+        "Afghanistan": 3193,
+        "Bosnien-Herzegowina": 3040,
+        "Nordmazedonien": 1284,
+        "Albanien": 703,
+        "Montenegro": 258,
+        "Marokko": 628,
+        "Iran": 505,
+        "Pakistan": 934,
+        "Bangladesch": 146,
+        "Libanon": 255,
+        "Jordanien": 277,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 72,
+        "Ägypten/Algerien/Libyen/Tunesien": 1998
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 32126,
+        "Syrien": 6221,
+        "Kosovo": 6495,
+        "Serbien": 4320,
+        "Irak": 1814,
+        "Afghanistan": 3187,
+        "Bosnien-Herzegowina": 5767,
+        "Nordmazedonien": 2436,
+        "Albanien": 1334,
+        "Montenegro": 489,
+        "Marokko": 1175,
+        "Iran": 1326,
+        "Pakistan": 2455,
+        "Bangladesch": 384,
+        "Libanon": 670,
+        "Jordanien": 728,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 190,
+        "Ägypten/Algerien/Libyen/Tunesien": 5249
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 78207,
+          "persons_high": 82625,
+          "percent_low": 12.75,
+          "percent_high": 13.47
+        },
+        "migration_background": {
+          "persons_low": 79461,
+          "persons_high": 84025,
+          "percent_low": 12.96,
+          "percent_high": 13.7
+        }
+      },
+      "combined_low_persons": 78207,
+      "combined_high_persons": 84025,
+      "combined_low_percent": 12.75,
+      "combined_high_percent": 13.7
+    },
+    {
+      "id": "08115",
+      "name": "Böblingen, Landkreis",
+      "population": 395351,
+      "explained_by_citizenship": 26877,
+      "explained_with_naturalisation": 50231,
+      "by_origin": {
+        "Türkei": 11593,
+        "Syrien": 2569,
+        "Kosovo": 3811,
+        "Serbien": 955,
+        "Irak": 350,
+        "Afghanistan": 2024,
+        "Bosnien-Herzegowina": 1519,
+        "Nordmazedonien": 1516,
+        "Albanien": 578,
+        "Montenegro": 109,
+        "Marokko": 233,
+        "Iran": 222,
+        "Pakistan": 462,
+        "Bangladesch": 30,
+        "Libanon": 130,
+        "Jordanien": 63,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 24,
+        "Ägypten/Algerien/Libyen/Tunesien": 689
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 23755,
+        "Syrien": 3341,
+        "Kosovo": 6938,
+        "Serbien": 1837,
+        "Irak": 587,
+        "Afghanistan": 2020,
+        "Bosnien-Herzegowina": 2881,
+        "Nordmazedonien": 2876,
+        "Albanien": 1097,
+        "Montenegro": 208,
+        "Marokko": 436,
+        "Iran": 583,
+        "Pakistan": 1215,
+        "Bangladesch": 79,
+        "Libanon": 341,
+        "Jordanien": 164,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 63,
+        "Ägypten/Algerien/Libyen/Tunesien": 1810
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 51711,
+          "persons_high": 54632,
+          "percent_low": 13.08,
+          "percent_high": 13.82
+        },
+        "migration_background": {
+          "persons_low": 52008,
+          "persons_high": 54626,
+          "percent_low": 13.15,
+          "percent_high": 13.82
+        }
+      },
+      "combined_low_persons": 51711,
+      "combined_high_persons": 54632,
+      "combined_low_percent": 13.08,
+      "combined_high_percent": 13.82
+    },
+    {
+      "id": "08116",
+      "name": "Esslingen, Landkreis",
+      "population": 537006,
+      "explained_by_citizenship": 34718,
+      "explained_with_naturalisation": 64613,
+      "by_origin": {
+        "Türkei": 15203,
+        "Syrien": 4870,
+        "Kosovo": 5005,
+        "Serbien": 1188,
+        "Irak": 445,
+        "Afghanistan": 1949,
+        "Bosnien-Herzegowina": 1842,
+        "Nordmazedonien": 1112,
+        "Albanien": 476,
+        "Montenegro": 206,
+        "Marokko": 295,
+        "Iran": 235,
+        "Pakistan": 742,
+        "Bangladesch": 64,
+        "Libanon": 125,
+        "Jordanien": 71,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 14,
+        "Ägypten/Algerien/Libyen/Tunesien": 874
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 31152,
+        "Syrien": 6333,
+        "Kosovo": 9113,
+        "Serbien": 2285,
+        "Irak": 747,
+        "Afghanistan": 1946,
+        "Bosnien-Herzegowina": 3494,
+        "Nordmazedonien": 2109,
+        "Albanien": 904,
+        "Montenegro": 391,
+        "Marokko": 552,
+        "Iran": 617,
+        "Pakistan": 1949,
+        "Bangladesch": 170,
+        "Libanon": 329,
+        "Jordanien": 188,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 38,
+        "Ägypten/Algerien/Libyen/Tunesien": 2297
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 66798,
+          "persons_high": 70571,
+          "percent_low": 12.44,
+          "percent_high": 13.14
+        },
+        "migration_background": {
+          "persons_low": 66765,
+          "persons_high": 69937,
+          "percent_low": 12.43,
+          "percent_high": 13.02
+        }
+      },
+      "combined_low_persons": 66765,
+      "combined_high_persons": 70571,
+      "combined_low_percent": 12.43,
+      "combined_high_percent": 13.14
+    },
+    {
+      "id": "08117",
+      "name": "Göppingen, Landkreis",
+      "population": 258898,
+      "explained_by_citizenship": 17848,
+      "explained_with_naturalisation": 33271,
+      "by_origin": {
+        "Türkei": 8153,
+        "Syrien": 2037,
+        "Kosovo": 2803,
+        "Serbien": 761,
+        "Irak": 198,
+        "Afghanistan": 1014,
+        "Bosnien-Herzegowina": 1073,
+        "Nordmazedonien": 516,
+        "Albanien": 363,
+        "Montenegro": 68,
+        "Marokko": 124,
+        "Iran": 65,
+        "Pakistan": 351,
+        "Bangladesch": 30,
+        "Libanon": 28,
+        "Jordanien": 27,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 10,
+        "Ägypten/Algerien/Libyen/Tunesien": 228
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 16706,
+        "Syrien": 2649,
+        "Kosovo": 5103,
+        "Serbien": 1463,
+        "Irak": 333,
+        "Afghanistan": 1013,
+        "Bosnien-Herzegowina": 2035,
+        "Nordmazedonien": 979,
+        "Albanien": 689,
+        "Montenegro": 128,
+        "Marokko": 231,
+        "Iran": 171,
+        "Pakistan": 924,
+        "Bangladesch": 79,
+        "Libanon": 73,
+        "Jordanien": 70,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 25,
+        "Ägypten/Algerien/Libyen/Tunesien": 600
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 34340,
+          "persons_high": 36280,
+          "percent_low": 13.26,
+          "percent_high": 14.01
+        },
+        "migration_background": {
+          "persons_low": 34327,
+          "persons_high": 35883,
+          "percent_low": 13.26,
+          "percent_high": 13.86
+        }
+      },
+      "combined_low_persons": 34327,
+      "combined_high_persons": 36280,
+      "combined_low_percent": 13.26,
+      "combined_high_percent": 14.01
+    },
+    {
+      "id": "08118",
+      "name": "Ludwigsburg, Landkreis",
+      "population": 535684,
+      "explained_by_citizenship": 35709,
+      "explained_with_naturalisation": 66331,
+      "by_origin": {
+        "Türkei": 16101,
+        "Syrien": 4251,
+        "Kosovo": 4962,
+        "Serbien": 1330,
+        "Irak": 482,
+        "Afghanistan": 2613,
+        "Bosnien-Herzegowina": 1533,
+        "Nordmazedonien": 1344,
+        "Albanien": 642,
+        "Montenegro": 97,
+        "Marokko": 319,
+        "Iran": 203,
+        "Pakistan": 472,
+        "Bangladesch": 30,
+        "Libanon": 88,
+        "Jordanien": 112,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 14,
+        "Ägypten/Algerien/Libyen/Tunesien": 1115
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 32992,
+        "Syrien": 5529,
+        "Kosovo": 9034,
+        "Serbien": 2557,
+        "Irak": 810,
+        "Afghanistan": 2608,
+        "Bosnien-Herzegowina": 2908,
+        "Nordmazedonien": 2550,
+        "Albanien": 1218,
+        "Montenegro": 183,
+        "Marokko": 596,
+        "Iran": 533,
+        "Pakistan": 1240,
+        "Bangladesch": 79,
+        "Libanon": 231,
+        "Jordanien": 293,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 38,
+        "Ägypten/Algerien/Libyen/Tunesien": 2930
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 68703,
+          "persons_high": 72584,
+          "percent_low": 12.83,
+          "percent_high": 13.55
+        },
+        "migration_background": {
+          "persons_low": 68626,
+          "persons_high": 72008,
+          "percent_low": 12.81,
+          "percent_high": 13.44
+        }
+      },
+      "combined_low_persons": 68626,
+      "combined_high_persons": 72584,
+      "combined_low_percent": 12.81,
+      "combined_high_percent": 13.55
+    },
+    {
+      "id": "08119",
+      "name": "Rems-Murr-Kreis",
+      "population": 440698,
+      "explained_by_citizenship": 25227,
+      "explained_with_naturalisation": 46015,
+      "by_origin": {
+        "Türkei": 8781,
+        "Syrien": 3832,
+        "Kosovo": 5509,
+        "Serbien": 1094,
+        "Irak": 363,
+        "Afghanistan": 1510,
+        "Bosnien-Herzegowina": 1296,
+        "Nordmazedonien": 720,
+        "Albanien": 549,
+        "Montenegro": 68,
+        "Marokko": 214,
+        "Iran": 104,
+        "Pakistan": 457,
+        "Bangladesch": 17,
+        "Libanon": 93,
+        "Jordanien": 80,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 10,
+        "Ägypten/Algerien/Libyen/Tunesien": 530
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 17993,
+        "Syrien": 4983,
+        "Kosovo": 10031,
+        "Serbien": 2105,
+        "Irak": 609,
+        "Afghanistan": 1507,
+        "Bosnien-Herzegowina": 2458,
+        "Nordmazedonien": 1366,
+        "Albanien": 1042,
+        "Montenegro": 128,
+        "Marokko": 400,
+        "Iran": 274,
+        "Pakistan": 1202,
+        "Bangladesch": 45,
+        "Libanon": 244,
+        "Jordanien": 211,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 25,
+        "Ägypten/Algerien/Libyen/Tunesien": 1392
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 48537,
+          "persons_high": 51279,
+          "percent_low": 11.01,
+          "percent_high": 11.64
+        },
+        "migration_background": {
+          "persons_low": 47771,
+          "persons_high": 50360,
+          "percent_low": 10.84,
+          "percent_high": 11.43
+        }
+      },
+      "combined_low_persons": 47771,
+      "combined_high_persons": 51279,
+      "combined_low_percent": 10.84,
+      "combined_high_percent": 11.64
+    },
+    {
+      "id": "08121",
+      "name": "Heilbronn, kreisfreie Stadt",
+      "population": 132097,
+      "explained_by_citizenship": 15680,
+      "explained_with_naturalisation": 29389,
+      "by_origin": {
+        "Türkei": 6435,
+        "Syrien": 2128,
+        "Kosovo": 3341,
+        "Serbien": 324,
+        "Irak": 335,
+        "Afghanistan": 519,
+        "Bosnien-Herzegowina": 735,
+        "Nordmazedonien": 312,
+        "Albanien": 352,
+        "Montenegro": 52,
+        "Marokko": 157,
+        "Iran": 87,
+        "Pakistan": 337,
+        "Bangladesch": 34,
+        "Libanon": 37,
+        "Jordanien": 54,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 29,
+        "Ägypten/Algerien/Libyen/Tunesien": 413
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 13186,
+        "Syrien": 2767,
+        "Kosovo": 6084,
+        "Serbien": 623,
+        "Irak": 562,
+        "Afghanistan": 518,
+        "Bosnien-Herzegowina": 1394,
+        "Nordmazedonien": 592,
+        "Albanien": 667,
+        "Montenegro": 98,
+        "Marokko": 294,
+        "Iran": 229,
+        "Pakistan": 886,
+        "Bangladesch": 90,
+        "Libanon": 97,
+        "Jordanien": 141,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 76,
+        "Ägypten/Algerien/Libyen/Tunesien": 1086
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 30169,
+          "persons_high": 31873,
+          "percent_low": 22.84,
+          "percent_high": 24.13
+        },
+        "migration_background": {
+          "persons_low": 30130,
+          "persons_high": 31223,
+          "percent_low": 22.81,
+          "percent_high": 23.64
+        }
+      },
+      "combined_low_persons": 30130,
+      "combined_high_persons": 31873,
+      "combined_low_percent": 22.81,
+      "combined_high_percent": 24.13
+    },
+    {
+      "id": "08125",
+      "name": "Heilbronn, Landkreis",
+      "population": 354043,
+      "explained_by_citizenship": 20331,
+      "explained_with_naturalisation": 37659,
+      "by_origin": {
+        "Türkei": 10390,
+        "Syrien": 2591,
+        "Kosovo": 2924,
+        "Serbien": 468,
+        "Irak": 271,
+        "Afghanistan": 1360,
+        "Bosnien-Herzegowina": 758,
+        "Nordmazedonien": 316,
+        "Albanien": 261,
+        "Montenegro": 77,
+        "Marokko": 157,
+        "Iran": 91,
+        "Pakistan": 274,
+        "Bangladesch": 4,
+        "Libanon": 79,
+        "Jordanien": 27,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 19,
+        "Ägypten/Algerien/Libyen/Tunesien": 263
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 21289,
+        "Syrien": 3369,
+        "Kosovo": 5324,
+        "Serbien": 900,
+        "Irak": 455,
+        "Afghanistan": 1358,
+        "Bosnien-Herzegowina": 1438,
+        "Nordmazedonien": 599,
+        "Albanien": 496,
+        "Montenegro": 147,
+        "Marokko": 294,
+        "Iran": 240,
+        "Pakistan": 721,
+        "Bangladesch": 11,
+        "Libanon": 207,
+        "Jordanien": 70,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 51,
+        "Ägypten/Algerien/Libyen/Tunesien": 690
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 39118,
+          "persons_high": 41327,
+          "percent_low": 11.05,
+          "percent_high": 11.67
+        },
+        "migration_background": {
+          "persons_low": 39030,
+          "persons_high": 41050,
+          "percent_low": 11.02,
+          "percent_high": 11.59
+        }
+      },
+      "combined_low_persons": 39030,
+      "combined_high_persons": 41327,
+      "combined_low_percent": 11.02,
+      "combined_high_percent": 11.67
+    },
+    {
+      "id": "08126",
+      "name": "Hohenlohekreis",
+      "population": 115715,
+      "explained_by_citizenship": 3643,
+      "explained_with_naturalisation": 6198,
+      "by_origin": {
+        "Türkei": 968,
+        "Syrien": 895,
+        "Kosovo": 461,
+        "Serbien": 228,
+        "Irak": 21,
+        "Afghanistan": 486,
+        "Bosnien-Herzegowina": 146,
+        "Nordmazedonien": 128,
+        "Albanien": 52,
+        "Montenegro": 10,
+        "Marokko": 48,
+        "Iran": 19,
+        "Pakistan": 82,
+        "Bangladesch": 9,
+        "Libanon": 14,
+        "Jordanien": 4,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 73
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 1983,
+        "Syrien": 1164,
+        "Kosovo": 839,
+        "Serbien": 439,
+        "Irak": 35,
+        "Afghanistan": 485,
+        "Bosnien-Herzegowina": 277,
+        "Nordmazedonien": 243,
+        "Albanien": 99,
+        "Montenegro": 18,
+        "Marokko": 89,
+        "Iran": 50,
+        "Pakistan": 215,
+        "Bangladesch": 23,
+        "Libanon": 37,
+        "Jordanien": 12,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 192
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 7009,
+          "persons_high": 7405,
+          "percent_low": 6.06,
+          "percent_high": 6.4
+        },
+        "migration_background": {
+          "persons_low": 6716,
+          "persons_high": 7479,
+          "percent_low": 5.8,
+          "percent_high": 6.46
+        }
+      },
+      "combined_low_persons": 6716,
+      "combined_high_persons": 7479,
+      "combined_low_percent": 5.8,
+      "combined_high_percent": 6.46
+    },
+    {
+      "id": "08127",
+      "name": "Schwäbisch Hall, Landkreis",
+      "population": 200936,
+      "explained_by_citizenship": 7574,
+      "explained_with_naturalisation": 13569,
+      "by_origin": {
+        "Türkei": 2568,
+        "Syrien": 1103,
+        "Kosovo": 991,
+        "Serbien": 286,
+        "Irak": 161,
+        "Afghanistan": 940,
+        "Bosnien-Herzegowina": 378,
+        "Nordmazedonien": 188,
+        "Albanien": 244,
+        "Montenegro": 13,
+        "Marokko": 128,
+        "Iran": 41,
+        "Pakistan": 217,
+        "Bangladesch": 13,
+        "Libanon": 32,
+        "Jordanien": 22,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 245
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5262,
+        "Syrien": 1434,
+        "Kosovo": 1804,
+        "Serbien": 549,
+        "Irak": 270,
+        "Afghanistan": 938,
+        "Bosnien-Herzegowina": 716,
+        "Nordmazedonien": 357,
+        "Albanien": 463,
+        "Montenegro": 24,
+        "Marokko": 240,
+        "Iran": 107,
+        "Pakistan": 569,
+        "Bangladesch": 34,
+        "Libanon": 85,
+        "Jordanien": 59,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 645
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 14572,
+          "persons_high": 15395,
+          "percent_low": 7.25,
+          "percent_high": 7.66
+        },
+        "migration_background": {
+          "persons_low": 14259,
+          "persons_high": 15277,
+          "percent_low": 7.1,
+          "percent_high": 7.6
+        }
+      },
+      "combined_low_persons": 14259,
+      "combined_high_persons": 15395,
+      "combined_low_percent": 7.1,
+      "combined_high_percent": 7.66
+    },
+    {
+      "id": "08128",
+      "name": "Main-Tauber-Kreis",
+      "population": 133235,
+      "explained_by_citizenship": 4059,
+      "explained_with_naturalisation": 7040,
+      "by_origin": {
+        "Türkei": 1291,
+        "Syrien": 1034,
+        "Kosovo": 356,
+        "Serbien": 168,
+        "Irak": 77,
+        "Afghanistan": 435,
+        "Bosnien-Herzegowina": 134,
+        "Nordmazedonien": 152,
+        "Albanien": 58,
+        "Montenegro": 16,
+        "Marokko": 76,
+        "Iran": 29,
+        "Pakistan": 58,
+        "Bangladesch": 4,
+        "Libanon": 46,
+        "Jordanien": 9,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 116
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 2644,
+        "Syrien": 1344,
+        "Kosovo": 649,
+        "Serbien": 323,
+        "Irak": 129,
+        "Afghanistan": 434,
+        "Bosnien-Herzegowina": 255,
+        "Nordmazedonien": 288,
+        "Albanien": 110,
+        "Montenegro": 31,
+        "Marokko": 142,
+        "Iran": 76,
+        "Pakistan": 152,
+        "Bangladesch": 11,
+        "Libanon": 122,
+        "Jordanien": 23,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 305
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 7810,
+          "persons_high": 8251,
+          "percent_low": 5.86,
+          "percent_high": 6.19
+        },
+        "migration_background": {
+          "persons_low": 7476,
+          "persons_high": 8120,
+          "percent_low": 5.61,
+          "percent_high": 6.09
+        }
+      },
+      "combined_low_persons": 7476,
+      "combined_high_persons": 8251,
+      "combined_low_percent": 5.61,
+      "combined_high_percent": 6.19
+    },
+    {
+      "id": "08135",
+      "name": "Heidenheim, Landkreis",
+      "population": 135273,
+      "explained_by_citizenship": 7121,
+      "explained_with_naturalisation": 13032,
+      "by_origin": {
+        "Türkei": 3065,
+        "Syrien": 1553,
+        "Kosovo": 756,
+        "Serbien": 360,
+        "Irak": 99,
+        "Afghanistan": 210,
+        "Bosnien-Herzegowina": 280,
+        "Nordmazedonien": 276,
+        "Albanien": 116,
+        "Montenegro": 35,
+        "Marokko": 38,
+        "Iran": 26,
+        "Pakistan": 135,
+        "Bangladesch": 4,
+        "Libanon": 32,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 112
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 6280,
+        "Syrien": 2019,
+        "Kosovo": 1377,
+        "Serbien": 692,
+        "Irak": 166,
+        "Afghanistan": 210,
+        "Bosnien-Herzegowina": 532,
+        "Nordmazedonien": 524,
+        "Albanien": 220,
+        "Montenegro": 67,
+        "Marokko": 71,
+        "Iran": 69,
+        "Pakistan": 354,
+        "Bangladesch": 11,
+        "Libanon": 85,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 294
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 13702,
+          "persons_high": 14476,
+          "percent_low": 10.13,
+          "percent_high": 10.7
+        },
+        "migration_background": {
+          "persons_low": 13509,
+          "persons_high": 14213,
+          "percent_low": 9.99,
+          "percent_high": 10.51
+        }
+      },
+      "combined_low_persons": 13509,
+      "combined_high_persons": 14476,
+      "combined_low_percent": 9.99,
+      "combined_high_percent": 10.7
+    },
+    {
+      "id": "08136",
+      "name": "Ostalbkreis",
+      "population": 317458,
+      "explained_by_citizenship": 12089,
+      "explained_with_naturalisation": 23031,
+      "by_origin": {
+        "Türkei": 5406,
+        "Syrien": 1116,
+        "Kosovo": 1907,
+        "Serbien": 401,
+        "Irak": 107,
+        "Afghanistan": 552,
+        "Bosnien-Herzegowina": 738,
+        "Nordmazedonien": 612,
+        "Albanien": 221,
+        "Montenegro": 58,
+        "Marokko": 152,
+        "Iran": 49,
+        "Pakistan": 332,
+        "Bangladesch": 13,
+        "Libanon": 74,
+        "Jordanien": 54,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 293
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11078,
+        "Syrien": 1451,
+        "Kosovo": 3473,
+        "Serbien": 771,
+        "Irak": 179,
+        "Afghanistan": 551,
+        "Bosnien-Herzegowina": 1400,
+        "Nordmazedonien": 1161,
+        "Albanien": 419,
+        "Montenegro": 110,
+        "Marokko": 285,
+        "Iran": 130,
+        "Pakistan": 873,
+        "Bangladesch": 34,
+        "Libanon": 195,
+        "Jordanien": 141,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 769
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 23260,
+          "persons_high": 24574,
+          "percent_low": 7.33,
+          "percent_high": 7.74
+        },
+        "migration_background": {
+          "persons_low": 24117,
+          "persons_high": 25718,
+          "percent_low": 7.6,
+          "percent_high": 8.1
+        }
+      },
+      "combined_low_persons": 23260,
+      "combined_high_persons": 25718,
+      "combined_low_percent": 7.33,
+      "combined_high_percent": 8.1
+    },
+    {
+      "id": "08211",
+      "name": "Baden-Baden, kreisfreie Stadt",
+      "population": 56852,
+      "explained_by_citizenship": 2762,
+      "explained_with_naturalisation": 5160,
+      "by_origin": {
+        "Türkei": 584,
+        "Syrien": 372,
+        "Kosovo": 469,
+        "Serbien": 170,
+        "Irak": 73,
+        "Afghanistan": 154,
+        "Bosnien-Herzegowina": 183,
+        "Nordmazedonien": 232,
+        "Albanien": 96,
+        "Montenegro": 13,
+        "Marokko": 86,
+        "Iran": 32,
+        "Pakistan": 96,
+        "Bangladesch": 4,
+        "Libanon": 32,
+        "Jordanien": 4,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 10,
+        "Ägypten/Algerien/Libyen/Tunesien": 151
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 1197,
+        "Syrien": 484,
+        "Kosovo": 854,
+        "Serbien": 328,
+        "Irak": 122,
+        "Afghanistan": 154,
+        "Bosnien-Herzegowina": 347,
+        "Nordmazedonien": 440,
+        "Albanien": 182,
+        "Montenegro": 24,
+        "Marokko": 160,
+        "Iran": 84,
+        "Pakistan": 253,
+        "Bangladesch": 11,
+        "Libanon": 85,
+        "Jordanien": 12,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 25,
+        "Ägypten/Algerien/Libyen/Tunesien": 396
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 5314,
+          "persons_high": 5615,
+          "percent_low": 9.35,
+          "percent_high": 9.88
+        },
+        "migration_background": {
+          "persons_low": 5390,
+          "persons_high": 5731,
+          "percent_low": 9.48,
+          "percent_high": 10.08
+        }
+      },
+      "combined_low_persons": 5314,
+      "combined_high_persons": 5731,
+      "combined_low_percent": 9.35,
+      "combined_high_percent": 10.08
+    },
+    {
+      "id": "08212",
+      "name": "Karlsruhe, kreisfreie Stadt",
+      "population": 309415,
+      "explained_by_citizenship": 14039,
+      "explained_with_naturalisation": 27547,
+      "by_origin": {
+        "Türkei": 5415,
+        "Syrien": 1237,
+        "Kosovo": 752,
+        "Serbien": 590,
+        "Irak": 221,
+        "Afghanistan": 916,
+        "Bosnien-Herzegowina": 769,
+        "Nordmazedonien": 808,
+        "Albanien": 349,
+        "Montenegro": 74,
+        "Marokko": 504,
+        "Iran": 236,
+        "Pakistan": 674,
+        "Bangladesch": 95,
+        "Libanon": 139,
+        "Jordanien": 85,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 34,
+        "Ägypten/Algerien/Libyen/Tunesien": 1141
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11096,
+        "Syrien": 1609,
+        "Kosovo": 1369,
+        "Serbien": 1136,
+        "Irak": 370,
+        "Afghanistan": 915,
+        "Bosnien-Herzegowina": 1459,
+        "Nordmazedonien": 1533,
+        "Albanien": 661,
+        "Montenegro": 140,
+        "Marokko": 943,
+        "Iran": 621,
+        "Pakistan": 1772,
+        "Bangladesch": 249,
+        "Libanon": 365,
+        "Jordanien": 223,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 88,
+        "Ägypten/Algerien/Libyen/Tunesien": 2998
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 27010,
+          "persons_high": 28536,
+          "percent_low": 8.73,
+          "percent_high": 9.22
+        },
+        "migration_background": {
+          "persons_low": 28735,
+          "persons_high": 30485,
+          "percent_low": 9.29,
+          "percent_high": 9.85
+        }
+      },
+      "combined_low_persons": 27010,
+      "combined_high_persons": 30485,
+      "combined_low_percent": 8.73,
+      "combined_high_percent": 9.85
+    },
+    {
+      "id": "08215",
+      "name": "Karlsruhe, Landkreis",
+      "population": 456289,
+      "explained_by_citizenship": 19671,
+      "explained_with_naturalisation": 36977,
+      "by_origin": {
+        "Türkei": 8925,
+        "Syrien": 2232,
+        "Kosovo": 1981,
+        "Serbien": 658,
+        "Irak": 267,
+        "Afghanistan": 1230,
+        "Bosnien-Herzegowina": 1087,
+        "Nordmazedonien": 1304,
+        "Albanien": 325,
+        "Montenegro": 80,
+        "Marokko": 295,
+        "Iran": 110,
+        "Pakistan": 621,
+        "Bangladesch": 17,
+        "Libanon": 93,
+        "Jordanien": 27,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 14,
+        "Ägypten/Algerien/Libyen/Tunesien": 405
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 18287,
+        "Syrien": 2902,
+        "Kosovo": 3607,
+        "Serbien": 1265,
+        "Irak": 449,
+        "Afghanistan": 1227,
+        "Bosnien-Herzegowina": 2062,
+        "Nordmazedonien": 2474,
+        "Albanien": 617,
+        "Montenegro": 153,
+        "Marokko": 552,
+        "Iran": 290,
+        "Pakistan": 1632,
+        "Bangladesch": 45,
+        "Libanon": 244,
+        "Jordanien": 70,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 38,
+        "Ägypten/Algerien/Libyen/Tunesien": 1063
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 37847,
+          "persons_high": 39985,
+          "percent_low": 8.29,
+          "percent_high": 8.76
+        },
+        "migration_background": {
+          "persons_low": 38510,
+          "persons_high": 40770,
+          "percent_low": 8.44,
+          "percent_high": 8.94
+        }
+      },
+      "combined_low_persons": 37847,
+      "combined_high_persons": 40770,
+      "combined_low_percent": 8.29,
+      "combined_high_percent": 8.94
+    },
+    {
+      "id": "08216",
+      "name": "Rastatt, Landkreis",
+      "population": 230759,
+      "explained_by_citizenship": 11010,
+      "explained_with_naturalisation": 19747,
+      "by_origin": {
+        "Türkei": 3937,
+        "Syrien": 1609,
+        "Kosovo": 1399,
+        "Serbien": 583,
+        "Irak": 206,
+        "Afghanistan": 1117,
+        "Bosnien-Herzegowina": 675,
+        "Nordmazedonien": 568,
+        "Albanien": 238,
+        "Montenegro": 77,
+        "Marokko": 100,
+        "Iran": 54,
+        "Pakistan": 154,
+        "Bangladesch": 0,
+        "Libanon": 56,
+        "Jordanien": 9,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 228
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8067,
+        "Syrien": 2092,
+        "Kosovo": 2547,
+        "Serbien": 1122,
+        "Irak": 345,
+        "Afghanistan": 1115,
+        "Bosnien-Herzegowina": 1280,
+        "Nordmazedonien": 1077,
+        "Albanien": 452,
+        "Montenegro": 147,
+        "Marokko": 187,
+        "Iran": 141,
+        "Pakistan": 405,
+        "Bangladesch": 0,
+        "Libanon": 146,
+        "Jordanien": 23,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 600
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 21183,
+          "persons_high": 22380,
+          "percent_low": 9.18,
+          "percent_high": 9.7
+        },
+        "migration_background": {
+          "persons_low": 20684,
+          "persons_high": 22065,
+          "percent_low": 8.96,
+          "percent_high": 9.56
+        }
+      },
+      "combined_low_persons": 20684,
+      "combined_high_persons": 22380,
+      "combined_low_percent": 8.96,
+      "combined_high_percent": 9.7
+    },
+    {
+      "id": "08221",
+      "name": "Heidelberg, kreisfreie Stadt",
+      "population": 155910,
+      "explained_by_citizenship": 6658,
+      "explained_with_naturalisation": 13381,
+      "by_origin": {
+        "Türkei": 2154,
+        "Syrien": 584,
+        "Kosovo": 461,
+        "Serbien": 264,
+        "Irak": 155,
+        "Afghanistan": 505,
+        "Bosnien-Herzegowina": 275,
+        "Nordmazedonien": 164,
+        "Albanien": 151,
+        "Montenegro": 23,
+        "Marokko": 157,
+        "Iran": 203,
+        "Pakistan": 347,
+        "Bangladesch": 43,
+        "Libanon": 65,
+        "Jordanien": 45,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 173,
+        "Ägypten/Algerien/Libyen/Tunesien": 891
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4413,
+        "Syrien": 759,
+        "Kosovo": 839,
+        "Serbien": 508,
+        "Irak": 260,
+        "Afghanistan": 504,
+        "Bosnien-Herzegowina": 521,
+        "Nordmazedonien": 311,
+        "Albanien": 287,
+        "Montenegro": 43,
+        "Marokko": 294,
+        "Iran": 533,
+        "Pakistan": 911,
+        "Bangladesch": 113,
+        "Libanon": 171,
+        "Jordanien": 117,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 455,
+        "Ägypten/Algerien/Libyen/Tunesien": 2342
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 12810,
+          "persons_high": 13534,
+          "percent_low": 8.22,
+          "percent_high": 8.68
+        },
+        "migration_background": {
+          "persons_low": 14112,
+          "persons_high": 15189,
+          "percent_low": 9.05,
+          "percent_high": 9.74
+        }
+      },
+      "combined_low_persons": 12810,
+      "combined_high_persons": 15189,
+      "combined_low_percent": 8.22,
+      "combined_high_percent": 9.74
+    },
+    {
+      "id": "08222",
+      "name": "Mannheim, kreisfreie Stadt",
+      "population": 318392,
+      "explained_by_citizenship": 25622,
+      "explained_with_naturalisation": 50042,
+      "by_origin": {
+        "Türkei": 14026,
+        "Syrien": 2266,
+        "Kosovo": 1529,
+        "Serbien": 684,
+        "Irak": 378,
+        "Afghanistan": 1122,
+        "Bosnien-Herzegowina": 1181,
+        "Nordmazedonien": 652,
+        "Albanien": 604,
+        "Montenegro": 100,
+        "Marokko": 533,
+        "Iran": 194,
+        "Pakistan": 717,
+        "Bangladesch": 150,
+        "Libanon": 158,
+        "Jordanien": 98,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 53,
+        "Ägypten/Algerien/Libyen/Tunesien": 1175
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 28740,
+        "Syrien": 2947,
+        "Kosovo": 2785,
+        "Serbien": 1316,
+        "Irak": 634,
+        "Afghanistan": 1120,
+        "Bosnien-Herzegowina": 2241,
+        "Nordmazedonien": 1237,
+        "Albanien": 1146,
+        "Montenegro": 189,
+        "Marokko": 997,
+        "Iran": 511,
+        "Pakistan": 1885,
+        "Bangladesch": 396,
+        "Libanon": 414,
+        "Jordanien": 258,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 139,
+        "Ägypten/Algerien/Libyen/Tunesien": 3089
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 49296,
+          "persons_high": 52081,
+          "percent_low": 15.48,
+          "percent_high": 16.36
+        },
+        "migration_background": {
+          "persons_low": 51606,
+          "persons_high": 53910,
+          "percent_low": 16.21,
+          "percent_high": 16.93
+        }
+      },
+      "combined_low_persons": 49296,
+      "combined_high_persons": 53910,
+      "combined_low_percent": 15.48,
+      "combined_high_percent": 16.93
+    },
+    {
+      "id": "08225",
+      "name": "Neckar-Odenwald-Kreis",
+      "population": 145405,
+      "explained_by_citizenship": 4990,
+      "explained_with_naturalisation": 8876,
+      "by_origin": {
+        "Türkei": 1984,
+        "Syrien": 843,
+        "Kosovo": 630,
+        "Serbien": 127,
+        "Irak": 71,
+        "Afghanistan": 552,
+        "Bosnien-Herzegowina": 215,
+        "Nordmazedonien": 168,
+        "Albanien": 76,
+        "Montenegro": 6,
+        "Marokko": 86,
+        "Iran": 10,
+        "Pakistan": 58,
+        "Bangladesch": 0,
+        "Libanon": 14,
+        "Jordanien": 0,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 151
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4065,
+        "Syrien": 1097,
+        "Kosovo": 1147,
+        "Serbien": 245,
+        "Irak": 119,
+        "Afghanistan": 551,
+        "Bosnien-Herzegowina": 407,
+        "Nordmazedonien": 319,
+        "Albanien": 143,
+        "Montenegro": 12,
+        "Marokko": 160,
+        "Iran": 27,
+        "Pakistan": 152,
+        "Bangladesch": 0,
+        "Libanon": 37,
+        "Jordanien": 0,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 396
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 9600,
+          "persons_high": 10142,
+          "percent_low": 6.6,
+          "percent_high": 6.98
+        },
+        "migration_background": {
+          "persons_low": 9302,
+          "persons_high": 9930,
+          "percent_low": 6.4,
+          "percent_high": 6.83
+        }
+      },
+      "combined_low_persons": 9302,
+      "combined_high_persons": 10142,
+      "combined_low_percent": 6.4,
+      "combined_high_percent": 6.98
+    },
+    {
+      "id": "08226",
+      "name": "Rhein-Neckar-Kreis",
+      "population": 558654,
+      "explained_by_citizenship": 25331,
+      "explained_with_naturalisation": 47189,
+      "by_origin": {
+        "Türkei": 11990,
+        "Syrien": 3196,
+        "Kosovo": 2859,
+        "Serbien": 679,
+        "Irak": 482,
+        "Afghanistan": 2010,
+        "Bosnien-Herzegowina": 749,
+        "Nordmazedonien": 568,
+        "Albanien": 569,
+        "Montenegro": 52,
+        "Marokko": 342,
+        "Iran": 204,
+        "Pakistan": 636,
+        "Bangladesch": 30,
+        "Libanon": 171,
+        "Jordanien": 63,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 19,
+        "Ägypten/Algerien/Libyen/Tunesien": 710
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 24568,
+        "Syrien": 4157,
+        "Kosovo": 5205,
+        "Serbien": 1306,
+        "Irak": 810,
+        "Afghanistan": 2006,
+        "Bosnien-Herzegowina": 1421,
+        "Nordmazedonien": 1077,
+        "Albanien": 1080,
+        "Montenegro": 98,
+        "Marokko": 641,
+        "Iran": 537,
+        "Pakistan": 1670,
+        "Bangladesch": 79,
+        "Libanon": 451,
+        "Jordanien": 164,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 51,
+        "Ägypten/Algerien/Libyen/Tunesien": 1867
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 48738,
+          "persons_high": 51491,
+          "percent_low": 8.72,
+          "percent_high": 9.22
+        },
+        "migration_background": {
+          "persons_low": 49199,
+          "persons_high": 52162,
+          "percent_low": 8.81,
+          "percent_high": 9.34
+        }
+      },
+      "combined_low_persons": 48738,
+      "combined_high_persons": 52162,
+      "combined_low_percent": 8.72,
+      "combined_high_percent": 9.34
+    },
+    {
+      "id": "08231",
+      "name": "Pforzheim, kreisfreie Stadt",
+      "population": 134926,
+      "explained_by_citizenship": 11615,
+      "explained_with_naturalisation": 21451,
+      "by_origin": {
+        "Türkei": 4282,
+        "Syrien": 1362,
+        "Kosovo": 1460,
+        "Serbien": 461,
+        "Irak": 1285,
+        "Afghanistan": 612,
+        "Bosnien-Herzegowina": 335,
+        "Nordmazedonien": 640,
+        "Albanien": 256,
+        "Montenegro": 23,
+        "Marokko": 195,
+        "Iran": 51,
+        "Pakistan": 265,
+        "Bangladesch": 22,
+        "Libanon": 74,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 271
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8773,
+        "Syrien": 1772,
+        "Kosovo": 2658,
+        "Serbien": 886,
+        "Irak": 2156,
+        "Afghanistan": 611,
+        "Bosnien-Herzegowina": 635,
+        "Nordmazedonien": 1214,
+        "Albanien": 485,
+        "Montenegro": 43,
+        "Marokko": 365,
+        "Iran": 133,
+        "Pakistan": 696,
+        "Bangladesch": 57,
+        "Libanon": 195,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 713
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 22347,
+          "persons_high": 23609,
+          "percent_low": 16.56,
+          "percent_high": 17.5
+        },
+        "migration_background": {
+          "persons_low": 22263,
+          "persons_high": 23460,
+          "percent_low": 16.5,
+          "percent_high": 17.39
+        }
+      },
+      "combined_low_persons": 22263,
+      "combined_high_persons": 23609,
+      "combined_low_percent": 16.5,
+      "combined_high_percent": 17.5
+    },
+    {
+      "id": "08235",
+      "name": "Calw, Landkreis",
+      "population": 161361,
+      "explained_by_citizenship": 7797,
+      "explained_with_naturalisation": 14280,
+      "by_origin": {
+        "Türkei": 3200,
+        "Syrien": 995,
+        "Kosovo": 1147,
+        "Serbien": 348,
+        "Irak": 79,
+        "Afghanistan": 622,
+        "Bosnien-Herzegowina": 521,
+        "Nordmazedonien": 272,
+        "Albanien": 134,
+        "Montenegro": 26,
+        "Marokko": 109,
+        "Iran": 45,
+        "Pakistan": 101,
+        "Bangladesch": 4,
+        "Libanon": 14,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 164
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 6557,
+        "Syrien": 1294,
+        "Kosovo": 2089,
+        "Serbien": 669,
+        "Irak": 132,
+        "Afghanistan": 621,
+        "Bosnien-Herzegowina": 987,
+        "Nordmazedonien": 516,
+        "Albanien": 253,
+        "Montenegro": 49,
+        "Marokko": 205,
+        "Iran": 118,
+        "Pakistan": 266,
+        "Bangladesch": 11,
+        "Libanon": 37,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 430
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 15002,
+          "persons_high": 15850,
+          "percent_low": 9.3,
+          "percent_high": 9.82
+        },
+        "migration_background": {
+          "persons_low": 14900,
+          "persons_high": 15812,
+          "percent_low": 9.23,
+          "percent_high": 9.8
+        }
+      },
+      "combined_low_persons": 14900,
+      "combined_high_persons": 15850,
+      "combined_low_percent": 9.23,
+      "combined_high_percent": 9.82
+    },
+    {
+      "id": "08236",
+      "name": "Enzkreis",
+      "population": 199642,
+      "explained_by_citizenship": 9276,
+      "explained_with_naturalisation": 16751,
+      "by_origin": {
+        "Türkei": 4456,
+        "Syrien": 1449,
+        "Kosovo": 808,
+        "Serbien": 264,
+        "Irak": 284,
+        "Afghanistan": 893,
+        "Bosnien-Herzegowina": 257,
+        "Nordmazedonien": 324,
+        "Albanien": 116,
+        "Montenegro": 19,
+        "Marokko": 48,
+        "Iran": 26,
+        "Pakistan": 140,
+        "Bangladesch": 9,
+        "Libanon": 19,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 142
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 9130,
+        "Syrien": 1884,
+        "Kosovo": 1471,
+        "Serbien": 508,
+        "Irak": 477,
+        "Afghanistan": 891,
+        "Bosnien-Herzegowina": 488,
+        "Nordmazedonien": 615,
+        "Albanien": 220,
+        "Montenegro": 37,
+        "Marokko": 89,
+        "Iran": 69,
+        "Pakistan": 367,
+        "Bangladesch": 23,
+        "Libanon": 49,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 373
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 17847,
+          "persons_high": 18856,
+          "percent_low": 8.94,
+          "percent_high": 9.44
+        },
+        "migration_background": {
+          "persons_low": 17461,
+          "persons_high": 18509,
+          "percent_low": 8.75,
+          "percent_high": 9.27
+        }
+      },
+      "combined_low_persons": 17461,
+      "combined_high_persons": 18856,
+      "combined_low_percent": 8.75,
+      "combined_high_percent": 9.44
+    },
+    {
+      "id": "08237",
+      "name": "Freudenstadt, Landkreis",
+      "population": 122000,
+      "explained_by_citizenship": 5152,
+      "explained_with_naturalisation": 9386,
+      "by_origin": {
+        "Türkei": 1949,
+        "Syrien": 766,
+        "Kosovo": 869,
+        "Serbien": 264,
+        "Irak": 60,
+        "Afghanistan": 416,
+        "Bosnien-Herzegowina": 197,
+        "Nordmazedonien": 100,
+        "Albanien": 52,
+        "Montenegro": 26,
+        "Marokko": 147,
+        "Iran": 22,
+        "Pakistan": 116,
+        "Bangladesch": 0,
+        "Libanon": 5,
+        "Jordanien": 9,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 155
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3993,
+        "Syrien": 996,
+        "Kosovo": 1582,
+        "Serbien": 508,
+        "Irak": 100,
+        "Afghanistan": 415,
+        "Bosnien-Herzegowina": 374,
+        "Nordmazedonien": 190,
+        "Albanien": 99,
+        "Montenegro": 49,
+        "Marokko": 276,
+        "Iran": 57,
+        "Pakistan": 304,
+        "Bangladesch": 0,
+        "Libanon": 12,
+        "Jordanien": 23,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 407
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 9912,
+          "persons_high": 10472,
+          "percent_low": 8.12,
+          "percent_high": 8.58
+        },
+        "migration_background": {
+          "persons_low": 9813,
+          "persons_high": 10441,
+          "percent_low": 8.04,
+          "percent_high": 8.56
+        }
+      },
+      "combined_low_persons": 9813,
+      "combined_high_persons": 10472,
+      "combined_low_percent": 8.04,
+      "combined_high_percent": 8.58
+    },
+    {
+      "id": "08311",
+      "name": "Freiburg im Breisgau, kreisfreie Stadt",
+      "population": 237833,
+      "explained_by_citizenship": 9776,
+      "explained_with_naturalisation": 18508,
+      "by_origin": {
+        "Türkei": 1901,
+        "Syrien": 1137,
+        "Kosovo": 1373,
+        "Serbien": 646,
+        "Irak": 333,
+        "Afghanistan": 856,
+        "Bosnien-Herzegowina": 395,
+        "Nordmazedonien": 540,
+        "Albanien": 354,
+        "Montenegro": 74,
+        "Marokko": 399,
+        "Iran": 162,
+        "Pakistan": 356,
+        "Bangladesch": 77,
+        "Libanon": 413,
+        "Jordanien": 58,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 38,
+        "Ägypten/Algerien/Libyen/Tunesien": 663
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3895,
+        "Syrien": 1479,
+        "Kosovo": 2500,
+        "Serbien": 1242,
+        "Irak": 559,
+        "Afghanistan": 854,
+        "Bosnien-Herzegowina": 749,
+        "Nordmazedonien": 1024,
+        "Albanien": 672,
+        "Montenegro": 140,
+        "Marokko": 747,
+        "Iran": 427,
+        "Pakistan": 936,
+        "Bangladesch": 203,
+        "Libanon": 1084,
+        "Jordanien": 153,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 101,
+        "Ägypten/Algerien/Libyen/Tunesien": 1742
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 18809,
+          "persons_high": 19872,
+          "percent_low": 7.91,
+          "percent_high": 8.36
+        },
+        "migration_background": {
+          "persons_low": 19432,
+          "persons_high": 20794,
+          "percent_low": 8.17,
+          "percent_high": 8.74
+        }
+      },
+      "combined_low_persons": 18809,
+      "combined_high_persons": 20794,
+      "combined_low_percent": 7.91,
+      "combined_high_percent": 8.74
+    },
+    {
+      "id": "08315",
+      "name": "Breisgau-Hochschwarzwald, Landkreis",
+      "population": 272549,
+      "explained_by_citizenship": 9337,
+      "explained_with_naturalisation": 16793,
+      "by_origin": {
+        "Türkei": 2590,
+        "Syrien": 1224,
+        "Kosovo": 2177,
+        "Serbien": 348,
+        "Irak": 180,
+        "Afghanistan": 982,
+        "Bosnien-Herzegowina": 323,
+        "Nordmazedonien": 280,
+        "Albanien": 250,
+        "Montenegro": 55,
+        "Marokko": 243,
+        "Iran": 68,
+        "Pakistan": 193,
+        "Bangladesch": 13,
+        "Libanon": 88,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 14,
+        "Ägypten/Algerien/Libyen/Tunesien": 293
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5307,
+        "Syrien": 1592,
+        "Kosovo": 3963,
+        "Serbien": 669,
+        "Irak": 301,
+        "Afghanistan": 980,
+        "Bosnien-Herzegowina": 613,
+        "Nordmazedonien": 531,
+        "Albanien": 474,
+        "Montenegro": 104,
+        "Marokko": 454,
+        "Iran": 179,
+        "Pakistan": 506,
+        "Bangladesch": 34,
+        "Libanon": 231,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 38,
+        "Ägypten/Algerien/Libyen/Tunesien": 769
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 17964,
+          "persons_high": 18979,
+          "percent_low": 6.59,
+          "percent_high": 6.96
+        },
+        "migration_background": {
+          "persons_low": 17585,
+          "persons_high": 18752,
+          "percent_low": 6.45,
+          "percent_high": 6.88
+        }
+      },
+      "combined_low_persons": 17585,
+      "combined_high_persons": 18979,
+      "combined_low_percent": 6.45,
+      "combined_high_percent": 6.96
+    },
+    {
+      "id": "08316",
+      "name": "Emmendingen, Landkreis",
+      "population": 169869,
+      "explained_by_citizenship": 6853,
+      "explained_with_naturalisation": 12154,
+      "by_origin": {
+        "Türkei": 1918,
+        "Syrien": 1440,
+        "Kosovo": 1286,
+        "Serbien": 238,
+        "Irak": 202,
+        "Afghanistan": 561,
+        "Bosnien-Herzegowina": 177,
+        "Nordmazedonien": 256,
+        "Albanien": 142,
+        "Montenegro": 35,
+        "Marokko": 100,
+        "Iran": 30,
+        "Pakistan": 188,
+        "Bangladesch": 26,
+        "Libanon": 42,
+        "Jordanien": 13,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 198
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3931,
+        "Syrien": 1873,
+        "Kosovo": 2342,
+        "Serbien": 457,
+        "Irak": 339,
+        "Afghanistan": 560,
+        "Bosnien-Herzegowina": 336,
+        "Nordmazedonien": 486,
+        "Albanien": 270,
+        "Montenegro": 67,
+        "Marokko": 187,
+        "Iran": 80,
+        "Pakistan": 493,
+        "Bangladesch": 68,
+        "Libanon": 110,
+        "Jordanien": 35,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 520
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 13186,
+          "persons_high": 13931,
+          "percent_low": 7.76,
+          "percent_high": 8.2
+        },
+        "migration_background": {
+          "persons_low": 12662,
+          "persons_high": 13410,
+          "percent_low": 7.45,
+          "percent_high": 7.89
+        }
+      },
+      "combined_low_persons": 12662,
+      "combined_high_persons": 13931,
+      "combined_low_percent": 7.45,
+      "combined_high_percent": 8.2
+    },
+    {
+      "id": "08317",
+      "name": "Ortenaukreis",
+      "population": 444961,
+      "explained_by_citizenship": 18973,
+      "explained_with_naturalisation": 34291,
+      "by_origin": {
+        "Türkei": 6065,
+        "Syrien": 3144,
+        "Kosovo": 2985,
+        "Serbien": 595,
+        "Irak": 580,
+        "Afghanistan": 1622,
+        "Bosnien-Herzegowina": 655,
+        "Nordmazedonien": 1072,
+        "Albanien": 349,
+        "Montenegro": 45,
+        "Marokko": 409,
+        "Iran": 116,
+        "Pakistan": 356,
+        "Bangladesch": 30,
+        "Libanon": 107,
+        "Jordanien": 54,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 14,
+        "Ägypten/Algerien/Libyen/Tunesien": 775
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 12427,
+        "Syrien": 4089,
+        "Kosovo": 5435,
+        "Serbien": 1145,
+        "Irak": 973,
+        "Afghanistan": 1619,
+        "Bosnien-Herzegowina": 1242,
+        "Nordmazedonien": 2034,
+        "Albanien": 661,
+        "Montenegro": 86,
+        "Marokko": 765,
+        "Iran": 305,
+        "Pakistan": 936,
+        "Bangladesch": 79,
+        "Libanon": 280,
+        "Jordanien": 141,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 38,
+        "Ägypten/Algerien/Libyen/Tunesien": 2036
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 36503,
+          "persons_high": 38565,
+          "percent_low": 8.2,
+          "percent_high": 8.67
+        },
+        "migration_background": {
+          "persons_low": 35784,
+          "persons_high": 37983,
+          "percent_low": 8.04,
+          "percent_high": 8.54
+        }
+      },
+      "combined_low_persons": 35784,
+      "combined_high_persons": 38565,
+      "combined_low_percent": 8.04,
+      "combined_high_percent": 8.67
+    },
+    {
+      "id": "08325",
+      "name": "Rottweil, Landkreis",
+      "population": 140321,
+      "explained_by_citizenship": 5376,
+      "explained_with_naturalisation": 9530,
+      "by_origin": {
+        "Türkei": 1709,
+        "Syrien": 1034,
+        "Kosovo": 908,
+        "Serbien": 199,
+        "Irak": 101,
+        "Afghanistan": 425,
+        "Bosnien-Herzegowina": 255,
+        "Nordmazedonien": 388,
+        "Albanien": 84,
+        "Montenegro": 19,
+        "Marokko": 38,
+        "Iran": 22,
+        "Pakistan": 58,
+        "Bangladesch": 4,
+        "Libanon": 19,
+        "Jordanien": 9,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 10,
+        "Ägypten/Algerien/Libyen/Tunesien": 95
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 3502,
+        "Syrien": 1344,
+        "Kosovo": 1653,
+        "Serbien": 383,
+        "Irak": 169,
+        "Afghanistan": 425,
+        "Bosnien-Herzegowina": 483,
+        "Nordmazedonien": 736,
+        "Albanien": 160,
+        "Montenegro": 37,
+        "Marokko": 71,
+        "Iran": 57,
+        "Pakistan": 152,
+        "Bangladesch": 11,
+        "Libanon": 49,
+        "Jordanien": 23,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 25,
+        "Ägypten/Algerien/Libyen/Tunesien": 249
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 10344,
+          "persons_high": 10928,
+          "percent_low": 7.37,
+          "percent_high": 7.79
+        },
+        "migration_background": {
+          "persons_low": 10017,
+          "persons_high": 10736,
+          "percent_low": 7.14,
+          "percent_high": 7.65
+        }
+      },
+      "combined_low_persons": 10017,
+      "combined_high_persons": 10928,
+      "combined_low_percent": 7.14,
+      "combined_high_percent": 7.79
+    },
+    {
+      "id": "08326",
+      "name": "Schwarzwald-Baar-Kreis",
+      "population": 214177,
+      "explained_by_citizenship": 10947,
+      "explained_with_naturalisation": 19964,
+      "by_origin": {
+        "Türkei": 3697,
+        "Syrien": 1825,
+        "Kosovo": 1312,
+        "Serbien": 780,
+        "Irak": 110,
+        "Afghanistan": 762,
+        "Bosnien-Herzegowina": 729,
+        "Nordmazedonien": 596,
+        "Albanien": 163,
+        "Montenegro": 55,
+        "Marokko": 209,
+        "Iran": 41,
+        "Pakistan": 270,
+        "Bangladesch": 22,
+        "Libanon": 65,
+        "Jordanien": 36,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 271
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7576,
+        "Syrien": 2374,
+        "Kosovo": 2389,
+        "Serbien": 1500,
+        "Irak": 185,
+        "Afghanistan": 761,
+        "Bosnien-Herzegowina": 1383,
+        "Nordmazedonien": 1131,
+        "Albanien": 309,
+        "Montenegro": 104,
+        "Marokko": 392,
+        "Iran": 107,
+        "Pakistan": 709,
+        "Bangladesch": 57,
+        "Libanon": 171,
+        "Jordanien": 94,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 713
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 21063,
+          "persons_high": 22252,
+          "percent_low": 9.83,
+          "percent_high": 10.39
+        },
+        "migration_background": {
+          "persons_low": 20847,
+          "persons_high": 22149,
+          "percent_low": 9.73,
+          "percent_high": 10.34
+        }
+      },
+      "combined_low_persons": 20847,
+      "combined_high_persons": 22252,
+      "combined_low_percent": 9.73,
+      "combined_high_percent": 10.39
+    },
+    {
+      "id": "08327",
+      "name": "Tuttlingen, Landkreis",
+      "population": 145202,
+      "explained_by_citizenship": 7915,
+      "explained_with_naturalisation": 14436,
+      "by_origin": {
+        "Türkei": 2904,
+        "Syrien": 1215,
+        "Kosovo": 1073,
+        "Serbien": 425,
+        "Irak": 122,
+        "Afghanistan": 566,
+        "Bosnien-Herzegowina": 418,
+        "Nordmazedonien": 548,
+        "Albanien": 102,
+        "Montenegro": 29,
+        "Marokko": 86,
+        "Iran": 41,
+        "Pakistan": 125,
+        "Bangladesch": 0,
+        "Libanon": 42,
+        "Jordanien": 13,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 10,
+        "Ägypten/Algerien/Libyen/Tunesien": 198
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 5950,
+        "Syrien": 1581,
+        "Kosovo": 1954,
+        "Serbien": 817,
+        "Irak": 204,
+        "Afghanistan": 565,
+        "Bosnien-Herzegowina": 792,
+        "Nordmazedonien": 1040,
+        "Albanien": 193,
+        "Montenegro": 55,
+        "Marokko": 160,
+        "Iran": 107,
+        "Pakistan": 329,
+        "Bangladesch": 0,
+        "Libanon": 110,
+        "Jordanien": 35,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 25,
+        "Ägypten/Algerien/Libyen/Tunesien": 520
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 15228,
+          "persons_high": 16088,
+          "percent_low": 10.49,
+          "percent_high": 11.08
+        },
+        "migration_background": {
+          "persons_low": 15096,
+          "persons_high": 16068,
+          "percent_low": 10.4,
+          "percent_high": 11.07
+        }
+      },
+      "combined_low_persons": 15096,
+      "combined_high_persons": 16088,
+      "combined_low_percent": 10.4,
+      "combined_high_percent": 11.08
+    },
+    {
+      "id": "08335",
+      "name": "Konstanz, Landkreis",
+      "population": 292135,
+      "explained_by_citizenship": 13970,
+      "explained_with_naturalisation": 24674,
+      "by_origin": {
+        "Türkei": 3056,
+        "Syrien": 2738,
+        "Kosovo": 2577,
+        "Serbien": 610,
+        "Irak": 254,
+        "Afghanistan": 1248,
+        "Bosnien-Herzegowina": 489,
+        "Nordmazedonien": 1408,
+        "Albanien": 410,
+        "Montenegro": 32,
+        "Marokko": 185,
+        "Iran": 113,
+        "Pakistan": 197,
+        "Bangladesch": 34,
+        "Libanon": 74,
+        "Jordanien": 40,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 43,
+        "Ägypten/Algerien/Libyen/Tunesien": 461
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 6263,
+        "Syrien": 3560,
+        "Kosovo": 4691,
+        "Serbien": 1172,
+        "Irak": 427,
+        "Afghanistan": 1246,
+        "Bosnien-Herzegowina": 928,
+        "Nordmazedonien": 2671,
+        "Albanien": 777,
+        "Montenegro": 61,
+        "Marokko": 347,
+        "Iran": 297,
+        "Pakistan": 519,
+        "Bangladesch": 90,
+        "Libanon": 195,
+        "Jordanien": 106,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 114,
+        "Ägypten/Algerien/Libyen/Tunesien": 1211
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 26879,
+          "persons_high": 28397,
+          "percent_low": 9.2,
+          "percent_high": 9.72
+        },
+        "migration_background": {
+          "persons_low": 25771,
+          "persons_high": 27387,
+          "percent_low": 8.82,
+          "percent_high": 9.37
+        }
+      },
+      "combined_low_persons": 25771,
+      "combined_high_persons": 28397,
+      "combined_low_percent": 8.82,
+      "combined_high_percent": 9.72
+    },
+    {
+      "id": "08336",
+      "name": "Lörrach, Landkreis",
+      "population": 238367,
+      "explained_by_citizenship": 13012,
+      "explained_with_naturalisation": 23989,
+      "by_origin": {
+        "Türkei": 3989,
+        "Syrien": 1570,
+        "Kosovo": 3011,
+        "Serbien": 379,
+        "Irak": 151,
+        "Afghanistan": 781,
+        "Bosnien-Herzegowina": 363,
+        "Nordmazedonien": 1216,
+        "Albanien": 503,
+        "Montenegro": 26,
+        "Marokko": 209,
+        "Iran": 87,
+        "Pakistan": 164,
+        "Bangladesch": 13,
+        "Libanon": 97,
+        "Jordanien": 22,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 430
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8174,
+        "Syrien": 2042,
+        "Kosovo": 5482,
+        "Serbien": 729,
+        "Irak": 254,
+        "Afghanistan": 779,
+        "Bosnien-Herzegowina": 689,
+        "Nordmazedonien": 2307,
+        "Albanien": 953,
+        "Montenegro": 49,
+        "Marokko": 392,
+        "Iran": 229,
+        "Pakistan": 430,
+        "Bangladesch": 34,
+        "Libanon": 256,
+        "Jordanien": 59,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 1131
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 25036,
+          "persons_high": 26450,
+          "percent_low": 10.5,
+          "percent_high": 11.1
+        },
+        "migration_background": {
+          "persons_low": 24964,
+          "persons_high": 26400,
+          "percent_low": 10.47,
+          "percent_high": 11.08
+        }
+      },
+      "combined_low_persons": 24964,
+      "combined_high_persons": 26450,
+      "combined_low_percent": 10.47,
+      "combined_high_percent": 11.1
+    },
+    {
+      "id": "08337",
+      "name": "Waldshut, Landkreis",
+      "population": 171657,
+      "explained_by_citizenship": 8544,
+      "explained_with_naturalisation": 15628,
+      "by_origin": {
+        "Türkei": 2424,
+        "Syrien": 1631,
+        "Kosovo": 1790,
+        "Serbien": 293,
+        "Irak": 64,
+        "Afghanistan": 304,
+        "Bosnien-Herzegowina": 157,
+        "Nordmazedonien": 960,
+        "Albanien": 186,
+        "Montenegro": 29,
+        "Marokko": 100,
+        "Iran": 26,
+        "Pakistan": 284,
+        "Bangladesch": 9,
+        "Libanon": 42,
+        "Jordanien": 13,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 232
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4967,
+        "Syrien": 2120,
+        "Kosovo": 3259,
+        "Serbien": 563,
+        "Irak": 107,
+        "Afghanistan": 303,
+        "Bosnien-Herzegowina": 298,
+        "Nordmazedonien": 1821,
+        "Albanien": 353,
+        "Montenegro": 55,
+        "Marokko": 187,
+        "Iran": 69,
+        "Pakistan": 747,
+        "Bangladesch": 23,
+        "Libanon": 110,
+        "Jordanien": 35,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 611
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 16438,
+          "persons_high": 17366,
+          "percent_low": 9.58,
+          "percent_high": 10.12
+        },
+        "migration_background": {
+          "persons_low": 16217,
+          "persons_high": 17084,
+          "percent_low": 9.45,
+          "percent_high": 9.95
+        }
+      },
+      "combined_low_persons": 16217,
+      "combined_high_persons": 17366,
+      "combined_low_percent": 9.45,
+      "combined_high_percent": 10.12
+    },
+    {
+      "id": "08415",
+      "name": "Reutlingen, Landkreis",
+      "population": 293651,
+      "explained_by_citizenship": 15567,
+      "explained_with_naturalisation": 28204,
+      "by_origin": {
+        "Türkei": 5376,
+        "Syrien": 2863,
+        "Kosovo": 2225,
+        "Serbien": 574,
+        "Irak": 200,
+        "Afghanistan": 1113,
+        "Bosnien-Herzegowina": 912,
+        "Nordmazedonien": 516,
+        "Albanien": 503,
+        "Montenegro": 109,
+        "Marokko": 128,
+        "Iran": 72,
+        "Pakistan": 337,
+        "Bangladesch": 52,
+        "Libanon": 46,
+        "Jordanien": 67,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 474
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 11015,
+        "Syrien": 3724,
+        "Kosovo": 4050,
+        "Serbien": 1103,
+        "Irak": 336,
+        "Afghanistan": 1111,
+        "Bosnien-Herzegowina": 1731,
+        "Nordmazedonien": 979,
+        "Albanien": 953,
+        "Montenegro": 208,
+        "Marokko": 240,
+        "Iran": 191,
+        "Pakistan": 886,
+        "Bangladesch": 136,
+        "Libanon": 122,
+        "Jordanien": 176,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 1244
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 29951,
+          "persons_high": 31642,
+          "percent_low": 10.2,
+          "percent_high": 10.78
+        },
+        "migration_background": {
+          "persons_low": 29361,
+          "persons_high": 31067,
+          "percent_low": 10.0,
+          "percent_high": 10.58
+        }
+      },
+      "combined_low_persons": 29361,
+      "combined_high_persons": 31642,
+      "combined_low_percent": 10.0,
+      "combined_high_percent": 10.78
+    },
+    {
+      "id": "08416",
+      "name": "Tübingen, Landkreis",
+      "population": 233706,
+      "explained_by_citizenship": 9115,
+      "explained_with_naturalisation": 16816,
+      "by_origin": {
+        "Türkei": 3418,
+        "Syrien": 1622,
+        "Kosovo": 1030,
+        "Serbien": 358,
+        "Irak": 170,
+        "Afghanistan": 645,
+        "Bosnien-Herzegowina": 443,
+        "Nordmazedonien": 204,
+        "Albanien": 157,
+        "Montenegro": 45,
+        "Marokko": 119,
+        "Iran": 117,
+        "Pakistan": 217,
+        "Bangladesch": 26,
+        "Libanon": 79,
+        "Jordanien": 13,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 43,
+        "Ägypten/Algerien/Libyen/Tunesien": 409
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7004,
+        "Syrien": 2109,
+        "Kosovo": 1875,
+        "Serbien": 688,
+        "Irak": 286,
+        "Afghanistan": 644,
+        "Bosnien-Herzegowina": 841,
+        "Nordmazedonien": 387,
+        "Albanien": 298,
+        "Montenegro": 86,
+        "Marokko": 222,
+        "Iran": 309,
+        "Pakistan": 569,
+        "Bangladesch": 68,
+        "Libanon": 207,
+        "Jordanien": 35,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 114,
+        "Ägypten/Algerien/Libyen/Tunesien": 1075
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 17538,
+          "persons_high": 18529,
+          "percent_low": 7.5,
+          "percent_high": 7.93
+        },
+        "migration_background": {
+          "persons_low": 17567,
+          "persons_high": 18674,
+          "percent_low": 7.52,
+          "percent_high": 7.99
+        }
+      },
+      "combined_low_persons": 17538,
+      "combined_high_persons": 18674,
+      "combined_low_percent": 7.5,
+      "combined_high_percent": 7.99
+    },
+    {
+      "id": "08417",
+      "name": "Zollernalbkreis",
+      "population": 193390,
+      "explained_by_citizenship": 7598,
+      "explained_with_naturalisation": 14481,
+      "by_origin": {
+        "Türkei": 3854,
+        "Syrien": 640,
+        "Kosovo": 930,
+        "Serbien": 427,
+        "Irak": 52,
+        "Afghanistan": 355,
+        "Bosnien-Herzegowina": 563,
+        "Nordmazedonien": 216,
+        "Albanien": 67,
+        "Montenegro": 52,
+        "Marokko": 90,
+        "Iran": 26,
+        "Pakistan": 125,
+        "Bangladesch": 17,
+        "Libanon": 14,
+        "Jordanien": 4,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 159
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7897,
+        "Syrien": 832,
+        "Kosovo": 1693,
+        "Serbien": 822,
+        "Irak": 88,
+        "Afghanistan": 355,
+        "Bosnien-Herzegowina": 1069,
+        "Nordmazedonien": 410,
+        "Albanien": 127,
+        "Montenegro": 98,
+        "Marokko": 169,
+        "Iran": 69,
+        "Pakistan": 329,
+        "Bangladesch": 45,
+        "Libanon": 37,
+        "Jordanien": 12,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 419
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 14619,
+          "persons_high": 15444,
+          "percent_low": 7.56,
+          "percent_high": 7.99
+        },
+        "migration_background": {
+          "persons_low": 15223,
+          "persons_high": 16315,
+          "percent_low": 7.87,
+          "percent_high": 8.44
+        }
+      },
+      "combined_low_persons": 14619,
+      "combined_high_persons": 16315,
+      "combined_low_percent": 7.56,
+      "combined_high_percent": 8.44
+    },
+    {
+      "id": "08421",
+      "name": "Ulm, kreisfreie Stadt",
+      "population": 129951,
+      "explained_by_citizenship": 11700,
+      "explained_with_naturalisation": 21751,
+      "by_origin": {
+        "Türkei": 4094,
+        "Syrien": 2072,
+        "Kosovo": 1099,
+        "Serbien": 487,
+        "Irak": 337,
+        "Afghanistan": 514,
+        "Bosnien-Herzegowina": 1253,
+        "Nordmazedonien": 464,
+        "Albanien": 131,
+        "Montenegro": 58,
+        "Marokko": 124,
+        "Iran": 93,
+        "Pakistan": 366,
+        "Bangladesch": 69,
+        "Libanon": 32,
+        "Jordanien": 36,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 67,
+        "Ägypten/Algerien/Libyen/Tunesien": 405
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8389,
+        "Syrien": 2694,
+        "Kosovo": 2001,
+        "Serbien": 937,
+        "Irak": 565,
+        "Afghanistan": 513,
+        "Bosnien-Herzegowina": 2376,
+        "Nordmazedonien": 880,
+        "Albanien": 248,
+        "Montenegro": 110,
+        "Marokko": 231,
+        "Iran": 244,
+        "Pakistan": 962,
+        "Bangladesch": 181,
+        "Libanon": 85,
+        "Jordanien": 94,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 177,
+        "Ägypten/Algerien/Libyen/Tunesien": 1063
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 22510,
+          "persons_high": 23782,
+          "percent_low": 17.32,
+          "percent_high": 18.3
+        },
+        "migration_background": {
+          "persons_low": 22350,
+          "persons_high": 23233,
+          "percent_low": 17.2,
+          "percent_high": 17.88
+        }
+      },
+      "combined_low_persons": 22350,
+      "combined_high_persons": 23782,
+      "combined_low_percent": 17.2,
+      "combined_high_percent": 18.3
+    },
+    {
+      "id": "08425",
+      "name": "Alb-Donau-Kreis",
+      "population": 202416,
+      "explained_by_citizenship": 10333,
+      "explained_with_naturalisation": 19031,
+      "by_origin": {
+        "Türkei": 4561,
+        "Syrien": 1285,
+        "Kosovo": 1516,
+        "Serbien": 434,
+        "Irak": 148,
+        "Afghanistan": 654,
+        "Bosnien-Herzegowina": 784,
+        "Nordmazedonien": 460,
+        "Albanien": 81,
+        "Montenegro": 39,
+        "Marokko": 57,
+        "Iran": 33,
+        "Pakistan": 101,
+        "Bangladesch": 4,
+        "Libanon": 23,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 129
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 9345,
+        "Syrien": 1671,
+        "Kosovo": 2761,
+        "Serbien": 835,
+        "Irak": 248,
+        "Afghanistan": 653,
+        "Bosnien-Herzegowina": 1487,
+        "Nordmazedonien": 873,
+        "Albanien": 154,
+        "Montenegro": 73,
+        "Marokko": 107,
+        "Iran": 88,
+        "Pakistan": 266,
+        "Bangladesch": 11,
+        "Libanon": 61,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 339
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 19880,
+          "persons_high": 21003,
+          "percent_low": 9.82,
+          "percent_high": 10.38
+        },
+        "migration_background": {
+          "persons_low": 19640,
+          "persons_high": 20538,
+          "percent_low": 9.7,
+          "percent_high": 10.15
+        }
+      },
+      "combined_low_persons": 19640,
+      "combined_high_persons": 21003,
+      "combined_low_percent": 9.7,
+      "combined_high_percent": 10.38
+    },
+    {
+      "id": "08426",
+      "name": "Biberach, Landkreis",
+      "population": 207481,
+      "explained_by_citizenship": 7295,
+      "explained_with_naturalisation": 13029,
+      "by_origin": {
+        "Türkei": 2328,
+        "Syrien": 1198,
+        "Kosovo": 1186,
+        "Serbien": 326,
+        "Irak": 118,
+        "Afghanistan": 640,
+        "Bosnien-Herzegowina": 578,
+        "Nordmazedonien": 320,
+        "Albanien": 105,
+        "Montenegro": 42,
+        "Marokko": 128,
+        "Iran": 32,
+        "Pakistan": 96,
+        "Bangladesch": 4,
+        "Libanon": 42,
+        "Jordanien": 9,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 142
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4771,
+        "Syrien": 1558,
+        "Kosovo": 2160,
+        "Serbien": 628,
+        "Irak": 198,
+        "Afghanistan": 639,
+        "Bosnien-Herzegowina": 1096,
+        "Nordmazedonien": 607,
+        "Albanien": 198,
+        "Montenegro": 79,
+        "Marokko": 240,
+        "Iran": 84,
+        "Pakistan": 253,
+        "Bangladesch": 11,
+        "Libanon": 110,
+        "Jordanien": 23,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 373
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 14035,
+          "persons_high": 14828,
+          "percent_low": 6.76,
+          "percent_high": 7.15
+        },
+        "migration_background": {
+          "persons_low": 13628,
+          "persons_high": 14511,
+          "percent_low": 6.57,
+          "percent_high": 6.99
+        }
+      },
+      "combined_low_persons": 13628,
+      "combined_high_persons": 14828,
+      "combined_low_percent": 6.57,
+      "combined_high_percent": 7.15
+    },
+    {
+      "id": "08435",
+      "name": "Bodenseekreis",
+      "population": 221097,
+      "explained_by_citizenship": 10152,
+      "explained_with_naturalisation": 18291,
+      "by_origin": {
+        "Türkei": 3540,
+        "Syrien": 1778,
+        "Kosovo": 1334,
+        "Serbien": 391,
+        "Irak": 108,
+        "Afghanistan": 856,
+        "Bosnien-Herzegowina": 758,
+        "Nordmazedonien": 376,
+        "Albanien": 224,
+        "Montenegro": 48,
+        "Marokko": 133,
+        "Iran": 55,
+        "Pakistan": 217,
+        "Bangladesch": 17,
+        "Libanon": 32,
+        "Jordanien": 9,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 276
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 7254,
+        "Syrien": 2312,
+        "Kosovo": 2429,
+        "Serbien": 752,
+        "Irak": 182,
+        "Afghanistan": 854,
+        "Bosnien-Herzegowina": 1438,
+        "Nordmazedonien": 713,
+        "Albanien": 424,
+        "Montenegro": 92,
+        "Marokko": 249,
+        "Iran": 145,
+        "Pakistan": 569,
+        "Bangladesch": 45,
+        "Libanon": 85,
+        "Jordanien": 23,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 0,
+        "Ägypten/Algerien/Libyen/Tunesien": 724
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 19532,
+          "persons_high": 20636,
+          "percent_low": 8.83,
+          "percent_high": 9.33
+        },
+        "migration_background": {
+          "persons_low": 19073,
+          "persons_high": 20225,
+          "percent_low": 8.63,
+          "percent_high": 9.15
+        }
+      },
+      "combined_low_persons": 19073,
+      "combined_high_persons": 20636,
+      "combined_low_percent": 8.63,
+      "combined_high_percent": 9.33
+    },
+    {
+      "id": "08436",
+      "name": "Ravensburg, Landkreis",
+      "population": 291186,
+      "explained_by_citizenship": 12451,
+      "explained_with_naturalisation": 22055,
+      "by_origin": {
+        "Türkei": 3976,
+        "Syrien": 2405,
+        "Kosovo": 2133,
+        "Serbien": 365,
+        "Irak": 114,
+        "Afghanistan": 1150,
+        "Bosnien-Herzegowina": 744,
+        "Nordmazedonien": 420,
+        "Albanien": 285,
+        "Montenegro": 55,
+        "Marokko": 147,
+        "Iran": 42,
+        "Pakistan": 212,
+        "Bangladesch": 17,
+        "Libanon": 83,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 10,
+        "Ägypten/Algerien/Libyen/Tunesien": 276
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 8148,
+        "Syrien": 3127,
+        "Kosovo": 3884,
+        "Serbien": 702,
+        "Irak": 191,
+        "Afghanistan": 1148,
+        "Bosnien-Herzegowina": 1411,
+        "Nordmazedonien": 797,
+        "Albanien": 540,
+        "Montenegro": 104,
+        "Marokko": 276,
+        "Iran": 111,
+        "Pakistan": 557,
+        "Bangladesch": 45,
+        "Libanon": 219,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 25,
+        "Ägypten/Algerien/Libyen/Tunesien": 724
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 23956,
+          "persons_high": 25310,
+          "percent_low": 8.23,
+          "percent_high": 8.69
+        },
+        "migration_background": {
+          "persons_low": 22888,
+          "persons_high": 24115,
+          "percent_low": 7.86,
+          "percent_high": 8.28
+        }
+      },
+      "combined_low_persons": 22888,
+      "combined_high_persons": 25310,
+      "combined_low_percent": 7.86,
+      "combined_high_percent": 8.69
+    },
+    {
+      "id": "08437",
+      "name": "Sigmaringen, Landkreis",
+      "population": 132277,
+      "explained_by_citizenship": 4515,
+      "explained_with_naturalisation": 8422,
+      "by_origin": {
+        "Türkei": 1997,
+        "Syrien": 653,
+        "Kosovo": 435,
+        "Serbien": 185,
+        "Irak": 28,
+        "Afghanistan": 229,
+        "Bosnien-Herzegowina": 203,
+        "Nordmazedonien": 348,
+        "Albanien": 113,
+        "Montenegro": 13,
+        "Marokko": 57,
+        "Iran": 12,
+        "Pakistan": 77,
+        "Bangladesch": 0,
+        "Libanon": 9,
+        "Jordanien": 18,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 5,
+        "Ägypten/Algerien/Libyen/Tunesien": 133
+      },
+      "by_origin_with_naturalisation": {
+        "Türkei": 4092,
+        "Syrien": 849,
+        "Kosovo": 791,
+        "Serbien": 355,
+        "Irak": 47,
+        "Afghanistan": 229,
+        "Bosnien-Herzegowina": 385,
+        "Nordmazedonien": 660,
+        "Albanien": 215,
+        "Montenegro": 24,
+        "Marokko": 107,
+        "Iran": 30,
+        "Pakistan": 202,
+        "Bangladesch": 0,
+        "Libanon": 24,
+        "Jordanien": 47,
+        "Jemen/Saudi-Arabien/Vereinigte Arabische Emirate": 13,
+        "Ägypten/Algerien/Libyen/Tunesien": 351
+      },
+      "variants": {
+        "citizenship": {
+          "persons_low": 8686,
+          "persons_high": 9177,
+          "percent_low": 6.57,
+          "percent_high": 6.94
+        },
+        "migration_background": {
+          "persons_low": 8727,
+          "persons_high": 9176,
+          "percent_low": 6.6,
+          "percent_high": 6.94
+        }
+      },
+      "combined_low_persons": 8686,
+      "combined_high_persons": 9177,
+      "combined_low_percent": 6.57,
+      "combined_high_percent": 6.94
+    }
+  ]
+}
