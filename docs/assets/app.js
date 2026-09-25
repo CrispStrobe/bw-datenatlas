@@ -34,7 +34,7 @@ const pf=new Intl.NumberFormat('de-DE',{minimumFractionDigits:1,maximumFractionD
 const integer=v=>v===null||v===undefined?'Nicht verfügbar':nf.format(v);
 const pct=v=>v===null||v===undefined?'Nicht verfügbar':pf.format(v)+' %';
 const approx=v=>'≈ '+nf.format(Math.round(v/1000)*1000);
-const state={layer:'religion_state',selected:{type:'state',id:'08'},variant:'migration_background',origin:'de_origins',allOrigins:false,areaPage:0,researchPage:0,researchRows:null,onlyLandtag:false,zoom:{x:0,y:0,w:760,h:700}};
+const state={layer:'district_population',selected:{type:'state',id:'08'},variant:'migration_background',origin:'de_origins',allOrigins:false,areaPage:0,researchPage:0,researchRows:null,onlyLandtag:false,compositionDetail:false,flowRange:'years',instOrganisation:'',instSource:'',zoom:{x:0,y:0,w:760,h:700}};
 const districts=new Map(D.districts.map(r=>[r.id,r]));
 const municipalities=new Map(D.municipalities.map(r=>[r.geo_id,r]));
 const palette=['#deedf0','#b5d8dd','#83b9c4','#4d929f','#236a7b','#113f55'];
@@ -61,11 +61,14 @@ function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTi
 function download(content,filename,type='application/json'){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
 function exportJSON(payload,filename){download(JSON.stringify(payload,null,2),filename);}
 function toCSV(rows){if(!rows.length)return '';const keys=Object.keys(rows[0]);const cell=x=>{if(x===null||x===undefined)return '';let s=typeof x==='object'?JSON.stringify(x):String(x);if(typeof x==='string'&&/^[=+\-@]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';};return '\uFEFF'+[keys.map(cell).join(','),...rows.map(r=>keys.map(k=>cell(r[k])).join(','))].join('\r\n');}
-function table(headers,rows,caption=''){return `<table>${caption?`<caption>${esc(caption)}</caption>`:''}<thead><tr>${headers.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
+// Die erste Spalte ist der Name, alle weiteren sind Zahlen. Die Zellen bekamen dafür
+// schon die Klasse "numeric", die Überschriften nicht — linksbündige Köpfe über
+// rechtsbündigen Zahlen, in jeder Tabelle der Seite.
+function table(headers,rows,caption=''){return `<table>${caption?`<caption>${esc(caption)}</caption>`:''}<thead><tr>${headers.map((h,i)=>`<th scope="col"${i?' class="numeric"':''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
 function metric(label,value,meta=''){return `<div class="detail-stat"><span class="label">${esc(label)}</span><strong>${esc(value)}</strong><span class="meta">${meta}</span></div>`;}
 function setSelected(type,id){state.selected={type,id};$('search-results').hidden=true;renderDetail();renderMap();}
 function isEstimate(){return state.layer==='religion_estimate'||state.layer==='religion_estimate_municipal';}
-function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox)ibox.hidden=state.layer!=='institutions';if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent='Herkunftsdaten erklären '+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
+function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent='Herkunftsdaten erklären '+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
 function selectedPayload(){const base={atlas_version:D.version,built_on:D.built_on,layer:state.layer,definition:layers[state.layer].note,selected:state.selected,source:D.sources[layers[state.layer].source]};if(state.selected.type==='institution')return {...base,institution:INST?INST.institutions[state.selected.id]:null,not_a_population_measure:INST?INST.not_a_population_measure:null};
  if(state.selected.type==='state')return {...base,religion_estimate_bw:D.bw,religion_share_bw:D.bw_pct,model:isEstimate()&&EST?EST.meta:null};if(state.selected.type==='district')return {...base,data:districts.get(state.selected.id),model:isEstimate()&&EST?{...EST.meta,result:estimateDistrict(state.selected.id)}:null};return {...base,data:municipalities.get(state.selected.id),muslim_count:null,muslim_pct:null,religion_status:'not_available'};}
 function renderDetail(){
@@ -79,11 +82,9 @@ function renderDetail(){
   $('detail-kind').textContent='Einrichtungen an einem Ort';
   $('detail-name').textContent=items.length+' Einrichtungen';
   $('detail-content').innerHTML=
-   '<div class="metric"><span class="metric-label">Gleiche oder benachbarte Anschrift</span>'
-   +'<span class="meta">Weiter hineinzoomen trennt sie nicht mehr. Eine auswählen:</span>'
-   +'<ol class="inst-group-list">'
+   '<div class="metric"><ol class="inst-group-list">'
    +items.map((i,n)=>'<li><button type="button" data-pick="'+s.id[n]+'">'
-     +esc(i.name)+'<span class="meta">'+esc([i.street,i.city].filter(Boolean).join(', '))
+     +esc(i.name)+'<span class="meta">'+esc(i.municipality||i.city)
      +' · '+esc(i.organisation)+'</span></button></li>').join('')
    +'</ol></div>';
   $('detail-content').querySelectorAll('button[data-pick]').forEach(b=>
@@ -274,12 +275,17 @@ function renderInstitutionCoverage(){
  const harvested=[...shown].sort((a,b)=>b[1]-a[1]);
  const missing=Object.entries(INST.not_yet_harvested||{});
  box.hidden=false;
- box.innerHTML='<p class="inst-coverage-head">Ausgewertete Verzeichnisse</p><ul class="inst-coverage-list">'
+ // Zugeklappt wie die Gebietstabelle: Die Liste ist wichtig, aber sie ist eine
+ // Auskunft auf Nachfrage und nicht der erste Blick auf die Karte.
+ const total=harvested.reduce((a,[,n])=>a+n,0);
+ box.innerHTML='<details class="data-details"><summary>Ausgewertete Quellen '
+  +'<span>'+total+' Einrichtungen aus '+harvested.length+' Verzeichnissen</span></summary>'
+  +'<div class="inst-coverage-body"><ul class="inst-coverage-list">'
   +harvested.map(([k,n])=>'<li><strong>'+esc(k)+'</strong> · '+n+'</li>').join('')
   +'</ul>'
   +(missing.length?'<p class="inst-coverage-head">Nicht enthalten — und warum</p><ul class="inst-coverage-list">'
    +missing.map(([k,why])=>'<li><strong>'+esc(k)+'</strong> '+esc(why)+'</li>').join('')+'</ul>':'')
-  +'<p class="meta">'+esc(INST.inclusion_rule)+'</p>';
+  +'<p class="meta">'+esc(INST.inclusion_rule)+'</p></div></details>';
 }
 // Institutions are drawn as points on the state outline. They are places, not
 // quantities, so they are never shaded into the choropleth.
@@ -306,11 +312,39 @@ function namedInLandtagPaper(i){
 // Pairs, not a filtered array: every other part of the page addresses an institution
 // by its index in INST.institutions — the detail panel, the export, the group list —
 // so filtering must not renumber them.
+function matchesInstitutionFilter(i){
+ if(state.onlyLandtag&&!namedInLandtagPaper(i))return false;
+ if(state.instOrganisation&&i.organisation!==state.instOrganisation)return false;
+ if(state.instSource==='two'&&!i.second_source_url)return false;
+ if(state.instSource==='one'&&i.second_source_url)return false;
+ if(state.instSource==='own'&&!i.website)return false;
+ return true;
+}
 function institutionsShown(){
  const all=INST?INST.institutions:[];
  const out=[];
- all.forEach((inst,idx)=>{if(!state.onlyLandtag||namedInLandtagPaper(inst))out.push({inst,idx});});
+ all.forEach((inst,idx)=>{if(matchesInstitutionFilter(inst))out.push({inst,idx});});
  return out;
+}
+// Die Verbandsliste kommt aus den Daten, nicht aus einer gepflegten Aufzählung: Ein
+// neuer Verband im Verzeichnis soll im Filter auftauchen, ohne dass hier etwas
+// nachgetragen werden muss.
+function fillOrganisationFilter(){
+ const select=$('filter-organisation');
+ if(!select||!INST||select.dataset.filled)return;
+ const counts=new Map();
+ for(const i of INST.institutions)counts.set(i.organisation,(counts.get(i.organisation)||0)+1);
+ select.insertAdjacentHTML('beforeend',[...counts].sort((a,b)=>b[1]-a[1])
+   .map(([name,n])=>'<option value="'+esc(name)+'">'+esc(name)+' ('+n+')</option>').join(''));
+ select.dataset.filled='1';
+}
+function refreshInstitutionFilter(){
+ const shown=institutionsShown().length;
+ const all=INST?INST.institutions.length:0;
+ const label=$('filter-count');
+ if(label)label.textContent=shown===all?all+' Einrichtungen':shown+' von '+all+' Einrichtungen';
+ if(state.selected.type==='institution'||state.selected.type==='institution-group')setSelected('state','08');
+ renderMap();renderDetail();
 }
 function clusterInstitutions(){
  const z=state.zoom;
@@ -438,13 +472,64 @@ function areaRows(){let rows;if(state.layer==='municipality_population'||state.l
 function renderAreaTable(){const rows=areaRows(),n=25,pages=Math.max(1,Math.ceil(rows.length/n));state.areaPage=Math.min(state.areaPage,pages-1);const shown=rows.slice(state.areaPage*n,(state.areaPage+1)*n);const muni=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal',est=isEstimate();const headers=muni?['Gemeinde','Kreis','Einwohner','Männlich','Weiblich',...(est?['Modell · Anteil']:[])]:['Kreis','Schlüssel','Einwohner','Ausländisch','Anteil ausländisch',est?'Modell · Anteil':'Lokale Muslimzahl'];const cells=shown.map(r=>[`<button class="link-button" data-area-kind="${r.kind}" data-area-id="${esc(muni?r.geo_id:r.key)}">${esc(r.name)}</button>`,esc(r.key),integer(r.population),muni?integer(r.male):integer(r.foreign),muni?integer(r.female):pct(r.foreign_pct),...(muni?(est?[(()=>{const e=estimateMunicipality(r.geo_id);return e?pf.format(e.pct_low)+'–'+pf.format(e.pct_high)+' %':'Nicht verfügbar';})()]:[]):[est&&r.estimate?pf.format(r.estimate.variants[state.variant].pct_low)+'–'+pf.format(r.estimate.variants[state.variant].pct_high)+' %':'Nicht verfügbar'])]);$('area-table').innerHTML=table(headers,cells,muni?'Bevölkerung am 30.06.2024. Die Tabelle ist auch ohne Geodatenaufbau vollständig.'+(est?' Modellwerte verteilen den Kreiswert und sind keine Messung.':''):'Bevölkerung am 30.11.2024.'+(est?' Modellwerte sind eine Verteilung der veröffentlichten Landessumme, keine Messung.':''));$('area-page').textContent=`Seite ${state.areaPage+1} / ${pages} · ${integer(rows.length)} Treffer`;$('area-prev').disabled=state.areaPage===0;$('area-next').disabled=state.areaPage>=pages-1;$('area-table-count').textContent=integer(rows.length)+' Gebiete';$('area-table').querySelectorAll('[data-area-id]').forEach(b=>b.addEventListener('click',()=>setSelected(b.dataset.areaKind,b.dataset.areaId)));}
 function originView(){let title,badge,note,source,rows,unit='Personen';switch(state.origin){case 'de_origins':title='Muslimische Bevölkerung nach Herkunftsgruppe';badge='Deutschland · BAMF-Modell · 2025';note='Diese Verteilung gilt für Deutschland, nicht für Baden-Württemberg und nicht für einen ausgewählten Kreis. Herkunft bezeichnet im Quellensinn eigene beziehungsweise elterliche Herkunft – nicht allein den Pass oder das eigene Geburtsland.';source='bamf_fb55';rows=D.origins_de_2025.map(r=>({name:r.dimensions.origin_group,value:r.value,low:r.value_lower,high:r.value_upper,share:r.share_of_published_de_total,source:r}));break;case 'de_regions':title='Muslimische Bevölkerung nach Herkunftsregion';badge='Deutschland · BAMF-Modell · 2025';note='Anteile an der in der BAMF-Hochrechnung erfassten muslimischen Bevölkerung Deutschlands. Keine eigene BW-Herkunftsverteilung.';source='bamf_fb55';unit='Prozent';rows=D.origin_composition.filter(r=>r.reference_period==='2025').map(r=>({name:r.dimensions.origin_region,value:r.value,source:r}));break;case 'bw_nationalities_2024':case 'bw_nationalities_2025':{const year=state.origin.endsWith('2025')?'2025':'2024';title='Ausgewählte ausländische Staatsangehörigkeiten';badge='BW · AZR · '+(year==='2024'?'31.12.2024':'Bezugsjahr 2025');note=year==='2024'?'25 in der Veröffentlichung ausgewiesene Staatsangehörigkeiten. Das sind keine Muslimzahlen. Deutsche Staatsangehörige und damit viele Eingebürgerte und Nachkommen werden hier nicht abgebildet.':'Nur vier im Pressetext veröffentlichte Staatsangehörigkeiten; der genaue Stichtag ist in der übernommenen Zeile nicht bestätigt. Keine vollständige Rangliste und keine Muslimzahlen. Der kleinere Ausschnitt darf nicht als Bevölkerungsrückgang gegenüber der 2024er Auswahl gelesen werden.';source=year==='2024'?'stala_pm_2025':'stala_pm_2026';rows=D.nationalities_bw.filter(r=>r.reference_period===(year==='2024'?'2024-12-31':'2025')).map(r=>({name:r.dimensions.nationality,value:r.value,source:r}));break;}case 'bw_historical':title='Drei publizierte Herkunftsangaben des BW-Modells';badge='BW · historische Hauptvariante · 2018';note='Historische Angaben aus Brachat-Schwarz (2020), keine aktuellen Werte und keine vollständige Herkunftsverteilung. Die übrigen Gruppen werden nicht durch eine pauschale Restschätzung ergänzt.';source='stala_monat_2020';rows=D.historical_bw.filter(r=>r.indicator==='estimated_muslim_persons_by_origin').map(r=>({name:r.dimensions.origin_group,value:r.value,source:r}));break;default:throw new Error('Unknown origin view');}rows.sort((a,b)=>b.value-a.value);return {title,badge,note,source,rows,unit};}
 function renderOrigins(){const v=originView();$('origin-chart-title').textContent=v.title;$('origin-badge').textContent=v.badge;$('origin-badge').className='pill'+(state.origin.startsWith('bw_nationalities')?' neutral':'');$('origin-unit').textContent=v.unit;$('origin-warning').textContent=v.note;const shown=state.allOrigins?v.rows:v.rows.slice(0,8);const max=Math.max(...v.rows.map(r=>r.high??r.value));$('origin-bars').setAttribute('aria-label',v.title+'. '+v.badge+'. '+v.note);$('origin-bars').innerHTML=shown.map(r=>{const value=v.unit==='Prozent'?pct(r.value):integer(r.value);const tooltip=r.low!==undefined?`Publizierte Spanne: ${integer(r.low)}–${integer(r.high)}; mittlerer Wert: ${integer(r.value)}`:`${r.name}: ${value}`;const color=state.origin==='de_regions'?regionColors[r.name]||'#12596b':state.origin.startsWith('bw_nationalities')?'#507c91':'#12596b';return `<div class="bar-row"><span class="bar-name">${esc(r.name)}</span><div class="bar-track" title="${esc(tooltip)}"><div class="bar-fill" style="width:${100*r.value/max}%;background:${color}"></div>${r.low!==undefined?`<span class="bar-whisker" style="left:${100*r.low/max}%;width:${100*(r.high-r.low)/max}%"></span>`:''}</div><span class="bar-value">${value}${r.share!==undefined?`<small>${pct(r.share)} der DE-Modellsumme *</small>`:r.low!==undefined?`<small>${integer(r.low)}–${integer(r.high)}</small>`:''}</span></div>`;}).join('');$('all-origins').hidden=v.rows.length<=8;$('all-origins').textContent=state.allOrigins?'Nur acht Gruppen zeigen':`Alle ${v.rows.length} Gruppen zeigen`;$('all-origins').setAttribute('aria-pressed',String(state.allOrigins));let foot=sourceLink(v.source);if(state.origin==='de_origins')foot+=' · Tabelle 2: mittlere Werte und veröffentlichte Spannen (schwarze Markierungen). * Anteil selbst berechnet aus gerundeten veröffentlichten Mittelwerten; Nenner 6.821.000. Kein Anteil muslimischer Menschen innerhalb einer Herkunftsgruppe. Kleine Rundungsdifferenzen zwischen Summe der Gruppen und Gesamtsumme bleiben erhalten.';else if(state.origin==='de_regions')foot+=' · Abbildung 3: veröffentlichte Anteile.';$('origin-footnote').innerHTML=foot;$('origin-table').innerHTML=table(['Gruppe',v.unit==='Prozent'?'Anteil':'Mittlerer Wert / Bestand',...(state.origin==='de_origins'?['Untergrenze','Obergrenze','Anteil an DE-Modellsumme *']:[])],v.rows.map(r=>[esc(r.name),v.unit==='Prozent'?pct(r.value):integer(r.value),...(state.origin==='de_origins'?[integer(r.low),integer(r.high),pct(r.share)]:[])]));}
-function renderContext(){
+function renderContext(){renderComposition();renderFlows();}
+function renderComposition(){
  const years=['2008','2015','2019','2025'];const regionOrder=['Türkei','Naher Osten','Südosteuropa','Mittlerer Osten','Nordafrika'];const groups=D.origin_composition;
  const canonical=n=>n==='SO-Europa'?'Südosteuropa':n;
- $('composition-chart').innerHTML=years.map(year=>{const rows=groups.filter(r=>r.reference_period===year);return `<div class="stack-row"><span class="stack-year">${year}</span><div class="stack-track">${regionOrder.map(region=>{const r=rows.find(r=>canonical(r.dimensions.origin_region)===region);if(!r)return '';return `<span class="stack-segment" style="flex:${r.value};background:${regionColors[region]}" title="${esc(region)}: ${pct(r.value)}" aria-label="${year}, ${esc(region)}, ${pct(r.value)}">${pf.format(r.value)}</span>`;}).join('')}</div></div>`;}).join('');
+ // 2008, 2015 und 2019 gibt es nur nach fünf Regionen — mehr enthält die Quelle nicht.
+ // Für 2025 liegen dagegen achtzehn Herkunftsgruppen vor, jede mit ihrer Region. Wer
+ // will, bekommt die feine Aufschlüsselung; die Vergleichbarkeit über die Jahre bleibt
+ // erhalten, weil die Balkenlänge dieselbe Größe misst.
+ const fine=state.compositionDetail;
+ $('composition-chart').innerHTML=years.map(year=>{
+  const rows=groups.filter(r=>r.reference_period===year);
+  let segments;
+  if(fine&&year==='2025'&&D.origins_de_2025){
+   const byRegion=new Map(regionOrder.map(r=>[r,[]]));
+   for(const g of D.origins_de_2025){
+    const region=canonical(g.dimensions.origin_region);
+    if(byRegion.has(region))byRegion.get(region).push(g);
+   }
+   segments=regionOrder.flatMap(region=>byRegion.get(region)
+     .sort((a,b)=>b.share_of_published_de_total-a.share_of_published_de_total)
+     .map(g=>{const share=g.share_of_published_de_total;
+      return `<span class="stack-segment" style="flex:${share};background:${regionColors[region]}" title="${esc(g.dimensions.origin_group)} (${esc(region)}): ${pct(share)}" aria-label="2025, ${esc(g.dimensions.origin_group)}, ${pct(share)}">${share>4?esc(g.dimensions.origin_group.split('/')[0]):''}</span>`;})).join('');
+  }else{
+   segments=regionOrder.map(region=>{const r=rows.find(r=>canonical(r.dimensions.origin_region)===region);if(!r)return '';return `<span class="stack-segment" style="flex:${r.value};background:${regionColors[region]}" title="${esc(region)}: ${pct(r.value)}" aria-label="${year}, ${esc(region)}, ${pct(r.value)}">${pf.format(r.value)}</span>`;}).join('');
+  }
+  return `<div class="stack-row"><span class="stack-year">${year}</span><div class="stack-track">${segments}</div></div>`;
+ }).join('');
  $('composition-legend').innerHTML=regionOrder.map(n=>`<span><i class="legend-swatch" style="background:${regionColors[n]}"></i>${esc(n)}</span>`).join('');
- const months=D.flows_bw.filter(r=>r.reference_period_type==='month'&&r.reference_period.startsWith('2026')).sort((a,b)=>a.reference_period.localeCompare(b.reference_period));const total=D.flows_bw.find(r=>r.reference_period_type==='year_to_date'&&r.reference_period.startsWith('2026'));$('flow-total').innerHTML=integer(total.value)+'<small>Registrierungen im Teiljahr</small>';
- const max=Math.max(...months.map(r=>r.value));const labels=['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug'];$('flow-chart').innerHTML=months.map((r,i)=>`<div class="vbar-cell"><div class="vbar-fill${i===7?' warning':''}" style="height:${145*r.value/max}px" title="${r.reference_period}: ${integer(r.value)}"><span class="vbar-value">${integer(r.value)}</span></div><span class="vbar-label">${labels[i]}</span></div>`).join('');$('flow-source').href=D.sources[total.source_id].url;
+ // Die Datei enthält zwölf Jahreswerte von 2014 bis 2025 und zwölf Monatswerte.
+ // Gezeigt wurden davon acht Monate eines angefangenen Jahres — die kürzeste und am
+ // wenigsten aussagekräftige Auswahl aus allem, was da ist.
+}
+const MONTH_NAMES=['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
+function renderFlows(){
+ const byYear=D.flows_bw.filter(r=>r.reference_period_type==='year')
+   .sort((a,b)=>a.reference_period.localeCompare(b.reference_period));
+ const byMonth=D.flows_bw.filter(r=>r.reference_period_type==='month')
+   .sort((a,b)=>a.reference_period.localeCompare(b.reference_period)).slice(-12);
+ const monthly=state.flowRange==='months';
+ const rows=monthly?byMonth:byYear;
+ if(!rows.length)return;
+ const label=r=>monthly
+   ?MONTH_NAMES[Number(r.reference_period.slice(5,7))-1]+' '+r.reference_period.slice(2,4)
+   :r.reference_period;
+ const total=monthly
+   ?{value:rows.reduce((a,r)=>a+r.value,0),source_id:rows.at(-1).source_id,
+     note:'Registrierungen in zwölf Monaten'}
+   :{value:rows.at(-1).value,source_id:rows.at(-1).source_id,
+     note:'Registrierungen im Jahr '+rows.at(-1).reference_period};
+ $('flow-total').innerHTML=integer(total.value)+'<small>'+esc(total.note)+'</small>';
+ const max=Math.max(...rows.map(r=>r.value));
+ const chart=$('flow-chart');
+ chart.style.gridTemplateColumns='repeat('+rows.length+',1fr)';
+ chart.innerHTML=rows.map(r=>`<div class="vbar-cell"><div class="vbar-fill" style="height:${145*r.value/max}px" title="${esc(r.reference_period)}: ${integer(r.value)}"><span class="vbar-value">${integer(r.value)}</span></div><span class="vbar-label">${esc(label(r))}</span></div>`).join('');
+ $('flow-heading').textContent=monthly
+   ?'Asylregistrierungen, letzte zwölf Monate'
+   :'Asylregistrierungen je Jahr, 2014–2025';
+ $('flow-source').href=D.sources[total.source_id].url;
  $('states-table').innerHTML=table(['Schätzeinheit','Untergrenze','Obergrenze','Anteil: Untergrenze','Anteil: Obergrenze'],D.states.map(r=>[esc(r.name),integer(r.low),integer(r.high),pct(r.pct_low),pct(r.pct_high)]),'BAMF FB55, Tabelle 3 und Abbildung 4. Die Länderpaare bleiben gemeinsam.');
  const historical=D.historical_bw.filter(r=>r.indicator==='muslim_persons_historical');const scen={'main':'Hauptvariante','alternative':'Nebenvariante','census_republished':'Volkszählungsangabe, wiedergegeben','ministerial_report_republished':'Ministerratsbericht, wiedergegeben'};$('history-table').innerHTML=table(['Bezugsjahr','Quellenmodell','Personen'],historical.map(r=>[esc(r.reference_period),esc(scen[r.dimensions.scenario]||r.dimensions.scenario),integer(r.value)]),'Brachat-Schwarz, Statistisches Monatsheft 4/2020. Verschiedene historische Verfahren.');
  const purposeNames={spouse_reunification:'Ehegattennachzug',parent_reunification:'Elternnachzug',child_reunification:'Kindernachzug',other_family_reunification:'Sonstiger Familiennachzug',study_and_preparation:'Studium / Vorbereitung / Bewerbung',language_course_school:'Sprachkurs / Schulbesuch',employment_broad:'Erwerbstätigkeit (breite Kategorie)',jewish_immigration:'Jüdische Zuwanderung',ethnic_german_resettlers:'Spätaussiedlerinnen und Spätaussiedler',humanitarian_admission_resettlement:'Humanitäre Aufnahme / Resettlement',other_residence_purposes:'Sonstige Aufenthaltszwecke',not_assigned:'Nicht zugeordnet',total:'Insgesamt (nicht zusätzlich summieren)'};
@@ -460,8 +545,18 @@ function renderResearch(){const id=$('dataset-select').value,ds=D.datasets.find(
 function exportSVG(){if(!G){toast('Zuerst die amtlichen Kartengrenzen aufbauen.');return;}const l=layers[state.layer],svg=$('map').cloneNode(true);svg.setAttribute('x','0');svg.setAttribute('y','90');svg.setAttribute('width','760');svg.setAttribute('height','700');svg.querySelectorAll('path').forEach(p=>{p.setAttribute('stroke',p.getAttribute('stroke')||'#ffffff');p.setAttribute('stroke-width',p.getAttribute('stroke-width')||'.8');});svg.querySelectorAll('.map-label').forEach(t=>{t.setAttribute('font-size','13');t.setAttribute('fill','#142d3a');t.setAttribute('font-family','sans-serif');});const serializer=new XMLSerializer();const warning=isEstimate()?'MODELLRECHNUNG – KEINE AMTLICHE RELIGIONSSTATISTIK':state.layer==='religion_state'?'NUR LANDESWERT – KEINE GLEICHE QUOTE FÜR ALLE KREISE':'BEZUGSJAHR UND STATISTISCHES MERKMAL BEACHTEN';const extra=isEstimate()&&EST?`Veröffentlichte Landessumme ${integer(EST.meta.state_total.persons_low)}–${integer(EST.meta.state_total.persons_high)}, verteilt nach Herkunft. Spannen je Gebiet beachten.`:state.layer==='religion_state'?'BW insgesamt: 1.133.000–1.197.000; 10,1–10,7 %. Quelle: BAMF FB55.':l.note;const legend=$('map-legend').textContent;const wrap=(text,max=102)=>{const words=text.split(' ');let out=[''];for(const word of words){const i=out.length-1;if(out[i].length+word.length>max)out.push(word);else out[i]+=(out[i]?' ':'')+word;}return out;};const lines=[...wrap(extra),...wrap('Legende: '+legend),'Grenzen: © BKG 2026 · VG250, 01.01.2024; BW-Auswahl, vereinfacht.', 'BKG: https://www.bkg.bund.de · Lizenz: https://www.govdata.de/dl-de/by-2-0', ...wrap('Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf'),...wrap('Daten: '+D.sources[l.source].publisher+'; '+l.date)];const meta={atlas_version:D.version,layer:state.layer,note:l.note,source:D.sources[l.source],geometry:{date:G.geometry_reference,source:G.source_url,license:G.license_url},model:isEstimate()&&EST?EST.meta:null};const out=`<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="760" height="${835+lines.length*18}" viewBox="0 0 760 ${835+lines.length*18}"><rect width="100%" height="100%" fill="white"/><metadata>${esc(JSON.stringify(meta))}</metadata><text x="22" y="31" font-family="sans-serif" font-size="19" fill="#142d3a">${esc(l.title)}</text><text x="22" y="54" font-family="sans-serif" font-size="12">${esc(l.date)}</text><text x="22" y="77" font-family="sans-serif" font-size="11" font-weight="bold">${esc(warning)}</text>${serializer.serializeToString(svg)}${lines.map((t,i)=>`<text x="22" y="${805+i*18}" font-family="sans-serif" font-size="10" fill="#334e58">${esc(t)}</text>`).join('')}</svg>`;download(out,'bw-atlas-'+state.layer+(isEstimate()?'-MODELLRECHNUNG':'')+'.svg','image/svg+xml');}
 // Events and progressive enhancement.
 $('layer').addEventListener('change',updateLayer);
+const compDetail=$('composition-detail');
+if(compDetail)compDetail.addEventListener('change',()=>{state.compositionDetail=compDetail.checked;renderComposition();});
+const flowRange=$('flow-range');
+if(flowRange)flowRange.addEventListener('change',()=>{state.flowRange=flowRange.value;renderFlows();});
 const onlyLandtag=$('only-landtag');
-if(onlyLandtag)onlyLandtag.addEventListener('change',()=>{state.onlyLandtag=onlyLandtag.checked;if(state.selected.type==='institution'||state.selected.type==='institution-group')setSelected('state','08');renderMap();renderDetail();});
+if(onlyLandtag)onlyLandtag.addEventListener('change',()=>{state.onlyLandtag=onlyLandtag.checked;refreshInstitutionFilter();});
+const orgFilter=$('filter-organisation');
+if(orgFilter)orgFilter.addEventListener('change',()=>{state.instOrganisation=orgFilter.value;refreshInstitutionFilter();});
+const srcFilter=$('filter-source');
+if(srcFilter)srcFilter.addEventListener('change',()=>{state.instSource=srcFilter.value;refreshInstitutionFilter();});
+const infoToggle=$('landtag-info-toggle');
+if(infoToggle)infoToggle.addEventListener('click',e=>{e.preventDefault();const box=$('landtag-info');const open=box.hidden;box.hidden=!open;infoToggle.setAttribute('aria-expanded',String(open));});
 const variantSelect=$('estimate-variant');
 if(variantSelect)variantSelect.addEventListener('change',()=>{state.variant=variantSelect.value;renderMap();renderDetail();renderAreaTable();});
 $('zoom-in').addEventListener('click',()=>zoom(.8));$('zoom-out').addEventListener('click',()=>zoom(1.25));$('zoom-reset').addEventListener('click',()=>{state.zoom={x:0,y:0,w:760,h:700};applyZoom();});

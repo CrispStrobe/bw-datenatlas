@@ -25,7 +25,7 @@
   "Einzeln belegte Einrichtungen": 78,
   "Türkisch-Demokratische Idealistenvereine (ADÜTDF)": 22,
   "LBE-BW": 49,
-  "Unabhängig, keinem Verband zugeordnet": 9,
+  "Unabhängig, keinem Verband zugeordnet": 10,
   "OpenStreetMap (nur dort verzeichnet)": 104
  },
  "not_yet_harvested": {},
@@ -8538,6 +8538,25 @@
   },
   {
    "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "name": "Verein der islamischen Kultur e. V. (Masjid Sunna)",
+   "city": "Karlsruhe",
+   "postcode": "76133",
+   "source": "assunnamoschee.de",
+   "source_url": "https://assunnamoschee.de/",
+   "source_kind": "own_or_public",
+   "second_source_url": "https://ka.stadtwiki.net/Verein_der_islamischen_Kultur",
+   "state_characterisation_url": "https://www.landtag-bw.de/resource/blob/235770/35635e05429cb95114e5dc07d43e7c3e/16_1462_D.pdf",
+   "state_characterisation_note": "Das Ministerium für Inneres, Digitalisierung und Migration nennt diesen Verein in Landtags-Drucksache 16/1462 (26. Januar 2017) auf die Frage, welche Moscheevereine „Kontakte zur salafistischen Szene“ hätten, mit den Worten: „Folgende Moscheevereine bzw. andere Gruppen haben nach der Kenntnis des Landesamts für den Verfassungsschutz Baden-Württemberg Kontakte zur salafistischen Szene in Baden-Württemberg:“ Die Aussage ist die des Landesamts für Verfassungsschutz, nicht dieses Atlas. Sie betrifft Kontakte, nicht die Ausrichtung des Vereins, und sie hat den Stand 2017.",
+   "municipality": "Karlsruhe",
+   "municipality_id": "08212000",
+   "lon": 8.41018,
+   "lat": 49.01795,
+   "location_precision": "municipality",
+   "geocode_source": "municipality_label_point",
+   "has_published_coordinates": false
+  },
+  {
+   "organisation": "Unabhängig, keinem Verband zugeordnet",
    "name": "Integration und Verständigung e. V. (Al-Hidaya Moschee)",
    "city": "Kehl",
    "postcode": "77694",
@@ -10521,5 +10540,5 @@
    "has_published_coordinates": false
   }
  ],
- "located": 561
+ "located": 562
 }
