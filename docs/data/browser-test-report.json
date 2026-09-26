@@ -311,7 +311,7 @@
       "passed": true
     },
     {
-      "name": "the coverage panel names the directories read",
+      "name": "the coverage panel opens and names the directories read",
       "passed": true
     },
     {
@@ -323,7 +323,7 @@
       "passed": true
     },
     {
-      "name": "choosing a group zooms in and splits it",
+      "name": "choosing a group either splits it or lists what it holds",
       "passed": true
     },
     {

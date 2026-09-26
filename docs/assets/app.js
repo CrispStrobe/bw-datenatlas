@@ -14,7 +14,23 @@ const DEM=window.ATLAS_DEMOGRAPHY||null;
 const INST=window.ATLAS_INSTITUTIONS||null;
 // One colour per source of the entry. OpenStreetMap is deliberately a separate colour:
 // those points come from a community map, not from the organisation itself.
-const INST_COLOURS=[['Alevitische','#236a7b'],['LBE-BW','#a8743a'],['DITIB','#8a4b6d'],['OpenStreetMap','#5f7a4a'],['Unabhängig','#8c5a2b'],['Einzeln belegt','#7a6a58']];
+// Nach Größe vergeben, nicht nach Zufall. Vorher hatten „Unabhängig" (10 Einträge)
+// und „Einzeln belegt" eine eigene Farbe, während IGMG (67) und VIKZ (48) in das
+// graue „Sonstige" fielen — wer nach VIKZ filterte, bekam 48 graue Punkte und eine
+// Legende, die „Sonstige · 48" sagte. Die Farbwerte stammen aus der Okabe-Ito-Palette,
+// die für Farbsehschwächen entworfen ist; Gelb ist ausgelassen, weil es auf hellem
+// Grund zu wenig Kontrast hat.
+const INST_COLOURS=[
+ ['Türkisch-islamische Union','#0072B2','DITIB'],
+ ['Islamische Gemeinschaft Millî Görüş','#D55E00','IGMG'],
+ ['Verband Islamischer Kulturzentren','#009E73','VIKZ'],
+ ['LBE-BW','#CC79A7','LBE-BW'],
+ ['Alevitische','#E69F00','Alevitische Gemeinde'],
+ ['Ahmadiyya','#56B4E9','Ahmadiyya'],
+ ['Türkisch-Demokratische','#4b3f2f','ADÜTDF'],
+ ['OpenStreetMap','#5f7a4a','OpenStreetMap'],
+ ['Einzeln belegt','#7a6a58','Einzeln belegt'],
+];
 // A link is named after the site it leads to — "murrhardt", "dasoertliche", "mapcarta" —
 // which tells a reader more at a glance than a description of the source's category.
 function siteName(url){
@@ -26,6 +42,14 @@ function siteName(url){
  }catch(e){return 'Quelle';}
 }
 function instColour(org){for(const [k,c] of INST_COLOURS)if(org.startsWith(k))return c;return '#6b7280';}
+// Der kurze Name eines Verbands für die Legende. Fällt ein Verband in das graue
+// „Sonstige", wird er trotzdem benannt, sobald der Filter nur ihn zeigt: sonst steht
+// dort der Name einer Sammelkategorie, während der Leser gerade einen einzelnen
+// Verband ausgewählt hat.
+function instLabel(org){
+ for(const [k,,short] of INST_COLOURS)if(org.startsWith(k))return short;
+ return null;
+}
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nf=new Intl.NumberFormat('de-DE',{maximumFractionDigits:0});
@@ -497,8 +521,16 @@ function renderInstitutionPoints(){
  }
  host.appendChild(g);
 }
-function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();if(state.layer==='religion_state'){$('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#236a7b"></i>BW insgesamt · 10,1–10,7 % · keine Kreisquote</span>';return;}if(state.layer==='institutions'){const list=institutionsShown().map(p=>p.inst);const counts=new Map();for(const i of list){const k=INST_COLOURS.find(([p])=>i.organisation.startsWith(p));const label=k?k[0]:'Sonstige';counts.set(label,(counts.get(label)||0)+1);}
-  $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].map(([label,n])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+instColour(label)+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+list.length+' Einrichtungen · keine Bevölkerungszahl</span>';return;}
+function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();if(state.layer==='religion_state'){$('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#236a7b"></i>BW insgesamt · 10,1–10,7 % · keine Kreisquote</span>';return;}if(state.layer==='institutions'){const list=institutionsShown().map(p=>p.inst);const counts=new Map();
+  const only=state.instOrganisation;
+  for(const i of list){
+   const short=instLabel(i.organisation);
+   // Ein Verband ohne eigene Farbe heißt „Sonstige" — außer der Filter zeigt nur ihn,
+   // dann wird er beim Namen genannt.
+   const label=short||(only?only:'Sonstige');
+   const entry=counts.get(label)||{n:0,colour:instColour(i.organisation)};
+   entry.n+=1;counts.set(label,entry);}
+  $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+list.length+' Einrichtungen · keine Bevölkerungszahl</span>';return;}
  const p=palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
 function renderMap(){const l=layers[state.layer];$('map-title').textContent=l.title;$('map-period').textContent=l.date;$('map-badge').textContent=l.badge;$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=l.note;$('map-svg-title').textContent=l.title;$('map-svg-desc').textContent=l.date+'. '+l.note;renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
