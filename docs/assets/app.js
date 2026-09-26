@@ -458,8 +458,27 @@ function zoomToCluster(b){
  applyZoom();
 }
 
+// Wahr, sobald auf dieser Karte beides vorkommt: Punkte an einer Anschrift und Punkte
+// in der Ortsmitte. Nur dann trägt die Unterscheidung etwas bei. Sind alle gleich
+// ungenau, sagt es die Legende in einem Satz, und die Punkte dürfen sichtbar sein.
+let MIXED_PRECISION=false;
+// Die Zahlen auf der Karte müssen aufgehen. Sichtbar sind Gruppenzahlen und einzelne
+// Punkte ohne Zahl; wer nachzählt, findet 15 in Gruppen und sieht nicht, dass 33
+// weitere daneben liegen. Die Legende rechnet es deshalb vor, und die Summe ist
+// dieselbe Zahl, die der Filter nennt.
+function institutionTally(){
+ const groups=clusterInstitutions();
+ const single=groups.filter(b=>b.items.length===1).length;
+ const knots=groups.filter(b=>b.items.length>1);
+ const inKnots=knots.reduce((n,b)=>n+b.items.length,0);
+ const total=single+inKnots;
+ if(!knots.length)return total+' Einrichtungen';
+ return total+' Einrichtungen · '+single+' einzeln, '+inKnots+' in '+knots.length+' Gruppen';
+}
 function renderInstitutionPoints(){
  const host=$('map-features');
+ {const seen=new Set();for(const {inst} of institutionsShown())seen.add(inst.location_precision);
+  MIXED_PRECISION=seen.size>1;}
  host.querySelectorAll('g[data-institutions]').forEach(n=>n.remove());
  const g=document.createElementNS('http://www.w3.org/2000/svg','g');
  g.setAttribute('data-institutions','');
@@ -475,16 +494,27 @@ function renderInstitutionPoints(){
    // gezeichnet und etwas größer: Er behauptet einen Ort, keine Stelle, und das
    // muss man sehen, bevor man klickt. Ein gefüllter Punkt an der Ortsmitte wäre
    // eine Genauigkeit, die es nicht gibt.
-   const vague=inst.location_precision==='municipality';
-   c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',vague?4.4:3.2);
+   // Hohl gezeichnet wird nur, wenn es auf dieser Karte etwas zu unterscheiden gibt.
+   // Auf der öffentlichen Karte hat JEDER Punkt nur Ortsgenauigkeit, also unterschied
+   // der hohle Ring nichts und kostete alles: die Stilvorlage setzt .inst-point auf
+   // stroke:#fff — als Lichtrand um gefüllte Punkte gedacht —, und eine Regel der
+   // Stilvorlage schlägt ein Präsentationsattribut. Die Ringe waren damit weiß auf
+   // hellgrauer Fläche, 33 von 48 VIKZ-Punkten schlicht unsichtbar.
+   const vague=inst.location_precision==='municipality'&&MIXED_PRECISION;
+   const colour=instColour(inst.organisation);
+   c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',vague?4.4:3.4);
    c.setAttribute('class',vague?'inst-point inst-point-vague':'inst-point');
+   // Als Inline-Stil, nicht als Attribut: nur so gewinnt die Farbe gegen die Regel
+   // in der Stilvorlage.
    if(vague){
-    c.setAttribute('fill','none');
-    c.setAttribute('stroke',instColour(inst.organisation));
-    c.setAttribute('stroke-width','1.6');
+    c.style.fill='none';
+    c.style.stroke=colour;
+    c.style.strokeWidth='1.8px';
     c.setAttribute('stroke-dasharray','2.4 1.8');
    }else{
-    c.setAttribute('fill',instColour(inst.organisation));
+    c.style.fill=colour;
+    c.style.stroke='#fff';
+    c.style.strokeWidth='1px';
    }
    c.setAttribute('tabindex','0');c.setAttribute('role','button');
    c.setAttribute('aria-label',inst.name+', '+inst.city
@@ -530,7 +560,7 @@ function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();
    const label=short||(only?only:'Sonstige');
    const entry=counts.get(label)||{n:0,colour:instColour(i.organisation)};
    entry.n+=1;counts.set(label,entry);}
-  $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+list.length+' Einrichtungen · keine Bevölkerungszahl</span>';return;}
+  $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+institutionTally()+' · keine Bevölkerungszahl</span>';return;}
  const p=palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
 function renderMap(){const l=layers[state.layer];$('map-title').textContent=l.title;$('map-period').textContent=l.date;$('map-badge').textContent=l.badge;$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=l.note;$('map-svg-title').textContent=l.title;$('map-svg-desc').textContent=l.date+'. '+l.note;renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
