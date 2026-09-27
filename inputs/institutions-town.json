@@ -4459,7 +4459,7 @@
    "organisation": "Türkisch-Demokratische Idealistenvereine (ADÜTDF)",
    "name": "Nationaler Verein Türkischer Arbeitnehmer",
    "city": "Sindelfingen",
-   "postcode": "71067",
+   "postcode": "71063",
    "source": "www.sindelfingen.de",
    "source_url": "https://www.sindelfingen.de/leben-wohnen/interkulturelles-miteinander/internationale-vereine/191/nationaler-verein-tuerkischer-arbeitnehmer",
    "source_kind": "public_body",
@@ -4467,7 +4467,6 @@
    "website_from": "gesucht und über Name und Ort zugeordnet",
    "facebook": "https://www.facebook.com/Sindelfingen.de",
    "instagram": "https://www.instagram.com/hirschundwoelfl",
-   "openstreetmap_url": "https://www.openstreetmap.org/way/45360471",
    "affiliation_source_url": "https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP15/Drucksachen/0000/15_0383_D.pdf",
    "affiliation_note": "Die Zuordnung zum ADÜTDF stammt wörtlich vom Innenministerium Baden-Württemberg, Landtags-Drucksache 15/383 (2011), nicht von diesem Atlas.",
    "affiliation_restated_url": "https://www.landtag-bw.de/resource/blob/242096/15c33ccd1efa539f42b86da9354cee74/16_4674_D.pdf",
@@ -8925,6 +8924,18 @@
    "municipality_id": "08136065",
    "lon": 9.76592,
    "lat": 48.77939
+  },
+  {
+   "organisation": "OpenStreetMap (ohne Verbandszuordnung)",
+   "name": "Milli Türk İşçiler Cemiyeti",
+   "city": "Sindelfingen",
+   "postcode": "71067",
+   "source": "OpenStreetMap",
+   "source_url": "https://www.openstreetmap.org/way/45360471",
+   "municipality": "Sindelfingen",
+   "municipality_id": "08115045",
+   "lon": 9.0197,
+   "lat": 48.71052
   },
   {
    "organisation": "OpenStreetMap (ohne Verbandszuordnung)",
