@@ -511,9 +511,10 @@ const PROJ={bw:null,eu:null};
 function initProjection(){
  if(G)PROJ.bw=baueProjektion([G.state.geometry]);
  // Europa ohne die überseeischen Gebiete: mit Guadeloupe und Réunion im Zuschnitt
- // wäre der Kontinent eine Briefmarke in der Ecke.
+ // wäre der Kontinent eine Briefmarke in der Ecke. Svalbard liegt auf 78 Grad Nord
+ // und zöge den Ausschnitt genauso weit auf, nur nach oben.
  if(EUROSTAT)PROJ.eu=baueProjektion(EUROSTAT.features
-   .filter(f=>{const b=f.properties;return b.nuts&&!/^(FRY|ES7|PT2|PT3)/.test(b.nuts);})
+   .filter(f=>{const b=f.properties;return b.nuts&&!/^(FRY|ES7|PT2|PT3|NO0B)/.test(b.nuts);})
    .map(f=>f.geometry));
  projection=PROJ.bw;
 }

@@ -324,8 +324,28 @@ def main() -> None:
     merkmale = []
     for f in flaechen['features']:
         code = f['properties']['NUTS_ID']
+        # Eine Fläche, für die Eurostat keine einzige der neun Größen führt, wird
+        # trotzdem gezeichnet — schraffiert, mit lauter Nullwerten. Sonst klaffte dort
+        # ein Loch, und ein Loch in einer Karte sieht aus wie ein Fehler der Karte und
+        # nicht wie eine Lücke der Statistik. Betroffen sind Bosnien und Herzegowina,
+        # das Kosovo und Svalbard: Beitritts- und Nichtmitgliedsgebiete, für die die
+        # Arbeitskräfteerhebung regional nichts ausweist.
         if code not in regionen:
-            continue
+            if not echte_region(code):
+                continue
+            regionen[code] = {'nuts': code, 'country': code[:2],
+                              'name': f['properties'].get('NAME_LATN') or code,
+                              'population_ths': None, 'foreign_born_ths': None,
+                              **{k: None for k in EINHEITEN},
+                              'employment_native_pct': None,
+                              'employment_foreign_born_pct': None,
+                              'unemployment_native_pct': None,
+                              'arrival_unknown_pct': None,
+                              'foreign_born_census_pct': None,
+                              'tertiary_native_pct': None, 'tertiary_gap_pp': None,
+                              'low_education_foreign_born_pct': None,
+                              'participation_native_pct': None,
+                              'participation_gap_pp': None}
         g = shape(f['geometry']).simplify(0.02, preserve_topology=True)
         if g.is_empty:
             continue

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 215,
+  "check_count": 216,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -800,6 +800,10 @@
     },
     {
       "name": "the layers do not all cite the same dataset",
+      "passed": true
+    },
+    {
+      "name": "regions without any figure are drawn hatched, not left out",
       "passed": true
     },
     {

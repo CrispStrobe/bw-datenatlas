@@ -539,6 +539,12 @@ with sync_playwright() as pw:
         check(f'{ebene}: names the dataset it actually shows',angabe.is_visible())
         datensaetze.add(angabe.inner_text())
     check('the layers do not all cite the same dataset',len(datensaetze)>=6)
+    # Ein Loch in der Karte sieht aus wie ein Fehler der Karte, nicht wie eine Lücke
+    # der Statistik. Regionen ohne jeden Wert werden deshalb schraffiert gezeichnet.
+    check('regions without any figure are drawn hatched, not left out',
+          page.evaluate("()=>['BA01','BA02','BA03','XK00'].every(c=>"
+                        "document.querySelector(`#map-features path[data-id=\"${c}\"]`)"
+                        "?.getAttribute('fill').includes('url'))"))
     # Jede Größe bringt ihre Einheit mit. Ohne sie fiel ein Anteil in den
     # Saldo-Zweig und stand als "+36,0" statt "36,0 %" im Profil.
     check('every measure publishes its unit',page.evaluate(
