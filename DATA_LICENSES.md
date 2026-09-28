@@ -177,6 +177,20 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 
 ## Eurostat und GISCO (europäische Vergleichsebene)
 
-- **Zahlen:** Eurostat, Datensatz `lfst_r_lfsd2pwc` (Bevölkerung in Privathaushalten nach Geburtsland, NUTS 2). Weiterverwendung gestattet mit Quellenangabe, Beschluss 2011/833/EU der Kommission.
+Weiterverwendung aller Eurostat-Daten gestattet mit Quellenangabe, Beschluss 2011/833/EU der Kommission. Fünf Datensätze, sechs Größen:
+
+| Größe | Datensatz | Erhebung |
+|---|---|---|
+| Im Ausland geboren | `lfst_r_lfsd2pwc` | Arbeitskräfteerhebung (Stichprobe) |
+| Außerhalb der EU geboren | `lfst_r_lfsd2pwc` | Arbeitskräfteerhebung (Stichprobe) |
+| Ausländische Staatsangehörige | `lfst_r_lfsd2pwn` | Arbeitskräfteerhebung (Stichprobe) |
+| Abstand der Erwerbstätigenquoten | `lfst_r_lfe2emprc` | Arbeitskräfteerhebung (Stichprobe) |
+| Erwerbslosenquote der im Ausland Geborenen | `lfst_r_lfur2gac` | Arbeitskräfteerhebung (Stichprobe) |
+| Wanderungssaldo je 1.000 Einwohner | `tgs00099` | Bevölkerungsfortschreibung |
+
 - **Grenzen:** Eurostat GISCO, NUTS 2024, 1:20 Mio. © EuroGeographics für die Verwaltungsgrenzen.
-- **Nicht dasselbe wie der Ausländeranteil dieses Atlas:** dort zählt der Pass, hier der Geburtsort. Eingebürgerte zählen in der europäischen Ebene mit.
+- **Geburtsort ist nicht Pass.** Die Ebene „Im Ausland geboren" zählt den Geburtsort; Eingebürgerte zählen mit. Der übrige Atlas zählt den Pass. Die beiden Größen sind nicht ineinander umrechenbar und stehen deshalb nebeneinander, nicht übereinander.
+- **Die Passebene ist in der Definition vergleichbar, in der Zahl nicht.** `lfst_r_lfsd2pwn` misst dieselbe Abgrenzung wie die Kreis- und Gemeindeebenen — aber nur für die 15- bis 64-Jährigen in Privathaushalten. Weil Zugewanderte in diesen Jahrgängen überrepräsentiert sind, liegt der Wert höher: für den Regierungsbezirk Stuttgart 25,3 statt 19,8 Prozent. Wer beide Zahlen nebeneinanderlegt, vergleicht Altersabgrenzungen, nicht Regionen.
+- **Der Abstand der Erwerbstätigenquoten misst einen Abstand, nicht seine Ursache.** Alter, Bildung, Aufenthaltsdauer und Arbeitsmarktzugang stecken ungetrennt darin. Negative Werte sind kein Fehler: in mehreren Regionen Mittel- und Osteuropas arbeiten die Zugewanderten häufiger als die Einheimischen.
+- **Stichprobe.** Fünf der sechs Größen stammen aus der Arbeitskräfteerhebung. Für kleine Regionen ist die Unsicherheit entsprechend groß, und Eurostat weist sie je Region nicht aus. Für die Erwerbslosenquote der im Ausland Geborenen liefert Eurostat nur 185 der 290 Regionen — die übrigen bleiben schraffiert, statt durch eine Schätzung ersetzt zu werden.
+- **Jede Größe trägt ihr eigenes Bezugsjahr,** weil die Datensätze unterschiedlich schnell fortgeschrieben werden. Das Jahr steht an der Ebene und im Profil jeder Region, nicht nur hier.

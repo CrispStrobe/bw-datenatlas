@@ -509,6 +509,52 @@ with sync_playwright() as pw:
           and page.eval_on_selector('#map-attribution-bw','e=>e.hidden'))
     check('the european layer states that it counts birthplace, not passport',
           'Geburtsort' in page.locator('#map-note').inner_text())
+    # Fünf europäische Ebenen aus fünf Datensätzen. Geprüft wird, dass jede ihre
+    # eigene Größe zeichnet, ihr eigenes Bezugsjahr nennt und ihren eigenen Datensatz
+    # angibt — die Herkunftsangabe nannte fest lfst_r_lfsd2pwc und hätte den
+    # Wanderungssaldo einer Erhebung zugeschrieben, in der er nicht vorkommt.
+    EU_EBENEN=['eu_foreign_born','eu_non_eu_born','eu_foreign_citizens',
+               'eu_employment_gap','eu_net_migration']
+    datensaetze=set()
+    for ebene in EU_EBENEN:
+        page.select_option('#layer',ebene); page.wait_for_timeout(900)
+        check(f'{ebene}: draws the european regions',
+              page.locator('#map-features path.map-feature').count()>200)
+        check(f'{ebene}: names its own reference year',
+              'Eurostat 20' in page.locator('#map-period').inner_text())
+        angabe=page.locator('#map-attribution-eu-dataset')
+        check(f'{ebene}: names the dataset it actually shows',angabe.is_visible())
+        datensaetze.add(angabe.inner_text())
+    check('the five layers do not all cite the same dataset',len(datensaetze)>=3)
+    # Der Wanderungssaldo hat negative Werte. Fiele er auf die einfarbige Reihe
+    # zurück, wären Abwanderung und Zuwanderung derselbe Ton.
+    check('the net migration layer uses its own diverging colours',
+          page.evaluate("()=>{const f=[...document.querySelectorAll('#map-features path')]"
+                        ".map(e=>e.getAttribute('fill'));"
+                        "return f.includes('#8c4a2c')&&f.includes('#134f61');}"))
+    # Eine angeklickte europäische Region zeigt alle sechs Größen mit ihrem Rang.
+    page.locator('#map-features path[data-id="DE11"]').dispatch_event('click')
+    page.wait_for_timeout(600)
+    check('clicking a european region opens its profile',
+          page.evaluate("Atlas.getState().selected.type")=='eu')
+    profil=page.locator('#detail-content').inner_text()
+    check('the european profile shows every measure',
+          all(w in profil for w in ('Im Ausland geboren','Ausländische Staatsangehörige',
+                                    'Wanderungssaldo','Erwerbslosenquote')))
+    check('the european profile ranks the region against the others',
+          'Rang' in profil and 'von 2' in profil)
+    check('the european profile names the region, not its country',
+          page.locator('#detail-name').inner_text().startswith('Stuttgart'))
+    # Der Rang darf nicht an der Reihenfolge gleich großer Regionen hängen.
+    check('equal values get the same rank',page.evaluate(
+        "()=>{const p=window.ATLAS_EUROSTAT.features.map(f=>f.properties)"
+        ".filter(p=>p.foreign_born_pct!==null);"
+        "const r=x=>p.filter(q=>q.foreign_born_pct>x).length+1;"
+        "return p.every(a=>p.every(b=>a.foreign_born_pct!==b.foreign_born_pct"
+        "||r(a.foreign_born_pct)===r(b.foreign_born_pct)));}"))
+    page.select_option('#layer','district_population'); page.wait_for_timeout(900)
+    check('a european selection does not survive the return to Baden-Württemberg',
+          page.evaluate("Atlas.getState().selected.type")!='eu')
     page.select_option('#layer','district_population'); page.wait_for_timeout(900)
     check('the map returns to Baden-Württemberg afterwards',
           page.locator('#map-features path.map-feature').count()==44

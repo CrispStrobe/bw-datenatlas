@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 179,
+  "check_count": 202,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -700,6 +700,98 @@
     },
     {
       "name": "the european layer states that it counts birthplace, not passport",
+      "passed": true
+    },
+    {
+      "name": "eu_foreign_born: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_foreign_born: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_foreign_born: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "eu_non_eu_born: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_non_eu_born: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_non_eu_born: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "eu_foreign_citizens: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_foreign_citizens: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_foreign_citizens: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "eu_employment_gap: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_employment_gap: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_employment_gap: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "eu_net_migration: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_net_migration: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_net_migration: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "the five layers do not all cite the same dataset",
+      "passed": true
+    },
+    {
+      "name": "the net migration layer uses its own diverging colours",
+      "passed": true
+    },
+    {
+      "name": "clicking a european region opens its profile",
+      "passed": true
+    },
+    {
+      "name": "the european profile shows every measure",
+      "passed": true
+    },
+    {
+      "name": "the european profile ranks the region against the others",
+      "passed": true
+    },
+    {
+      "name": "the european profile names the region, not its country",
+      "passed": true
+    },
+    {
+      "name": "equal values get the same rank",
+      "passed": true
+    },
+    {
+      "name": "a european selection does not survive the return to Baden-Württemberg",
       "passed": true
     },
     {

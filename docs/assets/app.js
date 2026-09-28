@@ -116,7 +116,16 @@ const layers={
  second_generation:{title:'Zweite Generation mit deutschem Pass',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[27,29,31,33,35],unit:'percent',note:'Anteil der hier geborenen Menschen mit deutschem Pass an der Bevölkerung mit Migrationshintergrund. Genau diese Menschen fehlen in der Ausländerstatistik – deshalb braucht die Modellrechnung eine Korrektur um Eingebürgerte und Nachkommen. Keine Angabe zur Religionszugehörigkeit.'},
  mh_under25:{title:'Unter 25-Jährige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[29,31,33,35,37],unit:'percent',note:'Anteil der unter 25-Jährigen an der Bevölkerung mit Migrationshintergrund. Schraffiert: die Quelle hält zu viele Altersgruppen geheim, um einen belastbaren Anteil zu bilden. Migrationshintergrund ist eine weit größere Gruppe als die modellierte muslimische Bevölkerung; dies ist nicht deren Altersgliederung.'},
  mh_employment:{title:'Erwerbstätige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · ab 15 Jahren · 44 Kreise',source:'stala_pm_2025',thresholds:[60,63,66,69,72],unit:'percent',note:'Anteil der Erwerbstätigen an der Bevölkerung ab 15 Jahren mit Migrationshintergrund. Stichprobenerhebung. Keine Erwerbslosenquote, weil die Quelle die Erwerbslosen in fast allen Kreisen geheim hält. Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein.'},
- eu_foreign_born:{title:'Im Ausland Geborene · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'2024 · 274 Regionen in Europa',source:'eurostat_lfs',thresholds:[8,13,18,24,30],unit:'percent',note:'Anteil der im Ausland Geborenen an der Bevölkerung von 15 bis 64 Jahren in Privathaushalten. Gezählt wird der Geburtsort, nicht der Pass: Eingebürgerte zählen hier mit, im Ausländeranteil der übrigen Ebenen nicht. Die beiden Größen sind deshalb nicht vergleichbar. Stichprobe der Arbeitskräfteerhebung; für kleine Regionen entsprechend unsicher.'},
+ // Fünf europäische Ebenen aus fünf Eurostat-Datensätzen. Jede trägt ihr eigenes
+ // Bezugsjahr, weil die Datensätze unterschiedlich schnell fortgeschrieben werden;
+ // date ist deshalb eine Vorlage mit Platzhaltern und kein fertiger Satz — sonst
+ // wechselte der Katalogschlüssel bei jeder Aktualisierung und die Übersetzung
+ // fiele still auf Deutsch zurück.
+ eu_foreign_born:{title:'Im Ausland Geborene · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'foreign_born_pct',source:'eurostat_lfs',thresholds:[3,8,13,18,25],unit:'percent',euMeasure:'foreign_born_pct',note:'Anteil der im Ausland Geborenen an der Bevölkerung von 15 bis 64 Jahren in Privathaushalten. Gezählt wird der Geburtsort, nicht der Pass: Eingebürgerte zählen hier mit, im Ausländeranteil der übrigen Ebenen nicht. Stichprobe der Arbeitskräfteerhebung; für kleine Regionen entsprechend unsicher.'},
+ eu_non_eu_born:{title:'Außerhalb der EU Geborene · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'non_eu_born_pct',source:'eurostat_lfs',thresholds:[3,6,9,13,18],unit:'percent',euMeasure:'non_eu_born_pct',note:'Dieselbe Bevölkerung wie die Ebene daneben, enger abgegrenzt: nur die außerhalb der EU-27 Geborenen. Der Abstand zwischen beiden Ebenen ist die Zuwanderung aus anderen EU-Staaten, die rechtlich etwas völlig anderes ist als Zuwanderung von außerhalb.'},
+ eu_foreign_citizens:{title:'Ausländische Staatsangehörige · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'foreign_citizen_pct',source:'eurostat_lfs',thresholds:[3,6,9,13,18],unit:'percent',euMeasure:'foreign_citizen_pct',note:'Anteil der Personen ohne Pass des Wohnsitzlandes. Das ist dieselbe Abgrenzung wie auf den Kreis- und Gemeindeebenen dieses Atlas — anders als beim Geburtsort zählen Eingebürgerte hier nicht mit. Vergleichbar ist damit die Definition, nicht die Zahl: Eurostat zählt nur die 15- bis 64-Jährigen in Privathaushalten, und weil Zugewanderte in diesen Altersjahrgängen überrepräsentiert sind, liegt der Wert höher als der Anteil über alle Altersgruppen. Für den Regierungsbezirk Stuttgart 25,3 statt 19,8 Prozent.'},
+ eu_employment_gap:{title:'Abstand der Erwerbstätigenquoten · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'employment_gap_pp',source:'eurostat_lfs',thresholds:[-3,0,4,9,15],unit:'points',palette:['#8c4a2c','#d8a887','#e3e8e6','#a9cdd3','#5b9aa8','#134f61'],euMeasure:'employment_gap_pp',note:'Erwerbstätigenquote der im Inland Geborenen minus die der im Ausland Geborenen, 20 bis 64 Jahre, in Prozentpunkten. Ein positiver Wert heißt: die im Ausland Geborenen sind seltener erwerbstätig. Negative Werte gibt es auch, und sie sind kein Fehler — in mehreren Regionen Mittel- und Osteuropas arbeiten die Zugewanderten häufiger als die Einheimischen. Die Zahl misst einen Abstand, nicht seine Ursache: Alter, Bildung, Aufenthaltsdauer und Arbeitsmarktzugang stecken ungetrennt darin.'},
+ eu_net_migration:{title:'Wanderungssaldo je 1.000 Einwohner · EU-Regionen (NUTS 2)',badge:'Eurostat · Bevölkerungsfortschreibung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'net_migration_per_1000',source:'eurostat_demo',thresholds:[-5,0,2,5,9],unit:'per_1000',palette:['#8c4a2c','#d8a887','#e3e8e6','#a9cdd3','#5b9aa8','#134f61'],euMeasure:'net_migration_per_1000',note:'Zuzüge minus Fortzüge je 1.000 Einwohner, einschließlich der statistischen Anpassung, mit der die Fortschreibung an eine Zählung angeglichen wird. Anders als die vier Ebenen daneben keine Stichprobe, sondern die Bevölkerungsfortschreibung. Enthalten sind alle Wanderungen, auch die innerhalb des Landes und die von Einheimischen.'},
  region_population:{title:'Bevölkerung insgesamt · Regierungsbezirke',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 4 Regionen',source:'stala_bevoelkerung',thresholds:[2000000,2500000,3000000,3500000,4000000],unit:'count',note:'Die vier Regierungsbezirke sind die Ebene NUTS 2 der europäischen Gebietssystematik. Die Zahlen sind aus den Kreiszahlen addiert, nicht neu erhoben.'},
  region_foreign_share:{title:'Ausländische Staatsangehörige · Regierungsbezirke',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 4 Regionen',source:'stala_bevoelkerung',thresholds:[16,17,18,19,20],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit je Regierungsbezirk (NUTS 2), aus den Kreiszahlen addiert. Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und stehen in diesen Zahlen nicht.'},
  religion_estimate:{title:'Muslimische Bevölkerung · Modell je Kreis',badge:'Modellrechnung',date:'Landessumme 2025 · Herkunft 31.12.2024 · 44 Kreise',source:'bamf_fb55',thresholds:[5,7.5,10,12.5,15],unit:'percent',note:'Modellrechnung, keine Messung. Die veröffentlichte Landessumme wird nach Herkunft verteilt: ausländische Bevölkerung je Staatsangehörigkeit mal bundesweitem muslimischen Anteil dieser Herkunftsgruppe. Es gibt keine amtliche Religionsstatistik je Kreis.'},
@@ -138,9 +147,73 @@ function table(headers,rows,caption='',quelle=null){return `<table>${caption||qu
 function metric(label,value,meta=''){return `<div class="detail-stat"><span class="label">${esc(t(label))}</span><strong>${esc(value)}</strong><span class="meta">${meta}</span></div>`;}
 function setSelected(type,id){state.selected={type,id};$('search-results').hidden=true;renderDetail();renderMap();}
 function isEstimate(){return state.layer==='religion_estimate'||state.layer==='religion_estimate_municipal'||state.layer==='religion_estimate_18';}
-function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent=t('Herkunftsdaten erklären ')+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
+function updateLayer(){state.layer=$('layer').value;
+ // Eine europäische Region im Profil, während die Karte Baden-Württemberg zeigt,
+ // wäre ein Widerspruch zwischen den beiden Hälften des Bildschirms.
+ if(state.selected.type==='eu'&&!layers[state.layer].euMeasure)state.selected={type:'state',id:'08'};
+const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent=t('Herkunftsdaten erklären ')+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
 function selectedPayload(){const base={atlas_version:D.version,built_on:D.built_on,layer:state.layer,definition:layers[state.layer].note,selected:state.selected,source:sourceFor(layers[state.layer])};if(state.selected.type==='institution')return {...base,institution:INST?INST.institutions[state.selected.id]:null,not_a_population_measure:INST?INST.not_a_population_measure:null};
- if(state.selected.type==='state')return {...base,religion_estimate_bw:D.bw,religion_share_bw:D.bw_pct,model:isEstimate()&&EST?EST.meta:null};if(state.selected.type==='district')return {...base,data:districts.get(state.selected.id),model:isEstimate()&&EST?{...EST.meta,result:estimateDistrict(state.selected.id)}:null};return {...base,data:municipalities.get(state.selected.id),muslim_count:null,muslim_pct:null,religion_status:'not_available'};}
+ if(state.selected.type==='eu'&&EUROSTAT)return {...base,eurostat_region:(EUROSTAT.features.find(f=>f.properties.nuts===state.selected.id)||{}).properties||null,measures:EUROSTAT.measures,caveat:EUROSTAT.caveat};if(state.selected.type==='state')return {...base,religion_estimate_bw:D.bw,religion_share_bw:D.bw_pct,model:isEstimate()&&EST?EST.meta:null};if(state.selected.type==='district')return {...base,data:districts.get(state.selected.id),model:isEstimate()&&EST?{...EST.meta,result:estimateDistrict(state.selected.id)}:null};return {...base,data:municipalities.get(state.selected.id),muslim_count:null,muslim_pct:null,religion_status:'not_available'};}
+// Eine angeklickte europäische Region zeigte bisher nur eine Kurzmeldung mit einer
+// einzigen Zahl. Jetzt liegen sechs Größen vor, und die Frage, die diese Ebene
+// überhaupt stellt — liegt der Südwesten hoch oder niedrig? —, beantwortet erst der
+// Rang: 25,3 Prozent sagt für sich genommen nichts, "Rang 14 von 239" sagt etwas.
+// Der Name der Region, und dahinter der Staat in der Sprache des Lesers. Die Felder
+// NAME_GERM, NAME_ENGL und NAME_FREN von GISCO sind auf dieser Ebene die Namen des
+// STAATES — als Regionsnamen genommen hießen alle vier Regierungsbezirke
+// "Deutschland", und genau das stand vorher in der Kurzmeldung.
+function euName(p){
+ if(!p.nuts)return p.name;
+ const land=p['country_'+(window.I18N?I18N.sprache:'de')]||p.country_en||'';
+ const eigen=p.name||p.name_latin||p.nuts;
+ return land&&land!==eigen?eigen+' · '+land:eigen;
+}
+// Platzziffer statt Listenplatz: zwei Regionen mit demselben Wert bekommen dieselbe
+// Ziffer. Sonst hinge der Rang an der Reihenfolge, in der zwei gleich große Regionen
+// zufällig in der Datei stehen, und dieselbe Zahl ergäbe zweimal etwas anderes.
+function euRang(schluessel,code){
+ const da=EUROSTAT.features.map(f=>f.properties)
+   .filter(p=>p[schluessel]!==null&&p[schluessel]!==undefined);
+ const eigen=da.find(p=>p.nuts===code);
+ if(!eigen)return null;
+ return {rang:da.filter(p=>p[schluessel]>eigen[schluessel]).length+1,von:da.length};
+}
+function euProfile(code){
+ if(!EUROSTAT)return false;
+ const f=EUROSTAT.features.find(x=>x.properties.nuts===code);
+ if(!f)return false;
+ const p=f.properties;
+ const name=euName(p);
+ $('detail-kind').textContent=t('Europäische Region · NUTS 2');
+ $('detail-name').textContent=name;
+ const zahl=(wert,einheit)=>wert===null||wert===undefined?t('kein Wert')
+   :einheit==='percent'?pct(wert)
+   :einheit==='points'?(wert>0?'+':'')+pf.format(wert)+' '+t('Punkte')
+   :(wert>0?'+':'')+pf.format(wert);
+ const einheiten={foreign_born_pct:'percent',non_eu_born_pct:'percent',
+   foreign_citizen_pct:'percent',employment_gap_pp:'points',
+   unemployment_foreign_born_pct:'percent',net_migration_per_1000:'per_1000'};
+ let html='';
+ for(const m of EUROSTAT.measures){
+  const wert=p[m.key];
+  const r=wert===null||wert===undefined?null:euRang(m.key,code);
+  html+=metric(t(m.title),zahl(wert,einheiten[m.key]),
+    esc((r?tf('Rang {0} von {1}',integer(r.rang),integer(r.von)):t('für diese Region nicht ausgewiesen'))
+        +' · '+m.reference_year));
+ }
+ // Die beiden Erwerbsquoten, aus denen der Abstand gebildet ist. Ein Abstand ohne
+ // seine beiden Seiten lässt offen, ob eine hohe Zahl von einer starken oder einer
+ // schwachen Beschäftigung der Einheimischen kommt.
+ if(p.employment_native_pct!==null&&p.employment_native_pct!==undefined){
+  html+=metric(t('Erwerbstätigenquoten im Einzelnen'),
+    pct(p.employment_native_pct)+' / '+pct(p.employment_foreign_born_pct),
+    esc(t('im Inland geboren / im Ausland geboren · 20 bis 64 Jahre')));
+ }
+ html+='<div class="detail-note"><span>'+esc(t('NUTS-Code'))+': '+esc(p.nuts)+'. '
+   +esc(EUROSTAT.caveat)+'</span></div>';
+ $('detail-content').innerHTML=html;
+ return true;
+}
 function regionProfile(id){
  const r=REG&&REG.regions.find(x=>x.id===id);
  if(!r)return false;
@@ -163,6 +236,7 @@ function regionProfile(id){
 }
 function renderDetail(){
  if(state.selected.type==='region'&&regionProfile(state.selected.id))return;
+ if(state.selected.type==='eu'&&euProfile(state.selected.id))return;
  const s=state.selected;
  // An institution is a place with a source, not a figure. The panel therefore shows
  // where the entry comes from and links back to it, so every point can be checked.
@@ -355,7 +429,7 @@ function renderDetail(){
 function estimateDistrict(id){return EST?EST.districts[id]:null;}
 function estimateMunicipality(geoId){return EST?EST.municipalities[geoId]:null;}
 function valueForFeature(f){const p=f.properties;
- if(state.layer==='eu_foreign_born')return p.foreign_born_pct??null;
+ const eu=layers[state.layer].euMeasure;if(eu)return p[eu]??null;
  if(state.layer==='region_population')return p.population??null;
  if(state.layer==='region_foreign_share')return p.foreign_pct??null;
  if(state.layer==='religion_estimate_municipal'){const e=estimateMunicipality(p.statistical_geo_id);return e?e.pct:null;}
@@ -414,12 +488,32 @@ function initProjection(){
    .map(f=>f.geometry));
  projection=PROJ.bw;
 }
+// Bezugsjahr, Regionenzahl und Quellenangabe jeder europäischen Ebene stehen in der
+// Datei, nicht im Programm. Im Code wären sie eine zweite Wahrheit, die beim nächsten
+// Abruf still falsch wird — und die Quellenangabe wäre nicht bloß veraltet, sondern
+// erfunden: ohne sourceInfo fiel sourceFor() auf den Eintrag des
+// Ausländerzentralregisters zurück und schrieb eine Eurostat-Karte dem AZR zu.
+function euEbenenVerdrahten(){
+ if(!EUROSTAT||!EUROSTAT.measures)return;
+ const nach={};for(const m of EUROSTAT.measures)nach[m.key]=m;
+ for(const [name,l] of Object.entries(layers)){
+  const m=l.euMeasure&&nach[l.euMeasure];if(!m)continue;
+  l.dateArgs=[m.reference_year,integer(m.available_regions)];
+  l.sourceInfo={title:m.title+' ('+m.dataset+')',publisher:'Eurostat',
+   publication_period:String(m.reference_year),url:m.dataset_url,
+   limitation:m.definition+' '+EUROSTAT.caveat};
+ }
+}
 function pathFor(g){const ring=r=>r.map((p,i)=>{const [x,y]=projection(p);return (i?'L':'M')+x.toFixed(2)+','+y.toFixed(2);}).join('')+'Z';if(g.type==='Polygon')return g.coordinates.map(ring).join('');if(g.type==='MultiPolygon')return g.coordinates.map(p=>p.map(ring).join('')).join('');return '';}
-function colorFor(v){const l=layers[state.layer];if(v===null)return 'url(#no-data)';return palette[M.bucket(v,l.thresholds)]??'url(#no-data)';}
+function colorFor(v){const l=layers[state.layer];if(v===null)return 'url(#no-data)';return (l.palette||palette)[M.bucket(v,l.thresholds)]??'url(#no-data)';}
 function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 10,1–10,7 % · Näherungswert 2025');const v=valueForFeature(f);if(v===null)return t('Kein zugeordneter statistischer Wert');
  // Ohne eigenen Zweig fiele die Regionsebene in den Schlusssatz und zeigte den
  // Ausländeranteil als Einwohnerzahl: „Stuttgart · 20 Einwohner“.
- if(state.layer==='eu_foreign_born')return tf('{0} im Ausland geboren · Eurostat 2024',pct(v));
+ if(state.layer==='eu_foreign_born')return tf('{0} im Ausland geboren',pct(v));
+ if(state.layer==='eu_non_eu_born')return tf('{0} außerhalb der EU geboren',pct(v));
+ if(state.layer==='eu_foreign_citizens')return tf('{0} ohne Pass des Wohnsitzlandes',pct(v));
+ if(state.layer==='eu_employment_gap')return tf('{0} Punkte Abstand der Erwerbstätigenquoten',(v>0?'+':'')+pf.format(v));
+ if(state.layer==='eu_net_migration')return tf('{0} je 1.000 Einwohner Wanderungssaldo',(v>0?'+':'')+pf.format(v));
  if(state.layer==='region_population')return tf('{0} Einwohner · 30.11.2024',integer(v));
  if(state.layer==='region_foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='mh_employment')return tf('{0} % erwerbstätig · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_under25')return tf('{0} % unter 25 · Mikrozensus 2024',pf.format(v));if(state.layer==='second_generation')return tf('{0} % zweite Generation · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_change')return (v>0?'+':'')+pf.format(v)+' Punkte seit 2021';if(state.layer==='muni_under25')return tf('{0} % unter 25 · Zensus 2022',pf.format(v));if(isEstimate()){const e=state.layer==='religion_estimate'?estimateDistrict(f.properties.id):estimateMunicipality(f.properties.statistical_geo_id);const band=e?(state.layer==='religion_estimate'?e.variants[state.variant]:e):null;return tf('{0} % · Modellrechnung',pf.format(v))+(band?' · Spanne '+pf.format(band.pct_low)+'–'+pf.format(band.pct_high)+' %':'');}return tf('{0} Einwohner · ',integer(v))+(state.layer==='municipality_population'?'30.06.2024':'30.11.2024');}
 // What the institutions layer does NOT contain, stated on the page rather than left to
@@ -815,8 +909,8 @@ function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();
    const entry=counts.get(label)||{n:0,colour:instColour(i.organisation)};
    entry.n+=1;counts.set(label,entry);}
   $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+institutionTally()+' · keine Bevölkerungszahl</span>';return;}
- const p=palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
-function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.title);$('map-period').textContent=t(l.date);$('map-badge').textContent=t(l.badge);$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=t(l.note);$('map-svg-title').textContent=t(l.title);$('map-svg-desc').textContent=t(l.date)+'. '+t(l.note);renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
+ const p=l.palette||palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':l.unit==='per_1000'?v=>(v>0?'+':'')+pf.format(v):integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
+function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.title);$('map-period').textContent=l.dateArgs?tf(l.date,...l.dateArgs):t(l.date);$('map-badge').textContent=t(l.badge);$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=t(l.note);$('map-svg-title').textContent=t(l.title);$('map-svg-desc').textContent=$('map-period').textContent+'. '+t(l.note);renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
 // Warum der Umriss der gewählten Fläche nicht an der Fläche selbst hängt.
 //
 // Die Flächen sind Geschwister in einer SVG-Gruppe, und in SVG malt das spätere
@@ -833,7 +927,8 @@ function umrissWeg(){if(hoverUmriss){hoverUmriss.remove();hoverUmriss=null;}}
 function istGewaehlt(p){const s=state.selected;
  return (s.type==='district'&&s.id===p.id)
       ||(s.type==='municipality'&&s.id===p.statistical_geo_id)
-      ||(s.type==='region'&&s.id===p.id);}
+      ||(s.type==='region'&&s.id===p.id)
+      ||(s.type==='eu'&&s.id===p.nuts);}
 function zeichneUmriss(geometry,klasse){
  const g=$('map-outline');if(!g)return null;
  const p=document.createElementNS('http://www.w3.org/2000/svg','path');
@@ -846,22 +941,27 @@ function zeichneUmriss(geometry,klasse){
  g.appendChild(p);return p;}
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
  const regionLayer=state.layer.startsWith('region_');
- const euLayer=state.layer==='eu_foreign_born';
+ const euLayer=!!layers[state.layer].euMeasure;
  // Der Zuschnitt gehört zur Ebene, nicht zum Dokument: erst umstellen, dann zeichnen.
  projection=euLayer?(PROJ.eu||PROJ.bw):PROJ.bw;
  // Die Herkunftsangabe gehört zu den gezeigten Grenzen, nicht zur Seite: auf der
  // Europakarte stammt keine Linie vom BKG.
- {const a=$('map-attribution-bw'),e=$('map-attribution-eu');
-  if(a)a.hidden=euLayer; if(e)e.hidden=!euLayer;}
+ {const a=$('map-attribution-bw'),e=$('map-attribution-eu'),d=$('map-attribution-eu-dataset');
+  if(a)a.hidden=euLayer; if(e)e.hidden=!euLayer;
+  // Fünf Ebenen, fünf Datensätze: die Angabe nannte fest lfst_r_lfsd2pwc und hätte
+  // damit den Wanderungssaldo einer Erhebung zugeschrieben, in der er nicht steht.
+  if(d){const q=euLayer?sourceFor(l):null;d.hidden=!q;
+   if(q)d.innerHTML=esc(t('Datensatz'))+': <a href="'+esc(q.url)+'" target="_blank" '
+    +'rel="noreferrer">'+esc(q.title)+'</a>';}}
  const features=euLayer?(EUROSTAT?EUROSTAT.features:[])
    :state.layer==='religion_state'||pointLayer?[G.state]
    :regionLayer?(REG?REG.features:[])
    :(municipalLayer?G.municipalities:G.districts);const frag=document.createDocumentFragment();svgPaths.clear();
- for(const f of features){const p=f.properties,el=document.createElementNS('http://www.w3.org/2000/svg','path');el.setAttribute('d',pathFor(f.geometry));el.setAttribute('fill',state.layer==='religion_state'?'#236a7b':colorFor(valueForFeature(f)));el.setAttribute('fill-rule','evenodd');el.setAttribute('class','map-feature');el.setAttribute('data-id',p.id);el.setAttribute('tabindex',municipalLayer?'-1':'0');el.setAttribute('role','button');el.setAttribute('aria-label',p.name+': '+mapValueText(f));
+ for(const f of features){const p=f.properties,flaechenId=p.id||p.nuts,flaechenName=euName(p),el=document.createElementNS('http://www.w3.org/2000/svg','path');el.setAttribute('d',pathFor(f.geometry));el.setAttribute('fill',state.layer==='religion_state'?'#236a7b':colorFor(valueForFeature(f)));el.setAttribute('fill-rule','evenodd');el.setAttribute('class','map-feature');el.setAttribute('data-id',flaechenId);el.setAttribute('tabindex',municipalLayer?'-1':'0');el.setAttribute('role','button');el.setAttribute('aria-label',flaechenName+': '+mapValueText(f));
  const selected=istGewaehlt(p);if(selected){el.classList.add('is-selected');gewaehlteGeometrie=f.geometry;}
- const title=document.createElementNS('http://www.w3.org/2000/svg','title');title.textContent=p.name+' · '+mapValueText(f);el.appendChild(title);
- const choose=()=>{if(euLayer){toast(tf('{0}: {1} im Ausland geboren (Eurostat 2024)',p.name_de||p.name,pct(p.foreign_born_pct)));return;}if(state.layer==='religion_state')setSelected('state','08');else if(regionLayer)setSelected('region',p.id);else if(municipalLayer){if(p.statistical_geo_id)setSelected('municipality',p.statistical_geo_id);else toast('Für diese Fläche ist kein statistischer Gemeindewert zugeordnet.');}else setSelected('district',p.id);};
- el.addEventListener('click',()=>{if(!drag.moved)choose();});el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});el.addEventListener('pointerenter',()=>{$('map-tooltip').innerHTML=`<strong>${esc(p.name)}</strong>${esc(mapValueText(f))}`;$('map-tooltip').hidden=false;if(!selected){umrissWeg();hoverUmriss=zeichneUmriss(f.geometry,'hover');}});el.addEventListener('pointerleave',()=>{$('map-tooltip').hidden=true;umrissWeg();});el.addEventListener('focus',()=>{$('map-tooltip').textContent=p.name+' · '+mapValueText(f);$('map-tooltip').hidden=false;});el.addEventListener('blur',()=>$('map-tooltip').hidden=true);frag.appendChild(el);svgPaths.set(p.id,el);
+ const title=document.createElementNS('http://www.w3.org/2000/svg','title');title.textContent=flaechenName+' · '+mapValueText(f);el.appendChild(title);
+ const choose=()=>{if(euLayer){setSelected('eu',p.nuts);return;}if(state.layer==='religion_state')setSelected('state','08');else if(regionLayer)setSelected('region',p.id);else if(municipalLayer){if(p.statistical_geo_id)setSelected('municipality',p.statistical_geo_id);else toast('Für diese Fläche ist kein statistischer Gemeindewert zugeordnet.');}else setSelected('district',p.id);};
+ el.addEventListener('click',()=>{if(!drag.moved)choose();});el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});el.addEventListener('pointerenter',()=>{$('map-tooltip').innerHTML=`<strong>${esc(flaechenName)}</strong>${esc(mapValueText(f))}`;$('map-tooltip').hidden=false;if(!selected){umrissWeg();hoverUmriss=zeichneUmriss(f.geometry,'hover');}});el.addEventListener('pointerleave',()=>{$('map-tooltip').hidden=true;umrissWeg();});el.addEventListener('focus',()=>{$('map-tooltip').textContent=flaechenName+' · '+mapValueText(f);$('map-tooltip').hidden=false;});el.addEventListener('blur',()=>$('map-tooltip').hidden=true);frag.appendChild(el);svgPaths.set(flaechenId,el);
  }
  $('map-features').replaceChildren(frag);$('map-labels').replaceChildren();$('map-outline').replaceChildren();hoverUmriss=null;if(gewaehlteGeometrie)zeichneUmriss(gewaehlteGeometrie,'selection');
  // Institutions are drawn as points on the state outline. They are places, not
@@ -1275,7 +1375,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
