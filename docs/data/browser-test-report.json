@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 172,
+  "check_count": 179,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -32,6 +32,34 @@
     },
     {
       "name": "actual municipal geography present",
+      "passed": true
+    },
+    {
+      "name": "district_population: one selection outline drawn",
+      "passed": true
+    },
+    {
+      "name": "district_population: outline traces the selected area",
+      "passed": true
+    },
+    {
+      "name": "municipality_population: one selection outline drawn",
+      "passed": true
+    },
+    {
+      "name": "municipality_population: outline traces the selected area",
+      "passed": true
+    },
+    {
+      "name": "region_foreign_share: one selection outline drawn",
+      "passed": true
+    },
+    {
+      "name": "region_foreign_share: outline traces the selected area",
+      "passed": true
+    },
+    {
+      "name": "outline group sits above the filled areas",
       "passed": true
     },
     {

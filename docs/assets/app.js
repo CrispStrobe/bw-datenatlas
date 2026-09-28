@@ -817,6 +817,33 @@ function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();
   $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+institutionTally()+' · keine Bevölkerungszahl</span>';return;}
  const p=palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
 function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.title);$('map-period').textContent=t(l.date);$('map-badge').textContent=t(l.badge);$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=t(l.note);$('map-svg-title').textContent=t(l.title);$('map-svg-desc').textContent=t(l.date)+'. '+t(l.note);renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
+// Warum der Umriss der gewählten Fläche nicht an der Fläche selbst hängt.
+//
+// Die Flächen sind Geschwister in einer SVG-Gruppe, und in SVG malt das spätere
+// Element über das frühere. Die gewählte Fläche bekam ihren dicken Rand, und jeder
+// danach gezeichnete Nachbar zog seinen eigenen weißen Rand quer darüber. Sichtbar
+// blieb der schwarze Rand deshalb nur dort, wo der Nachbar VOR der Auswahl an der
+// Reihe war: ein Kreis am Anfang der Liste zeigte fast nichts, einer am Ende alles.
+// Genau das war zu sehen — "nur manche Grenzen fett, andere weiß".
+//
+// Der Umriss wird darum ein zweites Mal gezeichnet, in einer eigenen Gruppe über
+// allen Flächen. Dort kann ihn nichts mehr übermalen.
+let gewaehlteGeometrie=null,hoverUmriss=null;
+function umrissWeg(){if(hoverUmriss){hoverUmriss.remove();hoverUmriss=null;}}
+function istGewaehlt(p){const s=state.selected;
+ return (s.type==='district'&&s.id===p.id)
+      ||(s.type==='municipality'&&s.id===p.statistical_geo_id)
+      ||(s.type==='region'&&s.id===p.id);}
+function zeichneUmriss(geometry,klasse){
+ const g=$('map-outline');if(!g)return null;
+ const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+ p.setAttribute('d',pathFor(geometry));p.setAttribute('class',klasse);
+ // Für den Export, der ohne unser Stilblatt gelesen wird.
+ p.setAttribute('fill','none');
+ p.setAttribute('stroke',klasse==='elsewhere'?'#dfc185':'#142d3a');
+ p.setAttribute('stroke-width',klasse==='selection'?'2.4':'1.8');
+ p.setAttribute('vector-effect','non-scaling-stroke');
+ g.appendChild(p);return p;}
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
  const regionLayer=state.layer.startsWith('region_');
  const euLayer=state.layer==='eu_foreign_born';
@@ -831,12 +858,12 @@ function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.
    :regionLayer?(REG?REG.features:[])
    :(municipalLayer?G.municipalities:G.districts);const frag=document.createDocumentFragment();svgPaths.clear();
  for(const f of features){const p=f.properties,el=document.createElementNS('http://www.w3.org/2000/svg','path');el.setAttribute('d',pathFor(f.geometry));el.setAttribute('fill',state.layer==='religion_state'?'#236a7b':colorFor(valueForFeature(f)));el.setAttribute('fill-rule','evenodd');el.setAttribute('class','map-feature');el.setAttribute('data-id',p.id);el.setAttribute('tabindex',municipalLayer?'-1':'0');el.setAttribute('role','button');el.setAttribute('aria-label',p.name+': '+mapValueText(f));
- const selected=state.selected.type==='district'&&state.selected.id===p.id||state.selected.type==='municipality'&&state.selected.id===p.statistical_geo_id;if(selected)el.classList.add('is-selected');
+ const selected=istGewaehlt(p);if(selected){el.classList.add('is-selected');gewaehlteGeometrie=f.geometry;}
  const title=document.createElementNS('http://www.w3.org/2000/svg','title');title.textContent=p.name+' · '+mapValueText(f);el.appendChild(title);
  const choose=()=>{if(euLayer){toast(tf('{0}: {1} im Ausland geboren (Eurostat 2024)',p.name_de||p.name,pct(p.foreign_born_pct)));return;}if(state.layer==='religion_state')setSelected('state','08');else if(regionLayer)setSelected('region',p.id);else if(municipalLayer){if(p.statistical_geo_id)setSelected('municipality',p.statistical_geo_id);else toast('Für diese Fläche ist kein statistischer Gemeindewert zugeordnet.');}else setSelected('district',p.id);};
- el.addEventListener('click',()=>{if(!drag.moved)choose();});el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});el.addEventListener('pointerenter',()=>{$('map-tooltip').innerHTML=`<strong>${esc(p.name)}</strong>${esc(mapValueText(f))}`;$('map-tooltip').hidden=false;});el.addEventListener('pointerleave',()=>$('map-tooltip').hidden=true);el.addEventListener('focus',()=>{$('map-tooltip').textContent=p.name+' · '+mapValueText(f);$('map-tooltip').hidden=false;});el.addEventListener('blur',()=>$('map-tooltip').hidden=true);frag.appendChild(el);svgPaths.set(p.id,el);
+ el.addEventListener('click',()=>{if(!drag.moved)choose();});el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});el.addEventListener('pointerenter',()=>{$('map-tooltip').innerHTML=`<strong>${esc(p.name)}</strong>${esc(mapValueText(f))}`;$('map-tooltip').hidden=false;if(!selected){umrissWeg();hoverUmriss=zeichneUmriss(f.geometry,'hover');}});el.addEventListener('pointerleave',()=>{$('map-tooltip').hidden=true;umrissWeg();});el.addEventListener('focus',()=>{$('map-tooltip').textContent=p.name+' · '+mapValueText(f);$('map-tooltip').hidden=false;});el.addEventListener('blur',()=>$('map-tooltip').hidden=true);frag.appendChild(el);svgPaths.set(p.id,el);
  }
- $('map-features').replaceChildren(frag);$('map-labels').replaceChildren();
+ $('map-features').replaceChildren(frag);$('map-labels').replaceChildren();$('map-outline').replaceChildren();hoverUmriss=null;if(gewaehlteGeometrie)zeichneUmriss(gewaehlteGeometrie,'selection');
  // Institutions are drawn as points on the state outline. They are places, not
  // quantities, so they are never shaded into the choropleth.
  if(pointLayer&&INST)renderInstitutionPoints();
@@ -844,7 +871,7 @@ function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.
  // Auf der Europakarte haben die fünf Städtenamen nichts zu suchen: sie lägen als
  // Häufchen mitten auf dem Kontinent und beschrifteten dort nichts.
  if(state.layer!=='municipality_population'&&state.layer!=='religion_state'&&!euLayer)for(const f of G.districts.filter(f=>['08111','08212','08222','08311','08421'].includes(f.properties.id))){const p=f.properties,[x,y]=projection(p.label_point);const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',x+8);t.setAttribute('y',y-7);t.setAttribute('class','map-label');t.textContent=p.name;$('map-labels').appendChild(t);}
- if(state.layer==='religion_state'&&state.selected.type!=='state'){const f=state.selected.type==='district'?G.districts.find(f=>f.properties.id===state.selected.id):G.municipalities.find(f=>f.properties.statistical_geo_id===state.selected.id);if(f){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',pathFor(f.geometry));p.setAttribute('fill','none');p.setAttribute('stroke','#dfc185');p.setAttribute('stroke-width','2');p.setAttribute('vector-effect','non-scaling-stroke');$('map-labels').appendChild(p);}}
+ if(state.layer==='religion_state'&&state.selected.type!=='state'){const f=state.selected.type==='district'?G.districts.find(f=>f.properties.id===state.selected.id):G.municipalities.find(f=>f.properties.statistical_geo_id===state.selected.id);if(f)zeichneUmriss(f.geometry,'elsewhere');}
  applyZoom();
 }
 function applyZoom(){const z=state.zoom;$('map').setAttribute('viewBox',`${z.x} ${z.y} ${z.w} ${z.h}`);

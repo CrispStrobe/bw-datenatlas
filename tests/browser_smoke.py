@@ -66,6 +66,26 @@ with sync_playwright() as pw:
         check('actual district paths finite',page.evaluate('[...document.querySelectorAll("#map-features path")].every(p=>p.getAttribute("d").length>10&&!/NaN|Infinity/.test(p.getAttribute("d")))'))
         page.select_option('#layer','municipality_population')
         check('actual municipal geography present',page.locator('#map-features path').count()>=1050)
+        # Der Umriss der gewählten Fläche liegt in einer eigenen Gruppe ÜBER den
+        # Flächen. Läge er an der Fläche selbst, übermalte ihn jeder Nachbar, der
+        # später an der Reihe ist, mit seinem eigenen weißen Rand — sichtbar blieben
+        # dann nur die Grenzen zu den früher gezeichneten Nachbarn. Die erste Fläche
+        # der Liste ist der schlimmste Fall und deshalb die geprüfte.
+        passt = ("(id)=>{const f=document.querySelector(`#map-features path[data-id=\"${id}\"]`),"
+                 "o=document.querySelector('#map-outline .selection');"
+                 "return !!(f&&o&&f.getAttribute('d')===o.getAttribute('d'));}")
+        for ebene in ('district_population','municipality_population','region_foreign_share'):
+            page.select_option('#layer',ebene);page.wait_for_timeout(500)
+            erste=page.eval_on_selector('#map-features path','e=>e.dataset.id')
+            page.locator(f'#map-features path[data-id="{erste}"]').dispatch_event('click')
+            page.wait_for_timeout(400)
+            check(f'{ebene}: one selection outline drawn',
+                  page.locator('#map-outline .selection').count()==1)
+            check(f'{ebene}: outline traces the selected area',page.evaluate(passt,erste))
+        check('outline group sits above the filled areas',page.evaluate(
+            "()=>{const g=[...document.getElementById('map').children].map(c=>c.id);"
+            "return g.indexOf('map-outline')>g.indexOf('map-features')"
+            "&&g.indexOf('map-outline')<g.indexOf('map-labels');}"))
         page.select_option('#layer','religion_state')
         check('one real state outline rendered',page.locator('#map-features path').count()==1)
     check('published BW range displayed','1,133–1,197' in page.locator('.kpi').first.inner_text())
