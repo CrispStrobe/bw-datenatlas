@@ -27,7 +27,12 @@ with sync_playwright() as pw:
     executable=shutil.which('chromium') or shutil.which('chromium-browser')
     browser=pw.chromium.launch(**({'executable_path':executable} if executable else {}),headless=True,args=['--no-sandbox'])
     page=browser.new_page(viewport={'width':1440,'height':1050},device_scale_factor=1)
-    page.set_default_timeout(8000)
+    # Acht Sekunden sind ein Budget für die Anwendung, nicht für das Netz. Gegen
+    # 127.0.0.1 ist jede Überschreitung ein Befund; gegen eine veröffentlichte Adresse
+    # wartet 'networkidle' auf ein halbes Dutzend Dateien über eine echte Leitung, und
+    # dann misst die Grenze die Leitung und nicht die Seite.
+    lokal=any(h in args.url for h in ('127.0.0.1','localhost','[::1]'))
+    page.set_default_timeout(8000 if lokal else 30000)
     page.on('pageerror',lambda e:errors.append(str(e)))
     # A deployed host may add a Content-Security-Policy. Record violations so a policy
     # that silently breaks the map or charts fails the suite instead of passing quietly.
@@ -460,7 +465,10 @@ with sync_playwright() as pw:
     # englischen Satz liest sich als Dezimalzahl.
     check('a language switch is offered',page.locator('.lang-switch button[data-lang]').count()==3)
     deutsch_h1=page.inner_text('#page-title')
-    page.click('.lang-switch button[data-lang="en"]'); page.wait_for_timeout(900)
+    # Auf den Zustand warten, nicht auf die Uhr: der Wechsel lädt den Katalog nach,
+    # und 900 Millisekunden reichen dafür nur auf der eigenen Maschine.
+    page.click('.lang-switch button[data-lang="en"]')
+    page.wait_for_function("()=>document.documentElement.lang==='en'")
     check('switching sets the document language',page.get_attribute('html','lang')=='en')
     check('the heading is translated',page.inner_text('#page-title')!=deutsch_h1)
     check('the pressed state follows the language',
@@ -469,7 +477,11 @@ with sync_playwright() as pw:
           page.evaluate("()=>new Intl.NumberFormat(I18N.locale).format(1133000)")=='1,133,000')
     check('the language is in the address, so a view can be shared',
           'lang=en' in page.evaluate('()=>location.search'))
-    page.click('.lang-switch button[data-lang="fr"]'); page.wait_for_timeout(700)
+    page.click('.lang-switch button[data-lang="fr"]')
+    try:
+        page.wait_for_function("()=>document.documentElement.lang==='fr'")
+    except Exception:
+        pass
     check('a third language works too',page.get_attribute('html','lang')=='fr')
     check('french groups thousands its own way',
           page.evaluate("()=>new Intl.NumberFormat(I18N.locale).format(1133000)").replace('\u202f',' ').replace('\u00a0',' ')=='1 133 000')
