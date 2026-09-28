@@ -47,16 +47,24 @@ with sync_playwright() as pw:
         page.evaluate('text=>{const original=window.fetch; window.fetch=(url,...rest)=>url==="data/research-observations.json"?Promise.resolve(new Response(text,{status:200,headers:{"Content-Type":"application/json"}})):original(url,...rest)}',raw)
     geo=page.evaluate('window.Atlas.hasGeometry')
     if args.require_geometry: check('real prepared geography present',geo)
+    # Vor jedem Umschalten festhalten: welche Ebene zeigt die Seite beim Laden? Die
+    # Antwort steht im HTML, nicht im Zustand — updateLayer() liest den Wert des
+    # Auswahlfelds. Wurde das geprüft, nachdem der Test schon eine Ebene gewählt hatte,
+    # prüfte es die eigene Auswahl und nicht die Vorauswahl der Seite.
+    anfangsebene=page.evaluate("Atlas.getState().layer")
+    check('initial layer is the district view',anfangsebene=='district_population')
+    check('initial layer matches the select element',
+          page.eval_on_selector('#layer','e=>e.value')==anfangsebene)
+    check('model layer not selected by default','religion_estimate' not in anfangsebene)
     if geo:
-        check('one real state outline rendered',page.locator('#map-features path').count()==1)
+        check('all 44 district polygons rendered on load',page.locator('#map-features path').count()==44)
         page.select_option('#layer','foreign_share')
         check('all 44 actual district polygons rendered',page.locator('#map-features path').count()==44)
         check('actual district paths finite',page.evaluate('[...document.querySelectorAll("#map-features path")].every(p=>p.getAttribute("d").length>10&&!/NaN|Infinity/.test(p.getAttribute("d")))'))
         page.select_option('#layer','municipality_population')
         check('actual municipal geography present',page.locator('#map-features path').count()>=1050)
         page.select_option('#layer','religion_state')
-    check('model layer not selected by default',page.evaluate("Atlas.getState().layer")=='religion_state')
-    check('initial layer published BW state',page.evaluate('Atlas.getState().layer')=='religion_state')
+        check('one real state outline rendered',page.locator('#map-features path').count()==1)
     check('published BW range displayed','1,133–1,197' in page.locator('.kpi').first.inner_text())
     check('initial national origin bars eight',page.locator('#origin-bars .bar-row').count()==8)
     check('four national composition columns',page.locator('.stack-segment').count()==20)
@@ -296,6 +304,71 @@ with sync_playwright() as pw:
     check('about dialog reachable from footer',page.locator('#about').is_visible())
     page.locator('#close-about').click()
     check('about dialog closes via button',not page.locator('#about').is_visible())
+
+    # Karte bedienen: Maus und Finger. Vorher konnte die Karte am Zeigegerät kaputt
+    # gehen, ohne dass ein Test es merkte — geprüft wurde nur, dass die Zoomknöpfe
+    # den viewBox ändern, und die taten das auch, als sonst nichts mehr ging.
+    page.select_option('#layer','district_population')
+    page.wait_for_timeout(300)
+    # Nicht scrollIntoView: die Karte steckt in .map-stage mit overflow:hidden, also
+    # in einem eigenen Scrollbereich, und scrollIntoView bewegt diesen statt des
+    # Fensters. Die Karte blieb dabei 6000 Pixel außerhalb des Bildes, und die Maus
+    # traf nichts.
+    def karte_ins_bild():
+        # Absolut positionieren statt schrittweise scrollen, und ohne weiches
+        # Scrollen, das erst nach dem Messen ankommt.
+        page.evaluate('''()=>{const el=document.getElementById('map-stage');
+          const r=el.getBoundingClientRect();
+          const ziel=r.top+window.scrollY-(window.innerHeight-r.height)/2;
+          window.scrollTo({top:Math.max(0,ziel),behavior:'instant'});}''')
+        page.wait_for_timeout(350)
+        return page.eval_on_selector('#map','e=>{const r=e.getBoundingClientRect();'
+                                     'return{x:r.x,y:r.y,w:r.width,h:r.height}}')
+    kasten=karte_ins_bild()
+    check('map is actually on screen for the gesture checks',
+          kasten['y']>-1 and kasten['y']+kasten['h']<=page.viewport_size['height']+1)
+    mx,my=kasten['x']+kasten['w']/2,kasten['y']+kasten['h']/2
+    vorher=page.get_attribute('#map','viewBox')
+    page.mouse.move(mx,my); page.mouse.down()
+    for d in (20,50,90): page.mouse.move(mx-d,my-d)
+    page.mouse.up(); page.wait_for_timeout(200)
+    check('mouse drag pans the map',page.get_attribute('#map','viewBox')!=vorher)
+    breite=lambda:float(page.get_attribute('#map','viewBox').split()[2])
+    vorher_b=breite(); page.mouse.move(mx,my); page.mouse.wheel(0,-300); page.wait_for_timeout(200)
+    check('wheel zooms the map in',breite()<vorher_b)
+    vorher_b=breite(); page.mouse.wheel(0,400); page.wait_for_timeout(200)
+    check('wheel zooms the map out',breite()>vorher_b)
+    page.locator('#zoom-reset').click(); page.wait_for_timeout(200)
+    check('reset restores the whole state',page.get_attribute('#map','viewBox')=='0 0 760 700')
+    # Nach dem Ziehen muss ein Klick wieder auswählen: das Fangen des Zeigers hatte
+    # das Klickziel auf die Karte umgelenkt, und kein Kreis ließ sich mehr anwählen.
+    if geo:
+        page.locator('#map-features path[data-id="08111"]').click()
+        check('a district is still selectable after dragging',
+              page.evaluate("Atlas.getState().selected.id")=='08111')
+
+    # Zwei Finger: schieben und zoomen. Ein Finger gehört der Seite.
+    cdp=page.context.new_cdp_session(page)
+    def finger(art,punkte):
+        cdp.send('Input.dispatchTouchEvent',{'type':art,'touchPoints':[
+            {'x':x,'y':y,'id':i} for i,(x,y) in enumerate(punkte)]})
+        page.wait_for_timeout(40)
+    page.locator('#zoom-reset').click(); page.wait_for_timeout(200)
+    vorher=page.get_attribute('#map','viewBox')
+    y_vorher=page.evaluate('window.scrollY')
+    finger('touchStart',[(mx,my)])
+    for d in (20,50,80): finger('touchMove',[(mx,my-d)])
+    finger('touchEnd',[])
+    page.wait_for_timeout(200)
+    check('one finger leaves the map alone',page.get_attribute('#map','viewBox')==vorher)
+    kasten=karte_ins_bild()
+    mx,my=kasten['x']+kasten['w']/2,kasten['y']+kasten['h']/2
+    vorher_b=breite()
+    finger('touchStart',[(mx-30,my),(mx+30,my)])
+    for d in (50,70,90): finger('touchMove',[(mx-d,my),(mx+d,my)])
+    finger('touchEnd',[])
+    page.wait_for_timeout(200)
+    check('two fingers pinch-zoom the map',breite()<vorher_b)
     page.locator('#research-explorer').evaluate('el=>el.open=false')
     page.select_option('#layer','religion_state');page.locator('#reset-place').click()
     if args.screenshots:

@@ -59,6 +59,9 @@ const pf=new Intl.NumberFormat('de-DE',{minimumFractionDigits:1,maximumFractionD
 const integer=v=>v===null||v===undefined?'Nicht verfügbar':nf.format(v);
 const pct=v=>v===null||v===undefined?'Nicht verfügbar':pf.format(v)+' %';
 const approx=v=>'≈ '+nf.format(Math.round(v/1000)*1000);
+// Muss zur Option mit "selected" in index.html passen: updateLayer() liest beim
+// Start den Wert des Auswahlfelds und überschreibt diesen hier. Stimmen sie nicht
+// überein, gilt stillschweigend das HTML.
 const state={layer:'district_population',selected:{type:'state',id:'08'},variant:'migration_background',origin:'de_origins',allOrigins:false,areaPage:0,researchPage:0,researchRows:null,onlyLandtag:false,azrIndicator:'turkey',flowArea:'countries',compositionDetail:false,flowRange:'years',instOrganisation:'',instSource:'',zoom:{x:0,y:0,w:760,h:700}};
 const districts=new Map(D.districts.map(r=>[r.id,r]));
 const municipalities=new Map(D.municipalities.map(r=>[r.geo_id,r]));
@@ -584,10 +587,91 @@ function applyZoom(){const z=state.zoom;$('map').setAttribute('viewBox',`${z.x} 
  // The grouping depends on the zoom, so it is rebuilt with it rather than once at draw.
  if(state.layer==='institutions'&&INST&&$('map-features').querySelector('g[data-institutions]'))renderInstitutionPoints();}
 function zoom(factor){const z=state.zoom;const nw=Math.max(190,Math.min(1000,z.w*factor));const nh=nw*700/760;state.zoom={x:z.x+(z.w-nw)/2,y:z.y+(z.h-nh)/2,w:nw,h:nh};applyZoom();}
-const drag={active:false,moved:false,x:0,y:0,view:null};
-$('map').addEventListener('pointerdown',e=>{if(e.button!==0)return;drag.active=true;drag.moved=false;drag.x=e.clientX;drag.y=e.clientY;drag.view={...state.zoom};});
-window.addEventListener('pointermove',e=>{if(!drag.active)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>6)drag.moved=true;if(!drag.moved)return;const rect=$('map').getBoundingClientRect();state.zoom={...drag.view,x:drag.view.x-dx*drag.view.w/rect.width,y:drag.view.y-dy*drag.view.h/rect.height};applyZoom();});
-window.addEventListener('pointerup',()=>{drag.active=false;});
+// Karte bewegen: mit der Maus ziehen, mit zwei Fingern schieben und zoomen.
+//
+// Ein Finger bewegt die KARTE NICHT, sondern scrollt die Seite. Vorher tat er beides
+// zugleich — die Karte schwenkte und die Seite scrollte —, und auf einem Telefon ist
+// die Karte so hoch, dass man kaum an ihr vorbeikam. Zwei Finger für die Karte ist
+// die Geste, die jede Kartenanwendung in einer scrollenden Seite verwendet.
+//
+// Gezoomt wurde per Geste bisher gar nicht: zwei Finger erzeugten nur ein Schwenken,
+// die Breite des viewBox blieb, wie sie war.
+const MAP_MIN_W = 190, MAP_MAX_W = 1000, MAP_RATIO = 700 / 760;
+const drag = { moved: false };
+const pointers = new Map();
+let gesture = null;
+
+function mapPoint(e){
+ const r = $('map').getBoundingClientRect();
+ return { x: e.clientX - r.left, y: e.clientY - r.top, w: r.width, h: r.height };
+}
+// Welcher Punkt der Karte liegt unter diesem Punkt des Bildschirms? Damit bleibt beim
+// Zoomen die Stelle unter den Fingern stehen, statt dass die Karte unter ihnen wegläuft.
+function atScreen(px, py, rect){
+ const z = state.zoom;
+ return { x: z.x + px / rect.w * z.w, y: z.y + py / rect.h * z.h };
+}
+function setView(w, anchorScreen, anchorMap, rect){
+ const nw = Math.max(MAP_MIN_W, Math.min(MAP_MAX_W, w));
+ const nh = nw * MAP_RATIO;
+ state.zoom = { w: nw, h: nh,
+   x: anchorMap.x - anchorScreen.x / rect.w * nw,
+   y: anchorMap.y - anchorScreen.y / rect.h * nh };
+ applyZoom();
+}
+function beginGesture(){
+ const pts = [...pointers.values()];
+ const rect = $('map').getBoundingClientRect();
+ const r = { x: rect.left, y: rect.top, w: rect.width, h: rect.height };
+ const mid = { x: (pts[0].x + (pts[1] ? pts[1].x : pts[0].x)) / 2 - r.x,
+               y: (pts[0].y + (pts[1] ? pts[1].y : pts[0].y)) / 2 - r.y };
+ gesture = { rect: r, mid, map: atScreen(mid.x, mid.y, r), w: state.zoom.w,
+   spread: pts[1] ? Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) : 0 };
+}
+$('map').addEventListener('pointerdown', e => {
+ if (e.pointerType === 'mouse' && e.button !== 0) return;
+ pointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType });
+ drag.moved = false;
+ // Kein setPointerCapture: das Fangen leitet auch das anschließende click-Ereignis
+ // auf die Karte um, und dann wählt ein Klick auf einen Kreis keinen Kreis mehr aus.
+ // Die Bewegung wird stattdessen am Fenster verfolgt — das reicht auch, wenn der
+ // Zeiger die Karte verlässt.
+ beginGesture();
+});
+window.addEventListener('pointermove', e => {
+ if (!pointers.has(e.pointerId)) return;
+ pointers.set(e.pointerId, { x: e.clientX, y: e.clientY, type: e.pointerType });
+ const pts = [...pointers.values()];
+ const touch = pts[0].type === 'touch';
+ if (touch && pts.length < 2) return;      // ein Finger gehört der Seite
+ if (!gesture) beginGesture();
+ e.preventDefault();
+ const r = gesture.rect;
+ const mid = { x: (pts[0].x + (pts[1] ? pts[1].x : pts[0].x)) / 2 - r.x,
+               y: (pts[0].y + (pts[1] ? pts[1].y : pts[0].y)) / 2 - r.y };
+ if (Math.abs(mid.x - gesture.mid.x) + Math.abs(mid.y - gesture.mid.y) > 6) drag.moved = true;
+ let w = gesture.w;
+ if (pts.length >= 2 && gesture.spread > 0) {
+   const spread = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+   if (Math.abs(spread - gesture.spread) > 4) drag.moved = true;
+   w = gesture.w * gesture.spread / Math.max(spread, 1);
+ }
+ setView(w, mid, gesture.map, r);
+});
+function endPointer(e){
+ if (!pointers.delete(e.pointerId)) return;
+ gesture = pointers.size ? (beginGesture(), gesture) : null;
+}
+window.addEventListener('pointerup', endPointer);
+window.addEventListener('pointercancel', endPointer);
+// Mausrad und Trackpad zoomen an der Stelle des Zeigers.
+$('map').addEventListener('wheel', e => {
+ e.preventDefault();
+ const r = $('map').getBoundingClientRect();
+ const rect = { x: r.left, y: r.top, w: r.width, h: r.height };
+ const at = { x: e.clientX - r.left, y: e.clientY - r.top };
+ setView(state.zoom.w * (e.deltaY > 0 ? 1.12 : 1 / 1.12), at, atScreen(at.x, at.y, rect), rect);
+}, { passive: false });
 function areaRows(){let rows;if(state.layer==='municipality_population'||state.layer==='religion_estimate_municipal')rows=D.municipalities.map(m=>({name:m.municipality_name,key:m.district_code,geo_id:m.geo_id,population:m.population_total,male:m.population_male,female:m.population_female,reference:'2024-06-30',kind:'municipality'}));else rows=D.districts.map(d=>({name:d.name,key:d.id,geo_id:d.geo_id,population:d.population,foreign:d.foreign,foreign_pct:d.foreign_pct,reference:d.reference_period,kind:'district',estimate:isEstimate()?estimateDistrict(d.id):null}));const q=M.normalize($('area-filter').value);return rows.filter(r=>M.normalize(r.name+' '+r.key).includes(q));}
 function renderAreaTable(){const rows=areaRows(),n=25,pages=Math.max(1,Math.ceil(rows.length/n));state.areaPage=Math.min(state.areaPage,pages-1);const shown=rows.slice(state.areaPage*n,(state.areaPage+1)*n);const muni=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal',est=isEstimate();const headers=muni?['Gemeinde','Kreis','Einwohner','Männlich','Weiblich',...(est?['Modell · Anteil']:[])]:['Kreis','Schlüssel','Einwohner','Ausländisch','Anteil ausländisch',est?'Modell · Anteil':'Lokale Muslimzahl'];const cells=shown.map(r=>[`<button class="link-button" data-area-kind="${r.kind}" data-area-id="${esc(muni?r.geo_id:r.key)}">${esc(r.name)}</button>`,esc(r.key),integer(r.population),muni?integer(r.male):integer(r.foreign),muni?integer(r.female):pct(r.foreign_pct),...(muni?(est?[(()=>{const e=estimateMunicipality(r.geo_id);return e?pf.format(e.pct_low)+'–'+pf.format(e.pct_high)+' %':'Nicht verfügbar';})()]:[]):[est&&r.estimate?pf.format(r.estimate.variants[state.variant].pct_low)+'–'+pf.format(r.estimate.variants[state.variant].pct_high)+' %':'Nicht verfügbar'])]);$('area-table').innerHTML=table(headers,cells,muni?'Bevölkerung am 30.06.2024. Die Tabelle ist auch ohne Geodatenaufbau vollständig.'+(est?' Modellwerte verteilen den Kreiswert und sind keine Messung.':''):'Bevölkerung am 30.11.2024.'+(est?' Modellwerte sind eine Verteilung der veröffentlichten Landessumme, keine Messung.':''));$('area-page').textContent=`Seite ${state.areaPage+1} / ${pages} · ${integer(rows.length)} Treffer`;$('area-prev').disabled=state.areaPage===0;$('area-next').disabled=state.areaPage>=pages-1;$('area-table-count').textContent=integer(rows.length)+' Gebiete';$('area-table').querySelectorAll('[data-area-id]').forEach(b=>b.addEventListener('click',()=>setSelected(b.dataset.areaKind,b.dataset.areaId)));}
 function originView(){let title,badge,note,source,rows,unit='Personen';switch(state.origin){case 'de_origins':title='Muslimische Bevölkerung nach Herkunftsgruppe';badge='Deutschland · BAMF-Modell · 2025';note='Diese Verteilung gilt für Deutschland, nicht für Baden-Württemberg und nicht für einen ausgewählten Kreis. Herkunft bezeichnet im Quellensinn eigene beziehungsweise elterliche Herkunft – nicht allein den Pass oder das eigene Geburtsland.';source='bamf_fb55';rows=D.origins_de_2025.map(r=>({name:r.dimensions.origin_group,value:r.value,low:r.value_lower,high:r.value_upper,share:r.share_of_published_de_total,source:r}));break;case 'de_regions':title='Muslimische Bevölkerung nach Herkunftsregion';badge='Deutschland · BAMF-Modell · 2025';note='Anteile an der in der BAMF-Hochrechnung erfassten muslimischen Bevölkerung Deutschlands. Keine eigene BW-Herkunftsverteilung.';source='bamf_fb55';unit='Prozent';rows=D.origin_composition.filter(r=>r.reference_period==='2025').map(r=>({name:r.dimensions.origin_region,value:r.value,source:r}));break;case 'bw_nationalities_2024':case 'bw_nationalities_2025':{const year=state.origin.endsWith('2025')?'2025':'2024';title='Ausgewählte ausländische Staatsangehörigkeiten';badge='BW · AZR · '+(year==='2024'?'31.12.2024':'Bezugsjahr 2025');note=year==='2024'?'25 in der Veröffentlichung ausgewiesene Staatsangehörigkeiten. Das sind keine Muslimzahlen. Deutsche Staatsangehörige und damit viele Eingebürgerte und Nachkommen werden hier nicht abgebildet.':'Nur vier im Pressetext veröffentlichte Staatsangehörigkeiten; der genaue Stichtag ist in der übernommenen Zeile nicht bestätigt. Keine vollständige Rangliste und keine Muslimzahlen. Der kleinere Ausschnitt darf nicht als Bevölkerungsrückgang gegenüber der 2024er Auswahl gelesen werden.';source=year==='2024'?'stala_pm_2025':'stala_pm_2026';rows=D.nationalities_bw.filter(r=>r.reference_period===(year==='2024'?'2024-12-31':'2025')).map(r=>({name:r.dimensions.nationality,value:r.value,source:r}));break;}case 'bw_historical':title='Drei publizierte Herkunftsangaben des BW-Modells';badge='BW · historische Hauptvariante · 2018';note='Historische Angaben aus Brachat-Schwarz (2020), keine aktuellen Werte und keine vollständige Herkunftsverteilung. Die übrigen Gruppen werden nicht durch eine pauschale Restschätzung ergänzt.';source='stala_monat_2020';rows=D.historical_bw.filter(r=>r.indicator==='estimated_muslim_persons_by_origin').map(r=>({name:r.dimensions.origin_group,value:r.value,source:r}));break;default:throw new Error('Unknown origin view');}rows.sort((a,b)=>b.value-a.value);return {title,badge,note,source,rows,unit};}

@@ -1,9 +1,21 @@
 {
   "passed": true,
-  "check_count": 128,
+  "check_count": 138,
   "checks": [
     {
-      "name": "one real state outline rendered",
+      "name": "initial layer is the district view",
+      "passed": true
+    },
+    {
+      "name": "initial layer matches the select element",
+      "passed": true
+    },
+    {
+      "name": "model layer not selected by default",
+      "passed": true
+    },
+    {
+      "name": "all 44 district polygons rendered on load",
       "passed": true
     },
     {
@@ -19,11 +31,7 @@
       "passed": true
     },
     {
-      "name": "model layer not selected by default",
-      "passed": true
-    },
-    {
-      "name": "initial layer published BW state",
+      "name": "one real state outline rendered",
       "passed": true
     },
     {
@@ -504,6 +512,38 @@
     },
     {
       "name": "about dialog closes via button",
+      "passed": true
+    },
+    {
+      "name": "map is actually on screen for the gesture checks",
+      "passed": true
+    },
+    {
+      "name": "mouse drag pans the map",
+      "passed": true
+    },
+    {
+      "name": "wheel zooms the map in",
+      "passed": true
+    },
+    {
+      "name": "wheel zooms the map out",
+      "passed": true
+    },
+    {
+      "name": "reset restores the whole state",
+      "passed": true
+    },
+    {
+      "name": "a district is still selectable after dragging",
+      "passed": true
+    },
+    {
+      "name": "one finger leaves the map alone",
+      "passed": true
+    },
+    {
+      "name": "two fingers pinch-zoom the map",
       "passed": true
     },
     {
