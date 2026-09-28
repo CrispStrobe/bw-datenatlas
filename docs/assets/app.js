@@ -4,6 +4,7 @@ const D=window.ATLAS_DATA, G=window.ATLAS_GEOMETRY, M=window.AtlasModel;
 const EST=window.ATLAS_ESTIMATE||null;
 const EST18=window.ATLAS_ESTIMATE_18||null;
 const CTX=window.ATLAS_CONTEXT||null;
+const REG=window.ATLAS_REGIONS||null;
 const AGE=window.ATLAS_AGE||null;
 const GEN=window.ATLAS_GENERATIONS||null;
 const NAT=window.ATLAS_NATIONALITIES||null;
@@ -114,6 +115,8 @@ const layers={
  second_generation:{title:'Zweite Generation mit deutschem Pass',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[27,29,31,33,35],unit:'percent',note:'Anteil der hier geborenen Menschen mit deutschem Pass an der Bevölkerung mit Migrationshintergrund. Genau diese Menschen fehlen in der Ausländerstatistik – deshalb braucht die Modellrechnung eine Korrektur um Eingebürgerte und Nachkommen. Keine Angabe zur Religionszugehörigkeit.'},
  mh_under25:{title:'Unter 25-Jährige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[29,31,33,35,37],unit:'percent',note:'Anteil der unter 25-Jährigen an der Bevölkerung mit Migrationshintergrund. Schraffiert: die Quelle hält zu viele Altersgruppen geheim, um einen belastbaren Anteil zu bilden. Migrationshintergrund ist eine weit größere Gruppe als die modellierte muslimische Bevölkerung; dies ist nicht deren Altersgliederung.'},
  mh_employment:{title:'Erwerbstätige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · ab 15 Jahren · 44 Kreise',source:'stala_pm_2025',thresholds:[60,63,66,69,72],unit:'percent',note:'Anteil der Erwerbstätigen an der Bevölkerung ab 15 Jahren mit Migrationshintergrund. Stichprobenerhebung. Keine Erwerbslosenquote, weil die Quelle die Erwerbslosen in fast allen Kreisen geheim hält. Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein.'},
+ region_population:{title:'Bevölkerung insgesamt · Regierungsbezirke',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 4 Regionen',source:'stala_bevoelkerung',thresholds:[2000000,2500000,3000000,3500000,4000000],unit:'count',note:'Die vier Regierungsbezirke sind die Ebene NUTS 2 der europäischen Gebietssystematik. Die Zahlen sind aus den Kreiszahlen addiert, nicht neu erhoben.'},
+ region_foreign_share:{title:'Ausländische Staatsangehörige · Regierungsbezirke',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 4 Regionen',source:'stala_bevoelkerung',thresholds:[16,17,18,19,20],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit je Regierungsbezirk (NUTS 2), aus den Kreiszahlen addiert. Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und stehen in diesen Zahlen nicht.'},
  religion_estimate:{title:'Muslimische Bevölkerung · Modell je Kreis',badge:'Modellrechnung',date:'Landessumme 2025 · Herkunft 31.12.2024 · 44 Kreise',source:'bamf_fb55',thresholds:[5,7.5,10,12.5,15],unit:'percent',note:'Modellrechnung, keine Messung. Die veröffentlichte Landessumme wird nach Herkunft verteilt: ausländische Bevölkerung je Staatsangehörigkeit mal bundesweitem muslimischen Anteil dieser Herkunftsgruppe. Es gibt keine amtliche Religionsstatistik je Kreis.'},
  religion_estimate_municipal:{title:'Muslimische Bevölkerung · Modell je Gemeinde',badge:'Modellrechnung',date:'Verteilung des Kreiswerts · Herkunftsmuster 2022 · 1.101 Gemeinden',source:'bamf_fb55',thresholds:[5,7.5,10,12.5,15],unit:'percent',note:'Modellrechnung, keine Messung. Die Gemeindewerte verteilen den jeweiligen Kreiswert. Der türkische und bosnische Anteil folgt dem im Zensus gemessenen Siedlungsmuster, der Rest der Einwanderungsgeschichte je Gemeinde; für Syrien, Afghanistan, Irak und Kosovo gibt es keine eigenen Gemeindedaten. Die Spannen sind entsprechend breit.'}
 };
@@ -136,7 +139,28 @@ function isEstimate(){return state.layer==='religion_estimate'||state.layer==='r
 function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent=t('Herkunftsdaten erklären ')+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
 function selectedPayload(){const base={atlas_version:D.version,built_on:D.built_on,layer:state.layer,definition:layers[state.layer].note,selected:state.selected,source:sourceFor(layers[state.layer])};if(state.selected.type==='institution')return {...base,institution:INST?INST.institutions[state.selected.id]:null,not_a_population_measure:INST?INST.not_a_population_measure:null};
  if(state.selected.type==='state')return {...base,religion_estimate_bw:D.bw,religion_share_bw:D.bw_pct,model:isEstimate()&&EST?EST.meta:null};if(state.selected.type==='district')return {...base,data:districts.get(state.selected.id),model:isEstimate()&&EST?{...EST.meta,result:estimateDistrict(state.selected.id)}:null};return {...base,data:municipalities.get(state.selected.id),muslim_count:null,muslim_pct:null,religion_status:'not_available'};}
+function regionProfile(id){
+ const r=REG&&REG.regions.find(x=>x.id===id);
+ if(!r)return false;
+ $('detail-kind').textContent=t('Regierungsbezirk · NUTS 2');
+ $('detail-name').textContent=r.name;
+ const anteil=D.districts.filter(d=>String(d.id).startsWith(r.id))
+   .sort((a,b)=>(b.population||0)-(a.population||0));
+ $('detail-content').innerHTML=
+   metric(t('Einwohner'),integer(r.population),esc(t('Stichtag 30.11.2024')))
+  +metric(t('Ausländische Staatsangehörige'),integer(r.foreign),esc(pct(r.foreign_pct)))
+  +metric(t('NUTS-Code'),r.nuts,esc(tf('{0} Kreise',r.districts)))
+  +`<div class="detail-note"><span>${esc(t('Die Region ist die Ebene NUTS 2 der europäischen Gebietssystematik. Ihre Zahlen sind aus den Kreiszahlen addiert, nicht neu erhoben.'))}</span></div>`
+  +`<div class="detail-note"><span>${esc(t('Kreise in dieser Region'))}: `
+  +anteil.map(d=>`<button class="link-button" data-area-kind="district" data-area-id="${esc(d.id)}">${esc(d.name)}</button>`).join(', ')
+  +'</span></div>';
+ for(const b of $('detail-content').querySelectorAll('[data-area-id]')){
+  b.addEventListener('click',()=>setSelected(b.dataset.areaKind,b.dataset.areaId));
+ }
+ return true;
+}
 function renderDetail(){
+ if(state.selected.type==='region'&&regionProfile(state.selected.id))return;
  const s=state.selected;
  // An institution is a place with a source, not a figure. The panel therefore shows
  // where the entry comes from and links back to it, so every point can be checked.
@@ -329,6 +353,8 @@ function renderDetail(){
 function estimateDistrict(id){return EST?EST.districts[id]:null;}
 function estimateMunicipality(geoId){return EST?EST.municipalities[geoId]:null;}
 function valueForFeature(f){const p=f.properties;
+ if(state.layer==='region_population')return p.population??null;
+ if(state.layer==='region_foreign_share')return p.foreign_pct??null;
  if(state.layer==='religion_estimate_municipal'){const e=estimateMunicipality(p.statistical_geo_id);return e?e.pct:null;}
  if(state.layer==='muni_under25'){const x=DEM?DEM.municipalities[p.statistical_geo_id]:null;return x?x.u25:null;}
  if(state.layer==='municipality_population')return municipalities.get(p.statistical_geo_id)?.population_total??null;
@@ -364,7 +390,11 @@ let projection=null,svgPaths=new Map();
 function initProjection(){if(!G)return;let xmin=Infinity,ymin=Infinity,xmax=-Infinity,ymax=-Infinity;const merc=p=>[p[0]*Math.PI/180,-Math.log(Math.tan(Math.PI/4+p[1]*Math.PI/360))];forEachPoint(G.state.geometry,p=>{const [x,y]=merc(p);xmin=Math.min(xmin,x);xmax=Math.max(xmax,x);ymin=Math.min(ymin,y);ymax=Math.max(ymax,y);});const scale=Math.min(700/(xmax-xmin),650/(ymax-ymin));const ox=(760-(xmax-xmin)*scale)/2,oy=(700-(ymax-ymin)*scale)/2;projection=p=>{const [x,y]=merc(p);return [ox+(x-xmin)*scale,oy+(y-ymin)*scale];};}
 function pathFor(g){const ring=r=>r.map((p,i)=>{const [x,y]=projection(p);return (i?'L':'M')+x.toFixed(2)+','+y.toFixed(2);}).join('')+'Z';if(g.type==='Polygon')return g.coordinates.map(ring).join('');if(g.type==='MultiPolygon')return g.coordinates.map(p=>p.map(ring).join('')).join('');return '';}
 function colorFor(v){const l=layers[state.layer];if(v===null)return 'url(#no-data)';return palette[M.bucket(v,l.thresholds)]??'url(#no-data)';}
-function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 10,1–10,7 % · Näherungswert 2025');const v=valueForFeature(f);if(v===null)return t('Kein zugeordneter statistischer Wert');if(state.layer==='foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='mh_employment')return tf('{0} % erwerbstätig · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_under25')return tf('{0} % unter 25 · Mikrozensus 2024',pf.format(v));if(state.layer==='second_generation')return tf('{0} % zweite Generation · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_change')return (v>0?'+':'')+pf.format(v)+' Punkte seit 2021';if(state.layer==='muni_under25')return tf('{0} % unter 25 · Zensus 2022',pf.format(v));if(isEstimate()){const e=state.layer==='religion_estimate'?estimateDistrict(f.properties.id):estimateMunicipality(f.properties.statistical_geo_id);const band=e?(state.layer==='religion_estimate'?e.variants[state.variant]:e):null;return tf('{0} % · Modellrechnung',pf.format(v))+(band?' · Spanne '+pf.format(band.pct_low)+'–'+pf.format(band.pct_high)+' %':'');}return tf('{0} Einwohner · ',integer(v))+(state.layer==='municipality_population'?'30.06.2024':'30.11.2024');}
+function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 10,1–10,7 % · Näherungswert 2025');const v=valueForFeature(f);if(v===null)return t('Kein zugeordneter statistischer Wert');
+ // Ohne eigenen Zweig fiele die Regionsebene in den Schlusssatz und zeigte den
+ // Ausländeranteil als Einwohnerzahl: „Stuttgart · 20 Einwohner“.
+ if(state.layer==='region_population')return tf('{0} Einwohner · 30.11.2024',integer(v));
+ if(state.layer==='region_foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='mh_employment')return tf('{0} % erwerbstätig · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_under25')return tf('{0} % unter 25 · Mikrozensus 2024',pf.format(v));if(state.layer==='second_generation')return tf('{0} % zweite Generation · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_change')return (v>0?'+':'')+pf.format(v)+' Punkte seit 2021';if(state.layer==='muni_under25')return tf('{0} % unter 25 · Zensus 2022',pf.format(v));if(isEstimate()){const e=state.layer==='religion_estimate'?estimateDistrict(f.properties.id):estimateMunicipality(f.properties.statistical_geo_id);const band=e?(state.layer==='religion_estimate'?e.variants[state.variant]:e):null;return tf('{0} % · Modellrechnung',pf.format(v))+(band?' · Spanne '+pf.format(band.pct_low)+'–'+pf.format(band.pct_high)+' %':'');}return tf('{0} Einwohner · ',integer(v))+(state.layer==='municipality_population'?'30.06.2024':'30.11.2024');}
 // What the institutions layer does NOT contain, stated on the page rather than left to
 // be inferred from a thin map. An organisation missing here is missing for a reason, and
 // the reason is worth more than the gap is misleading.
@@ -761,11 +791,14 @@ function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();
  const p=palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
 function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.title);$('map-period').textContent=t(l.date);$('map-badge').textContent=t(l.badge);$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=t(l.note);$('map-svg-title').textContent=t(l.title);$('map-svg-desc').textContent=t(l.date)+'. '+t(l.note);renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
- const features=state.layer==='religion_state'||pointLayer?[G.state]:(municipalLayer?G.municipalities:G.districts);const frag=document.createDocumentFragment();svgPaths.clear();
+ const regionLayer=state.layer.startsWith('region_');
+ const features=state.layer==='religion_state'||pointLayer?[G.state]
+   :regionLayer?(REG?REG.features:[])
+   :(municipalLayer?G.municipalities:G.districts);const frag=document.createDocumentFragment();svgPaths.clear();
  for(const f of features){const p=f.properties,el=document.createElementNS('http://www.w3.org/2000/svg','path');el.setAttribute('d',pathFor(f.geometry));el.setAttribute('fill',state.layer==='religion_state'?'#236a7b':colorFor(valueForFeature(f)));el.setAttribute('fill-rule','evenodd');el.setAttribute('class','map-feature');el.setAttribute('data-id',p.id);el.setAttribute('tabindex',municipalLayer?'-1':'0');el.setAttribute('role','button');el.setAttribute('aria-label',p.name+': '+mapValueText(f));
  const selected=state.selected.type==='district'&&state.selected.id===p.id||state.selected.type==='municipality'&&state.selected.id===p.statistical_geo_id;if(selected)el.classList.add('is-selected');
  const title=document.createElementNS('http://www.w3.org/2000/svg','title');title.textContent=p.name+' · '+mapValueText(f);el.appendChild(title);
- const choose=()=>{if(state.layer==='religion_state')setSelected('state','08');else if(municipalLayer){if(p.statistical_geo_id)setSelected('municipality',p.statistical_geo_id);else toast('Für diese Fläche ist kein statistischer Gemeindewert zugeordnet.');}else setSelected('district',p.id);};
+ const choose=()=>{if(state.layer==='religion_state')setSelected('state','08');else if(regionLayer)setSelected('region',p.id);else if(municipalLayer){if(p.statistical_geo_id)setSelected('municipality',p.statistical_geo_id);else toast('Für diese Fläche ist kein statistischer Gemeindewert zugeordnet.');}else setSelected('district',p.id);};
  el.addEventListener('click',()=>{if(!drag.moved)choose();});el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});el.addEventListener('pointerenter',()=>{$('map-tooltip').innerHTML=`<strong>${esc(p.name)}</strong>${esc(mapValueText(f))}`;$('map-tooltip').hidden=false;});el.addEventListener('pointerleave',()=>$('map-tooltip').hidden=true);el.addEventListener('focus',()=>{$('map-tooltip').textContent=p.name+' · '+mapValueText(f);$('map-tooltip').hidden=false;});el.addEventListener('blur',()=>$('map-tooltip').hidden=true);frag.appendChild(el);svgPaths.set(p.id,el);
  }
  $('map-features').replaceChildren(frag);$('map-labels').replaceChildren();

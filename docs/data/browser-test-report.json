@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 161,
+  "check_count": 166,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -632,6 +632,26 @@
     },
     {
       "name": "german is the plain address, without a parameter",
+      "passed": true
+    },
+    {
+      "name": "four NUTS 2 regions are drawn",
+      "passed": true
+    },
+    {
+      "name": "the region totals match the district totals",
+      "passed": true
+    },
+    {
+      "name": "all 44 districts are assigned to a region",
+      "passed": true
+    },
+    {
+      "name": "a region can be selected",
+      "passed": true
+    },
+    {
+      "name": "the region profile names its NUTS code",
       "passed": true
     },
     {

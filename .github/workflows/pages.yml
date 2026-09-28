@@ -235,6 +235,9 @@ jobs:
           python -m playwright install --with-deps chromium
       # Eine fehlende Übersetzung fällt sichtbar auf Deutsch zurück — aber
       # niemandem auf, der die Seite nicht in allen drei Sprachen ansieht.
+      - name: Regierungsbezirke (NUTS 2) aus den Kreisen ableiten
+        run: python scripts/derive_regions.py
+
       - name: Übersetzungen auf Vollständigkeit prüfen
         run: python scripts/collect_ui_strings.py --pruefen
 

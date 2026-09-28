@@ -458,6 +458,23 @@ with sync_playwright() as pw:
     check('german is the plain address, without a parameter',
           'lang=' not in page.evaluate('()=>location.search'))
 
+    # NUTS 2: vier Regierungsbezirke, aus den Kreisen zusammengefasst. Geprüft wird,
+    # dass die Summe aufgeht — eine Zusammenfassung, die sich nicht mit der Ebene
+    # darunter deckt, wäre schlimmer als gar keine.
+    page.select_option('#layer','region_population'); page.wait_for_timeout(700)
+    check('four NUTS 2 regions are drawn',
+          page.locator('#map-features path.map-feature').count()==4)
+    summe=page.evaluate("()=>window.ATLAS_REGIONS.regions.reduce((a,r)=>a+r.population,0)")
+    kreise=page.evaluate("()=>Atlas.getData().districts.reduce((a,d)=>a+(d.population||0),0)")
+    check('the region totals match the district totals',summe==kreise)
+    check('all 44 districts are assigned to a region',
+          page.evaluate("()=>window.ATLAS_REGIONS.regions.reduce((a,r)=>a+r.districts,0)")==44)
+    page.locator('#map-features path.map-feature').first.click(); page.wait_for_timeout(500)
+    check('a region can be selected',page.evaluate("Atlas.getState().selected.type")=='region')
+    check('the region profile names its NUTS code',
+          'DE1' in page.locator('#detail-content').inner_text())
+    page.select_option('#layer','district_population'); page.wait_for_timeout(500)
+
     # Wie viel Deutsch steht noch in der englischen Ansicht? Der Katalog ist
     # vollständig, aber er erfasst nur, was durch ihn läuft. Sätze, die app.js aus
     # Bruchstücken zusammensetzt, stehen weiter auf Deutsch — im Kreisprofil, in
