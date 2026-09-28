@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 139,
+  "check_count": 150,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -548,6 +548,50 @@
     },
     {
       "name": "two fingers pinch-zoom the map",
+      "passed": true
+    },
+    {
+      "name": "area table sorts alphabetically",
+      "passed": true
+    },
+    {
+      "name": "sorted column is announced",
+      "passed": true
+    },
+    {
+      "name": "a second click reverses the order",
+      "passed": true
+    },
+    {
+      "name": "sorting covers every page, not just the visible one",
+      "passed": true
+    },
+    {
+      "name": "numeric columns sort as numbers",
+      "passed": true
+    },
+    {
+      "name": "every chart card offers an enlarged view",
+      "passed": true
+    },
+    {
+      "name": "the enlarge dialog opens",
+      "passed": true
+    },
+    {
+      "name": "the enlarged chart carries the same bars",
+      "passed": true
+    },
+    {
+      "name": "the enlarge dialog closes",
+      "passed": true
+    },
+    {
+      "name": "no stacked-bar label overflows its segment",
+      "passed": true
+    },
+    {
+      "name": "every group in the detailed bar is named somewhere",
       "passed": true
     },
     {

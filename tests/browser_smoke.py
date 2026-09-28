@@ -374,6 +374,62 @@ with sync_playwright() as pw:
     finger('touchEnd',[])
     page.wait_for_timeout(200)
     check('two fingers pinch-zoom the map',breite()<vorher_b)
+
+    # Tabellen sortieren. Die Gebietstabelle blättert, also muss über ALLE Zeilen
+    # sortiert werden und nicht über die dreißig der sichtbaren Seite — sonst sieht
+    # eine Seitenreihenfolge wie eine Gesamtreihenfolge aus.
+    page.evaluate("()=>document.querySelectorAll('details').forEach(d=>d.open=true)")
+    page.wait_for_timeout(300)
+    page.select_option('#layer','district_population'); page.wait_for_timeout(400)
+    spalte=lambda sel,i=0,n=3: page.evaluate(
+        """([sel,i,n])=>[...document.querySelectorAll(sel+' tbody tr')].slice(0,n)
+           .map(r=>r.cells[i]?r.cells[i].textContent.trim().split(String.fromCharCode(10))[0]:'')""",[sel,i,n])
+    page.eval_on_selector('#area-table thead th:first-child .th-sort','e=>e.click()')
+    page.wait_for_timeout(400)
+    auf=spalte('#area-table')
+    check('area table sorts alphabetically',auf==sorted(auf,key=lambda v:v.lower()))
+    check('sorted column is announced',
+          page.eval_on_selector('#area-table thead th:first-child','e=>e.getAttribute("aria-sort")')=='ascending')
+    page.eval_on_selector('#area-table thead th:first-child .th-sort','e=>e.click()')
+    page.wait_for_timeout(400)
+    ab=spalte('#area-table')
+    check('a second click reverses the order',ab==sorted(ab,key=lambda v:v.lower(),reverse=True))
+    # Über alle Seiten, nicht nur die erste: die zweite Seite muss hinter der ersten
+    # einsortiert sein.
+    page.eval_on_selector('#area-table thead th:first-child .th-sort','e=>e.click()')
+    page.wait_for_timeout(400)
+    erste=spalte('#area-table',0,30)
+    page.locator('#area-next').click(); page.wait_for_timeout(400)
+    zweite=spalte('#area-table',0,30)
+    check('sorting covers every page, not just the visible one',
+          bool(erste) and bool(zweite) and max(v.lower() for v in erste)<=min(v.lower() for v in zweite))
+    page.locator('#area-prev').click(); page.wait_for_timeout(300)
+    # Zahlen werden als Zahlen sortiert, nicht als Zeichenketten
+    page.eval_on_selector('#area-table thead th:nth-child(3) .th-sort','e=>e.click()')
+    page.wait_for_timeout(400)
+    zahlen=[float(v.replace('.','').replace(',','.')) for v in spalte('#area-table',2,5) if v]
+    check('numeric columns sort as numbers',zahlen==sorted(zahlen))
+
+    # Grafik vergrößern
+    check('every chart card offers an enlarged view',page.locator('.chart-enlarge').count()>=5)
+    page.locator('article:has(#composition-chart) .chart-enlarge').first.click()
+    page.wait_for_timeout(500)
+    check('the enlarge dialog opens',page.evaluate("()=>document.getElementById('chart-zoom').open"))
+    check('the enlarged chart carries the same bars',
+          page.locator('#chart-zoom .stack-row').count()==page.locator('#composition-chart .stack-row').count())
+    page.keyboard.press('Escape'); page.wait_for_timeout(300)
+    check('the enlarge dialog closes',not page.evaluate("()=>document.getElementById('chart-zoom').open"))
+
+    # Beschriftungen in der gestapelten Leiste dürfen nie über ihren Abschnitt
+    # hinauslaufen: so wurde aus Kosovo und Bosnien-Herzegowina ein Wort.
+    page.check('#composition-detail'); page.wait_for_timeout(500)
+    ueberlauf=page.evaluate("""()=>[...document.querySelectorAll('.stack-segment')]
+        .filter(s=>s.firstElementChild&&!s.firstElementChild.hidden
+                 &&s.firstElementChild.scrollWidth>s.clientWidth).length""")
+    check('no stacked-bar label overflows its segment',ueberlauf==0)
+    check('every group in the detailed bar is named somewhere',
+          page.locator('#composition-key li').count()==page.locator('#composition-chart .stack-row:last-child .stack-segment').count())
+    page.uncheck('#composition-detail'); page.wait_for_timeout(300)
     page.locator('#research-explorer').evaluate('el=>el.open=false')
     page.select_option('#layer','religion_state');page.locator('#reset-place').click()
     if args.screenshots:
