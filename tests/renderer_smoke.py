@@ -35,7 +35,12 @@ with sync_playwright() as pw:
     page.add_script_tag(content=(ROOT/'docs/data/atlas-data.js').read_text(encoding='utf-8'))
     page.evaluate('g=>window.ATLAS_GEOMETRY=g',g)
     for name in ['model.js','app.js']:page.add_script_tag(content=(ROOT/'docs/assets'/name).read_text(encoding='utf-8'))
+    # Beim Laden steht die Kreisansicht: vierundvierzig Flächen, nicht eine. Die
+    # Landesfläche ist eine eigene Ebene und wird unten geprüft.
+    check('44 district polygons rendered on load',page.locator('#map-features path').count()==44)
+    page.select_option('#layer','religion_state')
     check('one state polygon rendered',page.locator('#map-features path').count()==1)
+    page.select_option('#layer','district_population')
     check('geometry warning hidden when a fixture is supplied',not page.locator('#map-unavailable').is_visible())
     check('SVG export enabled with fixture',page.locator('#export-map').is_enabled())
     page.select_option('#layer','foreign_share')

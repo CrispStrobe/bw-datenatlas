@@ -1,7 +1,11 @@
 {
   "passed": true,
-  "check_count": 138,
+  "check_count": 139,
   "checks": [
+    {
+      "name": "real prepared geography present",
+      "passed": true
+    },
     {
       "name": "initial layer is the district view",
       "passed": true
