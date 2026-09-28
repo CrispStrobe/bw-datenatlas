@@ -85,3 +85,15 @@ dialog#chart-zoom .chart-enlarge{display:none}
 .th-arrow{margin-left:4px;font-size:9px;color:var(--teal)}
 th[aria-sort="ascending"] .th-sort,th[aria-sort="descending"] .th-sort{color:var(--teal)}
 @media (hover:none) and (pointer:coarse){.th-sort{padding:6px 0}}
+
+/* Sprachwahl: drei Kürzel, die aktive hervorgehoben. Kein Auswahlfeld, weil drei
+   Möglichkeiten in einem Feld mehr Klicks kosten als nebeneinander. */
+.lang-switch{display:inline-flex;border:1px solid var(--line);border-radius:7px;
+ overflow:hidden;background:#fff}
+.lang-switch button{all:unset;cursor:pointer;padding:7px 10px;font-size:12px;
+ font-weight:650;color:var(--muted);line-height:1}
+.lang-switch button+button{border-left:1px solid var(--line)}
+.lang-switch button:hover{background:var(--soft);color:var(--teal)}
+.lang-switch button[aria-pressed="true"]{background:var(--teal);color:#fff}
+.lang-switch button:focus-visible{outline:2px solid var(--teal);outline-offset:-2px}
+@media (hover:none) and (pointer:coarse){.lang-switch button{padding:10px 13px}}

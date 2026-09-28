@@ -52,12 +52,27 @@ function instLabel(org){
 }
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const nf=new Intl.NumberFormat('de-DE',{maximumFractionDigits:0});
-const precise=new Intl.NumberFormat('de-DE',{maximumFractionDigits:8});
-const number=v=>v===null||v===undefined?'Nicht verfügbar':precise.format(v);
-const pf=new Intl.NumberFormat('de-DE',{minimumFractionDigits:1,maximumFractionDigits:1});
-const integer=v=>v===null||v===undefined?'Nicht verfügbar':nf.format(v);
-const pct=v=>v===null||v===undefined?'Nicht verfügbar':pf.format(v)+' %';
+// Zahlen folgen der Sprache: 1.234,5 auf Deutsch, 1,234.5 auf Englisch,
+// 1 234,5 auf Französisch. Die Formate werden bei jedem Sprachwechsel neu gebaut,
+// denn eine deutsche Tausenderstelle in einem englischen Satz liest sich als
+// Dezimalzahl — aus 1.133.000 würde 1,133.
+let nf, precise, pf;
+function buildNumberFormats(){
+ const loc=(window.I18N&&I18N.locale)||'de-DE';
+ nf=new Intl.NumberFormat(loc,{maximumFractionDigits:0});
+ precise=new Intl.NumberFormat(loc,{maximumFractionDigits:8});
+ pf=new Intl.NumberFormat(loc,{minimumFractionDigits:1,maximumFractionDigits:1});
+}
+buildNumberFormats();
+// Kurzform für Texte, die das Programm selbst erzeugt. Fehlt eine Übersetzung,
+// steht der deutsche Satz da — sichtbar, statt still falsch.
+const t=v=>(window.I18N?I18N.t(v):v);
+// Übersetzbarer Satz mit Leerstellen statt aneinandergehängter Bruchstücke:
+// tf('{0} Einwohner', 613205). Die Wortstellung ist nicht in jeder Sprache gleich.
+const tf=(vorlage,...werte)=>t(vorlage).replace(/\{(\d)\}/g,(_,i)=>werte[i]);
+const number=v=>v===null||v===undefined?t('Nicht verfügbar'):precise.format(v);
+const integer=v=>v===null||v===undefined?t('Nicht verfügbar'):nf.format(v);
+const pct=v=>v===null||v===undefined?t('Nicht verfügbar'):pf.format(v)+' %';
 const approx=v=>'≈ '+nf.format(Math.round(v/1000)*1000);
 // Muss zur Option mit "selected" in index.html passen: updateLayer() liest beim
 // Start den Wert des Auswahlfelds und überschreibt diesen hier. Stimmen sie nicht
@@ -114,11 +129,11 @@ function toCSV(rows){if(!rows.length)return '';const keys=Object.keys(rows[0]);c
 // Die Bildunterschrift bleibt maskierter Text; verlinkt wird nur eine ausdrücklich
 // übergebene Quelle. So kann keine Zeichenkette aus den Daten zu Auszeichnung werden,
 // und eine Belegstelle ist trotzdem anklickbar statt bloß genannt.
-function table(headers,rows,caption='',quelle=null){return `<table>${caption||quelle?`<caption>${esc(caption)}${quelle?` ${sourceLink(quelle.id,quelle.text)}`:''}</caption>`:''}<thead><tr>${headers.map((h,i)=>`<th scope="col"${i?' class="numeric"':''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
-function metric(label,value,meta=''){return `<div class="detail-stat"><span class="label">${esc(label)}</span><strong>${esc(value)}</strong><span class="meta">${meta}</span></div>`;}
+function table(headers,rows,caption='',quelle=null){return `<table>${caption||quelle?`<caption>${esc(t(caption))}${quelle?` ${sourceLink(quelle.id,quelle.text)}`:''}</caption>`:''}<thead><tr>${headers.map((h,i)=>`<th scope="col"${i?' class="numeric"':''}>${esc(t(h))}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
+function metric(label,value,meta=''){return `<div class="detail-stat"><span class="label">${esc(t(label))}</span><strong>${esc(value)}</strong><span class="meta">${meta}</span></div>`;}
 function setSelected(type,id){state.selected={type,id};$('search-results').hidden=true;renderDetail();renderMap();}
 function isEstimate(){return state.layer==='religion_estimate'||state.layer==='religion_estimate_municipal'||state.layer==='religion_estimate_18';}
-function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent='Herkunftsdaten erklären '+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
+function updateLayer(){state.layer=$('layer').value;const est=isEstimate()&&!!EST;const box=$('model-controls');if(box)box.hidden=!est;const ibox=$('institution-controls');if(ibox){ibox.hidden=state.layer!=='institutions';if(!ibox.hidden){fillOrganisationFilter();refreshInstitutionFilter();}}if(est&&EST){const c=EST.meta.coverage;$('model-coverage').textContent=t('Herkunftsdaten erklären ')+c.corrected_share_of_published_high_percent+' bis '+c.corrected_share_of_published_low_percent+' Prozent der veröffentlichten Landessumme; der Rest wird nach Bevölkerung mit Migrationshintergrund verteilt.';}state.areaPage=0;renderMap();renderDetail();renderAreaTable();}
 function selectedPayload(){const base={atlas_version:D.version,built_on:D.built_on,layer:state.layer,definition:layers[state.layer].note,selected:state.selected,source:sourceFor(layers[state.layer])};if(state.selected.type==='institution')return {...base,institution:INST?INST.institutions[state.selected.id]:null,not_a_population_measure:INST?INST.not_a_population_measure:null};
  if(state.selected.type==='state')return {...base,religion_estimate_bw:D.bw,religion_share_bw:D.bw_pct,model:isEstimate()&&EST?EST.meta:null};if(state.selected.type==='district')return {...base,data:districts.get(state.selected.id),model:isEstimate()&&EST?{...EST.meta,result:estimateDistrict(state.selected.id)}:null};return {...base,data:municipalities.get(state.selected.id),muslim_count:null,muslim_pct:null,religion_status:'not_available'};}
 function renderDetail(){
@@ -349,7 +364,7 @@ let projection=null,svgPaths=new Map();
 function initProjection(){if(!G)return;let xmin=Infinity,ymin=Infinity,xmax=-Infinity,ymax=-Infinity;const merc=p=>[p[0]*Math.PI/180,-Math.log(Math.tan(Math.PI/4+p[1]*Math.PI/360))];forEachPoint(G.state.geometry,p=>{const [x,y]=merc(p);xmin=Math.min(xmin,x);xmax=Math.max(xmax,x);ymin=Math.min(ymin,y);ymax=Math.max(ymax,y);});const scale=Math.min(700/(xmax-xmin),650/(ymax-ymin));const ox=(760-(xmax-xmin)*scale)/2,oy=(700-(ymax-ymin)*scale)/2;projection=p=>{const [x,y]=merc(p);return [ox+(x-xmin)*scale,oy+(y-ymin)*scale];};}
 function pathFor(g){const ring=r=>r.map((p,i)=>{const [x,y]=projection(p);return (i?'L':'M')+x.toFixed(2)+','+y.toFixed(2);}).join('')+'Z';if(g.type==='Polygon')return g.coordinates.map(ring).join('');if(g.type==='MultiPolygon')return g.coordinates.map(p=>p.map(ring).join('')).join('');return '';}
 function colorFor(v){const l=layers[state.layer];if(v===null)return 'url(#no-data)';return palette[M.bucket(v,l.thresholds)]??'url(#no-data)';}
-function mapValueText(f){if(state.layer==='religion_state')return 'BW gesamt: 10,1–10,7 % · Näherungswert 2025';const v=valueForFeature(f);if(v===null)return 'Kein zugeordneter statistischer Wert';if(state.layer==='foreign_share')return pct(v)+' ausländische Staatsangehörige · 30.11.2024';if(state.layer==='mh_employment')return pf.format(v)+' % erwerbstätig · Mikrozensus 2024';if(state.layer==='mh_under25')return pf.format(v)+' % unter 25 · Mikrozensus 2024';if(state.layer==='second_generation')return pf.format(v)+' % zweite Generation · Mikrozensus 2024';if(state.layer==='mh_change')return (v>0?'+':'')+pf.format(v)+' Punkte seit 2021';if(state.layer==='muni_under25')return pf.format(v)+' % unter 25 · Zensus 2022';if(isEstimate()){const e=state.layer==='religion_estimate'?estimateDistrict(f.properties.id):estimateMunicipality(f.properties.statistical_geo_id);const band=e?(state.layer==='religion_estimate'?e.variants[state.variant]:e):null;return pf.format(v)+' % · Modellrechnung'+(band?' · Spanne '+pf.format(band.pct_low)+'–'+pf.format(band.pct_high)+' %':'');}return integer(v)+' Einwohner · '+(state.layer==='municipality_population'?'30.06.2024':'30.11.2024');}
+function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 10,1–10,7 % · Näherungswert 2025');const v=valueForFeature(f);if(v===null)return t('Kein zugeordneter statistischer Wert');if(state.layer==='foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='mh_employment')return tf('{0} % erwerbstätig · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_under25')return tf('{0} % unter 25 · Mikrozensus 2024',pf.format(v));if(state.layer==='second_generation')return tf('{0} % zweite Generation · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_change')return (v>0?'+':'')+pf.format(v)+' Punkte seit 2021';if(state.layer==='muni_under25')return tf('{0} % unter 25 · Zensus 2022',pf.format(v));if(isEstimate()){const e=state.layer==='religion_estimate'?estimateDistrict(f.properties.id):estimateMunicipality(f.properties.statistical_geo_id);const band=e?(state.layer==='religion_estimate'?e.variants[state.variant]:e):null;return tf('{0} % · Modellrechnung',pf.format(v))+(band?' · Spanne '+pf.format(band.pct_low)+'–'+pf.format(band.pct_high)+' %':'');}return tf('{0} Einwohner · ',integer(v))+(state.layer==='municipality_population'?'30.06.2024':'30.11.2024');}
 // What the institutions layer does NOT contain, stated on the page rather than left to
 // be inferred from a thin map. An organisation missing here is missing for a reason, and
 // the reason is worth more than the gap is misleading.
@@ -396,8 +411,14 @@ function setUpChartZoom(){
   const h=card.querySelector('h3');
   if(!h||card.querySelector('.chart-enlarge'))continue;
   const btn=document.createElement('button');
-  btn.type='button';btn.className='chart-enlarge';btn.textContent='Vergrößern';
-  btn.setAttribute('aria-label',h.textContent.trim()+' vergrößert ansehen');
+  btn.type='button';btn.className='chart-enlarge';
+  btn.setAttribute('data-i18n-skip','');
+  const beschriften=()=>{
+   btn.textContent=t('Vergrößern');
+   btn.setAttribute('aria-label',h.textContent.trim()+' — '+t('vergrößert ansehen'));
+  };
+  beschriften();
+  window.addEventListener('sprachwechsel',beschriften);
   btn.addEventListener('click',()=>{
    titel.textContent=h.textContent.trim();
    body.replaceChildren();
@@ -519,8 +540,8 @@ const AZR_PREDICATES = {
  resident_25_years_or_more: 'die seit 25 Jahren oder länger hier leben',
 };
 function azrPredicate(key){
- return AZR_PREDICATES[key]
-   || ('die ' + (AZR && AZR.labels && AZR.labels[key] ? AZR.labels[key] : key) + ' betreffen');
+ return t(AZR_PREDICATES[key]
+   || ('die ' + (AZR && AZR.labels && AZR.labels[key] ? AZR.labels[key] : key) + ' betreffen'));
 }
 function renderInstitutionCoverage(){
  const box=$('inst-coverage');if(!box)return;
@@ -599,7 +620,8 @@ function refreshInstitutionFilter(){
  const shown=institutionsShown().length;
  const all=INST?INST.institutions.length:0;
  const label=$('filter-count');
- if(label)label.textContent=shown===all?all+' Einrichtungen':shown+' von '+all+' Einrichtungen';
+ if(label)label.textContent=shown===all?tf('{0} Einrichtungen',all)
+   :tf('{0} von {1} Einrichtungen',shown,all);
  if(state.selected.type==='institution'||state.selected.type==='institution-group')setSelected('state','08');
  renderMap();renderDetail();
 }
@@ -737,7 +759,7 @@ function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();
    entry.n+=1;counts.set(label,entry);}
   $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+institutionTally()+' · keine Bevölkerungszahl</span>';return;}
  const p=palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
-function renderMap(){const l=layers[state.layer];$('map-title').textContent=l.title;$('map-period').textContent=l.date;$('map-badge').textContent=l.badge;$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=l.note;$('map-svg-title').textContent=l.title;$('map-svg-desc').textContent=l.date+'. '+l.note;renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
+function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.title);$('map-period').textContent=t(l.date);$('map-badge').textContent=t(l.badge);$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=t(l.note);$('map-svg-title').textContent=t(l.title);$('map-svg-desc').textContent=t(l.date)+'. '+t(l.note);renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
  const features=state.layer==='religion_state'||pointLayer?[G.state]:(municipalLayer?G.municipalities:G.districts);const frag=document.createDocumentFragment();svgPaths.clear();
  for(const f of features){const p=f.properties,el=document.createElementNS('http://www.w3.org/2000/svg','path');el.setAttribute('d',pathFor(f.geometry));el.setAttribute('fill',state.layer==='religion_state'?'#236a7b':colorFor(valueForFeature(f)));el.setAttribute('fill-rule','evenodd');el.setAttribute('class','map-feature');el.setAttribute('data-id',p.id);el.setAttribute('tabindex',municipalLayer?'-1':'0');el.setAttribute('role','button');el.setAttribute('aria-label',p.name+': '+mapValueText(f));
@@ -892,11 +914,11 @@ function renderDistrictAzr(){
  if(!rows.length)return;
  const national=AZR.germany_distribution[key];
  const max=Math.max(rows[0][key],national?national.max:0)||1;
- $('azr-note').textContent='Anteil der Ausländerinnen und Ausländer im Kreis, '
-   +azrPredicate(state.azrIndicator||AZR_DEFAULT)+' — als Anteil an allen Ausländern des Kreises, nicht an seinen Einwohnern.'
+ $('azr-note').textContent=t('Anteil der Ausländerinnen und Ausländer im Kreis, ')
+   +azrPredicate(state.azrIndicator||AZR_DEFAULT)+t(' — als Anteil an allen Ausländern des Kreises, nicht an seinen Einwohnern.')
    +(national?' Bundesweiter Median: '+pf.format(national.median)+' %, Spanne '+pf.format(national.min)+' bis '+pf.format(national.max)+' %.':'');
  box.innerHTML=rows.map(r=>`<div class="bar-row"><span class="bar-name">${esc(r.name)}</span><div class="bar-track">${national?`<span class="bar-reference" style="left:${100*national.median/max}%" title="Bundesmedian ${pf.format(national.median)} %"></span>`:''}<div class="bar-fill" style="width:${100*r[key]/max}%"></div></div><span class="bar-value">${pf.format(r[key])} %<small>${integer(r[key]*r.foreign_total/100)} von ${integer(r.foreign_total)}</small></span></div>`).join('');
- $('azr-source').textContent=AZR.what_a_share_means+' '+azrWhoIsMissing()+' Stand '+AZR.reference_date+'. Quelle: '+AZR.source+'. '+AZR.licence+'.';
+ $('azr-source').textContent=t(AZR.what_a_share_means)+' '+t(azrWhoIsMissing())+' '+t('Stand')+' '+AZR.reference_date+'. Quelle: '+AZR.source+'. '+AZR.licence+'.';
 }
 const BWF=typeof window!=='undefined'?window.ATLAS_BW_FLOWS:null;
 // Der Atlas konnte bisher sagen, wie viele Menschen welcher Herkunft in einem Kreis
@@ -1035,7 +1057,7 @@ function renderFlows(){
  chart.style.gridTemplateColumns='repeat('+rows.length+',1fr)';
  chart.innerHTML=rows.map(r=>`<div class="vbar-cell"><div class="vbar-fill" style="height:${145*r.value/max}px" title="${esc(r.reference_period)}: ${integer(r.value)}"><span class="vbar-value">${integer(r.value)}</span></div><span class="vbar-label">${esc(label(r))}</span></div>`).join('');
  $('flow-heading').textContent=monthly
-   ?'Asylregistrierungen, letzte zwölf Monate'
+   ?t('Asylregistrierungen, letzte zwölf Monate')
    :'Asylregistrierungen je Jahr, 2014–2025';
  $('flow-source').href=D.sources[total.source_id].url;
  $('states-table').innerHTML=table(['Schätzeinheit','Untergrenze','Obergrenze','Anteil: Untergrenze','Anteil: Obergrenze'],D.states.map(r=>[esc(r.name),integer(r.low),integer(r.high),pct(r.pct_low),pct(r.pct_high)]),'Die Länderpaare bleiben gemeinsam.',{id:'bamf_fb55',text:'BAMF Forschungsbericht 55, Tabelle 3 und Abbildung 4 ↗'});
@@ -1047,7 +1069,7 @@ function renderFlows(){
 function renderSources(){const ids=['bamf_fb55','stala_pm_2025','stala_gemeinden_2024_06','stala_pm_2026','stala_monat_2020','bamf_mld2020_full','bw_jum_asyl_2026_08','aa_national_visas_2024','aa_national_visas_2025'];$('sources-list').innerHTML=ids.map(id=>{const s=D.sources[id];return `<article class="source-item" id="source-${esc(id)}"><a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title)} ↗</a><span>${esc(s.publisher)} · veröffentlicht ${esc(s.publication_period)}</span>${s.locator?`<p>${esc(s.locator)}</p>`:''}${s.limitation?`<p>${esc(s.limitation)}</p>`:''}</article>`;}).join('')+`<article class="source-item"><a href="https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html" target="_blank" rel="noreferrer">BKG: Verwaltungsgebiete VG250 ↗</a><span>Archivstand 01.01.2024 · dl-de/by-2-0 · keine Bevölkerungswerte aus den Geometrien übernommen</span><p>${G?`Geodatenaufbau ausgeführt; ${G.municipality_match_count}/1101 Gemeindewerte zugeordnet. ${G.municipalities_unmatched.length} statistische Gemeinden ohne eindeutige Geometriezuordnung.`:'Amtliche Geometrien noch nicht lokal bezogen. Der GitHub-Workflow baut diese vor der Veröffentlichung auf.'}</p></article>`;}
 function searchPlaces(){const q=M.normalize($('place-search').value);if(q.length<2){$('search-results').hidden=true;return;}const candidates=[...D.districts.map(d=>({type:'district',id:d.id,name:d.name,detail:'Kreis '+d.id})),...D.municipalities.map(m=>({type:'municipality',id:m.geo_id,name:m.municipality_name,detail:m.district_name}))].filter(r=>M.normalize(r.name+' '+r.detail).includes(q)).slice(0,10);$('search-results').hidden=false;$('search-results').innerHTML=candidates.length?candidates.map((r,i)=>`<button type="button" data-result="${i}"><strong>${esc(r.name)}</strong><br><span class="small-muted">${esc(r.detail)} · ${r.type==='municipality'?'Gemeinde':'Kreis'}</span></button>`).join(''):'<p class="empty-state">Kein Treffer.</p>';$('search-results').querySelectorAll('[data-result]').forEach(b=>b.addEventListener('click',()=>{const r=candidates[Number(b.dataset.result)];$('place-search').value=r.name;setSelected(r.type,r.id);}));}
 let researchLoading=false;
-async function loadResearch(){if(state.researchRows||researchLoading)return;researchLoading=true;$('research-load-note').textContent='Die lokale Forschungssammlung wird geladen …';try{const response=await fetch('data/research-observations.json');if(!response.ok)throw new Error(String(response.status));state.researchRows=await response.json();renderResearch();$('research-load-note').textContent='Unveränderte Originalbeobachtungen der Datensammlung.';}catch(e){$('research-load-note').textContent='Die Einzeldatei konnte nicht geladen werden. Bei file:// die Seite über einen lokalen HTTP-Server öffnen. Der ZIP-Download enthält dieselben Daten.';console.warn('Research data load unavailable:',e.message);}finally{researchLoading=false;}}
+async function loadResearch(){if(state.researchRows||researchLoading)return;researchLoading=true;$('research-load-note').textContent='Die lokale Forschungssammlung wird geladen …';try{const response=await fetch('data/research-observations.json');if(!response.ok)throw new Error(String(response.status));state.researchRows=await response.json();renderResearch();$('research-load-note').textContent=t('Unveränderte Originalbeobachtungen der Datensammlung.');}catch(e){$('research-load-note').textContent=t('Die Einzeldatei konnte nicht geladen werden. Bei file:// die Seite über einen lokalen HTTP-Server öffnen. Der ZIP-Download enthält dieselben Daten.');console.warn('Research data load unavailable:',e.message);}finally{researchLoading=false;}}
 function filteredResearch(){if(!state.researchRows)return [];const id=$('dataset-select').value,q=M.normalize($('research-search').value);return state.researchRows.filter(r=>r.dataset_id===id&&(!q||M.normalize(r.geo_name+' '+r.indicator+' '+r.reference_period+' '+JSON.stringify(r.dimensions)).includes(q)));}
 const RESEARCH_SORT_FIELDS=['geo_name','reference_period','indicator','value','unit'];
 function sortResearchRows(rows){
@@ -1181,6 +1203,14 @@ dlg.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.closest('
 initAbout();
 setUpChartZoom();
 watchTables();
+// Was das Programm gezeichnet hat, muss beim Sprachwechsel neu gezeichnet werden:
+// die Katalogübersetzung im HTML erreicht diese Stellen nicht, sie sind als
+// data-i18n-skip ausgenommen.
+window.addEventListener('sprachwechsel',()=>{
+ buildNumberFormats();
+ try{renderMap();renderDetail();renderAreaTable();renderOrigins();}catch(e){}
+ try{renderComposition();renderDistrictAzr();}catch(e){}
+});
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};
 dataSorters['research-table']=(col,dir)=>{state.researchSort={col,dir};state.researchPage=0;renderResearch();};

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 150,
+  "check_count": 161,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -592,6 +592,50 @@
     },
     {
       "name": "every group in the detailed bar is named somewhere",
+      "passed": true
+    },
+    {
+      "name": "a language switch is offered",
+      "passed": true
+    },
+    {
+      "name": "switching sets the document language",
+      "passed": true
+    },
+    {
+      "name": "the heading is translated",
+      "passed": true
+    },
+    {
+      "name": "the pressed state follows the language",
+      "passed": true
+    },
+    {
+      "name": "numbers follow the language",
+      "passed": true
+    },
+    {
+      "name": "the language is in the address, so a view can be shared",
+      "passed": true
+    },
+    {
+      "name": "a third language works too",
+      "passed": true
+    },
+    {
+      "name": "french groups thousands its own way",
+      "passed": true
+    },
+    {
+      "name": "switching back restores the German heading",
+      "passed": true
+    },
+    {
+      "name": "german is the plain address, without a parameter",
+      "passed": true
+    },
+    {
+      "name": "untranslated german does not grow (49 nodes)",
       "passed": true
     },
     {

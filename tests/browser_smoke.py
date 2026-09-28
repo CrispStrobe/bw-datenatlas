@@ -34,7 +34,10 @@ with sync_playwright() as pw:
     csp=[]
     page.on('console',lambda m:csp.append(m.text) if 'Content Security Policy' in m.text else None)
     if args.url:
-        page.goto(args.url,wait_until='networkidle')
+        # Ausdrücklich Deutsch: die Seite richtet sich sonst nach der Sprache des
+        # Browsers, und der Prüfrechner meldet en-US. Alle Zusicherungen hier sind
+        # auf den deutschen Text geschrieben; das Umschalten wird eigens geprüft.
+        page.goto(args.url.rstrip('/')+'/?lang=de',wait_until='networkidle')
     else:
         html=(ROOT/'docs/index.html').read_text(encoding='utf-8')
         html=re.sub(r'<script[^>]*src=[^>]*></script>','',html)
@@ -430,6 +433,52 @@ with sync_playwright() as pw:
     check('every group in the detailed bar is named somewhere',
           page.locator('#composition-key li').count()==page.locator('#composition-chart .stack-row:last-child .stack-segment').count())
     page.uncheck('#composition-detail'); page.wait_for_timeout(300)
+
+    # Drei Sprachen. Geprüft wird nicht, ob eine Übersetzung schön ist, sondern ob
+    # die Mechanik trägt: wechselt die Sprache, wechselt das lang-Attribut mit, und
+    # die Zahlen folgen der Sprache — eine deutsche Tausenderstelle in einem
+    # englischen Satz liest sich als Dezimalzahl.
+    check('a language switch is offered',page.locator('.lang-switch button[data-lang]').count()==3)
+    deutsch_h1=page.inner_text('#page-title')
+    page.click('.lang-switch button[data-lang="en"]'); page.wait_for_timeout(900)
+    check('switching sets the document language',page.get_attribute('html','lang')=='en')
+    check('the heading is translated',page.inner_text('#page-title')!=deutsch_h1)
+    check('the pressed state follows the language',
+          page.eval_on_selector('.lang-switch button[data-lang="en"]','e=>e.getAttribute("aria-pressed")')=='true')
+    check('numbers follow the language',
+          page.evaluate("()=>new Intl.NumberFormat(I18N.locale).format(1133000)")=='1,133,000')
+    check('the language is in the address, so a view can be shared',
+          'lang=en' in page.evaluate('()=>location.search'))
+    page.click('.lang-switch button[data-lang="fr"]'); page.wait_for_timeout(700)
+    check('a third language works too',page.get_attribute('html','lang')=='fr')
+    check('french groups thousands its own way',
+          page.evaluate("()=>new Intl.NumberFormat(I18N.locale).format(1133000)").replace('\u202f',' ').replace('\u00a0',' ')=='1 133 000')
+    page.click('.lang-switch button[data-lang="de"]'); page.wait_for_timeout(700)
+    check('switching back restores the German heading',page.inner_text('#page-title')==deutsch_h1)
+    check('german is the plain address, without a parameter',
+          'lang=' not in page.evaluate('()=>location.search'))
+
+    # Wie viel Deutsch steht noch in der englischen Ansicht? Der Katalog ist
+    # vollständig, aber er erfasst nur, was durch ihn läuft. Sätze, die app.js aus
+    # Bruchstücken zusammensetzt, stehen weiter auf Deutsch — im Kreisprofil, in
+    # einzelnen Fußnoten. Das ist bekannt und hier festgehalten: die Zahl darf
+    # sinken, nicht steigen. Ohne diese Sperre wächst sie mit jedem neuen Satz.
+    import re as _re
+    page.goto(args.url.rstrip('/')+'/?lang=en',wait_until='networkidle')
+    page.wait_for_timeout(2500)
+    page.evaluate("()=>document.querySelectorAll('details').forEach(d=>d.open=true)")
+    page.wait_for_timeout(600)
+    NUR_DEUTSCH=_re.compile(r'\b(Bevölkerung|Anteil|Kreise|Stichtag|Gemeinden|'
+                            r'Modellrechnung|Einwohner|Schlüssel)\b')
+    rest=page.evaluate("""()=>{const raus=[];const lauf=(el)=>{
+      for(const n of el.childNodes){
+       if(n.nodeType===3&&n.textContent.trim().length>3)raus.push(n.textContent.trim());
+       else if(n.nodeType===1&&!['SCRIPT','STYLE','TITLE'].includes(n.tagName))lauf(n);}};
+      lauf(document.body);return raus;}""")
+    deutsch=[x for x in rest if NUR_DEUTSCH.search(x)]
+    check(f'untranslated german does not grow ({len(deutsch)} nodes)',len(deutsch)<=50)
+    page.goto(args.url.rstrip('/')+'/?lang=de',wait_until='networkidle')
+    page.wait_for_timeout(1500)
     page.locator('#research-explorer').evaluate('el=>el.open=false')
     page.select_option('#layer','religion_state');page.locator('#reset-place').click()
     if args.screenshots:

@@ -233,6 +233,11 @@ jobs:
         run: |
           python -m pip install 'playwright>=1.50,<2'
           python -m playwright install --with-deps chromium
+      # Eine fehlende Übersetzung fällt sichtbar auf Deutsch zurück — aber
+      # niemandem auf, der die Seite nicht in allen drei Sprachen ansieht.
+      - name: Übersetzungen auf Vollständigkeit prüfen
+        run: python scripts/collect_ui_strings.py --pruefen
+
       - name: SVG-Interaktion isoliert prüfen
         run: python tests/renderer_smoke.py
       - name: HTTP-Integration mit echten aufgebauten Geodaten testen
