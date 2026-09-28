@@ -61,6 +61,17 @@ def sammeln(port: int) -> list[str]:
                     page.wait_for_timeout(120)
                 except Exception:
                     pass
+        # Auch etwas auswählen: das Gebietsprofil wird erst beim Anklicken gezeichnet,
+        # und seine Sätze laufen erst dann durch t(). Ohne diesen Schritt fehlen sie im
+        # Katalog, und die Übersetzung fällt später still auf Deutsch zurück.
+        for ebene in ('region_population', 'district_population'):
+            try:
+                page.select_option('#layer', ebene)
+                page.wait_for_timeout(500)
+                page.locator('#map-features path.map-feature').first.click()
+                page.wait_for_timeout(400)
+            except Exception:
+                pass
         page.wait_for_timeout(400)
         texte = page.evaluate('()=>Object.keys(I18N.sammle()).concat(I18N.gesehen())')
         b.close()
