@@ -473,7 +473,26 @@ with sync_playwright() as pw:
     check('a region can be selected',page.evaluate("Atlas.getState().selected.type")=='region')
     check('the region profile names its NUTS code',
           'DE1' in page.locator('#detail-content').inner_text())
-    page.select_option('#layer','district_population'); page.wait_for_timeout(500)
+    # Europa: dieselbe Gebietsebene, andere Quelle und anderer Zuschnitt.
+    page.select_option('#layer','eu_foreign_born'); page.wait_for_timeout(1200)
+    check('the european layer draws its regions',
+          page.locator('#map-features path.map-feature').count()>200)
+    check('the four BW regions are part of the european set',
+          page.evaluate("()=>['DE11','DE12','DE13','DE14'].every(c=>"
+                        "window.ATLAS_EUROSTAT.features.some(f=>f.properties.nuts===c))"))
+    # Auf der Europakarte darf keine BW-Stadt beschriftet sein und keine BKG-Angabe stehen:
+    # keine Linie dieser Karte stammt vom BKG.
+    check('no Baden-Württemberg city labels on the european map',
+          page.locator('#map-labels text').count()==0)
+    check('the european map credits Eurostat and not the BKG',
+          page.eval_on_selector('#map-attribution-eu','e=>!e.hidden')
+          and page.eval_on_selector('#map-attribution-bw','e=>e.hidden'))
+    check('the european layer states that it counts birthplace, not passport',
+          'Geburtsort' in page.locator('#map-note').inner_text())
+    page.select_option('#layer','district_population'); page.wait_for_timeout(900)
+    check('the map returns to Baden-Württemberg afterwards',
+          page.locator('#map-features path.map-feature').count()==44
+          and page.eval_on_selector('#map-attribution-bw','e=>!e.hidden'))
 
     # Wie viel Deutsch steht noch in der englischen Ansicht? Der Katalog ist
     # vollständig, aber er erfasst nur, was durch ihn läuft. Sätze, die app.js aus

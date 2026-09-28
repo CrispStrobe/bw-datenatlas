@@ -238,6 +238,13 @@ jobs:
       - name: Regierungsbezirke (NUTS 2) aus den Kreisen ableiten
         run: python scripts/derive_regions.py
 
+      # Eurostat und GISCO liefern die europäische Vergleichsebene. Schlägt der Abruf
+      # fehl, bleibt die zuletzt eingecheckte Fassung stehen — eine veraltete Karte ist
+      # besser als keine, und die Datei trägt ihr Bezugsjahr bei sich.
+      - name: Eurostat NUTS 2 aktualisieren
+        continue-on-error: true
+        run: python scripts/prepare_eurostat_nuts2.py
+
       - name: Übersetzungen auf Vollständigkeit prüfen
         run: python scripts/collect_ui_strings.py --pruefen
 

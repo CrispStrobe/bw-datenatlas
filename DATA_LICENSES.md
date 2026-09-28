@@ -174,3 +174,9 @@ unabhängigen Prüfung und werden zitiert, nicht weiterverteilt.
 ## Technische Bibliotheken und GitHub Actions
 
 Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezogen. Ihre eigenen Lizenzen und Nutzungsbedingungen gelten weiterhin. Die ausgelieferte Website lädt keine Bibliotheken, Kartenkacheln oder Schriftarten von einem fremden CDN nach.
+
+## Eurostat und GISCO (europäische Vergleichsebene)
+
+- **Zahlen:** Eurostat, Datensatz `lfst_r_lfsd2pwc` (Bevölkerung in Privathaushalten nach Geburtsland, NUTS 2). Weiterverwendung gestattet mit Quellenangabe, Beschluss 2011/833/EU der Kommission.
+- **Grenzen:** Eurostat GISCO, NUTS 2024, 1:20 Mio. © EuroGeographics für die Verwaltungsgrenzen.
+- **Nicht dasselbe wie der Ausländeranteil dieses Atlas:** dort zählt der Pass, hier der Geburtsort. Eingebürgerte zählen in der europäischen Ebene mit.

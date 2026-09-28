@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 166,
+  "check_count": 172,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -652,6 +652,30 @@
     },
     {
       "name": "the region profile names its NUTS code",
+      "passed": true
+    },
+    {
+      "name": "the european layer draws its regions",
+      "passed": true
+    },
+    {
+      "name": "the four BW regions are part of the european set",
+      "passed": true
+    },
+    {
+      "name": "no Baden-Württemberg city labels on the european map",
+      "passed": true
+    },
+    {
+      "name": "the european map credits Eurostat and not the BKG",
+      "passed": true
+    },
+    {
+      "name": "the european layer states that it counts birthplace, not passport",
+      "passed": true
+    },
+    {
+      "name": "the map returns to Baden-Württemberg afterwards",
       "passed": true
     },
     {

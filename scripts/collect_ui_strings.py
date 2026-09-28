@@ -64,7 +64,7 @@ def sammeln(port: int) -> list[str]:
         # Auch etwas auswählen: das Gebietsprofil wird erst beim Anklicken gezeichnet,
         # und seine Sätze laufen erst dann durch t(). Ohne diesen Schritt fehlen sie im
         # Katalog, und die Übersetzung fällt später still auf Deutsch zurück.
-        for ebene in ('region_population', 'district_population'):
+        for ebene in ('region_population', 'eu_foreign_born', 'district_population'):
             try:
                 page.select_option('#layer', ebene)
                 page.wait_for_timeout(500)
