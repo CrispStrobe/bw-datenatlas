@@ -126,6 +126,9 @@ const layers={
  eu_foreign_citizens:{title:'Ausländische Staatsangehörige · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'foreign_citizen_pct',source:'eurostat_lfs',thresholds:[3,6,9,13,18],unit:'percent',euMeasure:'foreign_citizen_pct',note:'Anteil der Personen ohne Pass des Wohnsitzlandes. Das ist dieselbe Abgrenzung wie auf den Kreis- und Gemeindeebenen dieses Atlas — anders als beim Geburtsort zählen Eingebürgerte hier nicht mit. Vergleichbar ist damit die Definition, nicht die Zahl: Eurostat zählt nur die 15- bis 64-Jährigen in Privathaushalten, und weil Zugewanderte in diesen Altersjahrgängen überrepräsentiert sind, liegt der Wert höher als der Anteil über alle Altersgruppen. Für den Regierungsbezirk Stuttgart 25,3 statt 19,8 Prozent.'},
  eu_employment_gap:{title:'Abstand der Erwerbstätigenquoten · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'employment_gap_pp',source:'eurostat_lfs',thresholds:[-3,0,4,9,15],unit:'points',palette:['#8c4a2c','#d8a887','#e3e8e6','#a9cdd3','#5b9aa8','#134f61'],euMeasure:'employment_gap_pp',note:'Erwerbstätigenquote der im Inland Geborenen minus die der im Ausland Geborenen, 20 bis 64 Jahre, in Prozentpunkten. Ein positiver Wert heißt: die im Ausland Geborenen sind seltener erwerbstätig. Negative Werte gibt es auch, und sie sind kein Fehler — in mehreren Regionen Mittel- und Osteuropas arbeiten die Zugewanderten häufiger als die Einheimischen. Die Zahl misst einen Abstand, nicht seine Ursache: Alter, Bildung, Aufenthaltsdauer und Arbeitsmarktzugang stecken ungetrennt darin.'},
  eu_net_migration:{title:'Wanderungssaldo je 1.000 Einwohner · EU-Regionen (NUTS 2)',badge:'Eurostat · Bevölkerungsfortschreibung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'net_migration_per_1000',source:'eurostat_demo',thresholds:[-5,0,2,5,9],unit:'per_1000',palette:['#8c4a2c','#d8a887','#e3e8e6','#a9cdd3','#5b9aa8','#134f61'],euMeasure:'net_migration_per_1000',note:'Zuzüge minus Fortzüge je 1.000 Einwohner, einschließlich der statistischen Anpassung, mit der die Fortschreibung an eine Zählung angeglichen wird. Anders als die vier Ebenen daneben keine Stichprobe, sondern die Bevölkerungsfortschreibung. Enthalten sind alle Wanderungen, auch die innerhalb des Landes und die von Einheimischen.'},
+ eu_recent_arrivals:{title:'Seit 2010 Zugezogene · EU-Regionen (NUTS 2)',badge:'Eurostat · Zensus 2021',date:'Eurostat {0} · {1} Regionen in Europa',source:'eurostat_cens',thresholds:[28,35,40,45,50],unit:'percent',euMeasure:'recent_arrivals_pct',note:'Anteil derer, die 2010 oder später eingereist sind, an den im Ausland Geborenen mit bekanntem Zuzugsjahr. Ein hoher Wert heißt junge Zuwanderung, ein niedriger eine lange ansässige Bevölkerung — das Gegenstück zur Kreisebene „Seit 25 Jahren hier“, nur dass dort der Pass zählt und hier der Geburtsort. Aus dem Zensus 2021: eine Vollzählung über alle Altersstufen, kein Stichprobenwert, dafür ein einziger Stand ohne Fortschreibung. Fälle ohne Zuzugsjahr stehen nicht im Nenner, statt stillschweigend zu den länger Ansässigen zu zählen; ihr Anteil steht im Profil jeder Region. In 15 der 251 Regionen — in Tschechien, Frankreich und der Slowakei — fehlt er bei mehr als einem Fünftel, in Baden-Württemberg bei höchstens einem Zehntel.'},
+ eu_tertiary_foreign_born:{title:'Hochschulabschluss der im Ausland Geborenen · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',source:'eurostat_lfs',thresholds:[20,27,33,39,47],unit:'percent',euMeasure:'tertiary_foreign_born_pct',note:'Anteil mit tertiärem Abschluss an den im Ausland Geborenen von 25 bis 64 Jahren. Diese Ebene trennt eines von vier Dingen auf, die im Abstand der Erwerbstätigenquoten ungetrennt stecken. Sie zeigt zugleich, was eine Durchschnittszahl verdeckt: im Regierungsbezirk Stuttgart haben 28,7 Prozent der im Ausland Geborenen einen Hochschulabschluss und 35,0 Prozent höchstens einen Hauptschulabschluss — die Gruppe ist an beiden Enden stark besetzt und nicht in der Mitte. Beide Zahlen und der Abstand zu den im Inland Geborenen stehen im Profil jeder Region.'},
+ eu_participation:{title:'Erwerbsbeteiligung der im Ausland Geborenen · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',source:'eurostat_lfs',thresholds:[66,74,78,81,85],unit:'percent',euMeasure:'participation_foreign_born_pct',note:'Anteil der Erwerbspersonen — erwerbstätig oder erwerbslos und suchend — an den im Ausland Geborenen von 20 bis 64 Jahren. Der Unterschied zur Erwerbslosenquote ist der eigentliche Punkt: wer weder arbeitet noch sucht, taucht in keiner Erwerbslosenquote auf. Zwei Regionen mit derselben Erwerbslosenquote können deshalb sehr verschieden aussehen, und der Abstand zu den im Inland Geborenen steht im Profil.'},
  region_population:{title:'Bevölkerung insgesamt · Regierungsbezirke',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 4 Regionen',source:'stala_bevoelkerung',thresholds:[2000000,2500000,3000000,3500000,4000000],unit:'count',note:'Die vier Regierungsbezirke sind die Ebene NUTS 2 der europäischen Gebietssystematik. Die Zahlen sind aus den Kreiszahlen addiert, nicht neu erhoben.'},
  region_foreign_share:{title:'Ausländische Staatsangehörige · Regierungsbezirke',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 4 Regionen',source:'stala_bevoelkerung',thresholds:[16,17,18,19,20],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit je Regierungsbezirk (NUTS 2), aus den Kreiszahlen addiert. Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und stehen in diesen Zahlen nicht.'},
  religion_estimate:{title:'Muslimische Bevölkerung · Modell je Kreis',badge:'Modellrechnung',date:'Landessumme 2025 · Herkunft 31.12.2024 · 44 Kreise',source:'bamf_fb55',thresholds:[5,7.5,10,12.5,15],unit:'percent',note:'Modellrechnung, keine Messung. Die veröffentlichte Landessumme wird nach Herkunft verteilt: ausländische Bevölkerung je Staatsangehörigkeit mal bundesweitem muslimischen Anteil dieser Herkunftsgruppe. Es gibt keine amtliche Religionsstatistik je Kreis.'},
@@ -190,9 +193,12 @@ function euProfile(code){
    :einheit==='percent'?pct(wert)
    :einheit==='points'?(wert>0?'+':'')+pf.format(wert)+' '+t('Punkte')
    :(wert>0?'+':'')+pf.format(wert);
- const einheiten={foreign_born_pct:'percent',non_eu_born_pct:'percent',
-   foreign_citizen_pct:'percent',employment_gap_pp:'points',
-   unemployment_foreign_born_pct:'percent',net_migration_per_1000:'per_1000'};
+ // Die Einheit steht an der Ebene, die die Größe zeigt. Eine zweite Liste hier
+ // lief beim nächsten Zusatz auseinander: drei neue Anteile wurden als Saldo
+ // ausgegeben und standen mit einem Pluszeichen da — "+36,0" statt "36,0 %".
+ const einheiten={};
+ for(const m of EUROSTAT.measures)einheiten[m.key]=m.unit;
+ for(const l of Object.values(layers))if(l.euMeasure)einheiten[l.euMeasure]=l.unit;
  let html='';
  for(const m of EUROSTAT.measures){
   const wert=p[m.key];
@@ -204,10 +210,33 @@ function euProfile(code){
  // Die beiden Erwerbsquoten, aus denen der Abstand gebildet ist. Ein Abstand ohne
  // seine beiden Seiten lässt offen, ob eine hohe Zahl von einer starken oder einer
  // schwachen Beschäftigung der Einheimischen kommt.
- if(p.employment_native_pct!==null&&p.employment_native_pct!==undefined){
-  html+=metric(t('Erwerbstätigenquoten im Einzelnen'),
-    pct(p.employment_native_pct)+' / '+pct(p.employment_foreign_born_pct),
-    esc(t('im Inland geboren / im Ausland geboren · 20 bis 64 Jahre')));
+ const paar=(a,b,titel,fussnote)=>(p[a]===null||p[a]===undefined?''
+   :metric(t(titel),pct(p[a])+' / '+pct(p[b]),esc(t(fussnote))));
+ html+=paar('employment_native_pct','employment_foreign_born_pct',
+   'Erwerbstätigenquoten im Einzelnen',
+   'im Inland geboren / im Ausland geboren · 20 bis 64 Jahre');
+ html+=paar('participation_native_pct','participation_foreign_born_pct',
+   'Erwerbsbeteiligung im Einzelnen',
+   'im Inland geboren / im Ausland geboren · 20 bis 64 Jahre');
+ html+=paar('tertiary_native_pct','tertiary_foreign_born_pct',
+   'Hochschulabschluss im Einzelnen',
+   'im Inland geboren / im Ausland geboren · 25 bis 64 Jahre');
+ // Der zweite Pol derselben Verteilung. Ohne ihn liest sich ein niedriger
+ // Hochschulanteil als "gering qualifiziert", und das ist er nicht: die Gruppe ist
+ // in vielen Regionen an beiden Enden stark besetzt.
+ if(p.low_education_foreign_born_pct!==null&&p.low_education_foreign_born_pct!==undefined){
+  html+=metric(t('Höchstens Hauptschulabschluss · im Ausland geboren'),
+    pct(p.low_education_foreign_born_pct),
+    esc(t('ISCED 0 bis 2 · 25 bis 64 Jahre')));
+ }
+ // Wie belastbar die Zuzugszahl ist, gehört neben sie und nicht in eine Fußnote.
+ if(p.arrival_unknown_pct!==null&&p.arrival_unknown_pct!==undefined){
+  html+=metric(t('Ohne Angabe des Zuzugsjahrs'),pct(p.arrival_unknown_pct),
+    esc(t('nicht im Nenner der Zuzugsquote · Zensus 2021')));
+ }
+ if(p.foreign_born_census_pct!==null&&p.foreign_born_census_pct!==undefined){
+  html+=metric(t('Im Ausland geboren · Zensus 2021'),pct(p.foreign_born_census_pct),
+    esc(t('alle Altersstufen, Vollzählung — die Zahl oben zählt nur 15 bis 64 Jahre aus einer Stichprobe')));
  }
  html+='<div class="detail-note"><span>'+esc(t('NUTS-Code'))+': '+esc(p.nuts)+'. '
    +esc(EUROSTAT.caveat)+'</span></div>';
@@ -514,6 +543,9 @@ function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 
  if(state.layer==='eu_foreign_citizens')return tf('{0} ohne Pass des Wohnsitzlandes',pct(v));
  if(state.layer==='eu_employment_gap')return tf('{0} Punkte Abstand der Erwerbstätigenquoten',(v>0?'+':'')+pf.format(v));
  if(state.layer==='eu_net_migration')return tf('{0} je 1.000 Einwohner Wanderungssaldo',(v>0?'+':'')+pf.format(v));
+ if(state.layer==='eu_recent_arrivals')return tf('{0} seit 2010 zugezogen',pct(v));
+ if(state.layer==='eu_tertiary_foreign_born')return tf('{0} mit Hochschulabschluss',pct(v));
+ if(state.layer==='eu_participation')return tf('{0} Erwerbsbeteiligung',pct(v));
  if(state.layer==='region_population')return tf('{0} Einwohner · 30.11.2024',integer(v));
  if(state.layer==='region_foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='foreign_share')return tf('{0} ausländische Staatsangehörige · 30.11.2024',pct(v));if(state.layer==='mh_employment')return tf('{0} % erwerbstätig · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_under25')return tf('{0} % unter 25 · Mikrozensus 2024',pf.format(v));if(state.layer==='second_generation')return tf('{0} % zweite Generation · Mikrozensus 2024',pf.format(v));if(state.layer==='mh_change')return (v>0?'+':'')+pf.format(v)+' Punkte seit 2021';if(state.layer==='muni_under25')return tf('{0} % unter 25 · Zensus 2022',pf.format(v));if(isEstimate()){const e=state.layer==='religion_estimate'?estimateDistrict(f.properties.id):estimateMunicipality(f.properties.statistical_geo_id);const band=e?(state.layer==='religion_estimate'?e.variants[state.variant]:e):null;return tf('{0} % · Modellrechnung',pf.format(v))+(band?' · Spanne '+pf.format(band.pct_low)+'–'+pf.format(band.pct_high)+' %':'');}return tf('{0} Einwohner · ',integer(v))+(state.layer==='municipality_population'?'30.06.2024':'30.11.2024');}
 // What the institutions layer does NOT contain, stated on the page rather than left to

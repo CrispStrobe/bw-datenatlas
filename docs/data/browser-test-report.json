@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 202,
+  "check_count": 215,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -763,7 +763,47 @@
       "passed": true
     },
     {
-      "name": "the five layers do not all cite the same dataset",
+      "name": "eu_recent_arrivals: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_recent_arrivals: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_recent_arrivals: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "eu_tertiary_foreign_born: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_tertiary_foreign_born: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_tertiary_foreign_born: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "eu_participation: draws the european regions",
+      "passed": true
+    },
+    {
+      "name": "eu_participation: names its own reference year",
+      "passed": true
+    },
+    {
+      "name": "eu_participation: names the dataset it actually shows",
+      "passed": true
+    },
+    {
+      "name": "the layers do not all cite the same dataset",
+      "passed": true
+    },
+    {
+      "name": "every measure publishes its unit",
       "passed": true
     },
     {
@@ -776,6 +816,18 @@
     },
     {
       "name": "the european profile shows every measure",
+      "passed": true
+    },
+    {
+      "name": "the profile shows no percentage as a signed balance",
+      "passed": true
+    },
+    {
+      "name": "the profile pairs each rate with the native-born one",
+      "passed": true
+    },
+    {
+      "name": "the profile states how often the year of arrival is missing",
       "passed": true
     },
     {

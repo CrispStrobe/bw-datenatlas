@@ -514,7 +514,8 @@ with sync_playwright() as pw:
     # angibt — die Herkunftsangabe nannte fest lfst_r_lfsd2pwc und hätte den
     # Wanderungssaldo einer Erhebung zugeschrieben, in der er nicht vorkommt.
     EU_EBENEN=['eu_foreign_born','eu_non_eu_born','eu_foreign_citizens',
-               'eu_employment_gap','eu_net_migration']
+               'eu_employment_gap','eu_net_migration','eu_recent_arrivals',
+               'eu_tertiary_foreign_born','eu_participation']
     datensaetze=set()
     for ebene in EU_EBENEN:
         page.select_option('#layer',ebene); page.wait_for_timeout(900)
@@ -525,9 +526,17 @@ with sync_playwright() as pw:
         angabe=page.locator('#map-attribution-eu-dataset')
         check(f'{ebene}: names the dataset it actually shows',angabe.is_visible())
         datensaetze.add(angabe.inner_text())
-    check('the five layers do not all cite the same dataset',len(datensaetze)>=3)
+    check('the layers do not all cite the same dataset',len(datensaetze)>=6)
+    # Jede Größe bringt ihre Einheit mit. Ohne sie fiel ein Anteil in den
+    # Saldo-Zweig und stand als "+36,0" statt "36,0 %" im Profil.
+    check('every measure publishes its unit',page.evaluate(
+        "()=>window.ATLAS_EUROSTAT.measures.every(m=>"
+        "['percent','points','per_1000'].includes(m.unit))"))
     # Der Wanderungssaldo hat negative Werte. Fiele er auf die einfarbige Reihe
-    # zurück, wären Abwanderung und Zuwanderung derselbe Ton.
+    # zurück, wären Abwanderung und Zuwanderung derselbe Ton. Ausdrücklich noch einmal
+    # auswählen: die Schleife oben endet auf einer anderen Ebene, und die Prüfung sah
+    # sonst die Farben der zuletzt gezeichneten.
+    page.select_option('#layer','eu_net_migration'); page.wait_for_timeout(900)
     check('the net migration layer uses its own diverging colours',
           page.evaluate("()=>{const f=[...document.querySelectorAll('#map-features path')]"
                         ".map(e=>e.getAttribute('fill'));"
@@ -540,7 +549,15 @@ with sync_playwright() as pw:
     profil=page.locator('#detail-content').inner_text()
     check('the european profile shows every measure',
           all(w in profil for w in ('Im Ausland geboren','Ausländische Staatsangehörige',
-                                    'Wanderungssaldo','Erwerbslosenquote')))
+                                    'Wanderungssaldo','Erwerbslosenquote',
+                                    'Seit 2010 zugezogen','Hochschulabschluss',
+                                    'Erwerbsbeteiligung')))
+    check('the profile shows no percentage as a signed balance',
+          '+36' not in profil and '+28,7' not in profil and '+5,6' not in profil)
+    check('the profile pairs each rate with the native-born one',
+          '86,4 % / 77,8 %' in profil and '42,5 % / 28,7 %' in profil)
+    check('the profile states how often the year of arrival is missing',
+          'Ohne Angabe des Zuzugsjahrs' in profil)
     check('the european profile ranks the region against the others',
           'Rang' in profil and 'von 2' in profil)
     check('the european profile names the region, not its country',

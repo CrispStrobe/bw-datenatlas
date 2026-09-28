@@ -5,14 +5,22 @@ Die vier Regierungsbezirke sind NUTS-2-Regionen wie rund 270 andere in Europa. D
 lässt sich die Frage stellen, die eine Karte von Baden-Württemberg allein nicht
 beantwortet: liegt der Südwesten hoch oder niedrig, und im Vergleich womit?
 
-Sechs Größen, aus fünf Datensätzen, alle auf derselben Gebietsebene:
+Neun Größen, aus acht Datensätzen, alle auf derselben Gebietsebene:
 
   im Ausland geboren        Geburtsort, nicht Pass — Eingebürgerte zählen mit
   außerhalb der EU geboren  dieselbe Quelle, engere Abgrenzung
   ausländische Staatsang.   Pass, nicht Geburtsort — die Größe des übrigen Atlas
   Erwerbstätigenquote       Einheimische und im Ausland Geborene, und die Lücke
   Erwerbslosenquote         dieselbe Gegenüberstellung
+  Erwerbsbeteiligung        trennt "hat keine Arbeit" von "sucht keine"
+  Hochschulabschluss        und der Gegenpol: höchstens Hauptschulabschluss
+  seit 2010 zugezogen       Aufenthaltsdauer aus dem Zensus 2021
   Wanderungssaldo           je 1.000 Einwohner, aus der Bevölkerungsfortschreibung
+
+Warum Bildung und Aufenthaltsdauer dazugehören: an der Ebene mit dem Abstand der
+Erwerbstätigenquoten steht, dass Alter, Bildung, Aufenthaltsdauer und
+Arbeitsmarktzugang ungetrennt darin stecken. Zwei dieser vier lassen sich auftrennen,
+und dann sollten sie es auch.
 
 Warum beides, Geburtsort UND Pass: der Atlas misst sonst überall den Pass. Nur mit
 lfst_r_lfsd2pwn steht daneben eine europäische Zahl, die dasselbe meint. Der
@@ -60,6 +68,18 @@ ABFRAGEN = {
     'une': ('lfst_r_lfur2gac', {'sex': 'T', 'age': 'Y15-74', 'unit': 'PC',
                                 'c_birth': ['NAT', 'FOR']}),
     'mig': ('tgs00099', {'indic_de': 'CNMIGRATRT'}),
+    # Der Zensus hat nur einen Stand; lastTimePeriod liefert ihn zwar auch, aber das
+    # Jahr festzuschreiben sagt, dass hier keine Fortschreibung kommt.
+    'arr': ('cens_21arco_r2', {'sex': 'T', 'unit': 'NR', 'isco08': 'TOTAL',
+                               'c_birth': ['TOTAL', 'FOR'],
+                               'y_arriv': ['TOTAL', 'Y2010-2014', 'Y2015-2019',
+                                           'Y2020-2021', 'UNK'],
+                               'time': '2021'}),
+    'edu': ('edat_lfs_9917', {'sex': 'T', 'age': 'Y25-64', 'unit': 'PC',
+                              'isced11': ['ED5-8', 'ED0-2'],
+                              'c_birth': ['FOR', 'NAT']}),
+    'act': ('lfst_r_lfp2actrc', {'sex': 'T', 'age': 'Y20-64', 'unit': 'PC',
+                                 'isced11': 'TOTAL', 'c_birth': ['FOR', 'NAT']}),
 }
 
 # Was am Ende je Region in der Datei steht. Die Reihenfolge ist die der Anzeige.
@@ -81,7 +101,31 @@ KENNZAHLEN = [
     ('net_migration_per_1000', 'mig', 'Wanderungssaldo je 1.000 Einwohner',
      'Zuzüge minus Fortzüge einschließlich statistischer Anpassung, je 1.000 '
      'Einwohner. Aus der Bevölkerungsfortschreibung, keine Stichprobe.'),
+    ('recent_arrivals_pct', 'arr', 'Seit 2010 zugezogen',
+     'Anteil derer, die 2010 oder später eingereist sind, an den im Ausland '
+     'Geborenen mit bekanntem Zuzugsjahr. Ein hoher Wert heißt junge Zuwanderung, '
+     'ein niedriger eine lange ansässige Bevölkerung. Zensus 2021, alle Altersstufen, '
+     'Vollzählung statt Stichprobe.'),
+    ('tertiary_foreign_born_pct', 'edu', 'Hochschulabschluss der im Ausland Geborenen',
+     'Anteil mit tertiärem Abschluss (ISCED 5–8) an den im Ausland Geborenen von 25 '
+     'bis 64 Jahren in Privathaushalten.'),
+    ('participation_foreign_born_pct', 'act', 'Erwerbsbeteiligung der im Ausland Geborenen',
+     'Anteil der Erwerbspersonen — erwerbstätig oder erwerbslos und suchend — an den '
+     'im Ausland Geborenen von 20 bis 64 Jahren. Wer weder arbeitet noch sucht, zählt '
+     'nicht mit; das unterscheidet diese Größe von der Erwerbslosenquote.'),
 ]
+
+
+# Die Einheit gehört zur Größe und wird mit ihr veröffentlicht. Sie nur an der
+# Kartenebene zu führen reicht nicht: nicht jede Größe hat eine eigene Ebene, und die
+# Erwerbslosenquote stand im Profil deshalb als Saldo da — "+5,6" statt "5,6 %".
+EINHEITEN = {
+    'foreign_born_pct': 'percent', 'non_eu_born_pct': 'percent',
+    'foreign_citizen_pct': 'percent', 'employment_gap_pp': 'points',
+    'unemployment_foreign_born_pct': 'percent', 'net_migration_per_1000': 'per_1000',
+    'recent_arrivals_pct': 'percent', 'tertiary_foreign_born_pct': 'percent',
+    'participation_foreign_born_pct': 'percent',
+}
 
 
 def hole(url: str) -> bytes:
@@ -91,11 +135,21 @@ def hole(url: str) -> bytes:
 
 
 def frage(code: str, filter: dict, jahr: str | None) -> dict:
+    """Ein Datensatz, auf eine Zelle je Region eingeengt.
+
+    Trägt der Filter selbst ein 'time', gilt dieses und nicht das der Kommandozeile:
+    der Zensus hat einen einzigen Stand, und ein anderes Jahr zu verlangen liefert
+    für ihn nichts.
+    """
     p = [('format', 'JSON')]
+    eigenes = filter.get('time')
     for k, v in filter.items():
+        if k == 'time':
+            continue
         for einzeln in (v if isinstance(v, list) else [v]):
             p.append((k, einzeln))
-    p.append(('time', jahr) if jahr else ('lastTimePeriod', '1'))
+    p.append(('time', eigenes) if eigenes
+             else ('time', jahr) if jahr else ('lastTimePeriod', '1'))
     return json.loads(hole(API + code + '?' + urllib.parse.urlencode(p)))
 
 
@@ -138,7 +192,11 @@ def echte_region(code: str) -> bool:
     Aggregat in der Rangliste, hätte es einen Rang zwischen Regionen, und die Aussage
     "Rang 23 von 274" wäre um eine Zeile falsch.
     """
-    return len(code) == 4 and code[:2] not in ('EA', 'EU')
+    # ELZZ und die übrigen ...ZZ sind "Extra-Regio": Hoheitsgebiet ohne Fläche,
+    # Botschaften und Schiffe. Kein Ort, an dem jemand wohnt, und keine Fläche, auf
+    # der etwas zu zeichnen wäre.
+    return (len(code) == 4 and code[:2] not in ('EA', 'EU')
+            and not code.endswith('ZZ'))
 
 
 def teile(zaehler, nenner):
@@ -183,9 +241,44 @@ def main() -> None:
     erwerbslos_nat = schicht('une', c_birth='NAT')
     erwerbslos_for = schicht('une', c_birth='FOR')
     wanderung = schicht('mig')
+    zensus_alle = schicht('arr', c_birth='TOTAL', y_arriv='TOTAL')
+    zensus_fremd = schicht('arr', c_birth='FOR', y_arriv='TOTAL')
+    zensus_unbekannt = schicht('arr', c_birth='FOR', y_arriv='UNK')
+    zuzug = {}
+    for band in ('Y2010-2014', 'Y2015-2019', 'Y2020-2021'):
+        for code, wert in schicht('arr', c_birth='FOR', y_arriv=band).items():
+            if wert is not None:
+                zuzug[code] = zuzug.get(code, 0) + wert
+    hoch_fremd = schicht('edu', c_birth='FOR', isced11='ED5-8')
+    hoch_eigen = schicht('edu', c_birth='NAT', isced11='ED5-8')
+    gering_fremd = schicht('edu', c_birth='FOR', isced11='ED0-2')
+    beteiligung_fremd = schicht('act', c_birth='FOR')
+    beteiligung_eigen = schicht('act', c_birth='NAT')
+
+    def seit_2010(code):
+        """Anteil der seit 2010 Zugezogenen an den im Ausland Geborenen.
+
+        Der Nenner lässt die Fälle ohne Zuzugsjahr weg, statt sie stillschweigend zu
+        den länger Ansässigen zu schlagen. Ihr Anteil steht als eigene Zahl daneben,
+        damit sichtbar bleibt, wie belastbar der Wert ist.
+
+        Nicht gerechnet wird mit der Kategorie "1979 und früher oder nie im Ausland
+        gewohnt": sie wirft zwei Gruppen zusammen, die nichts miteinander zu tun
+        haben, und taugt deshalb nicht als Gegenstück.
+        """
+        gesamt, unbekannt = zensus_fremd.get(code), zensus_unbekannt.get(code) or 0
+        neu = zuzug.get(code)
+        if not gesamt or neu is None or gesamt - unbekannt <= 0:
+            return None
+        return round(100 * neu / (gesamt - unbekannt), 1)
 
     regionen = {}
-    for code in roh['pwc']['dimension']['geo']['category']['index']:
+    alle_codes = {}
+    for kuerzel in ABFRAGEN:
+        kat = roh[kuerzel]['dimension']['geo']['category']
+        for code in kat['index']:
+            alle_codes.setdefault(code, kat['label'].get(code, code))
+    for code in alle_codes:
         if not echte_region(code):
             continue
         werte = {
@@ -198,18 +291,31 @@ def main() -> None:
             'unemployment_native_pct': erwerbslos_nat.get(code),
             'unemployment_foreign_born_pct': erwerbslos_for.get(code),
             'net_migration_per_1000': wanderung.get(code),
+            'recent_arrivals_pct': seit_2010(code),
+            'arrival_unknown_pct': teile(zensus_unbekannt.get(code),
+                                         zensus_fremd.get(code)),
+            'foreign_born_census_pct': teile(zensus_fremd.get(code),
+                                             zensus_alle.get(code)),
+            'tertiary_foreign_born_pct': hoch_fremd.get(code),
+            'tertiary_native_pct': hoch_eigen.get(code),
+            'tertiary_gap_pp': differenz(hoch_eigen.get(code), hoch_fremd.get(code)),
+            'low_education_foreign_born_pct': gering_fremd.get(code),
+            'participation_foreign_born_pct': beteiligung_fremd.get(code),
+            'participation_native_pct': beteiligung_eigen.get(code),
+            'participation_gap_pp': differenz(beteiligung_eigen.get(code),
+                                              beteiligung_fremd.get(code)),
         }
         # Eine Region ohne jede der sechs Größen ist kein Eintrag, sondern ein Loch.
-        if all(werte[name] is None for name, *_ in KENNZAHLEN):
+        if all(werte.get(name) is None for name, *_ in KENNZAHLEN):
             continue
         regionen[code] = {
             'nuts': code, 'country': code[:2],
-            'name': roh['pwc']['dimension']['geo']['category']['label'].get(code, code),
+            'name': alle_codes[code],
             'population_ths': gesamt.get(code),
             'foreign_born_ths': fremd.get(code),
             **werte,
         }
-    print(f'{len(regionen)} NUTS-2-Regionen mit mindestens einer der sechs Größen')
+    print(f'{len(regionen)} NUTS-2-Regionen mit mindestens einer der Größen')
     for name, quelle, titel, _ in KENNZAHLEN:
         da = sum(1 for r in regionen.values() if r[name] is not None)
         print(f'  {name:32s} {da:4d} Regionen · {jahre[quelle]}')
@@ -254,15 +360,18 @@ def main() -> None:
     doc = {
         'type': 'eurostat_nuts2',
         'schema_version': '2.0',
-        'what_this_is': ('Sechs Vergleichsgrößen je NUTS-2-Region. Geburtsort und '
+        'what_this_is': ('Neun Vergleichsgrößen je NUTS-2-Region. Geburtsort und '
                          'Staatsangehörigkeit stehen nebeneinander und sind nicht '
                          'dasselbe: wer eingebürgert ist, zählt beim Geburtsort mit '
                          'und beim Pass nicht.'),
-        'caveat': ('Fünf der sechs Größen stammen aus der Arbeitskräfteerhebung, also '
+        'caveat': ('Sieben der neun Größen stammen aus der Arbeitskräfteerhebung, also '
                    'aus einer Stichprobe. Für kleine Regionen ist die Unsicherheit '
-                   'entsprechend größer; Eurostat weist sie je Region nicht aus. Der '
-                   'Wanderungssaldo kommt aus der Bevölkerungsfortschreibung.'),
+                   'entsprechend größer; Eurostat weist sie je Region nicht aus. Keine '
+                   'Stichproben sind der Wanderungssaldo, der aus der '
+                   'Bevölkerungsfortschreibung kommt, und die Zuzugsquote aus dem '
+                   'Zensus 2021.'),
         'measures': [{'key': name, 'title': titel, 'definition': erklaerung,
+                      'unit': EINHEITEN[name],
                       'dataset': ABFRAGEN[quelle][0],
                       # Der amtliche Titel des Datensatzes, wie Eurostat ihn führt —
                       # nicht unsere Bezeichnung. Die Quellenangabe muss auffindbar
@@ -272,8 +381,10 @@ def main() -> None:
                                       + ABFRAGEN[quelle][0] + '/default/table'),
                       'reference_year': jahre[quelle],
                       'selection': ABFRAGEN[quelle][1],
-                      'available_regions': sum(1 for r in regionen.values()
-                                               if r[name] is not None)}
+                      'available_regions': sum(
+                          1 for k, r in regionen.items()
+                          if k in {m['properties']['nuts'] for m in merkmale}
+                          and r[name] is not None)}
                      for name, quelle, titel, erklaerung in KENNZAHLEN],
         'source': 'Eurostat',
         'geometry_source': 'Eurostat GISCO, NUTS 2024, 1:20 Mio.',
@@ -289,8 +400,9 @@ def main() -> None:
         'window.ATLAS_EUROSTAT=' + json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + ';\n',
         encoding='utf-8')
 
+    gezeigt = {m['properties']['nuts'] for m in merkmale}
     for name, quelle, titel, _ in KENNZAHLEN:
-        da = [r for r in regionen.values() if r[name] is not None]
+        da = [r for k, r in regionen.items() if k in gezeigt and r[name] is not None]
         if not da:
             continue
         reihe = sorted(da, key=lambda r: r[name], reverse=True)
