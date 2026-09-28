@@ -498,8 +498,8 @@ function euEbenenVerdrahten(){
  const nach={};for(const m of EUROSTAT.measures)nach[m.key]=m;
  for(const [name,l] of Object.entries(layers)){
   const m=l.euMeasure&&nach[l.euMeasure];if(!m)continue;
-  l.dateArgs=[m.reference_year,integer(m.available_regions)];
-  l.sourceInfo={title:m.title+' ('+m.dataset+')',publisher:'Eurostat',
+  l.dateArgs=[m.reference_year,integer(m.available_regions)];l.euMeta=m;
+  l.sourceInfo={title:(m.dataset_label||m.title)+' ('+m.dataset+')',publisher:'Eurostat',
    publication_period:String(m.reference_year),url:m.dataset_url,
    limitation:m.definition+' '+EUROSTAT.caveat};
  }
@@ -950,9 +950,11 @@ function zeichneUmriss(geometry,klasse){
   if(a)a.hidden=euLayer; if(e)e.hidden=!euLayer;
   // Fünf Ebenen, fünf Datensätze: die Angabe nannte fest lfst_r_lfsd2pwc und hätte
   // damit den Wanderungssaldo einer Erhebung zugeschrieben, in der er nicht steht.
-  if(d){const q=euLayer?sourceFor(l):null;d.hidden=!q;
-   if(q)d.innerHTML=esc(t('Datensatz'))+': <a href="'+esc(q.url)+'" target="_blank" '
-    +'rel="noreferrer">'+esc(q.title)+'</a>';}}
+  // Unsere Bezeichnung übersetzt, die Kennung nicht: lfst_r_lfsd2pwc heißt in jeder
+  // Sprache so, sonst fände sie niemand wieder.
+  if(d){const m=euLayer?l.euMeta:null;d.hidden=!m;
+   if(m)d.innerHTML=esc(t('Datensatz'))+': <a href="'+esc(m.dataset_url)+'" target="_blank" '
+    +'rel="noreferrer">'+esc(t(m.title))+' ('+esc(m.dataset)+')</a>';}}
  const features=euLayer?(EUROSTAT?EUROSTAT.features:[])
    :state.layer==='religion_state'||pointLayer?[G.state]
    :regionLayer?(REG?REG.features:[])

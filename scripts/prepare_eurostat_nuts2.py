@@ -165,7 +165,8 @@ def main() -> None:
     for kuerzel, (code, filter) in ABFRAGEN.items():
         antwort = frage(code, filter, args.jahr)
         roh[kuerzel] = antwort
-        print(f'  {code:18s} {len(antwort.get("value", {})):6d} Werte')
+        print(f'  {code:18s} {len(antwort.get("value", {})):6d} Werte · '
+              f'{(antwort.get("label") or "")[:56]}')
 
     def schicht(kuerzel, **auswahl):
         jahr, werte = nach_geo(roh[kuerzel], auswahl)
@@ -263,6 +264,10 @@ def main() -> None:
                    'Wanderungssaldo kommt aus der Bevölkerungsfortschreibung.'),
         'measures': [{'key': name, 'title': titel, 'definition': erklaerung,
                       'dataset': ABFRAGEN[quelle][0],
+                      # Der amtliche Titel des Datensatzes, wie Eurostat ihn führt —
+                      # nicht unsere Bezeichnung. Die Quellenangabe muss auffindbar
+                      # machen, was abgerufen wurde, und dafür zählt der fremde Titel.
+                      'dataset_label': roh[quelle].get('label'),
                       'dataset_url': ('https://ec.europa.eu/eurostat/databrowser/view/'
                                       + ABFRAGEN[quelle][0] + '/default/table'),
                       'reference_year': jahre[quelle],
