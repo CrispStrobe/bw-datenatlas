@@ -10,3 +10,7 @@ test-results/
 # (enthält u. a. unveränderte Original-PDFs, die nicht weiterverteilt werden)
 muslime_bw_daten_v4/
 .vercel
+.env*.local
+
+# Arbeitsnotizen, nicht versioniert
+CLAUDE.md

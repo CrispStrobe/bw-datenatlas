@@ -133,7 +133,11 @@ with sync_playwright() as pw:
     # Socio-economic context: published beside the model, never inside it.
     page.select_option('#layer','mh_employment')
     check('employment layer covers all 44 districts',page.evaluate('[...document.querySelectorAll("#map-features path")].filter(p=>!p.getAttribute("fill").includes("url")).length')==44)
-    check('employment layer disclaims religion','Religionszugehörigkeit' in page.locator('#map-note').inner_text())
+    # Geprüft wird, was diese Ebene wirklich einschränkt: sie speist keine
+    # Modellrechnung. Der frühere Zusatz verneinte eine Religionsangabe, die auf
+    # einer Erwerbstätigenquote ohnehin niemand erwartet.
+    check('employment layer says it feeds no model',
+          'keine Modellrechnung' in page.locator('#map-note').inner_text())
     page.locator('#map-features path[data-id="08111"]').click()
     ctx=page.locator('#detail-content').inner_text()
     check('profile shows employment for both groups','Erwerbstätige ab 15' in ctx and 'Migrationshintergrund' in ctx)
@@ -147,7 +151,8 @@ with sync_playwright() as pw:
     check('profile breaks down nationalities','Staatsangehörigkeiten' in nat)
     check('largest nationality shown with its share','Türkei' in nat)
     check('named nationalities are declared partial','der Rest auf alle übrigen' in nat)
-    check('nationality block disclaims religion','Staatsangehörigkeit ist keine Religionszugehörigkeit' in nat)
+    check('nationality block names who is missing from the figures',
+          'Eingebürgerte' in nat and 'deutschen Pass' in nat)
     full=page.locator('.nationality-bars .cohort-row').count()
     page.select_option('#layer','district_population')
     page.locator('#map-features path[data-id="08111"]').click()

@@ -62,7 +62,7 @@ const approx=v=>'≈ '+nf.format(Math.round(v/1000)*1000);
 // Muss zur Option mit "selected" in index.html passen: updateLayer() liest beim
 // Start den Wert des Auswahlfelds und überschreibt diesen hier. Stimmen sie nicht
 // überein, gilt stillschweigend das HTML.
-const state={layer:'district_population',selected:{type:'state',id:'08'},variant:'migration_background',origin:'de_origins',allOrigins:false,areaPage:0,researchPage:0,researchRows:null,onlyLandtag:false,azrIndicator:'turkey',flowArea:'countries',compositionDetail:false,flowRange:'years',instOrganisation:'',instSource:'',zoom:{x:0,y:0,w:760,h:700}};
+const state={layer:'district_population',selected:{type:'state',id:'08'},variant:'migration_background',origin:'de_origins',allOrigins:false,areaPage:0,researchPage:0,researchRows:null,onlyLandtag:false,azrIndicator:'recruitment_states',flowArea:'countries',compositionDetail:false,flowRange:'years',instOrganisation:'',instSource:'',zoom:{x:0,y:0,w:760,h:700}};
 const districts=new Map(D.districts.map(r=>[r.id,r]));
 const municipalities=new Map(D.municipalities.map(r=>[r.geo_id,r]));
 const palette=['#deedf0','#b5d8dd','#83b9c4','#4d929f','#236a7b','#113f55'];
@@ -71,34 +71,34 @@ const regionColors={'Türkei':'#12596b','Naher Osten':'#358597','Südosteuropa':
 // D.sources stammt aus der Forschungssammlung und kennt nur deren Quellen. Ebenen aus
 // später hinzugekommenen Datensätzen bringen ihre Quelle selbst mit; ohne diesen Ausweg
 // wirft der SVG-Export auf ihnen, weil er D.sources[l.source] ohne Prüfung liest.
-const AZR_SOURCE={title:'Migration, Integration, Regionen — Ausländerzentralregister je Kreis',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://service.destatis.de/DE/karten/migration_integration_regionen.html',limitation:'Anteile beziehen sich auf die ausländische Bevölkerung des Kreises, nicht auf seine Einwohner. Staatsangehörigkeit ist keine Religionszugehörigkeit.'};
+const AZR_SOURCE={title:'Migration, Integration, Regionen — Ausländerzentralregister je Kreis',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://service.destatis.de/DE/karten/migration_integration_regionen.html',limitation:'Anteile beziehen sich auf die ausländische Bevölkerung des Kreises, nicht auf seine Einwohner.'};
 function sourceFor(layer){return D.sources[layer.source]||layer.sourceInfo||AZR_SOURCE;}
 const layers={
  religion_state:{title:'Muslimische Bevölkerung · Landeswert',badge:'Veröffentlichte Modellspanne',date:'Bezugsjahr 2025 · veröffentlicht 2026',source:'bamf_fb55',note:'Die einheitliche Landesfläche bedeutet nicht, dass jeder Kreis denselben Muslimanteil hat. Für Kreise und Gemeinden fehlen entsprechende Quellendaten.'},
 
  religion_estimate_18:{title:'Muslimische Bevölkerung · Modell je Kreis, 18 Herkunftsgruppen',badge:'Modellrechnung',date:'Herkunft 31.12.2025 · 44 Kreise',source:'bamf_fb55',thresholds:[6,8,10,13,16],unit:'percent',note:'Dieselbe Methode wie das Modell daneben, mit allen 18 Herkunftsgruppen des BAMF-Berichts statt der acht, die der Landesbericht je Kreis benennt. Die Herkunftsdaten erklären damit 96 statt 83 Prozent der veröffentlichten Landessumme; der Rest, der nach einem Ersatzschlüssel verteilt werden muss, schrumpft von einem Sechstel auf unter vier Prozent. Beide Modelle stehen nebeneinander, weil der Unterschied zwischen ihnen die Unsicherheit sichtbar macht, die in beiden steckt: Er beträgt im Mittel 0,46 Prozentpunkte und erreicht in Heidelberg 1,7. Für sieben Gruppen gibt es keine eigene Einbürgerungsquote; sie übernehmen die außereuropäische Sammelquote, was in der Datei je Gruppe vermerkt ist.'},
 
- foreign_share_2025:{title:'Ausländische Staatsangehörige · Kreisanteil 2025',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'Staatsangehörigkeit ist keine Religionszugehörigkeit.'},thresholds:[10,15,20,25,30],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit, Stichtag 31.12.2025. Dieselbe Größe wie die Ebene für 2024, ein Jahr später und vom Bund statt vom Land fortgeschrieben. Der Unterschied ist klein: Der Median der Kreise liegt in beiden Jahren bei 17,2 Prozent, die größte Abweichung eines Kreises beträgt 0,4 Prozentpunkte. Beide Ebenen stehen nebeneinander, damit das prüfbar ist und nicht behauptet werden muss.'},
+ foreign_share_2025:{title:'Ausländische Staatsangehörige · Kreisanteil 2025',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und stehen in diesen Zahlen nicht.'},thresholds:[10,15,20,25,30],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit, Stichtag 31.12.2025. Dieselbe Größe wie die Ebene für 2024, ein Jahr später und vom Bund statt vom Land fortgeschrieben. Der Unterschied ist klein: Der Median der Kreise liegt in beiden Jahren bei 17,2 Prozent, die größte Abweichung eines Kreises beträgt 0,4 Prozentpunkte. Beide Ebenen stehen nebeneinander, damit das prüfbar ist und nicht behauptet werden muss.'},
 
  foreign_under25:{title:'Unter 25-Jährige unter den Ausländern · Kreisanteil',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_12411',sourceInfo:{title:'Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B',limitation:'„Ausländisch“ heißt ohne deutschen Pass.'},thresholds:[20,23,26,29,32],unit:'percent',note:'Anteil der unter 25-Jährigen an der ausländischen Bevölkerung des Kreises. Landesweit sind das 24,6 Prozent — bei der deutschen Bevölkerung 24,9 Prozent, also praktisch dasselbe. Das ist zum Teil ein Artefakt der Zählweise: Kinder von Zugewanderten, die eingebürgert oder als Deutsche geboren sind, zählen auf der deutschen Seite und fehlen auf der ausländischen. Ein Vergleich der Altersstruktur von Herkunftsgruppen ist das ausdrücklich nicht.'},
 
- municipal_foreign_share:{title:'Ausländische Staatsangehörige · Gemeindeanteil',badge:'Amtliche Bevölkerungsdaten',date:'2025 · 1.101 Gemeinden',source:'stala_gemeinden_2024_06',sourceInfo:{title:'Anteil Ausländerinnen und Ausländer je Gemeinde 2025',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2026',url:'https://www.statistik-bw.de/leben-und-arbeiten/bevoelkerung-und-gebiet/migration-und-nationalitaet/',limitation:'Staatsangehörigkeit ist keine Religionszugehörigkeit und keine Herkunft.'},thresholds:[6,9,12,16,22],unit:'percent',note:'Anteil der Einwohnerinnen und Einwohner ohne deutsche Staatsangehörigkeit, je Gemeinde. Eingebürgerte und ihre in Deutschland geborenen Kinder zählen als Deutsche und sind hier unsichtbar — in den lange ansässigen Gemeinschaften ist das die Mehrheit. Eine Gemeinde mit niedrigem Ausländeranteil kann eine lange ansässige Zuwanderungsbevölkerung haben. Dies ist gemessen, nicht modelliert: die einzige direkt erhobene Größe, die der Atlas auf Gemeindeebene neben die Modellrechnung stellen kann.'},
+ municipal_foreign_share:{title:'Ausländische Staatsangehörige · Gemeindeanteil',badge:'Amtliche Bevölkerungsdaten',date:'2025 · 1.101 Gemeinden',source:'stala_gemeinden_2024_06',sourceInfo:{title:'Anteil Ausländerinnen und Ausländer je Gemeinde 2025',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2026',url:'https://www.statistik-bw.de/leben-und-arbeiten/bevoelkerung-und-gebiet/migration-und-nationalitaet/',limitation:'Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und stehen in diesen Zahlen nicht.'},thresholds:[6,9,12,16,22],unit:'percent',note:'Anteil der Einwohnerinnen und Einwohner ohne deutsche Staatsangehörigkeit, je Gemeinde. Eingebürgerte und ihre in Deutschland geborenen Kinder zählen als Deutsche und sind hier unsichtbar — in den lange ansässigen Gemeinschaften ist das die Mehrheit. Eine Gemeinde mit niedrigem Ausländeranteil kann eine lange ansässige Zuwanderungsbevölkerung haben. Dies ist gemessen, nicht modelliert: die einzige direkt erhobene Größe, die der Atlas auf Gemeindeebene neben die Modellrechnung stellen kann.'},
 
- azr_recruitment:{title:'Aus den Anwerbestaaten · Anteil an den Ausländern',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_azr_regionen',sourceInfo:AZR_SOURCE,sourceInfo:AZR_SOURCE,sourceInfo:AZR_SOURCE,thresholds:[30,35,40,45,50],unit:'percent',note:'Anteil der ausländischen Bevölkerung des Kreises, der aus den Gastarbeiter-Anwerbestaaten stammt — Türkei, Italien, Griechenland, Spanien, Portugal, Marokko, Tunesien, ehemaliges Jugoslawien. Der Nenner ist die ausländische Bevölkerung des Kreises, nicht seine Einwohnerschaft. Staatsangehörigkeit ist keine Religionszugehörigkeit.'},
+ azr_recruitment:{title:'Aus den Anwerbestaaten · Anteil an den Ausländern',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_azr_regionen',sourceInfo:AZR_SOURCE,sourceInfo:AZR_SOURCE,sourceInfo:AZR_SOURCE,thresholds:[30,35,40,45,50],unit:'percent',note:'Anteil der ausländischen Bevölkerung des Kreises, der aus den Gastarbeiter-Anwerbestaaten stammt — Türkei, Italien, Griechenland, Spanien, Portugal, Marokko, Tunesien, ehemaliges Jugoslawien. Der Nenner ist die ausländische Bevölkerung des Kreises, nicht seine Einwohnerschaft.'},
 
  azr_turkey:{title:'Türkische Staatsangehörige · Anteil an den Ausländern',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_azr_regionen',thresholds:[6,8,10,13,16],unit:'percent',note:'Anteil der ausländischen Bevölkerung des Kreises mit türkischer Staatsangehörigkeit. Nicht die Zahl der Menschen türkischer Herkunft: Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und fehlen vollständig. Bundesweiter Median: 7,5 Prozent.'},
 
  azr_long_resident:{title:'Seit 25 Jahren oder länger hier · Anteil an den Ausländern',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 44 Kreise',source:'destatis_azr_regionen',thresholds:[18,22,26,30,34],unit:'percent',note:'Anteil der ausländischen Bevölkerung des Kreises, der seit mindestens 25 Jahren in Deutschland lebt. Auch diese Zahl zählt nur Menschen ohne deutschen Pass — gerade bei den lange Ansässigen fehlen die Eingebürgerten, sodass die Verweildauer der Herkunftsgruppen eher unterschätzt wird. Bundesweiter Median: 17,4 Prozent.'},
 
  foreign_share:{title:'Ausländische Staatsangehörige · Kreisanteil',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[10,15,20,25,30],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit. Selbst berechnet aus gleichzeitigen amtlichen Beständen. Keine Aussage über Religion, Geburtsland oder Herkunft der Eltern.'},
- district_population:{title:'Bevölkerung insgesamt · Kreise',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[150000,250000,350000,500000,750000],unit:'persons',note:'Absolute Einwohnerzahl, keine Bevölkerungsdichte und keine Religionsstatistik. Bevölkerung der Gemeinden wird mit einem anderen Stichtag ausgewiesen.'},
+ district_population:{title:'Bevölkerung insgesamt · Kreise',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[150000,250000,350000,500000,750000],unit:'persons',note:'Absolute Einwohnerzahl, keine Bevölkerungsdichte. Bevölkerung der Gemeinden wird mit einem anderen Stichtag ausgewiesen.'},
  municipality_population:{title:'Bevölkerung insgesamt · Gemeinden',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.06.2024 · 1.101 statistische Gemeinden',source:'stala_gemeinden_2024_06',thresholds:[2000,5000,10000,20000,50000],unit:'persons',note:'Einwohnerzahl zum 30.06.2024. Grau schraffiert: kein zugeordneter statistischer Wert. Amtliche Gemeindeschlüssel werden beim Geodatenaufbau über Namen innerhalb desselben Kreises zugeordnet; unklare Treffer bleiben offen.'},
  institutions:{title:'Islamische und alevitische Einrichtungen',badge:'Selbstveröffentlicht',date:'Ortsebene · eigene Verzeichnisse der Verbände, Kommunen, Drucksachen und OpenStreetMap · Stand 2026',source:'bamf_fb55',unit:'points',note:'Punkte sind Einrichtungen, keine Bevölkerungszahlen. Jeder Punkt liegt in der Ortsmitte seiner Gemeinde und bezeichnet kein Gebäude: Dieser Atlas führt keine Anschriftenliste zusammen. Belegt ist der Ort, und jeder Eintrag verlinkt die Quelle, auf der die Anschrift steht: die eigene Seite der Einrichtung, das Verzeichnis ihres Verbands, ein Vereinsverzeichnis der Stadt, eine Landtagsdrucksache oder OpenStreetMap. Gebetsstätten ohne Verband stammen überwiegend aus OpenStreetMap (© OpenStreetMap-Mitwirkende, ODbL), das hier auch als zweiter, unabhängiger Beleg dient. Aufgenommen ist, was öffentlich bekannt und öffentlich belegt ist. Eine Verbandszugehörigkeit wird nur genannt, wenn eine Quelle sie selbst behauptet, und dann mit Urheber und Datum; sonst steht die Einrichtung ohne Verband. Keine personenbezogenen Angaben. Aus Einrichtungen lässt sich keine Zahl von Gläubigen ableiten.'},
  muni_under25:{title:'Unter 25-Jährige · Gemeinden',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'bamf_fb55',thresholds:[21,23,25,27,29],unit:'percent',note:'Anteil der unter 25-Jährigen an der Bevölkerung, aus dem Zensus 2022. Anders als die Kreisebene aus dem Mikrozensus ist dies eine Vollerhebung und für alle Gemeinden vorhanden. Keine Angabe zur Religionszugehörigkeit und keine Größe der Modellrechnung.'},
  mh_change:{title:'Veränderung des Migrationshintergrunds · 2021 bis 2025',badge:'Amtliche Erhebung',date:'Mikrozensus 2021 bis 2025 · 44 Kreise',source:'stala_pm_2025',thresholds:[0,2,4,6,8],unit:'points',note:'Veränderung des Anteils der Bevölkerung mit Migrationshintergrund in Prozentpunkten über den gesamten Zeitraum. Stichprobenerhebung: einzelne Jahre schwanken stärker als die Entwicklung. Die Modellrechnung zur muslimischen Bevölkerung wird nicht in die Vergangenheit fortgeschrieben.'},
  second_generation:{title:'Zweite Generation mit deutschem Pass',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[27,29,31,33,35],unit:'percent',note:'Anteil der hier geborenen Menschen mit deutschem Pass an der Bevölkerung mit Migrationshintergrund. Genau diese Menschen fehlen in der Ausländerstatistik – deshalb braucht die Modellrechnung eine Korrektur um Eingebürgerte und Nachkommen. Keine Angabe zur Religionszugehörigkeit.'},
  mh_under25:{title:'Unter 25-Jährige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[29,31,33,35,37],unit:'percent',note:'Anteil der unter 25-Jährigen an der Bevölkerung mit Migrationshintergrund. Schraffiert: die Quelle hält zu viele Altersgruppen geheim, um einen belastbaren Anteil zu bilden. Migrationshintergrund ist eine weit größere Gruppe als die modellierte muslimische Bevölkerung; dies ist nicht deren Altersgliederung.'},
- mh_employment:{title:'Erwerbstätige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · ab 15 Jahren · 44 Kreise',source:'stala_pm_2025',thresholds:[60,63,66,69,72],unit:'percent',note:'Anteil der Erwerbstätigen an der Bevölkerung ab 15 Jahren mit Migrationshintergrund. Stichprobenerhebung. Keine Erwerbslosenquote, weil die Quelle die Erwerbslosen in fast allen Kreisen geheim hält. Dies ist kein Merkmal der Religionszugehörigkeit und geht nicht in die Modellrechnung ein.'},
+ mh_employment:{title:'Erwerbstätige · Bevölkerung mit Migrationshintergrund',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · ab 15 Jahren · 44 Kreise',source:'stala_pm_2025',thresholds:[60,63,66,69,72],unit:'percent',note:'Anteil der Erwerbstätigen an der Bevölkerung ab 15 Jahren mit Migrationshintergrund. Stichprobenerhebung. Keine Erwerbslosenquote, weil die Quelle die Erwerbslosen in fast allen Kreisen geheim hält. Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein.'},
  religion_estimate:{title:'Muslimische Bevölkerung · Modell je Kreis',badge:'Modellrechnung',date:'Landessumme 2025 · Herkunft 31.12.2024 · 44 Kreise',source:'bamf_fb55',thresholds:[5,7.5,10,12.5,15],unit:'percent',note:'Modellrechnung, keine Messung. Die veröffentlichte Landessumme wird nach Herkunft verteilt: ausländische Bevölkerung je Staatsangehörigkeit mal bundesweitem muslimischen Anteil dieser Herkunftsgruppe. Es gibt keine amtliche Religionsstatistik je Kreis.'},
  religion_estimate_municipal:{title:'Muslimische Bevölkerung · Modell je Gemeinde',badge:'Modellrechnung',date:'Verteilung des Kreiswerts · Herkunftsmuster 2022 · 1.101 Gemeinden',source:'bamf_fb55',thresholds:[5,7.5,10,12.5,15],unit:'percent',note:'Modellrechnung, keine Messung. Die Gemeindewerte verteilen den jeweiligen Kreiswert. Der türkische und bosnische Anteil folgt dem im Zensus gemessenen Siedlungsmuster, der Rest der Einwanderungsgeschichte je Gemeinde; für Syrien, Afghanistan, Irak und Kosovo gibt es keine eigenen Gemeindedaten. Die Spannen sind entsprechend breit.'}
 };
@@ -111,7 +111,10 @@ function toCSV(rows){if(!rows.length)return '';const keys=Object.keys(rows[0]);c
 // Die erste Spalte ist der Name, alle weiteren sind Zahlen. Die Zellen bekamen dafür
 // schon die Klasse "numeric", die Überschriften nicht — linksbündige Köpfe über
 // rechtsbündigen Zahlen, in jeder Tabelle der Seite.
-function table(headers,rows,caption=''){return `<table>${caption?`<caption>${esc(caption)}</caption>`:''}<thead><tr>${headers.map((h,i)=>`<th scope="col"${i?' class="numeric"':''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
+// Die Bildunterschrift bleibt maskierter Text; verlinkt wird nur eine ausdrücklich
+// übergebene Quelle. So kann keine Zeichenkette aus den Daten zu Auszeichnung werden,
+// und eine Belegstelle ist trotzdem anklickbar statt bloß genannt.
+function table(headers,rows,caption='',quelle=null){return `<table>${caption||quelle?`<caption>${esc(caption)}${quelle?` ${sourceLink(quelle.id,quelle.text)}`:''}</caption>`:''}<thead><tr>${headers.map((h,i)=>`<th scope="col"${i?' class="numeric"':''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map((c,i)=>`<td${i?' class="numeric"':''}>${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}" class="empty-state">Keine passenden Werte.</td></tr>`}</tbody></table>`;}
 function metric(label,value,meta=''){return `<div class="detail-stat"><span class="label">${esc(label)}</span><strong>${esc(value)}</strong><span class="meta">${meta}</span></div>`;}
 function setSelected(type,id){state.selected={type,id};$('search-results').hidden=true;renderDetail();renderMap();}
 function isEstimate(){return state.layer==='religion_estimate'||state.layer==='religion_estimate_municipal'||state.layer==='religion_estimate_18';}
@@ -211,12 +214,12 @@ function renderDetail(){
   let html=metric('BAMF-Näherungswert · 2025',`${integer(D.bw.value_lower)}–${integer(D.bw.value_upper)}`,'Muslimische und alevitische Religionsangehörige nach Quellendefinition.')+metric('Anteil an privater Hauptwohnsitzbevölkerung',`${pf.format(D.bw_pct.value_lower)}–${pf.format(D.bw_pct.value_upper)} %`,'Mikrozensus 2025; nicht aus der 2024er Bevölkerung neu berechnet.');
   if(isEstimate()&&EST)html+=metric('Modellsumme aller Kreise',integer(EST.meta.state_total.persons_low)+'–'+integer(EST.meta.state_total.persons_high),`<span class="selected-flag">Modellrechnung</span> Die Verteilung erfindet keine Summe: sie verteilt genau diese veröffentlichte Spanne.`);
   else if(['foreign_share','district_population','municipality_population'].includes(state.layer))html+=metric('Einwohnerzahl · 30.11.2024',integer(total),'44 Kreise; Ausländeranteil: '+pct(100*foreign/total));
-  html+=`<div class="notice">Landesverteilung aus 2019 auf 2025 übertragen. <strong>Keine veröffentlichte Aufteilung auf Kreise oder Gemeinden.</strong></div><p class="source-note">${sourceLink('bamf_fb55','BAMF FB55 · Tabelle 3 / Abbildung 4 ↗')}</p>`;
+  html+=`<div class="notice">Landesverteilung aus 2019 auf 2025 übertragen. <strong>Keine veröffentlichte Aufteilung auf Kreise oder Gemeinden.</strong></div><p class="source-note">${sourceLink('bamf_fb55','BAMF Forschungsbericht 55 · Tabelle 3 / Abbildung 4 ↗')}</p>`;
   $('detail-content').innerHTML=html;
  }else if(s.type==='district'){
   const d=districts.get(s.id);if(!d)return;
   $('detail-kind').textContent='Kreisprofil · '+d.id;$('detail-name').textContent=d.name;
-  let html=metric('Bevölkerung · 30.11.2024',integer(d.population))+metric('Ausländische Staatsangehörige',integer(d.foreign),'<span class="kind-tag kind-fortschreibung">Fortschreibung</span> Stand 30.11.2024 · Anteil '+pct(d.foreign_pct)+' · keine Religionsangabe.');
+  let html=metric('Bevölkerung · 30.11.2024',integer(d.population))+metric('Ausländische Staatsangehörige',integer(d.foreign),'<span class="kind-tag kind-fortschreibung">Fortschreibung</span> Stand 30.11.2024 · Anteil '+pct(d.foreign_pct)+'.');
   const nat=NAT?NAT.districts[d.id]:null;
   if(nat&&nat.nationalities){
     const rows=Object.entries(nat.nationalities).sort((a,b)=>b[1].persons-a[1].persons);
@@ -227,7 +230,7 @@ function renderDetail(){
       +'<div class="cohort-bars nationality-bars">'+shown.map(([name,v])=>
         `<div class="cohort-row"><span>${esc(name)}</span><span class="cohort-track"><i style="width:${max?(100*v.share_of_foreign_percent/max).toFixed(1):0}%"></i></span><span class="cohort-value">${pf.format(v.share_of_foreign_percent)} %</span></div>`
       ).join('')+'</div>'
-      +`<span class="meta"><span class="kind-tag kind-register">Register</span> Ausländerzentralregister, Stand 31.12.2024: ${integer(nat.foreign_total)} Personen. Die Karte oben zeigt ${integer(d.foreign)} aus der Bevölkerungsfortschreibung zum 30.11.2024 — beide Quellen zählen nicht dasselbe zum selben Stichtag (<a href="#grundlagen">Grundlagen</a>). ${pf.format(100*named/nat.foreign_total)} % entfallen auf die ${rows.length} ausgewiesenen Staatsangehörigkeiten, der Rest auf alle übrigen Staaten. Staatsangehörigkeit ist keine Religionszugehörigkeit.${state.layer==='foreign_share'?'':' Ebene „Ausländische Staatsangehörige“ zeigt alle.'}</span></div>`;
+      +`<span class="meta"><span class="kind-tag kind-register">Register</span> Ausländerzentralregister, Stand 31.12.2024: ${integer(nat.foreign_total)} Personen. Die Karte oben zeigt ${integer(d.foreign)} aus der Bevölkerungsfortschreibung zum 30.11.2024 — beide Quellen zählen nicht dasselbe zum selben Stichtag (<a href="#grundlagen">Grundlagen</a>). ${pf.format(100*named/nat.foreign_total)} % entfallen auf die ${rows.length} ausgewiesenen Staatsangehörigkeiten, der Rest auf alle übrigen Staaten. Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und stehen in keiner dieser Zahlen.${state.layer==='foreign_share'?'':' Ebene „Ausländische Staatsangehörige“ zeigt alle.'}</span></div>`;
   // Die 25 genannten Staaten sind 83 Prozent der ausländischen Bevölkerung des Landes
   // und in den Universitätsstädten nur zwei Drittel. Was sie offenlassen, steht hier —
   // nach Weltregionen, weil feiner nichts vorliegt, und ausdrücklich als das, was die
@@ -350,6 +353,38 @@ function mapValueText(f){if(state.layer==='religion_state')return 'BW gesamt: 10
 // What the institutions layer does NOT contain, stated on the page rather than left to
 // be inferred from a thin map. An organisation missing here is missing for a reason, and
 // the reason is worth more than the gap is misleading.
+// Für jede Kennzahl der Relativsatz, der den Satz "Anteil der Ausländerinnen und
+// Ausländer im Kreis, …" richtig zu Ende bringt. Zuvor wurde die Bezeichnung aus der
+// Datei eingesetzt und ein "sind" angehängt, und dabei kam "die Türkei sind" heraus,
+// "die mit Duldung sind" und "die EU-Staaten sind". Die Bezeichnungen taugen für ein
+// Auswahlfeld, nicht für einen Satz.
+// Aus dem Hinweis der Datei bleibt, was wirklich einschränkt: wer fehlt. Der Satz
+// "Staatsangehörigkeit ist keine Religionszugehörigkeit" beantwortete eine Frage, die
+// diese Grafik nicht aufwirft — sie nennt Staatsangehörigkeiten und sonst nichts.
+function azrWhoIsMissing(){
+ return 'Eingebürgerte und hier geborene Nachkommen haben einen deutschen Pass und '
+      + 'stehen in keiner dieser Zahlen.';
+}
+const AZR_DEFAULT = 'recruitment_states';
+const AZR_PREDICATES = {
+ foreign_total: 'die überhaupt gezählt werden',
+ recruitment_states: 'die aus einem der Gastarbeiter-Anwerbestaaten stammen',
+ eu27: 'die die Staatsangehörigkeit eines EU-Staates haben',
+ eu_since_2004: 'die aus einem seit 2004 beigetretenen EU-Staat stammen',
+ non_eu: 'die die Staatsangehörigkeit eines Nicht-EU-Staates haben',
+ turkey: 'die die türkische Staatsangehörigkeit haben',
+ ukraine: 'die die ukrainische Staatsangehörigkeit haben',
+ syria: 'die die syrische Staatsangehörigkeit haben',
+ romania: 'die die rumänische Staatsangehörigkeit haben',
+ poland: 'die die polnische Staatsangehörigkeit haben',
+ permission_pending: 'die eine Aufenthaltsgestattung haben',
+ tolerated: 'die eine Duldung haben',
+ resident_25_years_or_more: 'die seit 25 Jahren oder länger hier leben',
+};
+function azrPredicate(key){
+ return AZR_PREDICATES[key]
+   || ('die ' + (AZR && AZR.labels && AZR.labels[key] ? AZR.labels[key] : key) + ' betreffen');
+}
 function renderInstitutionCoverage(){
  const box=$('inst-coverage');if(!box)return;
  if(state.layer!=='institutions'||!INST){box.hidden=true;box.innerHTML='';return;}
@@ -691,17 +726,21 @@ function renderDistrictAzr(){
   select.innerHTML=Object.entries(AZR.labels).filter(([k])=>k!=='foreign_total')
     .map(([k,text])=>'<option value="'+esc(k)+'">'+esc(text[0].toUpperCase()+text.slice(1))+'</option>').join('');
   select.dataset.filled='1';
+  // Die Vorauswahl wird gesetzt und nicht der Reihenfolge der Einträge überlassen.
+  // Genau das war der Fehler bei der Kartenebene: ohne gesetzten Wert gilt die erste
+  // Option, und der Zustand im Skript hat damit nichts mehr zu tun.
+  select.value=state.azrIndicator||AZR_DEFAULT;
  }
- const key=(state.azrIndicator||select.value||'turkey')+'_share_of_foreign';
+ const key=(state.azrIndicator||select.value||AZR_DEFAULT)+'_share_of_foreign';
  const rows=AZR.districts.filter(r=>r[key]!==null).sort((a,b)=>b[key]-a[key]);
  if(!rows.length)return;
  const national=AZR.germany_distribution[key];
  const max=Math.max(rows[0][key],national?national.max:0)||1;
- $('azr-note').textContent='Anteil der Ausländerinnen und Ausländer im Kreis, die '
-   +AZR.labels[state.azrIndicator||'turkey']+' sind — als Anteil an allen Ausländern des Kreises, nicht an seinen Einwohnern.'
+ $('azr-note').textContent='Anteil der Ausländerinnen und Ausländer im Kreis, '
+   +azrPredicate(state.azrIndicator||AZR_DEFAULT)+' — als Anteil an allen Ausländern des Kreises, nicht an seinen Einwohnern.'
    +(national?' Bundesweiter Median: '+pf.format(national.median)+' %, Spanne '+pf.format(national.min)+' bis '+pf.format(national.max)+' %.':'');
  box.innerHTML=rows.map(r=>`<div class="bar-row"><span class="bar-name">${esc(r.name)}</span><div class="bar-track">${national?`<span class="bar-reference" style="left:${100*national.median/max}%" title="Bundesmedian ${pf.format(national.median)} %"></span>`:''}<div class="bar-fill" style="width:${100*r[key]/max}%"></div></div><span class="bar-value">${pf.format(r[key])} %<small>${integer(r[key]*r.foreign_total/100)} von ${integer(r.foreign_total)}</small></span></div>`).join('');
- $('azr-source').textContent=AZR.what_a_share_means+' '+AZR.not_a_religion_measure+' Stand '+AZR.reference_date+'. Quelle: '+AZR.source+'. '+AZR.licence+'.';
+ $('azr-source').textContent=AZR.what_a_share_means+' '+azrWhoIsMissing()+' Stand '+AZR.reference_date+'. Quelle: '+AZR.source+'. '+AZR.licence+'.';
 }
 const BWF=typeof window!=='undefined'?window.ATLAS_BW_FLOWS:null;
 // Der Atlas konnte bisher sagen, wie viele Menschen welcher Herkunft in einem Kreis
@@ -827,7 +866,7 @@ function renderFlows(){
    ?'Asylregistrierungen, letzte zwölf Monate'
    :'Asylregistrierungen je Jahr, 2014–2025';
  $('flow-source').href=D.sources[total.source_id].url;
- $('states-table').innerHTML=table(['Schätzeinheit','Untergrenze','Obergrenze','Anteil: Untergrenze','Anteil: Obergrenze'],D.states.map(r=>[esc(r.name),integer(r.low),integer(r.high),pct(r.pct_low),pct(r.pct_high)]),'BAMF FB55, Tabelle 3 und Abbildung 4. Die Länderpaare bleiben gemeinsam.');
+ $('states-table').innerHTML=table(['Schätzeinheit','Untergrenze','Obergrenze','Anteil: Untergrenze','Anteil: Obergrenze'],D.states.map(r=>[esc(r.name),integer(r.low),integer(r.high),pct(r.pct_low),pct(r.pct_high)]),'Die Länderpaare bleiben gemeinsam.',{id:'bamf_fb55',text:'BAMF Forschungsbericht 55, Tabelle 3 und Abbildung 4 ↗'});
  const historical=D.historical_bw.filter(r=>r.indicator==='muslim_persons_historical');const scen={'main':'Hauptvariante','alternative':'Nebenvariante','census_republished':'Volkszählungsangabe, wiedergegeben','ministerial_report_republished':'Ministerratsbericht, wiedergegeben'};$('history-table').innerHTML=table(['Bezugsjahr','Quellenmodell','Personen'],historical.map(r=>[esc(r.reference_period),esc(scen[r.dimensions.scenario]||r.dimensions.scenario),integer(r.value)]),'Brachat-Schwarz, Statistisches Monatsheft 4/2020. Verschiedene historische Verfahren.');
  const purposeNames={spouse_reunification:'Ehegattennachzug',parent_reunification:'Elternnachzug',child_reunification:'Kindernachzug',other_family_reunification:'Sonstiger Familiennachzug',study_and_preparation:'Studium / Vorbereitung / Bewerbung',language_course_school:'Sprachkurs / Schulbesuch',employment_broad:'Erwerbstätigkeit (breite Kategorie)',jewish_immigration:'Jüdische Zuwanderung',ethnic_german_resettlers:'Spätaussiedlerinnen und Spätaussiedler',humanitarian_admission_resettlement:'Humanitäre Aufnahme / Resettlement',other_residence_purposes:'Sonstige Aufenthaltszwecke',not_assigned:'Nicht zugeordnet',total:'Insgesamt (nicht zusätzlich summieren)'};
  const purposes=[...new Set(D.visa_purposes.map(r=>r.dimensions.purpose))];$('visa-table').innerHTML=table(['Zweck','2024','2025'],purposes.map(p=>[esc(purposeNames[p]||p),...['2024','2025'].map(y=>integer(D.visa_purposes.find(r=>r.dimensions.purpose===p&&r.reference_period===y)?.value))]),'AA-Jahres-PDFs: bearbeitete nationale Visa. Summe und Unterkategorien nicht addieren.');
