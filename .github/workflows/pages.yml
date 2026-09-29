@@ -238,6 +238,12 @@ jobs:
       - name: Regierungsbezirke (NUTS 2) aus den Kreisen ableiten
         run: python scripts/derive_regions.py
 
+      # Rein rechnerisch, ohne Netz: stellt die veröffentlichten Schätzungen für
+      # Baden-Württemberg aus den Beobachtungen nebeneinander. Kein Abruf, also auch
+      # kein continue-on-error — schlägt das fehl, stimmt etwas mit den Daten nicht.
+      - name: Veröffentlichte Schätzungen nebeneinanderstellen
+        run: python scripts/derive_published_estimates.py
+
       # Eurostat und GISCO liefern die europäische Vergleichsebene. Schlägt der Abruf
       # fehl, bleibt die zuletzt eingecheckte Fassung stehen — eine veraltete Karte ist
       # besser als keine, und die Datei trägt ihr Bezugsjahr bei sich.

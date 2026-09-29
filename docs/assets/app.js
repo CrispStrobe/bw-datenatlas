@@ -1391,6 +1391,53 @@ $('pyramid-note').textContent='Unter 25 Jahre: '
 }
 // What every figure rests on. Register, projection, sample and census count different
 // things; the table names the kind for each measure so they are not read as one series.
+// Die veröffentlichten Schätzungen nebeneinander.
+//
+// Im Kopf der Seite steht eine Zahl: 1.133.000 bis 1.197.000 für 2025. Daneben gibt
+// es eine zweite veröffentlichte Zahl, die das Statistische Landesamt selbst
+// gerechnet hat — 819.000 für 2018 —, und drei ältere. Sie lagen alle längst in den
+// Beobachtungen dieses Projekts, aber nur eine stand auf der Seite; die übrigen
+// musste man in einer Tabelle mit über sechstausend Zeilen suchen. Also sah sie
+// niemand, und der Abstand zwischen den Verfahren, der größer ist als jede Spanne
+// innerhalb eines Verfahrens, war unsichtbar.
+//
+// Keine Zeitreihe und keine Linie: verschiedene Stellen, verschiedene Verfahren,
+// verschiedene Abgrenzungen. Deshalb Balken nebeneinander und an jedem, woher er
+// kommt.
+function renderPublishedEstimates(){
+ const host=$('published-estimates-bars');if(!host)return;
+ const D2=window.ATLAS_PUBLISHED_ESTIMATES;
+ if(!D2||!D2.estimates||!D2.estimates.length){
+  const karte=$('published-estimates-card');if(karte)karte.hidden=true;return;}
+ $('published-estimates-warning').textContent=t(D2.not_a_time_series);
+ const max=Math.max(...D2.estimates.map(e=>e.persons_high??e.persons??0));
+ host.innerHTML=D2.estimates.map(e=>{
+  const spanne=e.persons_low!==null&&e.persons_low!==undefined&&e.persons_high;
+  const wert=spanne?integer(e.persons_low)+'–'+integer(e.persons_high)
+    :e.persons!==null&&e.persons!==undefined?integer(e.persons):t('kein Wert');
+  const anteil=e.share_pct!==null&&e.share_pct!==undefined?pct(e.share_pct)
+    :(e.share_low!==null&&e.share_low!==undefined
+       ?pf.format(e.share_low)+'–'+pf.format(e.share_high)+' %':'');
+  const laenge=100*(e.persons_mid||0)/max;
+  const breite=spanne?100*(e.persons_high-e.persons_low)/max:0;
+  const links=spanne?100*e.persons_low/max:0;
+  return '<div class="bar-row">'
+   +'<div class="bar-name"><strong>'+esc(e.reference_year)+'</strong><br>'
+   +'<span class="tiny">'+esc(t(e.method||''))+'</span></div>'
+   +'<div class="bar-track"><div class="bar-fill" style="width:'+laenge.toFixed(1)+'%"></div>'
+   +(spanne?'<div class="bar-whisker" style="left:'+links.toFixed(1)
+      +'%;width:'+breite.toFixed(1)+'%"></div>':'')
+   +'</div>'
+   +'<div class="bar-value">'+esc(wert)+(anteil?'<small>'+esc(anteil)+'</small>':'')
+   +'</div></div>';
+ }).join('');
+ // Jede Zeile trägt ihre Stelle; ohne sie wäre die Reihe eine Entwicklung, und das
+ // ist sie nicht.
+ const stellen=[...new Map(D2.estimates.map(e=>[e.source_id,e])).values()];
+ $('published-estimates-note').innerHTML=esc(t(D2.why_they_differ))+' '
+  +stellen.map(e=>'<a href="'+esc(e.source_url||'#')+'" target="_blank" rel="noreferrer">'
+    +esc(e.publisher||e.source_id)+'</a>').join(' · ');
+}
 function renderBases(){
 const host=$('bases-table');if(!host)return;
 if(!BASES){host.innerHTML='<p class="empty-state">Keine Grundlagen geladen.</p>';return;}
@@ -1410,7 +1457,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();euEbenenVerdrahten();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -1442,6 +1489,10 @@ window.addEventListener('sprachwechsel',()=>{
  buildNumberFormats();
  try{renderMap();renderDetail();renderAreaTable();renderOrigins();}catch(e){}
  try{renderComposition();renderDistrictAzr();}catch(e){}
+ // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
+ // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
+ // beim Sprachwechsel noch einmal zeichnet.
+ try{renderPublishedEstimates();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

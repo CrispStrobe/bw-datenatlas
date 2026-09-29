@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 216,
+  "check_count": 221,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -68,6 +68,26 @@
     },
     {
       "name": "published BW range displayed",
+      "passed": true
+    },
+    {
+      "name": "the published estimates are shown side by side",
+      "passed": true
+    },
+    {
+      "name": "the official state estimate is visible, not only the BAMF range",
+      "passed": true
+    },
+    {
+      "name": "each estimate names its method",
+      "passed": true
+    },
+    {
+      "name": "the comparison denies being a time series",
+      "passed": true
+    },
+    {
+      "name": "the main variant precedes the cautious one",
       "passed": true
     },
     {

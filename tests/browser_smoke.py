@@ -94,6 +94,20 @@ with sync_playwright() as pw:
         page.select_option('#layer','religion_state')
         check('one real state outline rendered',page.locator('#map-features path').count()==1)
     check('published BW range displayed','1,133–1,197' in page.locator('.kpi').first.inner_text())
+    # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
+    # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
+    # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
+    vergleich=page.locator('#published-estimates-card').inner_text()
+    check('the published estimates are shown side by side',
+          page.locator('#published-estimates-bars .bar-row').count()>=6)
+    check('the official state estimate is visible, not only the BAMF range',
+          '819.000' in vergleich and '1.133.000' in vergleich)
+    check('each estimate names its method',
+          'Landesamts' in vergleich and 'BAMF' in vergleich)
+    check('the comparison denies being a time series',
+          'nicht weil sie dasselbe messen' in vergleich)
+    check('the main variant precedes the cautious one',
+          vergleich.index('819.000')<vergleich.index('762.000'))
     check('initial national origin bars eight',page.locator('#origin-bars .bar-row').count()==8)
     check('four national composition columns',page.locator('.stack-segment').count()==20)
     check('desktop body no horizontal overflow',not page.evaluate('document.documentElement.scrollWidth>innerWidth'))
