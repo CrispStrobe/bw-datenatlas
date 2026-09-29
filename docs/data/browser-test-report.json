@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 313,
+  "check_count": 319,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -112,6 +112,30 @@
     },
     {
       "name": "the estimated tile is marked apart from the counted ones",
+      "passed": true
+    },
+    {
+      "name": "searching a place moves the map to it",
+      "passed": true
+    },
+    {
+      "name": "the place profile lists the institutions of that place",
+      "passed": true
+    },
+    {
+      "name": "the listed institutions are the ones in that municipality",
+      "passed": true
+    },
+    {
+      "name": "picking one switches to the point layer and shows it",
+      "passed": true
+    },
+    {
+      "name": "a district gathers the institutions of all its municipalities",
+      "passed": true
+    },
+    {
+      "name": "resetting the place puts the map back",
       "passed": true
     },
     {

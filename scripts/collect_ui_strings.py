@@ -97,6 +97,23 @@ def sammeln(port: int) -> list[str]:
             page.wait_for_timeout(400)
         except Exception:
             pass
+        # Die Ortssuche: das Profil zählt jetzt die Einrichtungen des Gebiets auf.
+        # Beide Fälle müssen vorkommen, denn sie schreiben verschiedene Sätze — ein
+        # Ort mit Einträgen und einer ohne. Ohne den zweiten fehlte „Keine im
+        # Verzeichnis" im Katalog und stünde in jeder Sprache auf Deutsch da.
+        for ort in ('Bretten', 'Weissach', 'Ostalbkreis'):
+            try:
+                page.fill('#place-search', ort)
+                page.wait_for_timeout(350)
+                page.locator('#search-results button').first.click()
+                page.wait_for_timeout(400)
+            except Exception:
+                pass
+        try:
+            page.locator('#reset-place').click()
+            page.wait_for_timeout(300)
+        except Exception:
+            pass
         page.wait_for_timeout(400)
         texte = page.evaluate('()=>Object.keys(I18N.sammle()).concat(I18N.gesehen())')
         b.close()

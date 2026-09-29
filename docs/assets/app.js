@@ -564,7 +564,8 @@ function renderDetail(){
     html+=metric('Größte Herkunftsbeiträge',top,'Aus Staatsangehörigkeit mal bundesweitem Anteil, korrigiert um Eingebürgerte.');
     html+=`<div class="notice warning"><strong>Modellrechnung, keine Messung.</strong> Es gibt keine amtliche Religionsstatistik je Kreis. Die Spanne umfasst die veröffentlichte Landesspanne und die Wahl des Schlüssels.</div>`;}
   else html+=metric('Muslimische Bevölkerung des Kreises','Nicht verfügbar','Kein entsprechender Quellenwert in dieser Sammlung. Nicht null.')+`<div class="notice">Die Landesquote von 10,1–10,7 % wird diesem Kreis nicht als eigener Wert zugewiesen.</div>`;
-  html+=`<p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 2 ↗')}</p>`;$('detail-content').innerHTML=html;
+  html+=einrichtungsListe(d.id,d.name);
+  html+=`<p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 2 ↗')}</p>`;$('detail-content').innerHTML=html;bindeEinrichtungsListe();
  }else{
   const d=municipalities.get(s.id);if(!d)return;$('detail-kind').textContent='Gemeindeprofil';$('detail-name').textContent=d.municipality_name;
   const crosswalk=G?.crosswalk?.find(r=>r.geo_id===d.geo_id);
@@ -589,8 +590,85 @@ function renderDetail(){
   const kirchenMetrik=kirche?metric(t('Kirchenmitgliedschaft · Zensus 2022'),
     pct(kirche.catholic_pct)+' / '+pct(kirche.evangelical_pct),
     esc(t('römisch-katholisch / evangelisch · gezählt, nicht geschätzt'))):'';
-  $('detail-content').innerHTML=metric('Einwohnerzahl · 30.06.2024',integer(d.population_total),esc(d.district_name))+metric('Männlich / weiblich',`${integer(d.population_male)} / ${integer(d.population_female)}`,'Veröffentlichte Kategorien der Bevölkerungsstatistik.')+estimateMetric+boundMetric+kirchenMetrik+demMetric+`<div class="notice${isEstimate()?' warning':''}">${isEstimate()?'<strong>Modellrechnung, keine Messung.</strong> Der Kreiswert wird verteilt: der türkische und bosnische Anteil nach gemessenem Siedlungsmuster, der Rest nach der Einwanderungsgeschichte der Gemeinde. ':''}${crosswalk?'Amtlicher Gemeindeschlüssel: '+esc(crosswalk.ags):'Geografische Zuordnung noch nicht bestätigt.'} Keine Ableitung der Religion aus dem Gemeindenamen oder der Einwohnerzahl.</div><p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 5, S. '+d.source_page+' ↗')}</p>`;
+  $('detail-content').innerHTML=metric('Einwohnerzahl · 30.06.2024',integer(d.population_total),esc(d.district_name))+metric('Männlich / weiblich',`${integer(d.population_male)} / ${integer(d.population_female)}`,'Veröffentlichte Kategorien der Bevölkerungsstatistik.')+estimateMetric+boundMetric+kirchenMetrik+demMetric+`<div class="notice${isEstimate()?' warning':''}">${isEstimate()?'<strong>Modellrechnung, keine Messung.</strong> Der Kreiswert wird verteilt: der türkische und bosnische Anteil nach gemessenem Siedlungsmuster, der Rest nach der Einwanderungsgeschichte der Gemeinde. ':''}${crosswalk?'Amtlicher Gemeindeschlüssel: '+esc(crosswalk.ags):'Geografische Zuordnung noch nicht bestätigt.'} Keine Ableitung der Religion aus dem Gemeindenamen oder der Einwohnerzahl.</div>`+einrichtungsListe(crosswalk?crosswalk.ags:d.official_municipality_code,d.municipality_name)+`<p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 5, S. '+d.source_page+' ↗')}</p>`;
+  bindeEinrichtungsListe();
  }
+}
+// Wer einen Kreis oder eine Gemeinde sucht, sucht selten nur die Einwohnerzahl. Die
+// Einrichtungen desselben Gebiets stehen deshalb im Profil, statt dass man erst die
+// Kartenebene wechseln und dann die richtige Stelle treffen muss. Der Schlüssel ist
+// der amtliche Gemeindeschlüssel: fünf Stellen sind der Kreis, acht die Gemeinde.
+function einrichtungenIn(ags){
+ if(!INST||!ags)return [];
+ const out=[];
+ INST.institutions.forEach((inst,idx)=>{
+  if((inst.municipality_id||'').startsWith(ags))out.push({inst,idx});});
+ out.sort((a,b)=>(a.inst.municipality||a.inst.city||'').localeCompare(
+   b.inst.municipality||b.inst.city||'','de')
+   ||a.inst.name.localeCompare(b.inst.name,'de'));
+ return out;
+}
+function einrichtungsListe(ags,gebiet){
+ // Ohne amtlichen Schlüssel lässt sich nichts zuordnen, und „keine Einrichtung"
+ // wäre dann eine Behauptung über das Gebiet statt über die Daten. Lieber nichts.
+ if(!ags)return '';
+ const treffer=einrichtungenIn(ags);
+ if(!treffer.length)return metric('Islamische und alevitische Einrichtungen',
+   t('Keine im Verzeichnis'),
+   esc(tf('Für {0} enthält dieses Verzeichnis keinen Eintrag. Das heißt nicht, dass es '
+     +'dort keine gibt — es heißt, dass keine öffentlich belegte Quelle dafür '
+     +'gefunden wurde.',gebiet)));
+ const verbaende=new Map();
+ for(const {inst} of treffer)verbaende.set(inst.organisation,
+   (verbaende.get(inst.organisation)||0)+1);
+ return metric('Islamische und alevitische Einrichtungen',
+   tf('{0} im Verzeichnis',integer(treffer.length)),
+   [...verbaende].sort((x,y)=>y[1]-x[1])
+     .map(([n,c])=>esc(t(n))+' '+c).join(' · '))
+  +'<div class="metric"><ol class="inst-group-list">'
+  +treffer.map(({inst,idx})=>'<li><button type="button" data-pick="'+idx+'">'
+    +esc(inst.name)+'<span class="meta">'+esc(inst.municipality||inst.city)
+    +' · '+esc(t(inst.organisation))+'</span></button></li>').join('')
+  +'</ol></div>';
+}
+// Ein Klick auf einen Eintrag soll ihn auch zeigen können, und das geht nur auf der
+// Punktebene. Die Ebene wird deshalb mitgewechselt, statt den Leser auf eine leere
+// Karte zu schicken.
+function bindeEinrichtungsListe(){
+ $('detail-content').querySelectorAll('button[data-pick]').forEach(b=>
+  b.addEventListener('click',()=>{
+   const sel=$('layer');
+   if(sel&&sel.value!=='institutions'){sel.value='institutions';updateLayer();}
+   setSelected('institution',Number(b.dataset.pick));}));
+}
+// Zur Auswahl hinfahren. Nur aus der Suche heraus: ein Klick auf die Karte soll den
+// Ausschnitt lassen, wie er ist, sonst springt die Karte unter der Hand weg.
+function auswahlGeometrie(){
+ const s=state.selected;
+ const suche=(liste,pruef)=>(liste||[]).find(f=>pruef(f.properties))?.geometry||null;
+ if(s.type==='district'&&G)return suche(G.districts,p=>p.id===s.id);
+ if(s.type==='municipality'&&G)
+  return suche(G.municipalities,p=>p.statistical_geo_id===s.id);
+ if(s.type==='region'&&REG)return suche(REG.features,p=>p.id===s.id);
+ return null;
+}
+function zoomAufAuswahl(){
+ const g=auswahlGeometrie();
+ if(!g||!projection)return;
+ let minx=Infinity,miny=Infinity,maxx=-Infinity,maxy=-Infinity;
+ const punkt=c=>{const [x,y]=projection(c);
+  if(x<minx)minx=x;if(x>maxx)maxx=x;if(y<miny)miny=y;if(y>maxy)maxy=y;};
+ const geh=c=>{if(typeof c[0]==='number')punkt(c);else c.forEach(geh);};
+ geh(g.coordinates);
+ if(!isFinite(minx))return;
+ // Ein Rand ringsum, damit das Gebiet nicht am Bildrand klebt, und dieselben
+ // Grenzen wie beim Zoomknopf, damit die Karte nicht unschärfer wird als erlaubt.
+ const breite=Math.max(maxx-minx,(maxy-miny)*760/700);
+ const nw=Math.max(190,Math.min(760,breite*1.9));
+ const nh=nw*700/760;
+ state.zoom={x:Math.max(-40,Math.min(800-nw,(minx+maxx)/2-nw/2)),
+             y:Math.max(-40,Math.min(740-nh,(miny+maxy)/2-nh/2)),w:nw,h:nh};
+ applyZoom();
 }
 function estimateDistrict(id){return EST?EST.districts[id]:null;}
 function estimateMunicipality(geoId){return EST?EST.municipalities[geoId]:null;}
@@ -1236,7 +1314,13 @@ function zeichneUmriss(geometry,klasse){
  const choose=()=>{if(euLayer){setSelected('eu',p.nuts);return;}if(deLayer){setSelected('bundesland',p.id);return;}if(state.layer==='religion_state')setSelected('state','08');else if(regionLayer)setSelected('region',p.id);else if(municipalLayer){if(p.statistical_geo_id)setSelected('municipality',p.statistical_geo_id);else toast('Für diese Fläche ist kein statistischer Gemeindewert zugeordnet.');}else setSelected('district',p.id);};
  el.addEventListener('click',()=>{if(!drag.moved)choose();});el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}});el.addEventListener('pointerenter',()=>{$('map-tooltip').innerHTML=`<strong>${esc(flaechenName)}</strong>${esc(mapValueText(f))}`;$('map-tooltip').hidden=false;if(!selected){umrissWeg();hoverUmriss=zeichneUmriss(f.geometry,'hover');}});el.addEventListener('pointerleave',()=>{$('map-tooltip').hidden=true;umrissWeg();});el.addEventListener('focus',()=>{$('map-tooltip').textContent=flaechenName+' · '+mapValueText(f);$('map-tooltip').hidden=false;});el.addEventListener('blur',()=>$('map-tooltip').hidden=true);frag.appendChild(el);svgPaths.set(flaechenId,el);
  }
- $('map-features').replaceChildren(frag);$('map-labels').replaceChildren();$('map-outline').replaceChildren();hoverUmriss=null;if(gewaehlteGeometrie)zeichneUmriss(gewaehlteGeometrie,'selection');
+ $('map-features').replaceChildren(frag);$('map-labels').replaceChildren();$('map-outline').replaceChildren();hoverUmriss=null;
+ // Eine gesuchte Gemeinde liegt oft auf einer Kreiskarte: dann ist sie unter
+ // keiner gezeichneten Fläche zu finden, und die Karte führe an einen Ort, den
+ // sie nicht zeigt. Der Umriss wird deshalb auch gezeichnet, wenn die Auswahl
+ // nicht zur aktuellen Ebene gehört.
+ if(!gewaehlteGeometrie)gewaehlteGeometrie=auswahlGeometrie();
+ if(gewaehlteGeometrie)zeichneUmriss(gewaehlteGeometrie,'selection');
  // Institutions are drawn as points on the state outline. They are places, not
  // quantities, so they are never shaded into the choropleth.
  if(pointLayer&&INST)renderInstitutionPoints();
@@ -1537,7 +1621,7 @@ function renderFlows(){
  const issues=D.source_audit.parameter_comparison.filter(r=>r.table1_differs_from_original_mld);$('audit-table').innerHTML=table(['Herkunftsgruppe','Bericht 55, Tabelle 1, E','Bericht 55, Tabelle 2','Bericht 38, Original'],issues.map(r=>[esc(r.origin_group),pct(r.fb55_table1_column_E_published),pct(r.fb55_table2_mld_share_published),pct(r.fb38_table2_3_mld_share_published)]));
 }
 function renderSources(){const ids=['bamf_fb55','stala_pm_2025','stala_gemeinden_2024_06','stala_pm_2026','stala_monat_2020','bamf_mld2020_full','bw_jum_asyl_2026_08','aa_national_visas_2024','aa_national_visas_2025'];$('sources-list').innerHTML=ids.map(id=>{const s=D.sources[id];return `<article class="source-item" id="source-${esc(id)}"><a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title)} ↗</a><span>${esc(s.publisher)} · veröffentlicht ${esc(s.publication_period)}</span>${s.locator?`<p>${esc(s.locator)}</p>`:''}${s.limitation?`<p>${esc(s.limitation)}</p>`:''}</article>`;}).join('')+`<article class="source-item"><a href="https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html" target="_blank" rel="noreferrer">BKG: Verwaltungsgebiete VG250 ↗</a><span>Archivstand 01.01.2024 · dl-de/by-2-0 · keine Bevölkerungswerte aus den Geometrien übernommen</span><p>${G?`Geodatenaufbau ausgeführt; ${G.municipality_match_count}/1101 Gemeindewerte zugeordnet. ${G.municipalities_unmatched.length} statistische Gemeinden ohne eindeutige Geometriezuordnung.`:'Amtliche Geometrien noch nicht lokal bezogen. Der GitHub-Workflow baut diese vor der Veröffentlichung auf.'}</p></article>`;}
-function searchPlaces(){const q=M.normalize($('place-search').value);if(q.length<2){$('search-results').hidden=true;return;}const candidates=[...D.districts.map(d=>({type:'district',id:d.id,name:d.name,detail:'Kreis '+d.id})),...D.municipalities.map(m=>({type:'municipality',id:m.geo_id,name:m.municipality_name,detail:m.district_name}))].filter(r=>M.normalize(r.name+' '+r.detail).includes(q)).slice(0,10);$('search-results').hidden=false;$('search-results').innerHTML=candidates.length?candidates.map((r,i)=>`<button type="button" data-result="${i}"><strong>${esc(r.name)}</strong><br><span class="small-muted">${esc(r.detail)} · ${r.type==='municipality'?'Gemeinde':'Kreis'}</span></button>`).join(''):'<p class="empty-state">Kein Treffer.</p>';$('search-results').querySelectorAll('[data-result]').forEach(b=>b.addEventListener('click',()=>{const r=candidates[Number(b.dataset.result)];$('place-search').value=r.name;setSelected(r.type,r.id);}));}
+function searchPlaces(){const q=M.normalize($('place-search').value);if(q.length<2){$('search-results').hidden=true;return;}const candidates=[...D.districts.map(d=>({type:'district',id:d.id,name:d.name,detail:'Kreis '+d.id})),...D.municipalities.map(m=>({type:'municipality',id:m.geo_id,name:m.municipality_name,detail:m.district_name}))].filter(r=>M.normalize(r.name+' '+r.detail).includes(q)).slice(0,10);$('search-results').hidden=false;$('search-results').innerHTML=candidates.length?candidates.map((r,i)=>`<button type="button" data-result="${i}"><strong>${esc(r.name)}</strong><br><span class="small-muted">${esc(r.detail)} · ${r.type==='municipality'?'Gemeinde':'Kreis'}</span></button>`).join(''):'<p class="empty-state">Kein Treffer.</p>';$('search-results').querySelectorAll('[data-result]').forEach(b=>b.addEventListener('click',()=>{const r=candidates[Number(b.dataset.result)];$('place-search').value=r.name;setSelected(r.type,r.id);zoomAufAuswahl();}));}
 let researchLoading=false;
 async function loadResearch(){if(state.researchRows||researchLoading)return;researchLoading=true;$('research-load-note').textContent='Die lokale Forschungssammlung wird geladen …';try{const response=await fetch('data/research-observations.json');if(!response.ok)throw new Error(String(response.status));state.researchRows=await response.json();renderResearch();$('research-load-note').textContent=t('Unveränderte Originalbeobachtungen der Datensammlung.');}catch(e){$('research-load-note').textContent=t('Die Einzeldatei konnte nicht geladen werden. Bei file:// die Seite über einen lokalen HTTP-Server öffnen. Der ZIP-Download enthält dieselben Daten.');console.warn('Research data load unavailable:',e.message);}finally{researchLoading=false;}}
 function filteredResearch(){if(!state.researchRows)return [];const id=$('dataset-select').value,q=M.normalize($('research-search').value);return state.researchRows.filter(r=>r.dataset_id===id&&(!q||M.normalize(r.geo_name+' '+r.indicator+' '+r.reference_period+' '+JSON.stringify(r.dimensions)).includes(q)));}

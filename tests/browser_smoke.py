@@ -128,6 +128,40 @@ with sync_playwright() as pw:
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
     # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
+    # Wer einen Ort sucht, will ihn sehen und wissen, was dort ist. Beides hing
+    # vorher an zwei weiteren Handgriffen: Kartenebene wechseln und die richtige
+    # Stelle treffen.
+    page.fill('#place-search','Bretten')
+    page.wait_for_selector('#search-results button')
+    page.locator('#search-results button').first.click()
+    page.wait_for_function("document.getElementById('map').getAttribute('viewBox')"
+                           "!=='0 0 760 700'")
+    check('searching a place moves the map to it',
+          page.get_attribute('#map','viewBox')!='0 0 760 700')
+    profil=page.locator('#detail-content').inner_text()
+    check('the place profile lists the institutions of that place',
+          '3' in profil and ('im Verzeichnis' in profil or 'in the directory' in profil))
+    check('the listed institutions are the ones in that municipality',
+          page.locator('#detail-content button[data-pick]').count()==3)
+    page.locator('#detail-content button[data-pick]').first.click()
+    page.wait_for_function("document.getElementById('layer').value==='institutions'")
+    check('picking one switches to the point layer and shows it',
+          page.locator('#detail-name').inner_text().strip()!='')
+    # Ein Kreis fasst seine Gemeinden zusammen; sonst hätte die Suche nach einem
+    # Kreis weniger gezeigt als die nach einer seiner Gemeinden.
+    page.fill('#place-search','Ostalbkreis')
+    page.wait_for_selector('#search-results button')
+    page.locator('#search-results button').first.click()
+    page.wait_for_function("document.getElementById('detail-kind').innerText"
+                           ".toLowerCase().includes('kreis')")
+    check('a district gathers the institutions of all its municipalities',
+          page.locator('#detail-content button[data-pick]').count()>=20)
+    page.locator('#reset-place').click()
+    page.wait_for_function("document.getElementById('map').getAttribute('viewBox')"
+                           "==='0 0 760 700'")
+    check('resetting the place puts the map back',
+          page.get_attribute('#map','viewBox')=='0 0 760 700')
+
     # Die orthodoxen Kirchen sind die größte eingewanderte christliche Gruppe des
     # Landes und im Zensus 2022 unsichtbar. Dass die Ebene da ist, ist das eine; dass
     # an ihr steht, was sie nicht ist, das andere.
@@ -236,6 +270,11 @@ with sync_playwright() as pw:
         s_high=sum(d['variants'][variant]['high'] for d in est['districts'].values())
         check(f'{variant} sums to the published lower bound',abs(s_low-total['persons_low'])<=50)
         check(f'{variant} sums to the published upper bound',abs(s_high-total['persons_high'])<=50)
+    # Die Ortssuche fährt die Karte jetzt zum Treffer; von dort ist ein anderer Kreis
+    # nicht mehr anklickbar. Erst zurück auf das ganze Land, wie es auch ein Leser tut.
+    page.locator('#reset-place').click()
+    page.wait_for_function("document.getElementById('map').getAttribute('viewBox')"
+                           "==='0 0 760 700'")
     page.locator('#map-features path[data-id="08121"]').click()
     detail=page.locator('#detail-content').inner_text()
     check('district shows a modelled band','Modell' in detail and '%' in detail)
