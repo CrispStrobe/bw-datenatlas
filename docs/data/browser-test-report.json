@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 269,
+  "check_count": 273,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -744,6 +744,22 @@
     },
     {
       "name": "the grid layer warns that gaps are not empty land",
+      "passed": true
+    },
+    {
+      "name": "the turkish layer denies being about religion",
+      "passed": true
+    },
+    {
+      "name": "the turkish layer says the naturalised majority is missing",
+      "passed": true
+    },
+    {
+      "name": "the turkish layer states how few cells carry a value",
+      "passed": true
+    },
+    {
+      "name": "the turkish layer names the minimum cell size",
       "passed": true
     },
     {

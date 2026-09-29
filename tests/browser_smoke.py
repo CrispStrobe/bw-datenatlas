@@ -563,6 +563,20 @@ with sync_playwright() as pw:
           and '21.585' in page.locator('#map-period').inner_text())
     check('the grid layer warns that gaps are not empty land',
           'geheimgehalten' in page.locator('#map-note').inner_text())
+    # Die heikelste Ebene des Atlas. Geprüft wird nicht, ob sie schön aussieht,
+    # sondern ob die drei Sätze dastehen, ohne die sie falsch gelesen wird.
+    page.select_option('#layer','grid_turkish')
+    page.wait_for_selector('#map-features rect.grid-cell',timeout=60000)
+    page.wait_for_timeout(700)
+    tuerk=page.locator('#map-note').inner_text()
+    check('the turkish layer denies being about religion',
+          'keine Religionszugehörigkeit' in tuerk)
+    check('the turkish layer says the naturalised majority is missing',
+          'deutschen Pass und fehlt hier' in tuerk)
+    check('the turkish layer states how few cells carry a value',
+          '6.581' in page.locator('#map-period').inner_text())
+    check('the turkish layer names the minimum cell size',
+          '30 Einwohnern' in tuerk)
     page.select_option('#layer','grid_mean_age'); page.wait_for_timeout(1200)
     check('the second grid layer has more cells than the first',
           page.locator('#map-features rect.grid-cell').count()>zellen)

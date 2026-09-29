@@ -32,6 +32,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Unter so vielen Einwohnern wird kein Anteil gebildet: die Geheimhaltung
+# verschiebt kleine Zahlen um genau die Größenordnung, um die es dann ginge.
+MINDESTGROESSE = 30
+
 # Welche Größen übernommen werden, mit dem Dateinamensmuster und der Wertspalte.
 GROESSEN = {
     'foreign_pct': ('*Anteil_Auslaender_1km*.csv', 'AnteilAuslaender',
@@ -42,6 +46,23 @@ GROESSEN = {
                      'Unter 18-Jährige', 'percent'),
     'age_65_plus_pct': ('*Anteil_ueber_65_1km*.csv', 'AnteilUeber65',
                         'Ab 65-Jährige', 'percent'),
+}
+
+# Größen, die als Zahl geliefert werden und erst durch die Einwohnerzahl derselben
+# Zelle zu einem Anteil werden. Die Nennerspalte steht in derselben Datei.
+ANTEILE = {
+    'turkish_pct': ('*Staatsangehoerigkeit_nach_Laendern_1km*.csv', 'Tuerkei',
+                    'Türkische Staatsangehörige', 'percent'),
+    # Bosnien und Herzegowina liefert die Datei ebenfalls, aber nur für 3.796 der
+    # 21.585 Zellen — jede fünfte. Eine Karte, die zu vier Fünfteln leer ist und bei
+    # der leer zweierlei heißt, sagt mehr über die Geheimhaltung als über das Land.
+    # Deshalb nicht übernommen.
+    'age_18_29_pct': ('*Alter_in_5_Altersklassen_1km*.csv', 'a18bis29',
+                      '18- bis 29-Jährige', 'percent'),
+    'age_30_49_pct': ('*Alter_in_5_Altersklassen_1km*.csv', 'a30bis49',
+                      '30- bis 49-Jährige', 'percent'),
+    'age_50_64_pct': ('*Alter_in_5_Altersklassen_1km*.csv', 'a50bis64',
+                      '50- bis 64-Jährige', 'percent'),
 }
 
 
@@ -110,6 +131,53 @@ def main() -> None:
 
     # Spaltenweise statt zeilenweise: bei 21.000 Zellen wiegen die wiederholten
     # Feldnamen mehr als die Zahlen selbst. So wird aus 2,2 MB ein Drittel davon.
+    # Die Anteilsgrößen: Zähler und Nenner stehen in derselben Zeile, also wird hier
+    # gerechnet und nicht im Browser. Eine gesperrte Zahl bleibt gesperrt — sie als
+    # Null zu lesen hieße, aus einer Geheimhaltung eine Aussage zu machen.
+    for schluessel, (muster, spalte, titel, einheit) in ANTEILE.items():
+        treffer = sorted(args.quelle.glob('*/' + muster)) or sorted(args.quelle.glob(muster))
+        if not treffer:
+            print(f'  {schluessel:16s} keine Datei für {muster} — übersprungen')
+            continue
+        pfad = treffer[0]
+        n = zu_klein = unmoeglich = 0
+        with pfad.open(encoding='utf-8-sig') as fh:
+            for r in csv.DictReader(fh, delimiter=';'):
+                kennung = r['GITTER_ID_1km']
+                z = zellen.get(kennung)
+                if z is None:
+                    continue
+                zaehler = zahl(r.get(spalte))
+                nenner = zahl(r.get('Insgesamt_Bevoelkerung'))
+                if zaehler is None or not nenner:
+                    continue
+                # Zwei Regeln gegen die Überlagerung, beide gezählt statt still
+                # angewandt. Erstens eine Mindestgröße: ein Anteil aus fünf
+                # Einwohnern ist kein Anteil, sondern Rauschen — die Cell-Key-
+                # Überlagerung verschiebt kleine Zahlen um genau die Größenordnung,
+                # um die es dabei geht. Bundesweit kostet die Grenze 338 von 36.169
+                # Zellen. Zweitens das Unmögliche: in genau einer Zelle in ganz
+                # Deutschland ist der Zähler größer als der Nenner (3 Einwohner,
+                # 9 türkische Staatsangehörige). Das ist kein Wert, den man kappt,
+                # sondern einer, den man wegläßt und nennt.
+                if nenner < MINDESTGROESSE:
+                    zu_klein += 1
+                    continue
+                if zaehler > nenner:
+                    unmoeglich += 1
+                    continue
+                z[schluessel] = round(100 * zaehler / nenner, 1)
+                n += 1
+        gefunden[schluessel] = {'title': titel, 'unit': einheit,
+                                'source_file': pfad.name, 'cells': n,
+                                'derived': f'{spalte} / Insgesamt_Bevoelkerung',
+                                'dropped_too_small': zu_klein,
+                                'dropped_impossible': unmoeglich,
+                                'minimum_denominator': MINDESTGROESSE}
+        print(f'  {schluessel:16s} {n:6d} Zellen aus {pfad.name}'
+              + (f' · {zu_klein} zu klein' if zu_klein else '')
+              + (f' · {unmoeglich} unmöglich' if unmoeglich else ''))
+
     reihe = sorted(zellen.values(), key=lambda z: (z['lat'], z['lon']))
     spalten = {'lon': [z['lon'] for z in reihe], 'lat': [z['lat'] for z in reihe]}
     for k in gefunden:
@@ -125,6 +193,13 @@ def main() -> None:
         'why_it_matters': ('Eine Gemeinde wie Stuttgart hat 610.000 Einwohner und auf den '
                            'übrigen Ebenen einen einzigen Wert. Wo innerhalb einer Stadt '
                            'wer wohnt, ist erst hier zu sehen.'),
+        'minimum_denominator': MINDESTGROESSE,
+        'how_shares_are_guarded': (
+            'Anteile werden nur gebildet, wo die Zelle mindestens '
+            f'{MINDESTGROESSE} Einwohner hat, und nicht, wo der Zähler größer ist '
+            'als der Nenner. Beides kommt von der Cell-Key-Überlagerung. Wie viele '
+            'Zellen das je Größe kostet, steht bei der Größe selbst — weggelassen, '
+            'nicht gekappt.'),
         'secrecy': ('Der Zensus überlagert Zellenwerte nach dem Cell-Key-Verfahren und '
                     'sperrt kleine Fälle. Gesperrte Zellen bleiben leer und werden nicht '
                     'als Null gezeichnet: bei einem Kilometer Kantenlänge ist das der '
