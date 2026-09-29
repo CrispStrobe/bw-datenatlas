@@ -3,6 +3,10 @@
 .grid-cell{shape-rendering:crispEdges}.map-feature:hover,.map-feature.is-selected{stroke:var(--ink);stroke-width:2}
 /* Eigene Spalten: die vorhandene Pyramide hat drei, diese vier — links Männer,
    Mitte das Alter, rechts Frauen, ganz rechts der Anteil der hier Geborenen. */
+.survey-block-title{font-size:15px;font-weight:650;margin:22px 0 4px}
+.survey-block-title:first-child{margin-top:0}
+.survey-meta{margin:0 0 12px;line-height:1.6}
+
 #foreign-age .py-row{display:grid;grid-template-columns:1fr 3.4rem 1fr 3rem;align-items:center;gap:.3rem;margin-bottom:2px}
 #foreign-age .py-age{font-size:.7rem;color:var(--muted);text-align:center;opacity:1;font-variant-numeric:tabular-nums}
 #foreign-age .py-bar{display:flex;gap:0;height:12px}

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 278,
+  "check_count": 287,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -828,6 +828,42 @@
     },
     {
       "name": "model, ceiling and counted church figures share one profile",
+      "passed": true
+    },
+    {
+      "name": "the survey section is separate from the counted figures",
+      "passed": true
+    },
+    {
+      "name": "every survey block names population, base and field period",
+      "passed": true
+    },
+    {
+      "name": "the survey section cites the question numbers",
+      "passed": true
+    },
+    {
+      "name": "the survey section says its figures feed no model",
+      "passed": true
+    },
+    {
+      "name": "the survey section offers a dropdown like the map",
+      "passed": true
+    },
+    {
+      "name": "only the selected block is drawn",
+      "passed": true
+    },
+    {
+      "name": "switching the dropdown switches the block",
+      "passed": true
+    },
+    {
+      "name": "the perception gap is shown from both sides",
+      "passed": true
+    },
+    {
+      "name": "the source note follows the selected block",
       "passed": true
     },
     {

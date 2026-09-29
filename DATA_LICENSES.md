@@ -191,6 +191,13 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 - **Wo nur ein Anteil veröffentlicht wurde** (Pew 2020: rund 7 Prozent), steht der Anteil als Wert und es wird kein Balken gezeichnet.
 - **Herkunft der Zusammenstellung:** die Werte stammen aus einem strukturierten Studienkorpus (33 Studien, 46 Publikationen, 97 geprüfte Aggregatwerte), der die Originalfundstellen mitführt. Zitiert und geprüft werden die Originale, nicht der Korpus.
 
+## Befragungsergebnisse („Was gefragt wurde")
+
+- **Streng getrennt von allen Zählungen.** Eigener Abschnitt, eigene Überschrift, keine Karte und keine Kartenebene. Diese Zahlen gehen in keine Modellrechnung ein und werden mit keiner Bevölkerungszahl verrechnet.
+- **Vier Angaben an jeder Zeile**, weil bei Befragungen alles daran hängt: Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, die Fragennummern. „88,6 Prozent" ist ohne die Grundgesamtheit keine Aussage.
+- **Aufgenommen bisher:** Gründe für das Tragen eines Kopftuchs (MLD 2020, Abbildung 4-41, S. 121, n = 603, Fragen v401_1–v401_9, nur Musliminnen, die das Kopftuch manchmal, meistens oder immer tragen; Mehrfachnennungen) sowie Selbst- und Fremdbild zur Abgrenzung (Pew Global Attitudes 2006, Erhebung 31.03.–14.05.2006, und Pew 2016/17).
+- **Bewusst nicht aufgenommen, weil nicht belegbar:** Religionsmonitor-Konstrukte „Dogmatismus", „Existenz eines absoluten Maßstabs für Gut und Böse" und „Traditionale Glaubenspraxis" — der Bericht 2023 enthält sie nicht, die Fassung von 2008 ist ein Buch und kein offenes PDF; die Variablen lägen im GESIS-Datensatz ZA5001 hinter einem Zugang. Ebenso Liljeberg International, „Wertewelt" 2009: keine offen zugängliche Fundstelle gefunden.
+
 ## Registergrößen je Bundesland (Deutschlandkarte)
 
 - **Quellen:** Statistisches Bundesamt (Destatis), Ausländerstatistik, Tabellen **12521-0023** (Alter, Generation), **12521-0025** (Aufenthaltsdauer) und **12521-0030** (Durchschnittsalter), Stichtag 31.12.2025, `dl-de/by-2-0`. Alle drei liegen gepackt im Repository.

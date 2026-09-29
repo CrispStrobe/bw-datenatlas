@@ -257,6 +257,9 @@ jobs:
       - name: Veröffentlichte Altersangaben zusammenstellen
         run: python scripts/prepare_published_ages.py
 
+      - name: Befragungsergebnisse zusammenstellen
+        run: python scripts/prepare_survey_items.py
+
       # Die Quelldatei liegt gepackt im Repository, der Schritt braucht kein Netz.
       - name: Alterspyramide der ausländischen Bevölkerung bauen
         run: python scripts/prepare_foreign_age_pyramid.py

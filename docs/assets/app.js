@@ -1663,6 +1663,45 @@ function renderIruTimeseries(){
    integer(D2.schools_with_offer),integer(D2.religion_groups),D2.source)
    +' · '+t(D2.cross_check);
 }
+// Befragungsergebnisse, streng getrennt. Die vier Angaben an jeder Zeile —
+// Grundgesamtheit, Fallzahl, Erhebungszeitraum, Fundstelle — sind hier nicht
+// Beiwerk: 88,6 Prozent WOVON ist die ganze Frage.
+function renderSurveyItems(){
+ const host=$('survey-blocks');if(!host)return;
+ const D2=window.ATLAS_SURVEY_ITEMS;
+ if(!D2||!D2.blocks){const k=host.closest('section');if(k)k.hidden=true;return;}
+ $('survey-warning').textContent=t(D2.what_this_is)+' '+t(D2.why_the_metadata_matters);
+ // Ein Auswahlfeld wie über der Karte: bei Befragungen ist jeder Block eine
+ // eigene Frage an eine eigene Grundgesamtheit, und untereinander gestapelt lädt
+ // das dazu ein, sie als eine Reihe zu lesen. Einer nach dem anderen.
+ const feld=$('survey-select');
+ if(feld&&!feld.options.length){
+  feld.innerHTML=D2.blocks.map((b,n)=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('');
+  feld.addEventListener('change',renderSurveyItems);
+ }
+ const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
+ host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
+  const max=Math.max(...b.items.map(i=>i.value));
+  const erste=b.items[0];
+  return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
+   +'<p class="tiny survey-meta">'+esc([erste.study,erste.population,
+       erste.base_n?tf('{0} Befragte',integer(erste.base_n)):t('Fallzahl nicht angegeben'),
+       erste.field_period,erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
+       .filter(Boolean).join(' · '))+'</p>'
+   +'<div class="horizontal-bars">'+b.items.map(i=>
+     '<div class="bar-row"><div class="bar-name">'+esc(t(i.label))+'</div>'
+     +'<div class="bar-track"><div class="bar-fill" style="width:'
+     +(100*i.value/max).toFixed(1)+'%;background:#6b7f8a"></div></div>'
+     +'<div class="bar-value">'+esc(pct(i.value))+'</div></div>').join('')
+   +'</div>';
+ }).join('');
+ const quellen=[...new Map((D2.blocks[gewaehlt]||{items:[]}).items
+   .map(i=>[i.source_url,i])).values()];
+ $('survey-note').innerHTML=esc(t(D2.not_in_any_model))+' '
+  +quellen.map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
+    +esc(i.source_title)+(i.source_locator?', '+esc(i.source_locator):'')+'</a>')
+    .join(' · ');
+}
 function renderPublishedAges(){
  const host=$('ages-bars');if(!host)return;
  const D2=window.ATLAS_PUBLISHED_AGES;
@@ -1768,7 +1807,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -1803,7 +1842,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();}catch(e){}
+ try{renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

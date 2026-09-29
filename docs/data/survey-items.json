@@ -1,0 +1,191 @@
+{
+ "type": "survey_items",
+ "schema_version": "1.0",
+ "what_this_is": "Antworten auf Fragen, nicht gezählte Menschen. Ein eigener Abschnitt, weil eine Prozentzahl wie die andere aussieht und niemand einem Balken ansieht, ob dahinter ein Register steht oder ein Fragebogen.",
+ "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
+ "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
+ "count": 13,
+ "blocks": [
+  {
+   "block": "kopftuch",
+   "title": "Gründe für das Tragen eines Kopftuchs",
+   "items": [
+    {
+     "label": "Religiöse Pflicht",
+     "value": 88.6,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "Musliminnen mit Migrationshintergrund aus muslimisch geprägten Herkunftsländern ab 16 Jahren, die das Kopftuch manchmal, meistens oder immer tragen",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Vermittlung von Sicherheit",
+     "value": 37.5,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Tradition",
+     "value": 31.8,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Erkennbarkeit als Muslimin in der Öffentlichkeit",
+     "value": 29.0,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Schutz vor Belästigung von Männern",
+     "value": 10.9,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Andere Gründe",
+     "value": 9.7,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Erwartungen des Bekanntenkreises",
+     "value": 4.6,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Erwartung oder Forderung von Familie oder Partner",
+     "value": 4.4,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    },
+    {
+     "label": "Modische Gründe",
+     "value": 3.4,
+     "unit": "percent",
+     "study": "MLD 2020",
+     "population": "dieselbe Gruppe",
+     "base_n": 603,
+     "field_period": "Juli 2019 bis März 2020",
+     "question_ref": "v401_1–v401_9",
+     "source_title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38",
+     "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+     "source_locator": "Abbildung 4-41, S. 121"
+    }
+   ]
+  },
+  {
+   "block": "abgrenzung",
+   "title": "Wollen Muslime sich abgrenzen? Selbstbild und Fremdbild",
+   "items": [
+    {
+     "label": "Befragte Muslime: Zuwandernde Muslime wollen sich anpassen",
+     "value": 30.0,
+     "unit": "percent",
+     "study": "Pew Global Attitudes 2006",
+     "population": "Muslime in Deutschland",
+     "base_n": null,
+     "field_period": "31.03. bis 14.05.2006",
+     "question_ref": null,
+     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
+     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+     "source_locator": "Kapitel Identität"
+    },
+    {
+     "label": "Befragte Muslime: Zuwandernde Muslime wollen sich abgrenzen",
+     "value": 52.0,
+     "unit": "percent",
+     "study": "Pew Global Attitudes 2006",
+     "population": "Muslime in Deutschland",
+     "base_n": null,
+     "field_period": "31.03. bis 14.05.2006",
+     "question_ref": null,
+     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
+     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+     "source_locator": "Kapitel Identität"
+    },
+    {
+     "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen",
+     "value": 76.0,
+     "unit": "percent",
+     "study": "Pew Global Attitudes 2006",
+     "population": "Bevölkerung Deutschlands",
+     "base_n": null,
+     "field_period": "31.03. bis 14.05.2006",
+     "question_ref": null,
+     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
+     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+     "source_locator": "Kapitel Identität"
+    },
+    {
+     "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen (zehn Jahre später)",
+     "value": 61.0,
+     "unit": "percent",
+     "study": "Pew 2016/17",
+     "population": "Bevölkerung Deutschlands",
+     "base_n": null,
+     "field_period": "2016 bis 2017",
+     "question_ref": null,
+     "source_title": "Pew Research Center (2017): Europe’s Growing Muslim Population",
+     "source_url": "https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/",
+     "source_locator": "Abschnitt Wahrnehmung"
+    }
+   ]
+  }
+ ]
+}

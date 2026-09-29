@@ -630,6 +630,35 @@ with sync_playwright() as pw:
           'Modellrechnung' in modell and 'Obergrenze aus dem Zensus 2022' in modell
           and 'Kirchenmitgliedschaft' in modell)
 
+    # Befragungsergebnisse stehen in einem eigenen Abschnitt, und jede Zeile trägt
+    # die vier Angaben, ohne die eine Prozentzahl nichts wert ist.
+    umf=page.locator('#befragungen').inner_text()
+    check('the survey section is separate from the counted figures',
+          page.locator('#befragungen').count()==1
+          and 'Was gefragt wurde' in umf)
+    check('every survey block names population, base and field period',
+          '603 Befragte' in umf and 'Juli 2019 bis März 2020' in umf
+          and 'die das Kopftuch manchmal' in umf)
+    check('the survey section cites the question numbers',
+          'v401_1' in umf)
+    check('the survey section says its figures feed no model',
+          'keine Modellrechnung' in umf)
+    # Ein Auswahlfeld wie über der Karte: ein Block nach dem anderen, damit die
+    # Blöcke nicht wie eine Reihe gelesen werden.
+    check('the survey section offers a dropdown like the map',
+          page.locator('#survey-select option').count()>=2)
+    check('only the selected block is drawn',
+          page.locator('#survey-blocks .bar-row').count()==9)
+    page.select_option('#survey-select','1'); page.wait_for_timeout(400)
+    zweiter=page.locator('#befragungen').inner_text()
+    check('switching the dropdown switches the block',
+          page.locator('#survey-blocks .bar-row').count()==4)
+    check('the perception gap is shown from both sides',
+          '30' in zweiter and '76' in zweiter and 'Allgemeinbevölkerung' in zweiter)
+    check('the source note follows the selected block',
+          'Pew' in page.locator('#survey-note').inner_text())
+    page.select_option('#survey-select','0'); page.wait_for_timeout(400)
+
     # Die erste echte Alterspyramide neben der nach Einwanderungsgeschichte. Ihr
     # Wert liegt in der Generationenspalte — und in dem, was sie über sich selbst sagt.
     pyr=page.locator('#foreign-age-card').inner_text()
