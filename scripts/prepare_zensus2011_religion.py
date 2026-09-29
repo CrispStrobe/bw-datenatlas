@@ -67,6 +67,12 @@ SPALTEN = ['kreis', 'regierungsbezirk', 'land', 'bund']
 # ausländische Staatsangehörige, unter den evangelischen einer von hundert.
 STAAT = ['total', 'german', 'foreign', 'foreign_eu27', 'foreign_other_europe',
          'foreign_rest_of_world', 'foreign_unclear']
+# Tabelle 1.5 kreuzt dieselben Religionsgesellschaften mit fünf Altersklassen. Sie
+# beantwortet die zweite Hälfte der Einwanderungsfrage: eine Gemeinschaft, die durch
+# Zuwanderung wächst, ist jung, eine, die durch Austritte und Sterbefälle schrumpft,
+# ist alt. Beides steht hier nebeneinander.
+ALTER = [('under_18', 'unter 18'), ('a18_29', '18 bis 29'), ('a30_49', '30 bis 49'),
+         ('a50_64', '50 bis 64'), ('a65_plus', '65 und älter')]
 
 
 def hole(url: str) -> bytes:
@@ -151,6 +157,12 @@ def staatsblock(text: str) -> list[list[str]] | None:
     return None if i < 0 else block(text[i:])
 
 
+def altersblock(text: str) -> list[list[str]] | None:
+    """Der Religionsblock aus Tabelle 1.5, Religion mal Altersklasse."""
+    i = text.find('1.5 Bevölkerung nach Alter und weiteren demografischen')
+    return None if i < 0 else block(text[i:])
+
+
 def lies(pdf: Path) -> dict | None:
     text = subprocess.run(['pdftotext', '-layout', str(pdf), '-'],
                           capture_output=True, text=True, check=True).stdout
@@ -202,6 +214,21 @@ def lies(pdf: Path) -> dict | None:
                                 roh[7]]):
                     werte[schluessel] = zahl(wert)
         zeile.setdefault('staat', {})[feld] = werte
+    alt_tab = altersblock(text)
+    for n, (feld, label) in enumerate(KATEGORIEN):
+        werte = {}
+        if alt_tab is not None:
+            zellen = alt_tab[n]
+            if not zellen[0].startswith(label[:18]):
+                raise SystemExit(f'{pdf.name}: Alterstabelle erwartet "{label}", '
+                                 f'gefunden "{zellen[0]}"')
+            # Spalten: Anzahl, %, dann die fünf Altersklassen.
+            roh = zellen[1:]
+            if len(roh) >= 7:
+                werte['total'] = zahl(roh[0])
+                for (schluessel, _), wert in zip(ALTER, roh[2:7]):
+                    werte[schluessel] = zahl(wert)
+        zeile.setdefault('alter', {})[feld] = werte
     for n, (feld, label) in enumerate(KATEGORIEN):
         for quelle, endung in ((absolut, ''), (anteil, '_pct')):
             zellen = quelle[n]
@@ -266,6 +293,31 @@ def main() -> None:
                 1 for w in werte if w is None)
         staat_land[feld] = eintrag
 
+    alter_land = {}
+    for feld, _ in KATEGORIEN:
+        eintrag = {}
+        for schluessel in ['total'] + [k for k, _ in ALTER]:
+            werte = [z['alter'][feld].get(schluessel) for z in kreise]
+            eintrag[schluessel] = sum(w for w in werte if w is not None)
+            eintrag[schluessel + '_districts_suppressed'] = sum(
+                1 for w in werte if w is None)
+        # Die Geheimhaltung trifft die Altersklassen ungleich: bei den orthodoxen
+        # Kirchen fehlt „65 und älter" in 23 von 44 Kreisen, „30 bis 49" in keinem.
+        # Eine Summe daraus machte die Gemeinschaft jünger, als belegt ist. Statt
+        # eines Punktwerts steht deshalb eine Spanne da: unten der gezählte Anteil,
+        # oben der Fall, dass alle nicht zugeordneten Personen in diese Klasse
+        # fielen. Die Aussage der Grafik muss auch am oberen Rand noch stimmen.
+        zugeordnet = sum(eintrag[k] for k, _ in ALTER)
+        eintrag['assigned'] = zugeordnet
+        eintrag['unassigned'] = max(0, eintrag['total'] - zugeordnet)
+        for k, _ in ALTER:
+            eintrag[k + '_pct_low'] = (round(100 * eintrag[k] / eintrag['total'], 1)
+                                       if eintrag['total'] else None)
+            eintrag[k + '_pct_high'] = (
+                round(100 * (eintrag[k] + eintrag['unassigned']) / eintrag['total'], 1)
+                if eintrag['total'] else None)
+        alter_land[feld] = eintrag
+
     referenz = kreise[0]
     land = {feld: referenz[f'land_{feld}'] for feld, _ in KATEGORIEN}
     bund = {feld: referenz[f'bund_{feld}'] for feld, _ in KATEGORIEN}
@@ -322,6 +374,17 @@ def main() -> None:
         'categories': {f: l for f, l in KATEGORIEN},
         'state_total': land,
         'by_citizenship': staat_land,
+        'by_age': alter_land,
+        'age_columns': {k: l for k, l in ALTER},
+        'what_age_shows': (
+            'Tabelle 1.5 derselben Bände kreuzt die Religionsgesellschaft mit fünf '
+            'Altersklassen. Eine Gemeinschaft, die durch Zuwanderung wächst, ist jung; '
+            'eine, die durch Austritte und Sterbefälle schrumpft, ist alt. Auch hier '
+            'sind die Landeswerte Summen der 44 Kreise, und gesperrte Zellen fehlen '
+            'darin. Weil die Sperren die Altersklassen ungleich treffen, steht '
+            'statt eines Punktwerts eine Spanne: unten der gezählte Anteil, oben '
+            'der Fall, dass alle nicht zugeordneten Personen in diese Klasse '
+            'fielen.'),
         'citizenship_columns': {
             'total': 'Insgesamt', 'german': 'Deutschland',
             'foreign': 'Ausland insgesamt', 'foreign_eu27': 'EU27-Land',
@@ -347,7 +410,7 @@ def main() -> None:
             {'ags': z['ags'], 'name': z['name'],
              **{f: z[f'kreis_{f}'] for f, _ in KATEGORIEN},
              **{f + '_pct': z[f'kreis_{f}_pct'] for f, _ in KATEGORIEN},
-             'by_citizenship': z['staat']}
+             'by_citizenship': z['staat'], 'by_age': z['alter']}
             for z in kreise],
     }
     args.out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + '\n',
@@ -368,6 +431,16 @@ def main() -> None:
               f"  ({e['foreign']:>9,} von {e['total']:>10,})".replace(',', '.')
               + (f"  · {e['foreign_districts_suppressed']} Kreise gesperrt"
                  if e['foreign_districts_suppressed'] else ''))
+    print('  Altersaufbau (Kreissummen, Anteil 65 und älter / unter 18):')
+    for feld, label in KATEGORIEN:
+        e = alter_land[feld]
+        n = sum(e[k] for k, _ in ALTER)
+        if not n:
+            continue
+        gesperrt = max(e[k + '_districts_suppressed'] for k, _ in ALTER)
+        print(f"    {label:46s} {100 * e['a65_plus'] / n:5.1f} % / "
+              f"{100 * e['under_18'] / n:5.1f} %"
+              + (f'  · bis zu {gesperrt} Kreise gesperrt' if gesperrt else ''))
     oben = sorted(kreise, key=lambda z: z['kreis_orthodox_pct'] or 0, reverse=True)[:5]
     print('  Höchste orthodoxe Anteile: '
           + ', '.join(f"{z['name']} {z['kreis_orthodox_pct']} %" for z in oben))

@@ -1890,6 +1890,47 @@ function renderOrthodoxCitizenship(){
  }).join('');
  $('orthodox-citizenship-note').textContent=t('Statistisches Landesamt Baden-Württemberg, Zensus 2011 — Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände, Tabelle 1.3')+' · '+t(D2.membership_not_belief);
 }
+// Die zweite Hälfte derselben Frage. Wo die Geheimhaltung eine Altersklasse in
+// vielen Kreisen genommen hat, wäre die Summe ein zu junges Bild — deshalb eine
+// Spanne statt eines Punktwerts, und eine Zeile fällt weg, wenn die Spanne so weit
+// wird, dass sie nichts mehr sagt.
+const ALTERSSPANNE_MAX=15;
+function renderReligionAge(){
+ const host=$('religion-age-bars');if(!host)return;
+ const D2=Z2011;
+ if(!D2||!D2.by_age){const k=$('religion-age-card');if(k)k.hidden=true;return;}
+ $('religion-age-warning').textContent=t(D2.what_age_shows);
+ const zeilen=Object.entries(D2.categories).map(([feld,label])=>{
+  const e=D2.by_age[feld]||{};
+  return {label,low:e.a65_plus_pct_low,high:e.a65_plus_pct_high,
+          jung_low:e.under_18_pct_low,jung_high:e.under_18_pct_high,
+          total:e.total||0};
+ }).filter(z=>z.total&&z.low!==null&&z.high!==null
+             &&z.high-z.low<=ALTERSSPANNE_MAX);
+ const max=Math.max(...zeilen.map(z=>z.high),1);
+ // Die Balken zeigen eine von fünf Altersklassen; ohne Überschrift läse man
+ // sie als Gesamtanteil.
+ host.innerHTML='<div class="bar-row"><div class="bar-name"><strong>'
+  +esc(t('65 Jahre und älter'))+'</strong></div><div></div><div></div></div>'
+  +zeilen.map(z=>{
+  const spanne=z.high>z.low;
+  const wert=spanne?pf.format(z.low)+'–'+pf.format(z.high)+' %':pct(z.low);
+  const jung=z.jung_high>z.jung_low
+    ?pf.format(z.jung_low)+'–'+pf.format(z.jung_high)+' %':pct(z.jung_low);
+  return '<div class="bar-row"><div class="bar-name">'+esc(t(z.label))
+   +'<br><span class="tiny">'+esc(tf('unter 18: {0}',jung))+'</span></div>'
+   +'<div class="bar-track"><div class="bar-fill" style="width:'
+   +(100*z.low/max).toFixed(1)+'%;background:#6b7f8a"></div>'
+   +(spanne?'<div class="bar-whisker" style="left:'+(100*z.low/max).toFixed(1)
+      +'%;width:'+(100*(z.high-z.low)/max).toFixed(1)+'%"></div>':'')
+   +'</div><div class="bar-value">'+esc(wert)+'</div></div>';
+ }).join('');
+ $('religion-age-note').textContent=t('Zeilen, deren Spanne breiter als 15 Punkte '
+  +'wäre, stehen nicht in der Grafik: bei den evangelischen Freikirchen und den '
+  +'jüdischen Gemeinden ist so viel geheim gehalten, dass eine Spanne nichts mehr '
+  +'aussagt.')+' '+t('Statistisches Landesamt Baden-Württemberg, Zensus 2011 — '
+  +'Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände, Tabelle 1.5');
+}
 function renderPublishedEstimates(){
  const host=$('published-estimates-bars');if(!host)return;
  const D2=window.ATLAS_PUBLISHED_ESTIMATES;
@@ -1975,7 +2016,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -2010,7 +2051,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderPublishedEstimates();renderOrthodoxCitizenship();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
+ try{renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

@@ -131,6 +131,23 @@ with sync_playwright() as pw:
     # Die Karte, die den Satz „Einwanderungskirchen" trägt. Sie darf den Abstand
     # zeigen und muss die beiden Lücken offen lassen, statt aus drei Kreisen eine
     # Landeszahl zu machen.
+    # Der Altersaufbau daneben. Die Spanne muss sichtbar sein, sonst liest sich ein
+    # Wert, den die Geheimhaltung nach unten gezogen hat, wie eine Messung.
+    alt=page.locator('#religion-age-card')
+    check('the age chart is on the page',alt.is_visible())
+    check('the age chart drops the rows whose range says nothing',
+          page.locator('#religion-age-bars .bar-row').count()==6)
+    at=alt.inner_text()
+    check('the age chart names the age class it shows','65' in at)
+    check('the age chart shows the orthodox value as a range',
+          '7,1' in at and '12,1' in at)
+    check('the age chart shows the protestant value exactly',
+          '24,0 %' in at or '24.0 %' in at)
+    check('the age chart draws the uncertainty it states',
+          page.locator('#religion-age-bars .bar-whisker').count()>=2)
+    check('the age chart says why two rows are missing',
+          'Freikirchen' in at or 'free churches' in at)
+
     karte=page.locator('#orthodox-citizenship-card')
     check('the citizenship chart is on the page',karte.is_visible())
     zeilen=page.locator('#orthodox-citizenship-bars .bar-row')

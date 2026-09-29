@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 326,
+  "check_count": 333,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -112,6 +112,34 @@
     },
     {
       "name": "the estimated tile is marked apart from the counted ones",
+      "passed": true
+    },
+    {
+      "name": "the age chart is on the page",
+      "passed": true
+    },
+    {
+      "name": "the age chart drops the rows whose range says nothing",
+      "passed": true
+    },
+    {
+      "name": "the age chart names the age class it shows",
+      "passed": true
+    },
+    {
+      "name": "the age chart shows the orthodox value as a range",
+      "passed": true
+    },
+    {
+      "name": "the age chart shows the protestant value exactly",
+      "passed": true
+    },
+    {
+      "name": "the age chart draws the uncertainty it states",
+      "passed": true
+    },
+    {
+      "name": "the age chart says why two rows are missing",
       "passed": true
     },
     {

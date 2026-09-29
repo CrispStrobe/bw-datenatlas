@@ -288,4 +288,31 @@ class DataTests(unittest.TestCase):
             self.assertAlmostEqual(c[f]['total'] / d['state_total'][f], 1, places=3)
         self.assertIn('Pass, nicht die Herkunft', d['what_citizenship_shows'])
 
+    def test_zensus2011_age_bounds_survive_the_secrecy(self):
+        """Die Altersaussage muss auch am ungünstigen Rand der Sperre noch gelten.
+
+        Bei den orthodoxen Kirchen fehlt die Klasse 65 und älter in 23 von 44
+        Kreisen. Der gezählte Anteil ist deshalb zu niedrig, und die Obergrenze —
+        alle nicht zugeordneten Personen wären über 65 — ist die Probe: liegt die
+        noch deutlich unter dem evangelischen Wert, trägt der Satz in der
+        Überschrift.
+        """
+        d = json.loads((ROOT/'docs/data/zensus2011-religion.json').read_text(encoding='utf-8'))
+        a = d['by_age']
+        for f, e in a.items():
+            if not e['total']:
+                continue
+            self.assertLessEqual(e['a65_plus_pct_low'], e['a65_plus_pct_high'], f)
+            # Die Geheimhaltung rundet jeden Einzelwert, und die Quelle sagt
+            # selbst, dass Teilsummen deshalb von der Gesamtzahl abweichen
+            # können — bei den Katholiken um 140 von 3,9 Millionen nach oben.
+            self.assertLess(abs(e['assigned'] + e['unassigned'] - e['total'])
+                            / e['total'], 0.001, f)
+        for f in ('roman_catholic', 'protestant', 'none'):
+            self.assertEqual(a[f]['unassigned'], 0, f)
+            self.assertEqual(a[f]['a65_plus_pct_low'], a[f]['a65_plus_pct_high'], f)
+        self.assertLess(a['orthodox']['a65_plus_pct_high'],
+                        a['protestant']['a65_plus_pct_low'] / 1.8)
+        self.assertLess(a['orthodox']['a65_plus_pct_high'], 12.5)
+
 if __name__=='__main__': unittest.main(verbosity=2)
