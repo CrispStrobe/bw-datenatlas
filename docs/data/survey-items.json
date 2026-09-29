@@ -3,8 +3,9 @@
  "schema_version": "1.0",
  "what_this_is": "Antworten auf Fragen, nicht gezählte Menschen. Ein eigener Abschnitt, weil eine Prozentzahl wie die andere aussieht und niemand einem Balken ansieht, ob dahinter ein Register steht oder ein Fragebogen.",
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
+ "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 16,
+ "count": 24,
  "blocks": [
   {
    "block": "bw_religioese_vielfalt",
@@ -51,6 +52,124 @@
      "source_title": "Ministerium für Soziales und Integration Baden-Württemberg (2020): Integrationsbericht des Landes Baden-Württemberg 2020, Datenquelle: Umfrage „Integration unter Druck?\" 2019",
      "source_url": "https://sozialministerium.baden-wuerttemberg.de/",
      "source_locator": "Abbildung 9-11, S. 91"
+    }
+   ]
+  },
+  {
+   "block": "bw_kopftuch_2012",
+   "title": "„Stört mich\": das Tragen von Kopftüchern, Baden-Württemberg 2012",
+   "items": [
+    {
+     "label": "Alle Befragten",
+     "detail": "stört mich nicht 64",
+     "value": 34.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Abbildung 7-2, S. 23"
+    },
+    {
+     "label": "Befragte ohne Konfession",
+     "detail": "stört mich nicht 57",
+     "value": 42.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Abbildung 7-4, S. 24"
+    },
+    {
+     "label": "Befragte anderer Religion",
+     "detail": "stört mich nicht 59",
+     "value": 39.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Abbildung 7-4, S. 24"
+    },
+    {
+     "label": "Katholische Befragte",
+     "detail": "stört mich nicht 65",
+     "value": 34.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Abbildung 7-4, S. 24"
+    },
+    {
+     "label": "Evangelische Befragte",
+     "detail": "stört mich nicht 65",
+     "value": 33.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Abbildung 7-4, S. 24"
+    },
+    {
+     "label": "Muslimische Befragte",
+     "detail": "stört mich nicht 93",
+     "value": 7.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Abbildung 7-4, S. 24"
+    },
+    {
+     "label": "Landesteil Württemberg",
+     "detail": null,
+     "value": 38.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Fließtext S. 25"
+    },
+    {
+     "label": "Landesteil Baden",
+     "detail": null,
+     "value": 30.0,
+     "unit": "percent",
+     "study": "Gelebte Vielfalt 2012",
+     "population": "Deutsche ab 18 Jahren (Wahlberechtigte) mit Hauptwohnsitz in Baden-Württemberg, telefonisch befragt von Infratest dimap",
+     "base_n": 3001,
+     "field_period": "30.01. bis 04.03.2012",
+     "question_ref": null,
+     "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
+     "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+     "source_locator": "Fließtext S. 25"
     }
    ]
   },

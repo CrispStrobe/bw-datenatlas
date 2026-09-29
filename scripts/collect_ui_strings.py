@@ -41,7 +41,10 @@ def sammeln(port: int) -> list[str]:
         # weil immer nur eine Ebene gleichzeitig gezeichnet ist.
         page.evaluate("()=>document.querySelectorAll('details').forEach(d=>d.open=true)")
         page.wait_for_timeout(400)
-        for wahl, feld in (('#layer', 'layer'), ('#azr-indicator', 'azr'),
+        # Auch das Auswahlfeld der Befragungen: dort wird immer nur ein Block
+        # gezeichnet, und die Beschriftungen der übrigen laufen sonst nie durch t().
+        for wahl, feld in (('#layer', 'layer'), ('#survey-select', 'survey'),
+                           ('#azr-indicator', 'azr'),
                            ('#origin-scope', 'origin'), ('#flow-area-scope', 'flow'),
                            ('#flow-range', 'range'), ('#filter-source', 'quelle')):
             try:

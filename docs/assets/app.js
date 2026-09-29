@@ -1670,7 +1670,8 @@ function renderSurveyItems(){
  const host=$('survey-blocks');if(!host)return;
  const D2=window.ATLAS_SURVEY_ITEMS;
  if(!D2||!D2.blocks){const k=host.closest('section');if(k)k.hidden=true;return;}
- $('survey-warning').textContent=t(D2.what_this_is)+' '+t(D2.why_the_metadata_matters);
+ $('survey-warning').textContent=t(D2.what_this_is)+' '+t(D2.why_the_metadata_matters)
+  +(D2.why_2012_and_2019_are_not_a_trend?' '+t(D2.why_2012_and_2019_are_not_a_trend):'');
  // Ein Auswahlfeld wie über der Karte: bei Befragungen ist jeder Block eine
  // eigene Frage an eine eigene Grundgesamtheit, und untereinander gestapelt lädt
  // das dazu ein, sie als eine Reihe zu lesen. Einer nach dem anderen.

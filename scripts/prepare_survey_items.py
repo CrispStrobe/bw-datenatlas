@@ -72,6 +72,12 @@ def main() -> None:
             'es waren und wie die Frage lautete. An jeder Zeile stehen deshalb '
             'Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die '
             'Quelle sie nennt, auch die Fragennummern.'),
+        'why_2012_and_2019_are_not_a_trend': (
+            'Die beiden Landesumfragen von 2012 und 2019 haben verschiedene '
+            'Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also '
+            'Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die '
+            'Werte als Entwicklung liest, vergleicht auch zwei verschieden '
+            'abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.'),
         'not_in_any_model': ('Diese Zahlen gehen in keine Modellrechnung dieses Atlas '
                              'ein und werden mit keiner Bevölkerungszahl verrechnet.'),
         'count': sum(len(b['items']) for b in bloecke.values()),
