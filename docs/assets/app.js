@@ -1682,15 +1682,21 @@ function renderSurveyItems(){
  }
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
  host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
-  const max=Math.max(...b.items.map(i=>i.value));
+  // Prozentbalken werden an 100 gemessen, nicht am größten Wert des Blocks. Sonst
+  // füllt ein Wert von 50 Prozent den ganzen Balken, nur weil kein höherer daneben
+  // steht — und der Block über Zustimmungsquoten hätte ausgesehen wie einer über
+  // Mehrheiten.
+  const proz=b.items.every(i=>i.unit==='percent'&&i.value<=100);
+  const max=proz?100:Math.max(...b.items.map(i=>i.value));
   const erste=b.items[0];
   return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
    // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
    // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
    +'<p class="tiny survey-meta">'+esc([erste.study,t(erste.population),
-       erste.base_n?tf('{0} Befragte',integer(erste.base_n)):t('Fallzahl nicht angegeben'),
+       erste.base_n?tf('{0} Befragte',integer(erste.base_n)):t('Fallzahl je Balken nicht veröffentlicht'),
        erste.field_period,erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
        .filter(Boolean).join(' · '))+'</p>'
+   +(b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
    +'<div class="horizontal-bars">'+b.items.map(i=>
      '<div class="bar-row"><div class="bar-name">'+esc(t(i.label))
      +(i.detail?'<br><span class="tiny">'+esc(t(i.detail))+'</span>':'')+'</div>'

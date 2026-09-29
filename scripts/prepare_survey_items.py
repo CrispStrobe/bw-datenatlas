@@ -40,7 +40,12 @@ def main() -> None:
     with args.input.open(encoding='utf-8') as fh:
         for r in csv.DictReader(fh):
             b = bloecke.setdefault(r['block'], {
-                'block': r['block'], 'title': r['block_title'], 'items': []})
+                'block': r['block'], 'title': r['block_title'],
+                # Was für den ganzen Block gilt und nicht an eine Zeile gehört: der
+                # Wortlaut der Fragen und das, was die Stichprobe nicht hergibt. Die
+                # Kopfzeile eines Blocks stammt aus seiner ersten Zeile; wo die Balken
+                # verschiedene Grundgesamtheiten haben, reicht das nicht.
+                'note': r.get('block_note') or None, 'items': []})
             b['items'].append({
                 'label': r['label'],
                 # Die Skala im Einzelnen. Ein Balken, der die beiden zustimmenden

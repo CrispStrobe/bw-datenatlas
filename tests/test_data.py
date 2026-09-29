@@ -163,4 +163,26 @@ class DataTests(unittest.TestCase):
         self.assertIn('enthalten', gesetzt('Sonstige'))
         self.assertLess(10.7, z['other_none_unstated_pct'])
 
+    def test_fundamentalism_block_keeps_its_comparison_and_its_limits(self):
+        """Ein Fundamentalismusbalken ohne Vergleichsgruppe wäre eine Anklage.
+
+        Die Studie hat Christen mitbefragt, und genau das macht ihre Zahlen lesbar:
+        3 und 4 Prozent neben 30 und 44. Fällt die Vergleichsgruppe weg, bleibt eine
+        Grafik über eine Minderheit allein — deshalb steht sie hier als Bedingung.
+        """
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text(encoding='utf-8'))
+        b = [x for x in d['blocks'] if x['block'] == 'fundamentalismus_sciics']
+        self.assertEqual(len(b), 1)
+        b = b[0]
+        etiketten = ' | '.join(i['label'] for i in b['items'])
+        self.assertIn('Katholiken', etiketten)
+        self.assertIn('Protestanten', etiketten)
+        self.assertIn('Muslime', etiketten)
+        # Und die Einschränkung, die den Unterschied zwischen dieser Studie und einer
+        # Aussage über „die Muslime in Deutschland" ausmacht.
+        self.assertIn('keine Stichprobe der Muslime in Deutschland', b['note'])
+        self.assertIn('nicht symmetrisch', b['note'])
+        self.assertTrue(all(i['unit'] == 'percent' and 0 <= i['value'] <= 100
+                            for i in b['items']))
+
 if __name__=='__main__': unittest.main(verbosity=2)

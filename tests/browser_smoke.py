@@ -128,6 +128,27 @@ with sync_playwright() as pw:
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
     # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
+    # Der Block über religiösen Fundamentalismus ist der heikelste der Seite. Er darf
+    # nur zusammen mit dem stehen, was die Stichprobe nicht hergibt — und die Balken
+    # müssen an 100 gemessen sein, sonst sieht ein Wert von 50 Prozent aus wie alle.
+    page.select_option('#survey-select', index=page.eval_on_selector_all(
+        '#survey-select option',
+        "o=>o.findIndex(x=>/fundamental/i.test(x.textContent))"))
+    page.wait_for_function("/fundamental/i.test("
+                           "document.getElementById('survey-blocks').innerText)")
+    block=page.locator('#survey-blocks').inner_text()
+    check('the fundamentalism block names its sampling limit',
+          'keine Stichprobe der Muslime in Deutschland' in block
+          or 'not a sample of Muslims in Germany' in block)
+    check('the fundamentalism block quotes the three statements verbatim',
+          'Wurzeln' in block and 'Auslegung' in block)
+    check('the fundamentalism block keeps its Christian comparison',
+          'Katholiken' in block and 'Protestanten' in block)
+    breiten=page.eval_on_selector_all(
+        '#survey-blocks .bar-fill','e=>e.map(x=>parseFloat(x.style.width))')
+    check('percentage bars are measured against 100, not the block maximum',
+          bool(breiten) and abs(max(breiten)-50)<1.5)
+
     vergleich=page.locator('#published-estimates-card').inner_text()
     check('the published estimates are shown side by side',
           page.locator('#published-estimates-bars .bar-row').count()>=6)

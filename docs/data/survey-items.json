@@ -5,11 +5,12 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 24,
+ "count": 32,
  "blocks": [
   {
    "block": "bw_religioese_vielfalt",
    "title": "Offenheit für religiöse Vielfalt in Baden-Württemberg",
+   "note": null,
    "items": [
     {
      "label": "Der Islam passt durchaus in die westliche Welt.",
@@ -58,6 +59,7 @@
   {
    "block": "bw_kopftuch_2012",
    "title": "„Stört mich\": das Tragen von Kopftüchern, Baden-Württemberg 2012",
+   "note": null,
    "items": [
     {
      "label": "Alle Befragten",
@@ -176,6 +178,7 @@
   {
    "block": "kopftuch",
    "title": "Gründe für das Tragen eines Kopftuchs",
+   "note": null,
    "items": [
     {
      "label": "Religiöse Pflicht",
@@ -308,6 +311,7 @@
   {
    "block": "abgrenzung",
    "title": "Wollen Muslime sich abgrenzen? Selbstbild und Fremdbild",
+   "note": null,
    "items": [
     {
      "label": "Befragte Muslime: Zuwandernde Muslime wollen sich anpassen",
@@ -364,6 +368,125 @@
      "source_title": "Pew Research Center (2017): Europe’s Growing Muslim Population",
      "source_url": "https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/",
      "source_locator": "Abschnitt Wahrnehmung"
+    }
+   ]
+  },
+  {
+   "block": "fundamentalismus_sciics",
+   "title": "Zustimmung zu allen drei Fundamentalismus-Aussagen",
+   "note": "Wortlaut der drei Aussagen: „Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.\" · „Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.\" · „Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze von Deutschland.\" Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland. Befragt wurden ausschließlich Personen türkischer und marokkanischer Herkunft, deren Eltern oder Großeltern vor 1975 eingewandert sind; die Hälfte der türkeistämmigen Befragten stammt aus bestimmten ländlichen Regionen Zentral- und Ostanatoliens. Koopmans selbst schreibt, die Daten seien deshalb möglicherweise nicht national repräsentativ. Die Vergleichsgruppe der Einheimischen unterlag diesen Einschränkungen nicht — der Vergleich ist also nicht symmetrisch. In Deutschland wurden 489 türkeistämmige und 479 marokkostämmige Personen befragt, insgesamt rund 9.000 in sechs Ländern; 96 Prozent der Befragten mit türkischer oder marokkanischer Herkunft bezeichneten sich als Muslime, 70 Prozent der Einheimischen als Christen. Fallzahlen je Balken sind nicht veröffentlicht. Auf die drei Aussagen einzeln bezogen liegt die Zustimmung unter den befragten Muslimen bei fast 60 Prozent (Rückkehr zu den Wurzeln), 75 Prozent (nur eine Auslegung) und 65 Prozent (religiöse Regeln vor weltlichen Gesetzen); unter den einheimischen Christen nennt der Text für die einzelnen Aussagen eine Spanne von 13 bis 21 Prozent. Weil die Christenwerte je Aussage nicht als einzelne Zahlen veröffentlicht sind, zeigt die Grafik nur das Maß, das für alle Gruppen exakt beziffert ist: die Zustimmung zu allen drei Aussagen zugleich.",
+   "items": [
+    {
+     "label": "Muslime in Deutschland",
+     "detail": "niedrigster Wert der sechs Länder",
+     "value": 30.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "Muslime, sechs Länder zusammen",
+     "detail": null,
+     "value": 44.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "davon sunnitisch, türkischer Herkunft",
+     "detail": null,
+     "value": 45.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "davon marokkanischer Herkunft",
+     "detail": null,
+     "value": 50.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "davon alevitisch",
+     "detail": null,
+     "value": 15.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "Einheimische Katholiken",
+     "detail": null,
+     "value": 3.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "Einheimische Protestanten der Hauptströmung",
+     "detail": null,
+     "value": 4.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
+    },
+    {
+     "label": "Kleinere protestantische Gemeinschaften",
+     "detail": "Siebenten-Tags-Adventisten, Zeugen Jehovas, Pfingstkirchen",
+     "value": 12.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Personen türkischer und marokkanischer Herkunft sowie eine einheimische Vergleichsgruppe in Deutschland, Frankreich, den Niederlanden, Belgien, Österreich und Schweden",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "S. 21–25"
     }
    ]
   }

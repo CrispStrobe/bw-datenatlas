@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 301,
+  "check_count": 305,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -112,6 +112,22 @@
     },
     {
       "name": "the estimated tile is marked apart from the counted ones",
+      "passed": true
+    },
+    {
+      "name": "the fundamentalism block names its sampling limit",
+      "passed": true
+    },
+    {
+      "name": "the fundamentalism block quotes the three statements verbatim",
+      "passed": true
+    },
+    {
+      "name": "the fundamentalism block keeps its Christian comparison",
+      "passed": true
+    },
+    {
+      "name": "percentage bars are measured against 100, not the block maximum",
       "passed": true
     },
     {
