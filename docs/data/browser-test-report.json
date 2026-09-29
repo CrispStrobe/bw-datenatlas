@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 233,
+  "check_count": 244,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -732,6 +732,50 @@
     },
     {
       "name": "the european layer states that it counts birthplace, not passport",
+      "passed": true
+    },
+    {
+      "name": "muni_catholic: drawn on the municipal geography",
+      "passed": true
+    },
+    {
+      "name": "muni_catholic: says it is a full count",
+      "passed": true
+    },
+    {
+      "name": "muni_protestant: drawn on the municipal geography",
+      "passed": true
+    },
+    {
+      "name": "muni_protestant: says it is a full count",
+      "passed": true
+    },
+    {
+      "name": "muni_no_church: drawn on the municipal geography",
+      "passed": true
+    },
+    {
+      "name": "muni_no_church: says it is a full count",
+      "passed": true
+    },
+    {
+      "name": "the residual layer denies being a muslim share",
+      "passed": true
+    },
+    {
+      "name": "the residual layer says what it is good for instead",
+      "passed": true
+    },
+    {
+      "name": "the municipal profile puts counted beside modelled",
+      "passed": true
+    },
+    {
+      "name": "the profile admits there is no counted muslim figure",
+      "passed": true
+    },
+    {
+      "name": "model, ceiling and counted church figures share one profile",
       "passed": true
     },
     {

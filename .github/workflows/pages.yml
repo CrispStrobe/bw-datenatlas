@@ -244,6 +244,11 @@ jobs:
       - name: Veröffentlichte Schätzungen nebeneinanderstellen
         run: python scripts/derive_published_estimates.py
 
+      # Kirchenmitgliedschaft je Gemeinde aus derselben Zensusdatei, die schon die
+      # Obergrenze des Modells liefert. Rein rechnerisch, kein Abruf.
+      - name: Kirchenmitgliedschaft je Gemeinde ableiten
+        run: python scripts/prepare_municipal_religion.py
+
       # Die Bundesländer-Ebene: Zahlen aus den eigenen Beobachtungen, Geometrie von
       # GISCO. Der Abruf kann fehlschlagen, die letzte eingecheckte Fassung bleibt dann.
       - name: Deutschlandkarte der Bundesländer bauen

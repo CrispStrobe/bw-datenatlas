@@ -7,6 +7,7 @@ const CTX=window.ATLAS_CONTEXT||null;
 const REG=window.ATLAS_REGIONS||null;
 const EUROSTAT=window.ATLAS_EUROSTAT||null;
 const GERMANY=window.ATLAS_GERMANY||null;
+const MUNIREL=window.ATLAS_MUNI_RELIGION||null;
 const AGE=window.ATLAS_AGE||null;
 const GEN=window.ATLAS_GENERATIONS||null;
 const NAT=window.ATLAS_NATIONALITIES||null;
@@ -125,6 +126,14 @@ const layers={
  // Die Ebene zwischen innen und außen: der Vergleich mit den anderen Ländern.
  // Dieselbe Quelle und dieselbe Rechnung wie der Landeswert im Kopf der Seite,
  // nur für alle Länder nebeneinander — die Zahlen lagen längst im Projekt.
+ // Gezählt, nicht geschätzt. Der Zensus 2022 hat die Zugehörigkeit zu einer
+ // Religionsgesellschaft des öffentlichen Rechts erhoben — das sind hier die beiden
+ // großen Kirchen. Diese drei Ebenen stehen deshalb NEBEN der Modellrechnung und
+ // nicht anstelle von ihr: sie zeigen, was erhoben ist, und die dritte zeigt die
+ // Grenze, gegen die das Modell geprüft wird.
+ muni_catholic:{title:'Römisch-katholische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'catholic_pct',thresholds:[12,20,30,42,55],unit:'percent',note:'Anteil der Mitglieder der römisch-katholischen Kirche an der Bevölkerung, aus dem Zensus 2022. Dies ist die ausgeprägteste religiöse Struktur, die Baden-Württemberg hat: das katholische Oberschwaben und der Süden gegen das evangelische Altwürttemberg. Landesweit 29,9 Prozent. Gezählt, nicht geschätzt — anders als die muslimische Bevölkerung, für die es auf Gemeindeebene keine Erhebung gibt. Einzelwerte sind nach dem Cell-Key-Verfahren geheimgehalten und damit bewusst leicht überlagert.'},
+ muni_protestant:{title:'Evangelische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'evangelical_pct',thresholds:[12,20,28,36,46],unit:'percent',note:'Anteil der Mitglieder der evangelischen Kirche an der Bevölkerung, aus dem Zensus 2022. Das Gegenbild zur Ebene daneben, und zwar fast spiegelbildlich: die beiden Karten zusammen zeigen die Konfessionsgrenze von 1555, die in der Siedlungsstruktur bis heute sichtbar ist. Landesweit 25,9 Prozent; beide Kirchen zusammen 55,8 Prozent.'},
+ muni_no_church:{title:'Sonstige, keine, ohne Angabe · Anteil je Gemeinde',badge:'Vollerhebung · Obergrenze des Modells',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'other_none_unstated_pct',thresholds:[25,33,40,47,55],unit:'percent',note:'Die Restkategorie des Zensus: alle, die weder der römisch-katholischen noch der evangelischen Kirche angehören. Das sind Konfessionslose, alle anderen Religionen und alle fehlenden Angaben in einer einzigen Zahl. Diese Ebene ist deshalb WEDER ein Anteil Konfessionsloser NOCH ein Muslimanteil, und sie darf nicht als einer gelesen werden. Ihr Wert für diesen Atlas ist ein anderer: weil muslimische Einwohnerinnen und Einwohner zwangsläufig hierunter fallen, kann der modellierte Muslimanteil einer Gemeinde nicht über diesem Wert liegen. Die Ebene macht damit sichtbar, wogegen die Modellrechnung bisher nur rechnerisch geprüft wurde. Landesweit 44,2 Prozent.'},
  de_muslim_share:{title:'Muslimische Religionsangehörige · Anteil je Bundesland',badge:'BAMF · Näherungswerte',date:'Bezugsjahr 2025 · 14 ausgewiesene Länder',source:'bamf_fb55',thresholds:[2,4,6,9,12],unit:'percent',deMeasure:'share_mid',note:'Näherungswerte über den Anteil muslimischer Religionsangehöriger mit Migrationshintergrund aus islamisch geprägten Herkunftsländern an der Bevölkerung des jeweiligen Bundeslandes, aus Tabelle 3 und Abbildung 4 des Forschungsberichts 55. Gefärbt wird nach der Mitte der veröffentlichten Spanne, genannt wird die Spanne. Baden-Württemberg liegt mit 10,1 bis 10,7 Prozent an vierter Stelle von vierzehn, nach Bremen und Hamburg, Hessen und Nordrhein-Westfalen — in absoluten Zahlen an zweiter Stelle hinter Nordrhein-Westfalen. Bremen und Hamburg sowie Brandenburg und Mecklenburg-Vorpommern weist der Bericht nur gemeinsam aus, weil sie bei der Stichprobenziehung zusammengefasst wurden; die Karte fasst sie deshalb ebenso zusammen, statt eine Genauigkeit vorzutäuschen, die die Quelle nicht hat.'},
  de_muslim_persons:{title:'Muslimische Religionsangehörige · Zahl je Bundesland',badge:'BAMF · Näherungswerte',date:'Bezugsjahr 2025 · 14 ausgewiesene Länder',source:'bamf_fb55',thresholds:[100000,200000,400000,800000,1500000],unit:'persons',deMeasure:'muslim_mid',note:'Dieselbe Quelle wie die Ebene daneben, in absoluten Zahlen statt als Anteil. Die beiden Karten sehen verschieden aus, und der Unterschied ist die Einwohnerzahl: Bremen und Hamburg haben den höchsten Anteil und eine der kleinsten Zahlen, Bayern hat fast so viele muslimische Religionsangehörige wie Baden-Württemberg bei weit geringerem Anteil. Näherungswerte mit veröffentlichter Spanne, keine Zählung.'},
  eu_foreign_born:{title:'Im Ausland Geborene · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'foreign_born_pct',source:'eurostat_lfs',thresholds:[3,8,13,18,25],unit:'percent',euMeasure:'foreign_born_pct',note:'Anteil der im Ausland Geborenen an der Bevölkerung von 15 bis 64 Jahren in Privathaushalten. Gezählt wird der Geburtsort, nicht der Pass: Eingebürgerte zählen hier mit, im Ausländeranteil der übrigen Ebenen nicht. Stichprobe der Arbeitskräfteerhebung; für kleine Regionen entsprechend unsicher.'},
@@ -490,7 +499,15 @@ function renderDetail(){
   const boundMetric=(est&&bound&&bound.ceiling!==null)
     ? metric('Obergrenze aus dem Zensus 2022',pf.format(bound.ceiling)+' %','Anteil der Kategorie „Sonstige, keine, ohne Angabe“. Muslimische Einwohner fallen zwangsläufig hierunter, der Modellwert kann also nicht darüber liegen. Die Kategorie ist selbst kein Muslimanteil, sie besteht überwiegend aus Konfessionslosen.')
     : '';
-  $('detail-content').innerHTML=metric('Einwohnerzahl · 30.06.2024',integer(d.population_total),esc(d.district_name))+metric('Männlich / weiblich',`${integer(d.population_male)} / ${integer(d.population_female)}`,'Veröffentlichte Kategorien der Bevölkerungsstatistik.')+estimateMetric+boundMetric+demMetric+`<div class="notice${isEstimate()?' warning':''}">${isEstimate()?'<strong>Modellrechnung, keine Messung.</strong> Der Kreiswert wird verteilt: der türkische und bosnische Anteil nach gemessenem Siedlungsmuster, der Rest nach der Einwanderungsgeschichte der Gemeinde. ':''}${crosswalk?'Amtlicher Gemeindeschlüssel: '+esc(crosswalk.ags):'Geografische Zuordnung noch nicht bestätigt.'} Keine Ableitung der Religion aus dem Gemeindenamen oder der Einwohnerzahl.</div><p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 5, S. '+d.source_page+' ↗')}</p>`;
+  // Was für die Kirchen gezählt ist, steht neben dem, was für den Islam gerechnet
+  // wird. Der Atlas heißt seit v0.11 Religion und Migration; der Unterschied
+  // zwischen Zählung und Modell gehört damit in dasselbe Profil und nicht auf zwei
+  // getrennte Seiten.
+  const kirche=MUNIREL?MUNIREL.municipalities[d.geo_id||s.id]:null;
+  const kirchenMetrik=kirche?metric(t('Kirchenmitgliedschaft · Zensus 2022'),
+    pct(kirche.catholic_pct)+' / '+pct(kirche.evangelical_pct),
+    esc(t('römisch-katholisch / evangelisch · gezählt, nicht geschätzt'))):'';
+  $('detail-content').innerHTML=metric('Einwohnerzahl · 30.06.2024',integer(d.population_total),esc(d.district_name))+metric('Männlich / weiblich',`${integer(d.population_male)} / ${integer(d.population_female)}`,'Veröffentlichte Kategorien der Bevölkerungsstatistik.')+estimateMetric+boundMetric+kirchenMetrik+demMetric+`<div class="notice${isEstimate()?' warning':''}">${isEstimate()?'<strong>Modellrechnung, keine Messung.</strong> Der Kreiswert wird verteilt: der türkische und bosnische Anteil nach gemessenem Siedlungsmuster, der Rest nach der Einwanderungsgeschichte der Gemeinde. ':''}${crosswalk?'Amtlicher Gemeindeschlüssel: '+esc(crosswalk.ags):'Geografische Zuordnung noch nicht bestätigt.'} Keine Ableitung der Religion aus dem Gemeindenamen oder der Einwohnerzahl.</div><p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 5, S. '+d.source_page+' ↗')}</p>`;
  }
 }
 function estimateDistrict(id){return EST?EST.districts[id]:null;}
@@ -498,6 +515,8 @@ function estimateMunicipality(geoId){return EST?EST.municipalities[geoId]:null;}
 function valueForFeature(f){const p=f.properties;
  const eu=layers[state.layer].euMeasure;if(eu)return p[eu]??null;
  const de=layers[state.layer].deMeasure;if(de)return p[de]??null;
+ const rel=layers[state.layer].muniReligion;
+ if(rel){const r=MUNIREL?MUNIREL.municipalities[p.statistical_geo_id]:null;return r?r[rel]??null:null;}
  if(state.layer==='region_population')return p.population??null;
  if(state.layer==='region_foreign_share')return p.foreign_pct??null;
  if(state.layer==='religion_estimate_municipal'){const e=estimateMunicipality(p.statistical_geo_id);return e?e.pct:null;}
@@ -581,6 +600,7 @@ function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 
  // Ausländeranteil als Einwohnerzahl: „Stuttgart · 20 Einwohner“.
  // Gefärbt wird nach der Mitte, genannt wird die Spanne: eine Näherung als eine
  // einzige Zahl auszuweisen wäre genauer, als die Quelle es zulässt.
+ if(layers[state.layer].muniReligion)return tf('{0} laut Zensus 2022',pct(v));
  if(state.layer==='de_muslim_share')return tf('{0} der Bevölkerung · Näherungswert',
    pf.format(f.properties.share_low)+'–'+pf.format(f.properties.share_high)+' %');
  if(state.layer==='de_muslim_persons')return tf('{0} Personen · Näherungswert',
@@ -1019,7 +1039,10 @@ function zeichneUmriss(geometry,klasse){
  p.setAttribute('stroke-width',klasse==='selection'?'2.4':'1.8');
  p.setAttribute('vector-effect','non-scaling-stroke');
  g.appendChild(p);return p;}
- const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share';const pointLayer=state.layer==='institutions';
+ const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share'
+  // Die Kirchenebenen liegen auf derselben Gemeindegeometrie; ohne diese Zeile
+  // zeichnete die Karte 44 Kreise und suchte darin nach Gemeindeschlüsseln.
+  ||!!layers[state.layer].muniReligion;const pointLayer=state.layer==='institutions';
  const regionLayer=state.layer.startsWith('region_');
  const euLayer=!!layers[state.layer].euMeasure;
  const deLayer=!!layers[state.layer].deMeasure;

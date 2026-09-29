@@ -545,6 +545,40 @@ with sync_playwright() as pw:
           and page.eval_on_selector('#map-attribution-bw','e=>e.hidden'))
     check('the european layer states that it counts birthplace, not passport',
           'Geburtsort' in page.locator('#map-note').inner_text())
+    # Gezählt neben geschätzt: die Kirchenzahlen sind eine Vollerhebung auf
+    # derselben Gemeindegeometrie wie die Modellrechnung. Die Restkategorie ist die
+    # Obergrenze des Modells — und ausdrücklich kein Muslimanteil.
+    for ebene in ('muni_catholic','muni_protestant','muni_no_church'):
+        page.select_option('#layer',ebene); page.wait_for_timeout(1100)
+        check(f'{ebene}: drawn on the municipal geography',
+              page.locator('#map-features path.map-feature').count()>=1050)
+        check(f'{ebene}: says it is a full count',
+              'Zensus 2022' in page.locator('#map-period').inner_text())
+    hinweis=page.locator('#map-note').inner_text()
+    check('the residual layer denies being a muslim share',
+          'NOCH ein Muslimanteil' in hinweis and 'WEDER ein Anteil Konfessionsloser' in hinweis)
+    check('the residual layer says what it is good for instead',
+          'nicht über diesem Wert liegen' in hinweis)
+    page.select_option('#layer','muni_catholic'); page.wait_for_timeout(1100)
+    page.locator('#map-features path[data-id="08111000"]').dispatch_event('click')
+    page.wait_for_timeout(600)
+    gem=page.locator('#detail-content').inner_text()
+    check('the municipal profile puts counted beside modelled',
+          'Kirchenmitgliedschaft' in gem and 'gezählt, nicht geschätzt' in gem)
+    # Der Kontrast, den der neue Name ankündigt: für die Kirchen eine gezählte Zahl,
+    # für den Islam auf dieser Ebene ausdrücklich keine.
+    check('the profile admits there is no counted muslim figure',
+          'Muslimische Bevölkerung' in gem and 'Nicht verfügbar' in gem)
+    # Auf der Modellebene stehen beide nebeneinander: gerechneter Wert, gezählte
+    # Kirchenzahl und die Obergrenze aus derselben Zensusdatei.
+    page.select_option('#layer','religion_estimate_municipal'); page.wait_for_timeout(1200)
+    page.locator('#map-features path[data-id="08111000"]').dispatch_event('click')
+    page.wait_for_timeout(600)
+    modell=page.locator('#detail-content').inner_text()
+    check('model, ceiling and counted church figures share one profile',
+          'Modellrechnung' in modell and 'Obergrenze aus dem Zensus 2022' in modell
+          and 'Kirchenmitgliedschaft' in modell)
+
     # Die Ebene zwischen innen und außen: Baden-Württemberg unter den Ländern.
     # Die Zahlen lagen längst im Projekt, gezeichnet wurden sie nie.
     page.select_option('#layer','de_muslim_share'); page.wait_for_timeout(900)

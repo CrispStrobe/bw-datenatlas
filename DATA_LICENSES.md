@@ -175,6 +175,14 @@ unabhängigen Prüfung und werden zitiert, nicht weiterverteilt.
 
 Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezogen. Ihre eigenen Lizenzen und Nutzungsbedingungen gelten weiterhin. Die ausgelieferte Website lädt keine Bibliotheken, Kartenkacheln oder Schriftarten von einem fremden CDN nach.
 
+## Zensus 2022, Religionszugehörigkeit je Gemeinde
+
+- **Quelle:** Statistische Ämter des Bundes und der Länder, Zensus 2022, Sonderauswertung „Bevölkerung nach Religionszugehörigkeit, Anteil je Gemeinde", erschienen 04.12.2024. Dieselbe Datei liefert die Obergrenze, gegen die die Modellrechnung geprüft wird.
+- **Nur drei Kategorien:** römisch-katholische Kirche, evangelische Kirche, „Sonstige, keine, ohne Angabe". Erhoben wurde die Zugehörigkeit zu einer Religionsgesellschaft des öffentlichen Rechts — der Islam ist keine eigene Kategorie, und das ist der Grund, warum es für die muslimische Bevölkerung überhaupt eine Modellrechnung braucht.
+- **Die Restkategorie ist kein Muslimanteil** und auch kein Anteil Konfessionsloser: sie enthält Konfessionslose, alle anderen Religionen und alle fehlenden Angaben in einer Zahl. Sie steht als eigene Kartenebene, weil der modellierte Muslimanteil nicht über ihr liegen kann — nicht, weil sie etwas über Religionszugehörigkeit im Einzelnen aussagt.
+- **Geheimhaltung:** Einzelwerte sind nach dem Cell-Key-Verfahren bewusst leicht überlagert. Für die Fläche einer Karte unerheblich, für den Einzelwert einer kleinen Gemeinde nicht.
+- **Landeswerte 2022:** 29,9 Prozent römisch-katholisch, 25,9 Prozent evangelisch, zusammen 55,8 Prozent. Die Landeszentrale nennt für 2020 noch 59 Prozent — der Unterschied ist die Entwicklung zwischen den beiden Ständen, nicht ein Widerspruch zwischen den Quellen.
+
 ## Eurostat und GISCO (europäische Vergleichsebene)
 
 Weiterverwendung aller Eurostat-Daten gestattet mit Quellenangabe, Beschluss 2011/833/EU der Kommission. Fünf Datensätze, sechs Größen:
