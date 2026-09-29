@@ -118,6 +118,18 @@ with sync_playwright() as pw:
           'nicht weil sie dasselbe messen' in vergleich)
     check('the main variant precedes the cautious one',
           vergleich.index('819.000')<vergleich.index('762.000'))
+    # Dieselbe Frage eine Ebene höher — und dort kreuzen sich die beiden Stellen.
+    check('the german series stands beside the BW one',
+          'Deutschland' in vergleich and '3.800.000–4.300.000' in vergleich
+          and '6.635.000–7.007.000' in vergleich)
+    check('the two publishers cross over',
+          'kreuzen sich' in vergleich)
+    check('a share-only estimate draws no bar and says so',
+          'nur als Anteil veröffentlicht' in vergleich)
+    check('Pew and the BAMF are told apart by colour',
+          page.evaluate('''()=>{const f=[...document.querySelectorAll(
+            '#published-estimates-bars .bar-fill')].map(e=>e.style.background);
+            return f.includes('rgb(140, 74, 44)')&&f.includes('rgb(18, 89, 107)');}'''))
     check('initial national origin bars eight',page.locator('#origin-bars .bar-row').count()==8)
     check('four national composition columns',page.locator('.stack-segment').count()==20)
     check('desktop body no horizontal overflow',not page.evaluate('document.documentElement.scrollWidth>innerWidth'))
@@ -809,7 +821,17 @@ with sync_playwright() as pw:
        else if(n.nodeType===1&&!['SCRIPT','STYLE','TITLE'].includes(n.tagName))lauf(n);}};
       lauf(document.body);return raus;}""")
     deutsch=[x for x in rest if NUR_DEUTSCH.search(x)]
+    # Die Grenze darf fallen, nicht steigen — und wenn sie doch einmal steigt, steht
+    # hier, warum. Der 50. Knoten ist seit v0.19 der Titel des Landesamt-Aufsatzes
+    # in der Quellenzeile der Schätzungskarte: "Wie viele Musliminnen und Muslime
+    # leben in Baden-Württemberg? Ansatz und Ergebnisse einer Schätzung zur
+    # muslimischen Bevölkerung im Südwesten". Ein Veröffentlichungstitel wird nicht
+    # übersetzt, sonst fände ihn niemand wieder; die Zählung erkennt ihn nur an dem
+    # Wort "Bevölkerung" darin. Kein Rückschritt der Übersetzung, sondern eine
+    # Zitatangabe.
     check(f'untranslated german does not grow ({len(deutsch)} nodes)',len(deutsch)<=50)
+    check('the extra german node is a publication title, not an untranslated sentence',
+          any('Ansatz und Ergebnisse einer Schätzung' in x for x in deutsch))
     page.goto(args.url.rstrip('/')+'/?lang=de',wait_until='networkidle')
     page.wait_for_timeout(1500)
     page.locator('#research-explorer').evaluate('el=>el.open=false')

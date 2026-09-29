@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 273,
+  "check_count": 278,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -100,6 +100,22 @@
     },
     {
       "name": "the main variant precedes the cautious one",
+      "passed": true
+    },
+    {
+      "name": "the german series stands beside the BW one",
+      "passed": true
+    },
+    {
+      "name": "the two publishers cross over",
+      "passed": true
+    },
+    {
+      "name": "a share-only estimate draws no bar and says so",
+      "passed": true
+    },
+    {
+      "name": "Pew and the BAMF are told apart by colour",
       "passed": true
     },
     {
@@ -1083,7 +1099,11 @@
       "passed": true
     },
     {
-      "name": "untranslated german does not grow (49 nodes)",
+      "name": "untranslated german does not grow (50 nodes)",
+      "passed": true
+    },
+    {
+      "name": "the extra german node is a publication title, not an untranslated sentence",
       "passed": true
     },
     {

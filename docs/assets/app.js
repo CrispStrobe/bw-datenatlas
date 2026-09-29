@@ -1690,7 +1690,9 @@ function renderPublishedEstimates(){
   const karte=$('published-estimates-card');if(karte)karte.hidden=true;return;}
  $('published-estimates-warning').textContent=t(D2.not_a_time_series);
  const max=Math.max(...D2.estimates.map(e=>e.persons_high??e.persons??0));
- host.innerHTML=D2.estimates.map(e=>{
+ host.innerHTML='<div class="bar-row"><div class="bar-name"><strong>'
+  +esc(t('Baden-Württemberg'))+'</strong></div><div></div><div></div></div>'
+  +D2.estimates.map(e=>{
   const spanne=e.persons_low!==null&&e.persons_low!==undefined&&e.persons_high;
   const wert=spanne?integer(e.persons_low)+'–'+integer(e.persons_high)
     :e.persons!==null&&e.persons!==undefined?integer(e.persons):t('kein Wert');
@@ -1710,12 +1712,42 @@ function renderPublishedEstimates(){
    +'<div class="bar-value">'+esc(wert)+(anteil?'<small>'+esc(anteil)+'</small>':'')
    +'</div></div>';
  }).join('');
+ // Dieselbe Reihe für Deutschland, darunter. Dort kreuzen sich die beiden Stellen,
+ // und das ist das schärfere Argument dagegen, eine Reihe allein zu lesen.
+ if(D2.germany&&D2.germany.length){
+  const maxD=Math.max(...D2.germany.map(e=>e.persons_high||e.persons_mid||0));
+  const farbe=p=>p&&p.startsWith('Pew')?'#8c4a2c':'#12596b';
+  host.insertAdjacentHTML('beforeend',
+   '<div class="bar-row" style="margin-top:20px"><div class="bar-name"><strong>'
+   +esc(t('Deutschland'))+'</strong></div><div></div><div></div></div>'
+   +D2.germany.map(e=>{
+    const anteil=e.share_low?(e.share_low===e.share_high?pct(e.share_low)
+      :pf.format(e.share_low)+'–'+pf.format(e.share_high)+' %'):'';
+    // Wo nur ein Anteil veröffentlicht wurde, ist der Anteil der Wert — und der
+    // Balken bleibt leer, statt eine Personenzahl vorzutäuschen, die es nicht gibt.
+    const p=e.persons_low&&e.persons_high&&e.persons_low!==e.persons_high
+      ?integer(e.persons_low)+'–'+integer(e.persons_high)
+      :e.persons_mid?integer(e.persons_mid)
+      :anteil?anteil:t('kein Wert');
+    const nurAnteil=!e.persons_mid;
+    return '<div class="bar-row"><div class="bar-name"><strong>'+esc(e.reference_year)
+     +'</strong><br><span class="tiny">'+esc(e.publisher)+' · '+esc(t(e.method))+'</span></div>'
+     +'<div class="bar-track">'+(nurAnteil?'<span class="tiny" style="padding-left:6px">'
+       +esc(t('nur als Anteil veröffentlicht'))+'</span>'
+       :'<div class="bar-fill" style="width:'+(100*e.persons_mid/maxD).toFixed(1)
+        +'%;background:'+farbe(e.publisher)+'"></div>')+'</div>'
+     +'<div class="bar-value">'+esc(p)+(anteil&&!nurAnteil?'<small>'+esc(anteil)+'</small>':'')
+     +'</div></div>';}).join(''));
+  $('published-estimates-warning').textContent+=' '+t(D2.why_germany_too);
+ }
  // Jede Zeile trägt ihre Stelle; ohne sie wäre die Reihe eine Entwicklung, und das
  // ist sie nicht.
  const stellen=[...new Map(D2.estimates.map(e=>[e.source_id,e])).values()];
+ const deutsch=[...new Map((D2.germany||[]).map(e=>[e.source_id,e])).values()];
  $('published-estimates-note').innerHTML=esc(t(D2.why_they_differ))+' '
-  +stellen.map(e=>'<a href="'+esc(e.source_url||'#')+'" target="_blank" rel="noreferrer">'
-    +esc(e.publisher||e.source_id)+'</a>').join(' · ');
+  +[...stellen,...deutsch].map(e=>'<a href="'+esc(e.source_url||'#')
+    +'" target="_blank" rel="noreferrer">'+esc(e.source_title||e.publisher||e.source_id)
+    +'</a>').join(' · ');
 }
 function renderBases(){
 const host=$('bases-table');if(!host)return;

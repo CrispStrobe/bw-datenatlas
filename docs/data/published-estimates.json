@@ -125,5 +125,99 @@
    "share_high": 10.7,
    "persons_mid": 1165000.0
   }
- ]
+ ],
+ "germany": [
+  {
+   "reference_year": "2008",
+   "persons_low": 3800000.0,
+   "persons_high": 4300000.0,
+   "share_low": 4.6,
+   "share_high": 5.2,
+   "publisher": "Bundesamt für Migration und Flüchtlinge",
+   "source_id": "bamf_fb06",
+   "source_title": "Muslimisches Leben in Deutschland (Forschungsbericht 6)",
+   "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb06-muslimisches-leben.pdf",
+   "method": "Hochrechnung aus der Erhebung MLD 2008",
+   "persons_mid": 4050000.0
+  },
+  {
+   "reference_year": "2010",
+   "persons_low": 3300000.0,
+   "persons_high": 3300000.0,
+   "share_low": 4.1,
+   "share_high": 4.1,
+   "publisher": "Pew Research Center",
+   "source_id": "pew_europe_2017",
+   "source_title": "Europe’s Growing Muslim Population",
+   "source_url": "https://www.pewresearch.org/religion/2017/11/29/the-growth-of-germanys-muslim-population-2/",
+   "method": "Eigene Schätzung von Pew aus Zensus- und Wanderungsdaten",
+   "persons_mid": 3300000.0
+  },
+  {
+   "reference_year": "2015",
+   "persons_low": 4400000.0,
+   "persons_high": 4700000.0,
+   "share_low": 5.4,
+   "share_high": 5.7,
+   "publisher": "Bundesamt für Migration und Flüchtlinge",
+   "source_id": "bamf_wp71",
+   "source_title": "Zahl der Muslime in Deutschland (Working Paper 71)",
+   "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/WorkingPapers/wp71-zahl-muslime-deutschland.html",
+   "method": "Fortschreibung der Hochrechnung auf den 31.12.2015",
+   "persons_mid": 4550000.0
+  },
+  {
+   "reference_year": "2016",
+   "persons_low": 5000000.0,
+   "persons_high": 5000000.0,
+   "share_low": 6.1,
+   "share_high": 6.1,
+   "publisher": "Pew Research Center",
+   "source_id": "pew_europe_2017",
+   "source_title": "Europe’s Growing Muslim Population",
+   "source_url": "https://www.pewresearch.org/religion/2017/11/29/the-growth-of-germanys-muslim-population-2/",
+   "method": "Eigene Schätzung von Pew",
+   "persons_mid": 5000000.0
+  },
+  {
+   "reference_year": "2019",
+   "persons_low": 5300000.0,
+   "persons_high": 5600000.0,
+   "share_low": 6.4,
+   "share_high": 6.7,
+   "publisher": "Bundesamt für Migration und Flüchtlinge",
+   "source_id": "bamf_fb38",
+   "source_title": "Muslimisches Leben in Deutschland 2020 (Forschungsbericht 38)",
+   "source_url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.html",
+   "method": "Hochrechnung aus der Erhebung MLD 2020",
+   "persons_mid": 5450000.0
+  },
+  {
+   "reference_year": "2020",
+   "persons_low": null,
+   "persons_high": null,
+   "share_low": 7.0,
+   "share_high": 7.0,
+   "publisher": "Pew Research Center",
+   "source_id": "pew_landscape_2025",
+   "source_title": "How the Global Religious Landscape Changed From 2010 to 2020",
+   "source_url": "https://www.pewresearch.org/religion/2025/06/09/religion-in-europe/",
+   "method": "Gerundete Länderanalyse von Pew",
+   "persons_mid": null
+  },
+  {
+   "reference_year": "2025",
+   "persons_low": 6635000.0,
+   "persons_high": 7007000.0,
+   "share_low": null,
+   "share_high": null,
+   "publisher": "Bundesamt für Migration und Flüchtlinge",
+   "source_id": "bamf_fb55",
+   "source_title": "Zahl der Muslim:innen in Deutschland (Forschungsbericht 55)",
+   "source_url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/fb55-zahl-muslime-2025.pdf",
+   "method": "Fortschreibung der MLD-2020-Hochrechnung auf 2025",
+   "persons_mid": 6821000.0
+  }
+ ],
+ "why_germany_too": "Dieselbe Frage eine Ebene höher, und dort wird sie noch deutlicher: die beiden Stellen kreuzen sich. Pew schätzt für 2010 weniger Musliminnen und Muslime als das BAMF für 2008, für 2016 aber mehr als das BAMF für 2015. Wer eine der beiden Reihen allein liest, hält ihren Verlauf für den Verlauf der Sache."
 }

@@ -183,6 +183,14 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 - **Was die verbreitete KMK-Zahl auslässt:** den Sekundarbereich II. Wer 9.750 und 11.827 nebeneinanderlegt, vergleicht zwei Abgrenzungen und zwei Schuljahre.
 - **Eine Abweichung bleibt stehen:** für 2019 nennt die Stiftung 5.500 ohne Schuljahresbezeichnung, die KMK für 2019/20 zusammen 5.905.
 
+## Veröffentlichte Schätzungen für Deutschland
+
+- **Sieben Stände zweier Stellen**, aus den jeweiligen Originalveröffentlichungen: BAMF-Forschungsbericht 6 (2008), Working Paper 71 (2015), Forschungsbericht 38 (2019), Forschungsbericht 55 (2025) sowie Pew Research Center (2010, 2016, 2020).
+- **Die beiden Stellen kreuzen sich.** Pew schätzt für 2010 weniger Musliminnen und Muslime (3,3 Mio.) als das BAMF für 2008 (3,8–4,3 Mio.), für 2016 aber mehr (5,0 gegen 4,4–4,7 Mio. für 2015). Wer eine der beiden Reihen allein liest, hält ihren Verlauf für den Verlauf der Sache. Auf der Seite sind die Stellen deshalb farblich getrennt.
+- **Keine Zeitreihe.** Verschiedene Stellen, verschiedene Verfahren, verschiedene Abgrenzungen — dieselbe Einschränkung wie bei der Reihe für Baden-Württemberg.
+- **Wo nur ein Anteil veröffentlicht wurde** (Pew 2020: rund 7 Prozent), steht der Anteil als Wert und es wird kein Balken gezeichnet.
+- **Herkunft der Zusammenstellung:** die Werte stammen aus einem strukturierten Studienkorpus (33 Studien, 46 Publikationen, 97 geprüfte Aggregatwerte), der die Originalfundstellen mitführt. Zitiert und geprüft werden die Originale, nicht der Korpus.
+
 ## Registergrößen je Bundesland (Deutschlandkarte)
 
 - **Quellen:** Statistisches Bundesamt (Destatis), Ausländerstatistik, Tabellen **12521-0023** (Alter, Generation), **12521-0025** (Aufenthaltsdauer) und **12521-0030** (Durchschnittsalter), Stichtag 31.12.2025, `dl-de/by-2-0`. Alle drei liegen gepackt im Repository.

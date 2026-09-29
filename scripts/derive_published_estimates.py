@@ -25,6 +25,7 @@ deckt.
 """
 from __future__ import annotations
 import argparse
+import csv
 import json
 from pathlib import Path
 
@@ -59,6 +60,8 @@ VERFAHREN = {
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--deutschland', type=Path,
+                    default=ROOT / 'inputs/veroeffentlichte-schaetzungen-de.csv')
     ap.add_argument('--out', type=Path,
                     default=ROOT / 'docs/data/published-estimates.json')
     args = ap.parse_args()
@@ -134,6 +137,42 @@ def main() -> None:
         'count': len(reihe),
         'estimates': reihe,
     }
+    # Dieselbe Frage eine Ebene höher. Für Baden-Württemberg zeigt die Reihe, dass
+    # zwei Stellen für dasselbe Land verschieden rechnen; für Deutschland zeigt sie
+    # etwas Schärferes: die beiden Stellen KREUZEN sich. Pew liegt 2010 unter dem
+    # BAMF und 2016 darüber. Wer eine der beiden Reihen allein liest, hält ihren
+    # Verlauf für den Verlauf der Sache.
+    deutsch = []
+    if args.deutschland.is_file():
+        with args.deutschland.open(encoding='utf-8') as fh:
+            for r in csv.DictReader(fh):
+                z = lambda k: float(r[k]) if r[k] else None
+                deutsch.append({
+                    'reference_year': r['reference_year'],
+                    'persons_low': z('persons_low'), 'persons_high': z('persons_high'),
+                    'share_low': z('share_low'), 'share_high': z('share_high'),
+                    'publisher': r['publisher'], 'source_id': r['source_id'],
+                    'source_title': r['title'], 'source_url': r['url'],
+                    'method': r['method'],
+                })
+                e = deutsch[-1]
+                werte = [x for x in (e['persons_low'], e['persons_high']) if x]
+                e['persons_mid'] = sum(werte) / len(werte) if werte else None
+        stellen = {e['publisher'] for e in deutsch}
+        print(f'\n{len(deutsch)} veröffentlichte Schätzungen für Deutschland '
+              f'aus {len(stellen)} Stellen:')
+        for e in deutsch:
+            print(f"  {e['reference_year']}  "
+                  f"{(e['share_low'] or 0):4.1f}–{(e['share_high'] or 0):4.1f} %  "
+                  f"{e['publisher'][:34]}")
+    doc['germany'] = deutsch
+    doc['why_germany_too'] = (
+        'Dieselbe Frage eine Ebene höher, und dort wird sie noch deutlicher: die '
+        'beiden Stellen kreuzen sich. Pew schätzt für 2010 weniger Musliminnen und '
+        'Muslime als das BAMF für 2008, für 2016 aber mehr als das BAMF für 2015. '
+        'Wer eine der beiden Reihen allein liest, hält ihren Verlauf für den Verlauf '
+        'der Sache.')
+
     args.out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + '\n',
                         encoding='utf-8')
     args.out.with_name('published-estimates-data.js').write_text(
