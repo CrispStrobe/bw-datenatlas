@@ -315,4 +315,36 @@ class DataTests(unittest.TestCase):
                         a['protestant']['a65_plus_pct_low'] / 1.8)
         self.assertLess(a['orthodox']['a65_plus_pct_high'], 12.5)
 
+    def test_state_survey_blocks_are_about_immigration_not_religion(self):
+        """Zwei Blöcke aus dem Landesbericht fragen nach Zuwanderern, nicht nach Religion.
+
+        Das ist genau die Verwechslung, gegen die dieser Atlas gebaut ist, also muss
+        sie an den Blöcken stehen — samt dem Wortlaut, mit dem die Erhebung den
+        Begriff erklärt hat.
+        """
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text(encoding='utf-8'))
+        bloecke = {b['block']: b for b in d['blocks']}
+        for name in ('bw_integration_bewertung', 'bw_integration_erwartung'):
+            b = bloecke[name]
+            self.assertIn('Zuwanderer', b['note'])
+            self.assertTrue(all(i['base_n'] == 1587 for i in b['items']), name)
+            self.assertTrue(all(i['study'] == 'Integration unter Druck? 2019'
+                                for i in b['items']), name)
+        self.assertIn('nicht Religion, sondern Einwanderung',
+                      bloecke['bw_integration_bewertung']['note'])
+        # Die Antwortkategorien einer Frage ergeben zusammen höchstens 100 Prozent;
+        # der Rest sind die, die nicht geantwortet haben.
+        werte = {i['label']: i['value']
+                 for i in bloecke['bw_integration_bewertung']['items']}
+        for ort in ('Im Land', 'Am Wohnort'):
+            summe = sum(v for k, v in werte.items() if k.startswith(ort))
+            self.assertLessEqual(summe, 100, ort)
+            self.assertGreater(summe, 80, ort)
+        # Und der Befund, der den Block trägt: am eigenen Wohnort fällt das Urteil
+        # besser aus als über das Land.
+        self.assertGreater(werte['Am Wohnort: sehr gut gelungen']
+                           + werte['Am Wohnort: gut gelungen'],
+                           werte['Im Land: sehr gut gelungen']
+                           + werte['Im Land: gut gelungen'])
+
 if __name__=='__main__': unittest.main(verbosity=2)

@@ -794,37 +794,67 @@ with sync_playwright() as pw:
     # Blöcke nicht wie eine Reihe gelesen werden.
     check('the survey section offers a dropdown like the map',
           page.locator('#survey-select option').count()>=2)
-    # Der Landesblock steht vorn und ist der einzige mit BW-Bezug.
-    check('the Baden-Württemberg block comes first',
-          'Baden-Württemberg' in page.locator('#survey-select option').first.inner_text())
+    # Die Blöcke mit Landesbezug stehen vorn. Das war lange ein einziger, deshalb
+    # prüfte der Test die erste Zeile auf den Landesnamen — inzwischen sind es vier,
+    # und die Bedingung ist, dass keiner von ihnen hinter einen bundesweiten rutscht.
+    reihenfolge=page.evaluate(
+        "()=>window.ATLAS_SURVEY_ITEMS.blocks.map(b=>b.block.startsWith('bw_'))")
+    check('the Baden-Württemberg blocks come first',
+          reihenfolge==sorted(reihenfolge,key=lambda x:not x) and reihenfolge[0])
+    check('there is more than one block about this state',
+          sum(reihenfolge)>=4)
     check('the state survey names its method in full',
           '1.587' in umf and 'Forschungsgruppe Wahlen' in umf and '24.07.2019' in umf)
+    # Die beiden nächsten Prüfungen gelten einem bestimmten Block, nicht dem, der
+    # zufällig oben steht. Er wird deshalb ausgewählt — sonst prüfen sie irgendwann
+    # stillschweigend etwas anderes, wie schon einmal geschehen.
+    page.select_option('#survey-select', index=page.eval_on_selector_all(
+        '#survey-select option',
+        "o=>o.findIndex(x=>/religi(öse|ous) (Vielfalt|diversity)/i"
+        ".test(x.textContent))"))
+    page.wait_for_function("document.querySelectorAll("
+                           "'#survey-blocks .bar-row').length===3")
+    vielfalt=page.locator('#befragungen').inner_text()
     check('the four-point scale is shown beside the summed bar',
-          'voll und ganz 14' in umf and 'überhaupt nicht 19' in umf)
+          'voll und ganz 14' in vielfalt or 'strongly agree 14' in vielfalt)
     check('only the selected block is drawn',
           page.locator('#survey-blocks .bar-row').count()==3)
     # Zwei Landesumfragen mit verschiedenen Grundgesamtheiten dürfen nicht als
     # Entwicklung gelesen werden, und das steht oben.
     check('the two state surveys are not presented as a trend',
           'verschiedene' in umf and 'Wahlberechtigte' in umf)
-    page.select_option('#survey-select','1'); page.wait_for_timeout(400)
-    zweiter=page.locator('#befragungen').inner_text()
+    # Die Blöcke werden über ihren Titel gewählt, nicht über ihre Position. Die
+    # Reihenfolge ändert sich, sobald ein Block dazukommt, und dann prüfte die
+    # Nummer stillschweigend den falschen.
+    def waehle(muster, zeilen=None):
+        page.select_option('#survey-select', index=page.eval_on_selector_all(
+            '#survey-select option',
+            "o=>o.findIndex(x=>/" + muster + "/i.test(x.textContent))"))
+        if zeilen:
+            page.wait_for_function(
+                "document.querySelectorAll('#survey-blocks .bar-row').length==="
+                + str(zeilen))
+        else:
+            page.wait_for_timeout(400)
+        return page.locator('#befragungen').inner_text()
+
+    zweiter=waehle('Kopft(ücher|uchs|uch)[^a-z]*.*2012|headscarves', 8)
     check('switching the dropdown switches the block',
           page.locator('#survey-blocks .bar-row').count()==8)
     check('the 2012 survey separates the confessions and the two halves of the state',
-          'Muslimische Befragte' in zweiter and 'Württemberg' in zweiter
-          and '3.001' in zweiter)
-    page.select_option('#survey-select','2'); page.wait_for_timeout(400)
-    dritter=page.locator('#befragungen').inner_text()
+          ('Muslimische Befragte' in zweiter or 'Muslim respondents' in zweiter)
+          and 'Württemberg' in zweiter and '3.001' in zweiter)
+    dritter=waehle('Gr(ü|u)nde f(ü|u)r das Tragen|Reasons for wearing', 9)
     check('the headscarf block names its restricted population',
-          '603 Befragte' in dritter and 'die das Kopftuch manchmal' in dritter)
-    page.select_option('#survey-select','3'); page.wait_for_timeout(400)
-    vierter=page.locator('#befragungen').inner_text()
+          '603' in dritter and ('die das Kopftuch manchmal' in dritter
+                                or 'who wear the headscarf' in dritter))
+    vierter=waehle('abgrenzen|keep apart', 4)
     check('the perception gap is shown from both sides',
-          '30' in vierter and '76' in vierter and 'Allgemeinbevölkerung' in vierter)
+          '30' in vierter and '76' in vierter
+          and ('Allgemeinbevölkerung' in vierter or 'general population' in vierter))
     check('the source note follows the selected block',
           'Pew' in page.locator('#survey-note').inner_text())
-    page.select_option('#survey-select','2'); page.wait_for_timeout(400)
+    waehle('Gr(ü|u)nde f(ü|u)r das Tragen|Reasons for wearing', 9)
     check('the question numbers appear with the block that has them',
           'v401_1' in page.locator('#befragungen').inner_text())
     page.select_option('#survey-select','0'); page.wait_for_timeout(400)

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 333,
+  "check_count": 334,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -1007,7 +1007,11 @@
       "passed": true
     },
     {
-      "name": "the Baden-Württemberg block comes first",
+      "name": "the Baden-Württemberg blocks come first",
+      "passed": true
+    },
+    {
+      "name": "there is more than one block about this state",
       "passed": true
     },
     {
