@@ -1,11 +1,7 @@
 {
   "passed": true,
-  "check_count": 291,
+  "check_count": 301,
   "checks": [
-    {
-      "name": "real prepared geography present",
-      "passed": true
-    },
     {
       "name": "initial layer is the district view",
       "passed": true
@@ -79,7 +75,43 @@
       "passed": true
     },
     {
+      "name": "the hero shows the composition, not one confession",
+      "passed": true
+    },
+    {
+      "name": "katholisch tile present and carries its value",
+      "passed": true
+    },
+    {
+      "name": "Evangelische tile present and carries its value",
+      "passed": true
+    },
+    {
+      "name": "Muslimische tile present and carries its value",
+      "passed": true
+    },
+    {
+      "name": "Restkategorie tile present and carries its value",
+      "passed": true
+    },
+    {
       "name": "published BW range displayed",
+      "passed": true
+    },
+    {
+      "name": "the estimated tile says so and names its base",
+      "passed": true
+    },
+    {
+      "name": "the counted tiles say so",
+      "passed": true
+    },
+    {
+      "name": "the residual tile says the estimate sits inside it",
+      "passed": true
+    },
+    {
+      "name": "the estimated tile is marked apart from the counted ones",
       "passed": true
     },
     {
@@ -863,7 +895,15 @@
       "passed": true
     },
     {
+      "name": "the two state surveys are not presented as a trend",
+      "passed": true
+    },
+    {
       "name": "switching the dropdown switches the block",
+      "passed": true
+    },
+    {
+      "name": "the 2012 survey separates the confessions and the two halves of the state",
       "passed": true
     },
     {

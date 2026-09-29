@@ -103,7 +103,28 @@ with sync_playwright() as pw:
           'Herkunft ist nicht Religion' in kopf)
     check('the lede distinguishes counted from estimated',
           'Gezählt' in kopf and 'geschätzt' in kopf)
-    check('published BW range displayed','1,133–1,197' in page.locator('.kpi').first.inner_text())
+    # Die Kopfzeile trug lange nur die muslimische Zahl, und damit las sich der Atlas,
+    # als sei sie die ganze Religionslandschaft. Jetzt steht die Zusammensetzung dort —
+    # und weil zwei der vier Zahlen gezählt und eine geschätzt ist, muss der Unterschied
+    # an der Kachel selbst ablesbar sein, nicht nur im Fließtext weiter unten.
+    kacheln=page.locator('.kpi-grid .kpi')
+    check('the hero shows the composition, not one confession',kacheln.count()==4)
+    kachel=[kacheln.nth(n).inner_text() for n in range(kacheln.count())]
+    for wort,zahl in (('katholisch','29,9'),('Evangelische','25,9'),
+                      ('Muslimische','10,1–10,7'),('Restkategorie','44,2')):
+        treffer=[k for k in kachel if wort in k]
+        check(f'{wort} tile present and carries its value',
+              len(treffer)==1 and zahl in treffer[0])
+    muslimisch=[k for k in kachel if 'Muslimische' in k][0]
+    check('published BW range displayed','1,133–1,197' in muslimisch)
+    check('the estimated tile says so and names its base',
+          'Geschätzt' in muslimisch and 'Hauptwohnsitzhaushalte' in muslimisch)
+    check('the counted tiles say so',
+          all('Gezählt' in k for k in kachel if 'Muslimische' not in k))
+    check('the residual tile says the estimate sits inside it',
+          'enthalten' in [k for k in kachel if 'Restkategorie' in k][0])
+    check('the estimated tile is marked apart from the counted ones',
+          page.locator('.kpi.is-estimate').count()==1)
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
     # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
@@ -653,19 +674,28 @@ with sync_playwright() as pw:
           'voll und ganz 14' in umf and 'überhaupt nicht 19' in umf)
     check('only the selected block is drawn',
           page.locator('#survey-blocks .bar-row').count()==3)
+    # Zwei Landesumfragen mit verschiedenen Grundgesamtheiten dürfen nicht als
+    # Entwicklung gelesen werden, und das steht oben.
+    check('the two state surveys are not presented as a trend',
+          'verschiedene' in umf and 'Wahlberechtigte' in umf)
     page.select_option('#survey-select','1'); page.wait_for_timeout(400)
     zweiter=page.locator('#befragungen').inner_text()
     check('switching the dropdown switches the block',
-          page.locator('#survey-blocks .bar-row').count()==9)
-    check('the headscarf block names its restricted population',
-          '603 Befragte' in zweiter and 'die das Kopftuch manchmal' in zweiter)
+          page.locator('#survey-blocks .bar-row').count()==8)
+    check('the 2012 survey separates the confessions and the two halves of the state',
+          'Muslimische Befragte' in zweiter and 'Württemberg' in zweiter
+          and '3.001' in zweiter)
     page.select_option('#survey-select','2'); page.wait_for_timeout(400)
     dritter=page.locator('#befragungen').inner_text()
+    check('the headscarf block names its restricted population',
+          '603 Befragte' in dritter and 'die das Kopftuch manchmal' in dritter)
+    page.select_option('#survey-select','3'); page.wait_for_timeout(400)
+    vierter=page.locator('#befragungen').inner_text()
     check('the perception gap is shown from both sides',
-          '30' in dritter and '76' in dritter and 'Allgemeinbevölkerung' in dritter)
+          '30' in vierter and '76' in vierter and 'Allgemeinbevölkerung' in vierter)
     check('the source note follows the selected block',
           'Pew' in page.locator('#survey-note').inner_text())
-    page.select_option('#survey-select','1'); page.wait_for_timeout(400)
+    page.select_option('#survey-select','2'); page.wait_for_timeout(400)
     check('the question numbers appear with the block that has them',
           'v401_1' in page.locator('#befragungen').inner_text())
     page.select_option('#survey-select','0'); page.wait_for_timeout(400)

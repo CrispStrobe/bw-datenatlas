@@ -3,6 +3,7 @@ import csv
 import hashlib
 import io
 import json
+import re
 from pathlib import Path
 import unittest
 import zipfile
@@ -129,5 +130,37 @@ class DataTests(unittest.TestCase):
         js=(ROOT/'docs/assets/app.js').read_text(encoding='utf-8')
         self.assertNotIn('fetch(\'http', js)
         self.assertIn("fetch('data/research-observations.json')", js)
+
+    def test_hero_tiles_match_the_census_file(self):
+        """Die Kopfzahlen sind von Hand gesetzt; das hier hält sie an der Quelle fest.
+
+        Sie stehen als Text im HTML, weil sie vor jedem Skript sichtbar sein sollen.
+        Genau deshalb können sie unbemerkt von der Datei abweichen, aus der sie stammen
+        — der Test rechnet sie nach, statt sie zu wiederholen.
+        """
+        z = json.loads((ROOT/'docs/data/municipal-religion-2022.json')
+                       .read_text(encoding='utf-8'))['state_total']
+        html = (ROOT/'docs/index.html').read_text(encoding='utf-8')
+        kacheln = re.findall(r'<article class="kpi[^"]*">(.*?)</article>', html, re.S)
+        self.assertEqual(len(kacheln), 4)
+        def gesetzt(stichwort):
+            k = [x for x in kacheln if stichwort in x]
+            self.assertEqual(len(k), 1, stichwort)
+            return k[0]
+        for stichwort, anteil, absolut in (
+                ('katholische', 'catholic_pct', 'catholic'),
+                ('Evangelische', 'evangelical_pct', 'evangelical'),
+                ('Sonstige', 'other_none_unstated_pct', 'other_none_unstated')):
+            kachel = gesetzt(stichwort)
+            self.assertIn(f'{z[anteil]:.1f}'.replace('.', ','), kachel)
+            self.assertIn(f'{z[absolut]/1e6:.2f}'.replace('.', ',') + ' Mio.', kachel)
+        # Die drei gezählten Anteile sind die ganze Bevölkerung; wäre das nicht so,
+        # stünde neben ihnen eine vierte, ungenannte Gruppe.
+        self.assertAlmostEqual(z['catholic_pct'] + z['evangelical_pct']
+                               + z['other_none_unstated_pct'], 100, places=1)
+        # Und die Schätzung liegt in der Restkategorie, nicht daneben: die Kachel sagt
+        # das, und die Zahl erlaubt es auch.
+        self.assertIn('enthalten', gesetzt('Sonstige'))
+        self.assertLess(10.7, z['other_none_unstated_pct'])
 
 if __name__=='__main__': unittest.main(verbosity=2)
