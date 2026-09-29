@@ -545,6 +545,27 @@ with sync_playwright() as pw:
           and page.eval_on_selector('#map-attribution-bw','e=>e.hidden'))
     check('the european layer states that it counts birthplace, not passport',
           'Geburtsort' in page.locator('#map-note').inner_text())
+    # Das Gitter ist die einzige Ebene unterhalb der Gemeinde und wird erst bei
+    # Bedarf geladen. Geprüft wird, dass es ankommt, dass gesperrte Zellen NICHT
+    # gezeichnet werden und dass die Kopfzeile beide Zahlen nennt.
+    page.select_option('#layer','grid_foreign_share')
+    page.wait_for_selector('#map-features rect.grid-cell',timeout=60000)
+    page.wait_for_timeout(700)
+    zellen=page.locator('#map-features rect.grid-cell').count()
+    check('the grid layer loads on demand and draws only cells with a value',
+          13000<zellen<14000)
+    check('the header names drawn cells and total cells',
+          '13.516' in page.locator('#map-period').inner_text()
+          and '21.585' in page.locator('#map-period').inner_text())
+    check('the grid layer warns that gaps are not empty land',
+          'geheimgehalten' in page.locator('#map-note').inner_text())
+    page.select_option('#layer','grid_mean_age'); page.wait_for_timeout(1200)
+    check('the second grid layer has more cells than the first',
+          page.locator('#map-features rect.grid-cell').count()>zellen)
+    page.select_option('#layer','district_population'); page.wait_for_timeout(900)
+    check('the map returns from the grid to the districts',
+          page.locator('#map-features path.map-feature').count()==44)
+
     # Gezählt neben geschätzt: die Kirchenzahlen sind eine Vollerhebung auf
     # derselben Gemeindegeometrie wie die Modellrechnung. Die Restkategorie ist die
     # Obergrenze des Modells — und ausdrücklich kein Muslimanteil.

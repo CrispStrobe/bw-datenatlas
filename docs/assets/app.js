@@ -8,6 +8,7 @@ const REG=window.ATLAS_REGIONS||null;
 const EUROSTAT=window.ATLAS_EUROSTAT||null;
 const GERMANY=window.ATLAS_GERMANY||null;
 const MUNIREL=window.ATLAS_MUNI_RELIGION||null;
+let GRID=null,gridLaeuft=false;
 const AGE=window.ATLAS_AGE||null;
 const GEN=window.ATLAS_GENERATIONS||null;
 const NAT=window.ATLAS_NATIONALITIES||null;
@@ -131,6 +132,11 @@ const layers={
  // großen Kirchen. Diese drei Ebenen stehen deshalb NEBEN der Modellrechnung und
  // nicht anstelle von ihr: sie zeigen, was erhoben ist, und die dritte zeigt die
  // Grenze, gegen die das Modell geprüft wird.
+ // Die einzige Ebene unterhalb der Gemeinde, die es amtlich gibt. Sie wird erst
+ // geladen, wenn jemand sie ansieht: 194 KiB gepackt gehören nicht in den Start
+ // einer Seite, die die meisten Besucher wegen der Kreiskarte öffnen.
+ grid_foreign_share:{title:'Ausländische Staatsangehörige · 1-km-Gitter',badge:'Vollerhebung · Gitterzellen',date:'Zensus 2022 · Stichtag 15.05.2022 · 1-km-Zellen',source:'zensus2022',grid:'foreign_pct',thresholds:[3,6,10,16,25],unit:'percent',note:'Anteil der Menschen ohne deutschen Pass je Gitterzelle von einem Kilometer Kantenlänge. Eine Gemeinde wie Stuttgart hat auf allen anderen Ebenen dieses Atlas einen einzigen Wert für 610.000 Einwohner; erst hier ist zu sehen, wie verschieden die Viertel sind. Leere Flächen sind zweierlei und nicht auseinanderzuhalten: unbewohnt oder geheimgehalten. Der Zensus sperrt kleine Fälle und überlagert die übrigen nach dem Cell-Key-Verfahren — von 21.585 Zellen mit Einwohnern tragen nur 13.516 einen Ausländeranteil. Wer die Lücken für menschenleer hält, liest die Karte falsch.'},
+ grid_mean_age:{title:'Durchschnittsalter · 1-km-Gitter',badge:'Vollerhebung · Gitterzellen',date:'Zensus 2022 · Stichtag 15.05.2022 · 1-km-Zellen',source:'zensus2022',grid:'mean_age',thresholds:[38,42,45,48,52],unit:'years',note:'Durchschnittsalter der Bevölkerung je Gitterzelle. Neben der Ebene daneben gelesen zeigt sich das bekannte Muster: die jüngeren Zellen liegen in den Städten und dort, wo der Ausländeranteil hoch ist, die älteren im ländlichen Raum. Das ist ein Zusammenhang zweier Karten und keine Ursache — beides hängt an derselben Siedlungsgeschichte. 21.585 Zellen tragen einen Wert.'},
  muni_catholic:{title:'Römisch-katholische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'catholic_pct',thresholds:[12,20,30,42,55],unit:'percent',note:'Anteil der Mitglieder der römisch-katholischen Kirche an der Bevölkerung, aus dem Zensus 2022. Dies ist die ausgeprägteste religiöse Struktur, die Baden-Württemberg hat: das katholische Oberschwaben und der Süden gegen das evangelische Altwürttemberg. Landesweit 29,9 Prozent. Gezählt, nicht geschätzt — anders als die muslimische Bevölkerung, für die es auf Gemeindeebene keine Erhebung gibt. Einzelwerte sind nach dem Cell-Key-Verfahren geheimgehalten und damit bewusst leicht überlagert.'},
  muni_protestant:{title:'Evangelische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'evangelical_pct',thresholds:[12,20,28,36,46],unit:'percent',note:'Anteil der Mitglieder der evangelischen Kirche an der Bevölkerung, aus dem Zensus 2022. Das Gegenbild zur Ebene daneben, und zwar fast spiegelbildlich: die beiden Karten zusammen zeigen die Konfessionsgrenze von 1555, die in der Siedlungsstruktur bis heute sichtbar ist. Landesweit 25,9 Prozent; beide Kirchen zusammen 55,8 Prozent.'},
  muni_no_church:{title:'Sonstige, keine, ohne Angabe · Anteil je Gemeinde',badge:'Vollerhebung · Obergrenze des Modells',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'other_none_unstated_pct',thresholds:[25,33,40,47,55],unit:'percent',note:'Die Restkategorie des Zensus: alle, die weder der römisch-katholischen noch der evangelischen Kirche angehören. Das sind Konfessionslose, alle anderen Religionen und alle fehlenden Angaben in einer einzigen Zahl. Diese Ebene ist deshalb WEDER ein Anteil Konfessionsloser NOCH ein Muslimanteil, und sie darf nicht als einer gelesen werden. Ihr Wert für diesen Atlas ist ein anderer: weil muslimische Einwohnerinnen und Einwohner zwangsläufig hierunter fallen, kann der modellierte Muslimanteil einer Gemeinde nicht über diesem Wert liegen. Die Ebene macht damit sichtbar, wogegen die Modellrechnung bisher nur rechnerisch geprüft wurde. Landesweit 44,2 Prozent.'},
@@ -533,6 +539,8 @@ function estimateMunicipality(geoId){return EST?EST.municipalities[geoId]:null;}
 function valueForFeature(f){const p=f.properties;
  const eu=layers[state.layer].euMeasure;if(eu)return p[eu]??null;
  const de=layers[state.layer].deMeasure;if(de)return p[de]??null;
+ const g=layers[state.layer].grid;
+ if(g)return p[g]??null;
  const rel=layers[state.layer].muniReligion;
  if(rel){const r=MUNIREL?MUNIREL.municipalities[p.statistical_geo_id]:null;return r?r[rel]??null:null;}
  if(state.layer==='region_population')return p.population??null;
@@ -1036,6 +1044,61 @@ function renderLegend(){const l=layers[state.layer];renderInstitutionCoverage();
    entry.n+=1;counts.set(label,entry);}
   $('map-legend').innerHTML='<span class="legend-key"><i class="legend-swatch" style="background:#17505f;border-radius:50%;width:13px;height:13px"></i>Zahl = mehrere Einrichtungen dicht beieinander; auswählen teilt sie auf</span>'+[...counts].sort((a,b)=>b[1].n-a[1].n).map(([label,e])=>'<span class="legend-key"><i class="legend-swatch" style="background:'+e.colour+';border-radius:50%;width:10px;height:10px"></i>'+esc(label)+' · '+e.n+'</span>').join('')+'<span class="legend-key"><i class="legend-swatch" style="background:none;border:1.6px dashed #6b7280;border-radius:50%;width:11px;height:11px"></i>Jeder Punkt steht in der Ortsmitte, nicht am Gebäude</span>'+'<span class="legend-key">'+institutionTally()+' · keine Bevölkerungszahl</span>';return;}
  const p=l.palette||palette,fmt=l.unit==='percent'?v=>pf.format(v)+' %':l.unit==='points'?v=>(v>0?'+':'')+pf.format(v)+' Pkt.':l.unit==='per_1000'?v=>(v>0?'+':'')+pf.format(v):integer;const th=l.thresholds;const texts=[`< ${fmt(th[0])}`,...th.slice(0,-1).map((v,i)=>`${fmt(v)} – < ${fmt(th[i+1])}`),`≥ ${fmt(th.at(-1))}`];$('map-legend').innerHTML=texts.map((t,i)=>`<span class="legend-key"><i class="legend-swatch" style="background:${p[i]}"></i>${esc(t)}</span>`).join('')+'<span class="legend-key">Schraffiert: kein Wert</span>';}
+// Ein Zuhörer für alle Zellen. Er sitzt an der Gruppe und nicht an den Rechtecken.
+function gitterZuhoerer(){
+ const g=$('map-features');if(!g||g.dataset.gitterVerdrahtet)return;
+ g.dataset.gitterVerdrahtet='1';
+ g.addEventListener('pointermove',e=>{
+  const r=e.target.closest('.grid-cell');if(!r)return;
+  const l=layers[state.layer];if(!l.grid)return;
+  const v=Number(r.dataset.v);
+  $('map-tooltip').innerHTML='<strong>'+esc(t('Gitterzelle, 1 km'))+'</strong>'
+   +esc(l.unit==='percent'?pct(v):tf('{0} Jahre',pf.format(v)));
+  $('map-tooltip').hidden=false;
+ });
+ g.addEventListener('pointerleave',()=>{if(layers[state.layer].grid)$('map-tooltip').hidden=true;});
+}
+function gitterNachladen(){
+ if(gridLaeuft)return;gridLaeuft=true;
+ // Der Fang gilt dem Abruf und NUR dem Abruf. Ein .catch über den ganzen Ablauf
+ // hat hier schon einen Programmierfehler verschluckt — eine ReferenceError beim
+ // Zeichnen landete im Fehlerzweig, der GRID durch ein leeres Objekt ersetzte, und
+ // übrig blieb eine stumme leere Karte ohne eine einzige Meldung in der Konsole.
+ fetch('data/grid-bw-1km.json',{cache:'force-cache'})
+  .then(r=>r.ok?r.json():Promise.reject(r.status))
+  .catch(()=>({columns:{},count:0,failed:true}))
+  .then(d=>{GRID=d;renderMap();});
+}
+// 21.585 Rechtecke. Keine Ereignisbehandlung an jedem einzelnen: ein Zuhörer an der
+// Gruppe liest die Werte aus dem angefassten Rechteck. Mit einem Zuhörer je Zelle
+// wäre die Karte nicht mehr zu bedienen.
+function zeichneGitter(){
+ const l=layers[state.layer],feld=l.grid,c=GRID&&GRID.columns;
+ const host=$('map-features');
+ $('map-outline').replaceChildren();$('map-labels').replaceChildren();
+ if(!c||!c.lon){host.replaceChildren();return;}
+ // Die Kantenlänge einmal aus der Projektion ableiten, statt sie je Zelle zu messen.
+ const mitte=Math.floor(c.lon.length/2);
+ const [x0,y0]=projection([c.lon[mitte],c.lat[mitte]]);
+ const [x1,y1]=projection([c.lon[mitte]+0.0136,c.lat[mitte]+0.009]);
+ const bw=Math.max(1.2,Math.abs(x1-x0)),bh=Math.max(1.2,Math.abs(y1-y0));
+ const frag=document.createDocumentFragment();
+ let gezeichnet=0;
+ for(let i=0;i<c.lon.length;i++){
+  const v=c[feld]?c[feld][i]:null;
+  if(v===null||v===undefined)continue;
+  const [x,y]=projection([c.lon[i],c.lat[i]]);
+  const r=document.createElementNS('http://www.w3.org/2000/svg','rect');
+  r.setAttribute('x',(x-bw/2).toFixed(1));r.setAttribute('y',(y-bh/2).toFixed(1));
+  r.setAttribute('width',bw.toFixed(1));r.setAttribute('height',bh.toFixed(1));
+  r.setAttribute('fill',colorFor(v));r.setAttribute('class','grid-cell');
+  r.setAttribute('data-v',v);
+  frag.appendChild(r);gezeichnet++;
+ }
+ host.replaceChildren(frag);gitterZuhoerer();
+ $('map-period').textContent=tf('{0} · {1} von {2} Zellen mit Wert',
+   t(l.date),integer(gezeichnet),integer(GRID.count));
+}
 function renderMap(){const l=layers[state.layer];$('map-title').textContent=t(l.title);$('map-period').textContent=l.dateArgs?tf(l.date,...l.dateArgs):t(l.date);$('map-badge').textContent=t(l.badge);$('map-badge').className='pill'+(isEstimate()?' warning':'');$('map-note').textContent=t(l.note);$('map-svg-title').textContent=t(l.title);$('map-svg-desc').textContent=$('map-period').textContent+'. '+t(l.note);renderLegend();$('map-unavailable').hidden=!!G;$('map').hidden=!G;$('export-map').disabled=!G;['zoom-in','zoom-out','zoom-reset'].forEach(id=>$(id).disabled=!G);if(!G)return;
 // Warum der Umriss der gewählten Fläche nicht an der Fläche selbst hängt.
 //
@@ -1073,6 +1136,7 @@ function zeichneUmriss(geometry,klasse){
  const regionLayer=state.layer.startsWith('region_');
  const euLayer=!!layers[state.layer].euMeasure;
  const deLayer=!!layers[state.layer].deMeasure;
+ const gridLayer=!!layers[state.layer].grid;
  // Der Zuschnitt gehört zur Ebene, nicht zum Dokument: erst umstellen, dann zeichnen.
  projection=euLayer?(PROJ.eu||PROJ.bw):deLayer?(PROJ.de||PROJ.bw):PROJ.bw;
  // Die Herkunftsangabe gehört zu den gezeigten Grenzen, nicht zur Seite: auf der
@@ -1087,6 +1151,17 @@ function zeichneUmriss(geometry,klasse){
   if(d){const m=euLayer?l.euMeta:null;d.hidden=!m;
    if(m)d.innerHTML=esc(t('Datensatz'))+': <a href="'+esc(m.dataset_url)+'" target="_blank" '
     +'rel="noreferrer">'+esc(t(m.title))+' ('+esc(m.dataset)+')</a>';}}
+ // Erst laden, dann zeichnen. Bis die Datei da ist, bleibt die Fläche leer und die
+ // Kopfzeile sagt, dass geladen wird — eine stumme leere Karte sähe nach Fehler aus.
+ if(gridLayer&&!GRID){gitterNachladen();$('map-features').replaceChildren();
+  $('map-outline').replaceChildren();$('map-labels').replaceChildren();
+  $('map-period').textContent=t('Gitterdaten werden geladen …');applyZoom();return;}
+ if(gridLayer){zeichneGitter();
+  // Der Umriss des Landes über die Zellen, sonst ist die Wolke nicht als
+  // Baden-Württemberg zu erkennen. Hier gezeichnet und nicht in zeichneGitter:
+  // zeichneUmriss lebt in diesem Gültigkeitsbereich.
+  if(G&&G.state)zeichneUmriss(G.state.geometry,'elsewhere');
+  applyZoom();return;}
  const features=euLayer?(EUROSTAT?EUROSTAT.features:[])
    :deLayer?(GERMANY?GERMANY.features:[])
    :state.layer==='religion_state'||pointLayer?[G.state]

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 254,
+  "check_count": 259,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -732,6 +732,26 @@
     },
     {
       "name": "the european layer states that it counts birthplace, not passport",
+      "passed": true
+    },
+    {
+      "name": "the grid layer loads on demand and draws only cells with a value",
+      "passed": true
+    },
+    {
+      "name": "the header names drawn cells and total cells",
+      "passed": true
+    },
+    {
+      "name": "the grid layer warns that gaps are not empty land",
+      "passed": true
+    },
+    {
+      "name": "the second grid layer has more cells than the first",
+      "passed": true
+    },
+    {
+      "name": "the map returns from the grid to the districts",
       "passed": true
     },
     {

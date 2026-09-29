@@ -197,6 +197,14 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 - **Die Probe:** Die Summe der vierzehn Länderwerte muss die veröffentlichte Gesamtzahl von 84.356 ergeben. Der Aufbau bricht ab, wenn sie es nicht tut — dann ist eine Zahl falsch übernommen oder die Quelle hat sich geändert.
 - **Die amtliche Reihe daneben:** Die Kultusministerkonferenz veröffentlicht „Auswertung Religionsunterricht" **zweijährlich**, zuletzt für 2023/24 (erschienen 15.10.2024), mit maschinenlesbarer Tabelle je Land, Schulart und Unterrichtsart. Sie ist die amtliche Quelle, hinkt aber zwei Jahre hinterher; ein Stand 2024/25 existiert wegen des Zweijahresrhythmus nicht, 2025/26 ist der nächste fällige. Für Baden-Württemberg weist sie für den Primar- und Sekundarbereich I aus: 4.190 (2015/16), 6.092 (2017/18), 5.885 (2019/20), 6.459 (2021/22), 9.750 (2023/24).
 
+## Zensus 2022, Gitterzellen (1 km)
+
+- **Quelle:** Statistische Ämter des Bundes und der Länder, Zensus 2022, Ergebnisse in Gitterzellen, `dl-de/by-2-0`. Übernommen sind Ausländeranteil, Durchschnittsalter sowie die Anteile der unter 18- und der ab 65-Jährigen.
+- **Zuschnitt:** gegen die Landesfläche selbst, nicht gegen ein Rechteck — ein Rechteck um Baden-Württemberg enthält Teile Bayerns, Hessens, der Pfalz und der Schweiz. 21.585 Zellen mit Einwohnern.
+- **Leere Flächen sind zweierlei.** Der Zensus sperrt kleine Fälle und überlagert die übrigen nach dem Cell-Key-Verfahren. Beim Ausländeranteil tragen nur 13.516 der 21.585 Zellen einen Wert; die übrigen sind unbewohnt **oder** geheimgehalten, und das ist von außen nicht zu unterscheiden. Die Karte zeichnet gesperrte Zellen nicht als Null.
+- **Keine Religionsangabe.** Die Religionsdatei des Gitters führt nur römisch-katholisch, evangelisch und eine Restkategorie — der Zensus 2022 hat nicht nach Religion gefragt, sondern das Melderegister ausgewertet. Eine Karte des Islam auf Gitterebene gibt es nicht und kann es aus dieser Quelle nicht geben.
+- **Die Quelldateien liegen nicht im Repository** (11 bis 15 MB je Größe). `scripts/prepare_grid_bw.py --quelle <Verzeichnis>` erzeugt den zugeschnittenen Auszug; im Repository steht nur dieser. Der Aufbau in der CI führt den Schritt deshalb nicht aus.
+
 ## Zensus 2022, Religionszugehörigkeit je Gemeinde
 
 - **Quelle:** Statistische Ämter des Bundes und der Länder, Zensus 2022, Sonderauswertung „Bevölkerung nach Religionszugehörigkeit, Anteil je Gemeinde", erschienen 04.12.2024. Dieselbe Datei liefert die Obergrenze, gegen die die Modellrechnung geprüft wird.

@@ -67,7 +67,8 @@ def sammeln(port: int) -> list[str]:
         # Jede Ebene mit eigenem Profil muss dabei sein. Die Bundesländer-Ebene
         # fehlte zuerst, und damit fehlten ihre sechs Profilsätze im Katalog.
         for ebene in ('region_population', 'eu_foreign_born', 'de_muslim_share',
-                      'muni_catholic', 'district_population'):
+                      'muni_catholic', 'grid_foreign_share',
+                      'district_population'):
             try:
                 page.select_option('#layer', ebene)
                 page.wait_for_timeout(500)
