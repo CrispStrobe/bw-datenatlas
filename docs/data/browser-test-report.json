@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 230,
+  "check_count": 233,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -64,6 +64,18 @@
     },
     {
       "name": "one real state outline rendered",
+      "passed": true
+    },
+    {
+      "name": "the title names both subjects",
+      "passed": true
+    },
+    {
+      "name": "the lede keeps origin and religion apart",
+      "passed": true
+    },
+    {
+      "name": "the lede distinguishes counted from estimated",
       "passed": true
     },
     {

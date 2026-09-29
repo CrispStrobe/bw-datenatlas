@@ -93,6 +93,16 @@ with sync_playwright() as pw:
             "&&g.indexOf('map-outline')<g.indexOf('map-labels');}"))
         page.select_option('#layer','religion_state')
         check('one real state outline rendered',page.locator('#map-features path').count()==1)
+    # Der Name sagt seit v0.11 Religion UND Migration. Damit liegen ungleiche Belege
+    # unter einem Dach — gezählte Kirchenmitglieder neben geschätzten Muslimzahlen —,
+    # und der Satz, der beides auseinanderhält, muss im Kopf stehen und nicht in einer
+    # Fußnote.
+    kopf=page.locator('.hero').inner_text()
+    check('the title names both subjects','Religion und Migration' in kopf)
+    check('the lede keeps origin and religion apart',
+          'Herkunft ist nicht Religion' in kopf)
+    check('the lede distinguishes counted from estimated',
+          'Gezählt' in kopf and 'geschätzt' in kopf)
     check('published BW range displayed','1,133–1,197' in page.locator('.kpi').first.inner_text())
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
