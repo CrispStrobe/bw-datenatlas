@@ -579,6 +579,27 @@ with sync_playwright() as pw:
           'Modellrechnung' in modell and 'Obergrenze aus dem Zensus 2022' in modell
           and 'Kirchenmitgliedschaft' in modell)
 
+    # Die Zeitreihe lebt von ihrer Probe: zwei Jahre sind unabhängig von der KMK
+    # bestätigt, und der Unterschied zur verbreiteten KMK-Zahl ist die Sekundarstufe II.
+    iru=page.locator('#iru-card').inner_text()
+    check('the religious education series runs from 2019 to 2025/26',
+          page.locator('#iru-bars .bar-row').count()==7
+          and '5.500' in iru and '11.827' in iru)
+    check('the series names the two years the KMK confirms',
+          iru.count('von der KMK bestätigt')==2 and '9.750 + 310' in iru)
+    check('the series says what the KMK headline leaves out',
+          'Sekundarbereich II nicht' in iru)
+    check('the series does not smooth over the year that disagrees',
+          '5.905' in iru)
+    # Und die Altersangaben leben davon, dass sie sagen, was sie NICHT sind.
+    alter=page.locator('#ages-card').inner_text()
+    check('the age card denies that a pyramid exists',
+          'gibt es nicht' in alter and 'ab 16 Jahren' in alter)
+    check('the age card keeps mean and median apart',
+          'Mittelwert' in alter and 'Median' in alter)
+    check('every age figure carries its area and reference year',
+          alter.count('Deutschland')>=4 and '2020' in alter and '2016' in alter)
+
     # Der Religionsunterricht ist die einzige gezählte Größe auf der Deutschlandkarte.
     # Drei Zustände, die nicht dasselbe sind: eine Zahl, "kein Angebot" und "keine
     # gesonderte Angabe" — Letzteres ist eine Aussage über die Erhebung, kein Loch.

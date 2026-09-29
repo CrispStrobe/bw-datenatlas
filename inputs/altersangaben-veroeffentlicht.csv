@@ -1,0 +1,30 @@
+source_id,measure,group,religion,value,unit,reference_period,geography,age_base,note
+bamf_mld2020_full,mean_age,Mit Migrationshintergrund,muslimisch,39.0,years,2020,Deutschland,ab 16 Jahren,Migrationshintergrund aus muslimisch geprägten Herkunftsländern
+bamf_mld2020_full,mean_age,Mit Migrationshintergrund,christlich/andere,41.3,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age,Mit Migrationshintergrund,keine,41.0,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age,Mit Migrationshintergrund,insgesamt,39.4,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age,Ohne Migrationshintergrund,muslimisch,51.2,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age,Ohne Migrationshintergrund,christlich/andere,52.5,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age,Ohne Migrationshintergrund,insgesamt,51.7,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Mittlerer Osten,muslimisch,35.9,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Mittlerer Osten,insgesamt,37.5,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Naher Osten,muslimisch,33.8,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Naher Osten,insgesamt,33.7,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Nordafrika,muslimisch,39.3,years,2020,Deutschland,ab 16 Jahren,christliche Teilgruppe unter 30 Personen und deshalb nicht ausgewertet
+bamf_mld2020_full,mean_age_by_origin,Nordafrika,insgesamt,39.1,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Südosteuropa,muslimisch,39.9,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Südosteuropa,christlich/andere,48.3,years,2020,Deutschland,ab 16 Jahren,höchstes Durchschnittsalter aller ausgewiesenen Gruppen
+bamf_mld2020_full,mean_age_by_origin,Südosteuropa,insgesamt,41.6,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Türkei,muslimisch,40.8,years,2020,Deutschland,ab 16 Jahren,2008 waren es 37.2 Jahre
+bamf_mld2020_full,mean_age_by_origin,Türkei,keine,41.8,years,2020,Deutschland,ab 16 Jahren,
+bamf_mld2020_full,mean_age_by_origin,Türkei,insgesamt,40.6,years,2020,Deutschland,ab 16 Jahren,
+pew_europe_2017,median_age,Deutschland,muslimisch,31,years,2016,Deutschland,alle Altersstufen,
+pew_europe_2017,median_age,Deutschland,nicht-muslimisch,47,years,2016,Deutschland,alle Altersstufen,
+pew_europe_2017,median_age,Europa,muslimisch,30.4,years,2016,Europa,alle Altersstufen,
+pew_europe_2017,median_age,Europa,nicht-muslimisch,43.8,years,2016,Europa,alle Altersstufen,
+pew_europe_2017,under_15_share,Europa,muslimisch,27,percent,2016,Europa,alle Altersstufen,
+pew_europe_2017,under_15_share,Europa,nicht-muslimisch,15,percent,2016,Europa,alle Altersstufen,
+pew_europe_2017,age_75_plus_share,Europa,muslimisch,1,percent,2016,Europa,alle Altersstufen,
+pew_europe_2017,age_75_plus_share,Europa,nicht-muslimisch,10,percent,2016,Europa,alle Altersstufen,
+pew_europe_2017,fertility,Deutschland,muslimisch,1.9,children_per_woman,2015-2020,Deutschland,,
+pew_europe_2017,fertility,Deutschland,nicht-muslimisch,1.4,children_per_woman,2015-2020,Deutschland,,

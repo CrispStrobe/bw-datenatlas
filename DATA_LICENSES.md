@@ -175,6 +175,21 @@ unabhängigen Prüfung und werden zitiert, nicht weiterverteilt.
 
 Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezogen. Ihre eigenen Lizenzen und Nutzungsbedingungen gelten weiterhin. Die ausgelieferte Website lädt keine Bibliotheken, Kartenkacheln oder Schriftarten von einem fremden CDN nach.
 
+## Islamischer Religionsunterricht in Baden-Württemberg, Zeitreihe
+
+- **Zahlen:** [Stiftung Sunnitischer Schulrat](https://sunnitischer-schulrat.de/) nach der amtlichen Schulstatistik des Statistischen Landesamts Baden-Württemberg, Schuljahr 2025/26. Die Stiftung verantwortet den Unterricht inhaltlich und veröffentlicht die Reihe seit 2019.
+- **Die Erhebungskette:** erhoben wird im Rahmen der amtlichen Schulstatistik (ESS), die das [IBBW](https://ibbw-bw.de/) jährlich im Oktober durchführt; ausgewertet wird sie vom Statistischen Landesamt. Eine offene Tabelle mit der Teilnahme am Religionsunterricht veröffentlicht keine der beiden Stellen — weder auf den IBBW-Seiten noch in GENESIS (Statistik 21111, allgemeinbildende Schulen). Veröffentlicht wird die Zahl von der Stiftung und, bundesweit gebündelt, von der Kultusministerkonferenz.
+- **Unabhängig bestätigt.** Für die überlappenden Jahre stimmt die Reihe genau mit der KMK-Auswertung überein, sobald man deren beide Teile addiert: 2021/22 = 6.459 + 35 = 6.494; 2023/24 = 9.750 + 310 = 10.060. Der Aufbau prüft das und bricht ab, wenn es nicht mehr stimmt.
+- **Was die verbreitete KMK-Zahl auslässt:** den Sekundarbereich II. Wer 9.750 und 11.827 nebeneinanderlegt, vergleicht zwei Abgrenzungen und zwei Schuljahre.
+- **Eine Abweichung bleibt stehen:** für 2019 nennt die Stiftung 5.500 ohne Schuljahresbezeichnung, die KMK für 2019/20 zusammen 5.905.
+
+## Veröffentlichte Altersangaben zur muslimischen Bevölkerung
+
+- **Es gibt keine Alterspyramide.** MLD 2020 (Pfündel/Stichs/Tanis, BAMF-Forschungsbericht 38) befragt Personen **ab 16 Jahren** und weist deshalb Durchschnittsalter aus, keine Altersaufbauten — bei einer im Mittel jüngeren Bevölkerung fehlt damit der breiteste Teil der Pyramide. [Pew](https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/) (2017) nennt je Land nur ein Medianalter und einen Altersaufbau nur für Europa insgesamt, in zwei Gruppen.
+- **Übernommen wird, was es gibt:** Durchschnittsalter nach Migrationshintergrund und Religionszugehörigkeit sowie nach Herkunftsregion (MLD 2020, Abbildung 3-4 und 3-5, S. 61 f.), Medianalter und Fertilität (Pew, Bezugsjahr 2016 bzw. 2015–2020).
+- **Nicht vergleichbar ohne Angabe:** ein Mittelwert über Erwachsene und ein Median über alle Altersstufen messen Verschiedenes. Jede Zahl trägt deshalb Gebiet, Altersuntergrenze und Bezugsjahr.
+- **Teilgruppen unter 30 Personen** weist MLD 2020 nicht aus; diese Felder bleiben leer statt geschätzt zu werden.
+
 ## Islamischer Religionsunterricht je Bundesland
 
 - **Zahlen:** Auskünfte der Kultus- und Bildungsministerien der Länder auf Anfrage des [Mediendienst Integration](https://mediendienst-integration.de/bevoelkerung/muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/), Stand 17.09.2026, abgerufen am 29.09.2026. Die Ministerien sind die Primärquelle, der Mediendienst führt ihre Antworten zusammen.

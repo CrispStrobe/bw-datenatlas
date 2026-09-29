@@ -1504,6 +1504,44 @@ $('pyramid-note').textContent='Unter 25 Jahre: '
 // Keine Zeitreihe und keine Linie: verschiedene Stellen, verschiedene Verfahren,
 // verschiedene Abgrenzungen. Deshalb Balken nebeneinander und an jedem, woher er
 // kommt.
+// Zwei Darstellungen, die beide von einer Prüfung leben statt von einer Behauptung.
+function renderIruTimeseries(){
+ const host=$('iru-bars');if(!host)return;
+ const D2=window.ATLAS_IRU_BW;
+ if(!D2||!D2.points){const k=$('iru-card');if(k)k.hidden=true;return;}
+ $('iru-warning').textContent=t(D2.what_the_kmk_headline_omits)+' '+t(D2.caveat);
+ const max=Math.max(...D2.points.map(p=>p.pupils));
+ host.innerHTML=D2.points.map(p=>
+  '<div class="bar-row"><div class="bar-name"><strong>'+esc(p.school_year)+'</strong>'
+  +(p.matches_kmk?'<br><span class="tiny">'+esc(tf('von der KMK bestätigt: {0} + {1}',
+     integer(p.kmk_primar_sek1),integer(p.kmk_sek2)))+'</span>':'')
+  +'</div><div class="bar-track"><div class="bar-fill" style="width:'
+  +(100*p.pupils/max).toFixed(1)+'%"></div></div>'
+  +'<div class="bar-value">'+esc(integer(p.pupils))+'</div></div>').join('');
+ $('iru-note').textContent=tf('{0} Schulen mit Angebot, {1} Religionsgruppen · {2}',
+   integer(D2.schools_with_offer),integer(D2.religion_groups),D2.source)
+   +' · '+t(D2.cross_check);
+}
+function renderPublishedAges(){
+ const host=$('ages-bars');if(!host)return;
+ const D2=window.ATLAS_PUBLISHED_AGES;
+ if(!D2||!D2.measures){const k=$('ages-card');if(k)k.hidden=true;return;}
+ $('ages-warning').textContent=t(D2.why_there_is_no_pyramid)+' '+t(D2.the_real_pyramid);
+ const jahre=D2.measures.filter(m=>m.unit==='years');
+ const max=Math.max(...jahre.map(m=>m.value));
+ host.innerHTML=jahre.map(m=>
+  '<div class="bar-row"><div class="bar-name">'+esc(t(m.group))
+  +' · <strong>'+esc(t(m.religion))+'</strong><br><span class="tiny">'
+  +esc([m.geography,m.age_base,m.reference_period].filter(Boolean).join(' · '))
+  +'</span></div><div class="bar-track"><div class="bar-fill" style="width:'
+  +(100*m.value/max).toFixed(1)+'%"></div></div>'
+  +'<div class="bar-value">'+esc(pf.format(m.value))+'<small>'
+  +esc(m.measure==='median_age'?t('Median'):t('Mittelwert'))+'</small></div></div>').join('');
+ const quellen=Object.values(D2.sources||{});
+ $('ages-note').innerHTML=esc(t(D2.why_the_numbers_are_not_comparable))+' '
+  +quellen.map(q=>'<a href="'+esc(q.url)+'" target="_blank" rel="noreferrer">'
+    +esc(q.publisher)+'</a>').join(' · ');
+}
 function renderPublishedEstimates(){
  const host=$('published-estimates-bars');if(!host)return;
  const D2=window.ATLAS_PUBLISHED_ESTIMATES;
@@ -1557,7 +1595,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -1592,7 +1630,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderPublishedEstimates();}catch(e){}
+ try{renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

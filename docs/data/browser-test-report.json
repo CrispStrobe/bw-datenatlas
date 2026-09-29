@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 247,
+  "check_count": 254,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -776,6 +776,34 @@
     },
     {
       "name": "model, ceiling and counted church figures share one profile",
+      "passed": true
+    },
+    {
+      "name": "the religious education series runs from 2019 to 2025/26",
+      "passed": true
+    },
+    {
+      "name": "the series names the two years the KMK confirms",
+      "passed": true
+    },
+    {
+      "name": "the series says what the KMK headline leaves out",
+      "passed": true
+    },
+    {
+      "name": "the series does not smooth over the year that disagrees",
+      "passed": true
+    },
+    {
+      "name": "the age card denies that a pyramid exists",
+      "passed": true
+    },
+    {
+      "name": "the age card keeps mean and median apart",
+      "passed": true
+    },
+    {
+      "name": "every age figure carries its area and reference year",
       "passed": true
     },
     {

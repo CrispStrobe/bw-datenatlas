@@ -1,0 +1,69 @@
+{
+ "type": "iru_bw_timeseries",
+ "schema_version": "1.0",
+ "what_this_is": "Teilnehmerinnen und Teilnehmer am islamischen Religionsunterricht in Baden-Württemberg, alle Schularten einschließlich Sekundarstufe II.",
+ "source": "Stiftung Sunnitischer Schulrat nach der amtlichen Schulstatistik des Statistischen Landesamts Baden-Württemberg",
+ "source_url": "https://sunnitischer-schulrat.de/",
+ "cross_check": "Für 2021/22 und 2023/24 unabhängig bestätigt: die Summe aus Primar- und Sekundarbereich I und dem nachrichtlich ausgewiesenen Sekundarbereich II der KMK-Auswertung Religionsunterricht ergibt genau dieselbe Zahl.",
+ "what_the_kmk_headline_omits": "Die verbreitete KMK-Zahl — für 2023/24 9.750 — enthält den Sekundarbereich II nicht. Der Unterschied zu 10.060 ist genau dieser Bereich.",
+ "caveat": "Der Punkt 2019 stimmt zwischen den beiden Quellen nicht überein: 5.500 bei der Stiftung ohne Schuljahresbezeichnung, 5.905 bei der KMK für 2019/20.",
+ "schools_with_offer": 157,
+ "religion_groups": 720,
+ "growth_since_2019_percent": 115,
+ "count": 7,
+ "points": [
+  {
+   "school_year": "2019",
+   "pupils": 5500,
+   "kmk_primar_sek1": null,
+   "kmk_sek2": null,
+   "note": "Angabe der Stiftung ohne Schuljahresbezeichnung; die KMK weist für 2019/20 zusammen 5.905 aus"
+  },
+  {
+   "school_year": "2020/21",
+   "pupils": 5561,
+   "kmk_primar_sek1": null,
+   "kmk_sek2": null,
+   "note": null
+  },
+  {
+   "school_year": "2021/22",
+   "pupils": 6494,
+   "kmk_primar_sek1": 6459,
+   "kmk_sek2": 35,
+   "note": "KMK-Summe 6.494 stimmt genau",
+   "kmk_total": 6494,
+   "matches_kmk": true
+  },
+  {
+   "school_year": "2022/23",
+   "pupils": 8043,
+   "kmk_primar_sek1": null,
+   "kmk_sek2": null,
+   "note": null
+  },
+  {
+   "school_year": "2023/24",
+   "pupils": 10060,
+   "kmk_primar_sek1": 9750,
+   "kmk_sek2": 310,
+   "note": "KMK-Summe 10.060 stimmt genau",
+   "kmk_total": 10060,
+   "matches_kmk": true
+  },
+  {
+   "school_year": "2024/25",
+   "pupils": 11272,
+   "kmk_primar_sek1": null,
+   "kmk_sek2": null,
+   "note": null
+  },
+  {
+   "school_year": "2025/26",
+   "pupils": 11827,
+   "kmk_primar_sek1": null,
+   "kmk_sek2": null,
+   "note": "157 Schulen mit Angebot"
+  }
+ ]
+}

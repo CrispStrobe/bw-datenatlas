@@ -249,6 +249,14 @@ jobs:
       - name: Kirchenmitgliedschaft je Gemeinde ableiten
         run: python scripts/prepare_municipal_religion.py
 
+      # Beide rein rechnerisch. Die Zeitreihe prüft sich gegen die KMK-Auswertung und
+      # bricht ab, wenn die beiden Quellen nicht mehr übereinstimmen.
+      - name: Zeitreihe des islamischen Religionsunterrichts prüfen und bauen
+        run: python scripts/prepare_iru_timeseries.py
+
+      - name: Veröffentlichte Altersangaben zusammenstellen
+        run: python scripts/prepare_published_ages.py
+
       # Die Bundesländer-Ebene: Zahlen aus den eigenen Beobachtungen, Geometrie von
       # GISCO. Der Abruf kann fehlschlagen, die letzte eingecheckte Fassung bleibt dann.
       - name: Deutschlandkarte der Bundesländer bauen
