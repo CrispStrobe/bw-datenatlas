@@ -1580,6 +1580,41 @@ $('pyramid-note').textContent='Unter 25 Jahre: '
 // verschiedene Abgrenzungen. Deshalb Balken nebeneinander und an jedem, woher er
 // kommt.
 // Zwei Darstellungen, die beide von einer Prüfung leben statt von einer Behauptung.
+// Die erste echte Alterspyramide des Atlas neben der nach Einwanderungsgeschichte —
+// und die einzige, die die Generation zeigt. Männer nach links, Frauen nach rechts,
+// die in Deutschland Geborenen dunkel abgesetzt.
+function renderForeignAge(){
+ const host=$('foreign-age');if(!host)return;
+ const D2=window.ATLAS_FOREIGN_AGE;
+ if(!D2||!D2.bands){const k=$('foreign-age-card');if(k)k.hidden=true;return;}
+ $('foreign-age-warning').textContent=t(D2.why_the_generation_matters)+' '+t(D2.who_is_missing);
+ const max=Math.max(...D2.bands.map(b=>Math.max(b.m_gen1+b.m_gen2,b.w_gen1+b.w_gen2)));
+ const farbe={gen1:'#5b9dad',gen2:'#17505f'};
+ const seite=(b,s)=>['gen2','gen1'].map(g=>{
+  const v=b[s+'_'+g];if(!v)return '';
+  return '<i class="py-seg" style="width:'+(100*v/max).toFixed(2)+'%;background:'+farbe[g]
+   +'" title="'+esc(b.group+' · '+t(g==='gen2'?'in Deutschland geboren':'im Ausland geboren')
+     +': '+integer(v))+'"></i>';}).join('');
+ host.innerHTML='<div class="py-panels"><div class="py-panel">'
+  +D2.bands.slice().reverse().map(b=>
+   '<div class="py-row"><span class="py-bar" style="justify-content:flex-end">'
+   +seite(b,'m')+'</span>'
+   +'<span class="py-age">'+esc(b.group)+'</span>'
+   +'<span class="py-bar">'+seite(b,'w')+'</span>'
+   +'<span class="py-total">'+esc(pct(b.second_generation_pct))+'</span></div>').join('')
+  +'</div></div>';
+ $('foreign-age-legend').innerHTML=
+  '<span class="legend-key"><i class="legend-swatch" style="background:'+farbe.gen2
+  +'"></i>'+esc(t('in Deutschland geboren'))+'</span>'
+  +'<span class="legend-key"><i class="legend-swatch" style="background:'+farbe.gen1
+  +'"></i>'+esc(t('im Ausland geboren'))+'</span>'
+  +'<span class="legend-key">'+esc(t('links Männer, rechts Frauen · rechte Spalte: Anteil der hier Geborenen'))+'</span>';
+ const g=D2.totals;
+ $('foreign-age-note').textContent=tf(
+  '{0} ausländische Personen, davon {1} in Deutschland geboren ({2}) · {3} · {4}',
+  integer(g.total),integer(g.second_generation),
+  pct(100*g.second_generation/g.total),D2.reference_date,D2.source);
+}
 function renderIruTimeseries(){
  const host=$('iru-bars');if(!host)return;
  const D2=window.ATLAS_IRU_BW;
@@ -1670,7 +1705,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -1705,7 +1740,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();}catch(e){}
+ try{renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

@@ -285,8 +285,12 @@ with sync_playwright() as pw:
         const s=JSON.stringify((window.ATLAS_INSTITUTIONS||{}).institutions||[]);
         return !/ansprechpartner|@gmx|@web\\.de|@hotmail|@gmail/i.test(s);}'''))
     # State age pyramid, a separate classification from the district figures.
-    check('age structure drawn as three panels',page.locator('.py-panel').count()==3)
-    check('every panel draws every age group',page.locator('.py-row').count()==54)
+    # Auf die eigene Pyramide eingegrenzt: seit der Generationenpyramide gibt es eine
+    # zweite mit denselben Klassennamen, und eine ungebundene Zählung träfe beide.
+    check('age structure drawn as three panels',
+          page.locator('#pyramid .py-panel').count()==3)
+    check('every panel draws every age group',
+          page.locator('#pyramid .py-row').count()==54)
     check('the three panels are named',
           {t.strip() for t in page.locator('.py-title').all_inner_texts()}=={'GESAMT','MÄNNER','FRAUEN'})
     # Small multiples are only comparable on one scale, so the widest bar in the men's
@@ -599,6 +603,20 @@ with sync_playwright() as pw:
     check('model, ceiling and counted church figures share one profile',
           'Modellrechnung' in modell and 'Obergrenze aus dem Zensus 2022' in modell
           and 'Kirchenmitgliedschaft' in modell)
+
+    # Die erste echte Alterspyramide neben der nach Einwanderungsgeschichte. Ihr
+    # Wert liegt in der Generationenspalte — und in dem, was sie über sich selbst sagt.
+    pyr=page.locator('#foreign-age-card').inner_text()
+    check('the foreign age pyramid has all twenty bands',
+          page.locator('#foreign-age .py-row').count()==20)
+    check('the pyramid shows the second-generation share per band',
+          '76,5 %' in pyr and '7,0 %' in pyr)
+    check('the pyramid names who is missing from the register',
+          'Eingebürgerte' in pyr and '§ 4 Absatz 3' in pyr)
+    check('the pyramid denies being about religion',
+          'keine Pyramide der muslimischen' in pyr)
+    check('the pyramid states its register total',
+          '2.192.370' in pyr)
 
     # Die Zeitreihe lebt von ihrer Probe: zwei Jahre sind unabhängig von der KMK
     # bestätigt, und der Unterschied zur verbreiteten KMK-Zahl ist die Sekundarstufe II.

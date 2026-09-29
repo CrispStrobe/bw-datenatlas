@@ -257,6 +257,10 @@ jobs:
       - name: Veröffentlichte Altersangaben zusammenstellen
         run: python scripts/prepare_published_ages.py
 
+      # Die Quelldatei liegt gepackt im Repository, der Schritt braucht kein Netz.
+      - name: Alterspyramide der ausländischen Bevölkerung bauen
+        run: python scripts/prepare_foreign_age_pyramid.py
+
       # Die Bundesländer-Ebene: Zahlen aus den eigenen Beobachtungen, Geometrie von
       # GISCO. Der Abruf kann fehlschlagen, die letzte eingecheckte Fassung bleibt dann.
       - name: Deutschlandkarte der Bundesländer bauen

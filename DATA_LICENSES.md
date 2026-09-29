@@ -183,6 +183,15 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 - **Was die verbreitete KMK-Zahl auslässt:** den Sekundarbereich II. Wer 9.750 und 11.827 nebeneinanderlegt, vergleicht zwei Abgrenzungen und zwei Schuljahre.
 - **Eine Abweichung bleibt stehen:** für 2019 nennt die Stiftung 5.500 ohne Schuljahresbezeichnung, die KMK für 2019/20 zusammen 5.905.
 
+## Alterspyramide der ausländischen Bevölkerung (AZR)
+
+- **Quelle:** Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle **12521-0023** „Ausländer: Bundesländer, Stichtag, Geschlecht, Altersjahre, Migrantengeneration, Ländergruppierungen/Staatsangehörigkeit", Stichtag 31.12.2025, `dl-de/by-2-0`. Die Quelldatei liegt gepackt im Repository, der Aufbau ist ohne Netz wiederholbar.
+- **Register, keine Stichprobe und kein Modell.** 2.192.370 ausländische Personen in Baden-Württemberg, davon 289.355 in Deutschland geboren (13,2 %).
+- **Der Gewinn ist die Generationenvariable.** Sie beantwortet den üblichen Einwand gegen jede Passzahl: unter den 0- bis 4-Jährigen sind 76,5 Prozent der ausländischen Bevölkerung hier geboren, bei den 15- bis 19-Jährigen 7,0 Prozent.
+- **Wer fehlt:** Eingebürgerte, und Kinder ausländischer Eltern, die nach § 4 Abs. 3 StAG schon bei der Geburt Deutsche werden. Die zweite Generation im Register ist deshalb nur ihr Teil ohne deutschen Pass. Warum ihr Anteil zwischen den Altersgruppen so stark schwankt, sagt die Quelle nicht, und der Atlas erklärt es nicht.
+- **Keine Religionsangabe.** Das Ausländerzentralregister führt keine.
+- **Zwei Zahlen für dieselbe Größe:** das Register nennt für Ende 2025 2,19 Mio., die Bevölkerungsfortschreibung für Ende November 2024 2,05 Mio. Verschiedene Quellen, verschiedene Stichtage — der Atlas führt beide und rechnet sie nicht ineinander um.
+
 ## Veröffentlichte Altersangaben zur muslimischen Bevölkerung
 
 - **Es gibt keine Alterspyramide.** MLD 2020 (Pfündel/Stichs/Tanis, BAMF-Forschungsbericht 38) befragt Personen **ab 16 Jahren** und weist deshalb Durchschnittsalter aus, keine Altersaufbauten — bei einer im Mittel jüngeren Bevölkerung fehlt damit der breiteste Teil der Pyramide. [Pew](https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/) (2017) nennt je Land nur ein Medianalter und einen Altersaufbau nur für Europa insgesamt, in zwei Gruppen.

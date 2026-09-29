@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 259,
+  "check_count": 264,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -796,6 +796,26 @@
     },
     {
       "name": "model, ceiling and counted church figures share one profile",
+      "passed": true
+    },
+    {
+      "name": "the foreign age pyramid has all twenty bands",
+      "passed": true
+    },
+    {
+      "name": "the pyramid shows the second-generation share per band",
+      "passed": true
+    },
+    {
+      "name": "the pyramid names who is missing from the register",
+      "passed": true
+    },
+    {
+      "name": "the pyramid denies being about religion",
+      "passed": true
+    },
+    {
+      "name": "the pyramid states its register total",
       "passed": true
     },
     {
