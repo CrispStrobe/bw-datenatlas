@@ -1684,12 +1684,15 @@ function renderSurveyItems(){
   const max=Math.max(...b.items.map(i=>i.value));
   const erste=b.items[0];
   return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
-   +'<p class="tiny survey-meta">'+esc([erste.study,erste.population,
+   // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
+   // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
+   +'<p class="tiny survey-meta">'+esc([erste.study,t(erste.population),
        erste.base_n?tf('{0} Befragte',integer(erste.base_n)):t('Fallzahl nicht angegeben'),
        erste.field_period,erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
        .filter(Boolean).join(' · '))+'</p>'
    +'<div class="horizontal-bars">'+b.items.map(i=>
-     '<div class="bar-row"><div class="bar-name">'+esc(t(i.label))+'</div>'
+     '<div class="bar-row"><div class="bar-name">'+esc(t(i.label))
+     +(i.detail?'<br><span class="tiny">'+esc(t(i.detail))+'</span>':'')+'</div>'
      +'<div class="bar-track"><div class="bar-fill" style="width:'
      +(100*i.value/max).toFixed(1)+'%;background:#6b7f8a"></div></div>'
      +'<div class="bar-value">'+esc(pct(i.value))+'</div></div>').join('')

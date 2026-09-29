@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 287,
+  "check_count": 291,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -835,11 +835,7 @@
       "passed": true
     },
     {
-      "name": "every survey block names population, base and field period",
-      "passed": true
-    },
-    {
-      "name": "the survey section cites the question numbers",
+      "name": "the survey section says what was asked of whom",
       "passed": true
     },
     {
@@ -851,6 +847,18 @@
       "passed": true
     },
     {
+      "name": "the Baden-Württemberg block comes first",
+      "passed": true
+    },
+    {
+      "name": "the state survey names its method in full",
+      "passed": true
+    },
+    {
+      "name": "the four-point scale is shown beside the summed bar",
+      "passed": true
+    },
+    {
       "name": "only the selected block is drawn",
       "passed": true
     },
@@ -859,11 +867,19 @@
       "passed": true
     },
     {
+      "name": "the headscarf block names its restricted population",
+      "passed": true
+    },
+    {
       "name": "the perception gap is shown from both sides",
       "passed": true
     },
     {
       "name": "the source note follows the selected block",
+      "passed": true
+    },
+    {
+      "name": "the question numbers appear with the block that has them",
       "passed": true
     },
     {

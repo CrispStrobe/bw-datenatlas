@@ -43,6 +43,11 @@ def main() -> None:
                 'block': r['block'], 'title': r['block_title'], 'items': []})
             b['items'].append({
                 'label': r['label'],
+                # Die Skala im Einzelnen. Ein Balken, der die beiden zustimmenden
+                # Kategorien addiert, ist die Rechnung, die auch die Quelle im Text
+                # macht — aber die vier Stufen gehören daneben, sonst verschwindet
+                # der Unterschied zwischen "voll und ganz" und "eher zu".
+                'detail': r.get('detail') or None,
                 'value': float(r['value']),
                 'unit': r['unit'],
                 'study': r['study'],
@@ -70,7 +75,11 @@ def main() -> None:
         'not_in_any_model': ('Diese Zahlen gehen in keine Modellrechnung dieses Atlas '
                              'ein und werden mit keiner Bevölkerungszahl verrechnet.'),
         'count': sum(len(b['items']) for b in bloecke.values()),
-        'blocks': list(bloecke.values()),
+        # Der Block mit Landesbezug zuerst: dies ist ein Atlas über
+        # Baden-Württemberg, und die bundesweiten Werte stehen daneben, nicht davor.
+        'blocks': sorted(bloecke.values(),
+                         key=lambda b: (0 if b['block'].startswith('bw_') else 1,
+                                        b['title'])),
     }
     args.out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + '\n',
                         encoding='utf-8')

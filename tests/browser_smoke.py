@@ -636,27 +636,38 @@ with sync_playwright() as pw:
     check('the survey section is separate from the counted figures',
           page.locator('#befragungen').count()==1
           and 'Was gefragt wurde' in umf)
-    check('every survey block names population, base and field period',
-          '603 Befragte' in umf and 'Juli 2019 bis März 2020' in umf
-          and 'die das Kopftuch manchmal' in umf)
-    check('the survey section cites the question numbers',
-          'v401_1' in umf)
+    check('the survey section says what was asked of whom',
+          'Personen ab 18 Jahren' in umf)
     check('the survey section says its figures feed no model',
           'keine Modellrechnung' in umf)
     # Ein Auswahlfeld wie über der Karte: ein Block nach dem anderen, damit die
     # Blöcke nicht wie eine Reihe gelesen werden.
     check('the survey section offers a dropdown like the map',
           page.locator('#survey-select option').count()>=2)
+    # Der Landesblock steht vorn und ist der einzige mit BW-Bezug.
+    check('the Baden-Württemberg block comes first',
+          'Baden-Württemberg' in page.locator('#survey-select option').first.inner_text())
+    check('the state survey names its method in full',
+          '1.587' in umf and 'Forschungsgruppe Wahlen' in umf and '24.07.2019' in umf)
+    check('the four-point scale is shown beside the summed bar',
+          'voll und ganz 14' in umf and 'überhaupt nicht 19' in umf)
     check('only the selected block is drawn',
-          page.locator('#survey-blocks .bar-row').count()==9)
+          page.locator('#survey-blocks .bar-row').count()==3)
     page.select_option('#survey-select','1'); page.wait_for_timeout(400)
     zweiter=page.locator('#befragungen').inner_text()
     check('switching the dropdown switches the block',
-          page.locator('#survey-blocks .bar-row').count()==4)
+          page.locator('#survey-blocks .bar-row').count()==9)
+    check('the headscarf block names its restricted population',
+          '603 Befragte' in zweiter and 'die das Kopftuch manchmal' in zweiter)
+    page.select_option('#survey-select','2'); page.wait_for_timeout(400)
+    dritter=page.locator('#befragungen').inner_text()
     check('the perception gap is shown from both sides',
-          '30' in zweiter and '76' in zweiter and 'Allgemeinbevölkerung' in zweiter)
+          '30' in dritter and '76' in dritter and 'Allgemeinbevölkerung' in dritter)
     check('the source note follows the selected block',
           'Pew' in page.locator('#survey-note').inner_text())
+    page.select_option('#survey-select','1'); page.wait_for_timeout(400)
+    check('the question numbers appear with the block that has them',
+          'v401_1' in page.locator('#befragungen').inner_text())
     page.select_option('#survey-select','0'); page.wait_for_timeout(400)
 
     # Die erste echte Alterspyramide neben der nach Einwanderungsgeschichte. Ihr
