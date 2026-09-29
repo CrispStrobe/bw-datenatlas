@@ -8,6 +8,11 @@ const REG=window.ATLAS_REGIONS||null;
 const EUROSTAT=window.ATLAS_EUROSTAT||null;
 const GERMANY=window.ATLAS_GERMANY||null;
 const MUNIREL=window.ATLAS_MUNI_RELIGION||null;
+// Die einzige Zählung orthodoxer Christinnen und Christen, die es für dieses Land
+// gibt: der Zensus 2011 wies die öffentlich-rechtlichen Religionsgesellschaften noch
+// einzeln aus, der Zensus 2022 kennt nur noch zwei Kirchen und einen Rest.
+const Z2011=window.ATLAS_ZENSUS2011_RELIGION||null;
+const Z2011_KREIS=Z2011?Object.fromEntries(Z2011.districts.map(d=>[d.ags,d])):{};
 let GRID=null,gridLaeuft=false;
 const AGE=window.ATLAS_AGE||null;
 const GEN=window.ATLAS_GENERATIONS||null;
@@ -145,6 +150,11 @@ const layers={
  muni_catholic:{title:'Römisch-katholische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'catholic_pct',thresholds:[12,20,30,42,55],unit:'percent',note:'Anteil der Mitglieder der römisch-katholischen Kirche an der Bevölkerung, aus dem Zensus 2022. Dies ist die ausgeprägteste religiöse Struktur, die Baden-Württemberg hat: das katholische Oberschwaben und der Süden gegen das evangelische Altwürttemberg. Landesweit 29,9 Prozent. Gezählt, nicht geschätzt — anders als die muslimische Bevölkerung, für die es auf Gemeindeebene keine Erhebung gibt. Einzelwerte sind nach dem Cell-Key-Verfahren geheimgehalten und damit bewusst leicht überlagert.'},
  muni_protestant:{title:'Evangelische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'evangelical_pct',thresholds:[12,20,28,36,46],unit:'percent',note:'Anteil der Mitglieder der evangelischen Kirche an der Bevölkerung, aus dem Zensus 2022. Das Gegenbild zur Ebene daneben, und zwar fast spiegelbildlich: die beiden Karten zusammen zeigen die Konfessionsgrenze von 1555, die in der Siedlungsstruktur bis heute sichtbar ist. Landesweit 25,9 Prozent; beide Kirchen zusammen 55,8 Prozent.'},
  muni_no_church:{title:'Sonstige, keine, ohne Angabe · Anteil je Gemeinde',badge:'Vollerhebung · Obergrenze des Modells',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'other_none_unstated_pct',thresholds:[25,33,40,47,55],unit:'percent',note:'Die Restkategorie des Zensus: alle, die weder der römisch-katholischen noch der evangelischen Kirche angehören. Das sind Konfessionslose, alle anderen Religionen und alle fehlenden Angaben in einer einzigen Zahl. Diese Ebene ist deshalb WEDER ein Anteil Konfessionsloser NOCH ein Muslimanteil, und sie darf nicht als einer gelesen werden. Ihr Wert für diesen Atlas ist ein anderer: weil muslimische Einwohnerinnen und Einwohner zwangsläufig hierunter fallen, kann der modellierte Muslimanteil einer Gemeinde nicht über diesem Wert liegen. Die Ebene macht damit sichtbar, wogegen die Modellrechnung bisher nur rechnerisch geprüft wurde. Landesweit 44,2 Prozent.'},
+ // Was der Zensus 2022 nicht mehr trennt. Die jüdischen Gemeinden fehlen als Ebene,
+ // und zwar aus einem Datengrund: von 44 Kreisen sind nur drei nicht geheimgehalten.
+ // Eine Karte aus drei Werten wäre keine Karte. Die Zahlen stehen im Kreisprofil.
+ z2011_orthodox:{title:'Orthodoxe Kirchen · Anteil je Kreis (Zensus 2011)',badge:'Vollerhebung · 2011',date:'Zensus 2011 · Stichtag 09.05.2011 · 44 Kreise',sourceInfo:{title:'Zensus 2011 – Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2014',url:'https://www.statistischebibliothek.de/mir/receive/BWSerie_mods_00000583',limitation:'Gezählt ist die eingetragene Mitgliedschaft in einer Körperschaft des öffentlichen Rechts, nicht das Bekenntnis — und der Stichtag liegt fünfzehn Jahre zurück.'},z2011:'orthodox_pct',thresholds:[1.1,1.4,1.8,2.4,2.9],unit:'percent',note:'Anteil der Mitglieder orthodoxer Kirchen an der Bevölkerung des Kreises, Zensus 2011. Dies ist die einzige Zählung, die es für sie gibt: der Zensus 2022 hat die Religionsgesellschaften des öffentlichen Rechts nicht mehr einzeln ausgewiesen, sondern alles außer den beiden großen Kirchen in eine Restkategorie gelegt. Baden-Württemberg hatte 2011 mit 2,1 Prozent den höchsten orthodoxen Bevölkerungsanteil aller Länder, der Bund lag bei 1,3 Prozent; die Spitze ist Stuttgart mit 5,3 Prozent. Drei Einschränkungen gehören an jede dieser Zahlen. Gezählt ist die eingetragene Mitgliedschaft in einer Körperschaft des öffentlichen Rechts, nicht wer sich orthodox versteht — welche Kirche diesen Status hat, ist von Kirche zu Kirche und von Land zu Land verschieden, und die syrisch-orthodoxe Kirche etwa erscheint nur, wo sie ihn hat. Und der Stichtag ist der 9. Mai 2011: die Zuwanderung aus Rumänien, Bulgarien, Syrien, dem Irak und der Ukraine liegt danach. Die Karte ist damit eine Untergrenze, keine Gegenwart. Und eine Kategorie fehlt hier ganz: keine islamische Gemeinschaft hat in Baden-Württemberg Körperschaftsstatus, Musliminnen und Muslime stehen deshalb in der Zeile „Keiner ö.-r. Religionsgesellschaft zugehörig“ — gemeinsam mit allen Konfessionslosen.'},
+ z2011_protestant_free:{title:'Evangelische Freikirchen · Anteil je Kreis (Zensus 2011)',badge:'Vollerhebung · 2011',date:'Zensus 2011 · Stichtag 09.05.2011 · 44 Kreise',sourceInfo:{title:'Zensus 2011 – Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2014',url:'https://www.statistischebibliothek.de/mir/receive/BWSerie_mods_00000583',limitation:'Gezählt ist die eingetragene Mitgliedschaft in einer Körperschaft des öffentlichen Rechts, nicht das Bekenntnis — und der Stichtag liegt fünfzehn Jahre zurück.'},z2011:'protestant_free_pct',thresholds:[0.7,0.9,1.1,1.3,1.7],unit:'percent',note:'Anteil der Mitglieder evangelischer Freikirchen an der Bevölkerung des Kreises, Zensus 2011 — die zweite Gruppe, die der Zensus 2022 in der Restkategorie verschwinden lässt. Landesweit 1,1 Prozent, also gut 119.000 Menschen. Die Ebene steht hier, weil Freikirchen in den Befragungen dieses Atlas mehrfach vorkommen: beim KONID-Survey stimmen ihnen zugerechnete Befragte der Aussage, die eigene Religion habe im Konfliktfall Vorrang vor der Verfassung, häufiger zu als alle anderen Gruppen. Wie groß die Gruppe ist, von der dort die Rede ist, sagt diese Karte.'},
  // Dritte Ebene auf derselben Deutschlandkarte, und die einzige, die keine
  // Schätzung ist: die Länder zählen ihre Teilnehmer. Sie melden nur nicht
  // dasselbe — deshalb steht an jeder Fläche, aus welchem Schuljahr ihr Wert
@@ -525,6 +535,26 @@ function renderDetail(){
       return `<div class="cohort-row"><span>${esc(labels[k])}</span><span class="cohort-track"><i style="width:${(100*v/sum).toFixed(1)}%"></i></span><span class="cohort-value">${pf.format(100*v/sum)} %</span></div>`;
     }).join('')+'</div>';
   }
+  // Die Religionsgesellschaften, die der Zensus 2022 zusammenwirft. Sie stehen hier
+  // und nicht als eigene Karte, weil die jüdischen Gemeinden in 41 von 44 Kreisen
+  // geheimgehalten sind — eine Karte aus drei Werten wäre keine.
+  const z11=Z2011_KREIS[d.id];
+  if(z11){
+   const reihen=Object.entries(Z2011.categories).map(([f,label])=>{
+    const v=z11[f],p=z11[f+'_pct'];
+    if(v===null||v===undefined)return '<div class="cohort-row"><span>'+esc(t(label))
+      +'</span><span class="cohort-missing">'+esc(t('geheim gehalten'))+'</span></div>';
+    return '<div class="cohort-row"><span>'+esc(t(label))+'</span>'
+     +'<span class="cohort-track"><i style="width:'+Math.min(100,(p||0)*2).toFixed(1)
+     +'%"></i></span><span class="cohort-value">'+esc(pct(p))+'</span></div>';}).join('');
+   html+=metric('Religionsgesellschaften 2011 · orthodox',
+    (z11.orthodox===null?t('geheim gehalten'):integer(z11.orthodox)+' · '+pct(z11.orthodox_pct)),
+    '<span class="kind-tag kind-census">'+esc(t('Vollerhebung'))+'</span> '
+    +esc(t('Zensus 2011, Stichtag 09.05.2011. Die letzte Zählung, die die '
+      +'Religionsgesellschaften einzeln ausweist — der Zensus 2022 tut es nicht mehr. '
+      +'Gezählt ist eingetragene Mitgliedschaft, nicht Bekenntnis.')))
+    +'<div class="cohort-bars">'+reihen+'</div>';
+  }
   const est=isEstimate()?estimateDistrict(d.id):null;
   if(est){const v=est.variants[state.variant];
     html+=metric('Muslimische Bevölkerung · Modell',pf.format(v.pct_low)+'–'+pf.format(v.pct_high)+' %',integer(v.low)+'–'+integer(v.high)+' Personen · '+(state.variant==='migration_background'?'mit Korrektur für Eingebürgerte':'nur Staatsangehörigkeit'));
@@ -569,6 +599,8 @@ function valueForFeature(f){const p=f.properties;
  const de=layers[state.layer].deMeasure;if(de)return p[de]??null;
  const g=layers[state.layer].grid;
  if(g)return p[g]??null;
+ const z=layers[state.layer].z2011;
+ if(z){const r=Z2011_KREIS[p.id];return r?r[z]??null:null;}
  const rel=layers[state.layer].muniReligion;
  if(rel){const r=MUNIREL?MUNIREL.municipalities[p.statistical_geo_id]:null;return r?r[rel]??null:null;}
  if(state.layer==='region_population')return p.population??null;

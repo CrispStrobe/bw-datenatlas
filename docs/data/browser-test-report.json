@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 305,
+  "check_count": 313,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -112,6 +112,38 @@
     },
     {
       "name": "the estimated tile is marked apart from the counted ones",
+      "passed": true
+    },
+    {
+      "name": "the orthodox layer says it counts membership, not belief",
+      "passed": true
+    },
+    {
+      "name": "the orthodox layer says its reference day is fifteen years back",
+      "passed": true
+    },
+    {
+      "name": "the orthodox layer says Muslims are not a category in it",
+      "passed": true
+    },
+    {
+      "name": "the orthodox layer colours all 44 districts",
+      "passed": true
+    },
+    {
+      "name": "the orthodox layer is credited to the state office, not to Eurostat",
+      "passed": true
+    },
+    {
+      "name": "the district profile lists Orthodoxe Kirchen",
+      "passed": true
+    },
+    {
+      "name": "the district profile lists Evangelische Freikirchen",
+      "passed": true
+    },
+    {
+      "name": "the district profile lists Jüdische Gemeinden",
       "passed": true
     },
     {

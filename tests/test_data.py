@@ -209,4 +209,52 @@ class DataTests(unittest.TestCase):
         self.assertGreater(wert['konid_verfassung']['Evangelische Freikirchen'],
                            wert['konid_verfassung']['Muslimisch'])
 
+    def test_zensus2011_religion_is_complete_and_adds_up(self):
+        """Die einzige Zählung orthodoxer Christen, die es für dieses Land gibt.
+
+        Sie kommt aus 44 einzeln ausgelesenen PDF-Bänden, und dabei kann viel
+        danebengehen. Drei Prüfungen: alle Kreise da, die Kategorien summieren sich
+        auf die Einwohnerzahl, und der Landeswert stimmt mit der Summe der Kreise
+        überein.
+        """
+        d = json.loads((ROOT/'docs/data/zensus2011-religion.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(d['districts']), 44)
+        self.assertEqual(len({x['ags'] for x in d['districts']}), 44)
+        felder = list(d['categories'])
+        # Was die Geheimhaltung weggenommen hat, steht hier namentlich. Der Datensatz
+        # ist abgeschlossen — er kann sich nicht mehr ändern —, also darf der Test
+        # exakt sein statt nachsichtig: fällt später ein Wert weg oder kommt einer
+        # hinzu, ist die Auslesung kaputt und nicht die Statistik.
+        gesperrt = {f: sorted(x['ags'] for x in d['districts'] if x[f] is None)
+                    for f in felder}
+        self.assertEqual(gesperrt['orthodox'], [])
+        self.assertEqual(gesperrt['protestant_free'], ['08211'])   # Baden-Baden
+        self.assertGreater(len(gesperrt['jewish']), 30)
+        for f in ('roman_catholic', 'protestant', 'other_public_law', 'none'):
+            self.assertEqual(gesperrt[f], [], f)
+        # Wo nichts gesperrt ist, ergeben die Kreise das Land. Geheimhaltung rundet
+        # jeden Einzelwert, ein Promille Abstand ist normal.
+        for f in felder:
+            summe = sum(x[f] for x in d['districts'] if x[f] is not None)
+            if gesperrt[f]:
+                self.assertLess(summe, d['state_total'][f], f)
+            else:
+                self.assertAlmostEqual(summe / d['state_total'][f], 1, places=2, msg=f)
+        # Baden-Württemberg lag 2011 über dem Bund — das ist der Grund, warum diese
+        # Ebene in diesem Atlas steht, und es soll auffallen, wenn es kippt.
+        self.assertGreater(d['state_total']['orthodox'] / sum(
+            d['state_total'][f] for f in felder),
+            d['germany_total']['orthodox'] / sum(d['germany_total'][f] for f in felder))
+        self.assertIn('Körperschaft des öffentlichen Rechts', d['membership_not_belief'])
+        self.assertIn('Körperschaft', d['muslims_are_not_a_category_here'])
+
+    def test_zensus2011_csv_matches_the_published_json(self):
+        with (ROOT/'inputs/zensus2011-religion-kreise.csv').open(encoding='utf-8') as f:
+            rows = list(csv.DictReader(f))
+        d = json.loads((ROOT/'docs/data/zensus2011-religion.json').read_text(encoding='utf-8'))
+        self.assertEqual([r['ags'] for r in rows], [x['ags'] for x in d['districts']])
+        for r, x in zip(rows, d['districts']):
+            self.assertEqual(int(r['orthodox']), x['orthodox'])
+            self.assertEqual(float(r['orthodox_pct']), x['orthodox_pct'])
+
 if __name__=='__main__': unittest.main(verbosity=2)

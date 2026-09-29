@@ -128,6 +128,36 @@ with sync_playwright() as pw:
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
     # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
+    # Die orthodoxen Kirchen sind die größte eingewanderte christliche Gruppe des
+    # Landes und im Zensus 2022 unsichtbar. Dass die Ebene da ist, ist das eine; dass
+    # an ihr steht, was sie nicht ist, das andere.
+    page.select_option('#layer','z2011_orthodox')
+    page.wait_for_function("document.getElementById('map-note').innerText"
+                           ".includes('2011')")
+    hinweis=page.locator('#map-note').inner_text()
+    check('the orthodox layer says it counts membership, not belief',
+          ('Mitgliedschaft' in hinweis and 'nicht wer sich orthodox versteht' in hinweis)
+          or ('membership' in hinweis and 'not who considers themselves' in hinweis))
+    check('the orthodox layer says its reference day is fifteen years back',
+          '2011' in hinweis and ('Untergrenze' in hinweis or 'lower bound' in hinweis))
+    check('the orthodox layer says Muslims are not a category in it',
+          'Körperschaftsstatus' in hinweis or 'corporation status' in hinweis)
+    check('the orthodox layer colours all 44 districts',
+          page.locator('.map-feature').count()==44
+          and page.eval_on_selector_all('.map-feature',
+              'e=>new Set(e.map(x=>x.getAttribute("fill"))).size')>=5)
+    check('the orthodox layer is credited to the state office, not to Eurostat',
+          'Landesamt' in page.locator('.map-card').inner_text()
+          or 'Zensus 2011' in page.locator('.map-card').inner_text())
+    page.locator('.map-feature').first.click()
+    page.wait_for_function("/2011/.test("
+                           "document.getElementById('detail-content').innerText)")
+    profil=page.locator('#detail-content').inner_text()
+    for de,en in (('Orthodoxe Kirchen','Orthodox churches'),
+                  ('Evangelische Freikirchen','Protestant free churches'),
+                  ('Jüdische Gemeinden','Jewish communities')):
+        check(f'the district profile lists {de}',de in profil or en in profil)
+
     # Der Block über religiösen Fundamentalismus ist der heikelste der Seite. Er darf
     # nur zusammen mit dem stehen, was die Stichprobe nicht hergibt — und die Balken
     # müssen an 100 gemessen sein, sonst sieht ein Wert von 50 Prozent aus wie alle.
