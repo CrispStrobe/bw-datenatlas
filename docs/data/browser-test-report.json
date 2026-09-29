@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 221,
+  "check_count": 230,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -720,6 +720,42 @@
     },
     {
       "name": "the european layer states that it counts birthplace, not passport",
+      "passed": true
+    },
+    {
+      "name": "the german map draws the reported states",
+      "passed": true
+    },
+    {
+      "name": "the combined states are one area, not two values",
+      "passed": true
+    },
+    {
+      "name": "the german map credits the BAMF and not the BKG",
+      "passed": true
+    },
+    {
+      "name": "no Baden-Württemberg city labels on the german map",
+      "passed": true
+    },
+    {
+      "name": "clicking a state opens its profile",
+      "passed": true
+    },
+    {
+      "name": "the state profile ranks Baden-Württemberg among the states",
+      "passed": true
+    },
+    {
+      "name": "the state profile dates the estimate 2025, not the 2019 distribution",
+      "passed": true
+    },
+    {
+      "name": "a combined area says the value covers both states",
+      "passed": true
+    },
+    {
+      "name": "the absolute layer shows the published range",
       "passed": true
     },
     {

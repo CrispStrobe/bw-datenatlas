@@ -244,6 +244,12 @@ jobs:
       - name: Veröffentlichte Schätzungen nebeneinanderstellen
         run: python scripts/derive_published_estimates.py
 
+      # Die Bundesländer-Ebene: Zahlen aus den eigenen Beobachtungen, Geometrie von
+      # GISCO. Der Abruf kann fehlschlagen, die letzte eingecheckte Fassung bleibt dann.
+      - name: Deutschlandkarte der Bundesländer bauen
+        run: python scripts/prepare_germany_bundeslaender.py
+        continue-on-error: true
+
       # Eurostat und GISCO liefern die europäische Vergleichsebene. Schlägt der Abruf
       # fehl, bleibt die zuletzt eingecheckte Fassung stehen — eine veraltete Karte ist
       # besser als keine, und die Datei trägt ihr Bezugsjahr bei sich.

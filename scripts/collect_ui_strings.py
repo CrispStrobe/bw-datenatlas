@@ -64,7 +64,10 @@ def sammeln(port: int) -> list[str]:
         # Auch etwas auswählen: das Gebietsprofil wird erst beim Anklicken gezeichnet,
         # und seine Sätze laufen erst dann durch t(). Ohne diesen Schritt fehlen sie im
         # Katalog, und die Übersetzung fällt später still auf Deutsch zurück.
-        for ebene in ('region_population', 'eu_foreign_born', 'district_population'):
+        # Jede Ebene mit eigenem Profil muss dabei sein. Die Bundesländer-Ebene
+        # fehlte zuerst, und damit fehlten ihre sechs Profilsätze im Katalog.
+        for ebene in ('region_population', 'eu_foreign_born', 'de_muslim_share',
+                      'district_population'):
             try:
                 page.select_option('#layer', ebene)
                 page.wait_for_timeout(500)
@@ -72,6 +75,15 @@ def sammeln(port: int) -> list[str]:
                 page.wait_for_timeout(400)
             except Exception:
                 pass
+        try:
+            page.select_option('#layer', 'de_muslim_share')
+            page.wait_for_timeout(500)
+            # dispatch_event statt click: die Fläche kann teilweise verdeckt
+            # sein, und geprüft wird hier der Textfluss, nicht die Trefferfläche.
+            page.locator('#map-features path[data-id="DE04+DE02"]').dispatch_event('click')
+            page.wait_for_timeout(400)
+        except Exception:
+            pass
         page.wait_for_timeout(400)
         texte = page.evaluate('()=>Object.keys(I18N.sammle()).concat(I18N.gesehen())')
         b.close()

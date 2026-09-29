@@ -535,6 +535,35 @@ with sync_playwright() as pw:
           and page.eval_on_selector('#map-attribution-bw','e=>e.hidden'))
     check('the european layer states that it counts birthplace, not passport',
           'Geburtsort' in page.locator('#map-note').inner_text())
+    # Die Ebene zwischen innen und außen: Baden-Württemberg unter den Ländern.
+    # Die Zahlen lagen längst im Projekt, gezeichnet wurden sie nie.
+    page.select_option('#layer','de_muslim_share'); page.wait_for_timeout(900)
+    check('the german map draws the reported states',
+          page.locator('#map-features path.map-feature').count()==14)
+    check('the combined states are one area, not two values',
+          page.locator('#map-features path[data-id="DE04+DE02"]').count()==1)
+    check('the german map credits the BAMF and not the BKG',
+          page.eval_on_selector('#map-attribution-de','e=>!e.hidden')
+          and page.eval_on_selector('#map-attribution-bw','e=>e.hidden'))
+    check('no Baden-Württemberg city labels on the german map',
+          page.locator('#map-labels text').count()==0)
+    page.locator('#map-features path[data-id="DE08"]').dispatch_event('click')
+    page.wait_for_timeout(600)
+    land=page.locator('#detail-content').inner_text()
+    check('clicking a state opens its profile',
+          page.evaluate("Atlas.getState().selected.type")=='bundesland')
+    check('the state profile ranks Baden-Württemberg among the states',
+          'Rang 4 von 14' in land and 'Rang 2 von 14' in land)
+    check('the state profile dates the estimate 2025, not the 2019 distribution',
+          '· 2025' in land and 'Verteilung 2019' in land)
+    page.locator('#map-features path[data-id="DE04+DE02"]').dispatch_event('click')
+    page.wait_for_timeout(500)
+    check('a combined area says the value covers both states',
+          'nicht für eines von ihnen' in page.locator('#detail-content').inner_text())
+    page.select_option('#layer','de_muslim_persons'); page.wait_for_timeout(700)
+    check('the absolute layer shows the published range',
+          '1.133.000' in page.locator('#map-features path[data-id="DE08"]').get_attribute('aria-label'))
+
     # Fünf europäische Ebenen aus fünf Datensätzen. Geprüft wird, dass jede ihre
     # eigene Größe zeichnet, ihr eigenes Bezugsjahr nennt und ihren eigenen Datensatz
     # angibt — die Herkunftsangabe nannte fest lfst_r_lfsd2pwc und hätte den
