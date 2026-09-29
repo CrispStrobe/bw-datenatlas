@@ -347,4 +347,19 @@ class DataTests(unittest.TestCase):
                            werte['Im Land: sehr gut gelungen']
                            + werte['Im Land: gut gelungen'])
 
+    def test_every_survey_block_says_which_area_it_covers(self):
+        """Ein Wert aus sechs Ländern darf sich nicht wie einer über dieses Land lesen.
+
+        Bei zehn Blöcken sieht man das dem Titel nicht mehr an, also trägt jeder
+        Block sein Gebiet — im Auswahlfeld als Gruppe, im Kopf als erste Angabe.
+        """
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text(encoding='utf-8'))
+        raeume = d['scope_order']
+        for b in d['blocks']:
+            self.assertIn(b['scope'], raeume, b['block'])
+        # Und die Reihenfolge folgt den Gebieten, Landesbezug zuerst.
+        rang = [raeume.index(b['scope']) for b in d['blocks']]
+        self.assertEqual(rang, sorted(rang))
+        self.assertEqual(d['blocks'][0]['scope'], 'Baden-Württemberg')
+
 if __name__=='__main__': unittest.main(verbosity=2)

@@ -29,6 +29,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Der Atlas handelt von Baden-Württemberg; die weiter gefassten Erhebungen stehen
+# daneben, nicht davor.
+RAUM_RANG = {'Baden-Württemberg': 0, 'Deutschland': 1,
+             'Sechs europäische Länder': 2, 'Mehrere Länder': 3}
+
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
@@ -45,7 +50,11 @@ def main() -> None:
                 # Wortlaut der Fragen und das, was die Stichprobe nicht hergibt. Die
                 # Kopfzeile eines Blocks stammt aus seiner ersten Zeile; wo die Balken
                 # verschiedene Grundgesamtheiten haben, reicht das nicht.
-                'note': r.get('block_note') or None, 'items': []})
+                'note': r.get('block_note') or None,
+                # Über welches Gebiet der Block spricht. Bei zehn Blöcken sieht
+                # man das dem Titel nicht mehr an, und ein Wert aus sechs
+                # Ländern liest sich sonst wie einer über dieses Land.
+                'scope': r.get('scope') or None, 'items': []})
             b['items'].append({
                 'label': r['label'],
                 # Die Skala im Einzelnen. Ein Balken, der die beiden zustimmenden
@@ -88,9 +97,10 @@ def main() -> None:
         'count': sum(len(b['items']) for b in bloecke.values()),
         # Der Block mit Landesbezug zuerst: dies ist ein Atlas über
         # Baden-Württemberg, und die bundesweiten Werte stehen daneben, nicht davor.
+        'scope_order': ['Baden-Württemberg', 'Deutschland',
+                        'Sechs europäische Länder', 'Mehrere Länder'],
         'blocks': sorted(bloecke.values(),
-                         key=lambda b: (0 if b['block'].startswith('bw_') else 1,
-                                        b['title'])),
+                         key=lambda b: (RAUM_RANG.get(b['scope'], 9), b['title'])),
     }
     args.out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + '\n',
                         encoding='utf-8')

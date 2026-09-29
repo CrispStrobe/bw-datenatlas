@@ -6,11 +6,18 @@
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
  "count": 58,
+ "scope_order": [
+  "Baden-Württemberg",
+  "Deutschland",
+  "Sechs europäische Länder",
+  "Mehrere Länder"
+ ],
  "blocks": [
   {
    "block": "bw_integration_erwartung",
    "title": "Erwartung zum Stand der Integration in Baden-Württemberg in fünf Jahren",
    "note": "Dieselbe Erhebung, dieselbe Erläuterung des Begriffs „Zuwanderer\". Die Aufteilung nach Migrationshintergrund stammt aus der Selbstauskunft der Befragten. Die zu 100 Prozent fehlenden Anteile entfallen auf Befragte ohne Angabe.",
+   "scope": "Baden-Württemberg",
    "items": [
     {
      "label": "Ohne Migrationshintergrund: eher verbessert",
@@ -102,6 +109,7 @@
    "block": "bw_religioese_vielfalt",
    "title": "Offenheit für religiöse Vielfalt in Baden-Württemberg",
    "note": null,
+   "scope": "Baden-Württemberg",
    "items": [
     {
      "label": "Der Islam passt durchaus in die westliche Welt.",
@@ -151,6 +159,7 @@
    "block": "bw_integration_bewertung",
    "title": "Wie gut ist die Integration in Baden-Württemberg gelungen — im Land und am eigenen Wohnort",
    "note": "Gefragt wurde nach „Zuwanderern\"; der Fragebogen erläuterte den Begriff als „Ausländer, die hier leben, als auch Eingebürgerte oder Spätaussiedler, die seit 1949 nach Deutschland zugewandert sind, und auch ihre Nachkommen\". Die Frage betrifft also nicht Religion, sondern Einwanderung — sie steht hier, weil beides in der öffentlichen Debatte ständig vermischt wird und dieser Atlas es auseinanderhält. Die zu 100 Prozent fehlenden Anteile entfallen auf Befragte, die keine Angabe machen konnten oder wollten; im Land sind das 13 Prozent.",
+   "scope": "Baden-Württemberg",
    "items": [
     {
      "label": "Im Land: sehr gut gelungen",
@@ -270,6 +279,7 @@
    "block": "bw_kopftuch_2012",
    "title": "„Stört mich\": das Tragen von Kopftüchern, Baden-Württemberg 2012",
    "note": null,
+   "scope": "Baden-Württemberg",
    "items": [
     {
      "label": "Alle Befragten",
@@ -389,6 +399,7 @@
    "block": "kopftuch",
    "title": "Gründe für das Tragen eines Kopftuchs",
    "note": null,
+   "scope": "Deutschland",
    "items": [
     {
      "label": "Religiöse Pflicht",
@@ -519,65 +530,194 @@
    ]
   },
   {
-   "block": "abgrenzung",
-   "title": "Wollen Muslime sich abgrenzen? Selbstbild und Fremdbild",
-   "note": null,
+   "block": "konid_gewalt",
+   "title": "„Ich wäre bereit, meine religiösen Überzeugungen auch mit Gewalt durchzusetzen\"",
+   "note": "Vierstufige Skala; als Zustimmung zählt die Summe aus „stimme eher zu\" und „stimme voll und ganz zu\", so wie der Bericht selbst rechnet. Befragt wurde die Wohnbevölkerung ab 16 Jahren in Deutschland, unabhängig von der Staatsangehörigkeit: eine bevölkerungsrepräsentative Hauptstichprobe von 2.363 Befragten, dazu eine Sonderstichprobe von 500 türkischen Muslimen und je eine weitere für bosnische Muslime und kroatische Katholiken. In der Hauptstichprobe sind nur 1,6 Prozent muslimisch — die muslimischen Werte stützen sich also überwiegend auf die Sonderstichproben und bilden nicht alle muslimischen Richtungen in Deutschland gleichgewichtig ab. Die Freikirchen stellen 4,3 Prozent der Hauptstichprobe, das ist eine kleine Gruppe. Fallzahlen je Balken nennt der Bericht nicht. Er selbst hält fest, dass es auch in den auffälligeren Gruppen Minderheiten sind und dass das Phänomen über alle Bekenntnisse hinweg auftritt.",
+   "scope": "Deutschland",
    "items": [
     {
-     "label": "Befragte Muslime: Zuwandernde Muslime wollen sich anpassen",
+     "label": "Römisch-katholisch",
      "detail": null,
-     "value": 30.0,
+     "value": 5.0,
      "unit": "percent",
-     "study": "Pew Global Attitudes 2006",
-     "population": "Muslime in Deutschland",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
      "base_n": null,
-     "field_period": "31.03. bis 14.05.2006",
+     "field_period": "Frühjahr bis Sommer 2019",
      "question_ref": null,
-     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
-     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
-     "source_locator": "Kapitel Identität"
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
     },
     {
-     "label": "Befragte Muslime: Zuwandernde Muslime wollen sich abgrenzen",
+     "label": "Landeskirchlich evangelisch",
      "detail": null,
-     "value": 52.0,
+     "value": 2.0,
      "unit": "percent",
-     "study": "Pew Global Attitudes 2006",
-     "population": "Muslime in Deutschland",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
      "base_n": null,
-     "field_period": "31.03. bis 14.05.2006",
+     "field_period": "Frühjahr bis Sommer 2019",
      "question_ref": null,
-     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
-     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
-     "source_locator": "Kapitel Identität"
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
     },
     {
-     "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen",
+     "label": "Evangelische Freikirchen",
      "detail": null,
-     "value": 76.0,
+     "value": 2.0,
      "unit": "percent",
-     "study": "Pew Global Attitudes 2006",
-     "population": "Bevölkerung Deutschlands",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
      "base_n": null,
-     "field_period": "31.03. bis 14.05.2006",
+     "field_period": "Frühjahr bis Sommer 2019",
      "question_ref": null,
-     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
-     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
-     "source_locator": "Kapitel Identität"
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
     },
     {
-     "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen (zehn Jahre später)",
+     "label": "Muslimisch",
      "detail": null,
-     "value": 61.0,
+     "value": 17.0,
      "unit": "percent",
-     "study": "Pew 2016/17",
-     "population": "Bevölkerung Deutschlands",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
      "base_n": null,
-     "field_period": "2016 bis 2017",
+     "field_period": "Frühjahr bis Sommer 2019",
      "question_ref": null,
-     "source_title": "Pew Research Center (2017): Europe’s Growing Muslim Population",
-     "source_url": "https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/",
-     "source_locator": "Abschnitt Wahrnehmung"
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    }
+   ]
+  },
+  {
+   "block": "konid_verfassung",
+   "title": "„Meine Religion hat im Konfliktfall Vorrang vor der Verfassung\"",
+   "note": "Vierstufige Skala; als Zustimmung zählt die Summe aus „stimme eher zu\" und „stimme voll und ganz zu\", so wie der Bericht selbst rechnet. Befragt wurde die Wohnbevölkerung ab 16 Jahren in Deutschland, unabhängig von der Staatsangehörigkeit: eine bevölkerungsrepräsentative Hauptstichprobe von 2.363 Befragten, dazu eine Sonderstichprobe von 500 türkischen Muslimen und je eine weitere für bosnische Muslime und kroatische Katholiken. In der Hauptstichprobe sind nur 1,6 Prozent muslimisch — die muslimischen Werte stützen sich also überwiegend auf die Sonderstichproben und bilden nicht alle muslimischen Richtungen in Deutschland gleichgewichtig ab. Die Freikirchen stellen 4,3 Prozent der Hauptstichprobe, das ist eine kleine Gruppe. Fallzahlen je Balken nennt der Bericht nicht. Er selbst hält fest, dass es auch in den auffälligeren Gruppen Minderheiten sind und dass das Phänomen über alle Bekenntnisse hinweg auftritt. Die SCIICS-Befragung von 2008 kommt für eine ähnlich klingende Aussage — „Die Regeln des Korans sind mir wichtiger als die Gesetze von Deutschland\" — auf 65 Prozent über sechs Länder. Anderer Wortlaut, andere Stichprobe, elf Jahre früher: wer beide Zahlen nebeneinanderlegt, vergleicht nicht zwei Zeitpunkte, sondern zwei Fragen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Römisch-katholisch",
+     "detail": null,
+     "value": 11.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    },
+    {
+     "label": "Landeskirchlich evangelisch",
+     "detail": null,
+     "value": 11.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    },
+    {
+     "label": "Evangelische Freikirchen",
+     "detail": null,
+     "value": 32.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    },
+    {
+     "label": "Muslimisch",
+     "detail": null,
+     "value": 28.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    }
+   ]
+  },
+  {
+   "block": "konid_autoritaet",
+   "title": "„Religion sollte die einzige und letztgültige politische Autorität sein\"",
+   "note": "Vierstufige Skala; als Zustimmung zählt die Summe aus „stimme eher zu\" und „stimme voll und ganz zu\", so wie der Bericht selbst rechnet. Befragt wurde die Wohnbevölkerung ab 16 Jahren in Deutschland, unabhängig von der Staatsangehörigkeit: eine bevölkerungsrepräsentative Hauptstichprobe von 2.363 Befragten, dazu eine Sonderstichprobe von 500 türkischen Muslimen und je eine weitere für bosnische Muslime und kroatische Katholiken. In der Hauptstichprobe sind nur 1,6 Prozent muslimisch — die muslimischen Werte stützen sich also überwiegend auf die Sonderstichproben und bilden nicht alle muslimischen Richtungen in Deutschland gleichgewichtig ab. Die Freikirchen stellen 4,3 Prozent der Hauptstichprobe, das ist eine kleine Gruppe. Fallzahlen je Balken nennt der Bericht nicht. Er selbst hält fest, dass es auch in den auffälligeren Gruppen Minderheiten sind und dass das Phänomen über alle Bekenntnisse hinweg auftritt.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Römisch-katholisch",
+     "detail": null,
+     "value": 11.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    },
+    {
+     "label": "Landeskirchlich evangelisch",
+     "detail": null,
+     "value": 10.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    },
+    {
+     "label": "Evangelische Freikirchen",
+     "detail": null,
+     "value": 11.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
+    },
+    {
+     "label": "Muslimisch",
+     "detail": null,
+     "value": 25.0,
+     "unit": "percent",
+     "study": "KONID Survey 2019",
+     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "base_n": null,
+     "field_period": "Frühjahr bis Sommer 2019",
+     "question_ref": null,
+     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Abbildung 5.3 und Text, S. 26"
     }
    ]
   },
@@ -585,6 +725,7 @@
    "block": "fundamentalismus_sciics",
    "title": "Zustimmung zu allen drei Fundamentalismus-Aussagen",
    "note": "Wortlaut der drei Aussagen: „Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.\" · „Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.\" · „Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze von Deutschland.\" Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland. Befragt wurden ausschließlich Personen türkischer und marokkanischer Herkunft, deren Eltern oder Großeltern vor 1975 eingewandert sind; die Hälfte der türkeistämmigen Befragten stammt aus bestimmten ländlichen Regionen Zentral- und Ostanatoliens. Koopmans selbst schreibt, die Daten seien deshalb möglicherweise nicht national repräsentativ. Die Vergleichsgruppe der Einheimischen unterlag diesen Einschränkungen nicht — der Vergleich ist also nicht symmetrisch. In Deutschland wurden 489 türkeistämmige und 479 marokkostämmige Personen befragt, insgesamt rund 9.000 in sechs Ländern; 96 Prozent der Befragten mit türkischer oder marokkanischer Herkunft bezeichneten sich als Muslime, 70 Prozent der Einheimischen als Christen. Fallzahlen je Balken sind nicht veröffentlicht. Auf die drei Aussagen einzeln bezogen liegt die Zustimmung unter den befragten Muslimen bei fast 60 Prozent (Rückkehr zu den Wurzeln), 75 Prozent (nur eine Auslegung) und 65 Prozent (religiöse Regeln vor weltlichen Gesetzen); unter den einheimischen Christen nennt der Text für die einzelnen Aussagen eine Spanne von 13 bis 21 Prozent. Weil die Christenwerte je Aussage nicht als einzelne Zahlen veröffentlicht sind, zeigt die Grafik nur das Maß, das für alle Gruppen exakt beziffert ist: die Zustimmung zu allen drei Aussagen zugleich.",
+   "scope": "Sechs europäische Länder",
    "items": [
     {
      "label": "Muslime in Deutschland",
@@ -701,191 +842,66 @@
    ]
   },
   {
-   "block": "konid_gewalt",
-   "title": "„Ich wäre bereit, meine religiösen Überzeugungen auch mit Gewalt durchzusetzen\"",
-   "note": "Vierstufige Skala; als Zustimmung zählt die Summe aus „stimme eher zu\" und „stimme voll und ganz zu\", so wie der Bericht selbst rechnet. Befragt wurde die Wohnbevölkerung ab 16 Jahren in Deutschland, unabhängig von der Staatsangehörigkeit: eine bevölkerungsrepräsentative Hauptstichprobe von 2.363 Befragten, dazu eine Sonderstichprobe von 500 türkischen Muslimen und je eine weitere für bosnische Muslime und kroatische Katholiken. In der Hauptstichprobe sind nur 1,6 Prozent muslimisch — die muslimischen Werte stützen sich also überwiegend auf die Sonderstichproben und bilden nicht alle muslimischen Richtungen in Deutschland gleichgewichtig ab. Die Freikirchen stellen 4,3 Prozent der Hauptstichprobe, das ist eine kleine Gruppe. Fallzahlen je Balken nennt der Bericht nicht. Er selbst hält fest, dass es auch in den auffälligeren Gruppen Minderheiten sind und dass das Phänomen über alle Bekenntnisse hinweg auftritt.",
+   "block": "abgrenzung",
+   "title": "Wollen Muslime sich abgrenzen? Selbstbild und Fremdbild",
+   "note": null,
+   "scope": "Mehrere Länder",
    "items": [
     {
-     "label": "Römisch-katholisch",
+     "label": "Befragte Muslime: Zuwandernde Muslime wollen sich anpassen",
      "detail": null,
-     "value": 5.0,
+     "value": 30.0,
      "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "study": "Pew Global Attitudes 2006",
+     "population": "Muslime in Deutschland",
      "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
+     "field_period": "31.03. bis 14.05.2006",
      "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
+     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
+     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+     "source_locator": "Kapitel Identität"
     },
     {
-     "label": "Landeskirchlich evangelisch",
+     "label": "Befragte Muslime: Zuwandernde Muslime wollen sich abgrenzen",
      "detail": null,
-     "value": 2.0,
+     "value": 52.0,
      "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "study": "Pew Global Attitudes 2006",
+     "population": "Muslime in Deutschland",
      "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
+     "field_period": "31.03. bis 14.05.2006",
      "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
+     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
+     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+     "source_locator": "Kapitel Identität"
     },
     {
-     "label": "Evangelische Freikirchen",
+     "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen",
      "detail": null,
-     "value": 2.0,
+     "value": 76.0,
      "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "study": "Pew Global Attitudes 2006",
+     "population": "Bevölkerung Deutschlands",
      "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
+     "field_period": "31.03. bis 14.05.2006",
      "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
+     "source_title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity",
+     "source_url": "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+     "source_locator": "Kapitel Identität"
     },
     {
-     "label": "Muslimisch",
+     "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen (zehn Jahre später)",
      "detail": null,
-     "value": 17.0,
+     "value": 61.0,
      "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
+     "study": "Pew 2016/17",
+     "population": "Bevölkerung Deutschlands",
      "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
+     "field_period": "2016 bis 2017",
      "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    }
-   ]
-  },
-  {
-   "block": "konid_verfassung",
-   "title": "„Meine Religion hat im Konfliktfall Vorrang vor der Verfassung\"",
-   "note": "Vierstufige Skala; als Zustimmung zählt die Summe aus „stimme eher zu\" und „stimme voll und ganz zu\", so wie der Bericht selbst rechnet. Befragt wurde die Wohnbevölkerung ab 16 Jahren in Deutschland, unabhängig von der Staatsangehörigkeit: eine bevölkerungsrepräsentative Hauptstichprobe von 2.363 Befragten, dazu eine Sonderstichprobe von 500 türkischen Muslimen und je eine weitere für bosnische Muslime und kroatische Katholiken. In der Hauptstichprobe sind nur 1,6 Prozent muslimisch — die muslimischen Werte stützen sich also überwiegend auf die Sonderstichproben und bilden nicht alle muslimischen Richtungen in Deutschland gleichgewichtig ab. Die Freikirchen stellen 4,3 Prozent der Hauptstichprobe, das ist eine kleine Gruppe. Fallzahlen je Balken nennt der Bericht nicht. Er selbst hält fest, dass es auch in den auffälligeren Gruppen Minderheiten sind und dass das Phänomen über alle Bekenntnisse hinweg auftritt. Die SCIICS-Befragung von 2008 kommt für eine ähnlich klingende Aussage — „Die Regeln des Korans sind mir wichtiger als die Gesetze von Deutschland\" — auf 65 Prozent über sechs Länder. Anderer Wortlaut, andere Stichprobe, elf Jahre früher: wer beide Zahlen nebeneinanderlegt, vergleicht nicht zwei Zeitpunkte, sondern zwei Fragen.",
-   "items": [
-    {
-     "label": "Römisch-katholisch",
-     "detail": null,
-     "value": 11.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    },
-    {
-     "label": "Landeskirchlich evangelisch",
-     "detail": null,
-     "value": 11.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    },
-    {
-     "label": "Evangelische Freikirchen",
-     "detail": null,
-     "value": 32.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    },
-    {
-     "label": "Muslimisch",
-     "detail": null,
-     "value": 28.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    }
-   ]
-  },
-  {
-   "block": "konid_autoritaet",
-   "title": "„Religion sollte die einzige und letztgültige politische Autorität sein\"",
-   "note": "Vierstufige Skala; als Zustimmung zählt die Summe aus „stimme eher zu\" und „stimme voll und ganz zu\", so wie der Bericht selbst rechnet. Befragt wurde die Wohnbevölkerung ab 16 Jahren in Deutschland, unabhängig von der Staatsangehörigkeit: eine bevölkerungsrepräsentative Hauptstichprobe von 2.363 Befragten, dazu eine Sonderstichprobe von 500 türkischen Muslimen und je eine weitere für bosnische Muslime und kroatische Katholiken. In der Hauptstichprobe sind nur 1,6 Prozent muslimisch — die muslimischen Werte stützen sich also überwiegend auf die Sonderstichproben und bilden nicht alle muslimischen Richtungen in Deutschland gleichgewichtig ab. Die Freikirchen stellen 4,3 Prozent der Hauptstichprobe, das ist eine kleine Gruppe. Fallzahlen je Balken nennt der Bericht nicht. Er selbst hält fest, dass es auch in den auffälligeren Gruppen Minderheiten sind und dass das Phänomen über alle Bekenntnisse hinweg auftritt.",
-   "items": [
-    {
-     "label": "Römisch-katholisch",
-     "detail": null,
-     "value": 11.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    },
-    {
-     "label": "Landeskirchlich evangelisch",
-     "detail": null,
-     "value": 10.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    },
-    {
-     "label": "Evangelische Freikirchen",
-     "detail": null,
-     "value": 11.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
-    },
-    {
-     "label": "Muslimisch",
-     "detail": null,
-     "value": 25.0,
-     "unit": "percent",
-     "study": "KONID Survey 2019",
-     "population": "Wohnbevölkerung ab 16 Jahren in Deutschland",
-     "base_n": null,
-     "field_period": "Frühjahr bis Sommer 2019",
-     "question_ref": null,
-     "source_title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)",
-     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
-     "source_locator": "Abbildung 5.3 und Text, S. 26"
+     "source_title": "Pew Research Center (2017): Europe’s Growing Muslim Population",
+     "source_url": "https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/",
+     "source_locator": "Abschnitt Wahrnehmung"
     }
    ]
   }

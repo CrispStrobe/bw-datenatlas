@@ -797,6 +797,14 @@ with sync_playwright() as pw:
     # Die Blöcke mit Landesbezug stehen vorn. Das war lange ein einziger, deshalb
     # prüfte der Test die erste Zeile auf den Landesnamen — inzwischen sind es vier,
     # und die Bedingung ist, dass keiner von ihnen hinter einen bundesweiten rutscht.
+    check('the dropdown groups the blocks by the area they cover',
+          page.locator('#survey-select optgroup').count()>=3)
+    check('the first group is this state',
+          page.locator('#survey-select optgroup').first.get_attribute('label')
+          in ('Baden-Württemberg',))
+    check('the block header leads with its area',
+          page.locator('.survey-meta').first.inner_text()
+          .startswith(('Baden-Württemberg','Deutschland')))
     reihenfolge=page.evaluate(
         "()=>window.ATLAS_SURVEY_ITEMS.blocks.map(b=>b.block.startsWith('bw_'))")
     check('the Baden-Württemberg blocks come first',

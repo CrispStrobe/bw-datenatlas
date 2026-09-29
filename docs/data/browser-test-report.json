@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 334,
+  "check_count": 337,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -1004,6 +1004,18 @@
     },
     {
       "name": "the survey section offers a dropdown like the map",
+      "passed": true
+    },
+    {
+      "name": "the dropdown groups the blocks by the area they cover",
+      "passed": true
+    },
+    {
+      "name": "the first group is this state",
+      "passed": true
+    },
+    {
+      "name": "the block header leads with its area",
       "passed": true
     },
     {

@@ -1793,7 +1793,16 @@ function renderSurveyItems(){
  // das dazu ein, sie als eine Reihe zu lesen. Einer nach dem anderen.
  const feld=$('survey-select');
  if(feld&&!feld.options.length){
-  feld.innerHTML=D2.blocks.map((b,n)=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('');
+  // Nach Gebiet gruppiert: bei zehn Blöcken sieht man dem Titel nicht mehr an, ob
+  // eine Zahl aus diesem Land, aus Deutschland oder aus sechs Ländern stammt — und
+  // genau das entscheidet, was sie bedeutet.
+  const raeume=(D2.scope_order||[]).filter(r=>D2.blocks.some(b=>b.scope===r));
+  const ohne=D2.blocks.map((b,n)=>[b,n]).filter(([b])=>!raeume.includes(b.scope));
+  feld.innerHTML=raeume.map(r=>'<optgroup label="'+esc(t(r))+'">'
+    +D2.blocks.map((b,n)=>[b,n]).filter(([b])=>b.scope===r)
+      .map(([b,n])=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('')
+    +'</optgroup>').join('')
+   +ohne.map(([b,n])=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('');
   feld.addEventListener('change',renderSurveyItems);
  }
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
@@ -1808,7 +1817,7 @@ function renderSurveyItems(){
   return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
    // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
    // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
-   +'<p class="tiny survey-meta">'+esc([erste.study,t(erste.population),
+   +'<p class="tiny survey-meta">'+esc([b.scope?t(b.scope):null,erste.study,t(erste.population),
        erste.base_n?tf('{0} Befragte',integer(erste.base_n)):t('Fallzahl je Balken nicht veröffentlicht'),
        erste.field_period,erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
        .filter(Boolean).join(' · '))+'</p>'
