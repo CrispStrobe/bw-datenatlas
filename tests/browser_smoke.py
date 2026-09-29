@@ -128,6 +128,24 @@ with sync_playwright() as pw:
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
     # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
+    # Die Überschrift des Quellenabschnitts verspricht „Quellen der sichtbaren
+    # Ansichten". Das war eine gepflegte Liste von neun Einträgen, während die Seite
+    # längst aus dreißig schöpfte. Jetzt wird sie aus dem Material gebaut, und diese
+    # Prüfung ist der Grund, warum sie es bleiben muss.
+    verlinkt=set(page.evaluate("""()=>[...document.querySelectorAll(
+        '#sources-list .source-item a')].map(a=>a.href)"""))
+    gebraucht=set(page.evaluate("""()=>{
+      const u=new Set();
+      for(const b of (window.ATLAS_SURVEY_ITEMS||{blocks:[]}).blocks||[])
+        for(const i of b.items)u.add(i.source_url);
+      return [...u];}"""))
+    fehlend=sorted(x for x in gebraucht if x not in verlinkt)
+    check('every survey source is listed in the sources section',not fehlend)
+    check('the sources section covers more than the nine curated entries',
+          len(verlinkt)>=25)
+    check('the anchors the text jumps to still exist',
+          page.locator('#source-bamf_fb55').count()==1)
+
     # Die Karte, die den Satz „Einwanderungskirchen" trägt. Sie darf den Abstand
     # zeigen und muss die beiden Lücken offen lassen, statt aus drei Kreisen eine
     # Landeszahl zu machen.
@@ -1066,7 +1084,19 @@ with sync_playwright() as pw:
     # übersetzt, sonst fände ihn niemand wieder; die Zählung erkennt ihn nur an dem
     # Wort "Bevölkerung" darin. Kein Rückschritt der Übersetzung, sondern eine
     # Zitatangabe.
-    check(f'untranslated german does not grow ({len(deutsch)} nodes)',len(deutsch)<=50)
+    #
+    # Seit der Quellenabschnitt aus dem Material der Seite gebaut wird statt aus
+    # einer Liste von neun Einträgen, stehen dort dreißig weitere solcher Titel und
+    # Herausgebernamen. Die Grenze dafür anzuheben hieße, sie überall anzuheben.
+    # Stattdessen zählt die Sperre jetzt nur noch außerhalb des Quellenabschnitts —
+    # dort gilt weiter 50, und drinnen darf ein Titel heißen, wie er heißt.
+    quellen=page.evaluate(
+        "()=>document.getElementById('sources-list').innerText")
+    draussen=[x for x in deutsch if x not in quellen]
+    check(f'untranslated german does not grow outside the sources '
+          f'({len(draussen)} nodes)',len(draussen)<=50)
+    check('the growth is in the sources section, where names stay as they are',
+          len(deutsch)-len(draussen)>=10)
     check('the extra german node is a publication title, not an untranslated sentence',
           any('Ansatz und Ergebnisse einer Schätzung' in x for x in deutsch))
     page.goto(args.url.rstrip('/')+'/?lang=de',wait_until='networkidle')

@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 337,
+  "check_count": 341,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -112,6 +112,18 @@
     },
     {
       "name": "the estimated tile is marked apart from the counted ones",
+      "passed": true
+    },
+    {
+      "name": "every survey source is listed in the sources section",
+      "passed": true
+    },
+    {
+      "name": "the sources section covers more than the nine curated entries",
+      "passed": true
+    },
+    {
+      "name": "the anchors the text jumps to still exist",
       "passed": true
     },
     {
@@ -1335,7 +1347,11 @@
       "passed": true
     },
     {
-      "name": "untranslated german does not grow (50 nodes)",
+      "name": "untranslated german does not grow outside the sources (45 nodes)",
+      "passed": true
+    },
+    {
+      "name": "the growth is in the sources section, where names stay as they are",
       "passed": true
     },
     {

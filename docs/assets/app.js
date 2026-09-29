@@ -1620,7 +1620,62 @@ function renderFlows(){
  const purposes=[...new Set(D.visa_purposes.map(r=>r.dimensions.purpose))];$('visa-table').innerHTML=table(['Zweck','2024','2025'],purposes.map(p=>[esc(purposeNames[p]||p),...['2024','2025'].map(y=>integer(D.visa_purposes.find(r=>r.dimensions.purpose===p&&r.reference_period===y)?.value))]),'AA-Jahres-PDFs: bearbeitete nationale Visa. Summe und Unterkategorien nicht addieren.');
  const issues=D.source_audit.parameter_comparison.filter(r=>r.table1_differs_from_original_mld);$('audit-table').innerHTML=table(['Herkunftsgruppe','Bericht 55, Tabelle 1, E','Bericht 55, Tabelle 2','Bericht 38, Original'],issues.map(r=>[esc(r.origin_group),pct(r.fb55_table1_column_E_published),pct(r.fb55_table2_mld_share_published),pct(r.fb38_table2_3_mld_share_published)]));
 }
-function renderSources(){const ids=['bamf_fb55','stala_pm_2025','stala_gemeinden_2024_06','stala_pm_2026','stala_monat_2020','bamf_mld2020_full','bw_jum_asyl_2026_08','aa_national_visas_2024','aa_national_visas_2025'];$('sources-list').innerHTML=ids.map(id=>{const s=D.sources[id];return `<article class="source-item" id="source-${esc(id)}"><a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title)} ↗</a><span>${esc(s.publisher)} · veröffentlicht ${esc(s.publication_period)}</span>${s.locator?`<p>${esc(s.locator)}</p>`:''}${s.limitation?`<p>${esc(s.limitation)}</p>`:''}</article>`;}).join('')+`<article class="source-item"><a href="https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html" target="_blank" rel="noreferrer">BKG: Verwaltungsgebiete VG250 ↗</a><span>Archivstand 01.01.2024 · dl-de/by-2-0 · keine Bevölkerungswerte aus den Geometrien übernommen</span><p>${G?`Geodatenaufbau ausgeführt; ${G.municipality_match_count}/1101 Gemeindewerte zugeordnet. ${G.municipalities_unmatched.length} statistische Gemeinden ohne eindeutige Geometriezuordnung.`:'Amtliche Geometrien noch nicht lokal bezogen. Der GitHub-Workflow baut diese vor der Veröffentlichung auf.'}</p></article>`;}
+// „Quellen der sichtbaren Ansichten" war lange eine gepflegte Liste von neun
+// Einträgen. Die Seite ist darüber hinausgewachsen: Eurostat, der Zensus 2011, die
+// WZB-Erhebung, der KONID-Survey und der Landesintegrationsbericht standen an ihren
+// Grafiken, aber nicht in der Liste, die behauptet, alle Ansichten abzudecken.
+// Deshalb wird sie jetzt aus dem Material gebaut, das die Seite tatsächlich zeigt —
+// eine Ebene oder ein Block, der dazukommt, bringt seine Quelle mit.
+function quellenDerSeite(){
+ const raus=new Map();
+ const dazu=(schluessel,eintrag)=>{
+  if(!eintrag||!eintrag.url||raus.has(eintrag.url))return;
+  raus.set(eintrag.url,{id:schluessel,...eintrag});
+ };
+ // Die gepflegten Einträge zuerst: sie tragen Fundstelle und Einschränkung und
+ // sind die Ziele der #source-…-Sprungmarken im Text.
+ for(const id of ['bamf_fb55','stala_pm_2025','stala_gemeinden_2024_06',
+                  'stala_pm_2026','stala_monat_2020','bamf_mld2020_full',
+                  'bw_jum_asyl_2026_08','aa_national_visas_2024',
+                  'aa_national_visas_2025']){
+  if(D.sources[id])dazu(id,D.sources[id]);
+ }
+ // Was an den Kartenebenen hängt.
+ for(const [name,ebene] of Object.entries(layers)){
+  if(ebene.source&&D.sources[ebene.source])dazu(ebene.source,D.sources[ebene.source]);
+  if(ebene.sourceInfo)dazu('layer-'+name,ebene.sourceInfo);
+ }
+ // Was an den Datendateien hängt, die eigene Karten und Karten­karten speisen.
+ for(const d of [MUNIREL,Z2011,GRID,window.ATLAS_PUBLISHED_ESTIMATES,
+                 window.ATLAS_IRU_BW,window.ATLAS_PUBLISHED_AGES,
+                 window.ATLAS_FOREIGN_AGE]){
+  if(d&&d.source_url)dazu(d.type||d.source_url,
+    {title:d.source||d.source_url,publisher:d.attribution||'',
+     publication_period:d.reference_period||'',url:d.source_url});
+ }
+ // Und was an den Befragungsblöcken hängt.
+ const umfragen=window.ATLAS_SURVEY_ITEMS;
+ if(umfragen&&umfragen.blocks){
+  for(const b of umfragen.blocks)for(const i of b.items)
+   dazu('survey-'+i.source_url,{title:i.source_title,publisher:i.study,
+     publication_period:b.scope||'',url:i.source_url,locator:i.source_locator||''});
+ }
+ return [...raus.values()];
+}
+function renderSources(){
+ $('sources-list').innerHTML=quellenDerSeite().map(s=>
+  `<article class="source-item"${s.id&&D.sources[s.id]?` id="source-${esc(s.id)}"`:''}>`
+  // Titel, Herausgeber und Fundstelle sind Eigennamen und bleiben stehen, wie sie
+  // heißen — sonst stünden einundsechzig Publikationstitel im Übersetzungskatalog
+  // und verlangten eine englische Fassung, die es nicht gibt. Übersetzt wird nur,
+  // was Fließtext ist: das Gebiet und der Vorbehalt.
+  +`<a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title)} ↗</a>`
+  +`<span>${esc(s.publisher||'')}${s.publication_period
+      ?' · '+esc(t(String(s.publication_period))):''}</span>`
+  +`${s.locator?`<p>${esc(s.locator)}</p>`:''}`
+  +`${s.limitation?`<p>${esc(t(s.limitation))}</p>`:''}</article>`).join('')
+ +`<article class="source-item"><a href="https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html" target="_blank" rel="noreferrer">BKG: Verwaltungsgebiete VG250 ↗</a><span>Archivstand 01.01.2024 · dl-de/by-2-0 · keine Bevölkerungswerte aus den Geometrien übernommen</span><p>${G?`Geodatenaufbau ausgeführt; ${G.municipality_match_count}/1101 Gemeindewerte zugeordnet. ${G.municipalities_unmatched.length} statistische Gemeinden ohne eindeutige Geometriezuordnung.`:'Amtliche Geometrien noch nicht lokal bezogen. Der GitHub-Workflow baut diese vor der Veröffentlichung auf.'}</p></article>`;
+}
 function searchPlaces(){const q=M.normalize($('place-search').value);if(q.length<2){$('search-results').hidden=true;return;}const candidates=[...D.districts.map(d=>({type:'district',id:d.id,name:d.name,detail:'Kreis '+d.id})),...D.municipalities.map(m=>({type:'municipality',id:m.geo_id,name:m.municipality_name,detail:m.district_name}))].filter(r=>M.normalize(r.name+' '+r.detail).includes(q)).slice(0,10);$('search-results').hidden=false;$('search-results').innerHTML=candidates.length?candidates.map((r,i)=>`<button type="button" data-result="${i}"><strong>${esc(r.name)}</strong><br><span class="small-muted">${esc(r.detail)} · ${r.type==='municipality'?'Gemeinde':'Kreis'}</span></button>`).join(''):'<p class="empty-state">Kein Treffer.</p>';$('search-results').querySelectorAll('[data-result]').forEach(b=>b.addEventListener('click',()=>{const r=candidates[Number(b.dataset.result)];$('place-search').value=r.name;setSelected(r.type,r.id);zoomAufAuswahl();}));}
 let researchLoading=false;
 async function loadResearch(){if(state.researchRows||researchLoading)return;researchLoading=true;$('research-load-note').textContent='Die lokale Forschungssammlung wird geladen …';try{const response=await fetch('data/research-observations.json');if(!response.ok)throw new Error(String(response.status));state.researchRows=await response.json();renderResearch();$('research-load-note').textContent=t('Unveränderte Originalbeobachtungen der Datensammlung.');}catch(e){$('research-load-note').textContent=t('Die Einzeldatei konnte nicht geladen werden. Bei file:// die Seite über einen lokalen HTTP-Server öffnen. Der ZIP-Download enthält dieselben Daten.');console.warn('Research data load unavailable:',e.message);}finally{researchLoading=false;}}
