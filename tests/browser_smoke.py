@@ -128,6 +128,28 @@ with sync_playwright() as pw:
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
     # nirgends auf der Seite — und damit blieb der Abstand zwischen den Verfahren
     # unsichtbar, der größer ist als jede Spanne innerhalb eines Verfahrens.
+    # Die Karte, die den Satz „Einwanderungskirchen" trägt. Sie darf den Abstand
+    # zeigen und muss die beiden Lücken offen lassen, statt aus drei Kreisen eine
+    # Landeszahl zu machen.
+    karte=page.locator('#orthodox-citizenship-card')
+    check('the citizenship chart is on the page',karte.is_visible())
+    zeilen=page.locator('#orthodox-citizenship-bars .bar-row')
+    check('the citizenship chart has one row per religious society',
+          zeilen.count()==7)
+    text=karte.inner_text()
+    check('the citizenship chart shows the orthodox share',
+          '64,8 %' in text or '64.8 %' in text)
+    check('the citizenship chart shows the protestant share for contrast',
+          '1,2 %' in text or '1.2 %' in text)
+    check('the citizenship chart leaves the suppressed rows empty',
+          text.count('41') and ('geheim gehalten' in text
+                                or 'kept confidential' in text))
+    check('the citizenship chart says the passport is not the origin',
+          'Pass, nicht die Herkunft' in text
+          or 'passport, not the origin' in text)
+    check('the citizenship chart names its own table',
+          '1.3' in text)
+
     # Wer einen Ort sucht, will ihn sehen und wissen, was dort ist. Beides hing
     # vorher an zwei weiteren Handgriffen: Kartenebene wechseln und die richtige
     # Stelle treffen.

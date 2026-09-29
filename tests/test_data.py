@@ -257,4 +257,35 @@ class DataTests(unittest.TestCase):
             self.assertEqual(int(r['orthodox']), x['orthodox'])
             self.assertEqual(float(r['orthodox_pct']), x['orthodox_pct'])
 
+    def test_zensus2011_citizenship_cross_table(self):
+        """Der Satz „Einwanderungskirchen" hängt an dieser einen Kreuztabelle.
+
+        Sie ist zeilenweise aus 44 PDF-Bänden gelesen, und wo die Geheimhaltung zu
+        oft zugegriffen hat, darf keine Zahl daraus werden. Beides steht hier fest:
+        der Abstand, den die Karte zeigt, und die Lücken, die sie offenlässt.
+        """
+        d = json.loads((ROOT/'docs/data/zensus2011-religion.json').read_text(encoding='utf-8'))
+        c = d['by_citizenship']
+        anteil = lambda f: 100 * c[f]['foreign'] / c[f]['total']
+        # Orthodox weit über, evangelisch weit unter dem Landesdurchschnitt — das ist
+        # die Aussage der Grafik, und sie soll auffallen, wenn sie kippt.
+        self.assertGreater(anteil('orthodox'), 50)
+        self.assertLess(anteil('protestant'), 5)
+        self.assertLess(anteil('roman_catholic'), 15)
+        # Zwei Kategorien sind nicht auswertbar, und die Grafik zeigt sie als Lücke.
+        # Fiele diese Sperre weg, stünden dort plötzlich Zahlen auf drei Kreisen.
+        self.assertGreaterEqual(c['jewish']['foreign_districts_suppressed'], 40)
+        self.assertGreaterEqual(c['protestant_free']['foreign_districts_suppressed'], 40)
+        for f in ('orthodox', 'roman_catholic'):
+            self.assertEqual(c[f]['foreign_districts_suppressed'], 0, f)
+            # Die Untergliederung nach Herkunftsgruppen ist viel häufiger gesperrt
+            # als die Ausländerzahl selbst; sie ergibt deshalb weniger und nie mehr.
+            teile = sum(c[f][k] for k in ('foreign_eu27', 'foreign_other_europe',
+                                          'foreign_rest_of_world', 'foreign_unclear'))
+            self.assertLessEqual(teile, c[f]['foreign'], f)
+            self.assertGreater(teile / c[f]['foreign'], 0.9, f)
+            # Und die Kreuztabelle zählt dieselben Menschen wie die Haupttabelle.
+            self.assertAlmostEqual(c[f]['total'] / d['state_total'][f], 1, places=3)
+        self.assertIn('Pass, nicht die Herkunft', d['what_citizenship_shows'])
+
 if __name__=='__main__': unittest.main(verbosity=2)

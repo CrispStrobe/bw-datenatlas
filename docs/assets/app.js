@@ -1848,6 +1848,48 @@ function renderPublishedAges(){
   +quellen.map(q=>'<a href="'+esc(q.url)+'" target="_blank" rel="noreferrer">'
     +esc(q.publisher)+'</a>').join(' · ');
 }
+// Die Frage, ob die orthodoxen Kirchen Einwanderungskirchen sind, lässt sich für
+// einmal beantworten statt einschätzen: der Zensus 2011 kreuzt Religionsgesellschaft
+// und Staatsangehörigkeit. Zwei der sieben Kategorien sind dabei nicht auswertbar,
+// weil die Geheimhaltung in 41 beziehungsweise 43 der 44 Kreise zugegriffen hat —
+// die stehen als Lücke da und nicht als kleine Zahl.
+const ZU_STARK_GESPERRT=20;
+function renderOrthodoxCitizenship(){
+ const host=$('orthodox-citizenship-bars');if(!host)return;
+ const D2=Z2011;
+ if(!D2||!D2.by_citizenship){const k=$('orthodox-citizenship-card');if(k)k.hidden=true;return;}
+ $('orthodox-citizenship-warning').textContent=
+   t(D2.what_citizenship_shows)+' '+t(D2.citizenship_sums_are_district_sums);
+ const zeilen=Object.entries(D2.categories).map(([feld,label])=>{
+  const e=D2.by_citizenship[feld]||{};
+  // Die Untergliederung nach Herkunftsgruppen ist viel häufiger gesperrt als die
+  // Ausländerzahl selbst — bei „sonstige Welt" in 35 von 44 Kreisen. Eine Gruppe,
+  // die in mehr als zehn Kreisen fehlt, wird deshalb nicht genannt, und die
+  // übrigen stehen ausdrücklich als Mindestzahlen da.
+  const gruppen=[['foreign_eu27','EU27'],['foreign_other_europe','sonstiges Europa'],
+                 ['foreign_rest_of_world','sonstige Welt']]
+   .filter(([k])=>(e[k+'_districts_suppressed']||0)<=10&&e[k])
+   .map(([k,n])=>t(n)+' '+integer(e[k]));
+  return {label,gesperrt:e.foreign_districts_suppressed||0,total:e.total||0,
+          foreign:e.foreign||0,gruppen,
+          pct:e.total?100*e.foreign/e.total:null};
+ });
+ host.innerHTML=zeilen.map(z=>{
+  if(z.gesperrt>=ZU_STARK_GESPERRT||!z.total)
+   return '<div class="bar-row"><div class="bar-name">'+esc(t(z.label))+'</div>'
+    +'<div class="bar-track"></div><div class="bar-value"><span class="tiny">'
+    +esc(tf('in {0} von 44 Kreisen geheim gehalten',z.gesperrt))+'</span></div></div>';
+  return '<div class="bar-row"><div class="bar-name">'+esc(t(z.label))
+   +(z.gruppen.length?'<br><span class="tiny">'
+      +esc(tf('darunter mindestens: {0}',z.gruppen.join(' · ')))+'</span>':'')
+   +'</div>'
+   +'<div class="bar-track"><div class="bar-fill" style="width:'+z.pct.toFixed(1)
+   +'%;background:#6b7f8a"></div></div>'
+   +'<div class="bar-value">'+esc(pct(z.pct))+'<small>'
+   +esc(tf('{0} von {1}',integer(z.foreign),integer(z.total)))+'</small></div></div>';
+ }).join('');
+ $('orthodox-citizenship-note').textContent=t('Statistisches Landesamt Baden-Württemberg, Zensus 2011 — Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände, Tabelle 1.3')+' · '+t(D2.membership_not_belief);
+}
 function renderPublishedEstimates(){
  const host=$('published-estimates-bars');if(!host)return;
  const D2=window.ATLAS_PUBLISHED_ESTIMATES;
@@ -1933,7 +1975,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -1968,7 +2010,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderPublishedEstimates();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
+ try{renderPublishedEstimates();renderOrthodoxCitizenship();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

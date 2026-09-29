@@ -61,6 +61,13 @@ KATEGORIEN = [
 ]
 SPALTEN = ['kreis', 'regierungsbezirk', 'land', 'bund']
 
+# Tabelle 1.3 derselben Bände kreuzt die Religion mit der Staatsangehörigkeit. Das ist
+# die Spalte, die aus einer Konfessionsstatistik eine Aussage über Einwanderung macht:
+# unter den Mitgliedern orthodoxer Kirchen sind in manchen Kreisen zwei von drei
+# ausländische Staatsangehörige, unter den evangelischen einer von hundert.
+STAAT = ['total', 'german', 'foreign', 'foreign_eu27', 'foreign_other_europe',
+         'foreign_rest_of_world', 'foreign_unclear']
+
 
 def hole(url: str) -> bytes:
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90) as r:
@@ -109,6 +116,11 @@ def block(text: str) -> list[list[str]] | None:
     if i < 0:
         return None
     zeilen = []
+    # In den schmalen Kreuztabellen bricht die letzte Beschriftung über drei Zeilen
+    # um ("Keiner ö.-r." / "Religionsgesellschaft" / "zugehörig    94 420 …"). Eine
+    # Zeile ohne Zahlen ist deshalb kein Tabellenende, sondern der Anfang eines
+    # Namens — vorher brach das Auslesen genau dort ab und lieferte sechs Zeilen.
+    offen = ''
     for roh in text[i + len(marke):].splitlines():
         if not roh.strip():
             if zeilen:
@@ -116,11 +128,27 @@ def block(text: str) -> list[list[str]] | None:
             continue
         teile = re.split(r'\s{2,}', roh.strip())
         if len(teile) < 2:
-            break
+            offen = (offen + ' ' + teile[0]).strip()
+            continue
+        if offen:
+            teile[0] = (offen + ' ' + teile[0]).strip()
+            offen = ''
         zeilen.append(teile)
         if len(zeilen) == len(KATEGORIEN):
             break
     return zeilen if len(zeilen) == len(KATEGORIEN) else None
+
+
+def staatsblock(text: str) -> list[list[str]] | None:
+    """Der Religionsblock aus Tabelle 1.3, Religion mal Staatsangehörigkeitsgruppe.
+
+    Die Tabelle läuft über mehrere Seiten; der Religionsteil steht in der Fortsetzung.
+    Gesucht wird deshalb ab der Fortsetzungsüberschrift, nicht ab der ersten Seite.
+    """
+    i = text.find('Noch: 1.3 Bevölkerung nach Staatsangehörigkeitsgruppen')
+    if i < 0:
+        i = text.find('1.3 Bevölkerung nach Staatsangehörigkeitsgruppen')
+    return None if i < 0 else block(text[i:])
 
 
 def lies(pdf: Path) -> dict | None:
@@ -151,6 +179,29 @@ def lies(pdf: Path) -> dict | None:
     if absolut is None or anteil is None:
         return None
     zeile = {'ags': ags, 'name': (name.group(1).strip() if name else '').strip()}
+    # Die Kreuztabelle ist eine Zugabe: fehlt sie in einem Band, soll das den
+    # Hauptdatensatz nicht kosten. Sie wird dann als fehlend geführt.
+    staat = staatsblock(text)
+    for n, (feld, label) in enumerate(KATEGORIEN):
+        werte = {}
+        if staat is not None:
+            zellen = staat[n]
+            if not zellen[0].startswith(label[:18]):
+                raise SystemExit(f'{pdf.name}: Staatsangehörigkeitstabelle erwartet '
+                                 f'"{label}", gefunden "{zellen[0]}"')
+            # Spalten: Anzahl, %, Deutschland, Ausland insgesamt, EU27,
+            # Sonstiges Europa, Sonstige Welt.
+            roh = zellen[1:]
+            # Spalten der Quelle: Anzahl, %, Deutschland, Ausland insgesamt, EU27,
+            # Sonstiges Europa, Sonstige Welt, Sonstige (ungeklärt, staatenlos, ohne
+            # Angabe). Die letzte fehlte zuerst, und dann ergaben die drei
+            # Herkunftsgruppen zusammen weniger als die Ausländerzahl daneben.
+            if len(roh) >= 8:
+                for schluessel, wert in zip(
+                        STAAT, [roh[0], roh[2], roh[3], roh[4], roh[5], roh[6],
+                                roh[7]]):
+                    werte[schluessel] = zahl(wert)
+        zeile.setdefault('staat', {})[feld] = werte
     for n, (feld, label) in enumerate(KATEGORIEN):
         for quelle, endung in ((absolut, ''), (anteil, '_pct')):
             zellen = quelle[n]
@@ -200,6 +251,20 @@ def main() -> None:
             if len(werte) != 1:
                 raise SystemExit(f'{spalte}/{feld}: {len(werte)} verschiedene Werte in '
                                  f'44 Bänden — die Auslesung stimmt nicht')
+
+    # Die Kreuztabelle gibt es nur je Kreis, kein Landeswert steht in den Bänden.
+    # Er wird deshalb aufsummiert — und weil die Geheimhaltung einzelne Zellen
+    # wegnimmt, wird mitgezählt, wie viele Kreise je Zelle fehlen. Ohne diese Zahl
+    # sähe eine untererfasste Summe aus wie eine vollständige.
+    staat_land = {}
+    for feld, _ in KATEGORIEN:
+        eintrag = {}
+        for schluessel in STAAT:
+            werte = [z['staat'][feld].get(schluessel) for z in kreise]
+            eintrag[schluessel] = sum(w for w in werte if w is not None)
+            eintrag[schluessel + '_districts_suppressed'] = sum(
+                1 for w in werte if w is None)
+        staat_land[feld] = eintrag
 
     referenz = kreise[0]
     land = {feld: referenz[f'land_{feld}'] for feld, _ in KATEGORIEN}
@@ -256,12 +321,33 @@ def main() -> None:
         'attribution': '© Statistisches Landesamt Baden-Württemberg',
         'categories': {f: l for f, l in KATEGORIEN},
         'state_total': land,
+        'by_citizenship': staat_land,
+        'citizenship_columns': {
+            'total': 'Insgesamt', 'german': 'Deutschland',
+            'foreign': 'Ausland insgesamt', 'foreign_eu27': 'EU27-Land',
+            'foreign_other_europe': 'Sonstiges Europa',
+            'foreign_rest_of_world': 'Sonstige Welt',
+            'foreign_unclear': 'Sonstige, ungeklärt oder ohne Angabe'},
+        'what_citizenship_shows': (
+            'Tabelle 1.3 derselben Bände kreuzt die Religionsgesellschaft mit der '
+            'Staatsangehörigkeit. Erst das macht aus einer Konfessionszählung eine '
+            'Aussage über Einwanderung: unter den Mitgliedern orthodoxer Kirchen war '
+            '2011 ein großer Teil ausländische Staatsangehörige, unter den '
+            'evangelischen fast niemand. Gemeint ist der Pass, nicht die Herkunft — '
+            'Eingebürgerte und hier Geborene mit deutschem Pass zählen als deutsch, '
+            'der Anteil der Eingewanderten ist also höher als der hier gezeigte.'),
+        'citizenship_sums_are_district_sums': (
+            'Für die Kreuztabelle nennen die Bände keinen Landeswert; er ist hier die '
+            'Summe der 44 Kreise. Wo die Geheimhaltung eine Zelle genommen hat, fehlt '
+            'sie in der Summe, und wie viele Kreise das je Zelle betrifft, steht '
+            'daneben. Die Summen sind damit Untergrenzen.'),
         'germany_total': bund,
         'count': len(kreise),
         'districts': [
             {'ags': z['ags'], 'name': z['name'],
              **{f: z[f'kreis_{f}'] for f, _ in KATEGORIEN},
-             **{f + '_pct': z[f'kreis_{f}_pct'] for f, _ in KATEGORIEN}}
+             **{f + '_pct': z[f'kreis_{f}_pct'] for f, _ in KATEGORIEN},
+             'by_citizenship': z['staat']}
             for z in kreise],
     }
     args.out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + '\n',
@@ -273,6 +359,15 @@ def main() -> None:
     print(f"{len(kreise)} Kreise gelesen. Baden-Württemberg 2011:")
     for feld, label in KATEGORIEN:
         print(f'  {label:46s} {land[feld]:>10,}'.replace(',', '.'))
+    print('  Ausländische Staatsangehörige je Religionsgesellschaft (Kreissummen):')
+    for feld, label in KATEGORIEN:
+        e = staat_land[feld]
+        if not e['total']:
+            continue
+        print(f"    {label:46s} {100 * e['foreign'] / e['total']:5.1f} %"
+              f"  ({e['foreign']:>9,} von {e['total']:>10,})".replace(',', '.')
+              + (f"  · {e['foreign_districts_suppressed']} Kreise gesperrt"
+                 if e['foreign_districts_suppressed'] else ''))
     oben = sorted(kreise, key=lambda z: z['kreis_orthodox_pct'] or 0, reverse=True)[:5]
     print('  Höchste orthodoxe Anteile: '
           + ', '.join(f"{z['name']} {z['kreis_orthodox_pct']} %" for z in oben))

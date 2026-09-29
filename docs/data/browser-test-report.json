@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 319,
+  "check_count": 326,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -112,6 +112,34 @@
     },
     {
       "name": "the estimated tile is marked apart from the counted ones",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart is on the page",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart has one row per religious society",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart shows the orthodox share",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart shows the protestant share for contrast",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart leaves the suppressed rows empty",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart says the passport is not the origin",
+      "passed": true
+    },
+    {
+      "name": "the citizenship chart names its own table",
       "passed": true
     },
     {
