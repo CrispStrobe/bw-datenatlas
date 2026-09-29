@@ -12,6 +12,10 @@ const MUNIREL=window.ATLAS_MUNI_RELIGION||null;
 // gibt: der Zensus 2011 wies die öffentlich-rechtlichen Religionsgesellschaften noch
 // einzeln aus, der Zensus 2022 kennt nur noch zwei Kirchen und einen Rest.
 const Z2011=window.ATLAS_ZENSUS2011_RELIGION||null;
+// Zwei Zählungen desselben Merkmals, elf Jahre auseinander, auf demselben
+// Gebietsstand. Die Differenz ist die einzige Aussage über Veränderung, die
+// dieser Atlas auf Gemeindeebene machen kann, ohne zu modellieren.
+const RELCHG=window.ATLAS_RELIGION_CHANGE||null;
 const Z2011_KREIS=Z2011?Object.fromEntries(Z2011.districts.map(d=>[d.ags,d])):{};
 let GRID=null,gridLaeuft=false;
 const AGE=window.ATLAS_AGE||null;
@@ -153,6 +157,16 @@ const layers={
  // Was der Zensus 2022 nicht mehr trennt. Die jüdischen Gemeinden fehlen als Ebene,
  // und zwar aus einem Datengrund: von 44 Kreisen sind nur drei nicht geheimgehalten.
  // Eine Karte aus drei Werten wäre keine Karte. Die Zahlen stehen im Kreisprofil.
+ // Die einzige Veränderungsaussage, die dieser Atlas auf Gemeindeebene machen
+ // kann, ohne zu modellieren: zwei Zählungen desselben Merkmals.
+ //
+ // Die Farbskala läuft hier umgekehrt. Alle Werte sind negativ, und in der
+ // Voreinstellung wäre der dunkelste Ton der größte Wert, also der
+ // SCHWÄCHSTE Rückgang — die Karte hätte das Gegenteil dessen gezeigt, was
+ // sie zeigen soll. Dunkel heißt jetzt: viel verloren.
+ change_both_churches:{title:'Beide Kirchen · Veränderung 2011 bis 2022',badge:'Zwei Vollerhebungen · eigene Rechnung',date:'Zensus 2011 und Zensus 2022 · 1.101 Gemeinden',sourceInfo:{title:'Bevölkerung nach Religionszugehörigkeit im Zensus 2022 und im Zensus 2011',publisher:'Statistische Ämter des Bundes und der Länder',publication_period:'2024',url:'https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/religionszugehoerigkeit_zenus2022_und_zensus2011_bundesland.xlsx',limitation:'Eigenständige Berechnung aus zwei geheimgehaltenen Zählungen. Die Differenz trägt die Unschärfe beider Jahre.'},relChange:'both_churches_change',palette:['#113f55','#236a7b','#4d929f','#83b9c4','#b5d8dd','#deedf0'],thresholds:[-15,-13.5,-12.5,-11.5,-10],unit:'points',note:'Veränderung des Anteils der Bevölkerung, der einer der beiden großen Kirchen angehört, zwischen dem Zensus 2011 und dem Zensus 2022 — in Prozentpunkten. Beide Zahlen sind Zählungen desselben Merkmals, die eingetragene Zugehörigkeit zu einer Religionsgesellschaft des öffentlichen Rechts, und die Statistischen Ämter haben sie in einer Veröffentlichung auf denselben Gebietsstand gebracht. Landesweit 69,1 Prozent 2011 und 55,8 Prozent 2022, also 13,3 Punkte in elf Jahren. Das ist der größte Einzelbefund, den die beiden Zählungen zusammen hergeben. Warum der Anteil gefallen ist, sagt die Zahl nicht: darin stecken Kirchenaustritte, Sterbefälle einer im Schnitt älteren Mitgliedschaft und der Zuzug von Menschen, die nie Mitglied waren. Der Zensus trennt das nicht, und diese Karte tut es auch nicht. Und sie ist eine eigenständige Berechnung: beide Jahre sind nach dem Cell-Key-Verfahren überlagert, die Differenz zweier überlagerter Werte trägt die Unschärfe beider. Für kleine Gemeinden ist sie gröber, als die Nachkommastelle aussehen lässt.'},
+ change_catholic:{title:'Römisch-katholische Kirche · Veränderung 2011 bis 2022',badge:'Zwei Vollerhebungen · eigene Rechnung',date:'Zensus 2011 und Zensus 2022 · 1.101 Gemeinden',sourceInfo:{title:'Bevölkerung nach Religionszugehörigkeit im Zensus 2022 und im Zensus 2011',publisher:'Statistische Ämter des Bundes und der Länder',publication_period:'2024',url:'https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/religionszugehoerigkeit_zenus2022_und_zensus2011_bundesland.xlsx',limitation:'Eigenständige Berechnung aus zwei geheimgehaltenen Zählungen. Die Differenz trägt die Unschärfe beider Jahre.'},relChange:'catholic_change',palette:['#113f55','#236a7b','#4d929f','#83b9c4','#b5d8dd','#deedf0'],thresholds:[-11,-9.5,-7,-4,-2.5],unit:'points',note:'Veränderung des Anteils der Bevölkerung, der der römisch-katholischen Kirche angehört, zwischen dem Zensus 2011 und dem Zensus 2022 — in Prozentpunkten. Beide Zahlen sind Zählungen desselben Merkmals, die eingetragene Zugehörigkeit zu einer Religionsgesellschaft des öffentlichen Rechts, und die Statistischen Ämter haben sie in einer Veröffentlichung auf denselben Gebietsstand gebracht. Landesweit 36,4 Prozent 2011 und 29,9 Prozent 2022, also 6,5 Punkte in elf Jahren. Der Rückgang ist dort am größten, wo der Anteil am höchsten war — im katholischen Oberschwaben und am Hochrhein. Warum der Anteil gefallen ist, sagt die Zahl nicht: darin stecken Kirchenaustritte, Sterbefälle einer im Schnitt älteren Mitgliedschaft und der Zuzug von Menschen, die nie Mitglied waren. Der Zensus trennt das nicht, und diese Karte tut es auch nicht. Und sie ist eine eigenständige Berechnung: beide Jahre sind nach dem Cell-Key-Verfahren überlagert, die Differenz zweier überlagerter Werte trägt die Unschärfe beider. Für kleine Gemeinden ist sie gröber, als die Nachkommastelle aussehen lässt.'},
+ change_protestant:{title:'Evangelische Kirche · Veränderung 2011 bis 2022',badge:'Zwei Vollerhebungen · eigene Rechnung',date:'Zensus 2011 und Zensus 2022 · 1.101 Gemeinden',sourceInfo:{title:'Bevölkerung nach Religionszugehörigkeit im Zensus 2022 und im Zensus 2011',publisher:'Statistische Ämter des Bundes und der Länder',publication_period:'2024',url:'https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/religionszugehoerigkeit_zenus2022_und_zensus2011_bundesland.xlsx',limitation:'Eigenständige Berechnung aus zwei geheimgehaltenen Zählungen. Die Differenz trägt die Unschärfe beider Jahre.'},relChange:'evangelical_change',palette:['#113f55','#236a7b','#4d929f','#83b9c4','#b5d8dd','#deedf0'],thresholds:[-10,-8.5,-5.5,-3.5,-1.5],unit:'points',note:'Veränderung des Anteils der Bevölkerung, der der evangelischen Kirche angehört, zwischen dem Zensus 2011 und dem Zensus 2022 — in Prozentpunkten. Beide Zahlen sind Zählungen desselben Merkmals, die eingetragene Zugehörigkeit zu einer Religionsgesellschaft des öffentlichen Rechts, und die Statistischen Ämter haben sie in einer Veröffentlichung auf denselben Gebietsstand gebracht. Landesweit 32,7 Prozent 2011 und 25,9 Prozent 2022, also 6,8 Punkte in elf Jahren. Gemeint ist die Evangelische Kirche in Deutschland ohne die Freikirchen. Warum der Anteil gefallen ist, sagt die Zahl nicht: darin stecken Kirchenaustritte, Sterbefälle einer im Schnitt älteren Mitgliedschaft und der Zuzug von Menschen, die nie Mitglied waren. Der Zensus trennt das nicht, und diese Karte tut es auch nicht. Und sie ist eine eigenständige Berechnung: beide Jahre sind nach dem Cell-Key-Verfahren überlagert, die Differenz zweier überlagerter Werte trägt die Unschärfe beider. Für kleine Gemeinden ist sie gröber, als die Nachkommastelle aussehen lässt.'},
  z2011_orthodox:{title:'Orthodoxe Kirchen · Anteil je Kreis (Zensus 2011)',badge:'Vollerhebung · 2011',date:'Zensus 2011 · Stichtag 09.05.2011 · 44 Kreise',sourceInfo:{title:'Zensus 2011 – Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2014',url:'https://www.statistischebibliothek.de/mir/receive/BWSerie_mods_00000583',limitation:'Gezählt ist die eingetragene Mitgliedschaft in einer Körperschaft des öffentlichen Rechts, nicht das Bekenntnis — und der Stichtag liegt fünfzehn Jahre zurück.'},z2011:'orthodox_pct',thresholds:[1.1,1.4,1.8,2.4,2.9],unit:'percent',note:'Anteil der Mitglieder orthodoxer Kirchen an der Bevölkerung des Kreises, Zensus 2011. Dies ist die einzige Zählung, die es für sie gibt: der Zensus 2022 hat die Religionsgesellschaften des öffentlichen Rechts nicht mehr einzeln ausgewiesen, sondern alles außer den beiden großen Kirchen in eine Restkategorie gelegt. Baden-Württemberg hatte 2011 mit 2,1 Prozent den höchsten orthodoxen Bevölkerungsanteil aller Länder, der Bund lag bei 1,3 Prozent; die Spitze ist Stuttgart mit 5,3 Prozent. Drei Einschränkungen gehören an jede dieser Zahlen. Gezählt ist die eingetragene Mitgliedschaft in einer Körperschaft des öffentlichen Rechts, nicht wer sich orthodox versteht — welche Kirche diesen Status hat, ist von Kirche zu Kirche und von Land zu Land verschieden, und die syrisch-orthodoxe Kirche etwa erscheint nur, wo sie ihn hat. Und der Stichtag ist der 9. Mai 2011: die Zuwanderung aus Rumänien, Bulgarien, Syrien, dem Irak und der Ukraine liegt danach. Die Karte ist damit eine Untergrenze, keine Gegenwart. Und eine Kategorie fehlt hier ganz: keine islamische Gemeinschaft hat in Baden-Württemberg Körperschaftsstatus, Musliminnen und Muslime stehen deshalb in der Zeile „Keiner ö.-r. Religionsgesellschaft zugehörig“ — gemeinsam mit allen Konfessionslosen.'},
  z2011_protestant_free:{title:'Evangelische Freikirchen · Anteil je Kreis (Zensus 2011)',badge:'Vollerhebung · 2011',date:'Zensus 2011 · Stichtag 09.05.2011 · 44 Kreise',sourceInfo:{title:'Zensus 2011 – Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände',publisher:'Statistisches Landesamt Baden-Württemberg',publication_period:'2014',url:'https://www.statistischebibliothek.de/mir/receive/BWSerie_mods_00000583',limitation:'Gezählt ist die eingetragene Mitgliedschaft in einer Körperschaft des öffentlichen Rechts, nicht das Bekenntnis — und der Stichtag liegt fünfzehn Jahre zurück.'},z2011:'protestant_free_pct',thresholds:[0.7,0.9,1.1,1.3,1.7],unit:'percent',note:'Anteil der Mitglieder evangelischer Freikirchen an der Bevölkerung des Kreises, Zensus 2011 — die zweite Gruppe, die der Zensus 2022 in der Restkategorie verschwinden lässt. Landesweit 1,1 Prozent, also gut 119.000 Menschen. Die Ebene steht hier, weil Freikirchen in den Befragungen dieses Atlas mehrfach vorkommen: beim KONID-Survey stimmen ihnen zugerechnete Befragte der Aussage, die eigene Religion habe im Konfliktfall Vorrang vor der Verfassung, häufiger zu als alle anderen Gruppen. Wie groß die Gruppe ist, von der dort die Rede ist, sagt diese Karte.'},
  // Dritte Ebene auf derselben Deutschlandkarte, und die einzige, die keine
@@ -590,7 +604,17 @@ function renderDetail(){
   const kirchenMetrik=kirche?metric(t('Kirchenmitgliedschaft · Zensus 2022'),
     pct(kirche.catholic_pct)+' / '+pct(kirche.evangelical_pct),
     esc(t('römisch-katholisch / evangelisch · gezählt, nicht geschätzt'))):'';
-  $('detail-content').innerHTML=metric('Einwohnerzahl · 30.06.2024',integer(d.population_total),esc(d.district_name))+metric('Männlich / weiblich',`${integer(d.population_male)} / ${integer(d.population_female)}`,'Veröffentlichte Kategorien der Bevölkerungsstatistik.')+estimateMetric+boundMetric+kirchenMetrik+demMetric+`<div class="notice${isEstimate()?' warning':''}">${isEstimate()?'<strong>Modellrechnung, keine Messung.</strong> Der Kreiswert wird verteilt: der türkische und bosnische Anteil nach gemessenem Siedlungsmuster, der Rest nach der Einwanderungsgeschichte der Gemeinde. ':''}${crosswalk?'Amtlicher Gemeindeschlüssel: '+esc(crosswalk.ags):'Geografische Zuordnung noch nicht bestätigt.'} Keine Ableitung der Religion aus dem Gemeindenamen oder der Einwohnerzahl.</div>`+einrichtungsListe(crosswalk?crosswalk.ags:d.official_municipality_code,d.municipality_name)+`<p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 5, S. '+d.source_page+' ↗')}</p>`;
+  // Und wie viel das gegenüber 2011 ist. Der Landeswert allein — minus 13,3 Punkte —
+  // verdeckt, wie unterschiedlich die Gemeinden davon getroffen sind.
+  const wandel=RELCHG?RELCHG.municipalities[agsFuerGemeinde(d.geo_id)]:null;
+  const wandelMetrik=wandel?metric(t('Veränderung seit dem Zensus 2011'),
+    (wandel.both_churches_change>0?'+':'')+pf.format(wandel.both_churches_change)
+      +' '+t('Punkte'),
+    esc(tf('Beide Kirchen zusammen: {0} % 2011, {1} % 2022. Eigenständige Berechnung '
+      +'aus zwei geheimgehaltenen Zählungen; warum der Anteil gefallen ist, sagt sie '
+      +'nicht.',pf.format(wandel.both_churches_pct_2011),
+      pf.format(wandel.both_churches_pct_2022)))):'';
+  $('detail-content').innerHTML=metric('Einwohnerzahl · 30.06.2024',integer(d.population_total),esc(d.district_name))+metric('Männlich / weiblich',`${integer(d.population_male)} / ${integer(d.population_female)}`,'Veröffentlichte Kategorien der Bevölkerungsstatistik.')+estimateMetric+boundMetric+kirchenMetrik+wandelMetrik+demMetric+`<div class="notice${isEstimate()?' warning':''}">${isEstimate()?'<strong>Modellrechnung, keine Messung.</strong> Der Kreiswert wird verteilt: der türkische und bosnische Anteil nach gemessenem Siedlungsmuster, der Rest nach der Einwanderungsgeschichte der Gemeinde. ':''}${crosswalk?'Amtlicher Gemeindeschlüssel: '+esc(crosswalk.ags):'Geografische Zuordnung noch nicht bestätigt.'} Keine Ableitung der Religion aus dem Gemeindenamen oder der Einwohnerzahl.</div>`+einrichtungsListe(crosswalk?crosswalk.ags:d.official_municipality_code,d.municipality_name)+`<p class="source-note">${sourceLink(d.source_id,'Landesamt · Tabelle 5, S. '+d.source_page+' ↗')}</p>`;
   bindeEinrichtungsListe();
  }
 }
@@ -672,11 +696,25 @@ function zoomAufAuswahl(){
 }
 function estimateDistrict(id){return EST?EST.districts[id]:null;}
 function estimateMunicipality(geoId){return EST?EST.municipalities[geoId]:null;}
+// Der amtliche Gemeindeschlüssel steht bei 1.100 von 1.101 Gemeinden nicht am
+// Gemeindesatz, sondern in der Geometriezuordnung. Einmal nachschlagen, dann
+// gemerkt — sonst liefe für jede Fläche jeder Kartenaufbaus eine Suche über
+// tausend Einträge.
+let AGS_CACHE=null;
+function agsFuerGemeinde(geoId){
+ if(!geoId||!G||!G.crosswalk)return null;
+ if(!AGS_CACHE)AGS_CACHE=Object.fromEntries(G.crosswalk.map(c=>[c.geo_id,c.ags]));
+ return AGS_CACHE[geoId]||null;
+}
 function valueForFeature(f){const p=f.properties;
  const eu=layers[state.layer].euMeasure;if(eu)return p[eu]??null;
  const de=layers[state.layer].deMeasure;if(de)return p[de]??null;
  const g=layers[state.layer].grid;
  if(g)return p[g]??null;
+ const rc=layers[state.layer].relChange;
+ if(rc){const ags=agsFuerGemeinde(p.statistical_geo_id);
+  const r=ags&&RELCHG?RELCHG.municipalities[ags]:null;
+  return r?r[rc]??null:null;}
  const z=layers[state.layer].z2011;
  if(z){const r=Z2011_KREIS[p.id];return r?r[z]??null:null;}
  const rel=layers[state.layer].muniReligion;
@@ -1273,7 +1311,7 @@ function zeichneUmriss(geometry,klasse){
  const municipalLayer=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal'||state.layer==='muni_under25'||state.layer==='municipal_foreign_share'
   // Die Kirchenebenen liegen auf derselben Gemeindegeometrie; ohne diese Zeile
   // zeichnete die Karte 44 Kreise und suchte darin nach Gemeindeschlüsseln.
-  ||!!layers[state.layer].muniReligion;const pointLayer=state.layer==='institutions';
+  ||!!layers[state.layer].muniReligion||!!layers[state.layer].relChange;const pointLayer=state.layer==='institutions';
  const regionLayer=state.layer.startsWith('region_');
  const euLayer=!!layers[state.layer].euMeasure;
  const deLayer=!!layers[state.layer].deMeasure;

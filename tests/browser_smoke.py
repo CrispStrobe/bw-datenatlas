@@ -219,6 +219,28 @@ with sync_playwright() as pw:
     check('resetting the place puts the map back',
           page.get_attribute('#map','viewBox')=='0 0 760 700')
 
+    # Die Rückgangskarte. Zwei Dinge können daran schiefgehen: die Zuordnung der
+    # Gemeindeschlüssel (dann ist die Karte einfarbig) und die Farbrichtung (dann
+    # zeigt der dunkelste Ton den schwächsten Verlust).
+    page.select_option('#layer','change_both_churches')
+    page.wait_for_function("document.querySelectorAll("
+                           "'#map-features path.map-feature').length>1000")
+    check('the change layer draws the municipalities',
+          page.locator('.map-feature').count()>1000)
+    check('the change layer finds a value for nearly every municipality',
+          page.eval_on_selector_all('.map-feature',
+            'e=>e.filter(x=>x.getAttribute("fill").indexOf("no-data")<0).length')>1090)
+    farben=page.eval_on_selector_all('#map-legend .legend-swatch',
+        'e=>e.map(x=>x.style.background)')
+    check('the strongest decline is the darkest colour, not the lightest',
+          len(farben)==6 and farben[0]=='rgb(17, 63, 85)'
+          and farben[-1]=='rgb(222, 237, 240)')
+    hin=page.locator('#map-note').inner_text()
+    check('the change layer says it is an own calculation',
+          'eigenständige Berechnung' in hin or 'own calculation' in hin)
+    check('the change layer says what it does not explain',
+          'Kirchenaustritte' in hin or 'leaving the church' in hin)
+
     # Die orthodoxen Kirchen sind die größte eingewanderte christliche Gruppe des
     # Landes und im Zensus 2022 unsichtbar. Dass die Ebene da ist, ist das eine; dass
     # an ihr steht, was sie nicht ist, das andere.

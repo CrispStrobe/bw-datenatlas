@@ -362,4 +362,32 @@ class DataTests(unittest.TestCase):
         self.assertEqual(rang, sorted(rang))
         self.assertEqual(d['blocks'][0]['scope'], 'Baden-Württemberg')
 
+    def test_religion_change_joins_and_adds_up(self):
+        """Zwei Zählungen, elf Jahre auseinander, auf demselben Gebietsstand.
+
+        Die Aussage steht und fällt damit, dass beide Jahre dieselben Gemeinden
+        meinen. Beide Blätter derselben Veröffentlichung tragen dieselben 1.101
+        Schlüssel; hier wird geprüft, dass die Umrechnung vom Regionalschlüssel auf
+        den amtlichen Gemeindeschlüssel jede davon trifft.
+        """
+        d = json.loads((ROOT/'docs/data/religion-change-2011-2022.json')
+                       .read_text(encoding='utf-8'))
+        m = d['municipalities']
+        self.assertEqual(len(m), 1101)
+        g = json.loads((ROOT/'docs/data/geometry.json').read_text(encoding='utf-8'))
+        schluessel = {c['ags'] for c in g['crosswalk']}
+        self.assertEqual(schluessel - set(m), set())
+        for ags, z in m.items():
+            self.assertEqual(ags, z['regional_key'][:5] + z['regional_key'][-3:])
+            self.assertAlmostEqual(
+                z['both_churches_change'],
+                z['both_churches_pct_2022'] - z['both_churches_pct_2011'], places=0)
+        # Der Landesbefund, an dem die Karte hängt.
+        st = d['state_total']
+        self.assertAlmostEqual(st['both_churches_pct_2022'], 55.8, places=1)
+        self.assertLess(st['both_churches_change'], -12)
+        # Und die Kennzeichnung, die die Statistischen Ämter verlangen.
+        self.assertIn('Eigenständige Berechnung', d['own_calculation'])
+        self.assertIn('Kirchenaustritte', d['what_it_does_not_say'])
+
 if __name__=='__main__': unittest.main(verbosity=2)
