@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 244,
+  "check_count": 247,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -776,6 +776,18 @@
     },
     {
       "name": "model, ceiling and counted church figures share one profile",
+      "passed": true
+    },
+    {
+      "name": "religious education: the figure for Baden-Württemberg",
+      "passed": true
+    },
+    {
+      "name": "religious education: no offer is not the same as no figure",
+      "passed": true
+    },
+    {
+      "name": "religious education: the reach is shown where the denominator exists",
       "passed": true
     },
     {

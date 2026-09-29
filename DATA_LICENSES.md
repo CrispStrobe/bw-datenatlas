@@ -175,6 +175,13 @@ unabhängigen Prüfung und werden zitiert, nicht weiterverteilt.
 
 Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezogen. Ihre eigenen Lizenzen und Nutzungsbedingungen gelten weiterhin. Die ausgelieferte Website lädt keine Bibliotheken, Kartenkacheln oder Schriftarten von einem fremden CDN nach.
 
+## Islamischer Religionsunterricht je Bundesland
+
+- **Zahlen:** Auskünfte der Kultus- und Bildungsministerien der Länder auf Anfrage des [Mediendienst Integration](https://mediendienst-integration.de/bevoelkerung/muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/), Stand 17.09.2026, abgerufen am 29.09.2026. Die Ministerien sind die Primärquelle, der Mediendienst führt ihre Antworten zusammen.
+- **Keine amtliche Sammelstatistik.** Die Länder erfassen und melden unterschiedlich: Bremen und Hamburg unterrichten konfessionsübergreifend und weisen keine islamische Teilnahme gesondert aus, Berlin und Schleswig-Holstein melden noch 2024/25, Bayerns Angabe ist gerundet. Nur sieben Länder erfassen überhaupt, wie viele muslimische Schülerinnen und Schüler es im Land gibt.
+- **Die Probe:** Die Summe der vierzehn Länderwerte muss die veröffentlichte Gesamtzahl von 84.356 ergeben. Der Aufbau bricht ab, wenn sie es nicht tut — dann ist eine Zahl falsch übernommen oder die Quelle hat sich geändert.
+- **Die amtliche Reihe daneben:** Die Kultusministerkonferenz veröffentlicht „Auswertung Religionsunterricht" **zweijährlich**, zuletzt für 2023/24 (erschienen 15.10.2024), mit maschinenlesbarer Tabelle je Land, Schulart und Unterrichtsart. Sie ist die amtliche Quelle, hinkt aber zwei Jahre hinterher; ein Stand 2024/25 existiert wegen des Zweijahresrhythmus nicht, 2025/26 ist der nächste fällige. Für Baden-Württemberg weist sie für den Primar- und Sekundarbereich I aus: 4.190 (2015/16), 6.092 (2017/18), 5.885 (2019/20), 6.459 (2021/22), 9.750 (2023/24).
+
 ## Zensus 2022, Religionszugehörigkeit je Gemeinde
 
 - **Quelle:** Statistische Ämter des Bundes und der Länder, Zensus 2022, Sonderauswertung „Bevölkerung nach Religionszugehörigkeit, Anteil je Gemeinde", erschienen 04.12.2024. Dieselbe Datei liefert die Obergrenze, gegen die die Modellrechnung geprüft wird.

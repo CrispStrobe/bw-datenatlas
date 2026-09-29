@@ -579,6 +579,22 @@ with sync_playwright() as pw:
           'Modellrechnung' in modell and 'Obergrenze aus dem Zensus 2022' in modell
           and 'Kirchenmitgliedschaft' in modell)
 
+    # Der Religionsunterricht ist die einzige gezählte Größe auf der Deutschlandkarte.
+    # Drei Zustände, die nicht dasselbe sind: eine Zahl, "kein Angebot" und "keine
+    # gesonderte Angabe" — Letzteres ist eine Aussage über die Erhebung, kein Loch.
+    page.select_option('#layer','de_religious_education'); page.wait_for_timeout(1100)
+    etikett=lambda c:page.locator(f'#map-features path[data-id="{c}"]').get_attribute('aria-label')
+    check('religious education: the figure for Baden-Württemberg',
+          '11.827' in etikett('DE08') and '2025/26' in etikett('DE08'))
+    check('religious education: no offer is not the same as no figure',
+          'kein Angebot' in etikett('DE14')
+          and 'keine gesonderte Angabe' in etikett('DE04+DE02'))
+    page.locator('#map-features path[data-id="DE05"]').dispatch_event('click')
+    page.wait_for_timeout(600)
+    nrw=page.locator('#detail-content').inner_text()
+    check('religious education: the reach is shown where the denominator exists',
+          '7,2 %' in nrw or '7,0 %' in nrw or 'der muslimischen Schülerschaft' in nrw)
+
     # Die Ebene zwischen innen und außen: Baden-Württemberg unter den Ländern.
     # Die Zahlen lagen längst im Projekt, gezeichnet wurden sie nie.
     page.select_option('#layer','de_muslim_share'); page.wait_for_timeout(900)

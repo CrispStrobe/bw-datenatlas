@@ -75,6 +75,15 @@ def sammeln(port: int) -> list[str]:
                 page.wait_for_timeout(400)
             except Exception:
                 pass
+        # Baden-Württemberg auf der Unterrichtsebene: nur dort erscheint der Hinweis,
+        # dass der Nenner nicht erfasst ist.
+        try:
+            page.select_option('#layer', 'de_religious_education')
+            page.wait_for_timeout(500)
+            page.locator('#map-features path[data-id="DE08"]').dispatch_event('click')
+            page.wait_for_timeout(400)
+        except Exception:
+            pass
         try:
             page.select_option('#layer', 'de_muslim_share')
             page.wait_for_timeout(500)

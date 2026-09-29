@@ -134,6 +134,11 @@ const layers={
  muni_catholic:{title:'Römisch-katholische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'catholic_pct',thresholds:[12,20,30,42,55],unit:'percent',note:'Anteil der Mitglieder der römisch-katholischen Kirche an der Bevölkerung, aus dem Zensus 2022. Dies ist die ausgeprägteste religiöse Struktur, die Baden-Württemberg hat: das katholische Oberschwaben und der Süden gegen das evangelische Altwürttemberg. Landesweit 29,9 Prozent. Gezählt, nicht geschätzt — anders als die muslimische Bevölkerung, für die es auf Gemeindeebene keine Erhebung gibt. Einzelwerte sind nach dem Cell-Key-Verfahren geheimgehalten und damit bewusst leicht überlagert.'},
  muni_protestant:{title:'Evangelische Kirche · Anteil je Gemeinde',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'evangelical_pct',thresholds:[12,20,28,36,46],unit:'percent',note:'Anteil der Mitglieder der evangelischen Kirche an der Bevölkerung, aus dem Zensus 2022. Das Gegenbild zur Ebene daneben, und zwar fast spiegelbildlich: die beiden Karten zusammen zeigen die Konfessionsgrenze von 1555, die in der Siedlungsstruktur bis heute sichtbar ist. Landesweit 25,9 Prozent; beide Kirchen zusammen 55,8 Prozent.'},
  muni_no_church:{title:'Sonstige, keine, ohne Angabe · Anteil je Gemeinde',badge:'Vollerhebung · Obergrenze des Modells',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'zensus2022',muniReligion:'other_none_unstated_pct',thresholds:[25,33,40,47,55],unit:'percent',note:'Die Restkategorie des Zensus: alle, die weder der römisch-katholischen noch der evangelischen Kirche angehören. Das sind Konfessionslose, alle anderen Religionen und alle fehlenden Angaben in einer einzigen Zahl. Diese Ebene ist deshalb WEDER ein Anteil Konfessionsloser NOCH ein Muslimanteil, und sie darf nicht als einer gelesen werden. Ihr Wert für diesen Atlas ist ein anderer: weil muslimische Einwohnerinnen und Einwohner zwangsläufig hierunter fallen, kann der modellierte Muslimanteil einer Gemeinde nicht über diesem Wert liegen. Die Ebene macht damit sichtbar, wogegen die Modellrechnung bisher nur rechnerisch geprüft wurde. Landesweit 44,2 Prozent.'},
+ // Dritte Ebene auf derselben Deutschlandkarte, und die einzige, die keine
+ // Schätzung ist: die Länder zählen ihre Teilnehmer. Sie melden nur nicht
+ // dasselbe — deshalb steht an jeder Fläche, aus welchem Schuljahr ihr Wert
+ // stammt und nach welchem Modell dort unterrichtet wird.
+ de_religious_education:{title:'Islamischer Religionsunterricht · Schülerinnen und Schüler je Bundesland',badge:'Angaben der Kultusministerien',date:'Schuljahr 2025/26 · 84.356 bundesweit',deMeasure:'education_pupils',thresholds:[1,1000,4000,12000,25000],unit:'persons',sourceInfo:{title:'Islamischer Religionsunterricht in Deutschland',publisher:'Mediendienst Integration, nach Auskünften der Kultus- und Bildungsministerien',publication_period:'2026',url:'https://mediendienst-integration.de/bevoelkerung/muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/',limitation:'Keine amtliche Sammelstatistik; die Länder erfassen und melden unterschiedlich.'},note:'Zahl der Schülerinnen und Schüler im islamischen Religionsunterricht an allgemeinbildenden Schulen. In Baden-Württemberg 11.827 im Schuljahr 2025/26, bekenntnisorientiert und von der Stiftung Sunnitischer Schulrat verantwortet — nach Nordrhein-Westfalen und Bayern der dritthöchste Wert. Die Karte zeigt allerdings zu einem guten Teil die Größe der Länder: die aussagekräftigere Zahl wäre der Anteil der erreichten muslimischen Schülerschaft, und den erfassen nur sieben Länder überhaupt — wo er vorliegt, steht er im Profil. Keine amtliche Sammelstatistik: die Ministerien antworten einzeln. Bremen und Hamburg unterrichten konfessionsübergreifend und weisen keine islamische Teilnahme gesondert aus; in den fünf östlichen Ländern gibt es kein Angebot. Berlin und Schleswig-Holstein melden noch 2024/25, Bayerns Angabe ist gerundet. Die Summe der Länderwerte ergibt genau die veröffentlichte Gesamtzahl von 84.356 — daran wird jeder Abruf geprüft.'},
  de_muslim_share:{title:'Muslimische Religionsangehörige · Anteil je Bundesland',badge:'BAMF · Näherungswerte',date:'Bezugsjahr 2025 · 14 ausgewiesene Länder',source:'bamf_fb55',thresholds:[2,4,6,9,12],unit:'percent',deMeasure:'share_mid',note:'Näherungswerte über den Anteil muslimischer Religionsangehöriger mit Migrationshintergrund aus islamisch geprägten Herkunftsländern an der Bevölkerung des jeweiligen Bundeslandes, aus Tabelle 3 und Abbildung 4 des Forschungsberichts 55. Gefärbt wird nach der Mitte der veröffentlichten Spanne, genannt wird die Spanne. Baden-Württemberg liegt mit 10,1 bis 10,7 Prozent an vierter Stelle von vierzehn, nach Bremen und Hamburg, Hessen und Nordrhein-Westfalen — in absoluten Zahlen an zweiter Stelle hinter Nordrhein-Westfalen. Bremen und Hamburg sowie Brandenburg und Mecklenburg-Vorpommern weist der Bericht nur gemeinsam aus, weil sie bei der Stichprobenziehung zusammengefasst wurden; die Karte fasst sie deshalb ebenso zusammen, statt eine Genauigkeit vorzutäuschen, die die Quelle nicht hat.'},
  de_muslim_persons:{title:'Muslimische Religionsangehörige · Zahl je Bundesland',badge:'BAMF · Näherungswerte',date:'Bezugsjahr 2025 · 14 ausgewiesene Länder',source:'bamf_fb55',thresholds:[100000,200000,400000,800000,1500000],unit:'persons',deMeasure:'muslim_mid',note:'Dieselbe Quelle wie die Ebene daneben, in absoluten Zahlen statt als Anteil. Die beiden Karten sehen verschieden aus, und der Unterschied ist die Einwohnerzahl: Bremen und Hamburg haben den höchsten Anteil und eine der kleinsten Zahlen, Bayern hat fast so viele muslimische Religionsangehörige wie Baden-Württemberg bei weit geringerem Anteil. Näherungswerte mit veröffentlichter Spanne, keine Zählung.'},
  eu_foreign_born:{title:'Im Ausland Geborene · EU-Regionen (NUTS 2)',badge:'Eurostat · Arbeitskräfteerhebung',date:'Eurostat {0} · {1} Regionen in Europa',dateKey:'foreign_born_pct',source:'eurostat_lfs',thresholds:[3,8,13,18,25],unit:'percent',euMeasure:'foreign_born_pct',note:'Anteil der im Ausland Geborenen an der Bevölkerung von 15 bis 64 Jahren in Privathaushalten. Gezählt wird der Geburtsort, nicht der Pass: Eingebürgerte zählen hier mit, im Ausländeranteil der übrigen Ebenen nicht. Stichprobe der Arbeitskräfteerhebung; für kleine Regionen entsprechend unsicher.'},
@@ -222,6 +227,19 @@ function deProfile(id){
  // Fußnote: sonst liest jemand den Wert als den von Hamburg allein.
  if(p.combined){
   html+=`<div class="detail-note"><span>${esc(t('Diese beiden Länder wurden bei der Stichprobenziehung zusammengefasst und können nur gemeinsam ausgewiesen werden. Der Wert gilt für beide zusammen, nicht für eines von ihnen.'))}</span></div>`;
+ }
+ // Der Religionsunterricht ist die einzige gezählte Größe auf dieser Karte und
+ // steht deshalb in jedem Landesprofil, nicht nur auf seiner eigenen Ebene.
+ if(p.education_pupils!==null&&p.education_pupils!==undefined){
+  html+=metric(t('Islamischer Religionsunterricht'),
+    p.education_pupils?integer(p.education_pupils):t('kein Angebot'),
+    esc((p.education_school_year?t('Schuljahr')+' '+p.education_school_year+' · ':'')
+        +(p.education_reach_pct!==null&&p.education_reach_pct!==undefined
+          ?tf('{0} der muslimischen Schülerschaft',pct(p.education_reach_pct))
+          :t('Nenner nicht erfasst'))));
+ }
+ if(p.education_note){
+  html+=`<div class="detail-note"><span>${esc(p.education_note)}</span></div>`;
  }
  html+=`<div class="detail-note"><span>${esc(GERMANY.caveat)}</span></div>`;
  $('detail-content').innerHTML=html;
@@ -595,7 +613,16 @@ function euEbenenVerdrahten(){
 }
 function pathFor(g){const ring=r=>r.map((p,i)=>{const [x,y]=projection(p);return (i?'L':'M')+x.toFixed(2)+','+y.toFixed(2);}).join('')+'Z';if(g.type==='Polygon')return g.coordinates.map(ring).join('');if(g.type==='MultiPolygon')return g.coordinates.map(p=>p.map(ring).join('')).join('');return '';}
 function colorFor(v){const l=layers[state.layer];if(v===null)return 'url(#no-data)';return (l.palette||palette)[M.bucket(v,l.thresholds)]??'url(#no-data)';}
-function mapValueText(f){if(state.layer==='religion_state')return t('BW gesamt: 10,1–10,7 % · Näherungswert 2025');const v=valueForFeature(f);if(v===null)return t('Kein zugeordneter statistischer Wert');
+function mapValueText(f){
+ // Vor der Null-Prüfung: "keine gesonderte Angabe" ist hier eine Aussage über die
+ // Erhebung und nicht ein fehlender Wert. Bremen und Hamburg unterrichten
+ // konfessionsübergreifend und zählen die islamische Teilnahme nicht gesondert —
+ // das ist etwas anderes als "kein Wert zugeordnet".
+ if(state.layer==='de_religious_education'){const q=f.properties;
+  return q.education_pupils===null||q.education_pupils===undefined?t('keine gesonderte Angabe')
+   :q.education_pupils===0?t('kein Angebot')
+   :tf('{0} Schülerinnen und Schüler · {1}',integer(q.education_pupils),q.education_school_year);}
+ if(state.layer==='religion_state')return t('BW gesamt: 10,1–10,7 % · Näherungswert 2025');const v=valueForFeature(f);if(v===null)return t('Kein zugeordneter statistischer Wert');
  // Ohne eigenen Zweig fiele die Regionsebene in den Schlusssatz und zeigte den
  // Ausländeranteil als Einwohnerzahl: „Stuttgart · 20 Einwohner“.
  // Gefärbt wird nach der Mitte, genannt wird die Spanne: eine Näherung als eine

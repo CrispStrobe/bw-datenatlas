@@ -20,6 +20,7 @@ Geometrie von GISCO, NUTS 1 — das ist für Deutschland die Ebene der Bundeslä
 """
 from __future__ import annotations
 import argparse
+import csv
 import json
 import urllib.request
 from pathlib import Path
@@ -46,6 +47,10 @@ ZUSAMMEN = {
 # Aggregate, keine Länder.
 KEINE_LAENDER = {'DE', 'DE_WEST_BERLIN', 'DE_EAST_NO_BERLIN'}
 
+# Die vom Mediendienst veröffentlichte Gesamtzahl für das Schuljahr 2025/26. Sie ist
+# hier die Probe und nicht die Quelle: die Länderwerte stehen in der Eingabedatei.
+GESAMT_UNTERRICHT = 84356
+
 
 def hole(url: str) -> bytes:
     with urllib.request.urlopen(
@@ -57,6 +62,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--out', type=Path,
                     default=ROOT / 'docs/data/germany-bundeslaender.json')
+    ap.add_argument('--unterricht', type=Path,
+                    default=ROOT / 'inputs/islamischer-religionsunterricht-laender.csv')
     args = ap.parse_args()
 
     from shapely.geometry import shape, mapping
@@ -101,6 +108,42 @@ def main() -> None:
                               ('share_mid', 'share_low', 'share_high')):
             a, b = e.get(lo), e.get(hi)
             e[mitte] = round((a + b) / 2, 2) if a is not None and b is not None else None
+
+    # Islamischer Religionsunterricht je Land. Keine amtliche Sammelstatistik: die
+    # Kultusministerien antworten einzeln, und der Mediendienst Integration fragt sie
+    # ab und führt die Antworten zusammen. Deshalb eine eingepflegte Datei und keine
+    # Abfrage — aber mit einer Probe, die trägt: die Summe der Länderwerte muss die
+    # veröffentlichte Gesamtzahl ergeben. Tut sie das nicht, ist eine Zahl falsch
+    # abgeschrieben oder eine Quelle hat sich geändert.
+    unterricht = {}
+    if args.unterricht.is_file():
+        with args.unterricht.open(encoding='utf-8') as fh:
+            for r in csv.DictReader(fh):
+                unterricht[r['geo_id']] = {
+                    'education_pupils': int(r['pupils']) if r['pupils'] else None,
+                    'education_school_year': r['school_year'] or None,
+                    'education_model': r['model'] or None,
+                    'education_muslim_pupils': int(r['muslim_pupils']) if r['muslim_pupils'] else None,
+                    'education_note': r['note'] or None,
+                }
+        summe = sum(v['education_pupils'] or 0 for v in unterricht.values())
+        if summe != GESAMT_UNTERRICHT:
+            raise SystemExit(f'Summe der Länderwerte {summe} weicht von der '
+                             f'veröffentlichten Gesamtzahl {GESAMT_UNTERRICHT} ab')
+        print(f'Religionsunterricht: {len(unterricht)} Länder, Summe {summe} '
+              f'— stimmt mit der veröffentlichten Gesamtzahl überein')
+        for geo, v in unterricht.items():
+            e = laender.get(geo)
+            if e is None:
+                print(f'  WARNUNG: {geo} hat keine Zeile aus dem Bericht')
+                continue
+            e.update(v)
+            # Wie viele der muslimischen Schülerinnen und Schüler erreicht werden,
+            # ist die eigentlich interessante Zahl — aber nur sieben Länder erfassen
+            # den Nenner überhaupt.
+            n, m = v['education_pupils'], v['education_muslim_pupils']
+            e['education_reach_pct'] = (round(100 * n / m, 1)
+                                        if n is not None and m else None)
 
     flaechen = {f['properties']['NUTS_ID']: f
                 for f in json.loads(hole(GISCO))['features']
@@ -155,6 +198,23 @@ def main() -> None:
         'source_locator': 'Forschungsbericht 55, Tabelle 3 und Abbildung 4',
         'publisher': q.get('publisher'),
         'geometry_source': 'Eurostat GISCO, NUTS 2024, Ebene 1, 1:20 Mio.',
+        'education_source': {
+            'compiler': 'Mediendienst Integration',
+            'compiler_url': ('https://mediendienst-integration.de/bevoelkerung/'
+                             'muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/'),
+            'primary': ('Auskünfte der Kultus- und Bildungsministerien der Länder auf '
+                        'Anfrage des Mediendienstes'),
+            'retrieved_on': '2026-09-29',
+            'as_of': '17.09.2026',
+            'national_total': GESAMT_UNTERRICHT,
+            'caveat': ('Keine amtliche Sammelstatistik. Die Länder erfassen und melden '
+                       'unterschiedlich: Bremen und Hamburg unterrichten '
+                       'konfessionsübergreifend und weisen keine islamische Teilnahme '
+                       'gesondert aus, Berlin und Schleswig-Holstein melden noch das '
+                       'Schuljahr 2024/25, Bayerns Angabe ist gerundet. Nur sieben '
+                       'Länder erfassen überhaupt, wie viele muslimische '
+                       'Schülerinnen und Schüler es im Land gibt.'),
+        },
         'count': len(merkmale),
         'features': runden(merkmale),
     }

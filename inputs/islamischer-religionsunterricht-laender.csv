@@ -1,0 +1,15 @@
+geo_id,land,pupils,school_year,model,muslim_pupils,note
+DE08,Baden-Württemberg,11827,2025/26,bekenntnisorientiert,,Stiftung Sunnitischer Schulrat (2019 gegründet, getragen von LVIKZ und IGBD)
+DE09,Bayern,22800,2025/26,islamkunde_staatlich,152500,gerundete Angabe des Ministeriums; seit 2021/22 Wahlpflichtfach alternativ zu Ethik
+DE11,Berlin,6470,2024/25,verband_allein,,Islamische Föderation Berlin seit 2001; aktuellere Zahlen liegen nicht vor
+DE04+DE02,Bremen und Hamburg,,2025/26,religionsunterricht_fuer_alle,,konfessionsübergreifender Unterricht für alle; keine gesonderte Zahl für islamische Teilnahme
+DE06,Hessen,4913,2025/26,gemischt,,2.862 staatliche Islamkunde und 2.051 bekenntnisorientiert (Ditib und Ahmadiyya-Gemeinde)
+DE03,Niedersachsen,3693,2025,bekenntnisorientiert,95289,Beiratsmodell mit SCHURA und Ditib
+DE05,Nordrhein-Westfalen,30260,2025/26,bekenntnisorientiert,419204,ständige Kommission mit fünf islamischen Verbänden seit 2021; 247 Schulen
+DE07,Rheinland-Pfalz,3076,2025/26,modellhaft,58476,Staatsverträge 2024 mit vier Religionsgemeinschaften; Kommission übernimmt bis Ende 2026/27
+DE10,Saarland,320,2025/26,modellhaft,15635,vier Grundschulen, sechs Kooperationspartner; Modellversuch bis 2027 verlängert
+DE01,Schleswig-Holstein,997,2024/25,islamkunde_staatlich,31613,seit 2007/08; Staatsvertrag 2025 mit VIKZ Norddeutschland
+DE12+DE13,Brandenburg und Mecklenburg-Vorpommern,0,2025/26,kein_angebot,,kein Angebot; stattdessen Ethik oder Philosophie
+DE14,Sachsen,0,2025/26,kein_angebot,,kein Angebot; stattdessen Ethik oder Philosophie
+DE15,Sachsen-Anhalt,0,2025/26,kein_angebot,,kein Angebot; stattdessen Ethik oder Philosophie
+DE16,Thüringen,0,2025/26,kein_angebot,6330,kein Angebot; mindestens 6.330 muslimische Schülerinnen und Schüler im Land
