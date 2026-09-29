@@ -183,6 +183,14 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 - **Was die verbreitete KMK-Zahl auslässt:** den Sekundarbereich II. Wer 9.750 und 11.827 nebeneinanderlegt, vergleicht zwei Abgrenzungen und zwei Schuljahre.
 - **Eine Abweichung bleibt stehen:** für 2019 nennt die Stiftung 5.500 ohne Schuljahresbezeichnung, die KMK für 2019/20 zusammen 5.905.
 
+## Registergrößen je Bundesland (Deutschlandkarte)
+
+- **Quellen:** Statistisches Bundesamt (Destatis), Ausländerstatistik, Tabellen **12521-0023** (Alter, Generation), **12521-0025** (Aufenthaltsdauer) und **12521-0030** (Durchschnittsalter), Stichtag 31.12.2025, `dl-de/by-2-0`. Alle drei liegen gepackt im Repository.
+- **Gezählt, nicht geschätzt** — anders als die beiden BAMF-Ebenen derselben Karte.
+- **Zusammenfassung der Länderpaare über die Besetzungen, nicht über die Anteile.** Bremen und Hamburg sowie Brandenburg und Mecklenburg-Vorpommern liegen hier einzeln vor, werden aber zusammengefasst, damit dieselbe Fläche auf jeder Ebene dasselbe Gebiet zeigt. Der Mittelwert zweier Anteile ist nicht der Anteil der Summe; ebenso wird das Durchschnittsalter aus den Mittelwerten je Geschlecht mit den tatsächlichen Besetzungen gewichtet.
+- **Was fehlt:** Eingebürgerte und Kinder, die nach § 4 Abs. 3 StAG bei der Geburt Deutsche werden. Das trifft die Ebene „Seit 25 Jahren hier" am härtesten, weil gerade die am längsten Ansässigen am häufigsten eingebürgert sind — die Ebene unterschätzt die Verweildauer also systematisch, und das steht an ihr.
+- **Befunde:** Baden-Württemberg liegt bei der Aufenthaltsdauer mit 27,4 Prozent an erster Stelle aller Länder und bei der zweiten Generation mit 13,2 Prozent an zweiter hinter Nordrhein-Westfalen (15,0). Das Durchschnittsalter reicht von 32,0 Jahren in Sachsen-Anhalt bis 39,6 in Baden-Württemberg.
+
 ## Alterspyramide der ausländischen Bevölkerung (AZR)
 
 - **Quelle:** Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle **12521-0023** „Ausländer: Bundesländer, Stichtag, Geschlecht, Altersjahre, Migrantengeneration, Ländergruppierungen/Staatsangehörigkeit", Stichtag 31.12.2025, `dl-de/by-2-0`. Die Quelldatei liegt gepackt im Repository, der Aufbau ist ohne Netz wiederholbar.

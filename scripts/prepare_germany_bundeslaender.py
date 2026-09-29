@@ -145,6 +145,21 @@ def main() -> None:
             e['education_reach_pct'] = (round(100 * n / m, 1)
                                         if n is not None and m else None)
 
+    # Drei gezählte Größen aus dem Ausländerzentralregister, von
+    # prepare_land_azr.py vorbereitet. Fehlt die Datei, bleibt die Karte bei den
+    # geschätzten Größen und den Unterrichtszahlen.
+    azr_pfad = ROOT / 'docs/data/land-azr.json'
+    if azr_pfad.is_file():
+        azr = json.loads(azr_pfad.read_text(encoding='utf-8'))
+        for geo, werte in azr['laender'].items():
+            e = laender.get(geo)
+            if e is None:
+                print(f'  WARNUNG: AZR kennt {geo}, der Bericht nicht')
+                continue
+            e.update(werte)
+            e['azr_reference_date'] = azr['reference_date']
+        print(f"AZR: {len(azr['laender'])} Flächen übernommen, Stand {azr['reference_date']}")
+
     flaechen = {f['properties']['NUTS_ID']: f
                 for f in json.loads(hole(GISCO))['features']
                 if f['properties']['NUTS_ID'].startswith('DE')}
@@ -198,6 +213,14 @@ def main() -> None:
         'source_locator': 'Forschungsbericht 55, Tabelle 3 und Abbildung 4',
         'publisher': q.get('publisher'),
         'geometry_source': 'Eurostat GISCO, NUTS 2024, Ebene 1, 1:20 Mio.',
+        'register_source': {
+            'title': ('Statistisches Bundesamt (Destatis), Ausländerstatistik, Tabellen '
+                      '12521-0023, 12521-0025 und 12521-0030'),
+            'publisher': 'Statistisches Bundesamt (Destatis)',
+            'url': 'https://www-genesis.destatis.de/datenbank/online/statistic/12521',
+            'reference_date': '2025-12-31',
+            'measurement': 'Register, keine Stichprobe und kein Modell',
+        },
         'education_source': {
             'compiler': 'Mediendienst Integration',
             'compiler_url': ('https://mediendienst-integration.de/bevoelkerung/'

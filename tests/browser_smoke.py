@@ -639,6 +639,25 @@ with sync_playwright() as pw:
     check('every age figure carries its area and reference year',
           alter.count('Deutschland')>=4 and '2020' in alter and '2016' in alter)
 
+    # Drei gezählte Registergrößen neben den beiden geschätzten.
+    for ebene,erwartet in (('de_second_generation','13,2 %'),
+                           ('de_long_resident','27,4 %'),
+                           ('de_mean_age_foreign','39,6')):
+        page.select_option('#layer',ebene); page.wait_for_timeout(800)
+        check(f'{ebene}: Baden-Württemberg carries its register value',
+              erwartet in page.locator('#map-features path[data-id="DE08"]')
+              .get_attribute('aria-label'))
+    # Ausdrücklich noch einmal auswählen: die Schleife oben endet auf einer anderen
+    # Ebene. Derselbe Fehler ist mir bei der Farbprüfung schon einmal unterlaufen.
+    page.select_option('#layer','de_long_resident'); page.wait_for_timeout(800)
+    check('the long-residence layer admits that naturalised people are missing',
+          'eingebürgert' in page.locator('#map-note').inner_text().lower())
+    page.locator('#map-features path[data-id="DE08"]').dispatch_event('click')
+    page.wait_for_timeout(600)
+    land=page.locator('#detail-content').inner_text()
+    check('counted register figures sit beside the estimated ones in one profile',
+          '13,2 %' in land and '27,4 %' in land and '1.133.000' in land)
+
     # Der Religionsunterricht ist die einzige gezählte Größe auf der Deutschlandkarte.
     # Drei Zustände, die nicht dasselbe sind: eine Zahl, "kein Angebot" und "keine
     # gesonderte Angabe" — Letzteres ist eine Aussage über die Erhebung, kein Loch.

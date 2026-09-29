@@ -144,6 +144,12 @@ const layers={
  // Schätzung ist: die Länder zählen ihre Teilnehmer. Sie melden nur nicht
  // dasselbe — deshalb steht an jeder Fläche, aus welchem Schuljahr ihr Wert
  // stammt und nach welchem Modell dort unterrichtet wird.
+ // Drei gezählte Größen aus dem Register neben den beiden geschätzten. Alle drei
+ // beantworten eine Frage, die ein Anteil allein offenlässt: wie lange ist diese
+ // Bevölkerung schon da, und wer von ihr ist hier geboren?
+ de_second_generation:{title:'In Deutschland geboren · Anteil an den Ausländern je Bundesland',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 14 Flächen',deMeasure:'second_generation_pct',thresholds:[8,10,11.5,13,14.5],unit:'percent',sourceInfo:{title:'Ausländerstatistik, Tabelle 12521-0023',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://www-genesis.destatis.de/datenbank/online/statistic/12521',limitation:'Register ohne Eingebürgerte und ohne Kinder, die nach § 4 Abs. 3 StAG bei der Geburt Deutsche werden.'},note:'Anteil der in Deutschland Geborenen an der ausländischen Bevölkerung des Landes. Der übliche Einwand gegen jede Passzahl lautet, dass die hier Geborenen fehlen — hier ist beziffert, wie groß ihr Anteil ist, soweit sie keinen deutschen Pass haben. Nordrhein-Westfalen führt mit 15,0 Prozent, Baden-Württemberg folgt mit 13,2; in den östlichen Ländern liegt der Wert bei 7 bis 9 Prozent, weil die Zuwanderung dort jünger ist. Nicht enthalten sind Eingebürgerte und Kinder, die nach § 4 Absatz 3 des Staatsangehörigkeitsgesetzes schon bei der Geburt Deutsche werden.'},
+ de_long_resident:{title:'Seit 25 Jahren hier · Anteil an den Ausländern je Bundesland',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 14 Flächen',deMeasure:'long_resident_pct',thresholds:[7,12,18,22,26],unit:'percent',sourceInfo:{title:'Ausländerstatistik, Tabelle 12521-0025',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://www-genesis.destatis.de/datenbank/online/statistic/12521',limitation:'Aufenthaltsdauer im Register; Eingebürgerte fehlen, und das sind gerade unter den lange Ansässigen viele.'},note:'Anteil der ausländischen Bevölkerung mit mindestens 25 Jahren Aufenthaltsdauer — das Gegenstück zur gleichnamigen Kreisebene, eine Ebene höher. Baden-Württemberg steht mit 27,4 Prozent an erster Stelle aller Länder: die ausländische Bevölkerung ist hier länger ansässig als irgendwo sonst. Im Osten liegt der Wert zwischen 4 und 7 Prozent. Gerade diese Größe unterschätzt die Verweildauer systematisch, weil die am längsten Ansässigen am häufigsten eingebürgert sind und dann aus dem Register verschwinden.'},
+ de_mean_age_foreign:{title:'Durchschnittsalter der Ausländer je Bundesland',badge:'Ausländerzentralregister',date:'Stichtag 31.12.2025 · 14 Flächen',deMeasure:'mean_age_foreign',thresholds:[33,35,37,38.5,39.3],unit:'years',sourceInfo:{title:'Ausländerstatistik, Tabelle 12521-0030',publisher:'Statistisches Bundesamt (Destatis)',publication_period:'2026',url:'https://www-genesis.destatis.de/datenbank/online/statistic/12521',limitation:'Aus den Mittelwerten je Geschlecht, gewichtet mit den Besetzungen.'},note:'Durchschnittsalter der ausländischen Bevölkerung. Die Spanne ist kleiner, als man erwartet: 32,0 Jahre in Sachsen-Anhalt gegen 39,6 in Baden-Württemberg. Wo lange angeworben wurde, ist die ausländische Bevölkerung älter — dieselbe Siedlungsgeschichte, die auch die Ebene daneben erklärt. Gerechnet aus den Mittelwerten je Geschlecht, gewichtet mit den tatsächlichen Besetzungen; zwei Mittelwerte ungewichtet zu mitteln wäre falsch.'},
  de_religious_education:{title:'Islamischer Religionsunterricht · Schülerinnen und Schüler je Bundesland',badge:'Angaben der Kultusministerien',date:'Schuljahr 2025/26 · 84.356 bundesweit',deMeasure:'education_pupils',thresholds:[1,1000,4000,12000,25000],unit:'persons',sourceInfo:{title:'Islamischer Religionsunterricht in Deutschland',publisher:'Mediendienst Integration, nach Auskünften der Kultus- und Bildungsministerien',publication_period:'2026',url:'https://mediendienst-integration.de/bevoelkerung/muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/',limitation:'Keine amtliche Sammelstatistik; die Länder erfassen und melden unterschiedlich.'},note:'Zahl der Schülerinnen und Schüler im islamischen Religionsunterricht an allgemeinbildenden Schulen. In Baden-Württemberg 11.827 im Schuljahr 2025/26, bekenntnisorientiert und von der Stiftung Sunnitischer Schulrat verantwortet — nach Nordrhein-Westfalen und Bayern der dritthöchste Wert. Die Karte zeigt allerdings zu einem guten Teil die Größe der Länder: die aussagekräftigere Zahl wäre der Anteil der erreichten muslimischen Schülerschaft, und den erfassen nur sieben Länder überhaupt — wo er vorliegt, steht er im Profil. Keine amtliche Sammelstatistik: die Ministerien antworten einzeln. Bremen und Hamburg unterrichten konfessionsübergreifend und weisen keine islamische Teilnahme gesondert aus; in den fünf östlichen Ländern gibt es kein Angebot. Berlin und Schleswig-Holstein melden noch 2024/25, Bayerns Angabe ist gerundet. Die Summe der Länderwerte ergibt genau die veröffentlichte Gesamtzahl von 84.356 — daran wird jeder Abruf geprüft.'},
  de_muslim_share:{title:'Muslimische Religionsangehörige · Anteil je Bundesland',badge:'BAMF · Näherungswerte',date:'Bezugsjahr 2025 · 14 ausgewiesene Länder',source:'bamf_fb55',thresholds:[2,4,6,9,12],unit:'percent',deMeasure:'share_mid',note:'Näherungswerte über den Anteil muslimischer Religionsangehöriger mit Migrationshintergrund aus islamisch geprägten Herkunftsländern an der Bevölkerung des jeweiligen Bundeslandes, aus Tabelle 3 und Abbildung 4 des Forschungsberichts 55. Gefärbt wird nach der Mitte der veröffentlichten Spanne, genannt wird die Spanne. Baden-Württemberg liegt mit 10,1 bis 10,7 Prozent an vierter Stelle von vierzehn, nach Bremen und Hamburg, Hessen und Nordrhein-Westfalen — in absoluten Zahlen an zweiter Stelle hinter Nordrhein-Westfalen. Bremen und Hamburg sowie Brandenburg und Mecklenburg-Vorpommern weist der Bericht nur gemeinsam aus, weil sie bei der Stichprobenziehung zusammengefasst wurden; die Karte fasst sie deshalb ebenso zusammen, statt eine Genauigkeit vorzutäuschen, die die Quelle nicht hat.'},
  de_muslim_persons:{title:'Muslimische Religionsangehörige · Zahl je Bundesland',badge:'BAMF · Näherungswerte',date:'Bezugsjahr 2025 · 14 ausgewiesene Länder',source:'bamf_fb55',thresholds:[100000,200000,400000,800000,1500000],unit:'persons',deMeasure:'muslim_mid',note:'Dieselbe Quelle wie die Ebene daneben, in absoluten Zahlen statt als Anteil. Die beiden Karten sehen verschieden aus, und der Unterschied ist die Einwohnerzahl: Bremen und Hamburg haben den höchsten Anteil und eine der kleinsten Zahlen, Bayern hat fast so viele muslimische Religionsangehörige wie Baden-Württemberg bei weit geringerem Anteil. Näherungswerte mit veröffentlichter Spanne, keine Zählung.'},
@@ -236,6 +242,23 @@ function deProfile(id){
  }
  // Der Religionsunterricht ist die einzige gezählte Größe auf dieser Karte und
  // steht deshalb in jedem Landesprofil, nicht nur auf seiner eigenen Ebene.
+ // Die gezählten Registergrößen stehen in jedem Landesprofil neben den
+ // geschätzten — das ist der Vergleich, für den die Karte da ist.
+ if(p.second_generation_pct!==null&&p.second_generation_pct!==undefined){
+  html+=metric(t('In Deutschland geboren · Anteil an den Ausländern'),
+    pct(p.second_generation_pct),
+    esc(tf('{0} ausländische Personen · Register, Stand {1}',
+      integer(p.foreign_total),p.azr_reference_date)));
+ }
+ if(p.long_resident_pct!==null&&p.long_resident_pct!==undefined){
+  html+=metric(t('Seit 25 Jahren hier'),pct(p.long_resident_pct),
+    esc(t('Anteil an der ausländischen Bevölkerung · Eingebürgerte fehlen')));
+ }
+ if(p.mean_age_foreign!==null&&p.mean_age_foreign!==undefined){
+  html+=metric(t('Durchschnittsalter der Ausländer'),
+    tf('{0} Jahre',pf.format(p.mean_age_foreign)),
+    esc(t('gewichtet mit den Besetzungen je Geschlecht')));
+ }
  if(p.education_pupils!==null&&p.education_pupils!==undefined){
   html+=metric(t('Islamischer Religionsunterricht'),
     p.education_pupils?integer(p.education_pupils):t('kein Angebot'),
@@ -636,6 +659,9 @@ function mapValueText(f){
  // Gefärbt wird nach der Mitte, genannt wird die Spanne: eine Näherung als eine
  // einzige Zahl auszuweisen wäre genauer, als die Quelle es zulässt.
  if(layers[state.layer].muniReligion)return tf('{0} laut Zensus 2022',pct(v));
+ if(state.layer==='de_second_generation')return tf('{0} in Deutschland geboren',pct(v));
+ if(state.layer==='de_long_resident')return tf('{0} seit 25 Jahren hier',pct(v));
+ if(state.layer==='de_mean_age_foreign')return tf('{0} Jahre im Durchschnitt',pf.format(v));
  if(state.layer==='de_muslim_share')return tf('{0} der Bevölkerung · Näherungswert',
    pf.format(f.properties.share_low)+'–'+pf.format(f.properties.share_high)+' %');
  if(state.layer==='de_muslim_persons')return tf('{0} Personen · Näherungswert',

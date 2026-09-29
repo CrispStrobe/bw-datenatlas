@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 264,
+  "check_count": 269,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -844,6 +844,26 @@
     },
     {
       "name": "every age figure carries its area and reference year",
+      "passed": true
+    },
+    {
+      "name": "de_second_generation: Baden-Württemberg carries its register value",
+      "passed": true
+    },
+    {
+      "name": "de_long_resident: Baden-Württemberg carries its register value",
+      "passed": true
+    },
+    {
+      "name": "de_mean_age_foreign: Baden-Württemberg carries its register value",
+      "passed": true
+    },
+    {
+      "name": "the long-residence layer admits that naturalised people are missing",
+      "passed": true
+    },
+    {
+      "name": "counted register figures sit beside the estimated ones in one profile",
       "passed": true
     },
     {

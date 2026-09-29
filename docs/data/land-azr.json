@@ -1,0 +1,97 @@
+{
+ "type": "land_azr_measures",
+ "schema_version": "1.0",
+ "reference_date": "2025-12-31",
+ "source": "Statistisches Bundesamt (Destatis), GENESIS-Online, Ausländerstatistik, Tabellen 12521-0023, 12521-0025 und 12521-0030",
+ "source_url": "https://www-genesis.destatis.de/datenbank/online/statistic/12521",
+ "licence": "Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0)",
+ "measurement": "Register, keine Stichprobe und kein Modell",
+ "how_pairs_are_combined": "Bremen und Hamburg sowie Brandenburg und Mecklenburg-Vorpommern liegen hier einzeln vor, werden aber zusammengefasst, damit dieselbe Fläche der Karte auf jeder Ebene dasselbe Gebiet zeigt. Zusammengefasst wird über die Besetzungen: der Mittelwert zweier Anteile ist nicht der Anteil der Summe.",
+ "count": 14,
+ "laender": {
+  "DE01": {
+   "foreign_total": 352590,
+   "second_generation_pct": 10.2,
+   "mean_age_foreign": 36.4,
+   "long_resident_pct": 15.2
+  },
+  "DE03": {
+   "foreign_total": 1084560,
+   "second_generation_pct": 11.5,
+   "mean_age_foreign": 36.6,
+   "long_resident_pct": 17.2
+  },
+  "DE04+DE02": {
+   "foreign_total": 551960,
+   "second_generation_pct": 10.7,
+   "mean_age_foreign": 38.3,
+   "long_resident_pct": 21.6
+  },
+  "DE05": {
+   "foreign_total": 3265715,
+   "second_generation_pct": 15.0,
+   "mean_age_foreign": 38.6,
+   "long_resident_pct": 26.4
+  },
+  "DE06": {
+   "foreign_total": 1360850,
+   "second_generation_pct": 12.6,
+   "mean_age_foreign": 38.8,
+   "long_resident_pct": 24.4
+  },
+  "DE07": {
+   "foreign_total": 626360,
+   "second_generation_pct": 11.3,
+   "mean_age_foreign": 37.9,
+   "long_resident_pct": 19.5
+  },
+  "DE08": {
+   "foreign_total": 2192370,
+   "second_generation_pct": 13.2,
+   "mean_age_foreign": 39.6,
+   "long_resident_pct": 27.4
+  },
+  "DE09": {
+   "foreign_total": 2386540,
+   "second_generation_pct": 10.3,
+   "mean_age_foreign": 38.6,
+   "long_resident_pct": 20.8
+  },
+  "DE10": {
+   "foreign_total": 164420,
+   "second_generation_pct": 12.8,
+   "mean_age_foreign": 37.9,
+   "long_resident_pct": 21.5
+  },
+  "DE11": {
+   "foreign_total": 994605,
+   "second_generation_pct": 8.5,
+   "mean_age_foreign": 39.1,
+   "long_resident_pct": 20.7
+  },
+  "DE12+DE13": {
+   "foreign_total": 339000,
+   "second_generation_pct": 7.9,
+   "mean_age_foreign": 33.9,
+   "long_resident_pct": 6.7
+  },
+  "DE14": {
+   "foreign_total": 371005,
+   "second_generation_pct": 7.0,
+   "mean_age_foreign": 33.7,
+   "long_resident_pct": 6.4
+  },
+  "DE15": {
+   "foreign_total": 192125,
+   "second_generation_pct": 8.7,
+   "mean_age_foreign": 32.0,
+   "long_resident_pct": 5.3
+  },
+  "DE16": {
+   "foreign_total": 187895,
+   "second_generation_pct": 7.3,
+   "mean_age_foreign": 32.9,
+   "long_resident_pct": 4.4
+  }
+ }
+}
