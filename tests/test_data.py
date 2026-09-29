@@ -185,4 +185,28 @@ class DataTests(unittest.TestCase):
         self.assertTrue(all(i['unit'] == 'percent' and 0 <= i['value'] <= 100
                             for i in b['items']))
 
+    def test_konid_blocks_keep_all_four_groups(self):
+        """Dieselbe Frage an vier Gruppen — das ist der ganze Wert dieser Erhebung.
+
+        Der KONID-Survey stellt jede der drei Aussagen allen vor: Katholiken,
+        Landeskirchen, Freikirchen, Muslimen. Bliebe eine Gruppe weg, wäre aus einem
+        Vergleich eine Behauptung über die verbliebenen geworden.
+        """
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text(encoding='utf-8'))
+        bloecke = [b for b in d['blocks'] if b['block'].startswith('konid_')]
+        self.assertEqual(len(bloecke), 3)
+        for b in bloecke:
+            self.assertEqual([i['label'] for i in b['items']],
+                             ['Römisch-katholisch', 'Landeskirchlich evangelisch',
+                              'Evangelische Freikirchen', 'Muslimisch'])
+            self.assertIn('Minderheiten', b['note'])
+            self.assertIn('1,6 Prozent', b['note'])
+        # Die Reihenfolge der drei Aussagen steigert sich im Bericht, und die Werte
+        # steigern sich nicht mit: Vorrang vor der Verfassung bejahen mehr Freikirchliche
+        # als Muslime. Wer nur den Gewaltsatz zitiert, zitiert nicht diese Studie.
+        wert = {b['block']: {i['label']: i['value'] for i in b['items']}
+                for b in bloecke}
+        self.assertGreater(wert['konid_verfassung']['Evangelische Freikirchen'],
+                           wert['konid_verfassung']['Muslimisch'])
+
 if __name__=='__main__': unittest.main(verbosity=2)
