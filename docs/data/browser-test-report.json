@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 355,
+  "check_count": 357,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -292,6 +292,14 @@
     },
     {
       "name": "the district profile lists Jüdische Gemeinden",
+      "passed": true
+    },
+    {
+      "name": "an index is shown as points, not as per cent",
+      "passed": true
+    },
+    {
+      "name": "the cohesion block carries the report own caveat",
       "passed": true
     },
     {

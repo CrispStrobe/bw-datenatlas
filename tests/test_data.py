@@ -412,4 +412,24 @@ class DataTests(unittest.TestCase):
             self.assertRegex(a['captured'], r'^\d{4}-\d{2}-\d{2}$')
         self.assertIn('Abgefragt, nicht archiviert', d['not_an_archiving_run'])
 
+    def test_cohesion_block_carries_the_reports_own_caveat(self):
+        """Der niedrigste Wert der Studie ist der, den sie selbst einschränkt.
+
+        Der Religionsmonitor 2026 misst für muslimische Befragte 46 Punkte und
+        schreibt ausdrücklich dazu, das dürfe „keineswegs mit einer grundsätzlich
+        geringeren Bereitschaft zu gesellschaftlichem Engagement und Solidarität
+        gleichgesetzt werden". Wer die Zahl ohne diesen Satz zeigt, zeigt etwas
+        anderes als die Studie.
+        """
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text(encoding='utf-8'))
+        b = [x for x in d['blocks'] if x['block'] == 'rm2026_zusammenhalt'][0]
+        self.assertIn('keineswegs', b['note'])
+        self.assertIn('kein Prozentwert', b['note'])
+        werte = {i['label']: i['value'] for i in b['items']}
+        self.assertEqual(werte['Muslimisch'], 46)
+        self.assertEqual(werte['Evangelisch'], 55)
+        # Ein Index ist keine Quote; die Einheit entscheidet über die Beschriftung.
+        self.assertTrue(all(i['unit'] == 'index' for i in b['items']))
+        self.assertTrue(all(i['base_n'] == 5231 for i in b['items']))
+
 if __name__=='__main__': unittest.main(verbosity=2)

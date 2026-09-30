@@ -1946,8 +1946,12 @@ function renderSurveyItems(){
   // füllt ein Wert von 50 Prozent den ganzen Balken, nur weil kein höherer daneben
   // steht — und der Block über Zustimmungsquoten hätte ausgesehen wie einer über
   // Mehrheiten.
-  const proz=b.items.every(i=>i.unit==='percent'&&i.value<=100);
-  const max=proz?100:Math.max(...b.items.map(i=>i.value));
+  // Prozentwerte und Indexwerte werden beide an 100 gemessen — ein Index von 0
+  // bis 100 ist keine Quote, also darf kein Prozentzeichen daran, aber die Skala
+  // ist dieselbe.
+  const skala100=b.items.every(i=>(i.unit==='percent'||i.unit==='index')
+    &&i.value<=100);
+  const max=skala100?100:Math.max(...b.items.map(i=>i.value));
   const erste=b.items[0];
   return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
    // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
@@ -1962,7 +1966,7 @@ function renderSurveyItems(){
      +(i.detail?'<br><span class="tiny">'+esc(t(i.detail))+'</span>':'')+'</div>'
      +'<div class="bar-track"><div class="bar-fill" style="width:'
      +(100*i.value/max).toFixed(1)+'%;background:#6b7f8a"></div></div>'
-     +'<div class="bar-value">'+esc(pct(i.value))+'</div></div>').join('')
+     +'<div class="bar-value">'+esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value))+'</div></div>').join('')
    +'</div>';
  }).join('');
  const quellen=[...new Map((D2.blocks[gewaehlt]||{items:[]}).items

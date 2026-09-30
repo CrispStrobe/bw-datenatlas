@@ -323,6 +323,19 @@ with sync_playwright() as pw:
                   ('Jüdische Gemeinden','Jewish communities')):
         check(f'the district profile lists {de}',de in profil or en in profil)
 
+    # Ein Index von 0 bis 100 ist keine Quote. Stand hier ein Prozentzeichen, läse
+    # sich „46 Punkte Zusammenhalt" als „46 Prozent" von irgendetwas.
+    page.select_option('#survey-select', index=page.eval_on_selector_all(
+        '#survey-select option',
+        "o=>o.findIndex(x=>/Zusammenhalt|cohesion/i.test(x.textContent))"))
+    page.wait_for_function("/46/.test(document.getElementById"
+                           "('survey-blocks').innerText)")
+    zus=page.locator('#survey-blocks').inner_text()
+    check('an index is shown as points, not as per cent',
+          ('46,0 Punkte' in zus or '46.0 points' in zus) and '46,0 %' not in zus)
+    check('the cohesion block carries the report own caveat',
+          'keineswegs' in zus or 'by no means' in zus)
+
     # Der Block über religiösen Fundamentalismus ist der heikelste der Seite. Er darf
     # nur zusammen mit dem stehen, was die Stichprobe nicht hergibt — und die Balken
     # müssen an 100 gemessen sein, sonst sieht ein Wert von 50 Prozent aus wie alle.

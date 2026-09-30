@@ -5,7 +5,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 58,
+ "count": 65,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -392,6 +392,112 @@
      "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
      "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
      "source_locator": "Fließtext S. 25"
+    }
+   ]
+  },
+  {
+   "block": "rm2026_zusammenhalt",
+   "title": "Gesellschaftlicher Zusammenhalt nach Religionszugehörigkeit und Religiosität",
+   "note": "Der Index reicht von 0 bis 100 und ist kein Prozentwert. Er fasst neun Indikatoren zu sozialen Beziehungen, Verbundenheit mit dem Gemeinwesen und Gemeinwohlorientierung zusammen. Der Gesamtwert für Deutschland liegt 2026 bei 51 Punkten, nach 46 im Jahr 2023 und 55 im Jahr 2020. Der Bericht schreibt seinen eigenen niedrigsten Wert nicht fest: Die vergleichsweise niedrigen Werte bei muslimischen Befragten dürften „keineswegs mit einer grundsätzlich geringeren Bereitschaft zu gesellschaftlichem Engagement und Solidarität gleichgesetzt werden\"; frühere Erhebungen fanden ähnlich ausgeprägte Solidaritätspotenziale in der muslimischen, katholischen und evangelischen Bevölkerung. Die Religiosität ist mit der Zentralitätsskala nach Huber (2003) gemessen, nicht mit der Konfession. Befragt wurde online im März 2026; die muslimische Teilstichprobe wurde eigens aufgestockt, um sie überhaupt getrennt auswerten zu können.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Evangelisch",
+     "detail": null,
+     "value": 55.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
+    },
+    {
+     "label": "Katholisch",
+     "detail": null,
+     "value": 53.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
+    },
+    {
+     "label": "Keine Religionszugehörigkeit",
+     "detail": null,
+     "value": 49.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
+    },
+    {
+     "label": "Muslimisch",
+     "detail": null,
+     "value": 46.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
+    },
+    {
+     "label": "Religiosität niedrig",
+     "detail": null,
+     "value": 49.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
+    },
+    {
+     "label": "Religiosität mittel",
+     "detail": null,
+     "value": 53.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
+    },
+    {
+     "label": "Religiosität hoch",
+     "detail": null,
+     "value": 52.0,
+     "unit": "index",
+     "study": "Religionsmonitor 2026",
+     "population": "Wohnbevölkerung in Deutschland ab 18 Jahren, online befragt von infas",
+     "base_n": 5231,
+     "field_period": "März 2026",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2026): Gesellschaftlicher Zusammenhalt und die Rolle von Religion. Zentrale Ergebnisse des Religionsmonitors 2026, Religionsmonitor kompakt",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Abbildung 4, S. 9"
     }
    ]
   },
