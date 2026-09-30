@@ -5,7 +5,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 220,
+ "count": 281,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -392,6 +392,276 @@
      "source_title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012",
      "source_url": "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
      "source_locator": "Fließtext S. 25"
+    }
+   ]
+  },
+  {
+   "block": "rm2015_islamwahrnehmung_2014",
+   "title": "Einstellungen zu Islam und Muslimen · Emnid 2014",
+   "note": "Die Sonderauswertung erschien 2015, diese Antworten stammen aus der Emnid-Befragung vom November 2014. Bedrohung: eher oder sehr bedrohlich. Unvereinbarkeit: Ablehnung der positiv formulierten Aussage über die Zugehörigkeit zur westlichen Welt. Die übrigen Werte fassen eher und volle Zustimmung zusammen. Die vier Aussagen sind unterschiedliche Fragen, keine Anteile einer gemeinsamen Verteilung. 937 ist die Studienstichprobe; Fallzahlen gültiger Antworten fehlen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Islam als bedrohlich wahrgenommen",
+     "detail": null,
+     "value": 57.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    },
+    {
+     "label": "Islam passt nicht in die westliche Welt",
+     "detail": null,
+     "value": 61.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    },
+    {
+     "label": "Fremdheitsgefühl durch Muslime",
+     "detail": null,
+     "value": 40.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    },
+    {
+     "label": "Zuwanderungsverbot für Muslime befürwortet",
+     "detail": null,
+     "value": 24.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    }
+   ]
+  },
+  {
+   "block": "rm2015_freizeit_nichtmuslime",
+   "title": "Freizeitkontakte: Muslime im Umfeld nichtmuslimischer Befragter",
+   "note": "Die Kategorien beschreiben den Anteil muslimischer Personen unter den regelmäßigen Freizeitkontakten. Auswertung veröffentlicht 2015; 937 ist die jeweilige Studienstichprobe, nicht die Fallzahl gültiger Antworten. Minderheit und Mehrheit haben unterschiedliche Kontaktgelegenheiten; die Verteilungen messen keine Integrationsleistung. Die Muslimbefragung fand 2012, die Nichtmuslimbefragung 2014 statt. Der Nullwert ist ausdrücklich in der Abbildung beschriftet.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Keine",
+     "detail": null,
+     "value": 63.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Weniger als die Hälfte",
+     "detail": null,
+     "value": 33.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Etwa die Hälfte",
+     "detail": null,
+     "value": 3.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Mehr als die Hälfte",
+     "detail": null,
+     "value": 1.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Alle",
+     "detail": null,
+     "value": 0.0,
+     "unit": "percent",
+     "study": "Religionsmonitor / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    }
+   ]
+  },
+  {
+   "block": "rm2015_freizeit_muslime",
+   "title": "Freizeitkontakte: Nichtmuslime im Umfeld muslimischer Befragter",
+   "note": "Die Kategorien beschreiben den Anteil nichtmuslimischer Personen unter den regelmäßigen Freizeitkontakten. Auswertung veröffentlicht 2015; 322 ist die jeweilige Studienstichprobe, nicht die Fallzahl gültiger Antworten. Minderheit und Mehrheit haben unterschiedliche Kontaktgelegenheiten; die Verteilungen messen keine Integrationsleistung. Die Muslimbefragung fand 2012, die Nichtmuslimbefragung 2014 statt. Die abgebildeten Werte ergeben durch Rundung 99 Prozent.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Keine",
+     "detail": null,
+     "value": 8.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Muslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 322,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Weniger als die Hälfte",
+     "detail": null,
+     "value": 30.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Muslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 322,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Etwa die Hälfte",
+     "detail": null,
+     "value": 29.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Muslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 322,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Mehr als die Hälfte",
+     "detail": null,
+     "value": 24.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Muslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 322,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    },
+    {
+     "label": "Alle",
+     "detail": null,
+     "value": 8.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Muslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 322,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 3, S. 12 (PDF-Seite 13)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 3, S. 12 (PDF-Seite 13)"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_solidaritaet_engagement",
+   "title": "Gegenwärtiges freiwilliges Engagement: mit und ohne Religionszugehörigkeit",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Gezeigt sind Ja-Antworten auf die Frage nach gegenwärtigem freiwilligem Engagement. Die Häufigkeit, der Zeitumfang und die Tätigkeit werden hier nicht verglichen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Mit Religionszugehörigkeit",
+     "detail": "Ja-Antworten",
+     "value": 29.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Mit Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    },
+    {
+     "label": "Ohne Religionszugehörigkeit",
+     "detail": "Ja-Antworten",
+     "value": 18.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Ohne Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    },
+    {
+     "label": "Alle Befragten",
+     "detail": "Ja-Antworten",
+     "value": 25.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Alle Befragten",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
     }
    ]
   },
@@ -1140,6 +1410,198 @@
      "source_title": "Evangelische Kirche in Deutschland (2023): Wie hältst du’s mit der Kirche? Erste Ergebnisse der 6. Kirchenmitgliedschaftsuntersuchung",
      "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/Wie_h%C3%A4ltst_du%E2%80%99s_mit_der_Kirche_%E2%80%93_Zur_Bedeutung_der_Kirche%E2%80%93in%E2%80%93der%E2%80%93Gesellschaft_KMU_6.pdf",
      "source_locator": "S. 44"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_hilfe_syrien",
+   "title": "Hilfsbereitschaft bei Behördengängen: Geflüchtete aus Syrien",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Erfragt wird eine hypothetische Bitte um Begleitung bei einem Behördengang. Gezeigt ist der Anteil, der Hilfe als wahrscheinlich oder sehr wahrscheinlich angibt. Das ist erklärte Bereitschaft, keine beobachtete Hilfeleistung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Christentum",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 73.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Christentum",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    },
+    {
+     "label": "Islam",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 88.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Islam",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    },
+    {
+     "label": "Ohne Religionszugehörigkeit",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 67.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Ohne Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    },
+    {
+     "label": "Alle Befragten",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 73.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Alle Befragten",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_hilfe_ukraine",
+   "title": "Hilfsbereitschaft bei Behördengängen: Geflüchtete aus Ukraine",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Erfragt wird eine hypothetische Bitte um Begleitung bei einem Behördengang. Gezeigt ist der Anteil, der Hilfe als wahrscheinlich oder sehr wahrscheinlich angibt. Das ist erklärte Bereitschaft, keine beobachtete Hilfeleistung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Christentum",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 82.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Christentum",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    },
+    {
+     "label": "Islam",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 72.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Islam",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    },
+    {
+     "label": "Ohne Religionszugehörigkeit",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 76.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Ohne Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    },
+    {
+     "label": "Alle Befragten",
+     "detail": "Wahrscheinlich oder sehr wahrscheinlich bereit zu helfen",
+     "value": 79.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Alle Befragten",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 18",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Abbildung 2, S. 18"
+    }
+   ]
+  },
+  {
+   "block": "rm2015_islamwahrnehmung_vergleich",
+   "title": "Islamwahrnehmung 2012 und 2014 · zwei Erhebungen",
+   "note": "Die Grafik vergleicht Religionsmonitor 2013 (erhoben 2012) mit Emnid 2014. Zwei unabhängige Querschnitte; dieselben Personen wurden nicht wiederholt befragt. Bedrohung umfasst eher oder sehr bedrohlich, Unvereinbarkeit die Ablehnung der positiv formulierten Aussage über die Zugehörigkeit zur westlichen Welt. Die Fallzahlen 1.683 und 937 beziehen sich auf die jeweiligen nichtmuslimischen Studienstichproben. Unterschiede können auch von den Erhebungsverfahren abhängen; keine persönliche Einstellungsänderung und keine Verbindung zur anders gemessenen Bedrohungsfrage 2023.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Bedrohung · 2012",
+     "detail": null,
+     "value": 53.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013 / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 1683,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    },
+    {
+     "label": "Bedrohung · 2014",
+     "detail": null,
+     "value": 57.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013 / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    },
+    {
+     "label": "Passt nicht in westliche Welt · 2012",
+     "detail": null,
+     "value": 52.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013 / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 1683,
+     "field_period": "Oktober bis Dezember 2012",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
+    },
+    {
+     "label": "Passt nicht in westliche Welt · 2014",
+     "detail": null,
+     "value": 61.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013 / Emnid 2014",
+     "population": "Nichtmuslimische Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 937,
+     "field_period": "November 2014",
+     "question_ref": "Abbildung 1, S. 8 (PDF-Seite 9)",
+     "source_title": "Religionsmonitor – Sonderauswertung Islam 2015",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/BSt_ReligionsmonitorSonderstudieIslam_1_2015_web.pdf",
+     "source_locator": "Abbildung 1, S. 8 (PDF-Seite 9)"
     }
    ]
   },
@@ -2298,6 +2760,170 @@
    ]
   },
   {
+   "block": "rm2023_spenden_religion",
+   "title": "Spenden in den letzten zwölf Monaten nach Religionszugehörigkeit",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Die Werte zeigen Ja-Antworten zur eigenen Spendentätigkeit in den zwölf Monaten vor der Befragung. Selbstauskunft; Höhe und Art der Spenden werden hier nicht verglichen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Christentum",
+     "detail": "Ja-Antworten",
+     "value": 71.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Christentum",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 2, S. 30",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 2, S. 30"
+    },
+    {
+     "label": "Islam",
+     "detail": "Ja-Antworten",
+     "value": 69.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Islam",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 2, S. 30",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 2, S. 30"
+    },
+    {
+     "label": "Andere Religion",
+     "detail": "Ja-Antworten",
+     "value": 59.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Andere Religion",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 2, S. 30",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 2, S. 30"
+    },
+    {
+     "label": "Keine Religion",
+     "detail": "Ja-Antworten",
+     "value": 59.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Keine Religion",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 2, S. 30",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 2, S. 30"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_solidaritaet_spenden",
+   "title": "Spenden in den letzten zwölf Monaten: mit und ohne Religionszugehörigkeit",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Die Werte zeigen Ja-Antworten zur eigenen Spendentätigkeit in den zwölf Monaten vor der Befragung. Selbstauskunft; Höhe und Art der Spenden werden hier nicht verglichen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Mit Religionszugehörigkeit",
+     "detail": "Ja-Antworten",
+     "value": 70.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Mit Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    },
+    {
+     "label": "Ohne Religionszugehörigkeit",
+     "detail": "Ja-Antworten",
+     "value": 59.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Ohne Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    },
+    {
+     "label": "Alle Befragten",
+     "detail": "Ja-Antworten",
+     "value": 66.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Alle Befragten",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_solidaritaet_lotto",
+   "title": "Spendenbereitschaft nach einem hypothetischen Lottogewinn",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Gefragt wird, ob ein Teil eines angenommenen Lottogewinns von 100.000 Euro für wohltätige oder gemeinnützige Zwecke gespendet würde. Die Werte zeigen Ja-Antworten auf dieses Szenario, keine tatsächlichen Spenden.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Mit Religionszugehörigkeit",
+     "detail": "Ja-Antworten",
+     "value": 66.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Mit Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    },
+    {
+     "label": "Ohne Religionszugehörigkeit",
+     "detail": "Ja-Antworten",
+     "value": 53.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Ohne Religionszugehörigkeit",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    },
+    {
+     "label": "Alle Befragten",
+     "detail": "Ja-Antworten",
+     "value": 61.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Alle Befragten",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Tabelle 1, S. 23",
+     "source_title": "Ressourcen für Solidarität – Religion macht einen Unterschied (2024)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Tabelle 1, S. 23"
+    }
+   ]
+  },
+  {
    "block": "rm2023_spiritualitaet",
    "title": "Spirituelle Selbsteinschätzung · Religionsmonitor 2023",
    "note": "Erhebung Juni–Juli 2022, veröffentlicht als Religionsmonitor 2023. Analysestichprobe Deutschland: 4.363 Interviews (2.038 Melderegister, 2.325 Onlinepanel), gewichtet; muslimische Befragte wurden aufgestockt. 4.363 ist die Gesamtfallzahl, keine Fallzahl einer Religionsgruppe. Untergruppen-Fallzahlen stehen an der Abbildung nicht. Kleine Religionsgruppen sind besonders vorsichtig zu lesen; kein direkter Zeitvergleich mit 2013 wegen anderer Stichprobenzusammensetzung. Anteil „ziemlich/sehr“ spirituell. Spiritualität und Religiosität sind getrennt erfragt.",
@@ -2372,6 +2998,106 @@
      "source_title": "Zusammenleben in religiöser Vielfalt (2023)",
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
      "source_locator": "Abbildung 3, S. 23"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_verschwoerung_religioes",
+   "title": "Starke Religiosität nach Verschwörungsanfälligkeit",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Die Einstufung beruht auf dem Mittelwert von drei Aussagen über angeblich verborgene politische Motive, geheime Organisationen und verschwiegene wichtige Ereignisse. Die Antwortskala reicht in elf Stufen von 0 bis 100. Als verschwörungsanfällig gilt ein Mittelwert von mindestens 70, als verschwörungsfundamentalistisch ein Mittelwert von 100. Die zweite Gruppe ist Teil der ersten; die Anteile dürfen nicht addiert werden. Die Grenzwerte sind Festlegungen der Studie und keine klinische Diagnose. Religiosität wird aus Selbstbeschreibung, Nachdenken über Religion, Erfahrung göttlichen Eingreifens und Glauben an Gott oder etwas Göttliches gebildet. Die Balken zeigen den Anteil stark religiöser beziehungsweise spiritueller Personen innerhalb jeder Gruppe. Sie zeigen nicht den Anteil Verschwörungsanfälliger unter religiösen Menschen. Die Gruppen überlappen; ein ursächlicher Zusammenhang ist damit nicht nachgewiesen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Gesamtbevölkerung",
+     "detail": null,
+     "value": 13.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Gesamtbevölkerung",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 12, S. 50",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 12, S. 50"
+    },
+    {
+     "label": "Verschwörungsanfällige",
+     "detail": null,
+     "value": 18.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Verschwörungsanfällige",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 12, S. 50",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 12, S. 50"
+    },
+    {
+     "label": "Verschwörungsfundamentalistische",
+     "detail": null,
+     "value": 21.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Verschwörungsfundamentalistische",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 12, S. 50",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 12, S. 50"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_verschwoerung_spirituell",
+   "title": "Starke Spiritualität nach Verschwörungsanfälligkeit",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Die Einstufung beruht auf dem Mittelwert von drei Aussagen über angeblich verborgene politische Motive, geheime Organisationen und verschwiegene wichtige Ereignisse. Die Antwortskala reicht in elf Stufen von 0 bis 100. Als verschwörungsanfällig gilt ein Mittelwert von mindestens 70, als verschwörungsfundamentalistisch ein Mittelwert von 100. Die zweite Gruppe ist Teil der ersten; die Anteile dürfen nicht addiert werden. Die Grenzwerte sind Festlegungen der Studie und keine klinische Diagnose. Spiritualität wird aus Selbstbeschreibung, Naturverbundenheit, Zustimmung zu ganzheitlichem Denken und Interesse an kosmischer Verbundenheit gebildet. Die Balken zeigen den Anteil stark religiöser beziehungsweise spiritueller Personen innerhalb jeder Gruppe. Sie zeigen nicht den Anteil Verschwörungsanfälliger unter religiösen Menschen. Die Gruppen überlappen; ein ursächlicher Zusammenhang ist damit nicht nachgewiesen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Gesamtbevölkerung",
+     "detail": null,
+     "value": 13.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Gesamtbevölkerung",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 12, S. 50",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 12, S. 50"
+    },
+    {
+     "label": "Verschwörungsanfällige",
+     "detail": null,
+     "value": 20.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Verschwörungsanfällige",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 12, S. 50",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 12, S. 50"
+    },
+    {
+     "label": "Verschwörungsfundamentalistische",
+     "detail": null,
+     "value": 25.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren: Verschwörungsfundamentalistische",
+     "base_n": null,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 12, S. 50",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 12, S. 50"
     }
    ]
   },
@@ -2598,6 +3324,42 @@
      "source_title": "Evangelische Kirche in Deutschland (2023): Wie hältst du’s mit der Kirche? Erste Ergebnisse der 6. Kirchenmitgliedschaftsuntersuchung",
      "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/Wie_h%C3%A4ltst_du%E2%80%99s_mit_der_Kirche_%E2%80%93_Zur_Bedeutung_der_Kirche%E2%80%93in%E2%80%93der%E2%80%93Gesellschaft_KMU_6.pdf",
      "source_locator": "S. 43 f."
+    }
+   ]
+  },
+  {
+   "block": "rm2023_verschwoerung_de",
+   "title": "Verschwörungsanfälligkeit in Deutschland",
+   "note": "Religionsmonitor 2023: erhoben im Juni und Juli 2022, nicht im Erscheinungsjahr dieser Auswertung. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, mit gewichteter Aufstockung muslimischer Befragter. Die Quelle veröffentlicht hier keine Fallzahlen der einzelnen Untergruppen oder gültigen Antworten; deshalb bleibt deren Fallzahl offen. Unterschiede sind deskriptiv und belegen keine Wirkung der Religionszugehörigkeit. Die Einstufung beruht auf dem Mittelwert von drei Aussagen über angeblich verborgene politische Motive, geheime Organisationen und verschwiegene wichtige Ereignisse. Die Antwortskala reicht in elf Stufen von 0 bis 100. Als verschwörungsanfällig gilt ein Mittelwert von mindestens 70, als verschwörungsfundamentalistisch ein Mittelwert von 100. Die zweite Gruppe ist Teil der ersten; die Anteile dürfen nicht addiert werden. Die Grenzwerte sind Festlegungen der Studie und keine klinische Diagnose.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Verschwörungsanfällig",
+     "detail": null,
+     "value": 21.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 4363,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Verschwörungsfundamentalistisch",
+     "detail": null,
+     "value": 3.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 4363,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
     }
    ]
   },
@@ -3306,6 +4068,218 @@
      "source_title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142",
      "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
      "source_locator": "S. 21–25"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_verschwoerung_anfaellig",
+   "title": "Verschwörungsanfälligkeit im Ländervergleich",
+   "note": "Erhebung im Juni und Juli 2022; Auswertung veröffentlicht 2025. Die Einstufung beruht auf dem Mittelwert von drei Aussagen über angeblich verborgene politische Motive, geheime Organisationen und verschwiegene wichtige Ereignisse. Die Antwortskala reicht in elf Stufen von 0 bis 100. Als verschwörungsanfällig gilt ein Mittelwert von mindestens 70, als verschwörungsfundamentalistisch ein Mittelwert von 100. Die zweite Gruppe ist Teil der ersten; die Anteile dürfen nicht addiert werden. Die Grenzwerte sind Festlegungen der Studie und keine klinische Diagnose. Deutschland nutzt eine kombinierte Melderegister- und Online-Stichprobe; die sechs anderen Länder nutzen quotierte Online-Panels und erfassen nur Menschen mit Internetzugang. Die unterschiedlichen Zugänge begrenzen den Ländervergleich. Die ausgewiesenen Fallzahlen sind die nationalen Studienstichproben, keine Fallzahlen gültiger Antworten.",
+   "scope": "Mehrere Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 21.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 4363,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 23.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Niederlande",
+     "base_n": 1051,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Großbritannien",
+     "detail": null,
+     "value": 31.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Großbritannien",
+     "base_n": 1045,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 32.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Frankreich",
+     "base_n": 1065,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Polen",
+     "detail": null,
+     "value": 41.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Polen",
+     "base_n": 1046,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Spanien",
+     "detail": null,
+     "value": 43.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Spanien",
+     "base_n": 1046,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "USA",
+     "detail": null,
+     "value": 36.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: USA",
+     "base_n": 1041,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_verschwoerung_fundamentalistisch",
+   "title": "Verschwörungsfundamentalismus im Ländervergleich",
+   "note": "Erhebung im Juni und Juli 2022; Auswertung veröffentlicht 2025. Die Einstufung beruht auf dem Mittelwert von drei Aussagen über angeblich verborgene politische Motive, geheime Organisationen und verschwiegene wichtige Ereignisse. Die Antwortskala reicht in elf Stufen von 0 bis 100. Als verschwörungsanfällig gilt ein Mittelwert von mindestens 70, als verschwörungsfundamentalistisch ein Mittelwert von 100. Die zweite Gruppe ist Teil der ersten; die Anteile dürfen nicht addiert werden. Die Grenzwerte sind Festlegungen der Studie und keine klinische Diagnose. Deutschland nutzt eine kombinierte Melderegister- und Online-Stichprobe; die sechs anderen Länder nutzen quotierte Online-Panels und erfassen nur Menschen mit Internetzugang. Die unterschiedlichen Zugänge begrenzen den Ländervergleich. Die ausgewiesenen Fallzahlen sind die nationalen Studienstichproben, keine Fallzahlen gültiger Antworten.",
+   "scope": "Mehrere Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 3.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung in Deutschland ab 16 Jahren",
+     "base_n": 4363,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 5.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Niederlande",
+     "base_n": 1051,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Großbritannien",
+     "detail": null,
+     "value": 5.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Großbritannien",
+     "base_n": 1045,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 5.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Frankreich",
+     "base_n": 1065,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Polen",
+     "detail": null,
+     "value": 8.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Polen",
+     "base_n": 1046,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "Spanien",
+     "detail": null,
+     "value": 7.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: Spanien",
+     "base_n": 1046,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
+    },
+    {
+     "label": "USA",
+     "detail": null,
+     "value": 6.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung mit Internetzugang ab 16 Jahren: USA",
+     "base_n": 1041,
+     "field_period": "Juni bis Juli 2022",
+     "question_ref": "Abbildung 2, S. 29",
+     "source_title": "Verschwörungsglaube als Gefahr für Demokratie und Zusammenhalt (2025)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Abbildung 2, S. 29"
     }
    ]
   },

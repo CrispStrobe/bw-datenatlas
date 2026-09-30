@@ -289,7 +289,17 @@
       "sha256": "f011f0bc057d990d63ddbdc2764279b6c89c1bad9ce5ea93a820efbb9dda1c73",
       "bytes": 1208022,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        9,
+        13
+      ],
+      "used_blocks": [
+        "rm2015_islamwahrnehmung_2014",
+        "rm2015_islamwahrnehmung_vergleich",
+        "rm2015_freizeit_muslime",
+        "rm2015_freizeit_nichtmuslime"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/CoronaTeilstudie_LW_20200525.pdf",
@@ -417,7 +427,20 @@
       "sha256": "4ef4069ee999e29fd91398b405a166529716424253849c1fe0bb86e92dd132ac",
       "bytes": 1964931,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        18,
+        23,
+        30
+      ],
+      "used_blocks": [
+        "rm2023_hilfe_syrien",
+        "rm2023_hilfe_ukraine",
+        "rm2023_solidaritaet_lotto",
+        "rm2023_solidaritaet_spenden",
+        "rm2023_solidaritaet_engagement",
+        "rm2023_spenden_religion"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
@@ -625,7 +648,18 @@
       "sha256": "9ec90d8749e2ca083540d7fd8668e78274e64740783ff63239e51653830a63d6",
       "bytes": 4787582,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        29,
+        50
+      ],
+      "used_blocks": [
+        "rm2023_verschwoerung_de",
+        "rm2023_verschwoerung_anfaellig",
+        "rm2023_verschwoerung_fundamentalistisch",
+        "rm2023_verschwoerung_religioes",
+        "rm2023_verschwoerung_spirituell"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zusammenfassung_der_Sonderauswertung.pdf",

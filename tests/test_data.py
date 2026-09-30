@@ -497,8 +497,39 @@ class DataTests(unittest.TestCase):
         self.assertTrue(all(p['status'] == 'downloaded' and len(p['sha256']) == 64
                             for p in d['publications']))
         reviewed = [p for p in d['publications'] if p['review_status'] != 'not_reviewed']
-        self.assertEqual(len(reviewed), 4)
+        self.assertGreaterEqual(len(reviewed), 6)
         self.assertTrue(all(p['reviewed_pages'] and p['used_blocks'] for p in reviewed))
         self.assertEqual(d, json.loads((ROOT/'docs/data/religionsmonitor-publications.json').read_text()))
+
+    def test_solidarity_and_conspiracy_keep_population_and_fieldwork_distinct(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        syria = blocks['rm2023_hilfe_syrien']['items']
+        ukraine = blocks['rm2023_hilfe_ukraine']['items']
+        self.assertEqual([i['value'] for i in syria], [73, 88, 67, 73])
+        self.assertEqual([i['value'] for i in ukraine], [82, 72, 76, 79])
+        self.assertTrue(all(i['base_n'] is None for i in syria + ukraine))
+        international = blocks['rm2023_verschwoerung_anfaellig']['items']
+        self.assertEqual([i['base_n'] for i in international],
+                         [4363, 1051, 1045, 1065, 1046, 1046, 1041])
+        self.assertNotIn('Internetzugang', international[0]['population'])
+        self.assertTrue(all('Internetzugang' in i['population'] for i in international[1:]))
+        self.assertTrue(all(i['field_period'] == 'Juni bis Juli 2022' for i in international))
+        religiosity = blocks['rm2023_verschwoerung_religioes']
+        self.assertEqual([i['value'] for i in religiosity['items']], [13, 18, 21])
+        self.assertIn('nicht den Anteil', religiosity['note'])
+        self.assertIn('Teil der ersten', religiosity['note'])
+
+    def test_islam_special_analysis_keeps_two_surveys_and_explicit_zero(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        muslim = blocks['rm2015_freizeit_muslime']['items']
+        nonmuslim = blocks['rm2015_freizeit_nichtmuslime']['items']
+        self.assertEqual([i['value'] for i in muslim], [8, 30, 29, 24, 8])
+        self.assertEqual([i['value'] for i in nonmuslim], [63, 33, 3, 1, 0])
+        self.assertTrue(all(i['base_n'] == 322 and '2012' in i['field_period'] for i in muslim))
+        self.assertTrue(all(i['base_n'] == 937 and '2014' in i['field_period'] for i in nonmuslim))
+        comparison = blocks['rm2015_islamwahrnehmung_vergleich']['items']
+        self.assertEqual([i['base_n'] for i in comparison], [1683, 937, 1683, 937])
 
 if __name__=='__main__': unittest.main(verbosity=2)

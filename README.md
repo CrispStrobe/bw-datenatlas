@@ -261,11 +261,18 @@ Die Befragungsauswahl gruppiert bundesweite Ergebnisse zusätzlich nach Studie.
 
 `inputs/befragungsitems.csv` enthält die abgelesenen Werte einschließlich
 Grundgesamtheit, Erhebungszeitraum, Einheit und genauer Fundstelle. Abbildungen aus
-den Religionsmonitor-Publikationen 2013, 2019, 2023 und 2026 wurden auch visuell
+den Religionsmonitor-Publikationen 2013, 2015, 2019, 2023, 2024, 2025 und 2026 wurden auch visuell
 geprüft. Unbekannte Untergruppen-Fallzahlen bleiben leer; Gesamtfallzahlen werden
 als Studienstichprobe bezeichnet. Der Kurzindex 2026 ist ein Wert von 0 bis 100
 Punkten. Die historischen Radar-Werte werden ausschließlich in der von der Stiftung
 mit derselben Methode neu berechneten Fassung verwendet.
+
+Die Solidaritätsauswertung von 2024 und die Verschwörungsstudie von 2025 nutzen
+die Erhebung von Juni/Juli 2022. Beim internationalen Vergleich beziehen sich die
+Online-Panels außerhalb Deutschlands auf Menschen mit Internetzugang. Die
+Sonderauswertung Islam 2015 kombiniert Religionsmonitor 2013 (Feldzeit 2012) und
+Emnid 2014; Freizeitkontakte beider Gruppen sind deshalb separat dargestellt.
+Unbeschriftete Punkte der Alterskurve werden nicht als exakte Werte übernommen.
 
 Die frei verlinkten PDFs des Publikationskatalogs lassen sich lokal sichern:
 
