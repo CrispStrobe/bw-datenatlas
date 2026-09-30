@@ -5,7 +5,7 @@
  "not_an_archiving_run": "Abgefragt, nicht archiviert. Ob eine Adresse neu ins Internet Archive gegeben wird, ist eine Handlung nach außen und keine Entscheidung dieses Skripts.",
  "checked_on": "2026-09-30",
  "count": 67,
- "with_snapshot": 45,
+ "with_snapshot": 50,
  "archives": {
   "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf": {
    "url": "https://web.archive.org/web/20260609092604/https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
@@ -231,17 +231,39 @@
    "url": "https://web.archive.org/web/20250703074423/https://www.zensus2022.de/DE/Ergebnisse-des-Zensus/_inhalt.html",
    "captured": "2025-07-03",
    "title": "Statistische Ämter des Bundes und der Länder, Zensus 2022, Gitterzellen"
+  },
+  "https://d-nb.info/1266039155/34": {
+   "url": "https://web.archive.org/web/20260930064656/https://d-nb.info/1266039155/34",
+   "captured": "2026-09-30",
+   "title": "Muslimisches Leben in Deutschland 2020, Forschungsbericht 38",
+   "submitted_by_this_project": true
+  },
+  "https://d-nb.info/1266039171/34": {
+   "url": "https://web.archive.org/web/20260930064753/https://d-nb.info/1266039171/34",
+   "captured": "2026-09-30",
+   "title": "Muslimisches Leben in Deutschland 2020 – Kurzfassung",
+   "submitted_by_this_project": true
+  },
+  "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Asylzug%C3%A4nge_in_Baden-W%C3%BCrttemberg_-_Registrierungen_Asylerst-_und_Folgeantragsteller_mit_Verbleib_in_BW.pdf": {
+   "url": "https://web.archive.org/web/20260930065609/https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Asylzug%C3%A4nge_in_Baden-W%C3%BCrttemberg_-_Registrierungen_Asylerst-_und_Folgeantragsteller_mit_Verbleib_in_BW.pdf",
+   "captured": "2026-09-30",
+   "title": "Asylzugänge in Baden-Württemberg – Registrierungen Asylerst- und Folgeantragsteller mit Verbleib in BW",
+   "submitted_by_this_project": true
+  },
+  "https://www.destatis.de/static/DE/zensus/gitterdaten/Staatsangehoerigkeit_nach_ausgewaehlten_Laendern.zip": {
+   "url": "https://web.archive.org/web/20260930070012/https://www.destatis.de/static/DE/zensus/gitterdaten/Staatsangehoerigkeit_nach_ausgewaehlten_Laendern.zip",
+   "captured": "2026-09-30",
+   "title": "Statistisches Bundesamt, Zensus 2022, Staatsangehörigkeit nach ausgewählten Ländern in 100-Meter-Gitterzellen",
+   "submitted_by_this_project": true
+  },
+  "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Gefl%C3%BCchtete_aus_der_Ukraine_nach___24_Aufenthaltsgesetz__AufenthG__in_Baden-W%C3%BCrttemberg.pdf": {
+   "url": "https://web.archive.org/web/20260930065625/https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Gefl%C3%BCchtete_aus_der_Ukraine_nach___24_Aufenthaltsgesetz__AufenthG__in_Baden-W%C3%BCrttemberg.pdf",
+   "captured": "2026-09-30",
+   "title": "Geflüchtete aus der Ukraine nach § 24 Aufenthaltsgesetz (AufenthG) in Baden-Württemberg",
+   "submitted_by_this_project": true
   }
  },
  "without_snapshot": [
-  {
-   "url": "https://d-nb.info/1266039155/34",
-   "title": "Muslimisches Leben in Deutschland 2020, Forschungsbericht 38"
-  },
-  {
-   "url": "https://d-nb.info/1266039171/34",
-   "title": "Muslimisches Leben in Deutschland 2020 – Kurzfassung"
-  },
   {
    "url": "https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/2024/vg250_01-01.utm32s.shape.ebenen.zip",
    "title": "https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/2024/vg250_01-01.utm32s.shape.ebenen.zip"
@@ -287,14 +309,6 @@
    "title": "Asylzugänge in Baden-Württemberg – Hauptherkunftsländer der Asylantragsteller mit Verbleib in BW"
   },
   {
-   "url": "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Asylzug%C3%A4nge_in_Baden-W%C3%BCrttemberg_-_Registrierungen_Asylerst-_und_Folgeantragsteller_mit_Verbleib_in_BW.pdf",
-   "title": "Asylzugänge in Baden-Württemberg – Registrierungen Asylerst- und Folgeantragsteller mit Verbleib in BW"
-  },
-  {
-   "url": "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Gefl%C3%BCchtete_aus_der_Ukraine_nach___24_Aufenthaltsgesetz__AufenthG__in_Baden-W%C3%BCrttemberg.pdf",
-   "title": "Geflüchtete aus der Ukraine nach § 24 Aufenthaltsgesetz (AufenthG) in Baden-Württemberg"
-  },
-  {
    "url": "https://wlb.boss.bsz-bw.de/Record/1794900373#description",
    "title": "WLB-Katalognachweis 1794900373"
   },
@@ -311,10 +325,6 @@
    "title": "Zahl der Musliminnen und Muslime in Deutschland 2025, Forschungsbericht 55"
   },
   {
-   "url": "https://www.destatis.de/static/DE/zensus/gitterdaten/Staatsangehoerigkeit_nach_ausgewaehlten_Laendern.zip",
-   "title": "Statistisches Bundesamt, Zensus 2022, Staatsangehörigkeit nach ausgewählten Ländern in 100-Meter-Gitterzellen"
-  },
-  {
    "url": "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/312424001.pdf",
    "title": "Statistisches Landesamt Baden-Württemberg, Statistischer Bericht A I 4 - j/24"
   },
@@ -322,5 +332,10 @@
    "url": "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistisches_Monatsheft/PDF/Beitrag20_04_01.pdf",
    "title": "Wie viele Musliminnen und Muslime leben in Baden-Württemberg? Ansatz und Ergebnisse einer Schätzung zur muslimischen Bevölkerung im Südwesten"
   }
- ]
+ ],
+ "submitted_on": "2026-09-30",
+ "submission_note": "Adressen ohne Schnappschuss wurden bei web.archive.org eingereicht; ein Versuch bei archive.ph lief mit der Kennung dieses Projekts. Aufgenommen ist nur, was danach wirklich im Index stand — eine Quittung des Dienstes ist kein Schnappschuss.",
+ "index_lag_note": "Eine Einreichung bei web.archive.org erscheint nicht sofort im CDX-Index. Was hier als \"ohne Schnappschuss\" steht, kann deshalb morgen schon einen haben — ein erneuter Lauf von check_source_archives.py holt Nachzügler nach. Umgekehrt heißt eine Quittung des Dienstes noch nicht, dass eine Aufnahme existiert; aufgenommen wird hier nur, was im Index steht.",
+ "also_archived_privately": "Alle 67 Adressen sind zusätzlich in der eigenen ArchiveBox des Projekts erfasst (Tag \"bw-datenatlas\"). Diese Kopie ist nicht öffentlich und ersetzt keinen öffentlichen Schnappschuss; sie sichert die Nachprüfbarkeit für das Projekt selbst.",
+ "archive_ph_note": "archive.ph weist automatisierte Einreichungen ab (HTTP 429). Von zwanzig Versuchen wurden zwei angenommen. Die Abwehr wurde nicht umgangen."
 }
