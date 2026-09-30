@@ -219,6 +219,26 @@ with sync_playwright() as pw:
     check('resetting the place puts the map back',
           page.get_attribute('#map','viewBox')=='0 0 760 700')
 
+    # Achtundvierzig Ebenen in einer flachen Liste sagen nicht, welche Geografie sie
+    # zeigen — dieselbe Verwechslungsgefahr wie bei den Befragungsblöcken. Und die
+    # Liste steht doppelt: im Dokument und im Programm. Beides wird hier festgehalten.
+    gruppen=page.eval_on_selector_all('#layer optgroup',
+        'e=>e.map(x=>[x.label,x.children.length])')
+    check('the layer dropdown is grouped by geography',len(gruppen)>=6)
+    check('every layer sits in a group',
+          sum(n for _,n in gruppen)==page.locator('#layer option').count())
+    check('the first group is the state as a whole',
+          gruppen[0][0] in ('Baden-Württemberg gesamt','Baden-Württemberg as a whole'))
+    fehlend=page.evaluate("""()=>{
+      const imDokument=[...document.querySelectorAll('#layer option')].map(o=>o.value);
+      const imProgramm=Object.keys(window.__layers||{});
+      if(!imProgramm.length)return null;
+      return {ohneEbene:imDokument.filter(v=>!imProgramm.includes(v)),
+              ohneOption:imProgramm.filter(v=>!imDokument.includes(v))};}""")
+    if fehlend is not None:
+        check('every option has a layer and every layer an option',
+              not fehlend['ohneEbene'] and not fehlend['ohneOption'])
+
     # Dieselbe Rechnung für die Länder, und zwei Stellen, an denen sie sich vorher
     # etwas anderes angezogen hat: die Quellenzeile der Deutschlandkarte stand fest
     # auf dem BAMF-Bericht, und der Schlusszweig des Tooltips endet auf "Einwohner".

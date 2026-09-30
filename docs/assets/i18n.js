@@ -50,7 +50,11 @@
   return raus;
  }
 
- const ATTRIBUTE = ['placeholder', 'aria-label', 'title'];
+ // 'label' wegen der Gruppen im Ebenen-Auswahlfeld: achtundvierzig Einträge in
+ // einer flachen Liste sagen nicht, ob eine Ebene Gemeinden, Kreise oder
+ // europäische Regionen zeigt. Die Gruppennamen stehen in einem Attribut und
+ // blieben ohne diese Zeile in jeder Sprache deutsch.
+ const ATTRIBUTE = ['placeholder', 'aria-label', 'title', 'label'];
  function uebersetzbareAttribute() {
   const raus = [];
   for (const el of document.querySelectorAll('body *')) {

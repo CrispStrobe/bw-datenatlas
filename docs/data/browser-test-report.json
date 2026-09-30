@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 350,
+  "check_count": 354,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -204,6 +204,22 @@
     },
     {
       "name": "resetting the place puts the map back",
+      "passed": true
+    },
+    {
+      "name": "the layer dropdown is grouped by geography",
+      "passed": true
+    },
+    {
+      "name": "every layer sits in a group",
+      "passed": true
+    },
+    {
+      "name": "the first group is the state as a whole",
+      "passed": true
+    },
+    {
+      "name": "every option has a layer and every layer an option",
       "passed": true
     },
     {
