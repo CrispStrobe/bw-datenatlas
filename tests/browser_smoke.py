@@ -141,6 +141,10 @@ with sync_playwright() as pw:
       return [...u];}"""))
     fehlend=sorted(x for x in gebraucht if x not in verlinkt)
     check('every survey source is listed in the sources section',not fehlend)
+    archivlinks=page.eval_on_selector_all(
+        '#sources-list a[href*="web.archive.org"]','e=>e.length')
+    check('the sources section links an archived copy where one exists',
+          archivlinks>=10)
     check('the sources section covers more than the nine curated entries',
           len(verlinkt)>=25)
     check('the anchors the text jumps to still exist',

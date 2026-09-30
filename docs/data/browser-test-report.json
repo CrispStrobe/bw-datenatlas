@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 354,
+  "check_count": 355,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -116,6 +116,10 @@
     },
     {
       "name": "every survey source is listed in the sources section",
+      "passed": true
+    },
+    {
+      "name": "the sources section links an archived copy where one exists",
       "passed": true
     },
     {

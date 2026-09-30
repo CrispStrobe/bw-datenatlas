@@ -1,0 +1,326 @@
+{
+ "type": "source_archives",
+ "schema_version": "1.0",
+ "what_this_is": "Zu jeder Quelladresse dieses Atlas der jüngste Schnappschuss im Internet Archive, soweit es einen gibt. Damit bleibt eine Fundstelle auffindbar, auch wenn die Behörde ihre Veröffentlichung verschiebt.",
+ "not_an_archiving_run": "Abgefragt, nicht archiviert. Ob eine Adresse neu ins Internet Archive gegeben wird, ist eine Handlung nach außen und keine Entscheidung dieses Skripts.",
+ "checked_on": "2026-09-30",
+ "count": 67,
+ "with_snapshot": 45,
+ "archives": {
+  "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf": {
+   "url": "https://web.archive.org/web/20260609092604/https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+   "captured": "2026-06-09",
+   "title": "Koopmans (2013): Fundamentalismus und Fremdenfeindlichkeit. Muslime und Christen im europäischen Vergleich, WZB Mitteilungen 142"
+  },
+  "https://daten.statistik-bw.de/genesisonline/online": {
+   "url": "https://web.archive.org/web/20260929092059/https://daten.statistik-bw.de/genesisonline/online",
+   "captured": "2026-09-29",
+   "title": "AZR-Tabellen Baden-Württemberg"
+  },
+  "https://dserver.bundestag.de/btd/21/043/2104300.pdf": {
+   "url": "https://web.archive.org/web/20260908002437/https://dserver.bundestag.de/btd/21/043/2104300.pdf",
+   "captured": "2026-09-08",
+   "title": "Migrationsbericht 2024 – Bundestagsdrucksache 21/4300"
+  },
+  "https://ergebnisse.zensus2022.de/datenbank/online/": {
+   "url": "https://web.archive.org/web/20260802121640/https://ergebnisse.zensus2022.de/datenbank/online/",
+   "captured": "2026-08-02",
+   "title": "Zensus 2022 – Zensusdatenbank"
+  },
+  "https://kartenseite.wordpress.com/2017/03/27/muslime-in-baden-wuerttemberg-gemeinden/": {
+   "url": "https://web.archive.org/web/20241130142517/https://kartenseite.wordpress.com/2017/03/27/muslime-in-baden-wuerttemberg-gemeinden/",
+   "captured": "2024-11-30",
+   "title": "Muslime in Baden-Württemberg – Gemeinden"
+  },
+  "https://mediendienst-integration.de/bevoelkerung/muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/": {
+   "url": "https://web.archive.org/web/20260610130611/https://mediendienst-integration.de/bevoelkerung/muslime-in-deutschland/islamischer-religionsunterricht-in-deutschland/",
+   "captured": "2026-06-10",
+   "title": "Islamischer Religionsunterricht in Deutschland"
+  },
+  "https://search.gesis.org/research_data/ZA5001": {
+   "url": "https://web.archive.org/web/20251209022747/https://search.gesis.org/research_data/ZA5001",
+   "captured": "2025-12-09",
+   "title": "Religion Monitor 2008 – Muslim Religiosity in Germany – ZA5001"
+  },
+  "https://search.gesis.org/research_data/ZA5244?lang=en": {
+   "url": "https://web.archive.org/web/20240829024456/https://search.gesis.org/research_data/ZA5244?lang=en",
+   "captured": "2024-08-29",
+   "title": "Muslimisches Leben in Deutschland – ZA5244"
+  },
+  "https://search.gesis.org/research_data/ZA8830": {
+   "url": "https://web.archive.org/web/20250911004027/https://search.gesis.org/research_data/ZA8830",
+   "captured": "2025-09-11",
+   "title": "ALLBUS 2023 – ZA8830"
+  },
+  "https://sozialministerium.baden-wuerttemberg.de/": {
+   "url": "https://web.archive.org/web/20180329185324/https://sozialministerium.baden-wuerttemberg.de/",
+   "captured": "2018-03-29",
+   "title": "Ministerium für Soziales und Integration Baden-Württemberg (2020): Integrationsbericht des Landes Baden-Württemberg 2020, Datenquelle: Umfrage „Integration unter Druck?\" 2019"
+  },
+  "https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf": {
+   "url": "https://web.archive.org/web/20230128235316/https://sozialministerium.baden-wuerttemberg.de/fileadmin/redaktion/m-sm/intern/downloads/Publikationen/Gelebte-Vielfalt_Bevoelk-umfrage-Integration_Okt-2012.pdf",
+   "captured": "2023-01-28",
+   "title": "Ministerium für Integration Baden-Württemberg (2012): Gelebte Vielfalt. Ergebnisse und Analysen einer repräsentativen Bevölkerungsumfrage zur Integration in Baden-Württemberg 2012"
+  },
+  "https://sunnitischer-schulrat.de/": {
+   "url": "https://web.archive.org/web/20260615020440/https://sunnitischer-schulrat.de/",
+   "captured": "2026-06-15",
+   "title": "Stiftung Sunnitischer Schulrat nach der amtlichen Schulstatistik des Statistischen Landesamts Baden-Württemberg"
+  },
+  "https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt/2231558-2231558": {
+   "url": "https://web.archive.org/web/20260412201054/https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt/2231558-2231558",
+   "captured": "2026-04-12",
+   "title": "Statistik zu bearbeiteten Visa"
+  },
+  "https://www.auswaertiges-amt.de/resource/blob/2719076/58c6cdd9c82ed405e14702e656ac86d6/statistik-2024-nationale-visa-data.pdf": {
+   "url": "https://web.archive.org/web/20260519011419/https://www.auswaertiges-amt.de/resource/blob/2719076/58c6cdd9c82ed405e14702e656ac86d6/statistik-2024-nationale-visa-data.pdf",
+   "captured": "2026-05-19",
+   "title": "Übersicht über 2024 bearbeitete nationale Visa"
+  },
+  "https://www.auswaertiges-amt.de/resource/blob/2756162/ec04907290341d48d55566e631f9d533/statistik-2025-nationale-visa-data.pdf": {
+   "url": "https://web.archive.org/web/20260510135543/https://www.auswaertiges-amt.de/resource/blob/2756162/ec04907290341d48d55566e631f9d533/statistik-2025-nationale-visa-data.pdf",
+   "captured": "2026-05-10",
+   "title": "Übersicht über 2025 bearbeitete nationale Visa"
+  },
+  "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf": {
+   "url": "https://web.archive.org/web/20260806171048/https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb38-muslimisches-leben.pdf",
+   "captured": "2026-08-06",
+   "title": "Pfündel/Stichs/Tanis (2021): Muslimisches Leben in Deutschland 2020, BAMF-Forschungsbericht 38"
+  },
+  "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf": {
+   "url": "https://web.archive.org/web/20260417212811/https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+   "captured": "2026-04-17",
+   "title": "Zusammenleben in religiöser Vielfalt. Religionsmonitor 2023"
+  },
+  "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/_inhalt.html": {
+   "url": "https://web.archive.org/web/20260924103917/https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/_inhalt.html",
+   "captured": "2026-09-24",
+   "title": "Bevölkerung Deutschlands nimmt im ersten Halbjahr 2026 um 0,2 % ab"
+  },
+  "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/bevoelkerung_religionszugehoerigkeit_je_gemeinde.xlsx": {
+   "url": "https://web.archive.org/web/20250709070916/https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/bevoelkerung_religionszugehoerigkeit_je_gemeinde.xlsx",
+   "captured": "2025-07-09",
+   "title": "Statistische Ämter des Bundes und der Länder, Zensus 2022, Bevölkerung nach Religionszugehörigkeit, Anteil je Gemeinde"
+  },
+  "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/religionszugehoerigkeit_zenus2022_und_zensus2011_bundesland.xlsx": {
+   "url": "https://web.archive.org/web/20250709070933/https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Zensus2022/Publikationen/Downloads-Publikationen/Sonderauswertungen/religionszugehoerigkeit_zenus2022_und_zensus2011_bundesland.xlsx",
+   "captured": "2025-07-09",
+   "title": "Bevölkerung nach Religionszugehörigkeit im Zensus 2022 und im Zensus 2011"
+  },
+  "https://www.destatis.de/static/DE/zensus/gitterdaten/Regionaltabelle_Demografie.xlsx": {
+   "url": "https://web.archive.org/web/20260925192632/https://www.destatis.de/static/DE/zensus/gitterdaten/Regionaltabelle_Demografie.xlsx",
+   "captured": "2026-09-25",
+   "title": "Statistische Ämter des Bundes und der Länder, Zensus 2022, Regionaltabellen Demografie und Bevölkerung"
+  },
+  "https://www.deutsche-islam-konferenz.de/DE/DatenFakten/daten-fakten_node.html": {
+   "url": "https://web.archive.org/web/20260815115409/https://www.deutsche-islam-konferenz.de/DE/DatenFakten/daten-fakten_node.html",
+   "captured": "2026-08-15",
+   "title": "Daten und Fakten"
+  },
+  "https://www.dezim-institut.de/publikationen/baden-wuerttemberg-postmigrantisch/": {
+   "url": "https://web.archive.org/web/20260414023746/https://www.dezim-institut.de/publikationen/baden-wuerttemberg-postmigrantisch/",
+   "captured": "2026-04-14",
+   "title": "Baden-Württemberg postmigrantisch. Einstellungen der Bevölkerung Baden-Württembergs zu Musliminnen und Muslimen in Deutschland"
+  },
+  "https://www.diw.de/de/diw_01.c.582774.de/themen_nachrichten/4_3_prozent_der_in_deutschland_lebenden_erwachsenen_sind_muslime.html": {
+   "url": "https://web.archive.org/web/20260618132634/https://www.diw.de/de/diw_01.c.582774.de/themen_nachrichten/4_3_prozent_der_in_deutschland_lebenden_erwachsenen_sind_muslime.html",
+   "captured": "2026-06-18",
+   "title": "4,3 Prozent der in Deutschland lebenden Erwachsenen sind Muslime"
+  },
+  "https://www.diw.de/en/diw_01.c.601584.en/data_access.html": {
+   "url": "https://web.archive.org/web/20260811094555/https://www.diw.de/en/diw_01.c.601584.en/data_access.html",
+   "captured": "2026-08-11",
+   "title": "SOEP Data Access"
+  },
+  "https://www.diw.de/en/diw_01.c.997276.en/edition/soep-core_v41eu__data_1984-2024__eu-edition.html": {
+   "url": "https://web.archive.org/web/20260514013655/https://www.diw.de/en/diw_01.c.997276.en/edition/soep-core_v41eu__data_1984-2024__eu-edition.html",
+   "captured": "2026-05-14",
+   "title": "SOEP-Core v41eu (Data 1984–2024, EU-Edition)"
+  },
+  "https://www.domino1.stuttgart.de/web/komunis/komunissde.nsf/49ec24bbdf344054c1257ca900367f10/6ef964749011f0f1c125852200166f5f/%24FILE/bs002_.PDF": {
+   "url": "https://web.archive.org/web/20240614073848/https://www.domino1.stuttgart.de/web/komunis/komunissde.nsf/49ec24bbdf344054c1257ca900367f10/6ef964749011f0f1c125852200166f5f/%24FILE/bs002_.PDF",
+   "captured": "2024-06-14",
+   "title": "Muslime in Stuttgart 2017 – Neue Schätzung zur Zahl der in Stuttgart lebenden Muslime"
+  },
+  "https://www.gesis.org/allbus/daten-und-dokumentation": {
+   "url": "https://web.archive.org/web/20260819211650/https://www.gesis.org/allbus/daten-und-dokumentation",
+   "captured": "2026-08-19",
+   "title": "Die ALLBUS-Datensätze – Daten und Dokumentation"
+  },
+  "https://www.landeskunde-baden-wuerttemberg.de/religionen": {
+   "url": "https://web.archive.org/web/20231028145311/https://www.landeskunde-baden-wuerttemberg.de/religionen",
+   "captured": "2023-10-28",
+   "title": "Religionen und Konfessionen in Baden-Württemberg"
+  },
+  "https://www.pewresearch.org/dataset/dataset-of-global-religious-composition-estimates-for-2010-and-2020/": {
+   "url": "https://web.archive.org/web/20260824062023/https://www.pewresearch.org/dataset/dataset-of-global-religious-composition-estimates-for-2010-and-2020/",
+   "captured": "2026-08-24",
+   "title": "Dataset of Global Religious Composition Estimates for 2010 and 2020"
+  },
+  "https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/": {
+   "url": "https://web.archive.org/web/20260419082519/https://www.pewresearch.org/global/2006/07/06/muslims-in-europe-economic-worries-top-concerns-about-religious-and-cultural-identity/",
+   "captured": "2026-04-19",
+   "title": "Pew Research Center (2006): Muslims in Europe – Economic Worries Top Concerns About Religious and Cultural Identity"
+  },
+  "https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/": {
+   "url": "https://web.archive.org/web/20260922075440/https://www.pewresearch.org/religion/2017/11/29/europes-growing-muslim-population/",
+   "captured": "2026-09-22",
+   "title": "Pew Research Center (2017): Europe’s Growing Muslim Population"
+  },
+  "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf": {
+   "url": "https://web.archive.org/web/20260812112437/https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf",
+   "captured": "2026-08-12",
+   "title": "How the Global Religious Landscape Changed From 2010 to 2020 – Appendix B: Religious composition table"
+  },
+  "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf": {
+   "url": "https://web.archive.org/web/20251208040537/https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+   "captured": "2025-12-08",
+   "title": "Liedhegener/Pickel/Odermatt/Yendell/Jaeckel (2019): Wie Religion „uns\" trennt – und verbindet, Forschungsbericht (CC BY-NC)"
+  },
+  "https://www.rwi-essen.de/en/research-advice/further/research-data-center-ruhr-fdz/data-request": {
+   "url": "https://web.archive.org/web/20260421012340/https://www.rwi-essen.de/en/research-advice/further/research-data-center-ruhr-fdz/data-request",
+   "captured": "2026-04-21",
+   "title": "FDZ Data Request – Data access and terms of use"
+  },
+  "https://www.rwi-essen.de/en/research-advice/further/research-data-center-ruhr-fdz/data-sets/microdata/svr-integrationsbarometer": {
+   "url": "https://web.archive.org/web/20260421011910/https://www.rwi-essen.de/en/research-advice/further/research-data-center-ruhr-fdz/data-sets/microdata/svr-integrationsbarometer",
+   "captured": "2026-04-21",
+   "title": "SVR-Integrationsbarometer – Forschungsdaten"
+  },
+  "https://www.statistik-bw.de/": {
+   "url": "https://web.archive.org/web/20260929091717/https://www.statistik-bw.de/",
+   "captured": "2026-09-29",
+   "title": "Statistisches Landesamt Baden-Württemberg, Mikrozensus 2025, \"Bevölkerung in Baden-Württemberg 2025 nach Altersgruppen, Geschlecht und Einwanderungsgeschichte\""
+  },
+  "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/312224001.pdf": {
+   "url": "https://web.archive.org/web/20260724132940/https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/312224001.pdf",
+   "captured": "2026-07-24",
+   "title": "Bevölkerung der Gemeinden Baden-Württembergs am 30. Juni 2024"
+  },
+  "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/314523001.pdf": {
+   "url": "https://web.archive.org/web/20260113184433/https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/314523001.pdf",
+   "captured": "2026-01-13",
+   "title": "Statistisches Landesamt Baden-Württemberg, Statistischer Bericht A III 1 - j/23: Wanderungsbewegung in Baden-Württemberg 2023, veröffentlicht 22.11.2024"
+  },
+  "https://www.statistik-bw.de/leben-und-arbeiten/bevoelkerung-und-gebiet/migration-und-nationalitaet/": {
+   "url": "https://web.archive.org/web/20260928143006/https://www.statistik-bw.de/leben-und-arbeiten/bevoelkerung-und-gebiet/migration-und-nationalitaet/",
+   "captured": "2026-09-28",
+   "title": "Anteil Ausländerinnen und Ausländer je Gemeinde 2025"
+  },
+  "https://www.statistik-bw.de/presse/pressemitteilungen/pressemitteilung/205-millionen-auslaenderinnen-und-auslaender-leben-in-baden-wuerttemberg/": {
+   "url": "https://web.archive.org/web/20260924104921/https://www.statistik-bw.de/presse/pressemitteilungen/pressemitteilung/205-millionen-auslaenderinnen-und-auslaender-leben-in-baden-wuerttemberg/",
+   "captured": "2026-09-24",
+   "title": "2,05 Millionen Ausländerinnen und Ausländer leben in Baden-Württemberg"
+  },
+  "https://www.statistik-bw.de/presse/pressemitteilungen/pressemitteilung/206-millionen-baden-wuerttembergerinnen-und-baden-wuerttemberger-mit-auslaendischer-staatsangehoerigkeit/": {
+   "url": "https://web.archive.org/web/20260617160224/https://www.statistik-bw.de/presse/pressemitteilungen/pressemitteilung/206-millionen-baden-wuerttembergerinnen-und-baden-wuerttemberger-mit-auslaendischer-staatsangehoerigkeit/",
+   "captured": "2026-06-17",
+   "title": "2,06 Millionen Baden-Württembergerinnen und Baden-Württemberger mit ausländischer Staatsangehörigkeit"
+  },
+  "https://www.statistischebibliothek.de/mir/receive/BWSerie_mods_00000583": {
+   "url": "https://web.archive.org/web/20240911011815/https://www.statistischebibliothek.de/mir/receive/BWSerie_mods_00000583",
+   "captured": "2024-09-11",
+   "title": "Zensus 2011 – Bevölkerung und Haushalte am 9. Mai 2011, Kreisbände"
+  },
+  "https://www.svr-migration.de/wp-content/uploads/2024/12/SVR-Integrationsbarometer_2024_Methodenbericht.pdf": {
+   "url": "https://web.archive.org/web/20250203191332/https://www.svr-migration.de/wp-content/uploads/2024/12/SVR-Integrationsbarometer_2024_Methodenbericht.pdf",
+   "captured": "2025-02-03",
+   "title": "SVR-Integrationsbarometer 2024 – Methodenbericht"
+  },
+  "https://www.zensus2022.de/DE/Ergebnisse-des-Zensus/_inhalt.html": {
+   "url": "https://web.archive.org/web/20250703074423/https://www.zensus2022.de/DE/Ergebnisse-des-Zensus/_inhalt.html",
+   "captured": "2025-07-03",
+   "title": "Statistische Ämter des Bundes und der Länder, Zensus 2022, Gitterzellen"
+  }
+ },
+ "without_snapshot": [
+  {
+   "url": "https://d-nb.info/1266039155/34",
+   "title": "Muslimisches Leben in Deutschland 2020, Forschungsbericht 38"
+  },
+  {
+   "url": "https://d-nb.info/1266039171/34",
+   "title": "Muslimisches Leben in Deutschland 2020 – Kurzfassung"
+  },
+  {
+   "url": "https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/2024/vg250_01-01.utm32s.shape.ebenen.zip",
+   "title": "https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/2024/vg250_01-01.utm32s.shape.ebenen.zip"
+  },
+  {
+   "url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0503",
+   "title": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0503, Grundprogramm des Mikrozensus"
+  },
+  {
+   "url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0504",
+   "title": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0504, Grundprogramm des Mikrozensus"
+  },
+  {
+   "url": "https://daten.statistik-bw.de/genesisonline/online?operation=table&code=12211-0513",
+   "title": "Statistisches Landesamt Baden-Württemberg, GENESIS-Online 12211-0513, Grundprogramm des Mikrozensus"
+  },
+  {
+   "url": "https://fowid.de/meldung/muslime-deutschland-2025",
+   "title": "Muslime in Deutschland, 2025"
+  },
+  {
+   "url": "https://genesis.destatis.de/datenbank/online/statistic/12411/table/12411-03-03-4-B",
+   "title": "Bevölkerung nach Geschlecht, Nationalität und Altersgruppen (12411-03-03-4-B)"
+  },
+  {
+   "url": "https://genesis.destatis.de/datenbank/online/statistic/12521/table/12521-0041",
+   "title": "Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle 12521-0041: Ausländer: Kreise, Stichtag, Geschlecht, Staatsangehörigkeit"
+  },
+  {
+   "url": "https://idw-online.de/-TQaAB",
+   "title": "Neue Forschungsdatenprodukte des BAMF-FDZ, einschließlich MLD 2020"
+  },
+  {
+   "url": "https://idw-online.de/de/news872832",
+   "title": "Muslimisches Leben in Deutschland: Neue Hochrechnung zeigt wachsende Vielfalt der muslimischen Bevölkerung"
+  },
+  {
+   "url": "https://idw-online.de/de/newsimage423539?size=screen",
+   "title": "Herkunftsregionen der muslimischen Religionsangehörigen in Deutschland 2025"
+  },
+  {
+   "url": "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/05-2026_Asylzug%C3%A4nge_in_Baden-W%C3%BCrttemberg_-_Hauptherkunftsl%C3%A4nder_der_Asylantragsteller_mit_Verbleib_in_BW-%C3%84nderungen_immer_am_1._Januar.pdf",
+   "title": "Asylzugänge in Baden-Württemberg – Hauptherkunftsländer der Asylantragsteller mit Verbleib in BW"
+  },
+  {
+   "url": "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Asylzug%C3%A4nge_in_Baden-W%C3%BCrttemberg_-_Registrierungen_Asylerst-_und_Folgeantragsteller_mit_Verbleib_in_BW.pdf",
+   "title": "Asylzugänge in Baden-Württemberg – Registrierungen Asylerst- und Folgeantragsteller mit Verbleib in BW"
+  },
+  {
+   "url": "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Migration/Zahlen_und_Daten/09-2026_Gefl%C3%BCchtete_aus_der_Ukraine_nach___24_Aufenthaltsgesetz__AufenthG__in_Baden-W%C3%BCrttemberg.pdf",
+   "title": "Geflüchtete aus der Ukraine nach § 24 Aufenthaltsgesetz (AufenthG) in Baden-Württemberg"
+  },
+  {
+   "url": "https://wlb.boss.bsz-bw.de/Record/1794900373#description",
+   "title": "WLB-Katalognachweis 1794900373"
+  },
+  {
+   "url": "https://www-genesis.destatis.de/datenbank/online/statistic/12521",
+   "title": "Ausländerstatistik, Tabelle 12521-0023"
+  },
+  {
+   "url": "https://www-genesis.destatis.de/datenbank/online/statistic/12521/table/12521-0023",
+   "title": "Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle 12521-0023: Ausländer nach Bundesländern, Geschlecht, Altersjahren, Migrantengeneration und Staatsangehörigkeit"
+  },
+  {
+   "url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Forschung/Forschungsberichte/fb55-zahl-muslime-2025.html?nn=2247260",
+   "title": "Zahl der Musliminnen und Muslime in Deutschland 2025, Forschungsbericht 55"
+  },
+  {
+   "url": "https://www.destatis.de/static/DE/zensus/gitterdaten/Staatsangehoerigkeit_nach_ausgewaehlten_Laendern.zip",
+   "title": "Statistisches Bundesamt, Zensus 2022, Staatsangehörigkeit nach ausgewählten Ländern in 100-Meter-Gitterzellen"
+  },
+  {
+   "url": "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistische_Berichte/312424001.pdf",
+   "title": "Statistisches Landesamt Baden-Württemberg, Statistischer Bericht A I 4 - j/24"
+  },
+  {
+   "url": "https://www.statistik-bw.de/fileadmin/user_upload/Service/Veroeff/Statistisches_Monatsheft/PDF/Beitrag20_04_01.pdf",
+   "title": "Wie viele Musliminnen und Muslime leben in Baden-Württemberg? Ansatz und Ergebnisse einer Schätzung zur muslimischen Bevölkerung im Südwesten"
+  }
+ ]
+}

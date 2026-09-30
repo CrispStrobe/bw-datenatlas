@@ -390,4 +390,26 @@ class DataTests(unittest.TestCase):
         self.assertIn('Eigenständige Berechnung', d['own_calculation'])
         self.assertIn('Kirchenaustritte', d['what_it_does_not_say'])
 
+    def test_source_archives_separate_absence_from_failure(self):
+        """„Nicht archiviert" und „Abfrage fehlgeschlagen" sind nicht dasselbe.
+
+        Der erste Lauf meldete null von siebenundsechzig, weil archive.org
+        durchgehend mit 429 antwortete und ein except das in „kein Schnappschuss"
+        übersetzt hat — ein Ausfall der Messung, der wie ein Messergebnis aussah.
+        Die Datei muss beides auseinanderhalten, und sie darf nicht veröffentlicht
+        werden, solange nur Fehlschläge darinstehen.
+        """
+        d = json.loads((ROOT/'docs/data/source-archives.json').read_text(encoding='utf-8'))
+        self.assertEqual(d['count'],
+                         len(d['archives']) + len(d['without_snapshot']))
+        self.assertEqual(d['with_snapshot'], len(d['archives']))
+        fehlgeschlagen = [x for x in d['without_snapshot'] if x.get('lookup_failed')]
+        self.assertEqual(fehlgeschlagen, [], 'Abfragen fehlgeschlagen, nicht leer')
+        # Ein Lauf, der fast nichts findet, ist eher gedrosselt als aufschlussreich.
+        self.assertGreater(d['with_snapshot'] / d['count'], 0.5)
+        for url, a in d['archives'].items():
+            self.assertTrue(a['url'].startswith('https://web.archive.org/web/'))
+            self.assertRegex(a['captured'], r'^\d{4}-\d{2}-\d{2}$')
+        self.assertIn('Abgefragt, nicht archiviert', d['not_an_archiving_run'])
+
 if __name__=='__main__': unittest.main(verbosity=2)

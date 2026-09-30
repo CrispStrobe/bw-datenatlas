@@ -125,6 +125,7 @@
  "Antworten, keine gezählten Menschen": "Answers, not counted people",
  "Anwendungscode, Aufbereitungsskripte und Projektdokumentation stehen unter der <a href=\"https://github.com/CrispStrobe/bw-datenatlas/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener\">MIT-Lizenz</a>. Das lizenziert weder Originalpublikationen noch fremde Datensätze neu.": "Application code, data-processing scripts and project documentation are provided under the <a href=\"https://github.com/CrispStrobe/bw-datenatlas/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener\">MIT license</a>. This does not relicense the original publications or third-party datasets.",
  "Anwendungsversion": "Application version",
+ "Archivfassung vom {0}": "Archived copy of {0}",
  "Art der Quelle": "Type of source",
  "Asylregistrierungen, letzte zwölf Monate": "Asylum registrations, last twelve months",
  "Aufenthaltsdauer im Register; Eingebürgerte fehlen, und das sind gerade unter den lange Ansässigen viele.": "Length of residence in the register; naturalised people are missing, and among the long-established they are many.",
