@@ -20941,5 +20941,120 @@
    "both_churches_pct_2022": 79.1,
    "both_churches_change": -9.2
   }
- }
+ },
+ "germany": {
+  "DE10": {
+   "id": "DE10",
+   "both_churches_pct_2011": 81.1,
+   "population_2011": 999623,
+   "both_churches_pct_2022": 66.7,
+   "population_2022": 1006864,
+   "both_churches_change": -14.4
+  },
+  "DE07": {
+   "id": "DE07",
+   "both_churches_pct_2011": 74.5,
+   "population_2011": 3983213,
+   "both_churches_pct_2022": 60.8,
+   "population_2022": 4087782,
+   "both_churches_change": -13.7
+  },
+  "DE09": {
+   "id": "DE09",
+   "both_churches_pct_2011": 74.2,
+   "population_2011": 12397614,
+   "both_churches_pct_2022": 60.5,
+   "population_2022": 13038724,
+   "both_churches_change": -13.7
+  },
+  "DE06": {
+   "id": "DE06",
+   "both_churches_pct_2011": 63.1,
+   "population_2011": 5971816,
+   "both_churches_pct_2022": 49.8,
+   "population_2022": 6207278,
+   "both_churches_change": -13.3
+  },
+  "DE08": {
+   "id": "DE08",
+   "both_churches_pct_2011": 69.1,
+   "population_2011": 10486660,
+   "both_churches_pct_2022": 55.8,
+   "population_2022": 11104040,
+   "both_churches_change": -13.3
+  },
+  "DE01": {
+   "id": "DE01",
+   "both_churches_pct_2011": 57.5,
+   "population_2011": 2791365,
+   "both_churches_pct_2022": 45.2,
+   "population_2022": 2919017,
+   "both_churches_change": -12.3
+  },
+  "DE05": {
+   "id": "DE05",
+   "both_churches_pct_2011": 67.9,
+   "population_2011": 17538251,
+   "both_churches_pct_2022": 55.9,
+   "population_2022": 17890489,
+   "both_churches_change": -12.0
+  },
+  "DE03": {
+   "id": "DE03",
+   "both_churches_pct_2011": 66.0,
+   "population_2011": 7777992,
+   "both_churches_pct_2022": 54.3,
+   "population_2022": 7943265,
+   "both_churches_change": -11.7
+  },
+  "DE04+DE02": {
+   "id": "DE04+DE02",
+   "both_churches_pct_2011": 42.8,
+   "population_2011": 2357559,
+   "both_churches_pct_2022": 32.5,
+   "population_2022": 2502050,
+   "both_churches_change": -10.3
+  },
+  "DE11": {
+   "id": "DE11",
+   "both_churches_pct_2011": 28.1,
+   "population_2011": 3292365,
+   "both_churches_pct_2022": 21.1,
+   "population_2022": 3596999,
+   "both_churches_change": -7.0
+  },
+  "DE16": {
+   "id": "DE16",
+   "both_churches_pct_2011": 30.9,
+   "population_2011": 2173849,
+   "both_churches_pct_2022": 26.1,
+   "population_2022": 2096771,
+   "both_churches_change": -4.8
+  },
+  "DE14": {
+   "id": "DE14",
+   "both_churches_pct_2011": 23.8,
+   "population_2011": 4055632,
+   "both_churches_pct_2022": 19.9,
+   "population_2022": 4037136,
+   "both_churches_change": -3.9
+  },
+  "DE12+DE13": {
+   "id": "DE12+DE13",
+   "both_churches_pct_2011": 20.4,
+   "population_2011": 4056719,
+   "both_churches_pct_2022": 16.6,
+   "population_2022": 4096333,
+   "both_churches_change": -3.8
+  },
+  "DE15": {
+   "id": "DE15",
+   "both_churches_pct_2011": 17.0,
+   "population_2011": 2287040,
+   "both_churches_pct_2022": 13.8,
+   "population_2022": 2146443,
+   "both_churches_change": -3.2
+  }
+ },
+ "germany_note": "Die Länderwerte sind Summen ihrer Gemeinden; die Veröffentlichung weist keine Länderzeilen aus. Bremen und Hamburg sowie Brandenburg und Mecklenburg-Vorpommern sind zusammengefasst, weil die Bundesländerkarte dieses Atlas sie zusammenfasst — gebündelt wird über Zahlen, nicht über Anteile."
 }

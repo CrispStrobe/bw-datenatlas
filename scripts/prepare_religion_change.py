@@ -49,10 +49,22 @@ def zahl(x) -> int | None:
     return int(x) if x.isdigit() else None
 
 
-def lies(blatt) -> dict[str, dict]:
+# Die Länder stehen in dieser Veröffentlichung nicht als eigene Zeilen; nur Bund und
+# Gemeinden. Die Landeswerte werden deshalb aus den Gemeinden aufsummiert. Zwei Paare
+# sind in der Bundesländerkarte dieses Atlas zusammengefasst, weil die dortige
+# Muslimquelle sie zusammenfasst — hier wird über Zahlen gebündelt, nicht über Anteile.
+ZUSAMMEN = {'DE04+DE02': ['04', '02'], 'DE12+DE13': ['12', '13']}
+LAND_ZU_DE = {'01': 'DE01', '03': 'DE03', '05': 'DE05', '06': 'DE06', '07': 'DE07',
+              '08': 'DE08', '09': 'DE09', '10': 'DE10', '11': 'DE11', '14': 'DE14',
+              '15': 'DE15', '16': 'DE16'}
+
+
+def lies(blatt, land: str | None = '08') -> dict[str, dict]:
     out = {}
     for r in blatt.iter_rows(min_row=6, values_only=True):
-        if not r[0] or r[2] != 'Gemeinde' or not str(r[0]).startswith('08'):
+        if not r[0] or r[2] != 'Gemeinde':
+            continue
+        if land and not str(r[0]).startswith(land):
             continue
         werte = {k: zahl(r[i]) for k, i in SPALTE.items()}
         if None in werte.values() or not werte['population']:
@@ -124,6 +136,28 @@ def main() -> None:
         teil = sum(sum(quelle[x][f] for f in felder) for x in gemeinsam)
         return round(100 * teil / summe, 1)
 
+    # Dieselbe Rechnung für die Länder, damit der Landeswert einen Vergleich hat.
+    alle22 = lies(w['Religion_Zensus2022'], None)
+    alle11 = lies(w['Religion_Zensus2011'], None)
+    zusammen = set(alle22) & set(alle11)
+    bundeslaender = []
+    for kennung, praefixe in list(ZUSAMMEN.items()) + [
+            (v, [k]) for k, v in sorted(LAND_ZU_DE.items())]:
+        teil = [x for x in zusammen if x[:2] in praefixe]
+        if not teil:
+            continue
+        eintrag = {'id': kennung}
+        for jahr, quelle in ((2011, alle11), (2022, alle22)):
+            summe = sum(quelle[x]['population'] for x in teil)
+            kirchen = sum(quelle[x]['catholic'] + quelle[x]['evangelical']
+                          for x in teil)
+            eintrag[f'both_churches_pct_{jahr}'] = round(100 * kirchen / summe, 1)
+            eintrag[f'population_{jahr}'] = summe
+        eintrag['both_churches_change'] = round(
+            eintrag['both_churches_pct_2022'] - eintrag['both_churches_pct_2011'], 1)
+        bundeslaender.append(eintrag)
+    bundeslaender.sort(key=lambda z: z['both_churches_change'])
+
     doc = {
         'type': 'religion_change_2011_2022',
         'schema_version': '1.0',
@@ -162,6 +196,12 @@ def main() -> None:
         # Geschlüsselt nach dem amtlichen Gemeindeschlüssel, weil die Karte damit
         # zuordnet; der Regionalschlüssel der Quelle steht an jeder Zeile.
         'municipalities': {z['ags']: z for z in reihen},
+        'germany': {z['id']: z for z in bundeslaender},
+        'germany_note': ('Die Länderwerte sind Summen ihrer Gemeinden; die Veröffentlichung '
+                         'weist keine Länderzeilen aus. Bremen und Hamburg sowie '
+                         'Brandenburg und Mecklenburg-Vorpommern sind zusammengefasst, '
+                         'weil die Bundesländerkarte dieses Atlas sie zusammenfasst — '
+                         'gebündelt wird über Zahlen, nicht über Anteile.'),
     }
     doc['state_total']['both_churches_change'] = round(
         doc['state_total']['both_churches_pct_2022']
@@ -179,6 +219,9 @@ def main() -> None:
           f"{st['evangelical_pct_2022']} %")
     print(f"  beide       {st['both_churches_pct_2011']} % -> "
           f"{st['both_churches_pct_2022']} % ({st['both_churches_change']} Punkte)")
+    print('  Länder (beide Kirchen, Punkte): '
+          + ', '.join(f"{z['id']} {z['both_churches_change']}"
+                      for z in bundeslaender[:4] + bundeslaender[-2:]))
     stark = sorted(reihen, key=lambda z: z['both_churches_change'])[:3]
     schwach = sorted(reihen, key=lambda z: z['both_churches_change'])[-3:]
     print('  stärkster Rückgang: '

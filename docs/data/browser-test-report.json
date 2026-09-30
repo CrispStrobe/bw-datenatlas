@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 346,
+  "check_count": 350,
   "checks": [
     {
       "name": "initial layer is the district view",
@@ -204,6 +204,22 @@
     },
     {
       "name": "resetting the place puts the map back",
+      "passed": true
+    },
+    {
+      "name": "the Germany attribution follows the layer, not the BAMF report",
+      "passed": true
+    },
+    {
+      "name": "a points layer says points, not inhabitants",
+      "passed": true
+    },
+    {
+      "name": "the west lost more than the east, and the map says why",
+      "passed": true
+    },
+    {
+      "name": "the muslim layer of the same map still names the BAMF report",
       "passed": true
     },
     {

@@ -219,6 +219,34 @@ with sync_playwright() as pw:
     check('resetting the place puts the map back',
           page.get_attribute('#map','viewBox')=='0 0 760 700')
 
+    # Dieselbe Rechnung für die Länder, und zwei Stellen, an denen sie sich vorher
+    # etwas anderes angezogen hat: die Quellenzeile der Deutschlandkarte stand fest
+    # auf dem BAMF-Bericht, und der Schlusszweig des Tooltips endet auf "Einwohner".
+    page.select_option('#layer','de_church_change')
+    page.wait_for_function("document.querySelectorAll("
+                           "'#map-features path.map-feature').length===14")
+    quelle=page.locator('#map-attribution-de').inner_text()
+    check('the Germany attribution follows the layer, not the BAMF report',
+          'Forschungsbericht 55' not in quelle and 'Religionszugehörigkeit' in quelle
+          and 'Statistische Ämter' in quelle)
+    page.locator('.map-feature').first.hover()
+    page.wait_for_function("!document.getElementById('map-tooltip').hidden")
+    spitze=page.locator('#map-tooltip').inner_text()
+    check('a points layer says points, not inhabitants',
+          ('Punkte' in spitze or 'points' in spitze)
+          and 'Einwohner' not in spitze and 'inhabitants' not in spitze)
+    check('the west lost more than the east, and the map says why',
+          'im Westen weit mehr zu verlieren war' in page.locator('#map-note').inner_text()
+          or 'far more to lose' in page.locator('#map-note').inner_text())
+    # Und die Gegenprobe: die Muslimebene derselben Karte muss weiter das BAMF nennen.
+    page.select_option('#layer','de_muslim_share')
+    page.wait_for_function("document.getElementById('map-attribution-de')"
+                           ".innerText.includes('Forschungsbericht 55')")
+    check('the muslim layer of the same map still names the BAMF report',
+          'Forschungsbericht 55' in page.locator('#map-attribution-de').inner_text()
+          and 'Bundesamt für Migration' in
+              page.locator('#map-attribution-de').inner_text())
+
     # Die Rückgangskarte. Zwei Dinge können daran schiefgehen: die Zuordnung der
     # Gemeindeschlüssel (dann ist die Karte einfarbig) und die Farbrichtung (dann
     # zeigt der dunkelste Ton den schwächsten Verlust).
