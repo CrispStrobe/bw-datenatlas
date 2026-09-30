@@ -1517,7 +1517,7 @@ function sortAreaRows(rows){
 function renderAreaTable(){const rows=areaRows(),n=25,pages=Math.max(1,Math.ceil(rows.length/n));state.areaPage=Math.min(state.areaPage,pages-1);const shown=rows.slice(state.areaPage*n,(state.areaPage+1)*n);const muni=state.layer==='municipality_population'||state.layer==='religion_estimate_municipal',est=isEstimate();const headers=muni?['Gemeinde','Kreis','Einwohner','Männlich','Weiblich',...(est?['Modell · Anteil']:[])]:['Kreis','Schlüssel','Einwohner','Ausländisch','Anteil ausländisch',est?'Modell · Anteil':'Lokale Muslimzahl'];const cells=shown.map(r=>[`<button class="link-button" data-area-kind="${r.kind}" data-area-id="${esc(muni?r.geo_id:r.key)}">${esc(r.name)}</button>`,esc(r.key),integer(r.population),muni?integer(r.male):integer(r.foreign),muni?integer(r.female):pct(r.foreign_pct),...(muni?(est?[(()=>{const e=estimateMunicipality(r.geo_id);return e?pf.format(e.pct_low)+'–'+pf.format(e.pct_high)+' %':'Nicht verfügbar';})()]:[]):[est&&r.estimate?pf.format(r.estimate.variants[state.variant].pct_low)+'–'+pf.format(r.estimate.variants[state.variant].pct_high)+' %':'Nicht verfügbar'])]);$('area-table').innerHTML=table(headers,cells,muni?'Bevölkerung am 30.06.2024. Die Tabelle ist auch ohne Geodatenaufbau vollständig.'+(est?' Modellwerte verteilen den Kreiswert und sind keine Messung.':''):'Bevölkerung am 30.11.2024.'+(est?' Modellwerte sind eine Verteilung der veröffentlichten Landessumme, keine Messung.':''));$('area-page').textContent=`Seite ${state.areaPage+1} / ${pages} · ${integer(rows.length)} Treffer`;$('area-prev').disabled=state.areaPage===0;$('area-next').disabled=state.areaPage>=pages-1;$('area-table-count').textContent=integer(rows.length)+' Gebiete';$('area-table').querySelectorAll('[data-area-id]').forEach(b=>b.addEventListener('click',()=>setSelected(b.dataset.areaKind,b.dataset.areaId)));}
 function originView(){let title,badge,note,source,rows,unit='Personen';switch(state.origin){case 'de_origins':title='Muslimische Bevölkerung nach Herkunftsgruppe';badge='Deutschland · BAMF-Modell · 2025';note='Diese Verteilung gilt für Deutschland, nicht für Baden-Württemberg und nicht für einen ausgewählten Kreis. Herkunft bezeichnet im Quellensinn eigene beziehungsweise elterliche Herkunft – nicht allein den Pass oder das eigene Geburtsland.';source='bamf_fb55';rows=D.origins_de_2025.map(r=>({name:r.dimensions.origin_group,value:r.value,low:r.value_lower,high:r.value_upper,share:r.share_of_published_de_total,source:r}));break;case 'de_regions':title='Muslimische Bevölkerung nach Herkunftsregion';badge='Deutschland · BAMF-Modell · 2025';note='Anteile an der in der BAMF-Hochrechnung erfassten muslimischen Bevölkerung Deutschlands. Keine eigene BW-Herkunftsverteilung.';source='bamf_fb55';unit='Prozent';rows=D.origin_composition.filter(r=>r.reference_period==='2025').map(r=>({name:r.dimensions.origin_region,value:r.value,source:r}));break;case 'bw_nationalities_2024':case 'bw_nationalities_2025':{const year=state.origin.endsWith('2025')?'2025':'2024';title='Ausgewählte ausländische Staatsangehörigkeiten';badge='BW · AZR · '+(year==='2024'?'31.12.2024':'Bezugsjahr 2025');note=year==='2024'?'25 in der Veröffentlichung ausgewiesene Staatsangehörigkeiten. Das sind keine Muslimzahlen. Deutsche Staatsangehörige und damit viele Eingebürgerte und Nachkommen werden hier nicht abgebildet.':'Nur vier im Pressetext veröffentlichte Staatsangehörigkeiten; der genaue Stichtag ist in der übernommenen Zeile nicht bestätigt. Keine vollständige Rangliste und keine Muslimzahlen. Der kleinere Ausschnitt darf nicht als Bevölkerungsrückgang gegenüber der 2024er Auswahl gelesen werden.';source=year==='2024'?'stala_pm_2025':'stala_pm_2026';rows=D.nationalities_bw.filter(r=>r.reference_period===(year==='2024'?'2024-12-31':'2025')).map(r=>({name:r.dimensions.nationality,value:r.value,source:r}));break;}case 'bw_historical':title='Drei publizierte Herkunftsangaben des BW-Modells';badge='BW · historische Hauptvariante · 2018';note='Historische Angaben aus Brachat-Schwarz (2020), keine aktuellen Werte und keine vollständige Herkunftsverteilung. Die übrigen Gruppen werden nicht durch eine pauschale Restschätzung ergänzt.';source='stala_monat_2020';rows=D.historical_bw.filter(r=>r.indicator==='estimated_muslim_persons_by_origin').map(r=>({name:r.dimensions.origin_group,value:r.value,source:r}));break;default:throw new Error('Unknown origin view');}rows.sort((a,b)=>b.value-a.value);return {title,badge,note,source,rows,unit};}
 function renderOrigins(){const v=originView();$('origin-chart-title').textContent=v.title;$('origin-badge').textContent=v.badge;$('origin-badge').className='pill'+(state.origin.startsWith('bw_nationalities')?' neutral':'');$('origin-unit').textContent=v.unit;$('origin-warning').textContent=v.note;const shown=state.allOrigins?v.rows:v.rows.slice(0,8);const max=Math.max(...v.rows.map(r=>r.high??r.value));$('origin-bars').setAttribute('aria-label',v.title+'. '+v.badge+'. '+v.note);$('origin-bars').innerHTML=shown.map(r=>{const value=v.unit==='Prozent'?pct(r.value):integer(r.value);const tooltip=r.low!==undefined?`Publizierte Spanne: ${integer(r.low)}–${integer(r.high)}; mittlerer Wert: ${integer(r.value)}`:`${r.name}: ${value}`;const color=state.origin==='de_regions'?regionColors[r.name]||'#12596b':state.origin.startsWith('bw_nationalities')?'#507c91':'#12596b';return `<div class="bar-row"><span class="bar-name">${esc(r.name)}</span><div class="bar-track" title="${esc(tooltip)}"><div class="bar-fill" style="width:${100*r.value/max}%;background:${color}"></div>${r.low!==undefined?`<span class="bar-whisker" style="left:${100*r.low/max}%;width:${100*(r.high-r.low)/max}%"></span>`:''}</div><span class="bar-value">${value}${r.share!==undefined?`<small>${pct(r.share)} der DE-Modellsumme *</small>`:r.low!==undefined?`<small>${integer(r.low)}–${integer(r.high)}</small>`:''}</span></div>`;}).join('');$('all-origins').hidden=v.rows.length<=8;$('all-origins').textContent=state.allOrigins?'Nur acht Gruppen zeigen':`Alle ${v.rows.length} Gruppen zeigen`;$('all-origins').setAttribute('aria-pressed',String(state.allOrigins));let foot=sourceLink(v.source);if(state.origin==='de_origins')foot+=' · Tabelle 2: mittlere Werte und veröffentlichte Spannen (schwarze Markierungen). * Anteil selbst berechnet aus gerundeten veröffentlichten Mittelwerten; Nenner 6.821.000. Kein Anteil muslimischer Menschen innerhalb einer Herkunftsgruppe. Kleine Rundungsdifferenzen zwischen Summe der Gruppen und Gesamtsumme bleiben erhalten.';else if(state.origin==='de_regions')foot+=' · Abbildung 3: veröffentlichte Anteile.';$('origin-footnote').innerHTML=foot;$('origin-table').innerHTML=table(['Gruppe',v.unit==='Prozent'?'Anteil':'Mittlerer Wert / Bestand',...(state.origin==='de_origins'?['Untergrenze','Obergrenze','Anteil an DE-Modellsumme *']:[])],v.rows.map(r=>[esc(r.name),v.unit==='Prozent'?pct(r.value):integer(r.value),...(state.origin==='de_origins'?[integer(r.low),integer(r.high),pct(r.share)]:[])]));}
-function renderContext(){renderComposition();renderBwNationalities();renderDistrictAzr();renderResidence();renderNaturalisations();renderAreaFlows();renderFlows();}
+function renderContext(){renderComposition();renderDistrictAzr();renderResidence();renderNaturalisations();renderAreaFlows();renderFlows();}
 const AZR=typeof window!=='undefined'?window.ATLAS_DISTRICT_AZR:null;
 const MUNI_FOREIGN=typeof window!=='undefined'?window.ATLAS_MUNICIPAL_FOREIGN:null;
 const OGR=typeof window!=='undefined'?window.ATLAS_ORIGIN_GROUPS:null;
@@ -1600,20 +1600,6 @@ function renderNaturalisations(){
  box.style.gridTemplateColumns='repeat('+rows.length+',1fr)';
  box.innerHTML=rows.map((r,i)=>`<div class="vbar-cell"><div class="vbar-fill" style="height:${145*r.count/max}px" title="${esc(r.year)}: ${integer(r.count)}"></div><span class="vbar-label">${i%5===0||i===rows.length-1?esc(r.year.slice(2)):''}</span></div>`).join('');
  $('naturalisation-note').textContent=BWX.naturalisations.why_it_matters+' Quelle: '+BWX.source+', '+BWX.licence+'.';
-}
-// Das Vergleichsdiagramm daneben gilt für Deutschland. Diese Zahlen sind
-// baden-württembergisch und messen etwas anderes — den Pass, nicht die Herkunft und
-// erst recht nicht die Religion. Beides nebeneinander, mit dem Unterschied dabei.
-function renderBwNationalities(){
- const box=$('bw-nationalities');
- if(!box||!D.nationalities_bw)return;
- const rows=D.nationalities_bw.filter(r=>r.reference_period==='2024-12-31')
-   .sort((a,b)=>b.value-a.value).slice(0,12);
- if(!rows.length)return;
- const max=rows[0].value;
- box.innerHTML=rows.map(r=>`<div class="bar-row"><span class="bar-name">${esc(r.dimensions.nationality)}</span><div class="bar-track"><div class="bar-fill" style="width:${100*r.value/max}%"></div></div><span class="bar-value">${integer(r.value)}</span></div>`).join('');
- const source=D.sources[rows[0].source_id];
- if(source)$('nat-source').href=source.url;
 }
 function renderComposition(){
  const years=['2008','2015','2019','2025'];const regionOrder=['Türkei','Naher Osten','Südosteuropa','Mittlerer Osten','Nordafrika'];const groups=D.origin_composition;
@@ -1948,14 +1934,19 @@ function renderSurveyItems(){
   // Nach Gebiet gruppiert: bei zehn Blöcken sieht man dem Titel nicht mehr an, ob
   // eine Zahl aus diesem Land, aus Deutschland oder aus sechs Ländern stammt — und
   // genau das entscheidet, was sie bedeutet.
-  const raeume=(D2.scope_order||[]).filter(r=>D2.blocks.some(b=>b.scope===r));
-  const ohne=D2.blocks.map((b,n)=>[b,n]).filter(([b])=>!raeume.includes(b.scope));
-  feld.innerHTML=raeume.map(r=>'<optgroup label="'+esc(t(r))+'">'
-    +D2.blocks.map((b,n)=>[b,n]).filter(([b])=>b.scope===r)
+  const groupFor=b=>{
+   if(b.scope!=='Deutschland')return b.scope||t('Weitere Befragungen');
+   const study=b.items[0]?.study||'';
+   if(study.startsWith('Religionsmonitor'))return 'Deutschland · '+study;
+   if(study.includes('KMU 6'))return 'Deutschland · KMU 6';
+   return t('Deutschland · Weitere Befragungen');
+  };
+  const groups=[...new Set(D2.blocks.map(groupFor))];
+  feld.innerHTML=groups.map(group=>'<optgroup label="'+esc(t(group))+'">'
+    +D2.blocks.map((b,n)=>[b,n]).filter(([b])=>groupFor(b)===group)
       .map(([b,n])=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('')
-    +'</optgroup>').join('')
-   +ohne.map(([b,n])=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('');
-  feld.addEventListener('change',renderSurveyItems);
+    +'</optgroup>').join('');
+  feld.onchange=renderSurveyItems;
  }
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
  host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
@@ -1974,8 +1965,11 @@ function renderSurveyItems(){
    // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
    // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
    +'<p class="tiny survey-meta">'+esc([b.scope?t(b.scope):null,erste.study,t(erste.population),
-       erste.base_n?tf('{0} Befragte',integer(erste.base_n)):t('Fallzahl je Balken nicht veröffentlicht'),
-       erste.field_period,erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
+       new Set(b.items.map(i=>i.base_n)).size===1&&erste.base_n
+        ?tf('Studienstichprobe: {0} Befragte',integer(erste.base_n))
+        :t('Fallzahlen und Erhebungszeiten siehe Tabelle'),
+       new Set(b.items.map(i=>i.field_period)).size===1?erste.field_period:null,
+       erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
        .filter(Boolean).join(' · '))+'</p>'
    +(b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
    +'<div class="horizontal-bars">'+b.items.map(i=>
@@ -1984,7 +1978,14 @@ function renderSurveyItems(){
      +'<div class="bar-track"><div class="bar-fill" style="width:'
      +(100*i.value/max).toFixed(1)+'%;background:#6b7f8a"></div></div>'
      +'<div class="bar-value">'+esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value))+'</div></div>').join('')
-   +'</div>';
+   +'</div>'
+   +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))
+   +'</summary><div class="table-scroll">'+table(
+    [t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),t('Erhebungszeitraum'),t('Fundstelle')],
+    b.items.map(i=>[esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
+     esc(t(i.population)),i.base_n?integer(i.base_n):esc(t('nicht ausgewiesen')),
+     esc(i.field_period),'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
+      +esc(i.source_locator||i.source_title)+'</a>']))+'</div></details>';
  }).join('');
  const quellen=[...new Map((D2.blocks[gewaehlt]||{items:[]}).items
    .map(i=>[i.source_url,i])).values()];
@@ -2203,6 +2204,40 @@ dlg.addEventListener('click',ev=>{if(ev.target===dlg)close();});
 // Any in-page anchor inside the dialog should close it so the target is visible.
 dlg.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.closest('a[href^="#"]');if(a)close();});
 }
+// Each thematic selector keeps one view visible. Existing IDs and source links
+// continue to work, including links into a collapsed source directory.
+function initViewSelectors(){
+ const fields=[...document.querySelectorAll('[data-panel-select]')];
+ const show=field=>{
+  const section=field.closest('section');
+  section.querySelectorAll('.view-panel').forEach(panel=>{
+   panel.hidden=panel.id!=='view-'+field.value;
+  });
+  // Labels measured while a panel was hidden need its actual width.
+  requestAnimationFrame(()=>{fitStackLabels();window.dispatchEvent(new Event('resize'));});
+ };
+ fields.forEach(field=>{field.addEventListener('change',()=>show(field));show(field);});
+ const reveal=()=>{
+  let id;try{id=decodeURIComponent(location.hash.slice(1));}catch(e){return;}
+  const target=document.getElementById(id);if(!target)return;
+  const panel=target.closest('.view-panel');
+  if(panel){
+   const field=panel.closest('section').querySelector('[data-panel-select]');
+   if(field){field.value=panel.id.slice(5);show(field);}
+  }
+  for(let parent=target.parentElement;parent;parent=parent.parentElement){
+   if(parent.tagName==='DETAILS')parent.open=true;
+  }
+  requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+ };
+ window.addEventListener('hashchange',reveal);
+ document.addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#"]');
+  if(link&&link.hash===location.hash)reveal();
+ });
+ if(location.hash)reveal();
+}
+initViewSelectors();
 initAbout();
 setUpChartZoom();
 watchTables();

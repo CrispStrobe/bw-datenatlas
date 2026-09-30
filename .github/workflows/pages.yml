@@ -286,6 +286,8 @@ jobs:
 
       - name: SVG-Interaktion isoliert prüfen
         run: python tests/renderer_smoke.py
+      - name: Themenauswahl und Sprunglinks auf Desktop und Smartphone prüfen
+        run: python tests/section_views_smoke.py
       - name: HTTP-Integration mit echten aufgebauten Geodaten testen
         shell: bash
         run: |

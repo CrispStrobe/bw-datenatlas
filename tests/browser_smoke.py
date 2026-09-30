@@ -132,6 +132,8 @@ with sync_playwright() as pw:
     # Ansichten". Das war eine gepflegte Liste von neun Einträgen, während die Seite
     # längst aus dreißig schöpfte. Jetzt wird sie aus dem Material gebaut, und diese
     # Prüfung ist der Grund, warum sie es bleiben muss.
+    page.locator('#source-directory > summary').click()
+    page.locator('#checked-directory > summary').click()
     verlinkt=set(page.evaluate("""()=>[...document.querySelectorAll(
         '#sources-list .source-item a')].map(a=>a.href)"""))
     gebraucht=set(page.evaluate("""()=>{
@@ -160,6 +162,7 @@ with sync_playwright() as pw:
     # Landeszahl zu machen.
     # Der Altersaufbau daneben. Die Spanne muss sichtbar sein, sonst liest sich ein
     # Wert, den die Geheimhaltung nach unten gezogen hat, wie eine Messung.
+    page.select_option('#context-view', 'religion-age')
     alt=page.locator('#religion-age-card')
     check('the age chart is on the page',alt.is_visible())
     check('the age chart drops the rows whose range says nothing',
@@ -175,6 +178,7 @@ with sync_playwright() as pw:
     check('the age chart says why two rows are missing',
           'Freikirchen' in at or 'free churches' in at)
 
+    page.select_option('#origin-view', 'orthodox')
     karte=page.locator('#orthodox-citizenship-card')
     check('the citizenship chart is on the page',karte.is_visible())
     zeilen=page.locator('#orthodox-citizenship-bars .bar-row')
@@ -332,7 +336,7 @@ with sync_playwright() as pw:
     # sich „46 Punkte Zusammenhalt" als „46 Prozent" von irgendetwas.
     page.select_option('#survey-select', index=page.eval_on_selector_all(
         '#survey-select option',
-        "o=>o.findIndex(x=>/Zusammenhalt|cohesion/i.test(x.textContent))"))
+        "o=>o.findIndex(x=>/Zusammenhalt nach Religionszugehörigkeit|cohesion by religious affiliation/i.test(x.textContent))"))
     page.wait_for_function("/46/.test(document.getElementById"
                            "('survey-blocks').innerText)")
     zus=page.locator('#survey-blocks').inner_text()
@@ -362,6 +366,7 @@ with sync_playwright() as pw:
     check('percentage bars are measured against 100, not the block maximum',
           bool(breiten) and abs(max(breiten)-50)<1.5)
 
+    page.select_option('#basis-view', 'estimates')
     vergleich=page.locator('#published-estimates-card').inner_text()
     check('the published estimates are shown side by side',
           page.locator('#published-estimates-bars .bar-row').count()>=6)
@@ -385,6 +390,7 @@ with sync_playwright() as pw:
           page.evaluate('''()=>{const f=[...document.querySelectorAll(
             '#published-estimates-bars .bar-fill')].map(e=>e.style.background);
             return f.includes('rgb(140, 74, 44)')&&f.includes('rgb(18, 89, 107)');}'''))
+    page.select_option('#origin-view', 'origins')
     check('initial national origin bars eight',page.locator('#origin-bars .bar-row').count()==8)
     check('four national composition columns',page.locator('.stack-segment').count()==20)
     check('desktop body no horizontal overflow',not page.evaluate('document.documentElement.scrollWidth>innerWidth'))
@@ -484,6 +490,7 @@ with sync_playwright() as pw:
     check('removed empty coverage layer',page.locator('#layer option[value="religion_coverage"]').count()==0)
     # Census ceiling and the time series.
     # Every figure must say what kind of source it rests on.
+    page.select_option('#basis-view', 'bases')
     bases=page.locator('#grundlagen').inner_text()
     check('bases table lists every measure',page.locator('#bases-table tbody tr').count()>=15)
     check('all source kinds are explained',page.locator('#bases-kinds .kind').count()==5)
@@ -559,18 +566,20 @@ with sync_playwright() as pw:
     # State age pyramid, a separate classification from the district figures.
     # Auf die eigene Pyramide eingegrenzt: seit der Generationenpyramide gibt es eine
     # zweite mit denselben Klassennamen, und eine ungebundene Zählung träfe beide.
+    page.select_option('#context-view', 'pyramid')
+    page.wait_for_timeout(200)
     check('age structure drawn as three panels',
           page.locator('#pyramid .py-panel').count()==3)
     check('every panel draws every age group',
           page.locator('#pyramid .py-row').count()==54)
     check('the three panels are named',
-          {t.strip() for t in page.locator('.py-title').all_inner_texts()}=={'GESAMT','MÄNNER','FRAUEN'})
+          {t.strip() for t in page.locator('#pyramid .py-title').all_inner_texts()}=={'GESAMT','MÄNNER','FRAUEN'})
     # Small multiples are only comparable on one scale, so the widest bar in the men's
     # panel must be narrower than the widest in the total.
     check('the panels share one scale',page.evaluate('''() => {
         const w = sel => Math.max(...[...document.querySelectorAll(sel)]
             .map(b => b.getBoundingClientRect().width));
-        const panels=[...document.querySelectorAll('.py-panel')];
+        const panels=[...document.querySelectorAll('#pyramid .py-panel')];
         const bar=p=>Math.max(...[...p.querySelectorAll('.py-bar')].map(
             b=>[...b.children].reduce((s,c)=>s+c.getBoundingClientRect().width,0)));
         return bar(panels[0]) > bar(panels[1]) * 1.4;}'''))
@@ -740,6 +749,7 @@ with sync_playwright() as pw:
 
     # Grafik vergrößern
     check('every chart card offers an enlarged view',page.locator('.chart-enlarge').count()>=5)
+    page.select_option('#origin-view', 'composition')
     page.locator('article:has(#composition-chart) .chart-enlarge').first.click()
     page.wait_for_timeout(500)
     check('the enlarge dialog opens',page.evaluate("()=>document.getElementById('chart-zoom').open"))
@@ -979,6 +989,7 @@ with sync_playwright() as pw:
 
     # Die erste echte Alterspyramide neben der nach Einwanderungsgeschichte. Ihr
     # Wert liegt in der Generationenspalte — und in dem, was sie über sich selbst sagt.
+    page.select_option('#context-view', 'foreign-age')
     pyr=page.locator('#foreign-age-card').inner_text()
     check('the foreign age pyramid has all twenty bands',
           page.locator('#foreign-age .py-row').count()==20)
@@ -993,6 +1004,7 @@ with sync_playwright() as pw:
 
     # Die Zeitreihe lebt von ihrer Probe: zwei Jahre sind unabhängig von der KMK
     # bestätigt, und der Unterschied zur verbreiteten KMK-Zahl ist die Sekundarstufe II.
+    page.select_option('#context-view', 'iru')
     iru=page.locator('#iru-card').inner_text()
     check('the religious education series runs from 2019 to 2025/26',
           page.locator('#iru-bars .bar-row').count()==7
@@ -1004,6 +1016,7 @@ with sync_playwright() as pw:
     check('the series does not smooth over the year that disagrees',
           '5.905' in iru)
     # Und die Altersangaben leben davon, dass sie sagen, was sie NICHT sind.
+    page.select_option('#context-view', 'ages')
     alter=page.locator('#ages-card').inner_text()
     check('the age card denies that a pyramid exists',
           'gibt es nicht' in alter and 'ab 16 Jahren' in alter)

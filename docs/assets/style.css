@@ -116,3 +116,12 @@ th[aria-sort="ascending"] .th-sort,th[aria-sort="descending"] .th-sort{color:var
 .lang-switch button[aria-pressed="true"]{background:var(--teal);color:#fff}
 .lang-switch button:focus-visible{outline:2px solid var(--teal);outline-offset:-2px}
 @media (hover:none) and (pointer:coarse){.lang-switch button{padding:10px 13px}}
+
+/* Theme views share the map's grouped selection pattern. */
+.view-toolbar{padding:18px;background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:14px}
+.view-toolbar .field{max-width:850px}
+.view-panel>.origin-controls{padding:0 2px}
+.disclosure-body{padding:0 20px 20px}
+.anchor-target{display:block;scroll-margin-top:94px}
+.view-panel .chart-header h3{max-width:1000px}
+@media(max-width:800px){.view-toolbar{padding:13px}.disclosure-body{padding:0 12px 12px}}

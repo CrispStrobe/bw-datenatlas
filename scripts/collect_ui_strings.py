@@ -53,6 +53,13 @@ def sammeln(port: int) -> list[str]:
                 continue
             for w in werte:
                 try:
+                    page.eval_on_selector(wahl, '''el=>{
+                        const panel=el.closest('.view-panel');
+                        if(!panel)return;
+                        const select=panel.closest('section').querySelector('[data-panel-select]');
+                        select.value=panel.id.slice(5);
+                        select.dispatchEvent(new Event('change'));
+                    }''')
                     page.select_option(wahl, w)
                     page.wait_for_timeout(120)
                 except Exception:
@@ -60,7 +67,14 @@ def sammeln(port: int) -> list[str]:
         for haken in ('#composition-detail', '#all-origins', '#only-landtag'):
             for zustand in (True, False):
                 try:
-                    page.set_checked(haken, zustand)
+                    page.eval_on_selector(haken, '''(el, checked)=>{
+                        if(el.tagName==='INPUT'){
+                            el.checked=checked;
+                            el.dispatchEvent(new Event('change', {bubbles:true}));
+                        }else if((el.getAttribute('aria-pressed')==='true')!==checked){
+                            el.click();
+                        }
+                    }''', zustand)
                     page.wait_for_timeout(120)
                 except Exception:
                     pass

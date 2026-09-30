@@ -225,6 +225,7 @@ python scripts/check_religion_upper_bound.py              # Zensus-Obergrenze
 # Browsertests, nach Geodatenaufbau:
 python -m pip install 'playwright>=1.50,<2' && python -m playwright install chromium
 python tests/renderer_smoke.py                            # künstliche Geometrien
+python tests/section_views_smoke.py                       # Themenauswahl, Smartphone, Sprunglinks
 python -m http.server 8000 --directory docs &
 python tests/browser_smoke.py --url http://localhost:8000 --require-geometry
 ```
@@ -250,3 +251,33 @@ Europäische Quellen helfen hier nicht: Eurostat weist Staatsangehörigkeit auf 
 ## Lizenzen
 
 Code: `LICENSE` (MIT). Quellendaten, BKG-Namensnennung und Grenzen der Weiterverwendung: `DATA_LICENSES.md`.
+
+## Religionsmonitor und Befragungen
+
+Die Abschnitte 2–4 bündeln Herkunft, Migration/Alter und Methodik in thematisch
+gruppierten Auswahlfeldern. Abschnitt 5 enthält Downloads und aufklappbare
+Quellenverzeichnisse; Abschnitt 6 hält Befragungen getrennt von Bevölkerungszahlen.
+Die Befragungsauswahl gruppiert bundesweite Ergebnisse zusätzlich nach Studie.
+
+`inputs/befragungsitems.csv` enthält die abgelesenen Werte einschließlich
+Grundgesamtheit, Erhebungszeitraum, Einheit und genauer Fundstelle. Abbildungen aus
+den Religionsmonitor-Publikationen 2013, 2019, 2023 und 2026 wurden auch visuell
+geprüft. Unbekannte Untergruppen-Fallzahlen bleiben leer; Gesamtfallzahlen werden
+als Studienstichprobe bezeichnet. Der Kurzindex 2026 ist ein Wert von 0 bis 100
+Punkten. Die historischen Radar-Werte werden ausschließlich in der von der Stiftung
+mit derselben Methode neu berechneten Fassung verwendet.
+
+Die frei verlinkten PDFs des Publikationskatalogs lassen sich lokal sichern:
+
+```bash
+python scripts/download_religionsmonitor.py
+python scripts/prepare_survey_items.py
+python scripts/prepare_checked_sources.py
+```
+
+Voraussetzungen: `curl` und `pdftotext`. PDFs liegen ausschließlich in
+`.cache/religionsmonitor/`; `inputs/religionsmonitor-publications.json` dokumentiert
+Katalogseiten, Downloads, Prüfsummen und ausgewählte geprüfte Seiten. Ein Download
+ist keine vollständige inhaltliche Auswertung. Kostenpflichtige Volltexte sind
+nicht enthalten. Die bisherige pauschale Absage an den Religionsmonitor wurde
+berichtigt.

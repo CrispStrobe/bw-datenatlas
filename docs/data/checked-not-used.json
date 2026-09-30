@@ -7,20 +7,20 @@
  "count": 5,
  "entries": [
   {
-   "quelle": "6. Kirchenmitgliedschaftsuntersuchung der EKD (KMU 6)",
+   "quelle": "6. Kirchenmitgliedschaftsuntersuchung der EKD (KMU 6) — nur für den Vergleich mit Muslimen",
    "jahr": "2023",
    "geprueft_am": "2026-09-30",
    "was_erhofft": "Vergleichswerte für religiöse Orientierungen von Christinnen, Christen und Muslimen aus einer bundesweiten Erhebung",
-   "warum_nicht": "Die Studie sagt es selbst: „Über andere Mitglieder nicht-christlicher Religionsgemeinschaften lassen sich diesbezüglich keine Aussagen treffen, weil es davon für valide Schlüsse zu wenige in der Stichprobe der 6. KMU gibt.“ Für Muslime nennt sie eine Typenverteilung ohne Fallzahl. Eine Zahl ohne Nenner aus einer Untersuchung über Kirchenmitgliedschaft ist keine Aussage über muslimische Religiosität.",
+   "warum_nicht": "Für diesen einen Zweck nicht: Die Studie sagt es selbst, „Über andere Mitglieder nicht-christlicher Religionsgemeinschaften lassen sich diesbezüglich keine Aussagen treffen, weil es davon für valide Schlüsse zu wenige in der Stichprobe der 6. KMU gibt.“ Für Muslime nennt sie eine Typenverteilung ohne Fallzahl; eine Zahl ohne Nenner ist keine Aussage. Im Übrigen wird die Studie sehr wohl verwendet: die beiden Blöcke zur Verbundenheit mit der eigenen Kirche stammen aus ihr. Abgelehnt ist hier eine Frage, nicht eine Quelle — und dieser Eintrag stand zwei Stunden lang falsch da, weil die Studie nur gegen die eine Frage geprüft worden war.",
    "url": "https://kmu.ekd.de/"
   },
   {
-   "quelle": "Religionsmonitor 2008, 2013, 2017 und 2023",
-   "jahr": "2008",
-   "geprueft_am": "2026-09-29",
-   "was_erhofft": "Die Konstrukte „Dogmatismus“ und „Existenz eines absoluten Maßstabs für Gut und Böse“, nach denen ausdrücklich gefragt wurde",
-   "warum_nicht": "In keiner der vier öffentlich zugänglichen Publikationen kommen diese Items vor — geprüft wurden der Muslimband 2008, die Islam-Sonderstudie 2013, der Band „Muslime in Europa“ 2017 samt Länderprofilen und der Kompaktband 2023. Vermutlich stehen sie im gedruckten Religionsmonitor-Band 2008, der nicht frei verfügbar ist.",
-   "url": "https://www.bertelsmann-stiftung.de/de/unsere-projekte/religionsmonitor"
+   "quelle": "Religionsmonitor — frühere Absage zurückgezogen",
+   "jahr": "2013",
+   "geprueft_am": "2026-09-30",
+   "was_erhofft": "Die Konstrukte „Dogmatismus“ und „Existenz eines absoluten Maßstabs für Gut und Böse“",
+   "warum_nicht": "Die frühere pauschale Absage war falsch. Abbildung 4 in „Religiosität und Zusammenhalt in Deutschland“ (2013), S. 17, enthält konfessionsspezifischen Dogmatismus; Abbildung 18 in „Weltanschauliche Vielfalt und Demokratie“ (2019), S. 61, enthält drei getrennte Aussagen zu Offenheit und dogmatischen Haltungen. Beide Abbildungen wurden visuell geprüft und als Befragungsblöcke aufgenommen. Die Items und Grundgesamtheiten unterscheiden sich; daraus wird keine gemeinsame Zeitreihe gebildet. Über die gesuchte Aussage zu einem absoluten Maßstab für Gut und Böse wird hier kein unbestätigter Wert veröffentlicht.",
+   "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_und_Zusammenhalt_in_Deutschland.pdf"
   },
   {
    "quelle": "KONID Survey 2019",

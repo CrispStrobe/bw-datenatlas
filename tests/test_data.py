@@ -449,5 +449,56 @@ class DataTests(unittest.TestCase):
         kmu = [e for e in d['entries'] if 'KMU 6' in e['quelle']]
         self.assertEqual(len(kmu), 1)
         self.assertIn('zu wenige in der Stichprobe', kmu[0]['warum_nicht'])
+        # Abgelehnt ist eine Frage, nicht die Quelle: dieselbe Studie trägt zwei
+        # Blöcke im Befragungsteil. Stünde sie hier pauschal als unbrauchbar,
+        # widerspräche der Atlas sich selbst.
+        umfragen = json.loads(
+            (ROOT/'docs/data/survey-items.json').read_text(encoding='utf-8'))
+        aus_kmu = [b for b in umfragen['blocks']
+                   if any('KMU 6' in i['study'] for i in b['items'])]
+        self.assertTrue(aus_kmu, 'KMU 6 wird nirgends verwendet')
+        self.assertIn('nicht eine Quelle', kmu[0]['warum_nicht'])
+
+    def test_religionsmonitor_figures_keep_distinct_items_and_missing_values(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        dogma = blocks['rm2013_dogmatismus']
+        self.assertEqual({i['label']: i['value'] for i in dogma['items']},
+                         {'Katholisch': 12, 'Evangelisch': 11, 'Muslimisch': 39})
+        self.assertNotIn('Konfessionslos', [i['label'] for i in dogma['items']])
+        rules = blocks['rm2017_regeln']
+        self.assertEqual(next(i['value'] for i in rules['items']
+                              if i['label'] == 'Sunniten'), 40)
+        self.assertTrue(all(i['base_n'] is None for i in rules['items']))
+        self.assertIn('überschneiden', rules['note'])
+        self.assertIn('Oktober', dogma['items'][0]['field_period'])
+
+    def test_religionsmonitor_cohesion_separates_dimensions_and_wave_samples(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        connection = blocks['rm2026_detail_verbundenheit']
+        common_good = blocks['rm2026_detail_gemeinwohl']
+        high = 'Muslimisch · Religiosität hoch'
+        self.assertEqual(next(i['value'] for i in connection['items'] if i['label'] == high), 28)
+        self.assertEqual(next(i['value'] for i in common_good['items'] if i['label'] == high), 52)
+        self.assertTrue(all(i['unit'] == 'index' and i['base_n'] is None
+                            for i in connection['items']))
+        history = blocks['rm2026_history']['items']
+        self.assertEqual([(i['label'], i['value'], i['base_n']) for i in history],
+                         [('2017', 54, 4968), ('2020', 55, 3010),
+                          ('2023', 46, 5004), ('2026', 51, 5231)])
+        dimensions = blocks['rm2026_dimensions']
+        self.assertIn('abweichend 67', dimensions['note'])
+
+    def test_religionsmonitor_download_inventory_distinguishes_reviews(self):
+        d = json.loads((ROOT/'inputs/religionsmonitor-publications.json').read_text())
+        self.assertFalse(d['catalog_failures'])
+        self.assertGreaterEqual(len(d['publications']), 40)
+        self.assertTrue(all(p['status'] == 'downloaded' and len(p['sha256']) == 64
+                            for p in d['publications']))
+        reviewed = [p for p in d['publications'] if p['review_status'] != 'not_reviewed']
+        self.assertEqual(len(reviewed), 4)
+        self.assertTrue(all(p['reviewed_pages'] and p['used_blocks'] for p in reviewed))
+        self.assertEqual(d, json.loads((ROOT/'docs/data/religionsmonitor-publications.json').read_text()))
 
 if __name__=='__main__': unittest.main(verbosity=2)

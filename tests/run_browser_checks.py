@@ -5,7 +5,8 @@ the checks need a real HTTP origin: the injection fallback does not load every d
 so layers that depend on them appear to be missing.
 """
 import functools, http.server, os, runpy, sys, threading
-ROOT = '/Users/christianstrobele/code/migration-bw'
+from pathlib import Path
+ROOT = str(Path(__file__).resolve().parents[1])
 # The handler must be pinned to docs/ explicitly: it otherwise resolves paths against
 # the working directory at request time, which this script changes back to the repo root.
 srv = http.server.ThreadingHTTPServer(

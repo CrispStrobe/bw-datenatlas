@@ -1,0 +1,68 @@
+"""Exercise every consolidated view and source deep link on desktop and phone."""
+import functools
+import http.server
+import json
+from pathlib import Path
+import threading
+from playwright.sync_api import sync_playwright
+
+ROOT = Path(__file__).resolve().parents[1]
+class QuietHandler(http.server.SimpleHTTPRequestHandler):
+    def log_message(self, *args): pass
+srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0),
+    functools.partial(QuietHandler, directory=str(ROOT / 'docs')))
+threading.Thread(target=srv.serve_forever, daemon=True).start()
+checks = 0
+try:
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(headless=True)
+        for width in (1440, 375):
+            page = browser.new_page(viewport={'width': width, 'height': 950}, locale='de-DE')
+            errors = []; page.on('pageerror', lambda e: errors.append(str(e)))
+            page.goto(f'http://127.0.0.1:{srv.server_port}/?lang=de')
+            page.wait_for_function('window.Atlas && window.ATLAS_SURVEY_ITEMS')
+            ids = page.eval_on_selector_all('[id]', 'els=>els.map(e=>e.id)')
+            assert len(ids) == len(set(ids)), 'duplicate IDs'
+            assert page.eval_on_selector_all('main>section[id]', 'els=>els.map(e=>e.id)') == [
+                'karte', 'herkunft', 'kontext', 'grundlagen', 'daten', 'befragungen']
+            for field in ('origin-view', 'context-view', 'basis-view'):
+                selected = page.locator('#' + field).input_value()
+                section = page.locator('#' + field).locator('xpath=ancestor::section')
+                assert section.locator('.view-panel:visible').count() == 1
+                for value in page.eval_on_selector_all('#' + field + ' option', 'els=>els.map(e=>e.value)'):
+                    page.select_option('#' + field, value)
+                    page.wait_for_timeout(140)
+                    assert section.locator('.view-panel:visible').count() == 1, value
+                    assert page.locator('#view-' + value).is_visible(), value
+                    assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
+                    checks += 3
+                page.select_option('#' + field, selected)
+            for value in page.eval_on_selector_all('#survey-select option', 'els=>els.map(e=>e.value)'):
+                page.select_option('#survey-select', value)
+                assert page.locator('#survey-blocks .bar-row').count() > 0
+                assert page.locator('#survey-blocks table tbody tr').count() == page.locator('#survey-blocks .bar-row').count()
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
+                checks += 3
+            assert not page.locator('#source-directory').get_attribute('open')
+            page.evaluate("location.hash='source-bamf_fb55'")
+            page.wait_for_timeout(200)
+            assert page.locator('#source-bamf_fb55').is_visible()
+            page.evaluate("location.hash='pyramid-card'")
+            page.wait_for_timeout(250)
+            assert page.locator('#pyramid-card').is_visible()
+            assert page.locator('#context-view').input_value() == 'pyramid'
+            assert not errors, errors
+            checks += 5
+            out = ROOT / 'test-results'; out.mkdir(exist_ok=True)
+            for field, value in [('origin-view', 'origins'), ('context-view', 'flows'),
+                                 ('basis-view', 'bases'), ('survey-select', '0')]:
+                page.select_option('#' + field, value)
+            page.eval_on_selector('#source-directory', 'el=>el.open=false')
+            page.evaluate("location.hash='herkunft'")
+            page.wait_for_timeout(200)
+            page.screenshot(path=str(out / f'consolidated-{width}.png'), full_page=True)
+            page.close()
+        browser.close()
+finally:
+    srv.shutdown()
+print(json.dumps({'passed': True, 'checks': checks}))
