@@ -33,6 +33,17 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from bw_geography import Municipalities  # noqa: E402
 
 FORBIDDEN = ('street', 'postcode_of_building', 'lat_of_building')
+# Was aus dem Eintrag entfernt wird, statt die Veröffentlichung abzubrechen: die
+# Postleitzahl steht im nichtöffentlichen Auszug und wird hier fallen gelassen.
+#
+# Sie stand bis hierher in der veröffentlichten Datei, bei 537 von 555 Einträgen,
+# obwohl deren eigene Beschreibung „ohne Straße und ohne Postleitzahl" sagt. Die
+# Sperrliste oben sollte das verhindern und nannte dafür ein Feld, das es nicht gibt
+# ("postcode_of_building"); das wirkliche Feld heißt "postcode" und lief durch. Eine
+# Schutzvorrichtung, die den falschen Namen prüft, sieht aus wie eine Prüfung und ist
+# keine — dieselbe Klasse von Fehler wie eine Sperre, die eine Drosselung für einen
+# Befund hält.
+ENTFERNT = ('postcode',)
 # Defence in depth. The extract in the private repository redacts addresses out of the
 # notes, and twice it did so incompletely — once for an entry's own street, once for a
 # rival address quoted in a note about it. This build refuses rather than publishes.
@@ -62,7 +73,7 @@ def main() -> None:
         if props is None:
             raise SystemExit(f'unknown municipality for {entry.get("name")}: '
                              f'{entry.get("municipality_id")}')
-        row = dict(entry)
+        row = {k: v for k, v in entry.items() if k not in ENTFERNT}
         # Recomputed, never copied: the input could carry anything, and this is the one
         # place that decides what coordinate is published.
         row['lon'] = round(props['label_point'][0], 5)
@@ -79,6 +90,13 @@ def main() -> None:
                 raise SystemExit(f'address survives in {key} of {row.get("name")}: '
                                  f'{found.group(0)!r}')
         rows.append(row)
+
+    # Die Gegenprobe zur Beschreibung der Datei: was sie über sich sagt, muss für
+    # jede Zeile gelten, nicht nur für die erste.
+    for row in rows:
+        for feld in FORBIDDEN + ENTFERNT:
+            if feld in row:
+                raise SystemExit(f'{feld} steht noch in {row.get("name")}')
 
     published = {k: v for k, v in doc.items() if k != 'institutions'}
     published['institutions'] = rows

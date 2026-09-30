@@ -16,6 +16,10 @@ const Z2011=window.ATLAS_ZENSUS2011_RELIGION||null;
 // Gebietsstand. Die Differenz ist die einzige Aussage über Veränderung, die
 // dieser Atlas auf Gemeindeebene machen kann, ohne zu modellieren.
 const RELCHG=window.ATLAS_RELIGION_CHANGE||null;
+// Zu jeder Quelladresse der jüngste Schnappschuss im Internet Archive, soweit es
+// einen gibt. Eine Fundstelle, deren Adresse ins Leere zeigt, ist keine — und
+// Behörden-PDFs wandern.
+const ARCHIV=window.ATLAS_SOURCE_ARCHIVES||null;
 const Z2011_KREIS=Z2011?Object.fromEntries(Z2011.districts.map(d=>[d.ags,d])):{};
 let GRID=null,gridLaeuft=false;
 const AGE=window.ATLAS_AGE||null;
@@ -413,10 +417,12 @@ function renderDetail(){
   const i=INST.institutions[s.id];
   if(i){
    $('detail-kind').textContent='Einrichtung';$('detail-name').textContent=i.name;
-   const address=[i.street,[i.postcode,i.city].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+   // Ohne Straße und ohne Postleitzahl — so steht es in der Beschreibung der
+   // Datei, und so ist es seit dieser Fassung auch in ihr.
+   const address=i.city||'';
    const vague=i.location_precision==='municipality';
    let html=metric('Organisation',esc(i.organisation),
-     esc(i.municipality||i.city)+(i.postcode?' · '+esc(i.postcode):''));
+     esc(i.municipality||i.city));
    // Ein Punkt ohne Anschrift darf nicht aussehen wie einer mit. Er steht auf dem
    // Beschriftungspunkt der Gemeinde aus den amtlichen Grenzen und meint den Ort,
    // nicht das Gebäude — und das steht hier, nicht nur in der Legende.
@@ -1729,6 +1735,12 @@ function quellenDerSeite(){
  }
  return [...raus.values()];
 }
+function archivZeile(url){
+ const a=ARCHIV&&ARCHIV.archives?ARCHIV.archives[url]:null;
+ if(!a)return '';
+ return '<p class="tiny"><a href="'+esc(a.url)+'" target="_blank" '
+  +'rel="noreferrer">'+esc(tf('Archivfassung vom {0}',a.captured))+'</a></p>';
+}
 function renderSources(){
  $('sources-list').innerHTML=quellenDerSeite().map(s=>
   `<article class="source-item"${s.id&&D.sources[s.id]?` id="source-${esc(s.id)}"`:''}>`
@@ -1740,6 +1752,7 @@ function renderSources(){
   +`<span>${esc(s.publisher||'')}${s.publication_period
       ?' · '+esc(t(String(s.publication_period))):''}</span>`
   +`${s.locator?`<p>${esc(s.locator)}</p>`:''}`
+  +archivZeile(s.url)
   +`${s.limitation?`<p>${esc(t(s.limitation))}</p>`:''}</article>`).join('')
  +`<article class="source-item"><a href="https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html" target="_blank" rel="noreferrer">BKG: Verwaltungsgebiete VG250 ↗</a><span>Archivstand 01.01.2024 · dl-de/by-2-0 · keine Bevölkerungswerte aus den Geometrien übernommen</span><p>${G?`Geodatenaufbau ausgeführt; ${G.municipality_match_count}/1101 Gemeindewerte zugeordnet. ${G.municipalities_unmatched.length} statistische Gemeinden ohne eindeutige Geometriezuordnung.`:'Amtliche Geometrien noch nicht lokal bezogen. Der GitHub-Workflow baut diese vor der Veröffentlichung auf.'}</p></article>`;
 }

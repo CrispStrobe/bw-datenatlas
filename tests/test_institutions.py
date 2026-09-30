@@ -23,7 +23,7 @@ LOOKS_LIKE_AN_ADDRESS = re.compile(
     r'\s?\d{1,4}\s?[a-zA-Z]?\b', re.I)
 
 ALLOWED = {
-    'organisation', 'name', 'city', 'postcode', 'municipality', 'municipality_id',
+    'organisation', 'name', 'city', 'municipality', 'municipality_id',
     'lat', 'lon', 'location_precision', 'geocode_source', 'has_published_coordinates',
     'source', 'source_url', 'source_kind', 'second_source_url', 'second_source_kind',
     'website', 'website_from', 'facebook', 'instagram', 'openstreetmap_url',
@@ -88,19 +88,31 @@ class TestPublishedDirectory(unittest.TestCase):
                                  f'{row["name"]} is outside the state')
 
     def test_postcodes_are_real_or_explained(self):
-        """A postcode that no register knows is a data error worth failing on.
+        """Eine Postleitzahl, die kein Register kennt, ist ein Datenfehler.
 
-        Two are tolerated by name because they are known and documented: 79011 is a
-        Freiburg PO box rather than a street postcode, and 74875 appears in neither
-        GeoNames nor OpenStreetMap.
+        Geprüft wird am Eingang, nicht am Ausgang: die veröffentlichte Datei trägt
+        seit dieser Fassung keine Postleitzahlen mehr, weil sie das über sich sagt.
+        Der nichtöffentliche Auszug trägt sie weiter, und dort entscheidet sich, ob
+        ein Eintrag der richtigen Gemeinde zugeordnet wurde — hier zu prüfen wäre
+        eine Schleife über lauter None gewesen, die nichts mehr findet und trotzdem
+        grün ist.
+
+        Zwei werden namentlich geduldet, weil sie bekannt und dokumentiert sind:
+        79011 ist ein Freiburger Postfach und keine Straßenpostleitzahl, und 74875
+        steht weder in GeoNames noch in OpenStreetMap.
         """
+        eingang = json.loads(
+            (ROOT / 'inputs/institutions-town.json').read_text('utf-8'))['institutions']
         known_exceptions = {'79011', '74875'}
-        for row in self.rows:
+        geprueft = 0
+        for row in eingang:
             code = row.get('postcode')
             if not code or code in known_exceptions:
                 continue
             self.assertIn(code, self.postcodes,
                           f'{row["name"]}: postcode {code} is in no register')
+            geprueft += 1
+        self.assertGreater(geprueft, 400, 'kaum Postleitzahlen geprüft')
 
     def test_no_personal_data(self):
         blob = ' '.join(str(v) for row in self.rows for k, v in row.items()
@@ -120,6 +132,25 @@ class TestPublishedDirectory(unittest.TestCase):
                 self.assertTrue(row.get('state_characterisation_url'),
                                 f'{row["name"]} quotes an authority without a source')
 
+
+    def test_the_published_directory_holds_what_it_says_it_holds(self):
+        """„Ohne Straße und ohne Postleitzahl" — und zwar in jeder Zeile.
+
+        Die Datei sagt das über sich seit der Trennung der Verzeichnisse, und die
+        Sperrliste des Aufbaus sollte es sichern. Sie nannte dafür ein Feld, das es
+        nicht gibt („postcode_of_building"), während das wirkliche Feld „postcode"
+        heißt — 537 von 555 Einträgen trugen eine. Eine Schutzvorrichtung, die den
+        falschen Namen prüft, sieht aus wie eine Prüfung und ist keine.
+        """
+        d = json.loads((ROOT/'docs/data/institutions.json').read_text(encoding='utf-8'))
+        for feld in ('street', 'postcode', 'postcode_of_building', 'lat_of_building'):
+            betroffen = [x['name'] for x in d['institutions'] if feld in x]
+            self.assertEqual(betroffen, [], feld)
+        self.assertIn('ohne Straße und ohne Postleitzahl', d['what_this_file_is'])
+        # Und die JS-Fassung, die die Seite wirklich liest, muss dieselbe sein.
+        js = (ROOT/'docs/data/institution-data.js').read_text(encoding='utf-8')
+        self.assertNotIn('"postcode"', js)
+        self.assertNotIn('"street"', js)
 
 if __name__ == '__main__':
     unittest.main()
