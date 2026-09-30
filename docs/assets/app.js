@@ -20,6 +20,7 @@ const RELCHG=window.ATLAS_RELIGION_CHANGE||null;
 // einen gibt. Eine Fundstelle, deren Adresse ins Leere zeigt, ist keine — und
 // Behörden-PDFs wandern.
 const ARCHIV=window.ATLAS_SOURCE_ARCHIVES||null;
+const GEPRUEFT=window.ATLAS_CHECKED_NOT_USED||null;
 const Z2011_KREIS=Z2011?Object.fromEntries(Z2011.districts.map(d=>[d.ags,d])):{};
 let GRID=null,gridLaeuft=false;
 const AGE=window.ATLAS_AGE||null;
@@ -1741,6 +1742,22 @@ function archivZeile(url){
  return '<p class="tiny"><a href="'+esc(a.url)+'" target="_blank" '
   +'rel="noreferrer">'+esc(tf('Archivfassung vom {0}',a.captured))+'</a></p>';
 }
+// Die Kehrseite des Quellenverzeichnisses: was angesehen und verworfen wurde. Die
+// Auskunft ist schwerer zu bekommen als die über das, was taugt — sie steht
+// nirgends, weil niemand sie aufschreibt.
+function renderCheckedSources(){
+ const host=$('checked-list');if(!host)return;
+ if(!GEPRUEFT||!GEPRUEFT.entries){const k=$('checked-heading');
+  if(k)k.hidden=true;host.hidden=true;return;}
+ $('checked-intro').textContent=t(GEPRUEFT.what_this_is)+' '+t(GEPRUEFT.why)+' '
+  +t(GEPRUEFT.dated_on_purpose);
+ host.innerHTML=GEPRUEFT.entries.map(e=>'<article class="source-item">'
+  +(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noreferrer">'
+     +esc(e.quelle)+' ↗</a>':'<strong>'+esc(e.quelle)+'</strong>')
+  +'<span>'+esc(tf('Geprüft am {0}',e.geprueft_am))+'</span>'
+  +'<p>'+esc(t(e.was_erhofft))+'</p>'
+  +'<p>'+esc(t(e.warum_nicht))+'</p></article>').join('');
+}
 function renderSources(){
  $('sources-list').innerHTML=quellenDerSeite().map(s=>
   `<article class="source-item"${s.id&&D.sources[s.id]?` id="source-${esc(s.id)}"`:''}>`
@@ -2164,7 +2181,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-window.__layers=layers;initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderResearch();updateLayer();
+window.__layers=layers;initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderCheckedSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -2199,7 +2216,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
+ try{renderCheckedSources();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

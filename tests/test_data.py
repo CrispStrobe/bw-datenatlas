@@ -432,4 +432,22 @@ class DataTests(unittest.TestCase):
         self.assertTrue(all(i['unit'] == 'index' for i in b['items']))
         self.assertTrue(all(i['base_n'] == 5231 for i in b['items']))
 
+    def test_checked_and_not_used_gives_a_reason_and_a_date(self):
+        """Eine Absage ohne Grund ist keine Auskunft, und ohne Datum altert sie still.
+
+        Eine Tabelle, die heute mit HTTP 400 antwortet, kann nächstes Jahr antworten;
+        eine Studie kann einen Ergänzungsband bekommen. Wer das nachliest, muss
+        wissen, wann geprüft wurde.
+        """
+        d = json.loads((ROOT/'docs/data/checked-not-used.json').read_text(encoding='utf-8'))
+        self.assertGreaterEqual(d['count'], 4)
+        for e in d['entries']:
+            self.assertTrue(e['quelle'])
+            self.assertGreater(len(e['warum_nicht']), 60, e['quelle'])
+            self.assertRegex(e['geprueft_am'], r'^\d{4}-\d{2}-\d{2}$')
+        # Die KMU 6 ist mit dem Satz abgelehnt, den sie selbst über sich schreibt.
+        kmu = [e for e in d['entries'] if 'KMU 6' in e['quelle']]
+        self.assertEqual(len(kmu), 1)
+        self.assertIn('zu wenige in der Stichprobe', kmu[0]['warum_nicht'])
+
 if __name__=='__main__': unittest.main(verbosity=2)

@@ -141,6 +141,11 @@ with sync_playwright() as pw:
       return [...u];}"""))
     fehlend=sorted(x for x in gebraucht if x not in verlinkt)
     check('every survey source is listed in the sources section',not fehlend)
+    check('the page says what was checked and not used',
+          page.locator('#checked-list .source-item').count()>=4)
+    geprueft=page.locator('#checked-list').inner_text()
+    check('each rejection carries its reason',
+          'KMU' in geprueft and ('Stichprobe' in geprueft or 'sample' in geprueft))
     archivlinks=page.eval_on_selector_all(
         '#sources-list a[href*="web.archive.org"]','e=>e.length')
     check('the sources section links an archived copy where one exists',
