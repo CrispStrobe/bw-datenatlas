@@ -254,9 +254,10 @@ Code: `LICENSE` (MIT). Quellendaten, BKG-Namensnennung und Grenzen der Weiterver
 
 ## Religionsmonitor und Befragungen
 
-Die Abschnitte 2–4 bündeln Herkunft, Migration/Alter und Methodik in thematisch
-gruppierten Auswahlfeldern. Abschnitt 5 enthält Downloads und aufklappbare
-Quellenverzeichnisse; Abschnitt 6 hält Befragungen getrennt von Bevölkerungszahlen.
+Abschnitt 2 bündelt Herkunft, Migration, Alter und Bildung in einem thematisch
+gruppierten Auswahlfeld. Abschnitt 3 enthält „Was gefragt wurde“. Abschnitt 4
+schließt die Seite mit Datengrundlagen, Methodik, Downloads, Forschungssammlung
+und Quellenverzeichnissen ab. Die bisherigen Sprunglinks bleiben erreichbar.
 Die Befragungsauswahl gruppiert bundesweite Ergebnisse zusätzlich nach Studie.
 
 `inputs/befragungsitems.csv` enthält die abgelesenen Werte einschließlich
@@ -295,3 +296,14 @@ Katalogseiten, Downloads, Prüfsummen und ausgewählte geprüfte Seiten. Ein Dow
 ist keine vollständige inhaltliche Auswertung. Kostenpflichtige Volltexte sind
 nicht enthalten. Die bisherige pauschale Absage an den Religionsmonitor wurde
 berichtigt.
+
+### Ergänzende Befragungsquellen
+
+Aus dem Vielfaltsbarometer 2025 sind ausgewählte BW- und Bundesvergleiche der
+Religions- und Vielfaltsakzeptanz sowie Fragen zu öffentlicher Religion und
+Nachbarn aufgenommen. Der Methodenwechsel von Telefon (2018, Publikation 2019)
+zu Online-Panel (2025) steht an den Vergleichswerten. Die sechs EVS-Werte stammen
+aus veröffentlichten Deutschland-Aggregaten des Atlas of European Values,
+Welle 2017. Ihre itembezogenen Fallzahlen und Gewichtung sind im Web-Atlas nicht
+ausgewiesen; es werden keine eigenen Mikrodatenanalysen oder BW-Werte behauptet.
+`inputs/additional-survey-review.json` dokumentiert Fundstellen und Prüfsummen.

@@ -24,8 +24,8 @@ try:
             ids = page.eval_on_selector_all('[id]', 'els=>els.map(e=>e.id)')
             assert len(ids) == len(set(ids)), 'duplicate IDs'
             assert page.eval_on_selector_all('main>section[id]', 'els=>els.map(e=>e.id)') == [
-                'karte', 'herkunft', 'kontext', 'grundlagen', 'daten', 'befragungen']
-            for field in ('origin-view', 'context-view', 'basis-view'):
+                'karte', 'herkunft', 'befragungen', 'grundlagen']
+            for field in ('population-view', 'basis-view'):
                 selected = page.locator('#' + field).input_value()
                 section = page.locator('#' + field).locator('xpath=ancestor::section')
                 assert section.locator('.view-panel:visible').count() == 1
@@ -50,11 +50,20 @@ try:
             page.evaluate("location.hash='pyramid-card'")
             page.wait_for_timeout(250)
             assert page.locator('#pyramid-card').is_visible()
-            assert page.locator('#context-view').input_value() == 'pyramid'
+            assert page.locator('#population-view').input_value() == 'pyramid'
+            for anchor, field, value in [('kontext', 'population-view', 'flows'),
+                                          ('daten', 'basis-view', 'downloads'),
+                                          ('methodik', 'basis-view', 'method'),
+                                          ('quellen', 'basis-view', 'sources')]:
+                page.evaluate(f"location.hash='{anchor}'")
+                page.wait_for_timeout(200)
+                assert page.locator('#' + field).input_value() == value
+                assert page.locator('#view-' + value).is_visible()
+                checks += 2
             assert not errors, errors
             checks += 5
             out = ROOT / 'test-results'; out.mkdir(exist_ok=True)
-            for field, value in [('origin-view', 'origins'), ('context-view', 'flows'),
+            for field, value in [('population-view', 'origins'),
                                  ('basis-view', 'bases'), ('survey-select', '0')]:
                 page.select_option('#' + field, value)
             page.eval_on_selector('#source-directory', 'el=>el.open=false')

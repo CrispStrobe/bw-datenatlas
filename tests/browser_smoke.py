@@ -132,6 +132,7 @@ with sync_playwright() as pw:
     # Ansichten". Das war eine gepflegte Liste von neun Einträgen, während die Seite
     # längst aus dreißig schöpfte. Jetzt wird sie aus dem Material gebaut, und diese
     # Prüfung ist der Grund, warum sie es bleiben muss.
+    page.select_option('#basis-view', 'sources')
     page.locator('#source-directory > summary').click()
     page.locator('#checked-directory > summary').click()
     verlinkt=set(page.evaluate("""()=>[...document.querySelectorAll(
@@ -162,7 +163,7 @@ with sync_playwright() as pw:
     # Landeszahl zu machen.
     # Der Altersaufbau daneben. Die Spanne muss sichtbar sein, sonst liest sich ein
     # Wert, den die Geheimhaltung nach unten gezogen hat, wie eine Messung.
-    page.select_option('#context-view', 'religion-age')
+    page.select_option('#population-view', 'religion-age')
     alt=page.locator('#religion-age-card')
     check('the age chart is on the page',alt.is_visible())
     check('the age chart drops the rows whose range says nothing',
@@ -178,7 +179,7 @@ with sync_playwright() as pw:
     check('the age chart says why two rows are missing',
           'Freikirchen' in at or 'free churches' in at)
 
-    page.select_option('#origin-view', 'orthodox')
+    page.select_option('#population-view', 'orthodox')
     karte=page.locator('#orthodox-citizenship-card')
     check('the citizenship chart is on the page',karte.is_visible())
     zeilen=page.locator('#orthodox-citizenship-bars .bar-row')
@@ -390,7 +391,7 @@ with sync_playwright() as pw:
           page.evaluate('''()=>{const f=[...document.querySelectorAll(
             '#published-estimates-bars .bar-fill')].map(e=>e.style.background);
             return f.includes('rgb(140, 74, 44)')&&f.includes('rgb(18, 89, 107)');}'''))
-    page.select_option('#origin-view', 'origins')
+    page.select_option('#population-view', 'origins')
     check('initial national origin bars eight',page.locator('#origin-bars .bar-row').count()==8)
     check('four national composition columns',page.locator('.stack-segment').count()==20)
     check('desktop body no horizontal overflow',not page.evaluate('document.documentElement.scrollWidth>innerWidth'))
@@ -566,7 +567,7 @@ with sync_playwright() as pw:
     # State age pyramid, a separate classification from the district figures.
     # Auf die eigene Pyramide eingegrenzt: seit der Generationenpyramide gibt es eine
     # zweite mit denselben Klassennamen, und eine ungebundene Zählung träfe beide.
-    page.select_option('#context-view', 'pyramid')
+    page.select_option('#population-view', 'pyramid')
     page.wait_for_timeout(200)
     check('age structure drawn as three panels',
           page.locator('#pyramid .py-panel').count()==3)
@@ -607,6 +608,7 @@ with sync_playwright() as pw:
     gen=page.locator('#detail-content').inner_text()
     check('profile names the second generation','Zweite Generation' in gen)
     check('profile quantifies the invisible group','unsichtbar' in gen.lower())
+    page.select_option('#basis-view', 'research')
     page.locator('#research-explorer').evaluate('el=>el.open=true')
     expect(page.locator('#research-page')).to_contain_text('Beobachtungen',timeout=8000)
     check('forty datasets available',page.locator('#dataset-select option').count()==40)
@@ -749,7 +751,7 @@ with sync_playwright() as pw:
 
     # Grafik vergrößern
     check('every chart card offers an enlarged view',page.locator('.chart-enlarge').count()>=5)
-    page.select_option('#origin-view', 'composition')
+    page.select_option('#population-view', 'composition')
     page.locator('article:has(#composition-chart) .chart-enlarge').first.click()
     page.wait_for_timeout(500)
     check('the enlarge dialog opens',page.evaluate("()=>document.getElementById('chart-zoom').open"))
@@ -902,6 +904,8 @@ with sync_playwright() as pw:
 
     # Befragungsergebnisse stehen in einem eigenen Abschnitt, und jede Zeile trägt
     # die vier Angaben, ohne die eine Prozentzahl nichts wert ist.
+    state_block=page.evaluate("()=>window.ATLAS_SURVEY_ITEMS.blocks.findIndex(b=>b.scope==='Baden-Württemberg' && b.items[0].base_n===1587)")
+    page.select_option('#survey-select', str(state_block))
     umf=page.locator('#befragungen').inner_text()
     check('the survey section is separate from the counted figures',
           page.locator('#befragungen').count()==1
@@ -926,7 +930,7 @@ with sync_playwright() as pw:
           page.locator('.survey-meta').first.inner_text()
           .startswith(('Baden-Württemberg','Deutschland')))
     reihenfolge=page.evaluate(
-        "()=>window.ATLAS_SURVEY_ITEMS.blocks.map(b=>b.block.startsWith('bw_'))")
+        "()=>window.ATLAS_SURVEY_ITEMS.blocks.map(b=>b.scope==='Baden-Württemberg')")
     check('the Baden-Württemberg blocks come first',
           reihenfolge==sorted(reihenfolge,key=lambda x:not x) and reihenfolge[0])
     check('there is more than one block about this state',
@@ -989,7 +993,7 @@ with sync_playwright() as pw:
 
     # Die erste echte Alterspyramide neben der nach Einwanderungsgeschichte. Ihr
     # Wert liegt in der Generationenspalte — und in dem, was sie über sich selbst sagt.
-    page.select_option('#context-view', 'foreign-age')
+    page.select_option('#population-view', 'foreign-age')
     pyr=page.locator('#foreign-age-card').inner_text()
     check('the foreign age pyramid has all twenty bands',
           page.locator('#foreign-age .py-row').count()==20)
@@ -1004,7 +1008,7 @@ with sync_playwright() as pw:
 
     # Die Zeitreihe lebt von ihrer Probe: zwei Jahre sind unabhängig von der KMK
     # bestätigt, und der Unterschied zur verbreiteten KMK-Zahl ist die Sekundarstufe II.
-    page.select_option('#context-view', 'iru')
+    page.select_option('#population-view', 'iru')
     iru=page.locator('#iru-card').inner_text()
     check('the religious education series runs from 2019 to 2025/26',
           page.locator('#iru-bars .bar-row').count()==7
@@ -1016,7 +1020,7 @@ with sync_playwright() as pw:
     check('the series does not smooth over the year that disagrees',
           '5.905' in iru)
     # Und die Altersangaben leben davon, dass sie sagen, was sie NICHT sind.
-    page.select_option('#context-view', 'ages')
+    page.select_option('#population-view', 'ages')
     alter=page.locator('#ages-card').inner_text()
     check('the age card denies that a pyramid exists',
           'gibt es nicht' in alter and 'ab 16 Jahren' in alter)

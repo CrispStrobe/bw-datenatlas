@@ -10,6 +10,40 @@ Der Anwendungscode, die Aufbereitungsskripte und die Projektdokumentation stehen
 
 Es wird **keine pauschale offene Lizenz für sämtliche zugrunde liegenden statistischen Quellen behauptet**. Für Weiterverwendung und Veröffentlichung sind die jeweiligen Nutzungsbedingungen der Originalanbieter maßgeblich. Insbesondere sind ein Downloadlink, die Veröffentlichung einer Zahl und eine Lizenz für einen vollständigen Bericht nicht dasselbe. Das Projekt verteilt nicht die Original-PDFs mit ihren Abbildungen und Fotos. Bei Zitaten und Weiterverwendung müssen die Originalquelle, Tabelle, Bezugszeit und gegebenenfalls Modellannahmen erhalten bleiben.
 
+## Religionsmonitor, Vielfaltsbarometer und European Values Study
+
+Prüfstand: 30.09.2026. Die Seite erstellt eigene Diagramme aus ausgewählten,
+belegten Zahlen. Originalgrafiken, Fotos und Studien-PDFs werden nicht ausgeliefert.
+Der lokale PDF- und Bildcache dient der Quellenprüfung und ist nicht veröffentlicht.
+
+- **Bertelsmann Stiftung / Religionsmonitor:** Das [Impressum](https://www.bertelsmann-stiftung.de/de/system/impressum)
+  verlangt grundsätzlich Zustimmung zur Verwertung, soweit beim jeweiligen Dokument
+  keine anderen Bedingungen stehen. In den bisher verwendeten Berichten wurde keine
+  offene CC-Lizenz festgestellt. Das ist keine Lizenz zur freien Weitergabe der
+  Berichte oder ihrer Grafiken.
+- **Robert Bosch Stiftung / Vielfaltsbarometer 2025:** Das Impressum des
+  [Berichts](https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf),
+  S. 78, nennt Copyright 2025 und „Alle Rechte vorbehalten“. Übernommen werden
+  ausgewählte Aggregate mit eigener Darstellung und Methodeneinordnung.
+- **European Values Study:** Die hier verwendeten sechs Deutschlandwerte stammen
+  aus den veröffentlichten Aggregaten des [Atlas of European Values](https://www.atlasofeuropeanvalues.eu/maptool.html).
+  Sie sind keine eigene Mikrodatenanalyse. Für Mikrodaten gelten die
+  [GESIS-Nutzungsbedingungen und Zugangsvoraussetzungen](https://europeanvaluesstudy.eu/surveys/data-access/).
+  Der separate Atlas-Band von 2022 steht unter **CC BY-NC-ND 4.0** laut
+  [Verlag](https://openpress.tilburguniversity.edu/projects/atlas-of-european-values).
+  Diese Buchlizenz wird nicht auf sämtliche EVS-Daten oder Web-Aggregate übertragen.
+
+Urheberrecht und Datenbankrechte sind getrennt zu beurteilen. Einzelne Tatsachen
+und Zahlen sind nicht allein wegen eines Copyright-Vermerks geschützte Werke;
+Texte, die Gestaltung von Abbildungen und geschützte Zusammenstellungen können es
+sein. [§ 51 UrhG](https://www.gesetze-im-internet.de/urhg/__51.html) erlaubt
+zweckgebundene Zitate in gerechtfertigtem Umfang; eine Quellenangabe allein
+begründet kein beliebig umfangreiches Übernahmerecht. Bei wesentlichen oder
+systematischen Datenbankauszügen kann
+[§ 87b UrhG](https://www.gesetze-im-internet.de/urhg/__87b.html) relevant sein.
+Daraus wird keine pauschale Freigabe für den gesamten Studienbestand abgeleitet.
+Die Auswahl beschränkt sich auf Religion, Vielfalt und für BW nützliche Vergleiche.
+
 ## BKG-Geodaten: erst beim Aufbau bezogen
 
 Produkt: Verwaltungsgebiete 1:250 000, Stand 01.01. (VG250).

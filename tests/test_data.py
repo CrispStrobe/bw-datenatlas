@@ -459,6 +459,31 @@ class DataTests(unittest.TestCase):
         self.assertTrue(aus_kmu, 'KMU 6 wird nirgends verwendet')
         self.assertIn('nicht eine Quelle', kmu[0]['warum_nicht'])
 
+    def test_bosch_and_evs_keep_methods_and_question_wording_separate(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        bw = blocks['bosch2025_index_bw']
+        self.assertEqual([i['value'] for i in bw['items']], [68, 62, 74, 58, 44, 35])
+        self.assertTrue(all(i['unit'] == 'index' and i['base_n'] is None
+                            for i in bw['items']))
+        self.assertIn('2018', bw['note'])
+        self.assertIn('Methodeneffekte', bw['note'])
+        neighbours = blocks['bosch2025_nachbarn']
+        self.assertEqual([i['value'] for i in neighbours['items']], [19, 30, 50])
+        # The repeated general religion proxy is not a group-specific rejection.
+        self.assertIn('keine drei gemessenen Gruppenurteile', neighbours['note'])
+        self.assertEqual([i['value'] for i in blocks['bosch2025_religion']['items']],
+                         [22, 24, 50])
+        self.assertIn('bleiben im Nenner', blocks['bosch2025_religion']['note'])
+        evs = blocks['evs2017_nachbarn']
+        self.assertEqual([i['value'] for i in evs['items']], [1.65, 4.29, 13.83])
+        self.assertTrue(all(i['base_n'] is None and i['question_ref'] is None
+                            for i in evs['items']))
+        self.assertIn('keine direkten Niveauvergleiche', evs['note'])
+        for i in evs['items']:
+            self.assertIn('map_wave=2017', i['source_url'])
+            self.assertEqual(i['field_period'], '2017–2018')
+
     def test_religionsmonitor_figures_keep_distinct_items_and_missing_values(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
         blocks = {b['block']: b for b in d['blocks']}

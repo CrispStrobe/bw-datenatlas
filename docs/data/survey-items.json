@@ -5,7 +5,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 414,
+ "count": 438,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -13,6 +13,98 @@
   "Mehrere Länder"
  ],
  "blocks": [
+  {
+   "block": "bosch2025_index_bw",
+   "title": "Akzeptanz von Vielfalt: BW · 2019 und 2025",
+   "note": "Index von 0 bis 100 Punkten, kein Prozentwert. Vergleich der Veröffentlichungen 2019 und 2025: Die ältere Erhebung fand Mai–Juli 2018 telefonisch statt (2.937 auswertbare Fälle), die neue am 2. Mai–3. Juni 2025 in einem quotierten Online-Panel (4.761 Fälle). Identische Items, aber unterschiedliche Erhebungswege; Veränderungen können auch Methodeneffekte enthalten. Keine Messung des Anteils religiöser Menschen. Kleine Abstände sind keine gesicherten Rangunterschiede. Die BW-Stichprobe umfasst 2025 518 Befragte; das ist keine itembezogene Zahl gültiger Antworten.",
+   "scope": "Baden-Württemberg",
+   "items": [
+    {
+     "label": "Vielfalt insgesamt · 2019",
+     "detail": null,
+     "value": 68.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung ab 16 Jahren in Baden-Württemberg",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Vielfalt insgesamt · 2025",
+     "detail": null,
+     "value": 62.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung ab 16 Jahren in Baden-Württemberg",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Ethnische Herkunft · 2019",
+     "detail": null,
+     "value": 74.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung ab 16 Jahren in Baden-Württemberg",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Ethnische Herkunft · 2025",
+     "detail": null,
+     "value": 58.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung ab 16 Jahren in Baden-Württemberg",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Religion · 2019",
+     "detail": null,
+     "value": 44.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung ab 16 Jahren in Baden-Württemberg",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Religion · 2025",
+     "detail": null,
+     "value": 35.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung ab 16 Jahren in Baden-Württemberg",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    }
+   ]
+  },
   {
    "block": "bw_integration_erwartung",
    "title": "Erwartung zum Stand der Integration in Baden-Württemberg in fünf Jahren",
@@ -396,6 +488,98 @@
    ]
   },
   {
+   "block": "bosch2025_index_de",
+   "title": "Akzeptanz von Vielfalt: Deutschland · 2019 und 2025",
+   "note": "Index von 0 bis 100 Punkten, kein Prozentwert. Vergleich der Veröffentlichungen 2019 und 2025: Die ältere Erhebung fand Mai–Juli 2018 telefonisch statt (2.937 auswertbare Fälle), die neue am 2. Mai–3. Juni 2025 in einem quotierten Online-Panel (4.761 Fälle). Identische Items, aber unterschiedliche Erhebungswege; Veränderungen können auch Methodeneffekte enthalten. Keine Messung des Anteils religiöser Menschen. Kleine Abstände sind keine gesicherten Rangunterschiede.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Vielfalt insgesamt · 2019",
+     "detail": null,
+     "value": 68.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Vielfalt insgesamt · 2025",
+     "detail": null,
+     "value": 63.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Ethnische Herkunft · 2019",
+     "detail": null,
+     "value": 73.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Ethnische Herkunft · 2025",
+     "detail": null,
+     "value": 56.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Religion · 2019",
+     "detail": null,
+     "value": 44.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    },
+    {
+     "label": "Religion · 2025",
+     "detail": null,
+     "value": 34.0,
+     "unit": "index",
+     "study": "Vielfaltsbarometer 2019 / 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Mai–Juli 2018 / 2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 8, S. 26; Methoden S. 70–71"
+    }
+   ]
+  },
+  {
    "block": "rm2023_pandemie_deutung",
    "title": "Deutung der Pandemie als Verschwörung oder göttliche Strafe",
    "note": "Religionsmonitor 2023, erhoben im Juni und Juli 2022. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, einschließlich gewichteter muslimischer Aufstockung. Die Pandemiefragen sind rückblickende Selbstauskünfte oder Bewertungen; sie messen keine beobachtete Wirksamkeit. Die Abbildungen werten gültige Antworten aus, nennen aber keine Fallzahl je Frage. Die Gesamtfallzahl bezeichnet die Studienstichprobe. Gezeigt ist die Summe eher und voller Zustimmung zu zwei verschiedenen Aussagen. Diese dürfen nicht addiert werden. Die Pandemiefrage ist ein einzelnes Item und nicht dieselbe Messung wie der Drei-Item-Index der Verschwörungsstudie von 2025.",
@@ -428,6 +612,56 @@
      "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
      "source_locator": "Abbildung 12, S. 38"
+    }
+   ]
+  },
+  {
+   "block": "evs2017_nachbarn",
+   "title": "EVS: unerwünschte Nachbarn nach Religion",
+   "note": "Veröffentlichte Deutschland-Aggregate des Atlas of European Values, Auswahl EVS 2017 / Total. Die deutsche Erhebung dieser Welle fand 2017–2018 statt; „2017“ bezeichnet die Welle. Keine eigene Mikrodatenrechnung. GESIS nennt für den integrierten deutschen Datensatz 5.456 Fälle; der Atlas weist weder gültige Item-Fallzahlen noch die Gewichtung und Behandlung fehlender Antworten für diese Karten aus. Deshalb keine Fallzahl am Balken und keine direkten Niveauvergleiche mit anderen Studien. Die Kennungen V… identifizieren die Atlas-Karten, nicht Fragennummern. Ausgewählte unerwünschte Nachbargruppen: Die Benennung religiöser Menschen als „gläubig“, „praktizierend“ oder „religiös“ im Vielfaltsbarometer fehlt hier.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Christen als Nachbarn unerwünscht",
+     "detail": null,
+     "value": 1.65,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": null,
+     "field_period": "2017–2018",
+     "question_ref": null,
+     "source_title": "Atlas of European Values: EVS 2017, Total, Deutschland",
+     "source_url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V27&world=false",
+     "source_locator": "Atlas-Karte V27, Deutschland (DE)"
+    },
+    {
+     "label": "Juden als Nachbarn unerwünscht",
+     "detail": null,
+     "value": 4.29,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": null,
+     "field_period": "2017–2018",
+     "question_ref": null,
+     "source_title": "Atlas of European Values: EVS 2017, Total, Deutschland",
+     "source_url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V29&world=false",
+     "source_locator": "Atlas-Karte V29, Deutschland (DE)"
+    },
+    {
+     "label": "Muslime als Nachbarn unerwünscht",
+     "detail": null,
+     "value": 13.83,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": null,
+     "field_period": "2017–2018",
+     "question_ref": null,
+     "source_title": "Atlas of European Values: EVS 2017, Total, Deutschland",
+     "source_url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V28&world=false",
+     "source_locator": "Atlas-Karte V28, Deutschland (DE)"
     }
    ]
   },
@@ -2490,6 +2724,56 @@
    ]
   },
   {
+   "block": "bosch2025_religion",
+   "title": "Religion im öffentlichen Raum: drei unterschiedliche Aussagen",
+   "note": "Summe der beiden zustimmenden Antwortstufen. Die dritte Aussage ist ablehnend formuliert, die ersten beiden befürwortend; die Balken bilden keinen gemeinsamen Zustimmungsindex. „Weiß nicht“ und fehlende Angaben bleiben im Nenner und werden nicht auf gültige Antworten umgerechnet. 4.761 ist die gesamte auswertbare Studienstichprobe, keine ausgewiesene Item-Fallzahl. Die Labels sind Zusammenfassungen; der vollständige Wortlaut steht in Tabelle 7.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Gesetzliche Feiertage auch für andere Religionen",
+     "detail": "Zustimmung: 11 % ziemlich + 11 % völlig",
+     "value": 22.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 7, S. 24; Methoden S. 70–71"
+    },
+    {
+     "label": "Islam passt in die westliche Welt",
+     "detail": "Zustimmung: 14 % ziemlich + 10 % völlig",
+     "value": 24.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 7, S. 24; Methoden S. 70–71"
+    },
+    {
+     "label": "Religiöse Symbole gehören nicht in die Öffentlichkeit",
+     "detail": "Zustimmung: 20 % ziemlich + 30 % völlig",
+     "value": 50.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle 7, S. 24; Methoden S. 70–71"
+    }
+   ]
+  },
+  {
    "block": "rm2023_freiheit",
    "title": "Religionsfreiheit und Offenheit · Religionsmonitor 2023",
    "note": "Zustimmung „voll/eher“ zu vier getrennten Aussagen, keine zu addierende Verteilung. Erhebung Juni–Juli 2022, veröffentlicht als Religionsmonitor 2023. Analysestichprobe Deutschland: 4.363 Interviews (2.038 Melderegister, 2.325 Onlinepanel), gewichtet; muslimische Befragte wurden aufgestockt. 4.363 ist die Gesamtfallzahl, keine Fallzahl einer Religionsgruppe. Untergruppen-Fallzahlen stehen an der Abbildung nicht. Kleine Religionsgruppen sind besonders vorsichtig zu lesen; kein direkter Zeitvergleich mit 2013 wegen anderer Stichprobenzusammensetzung.",
@@ -2550,6 +2834,106 @@
      "source_title": "Zusammenleben in religiöser Vielfalt (2023)",
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
      "source_locator": "Abbildung 10, S. 51"
+    }
+   ]
+  },
+  {
+   "block": "bosch2025_nachbarn",
+   "title": "Religiöse Nachbarn: Ablehnung nach Gruppe",
+   "note": "Dargestellt sind ausschließlich die gruppenspezifischen Nachbarschaftsfragen. Die gleich hohen „allgemeinen“ Religionswerte der Originalabbildung beruhen auf einer gemeinsamen Frage zu Religion im öffentlichen Raum und sind keine drei gemessenen Gruppenurteile. Die Abbildung weist Anteile zwischen 0 und 1 aus; hier wurden sie mit 100 in Prozent umgerechnet. 4.761 ist die gesamte Studienstichprobe; gültige Antworten je Gruppe sind nicht ausgewiesen. Keine Gleichsetzung mit den anders formulierten EVS-Nachbarschaftsfragen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Gläubige Christen als Nachbarn",
+     "detail": null,
+     "value": 19.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56; Methoden S. 70–71"
+    },
+    {
+     "label": "Praktizierende Juden als Nachbarn",
+     "detail": null,
+     "value": 30.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56; Methoden S. 70–71"
+    },
+    {
+     "label": "Religiöse Muslime als Nachbarn",
+     "detail": null,
+     "value": 50.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Robert Bosch Stiftung (2025): Vielfaltsbarometer 2025. Zum Stand des Zusammenlebens in Deutschland",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56; Methoden S. 70–71"
+    }
+   ]
+  },
+  {
+   "block": "evs2017_religion",
+   "title": "Religiöse Selbstbeschreibung, Gottesglaube und Wichtigkeit",
+   "note": "Veröffentlichte Deutschland-Aggregate des Atlas of European Values, Auswahl EVS 2017 / Total. Die deutsche Erhebung dieser Welle fand 2017–2018 statt; „2017“ bezeichnet die Welle. Keine eigene Mikrodatenrechnung. GESIS nennt für den integrierten deutschen Datensatz 5.456 Fälle; der Atlas weist weder gültige Item-Fallzahlen noch die Gewichtung und Behandlung fehlender Antworten für diese Karten aus. Deshalb keine Fallzahl am Balken und keine direkten Niveauvergleiche mit anderen Studien. Die Kennungen V… identifizieren die Atlas-Karten, nicht Fragennummern. Drei getrennte Merkmale, keine sich ausschließenden Kategorien und kein Religionsanteil.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Bezeichnet sich als religiös",
+     "detail": null,
+     "value": 54.61,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": null,
+     "field_period": "2017–2018",
+     "question_ref": null,
+     "source_title": "Atlas of European Values: EVS 2017, Total, Deutschland",
+     "source_url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V56a&world=false",
+     "source_locator": "Atlas-Karte V56a, Deutschland (DE)"
+    },
+    {
+     "label": "Glaubt an Gott",
+     "detail": null,
+     "value": 63.35,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": null,
+     "field_period": "2017–2018",
+     "question_ref": null,
+     "source_title": "Atlas of European Values: EVS 2017, Total, Deutschland",
+     "source_url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V57&world=false",
+     "source_locator": "Atlas-Karte V57, Deutschland (DE)"
+    },
+    {
+     "label": "Religion im Leben wichtig oder sehr wichtig",
+     "detail": null,
+     "value": 37.75,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": null,
+     "field_period": "2017–2018",
+     "question_ref": null,
+     "source_title": "Atlas of European Values: EVS 2017, Total, Deutschland",
+     "source_url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V6&world=false",
+     "source_locator": "Atlas-Karte V6, Deutschland (DE)"
     }
    ]
   },

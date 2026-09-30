@@ -1939,6 +1939,8 @@ function renderSurveyItems(){
    const study=b.items[0]?.study||'';
    if(study.startsWith('Religionsmonitor'))return 'Deutschland · '+study;
    if(study.includes('KMU 6'))return 'Deutschland · KMU 6';
+   if(study.startsWith('Vielfaltsbarometer'))return 'Deutschland · Vielfaltsbarometer';
+   if(study.startsWith('European Values Study'))return 'Deutschland · European Values Study';
    return t('Deutschland · Weitere Befragungen');
   };
   const groups=[...new Set(D2.blocks.map(groupFor))];

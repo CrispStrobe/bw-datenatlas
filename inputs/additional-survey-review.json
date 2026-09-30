@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "file": "vielfaltsbarometer2025.pdf",
+      "sha256": "b77881d185696899da52f4d7b186d730890162ccf69858812bacc541a109ff9b",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Tabelle 7 und 8, Abbildung 4 visuell; Methoden S. 70–71",
+      "url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf"
+    },
+    {
+      "file": "evs-V56a-2017.html",
+      "sha256": "9d8e94b44cf90552ae3df8c27938864fcb28e6efa0693183ee5f96ad618beeb3",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V56a&world=false"
+    },
+    {
+      "file": "evs-V57-2017.html",
+      "sha256": "15ba634d7ca6bd6f3ecbb1c526c0316a8c4e324f7def612df6dc860c6c06d8c3",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V57&world=false"
+    },
+    {
+      "file": "evs-V6-2017.html",
+      "sha256": "b25045296b2c5925bf63561da570644d4f686f25fd10b5e33798de93e54f6e20",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V6&world=false"
+    },
+    {
+      "file": "evs-V27-2017.html",
+      "sha256": "af283661bbd7092e27120ab1f1fae7d8e09949a202a863274b25dbfaa5f497d6",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V27&world=false"
+    },
+    {
+      "file": "evs-V29-2017.html",
+      "sha256": "bcbcf72bf4b77d23d94b9b7c0702ee5a6f29b51a2a3325c025ce4f8116077d78",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V29&world=false"
+    },
+    {
+      "file": "evs-V28-2017.html",
+      "sha256": "e07ce5b1d7def715979e58b7ec253d716133749452cc2d94537cc47a972017ea",
+      "reviewed_at": "2026-09-30",
+      "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V28&world=false"
+    }
+  ],
+  "selection": "Religion und Vielfalt; ausgewählte BW-Vergleiche und bundesweite Einstellungen. Keine vollständige Übernahme der Studien."
+}
