@@ -532,4 +532,34 @@ class DataTests(unittest.TestCase):
         comparison = blocks['rm2015_islamwahrnehmung_vergleich']['items']
         self.assertEqual([i['base_n'] for i in comparison], [1683, 937, 1683, 937])
 
+    def test_europe_survey_distinguishes_generations_and_work_denominators(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        language = blocks['rm2017_europa_sprache']
+        self.assertEqual([i['value'] for i in language['items'][:3]], [23, 73, 46])
+        self.assertIn('keine Messung heutiger Sprachkenntnisse', language['note'])
+        self.assertTrue(all(i['base_n'] is None for i in language['items']))
+        unemployment = blocks['rm2017_europa_arbeitslos']
+        self.assertEqual([i['value'] for i in unemployment['items'][:2]], [5, 7])
+        self.assertIn('keine amtliche Arbeitslosenquote', unemployment['note'])
+        self.assertTrue(all('16 bis 65' in i['population'] and 'Ausbildung' in i['population']
+                            for i in unemployment['items']))
+        self.assertIn('Fluchtmigration', language['note'])
+
+    def test_pandemic_derived_totals_preserve_rounding_and_source_discrepancies(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        self.assertTrue(all(not i['question_ref'] or
+                            not i['question_ref'].startswith(('Abbildung ', 'Tabelle '))
+                            for b in d['blocks'] for i in b['items']))
+        blocks = {b['block']: b for b in d['blocks']}
+        domains = blocks['rm2023_pandemie_bereiche']
+        self.assertEqual([i['value'] for i in domains['items']], [90, 85, 81, 74, 48, 29])
+        self.assertIn('abweichend 30', domains['note'])
+        groups = blocks['rm2023_pandemie_religion']
+        self.assertIn('4.338', groups['note'])
+        self.assertTrue(all(i['base_n'] is None for i in groups['items']))
+        narratives = blocks['rm2023_pandemie_deutung']
+        self.assertEqual([i['value'] for i in narratives['items']], [20, 10])
+        self.assertIn('nicht dieselbe Messung', narratives['note'])
+
 if __name__=='__main__': unittest.main(verbosity=2)

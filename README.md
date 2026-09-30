@@ -274,6 +274,13 @@ Sonderauswertung Islam 2015 kombiniert Religionsmonitor 2013 (Feldzeit 2012) und
 Emnid 2014; Freizeitkontakte beider Gruppen sind deshalb separat dargestellt.
 Unbeschriftete Punkte der Alterskurve werden nicht als exakte Werte übernommen.
 
+Die Europastudie 2017 ergänzt Sprache, Erwerbsstatus, Religiosität, Kontakte,
+Verbundenheit und Diskriminierung. Ihre Muslimstichprobe enthält die damalige neue
+Fluchtmigration nicht. Generationenvergleiche sind Querschnitte; bei Erwerbsstatus
+gilt die eingeschränkte Gruppe von 16 bis 65 Jahren ohne Schule oder Ausbildung.
+Die Krisenauswertung 2023 zeigt rückblickende Pandemiefragen. Summen gerundeter
+Antwortkategorien und Unstimmigkeiten der Quelle werden an den Blöcken benannt.
+
 Die frei verlinkten PDFs des Publikationskatalogs lassen sich lokal sichern:
 
 ```bash

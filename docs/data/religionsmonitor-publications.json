@@ -249,7 +249,28 @@
       "sha256": "969652ca292f836235755ef31a4905a1ecea1764a2fdc48a91945858a257958c",
       "bytes": 1721660,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        18,
+        28,
+        30,
+        32,
+        33,
+        36,
+        37,
+        38
+      ],
+      "used_blocks": [
+        "rm2017_nachbarn_europa",
+        "rm2017_europa_kontakte",
+        "rm2017_europa_verbundenheit",
+        "rm2017_europa_diskriminierungsfrei",
+        "rm2017_europa_freunde",
+        "rm2017_europa_sprache",
+        "rm2017_europa_hochreligioes",
+        "rm2017_europa_vollzeit",
+        "rm2017_europa_arbeitslos"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/0RZ_BS-0302_Religionsmonitor_kompakt_web.pdf",
@@ -401,7 +422,19 @@
       "sha256": "b7f58269fd50604052f13f6bdc981dcac1c4d94aad8b08dcc821887aa08c805e",
       "bytes": 1154550,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        22,
+        28,
+        29,
+        38
+      ],
+      "used_blocks": [
+        "rm2023_pandemie_praxis",
+        "rm2023_pandemie_religion",
+        "rm2023_pandemie_bereiche",
+        "rm2023_pandemie_deutung"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
@@ -472,7 +505,28 @@
       "sha256": "969652ca292f836235755ef31a4905a1ecea1764a2fdc48a91945858a257958c",
       "bytes": 1721660,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        18,
+        28,
+        30,
+        32,
+        33,
+        36,
+        37,
+        38
+      ],
+      "used_blocks": [
+        "rm2017_nachbarn_europa",
+        "rm2017_europa_kontakte",
+        "rm2017_europa_verbundenheit",
+        "rm2017_europa_diskriminierungsfrei",
+        "rm2017_europa_freunde",
+        "rm2017_europa_sprache",
+        "rm2017_europa_hochreligioes",
+        "rm2017_europa_vollzeit",
+        "rm2017_europa_arbeitslos"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa_Ergebnisse-und-Laenderprofile.pdf",
