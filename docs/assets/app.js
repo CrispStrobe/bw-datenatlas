@@ -1700,6 +1700,10 @@ function quellenDerSeite(){
                   'aa_national_visas_2025']){
   if(D.sources[id])dazu(id,D.sources[id]);
  }
+ dazu('spielhaus_2013',{title:'Muslime in der Statistik – Wer ist Muslim und wenn ja wie viele?',
+  publisher:'Riem Spielhaus · Mediendienst Integration',publication_period:'2013',
+  url:'https://mediendienst-integration.de/fileadmin/Dateien/Muslime_Spielhaus_MDI.pdf',
+  locator:'S. 6–10 und 13–16'});
  // Was an den Kartenebenen hängt.
  for(const [name,ebene] of Object.entries(layers)){
   if(ebene.source&&D.sources[ebene.source])dazu(ebene.source,D.sources[ebene.source]);

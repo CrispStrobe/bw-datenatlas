@@ -46,8 +46,13 @@ try:
             method_link.click()
             assert page.locator('#bamf-methodik').is_visible()
             assert 'Mikrozensus 2025' in page.locator('#bamf-methodik').inner_text()
+            method_text = page.locator('#bamf-methodik').inner_text()
+            assert 'keine Zahlen praktizierender' in method_text
+            assert 'Veränderungen der religiösen Selbstzuordnung seit 2019' in method_text
+            assert 'Erhebungen bis 2013' in method_text
+            assert page.locator('#sources-list a[href="https://mediendienst-integration.de/fileadmin/Dateien/Muslime_Spielhaus_MDI.pdf"]').count() == 1
             page.select_option('#population-view', 'origins')
-            checks += 4
+            checks += 8
             for field in ('population-view', 'basis-view'):
                 selected = page.locator('#' + field).input_value()
                 section = page.locator('#' + field).locator('xpath=ancestor::section')
