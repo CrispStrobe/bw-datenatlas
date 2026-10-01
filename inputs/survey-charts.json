@@ -406,15 +406,6 @@
    }
   ]
  },
- "rm2023_pandemie_praxis": {
-  "kind": "distribution",
-  "rows": [
-   {
-    "label": "Alle Befragten",
-    "items": "all"
-   }
-  ]
- },
  "evs2017_gottesvorstellungen": {
   "kind": "distribution",
   "rows": [
@@ -949,21 +940,6 @@
   ],
   "title": "Zusammenhalt nach Religionszugehörigkeit, Regionen und Zeitverlauf · 2026"
  },
- "rm2023_pandemie_deutung": {
-  "kind": "collection",
-  "related": [
-   "rm2023_pandemie_bereiche",
-   "rm2023_pandemie_religion",
-   "rm2023_pandemie_praxis"
-  ],
-  "panels": [
-   "rm2023_pandemie_deutung",
-   "rm2023_pandemie_bereiche",
-   "rm2023_pandemie_religion",
-   "rm2023_pandemie_praxis"
-  ],
-  "title": "Religion und Pandemie: Deutung, Hilfe und religiöse Praxis"
- },
  "kmu6_verbundenheit": {
   "kind": "collection",
   "related": [
@@ -1045,7 +1021,6 @@
   ],
   "panels": [
    "rm2017_europa_arbeitslos",
-   "rm2017_europa_vollzeit",
    "rm2017_europa_sprache"
   ],
   "title": "Muslime in Europa: Erwerbsstatus und Sprache"
@@ -1073,5 +1048,8 @@
    "rm2017_europa_hochreligioes"
   ],
   "title": "Muslime in Europa: Zugehörigkeit, Diskriminierung und Religiosität"
+ },
+ "bw_kopftuch_2012": {
+  "kind": "responses"
  }
 }

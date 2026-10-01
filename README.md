@@ -378,3 +378,13 @@ enthält alle zugehörigen Quellenblöcke mit ihren jeweiligen Fallzahlen,
 Erhebungszeiten und Fundstellen. Die Zoomansicht öffnet auch Teilgrafiken
 und Methodik. Der Vergleich 2012/2014 verwendet zwei farbige Balken je
 Aussage; er bleibt ein Vergleich unabhängiger Querschnitte.
+
+### Direkte Antwortverteilungen (v0.50.0)
+
+Vollständig vorliegende Antwortstufen stehen direkt im Hauptdiagramm.
+Die Kopftuchfrage 2012 zeigt „stört mich“ und „stört mich nicht“ gemeinsam,
+mit Prozentangaben; für die Landesteile wird keine Gegenantwort erfunden.
+Reine Erläuterungen erhalten keine Schaltfläche für Antwortstufen.
+Von den Pandemiefragen bleibt ausschließlich Religion als hilfreiche Ressource
+nach Religionszugehörigkeit. Die übrigen 13 Werte wurden aus Anzeige und
+Downloads entfernt: aktuell 513 Werte aus 87 Quellenblöcken in 38 Ansichten.

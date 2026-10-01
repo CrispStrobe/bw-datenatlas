@@ -661,14 +661,15 @@ class DataTests(unittest.TestCase):
                             not i['question_ref'].startswith(('Abbildung ', 'Tabelle '))
                             for b in d['blocks'] for i in b['items']))
         blocks = {b['block']: b for b in d['blocks']}
-        domains = blocks['rm2023_pandemie_bereiche']
-        self.assertEqual([i['value'] for i in domains['items']], [90, 85, 81, 74, 48, 29])
-        self.assertIn('abweichend 30', domains['note'])
+        self.assertEqual({key for key in blocks if key.startswith('rm2023_pandemie_')},
+                         {'rm2023_pandemie_religion'})
         groups = blocks['rm2023_pandemie_religion']
         self.assertIn('4.338', groups['note'])
         self.assertTrue(all(i['base_n'] is None for i in groups['items']))
-        narratives = blocks['rm2023_pandemie_deutung']
-        self.assertEqual([i['value'] for i in narratives['items']], [20, 10])
-        self.assertIn('nicht dieselbe Messung', narratives['note'])
+        headscarf = blocks['bw_kopftuch_2012']['items'][1]
+        self.assertEqual(headscarf['response_distribution'],
+                         [{'label': 'Stört mich', 'value': 42}, {'label': 'Stört mich nicht', 'value': 57}])
+        self.assertTrue(headscarf['response_distribution_complete'])
+        self.assertFalse(blocks['bw_kopftuch_2012']['items'][-1]['response_distribution_complete'])
 
 if __name__=='__main__': unittest.main(verbosity=2)

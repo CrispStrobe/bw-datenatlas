@@ -20,7 +20,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 526,
+ "count": 513,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -386,6 +386,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -423,6 +424,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -460,6 +462,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -703,7 +706,7 @@
   {
    "block": "bw_kopftuch_2012",
    "title": "„Stört mich\": das Tragen von Kopftüchern, Baden-Württemberg 2012",
-   "note": null,
+   "note": "Gezeigt werden die veröffentlichten Antworten „stört mich“ und, soweit angegeben, „stört mich nicht“. Nicht aufgeschlüsselte Restanteile bleiben als Lücke sichtbar und werden keiner Antwort zugeordnet. Für die Landesteile Baden und Württemberg liegt hier nur der Anteil „stört mich“ vor.",
    "scope": "Baden-Württemberg",
    "items": [
     {
@@ -723,7 +726,18 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": true,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 34.0
+      },
+      {
+       "label": "Stört mich nicht",
+       "value": 64.0
+      }
+     ]
     },
     {
      "label": "Befragte ohne Konfession",
@@ -742,7 +756,18 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": true,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 42.0
+      },
+      {
+       "label": "Stört mich nicht",
+       "value": 57.0
+      }
+     ]
     },
     {
      "label": "Befragte anderer Religion",
@@ -761,7 +786,18 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": true,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 39.0
+      },
+      {
+       "label": "Stört mich nicht",
+       "value": 59.0
+      }
+     ]
     },
     {
      "label": "Katholische Befragte",
@@ -780,7 +816,18 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": true,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 34.0
+      },
+      {
+       "label": "Stört mich nicht",
+       "value": 65.0
+      }
+     ]
     },
     {
      "label": "Evangelische Befragte",
@@ -799,7 +846,18 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": true,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 33.0
+      },
+      {
+       "label": "Stört mich nicht",
+       "value": 65.0
+      }
+     ]
     },
     {
      "label": "Muslimische Befragte",
@@ -818,7 +876,18 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": true,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 7.0
+      },
+      {
+       "label": "Stört mich nicht",
+       "value": 93.0
+      }
+     ]
     },
     {
      "label": "Landesteil Württemberg",
@@ -837,7 +906,14 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": false,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 38.0
+      }
+     ]
     },
     {
      "label": "Landesteil Baden",
@@ -856,9 +932,19 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution_complete": false,
+     "response_distribution": [
+      {
+       "label": "Stört mich",
+       "value": 30.0
+      }
+     ]
     }
-   ]
+   ],
+   "chart": {
+    "kind": "responses"
+   }
   },
   {
    "block": "bosch2025_index_de",
@@ -1013,87 +1099,6 @@
    }
   },
   {
-   "block": "rm2023_pandemie_deutung",
-   "title": "Deutung der Pandemie als Verschwörung oder göttliche Strafe",
-   "note": "Religionsmonitor 2023, erhoben im Juni und Juli 2022. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, einschließlich gewichteter muslimischer Aufstockung. Die Pandemiefragen sind rückblickende Selbstauskünfte oder Bewertungen; sie messen keine beobachtete Wirksamkeit. Die Abbildungen werten gültige Antworten aus, nennen aber keine Fallzahl je Frage. Die Gesamtfallzahl bezeichnet die Studienstichprobe. Gezeigt ist die Summe eher und voller Zustimmung zu zwei verschiedenen Aussagen. Diese dürfen nicht addiert werden. Die Pandemiefrage ist ein einzelnes Item und nicht dieselbe Messung wie der Drei-Item-Index der Verschwörungsstudie von 2025.",
-   "scope": "Deutschland",
-   "items": [
-    {
-     "label": "Verborgene böse Mächte hinter der Pandemie",
-     "detail": "Eher zustimmend: 13 %; voll zustimmend: 7 %",
-     "value": 20.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 12, S. 38",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher zustimmend",
-       "value": 13.0
-      },
-      {
-       "label": "voll zustimmend",
-       "value": 7.0
-      }
-     ]
-    },
-    {
-     "label": "Pandemie als Strafe Gottes",
-     "detail": "Eher zustimmend: 7 %; voll zustimmend: 3 %",
-     "value": 10.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 12, S. 38",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher zustimmend",
-       "value": 7.0
-      },
-      {
-       "label": "voll zustimmend",
-       "value": 3.0
-      }
-     ]
-    }
-   ],
-   "chart": {
-    "kind": "collection",
-    "related": [
-     "rm2023_pandemie_bereiche",
-     "rm2023_pandemie_religion",
-     "rm2023_pandemie_praxis"
-    ],
-    "panels": [
-     "rm2023_pandemie_deutung",
-     "rm2023_pandemie_bereiche",
-     "rm2023_pandemie_religion",
-     "rm2023_pandemie_praxis"
-    ],
-    "title": "Religion und Pandemie: Deutung, Hilfe und religiöse Praxis"
-   }
-  },
-  {
    "block": "rm2023_differenzierung",
    "title": "Differenzierung und wahrgenommene Benachteiligung",
    "note": "Gewichtete gültige Antworten aus dem deutschen Online-Panel, erhoben Juni–Juli 2022; veröffentlicht im Juni 2024. Für dieses Modul wurden muslimische Befragte ausgeschlossen. Die verbleibenden 1.912 Personen sind die Modulstichprobe, nicht die Fallzahl eines Balkens. Gültige Item-Fallzahlen fehlen; deshalb bleibt die Fallzahl leer. Die Zahlen gelten weder für die gesamte Bevölkerung noch für Baden-Württemberg. Zustimmung = Summe der gerundeten Kategorien „voll und ganz“ und „eher“; die vier Antwortstufen haben keine neutrale Mitte. Erfasst wird die Zustimmung zu differenzierenden Aussagen und zur Wahrnehmung von Benachteiligung. Die Werte messen keine Diskriminierungserfahrungen und keine Häufigkeit tatsächlicher Übergriffe. Die Labels sind Zusammenfassungen; der vollständige Wortlaut steht in Abbildung 5. Summen gerundeter Kategorien können von Anteilen aus ungerundeten Daten abweichen.",
@@ -1117,6 +1122,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -1154,6 +1160,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -1191,6 +1198,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -1228,6 +1236,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -1664,6 +1673,7 @@
       "relicensed_by_atlas": false
      },
      "source_kind": "published_table",
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Sehr wichtig",
@@ -1694,6 +1704,7 @@
       "relicensed_by_atlas": false
      },
      "source_kind": "published_table",
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Sehr wichtig",
@@ -1724,6 +1735,7 @@
       "relicensed_by_atlas": false
      },
      "source_kind": "published_table",
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Sehr wichtig",
@@ -1754,6 +1766,7 @@
       "relicensed_by_atlas": false
      },
      "source_kind": "published_table",
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Sehr wichtig",
@@ -1784,6 +1797,7 @@
       "relicensed_by_atlas": false
      },
      "source_kind": "published_table",
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Sehr wichtig",
@@ -3546,188 +3560,6 @@
     ],
     "title": "Zusammenhalt nach Religionszugehörigkeit, Regionen und Zeitverlauf · 2026"
    }
-  },
-  {
-   "block": "rm2023_pandemie_bereiche",
-   "title": "Gesellschaftsbereiche als hilfreich für die Pandemiebewältigung",
-   "note": "Religionsmonitor 2023, erhoben im Juni und Juli 2022. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, einschließlich gewichteter muslimischer Aufstockung. Die Pandemiefragen sind rückblickende Selbstauskünfte oder Bewertungen; sie messen keine beobachtete Wirksamkeit. Die Abbildungen werten gültige Antworten aus, nennen aber keine Fallzahl je Frage. Die Gesamtfallzahl bezeichnet die Studienstichprobe. Gezeigt ist die Summe der gerundeten Anteile eher hilfreich und sehr hilfreich; die beiden Anteile stehen daneben. Mehrere Bereiche können gleichzeitig hilfreich sein. Der Religionswert ist 29 aus den beschrifteten Anteilen 21 und 8; der Fließtext auf S. 29 nennt abweichend 30 Prozent.",
-   "scope": "Deutschland",
-   "items": [
-    {
-     "label": "Familie",
-     "detail": "Eher hilfreich: 38 %; sehr hilfreich: 52 %",
-     "value": 90.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 8, S. 29",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher hilfreich",
-       "value": 38.0
-      },
-      {
-       "label": "sehr hilfreich",
-       "value": 52.0
-      }
-     ]
-    },
-    {
-     "label": "Wissenschaft",
-     "detail": "Eher hilfreich: 30 %; sehr hilfreich: 55 %",
-     "value": 85.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 8, S. 29",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher hilfreich",
-       "value": 30.0
-      },
-      {
-       "label": "sehr hilfreich",
-       "value": 55.0
-      }
-     ]
-    },
-    {
-     "label": "Gesundheitssystem",
-     "detail": "Eher hilfreich: 39 %; sehr hilfreich: 42 %",
-     "value": 81.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 8, S. 29",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher hilfreich",
-       "value": 39.0
-      },
-      {
-       "label": "sehr hilfreich",
-       "value": 42.0
-      }
-     ]
-    },
-    {
-     "label": "Nachbarschaft",
-     "detail": "Eher hilfreich: 52 %; sehr hilfreich: 22 %",
-     "value": 74.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 8, S. 29",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher hilfreich",
-       "value": 52.0
-      },
-      {
-       "label": "sehr hilfreich",
-       "value": 22.0
-      }
-     ]
-    },
-    {
-     "label": "Politik",
-     "detail": "Eher hilfreich: 38 %; sehr hilfreich: 10 %",
-     "value": 48.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 8, S. 29",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher hilfreich",
-       "value": 38.0
-      },
-      {
-       "label": "sehr hilfreich",
-       "value": 10.0
-      }
-     ]
-    },
-    {
-     "label": "Religion",
-     "detail": "Eher hilfreich: 21 %; sehr hilfreich: 8 %",
-     "value": 29.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 8, S. 29",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     },
-     "response_distribution": [
-      {
-       "label": "Eher hilfreich",
-       "value": 21.0
-      },
-      {
-       "label": "sehr hilfreich",
-       "value": 8.0
-      }
-     ]
-    }
-   ]
   },
   {
    "block": "rm2023_gottesglaube",
@@ -6193,6 +6025,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6230,6 +6063,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6267,6 +6101,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6304,6 +6139,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6341,6 +6177,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6378,6 +6215,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6415,6 +6253,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6452,6 +6291,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "voll und ganz",
@@ -6534,6 +6374,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6563,6 +6404,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6592,6 +6434,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6621,6 +6464,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6650,6 +6494,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6679,6 +6524,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6708,6 +6554,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6737,6 +6584,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6766,6 +6614,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -6795,6 +6644,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": false,
      "response_distribution": [
       {
        "label": "Eher hilfreich",
@@ -8766,140 +8616,6 @@
    ]
   },
   {
-   "block": "rm2023_pandemie_praxis",
-   "title": "Veränderung von Gebet und Meditation während der Pandemie",
-   "note": "Religionsmonitor 2023, erhoben im Juni und Juli 2022. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, einschließlich gewichteter muslimischer Aufstockung. Die Pandemiefragen sind rückblickende Selbstauskünfte oder Bewertungen; sie messen keine beobachtete Wirksamkeit. Die Abbildungen werten gültige Antworten aus, nennen aber keine Fallzahl je Frage. Die Gesamtfallzahl bezeichnet die Studienstichprobe. Vergleich mit der Zeit vor der Coronapandemie aus der Erinnerung der Befragten. Die beschrifteten Werte ergeben durch Rundung 99 Prozent. Keine wiederholte Messung individueller Religiosität.",
-   "scope": "Deutschland",
-   "items": [
-    {
-     "label": "Deutlich weniger",
-     "detail": null,
-     "value": 3.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 1, S. 22",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     }
-    },
-    {
-     "label": "Etwas weniger",
-     "detail": null,
-     "value": 4.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 1, S. 22",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     }
-    },
-    {
-     "label": "Etwa gleich geblieben",
-     "detail": null,
-     "value": 82.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 1, S. 22",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     }
-    },
-    {
-     "label": "Etwas mehr",
-     "detail": null,
-     "value": 7.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 1, S. 22",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     }
-    },
-    {
-     "label": "Deutlich mehr",
-     "detail": null,
-     "value": 3.0,
-     "unit": "percent",
-     "study": "Religionsmonitor 2023",
-     "population": "Bevölkerung in Deutschland ab 16 Jahren",
-     "base_n": 4363,
-     "field_period": "Juni bis Juli 2022",
-     "question_ref": null,
-     "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
-     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
-     "source_locator": "Abbildung 1, S. 22",
-     "source_rights": {
-      "license": null,
-      "license_status": "not_recorded_in_export",
-      "relicensed_by_atlas": false
-     }
-    }
-   ],
-   "chart": {
-    "kind": "distribution",
-    "rows": [
-     {
-      "label": "Alle Befragten",
-      "items": "all",
-      "segments": [
-       {
-        "label": "Deutlich weniger",
-        "value": 3.0
-       },
-       {
-        "label": "Etwas weniger",
-        "value": 4.0
-       },
-       {
-        "label": "Etwa gleich geblieben",
-        "value": 82.0
-       },
-       {
-        "label": "Etwas mehr",
-        "value": 7.0
-       },
-       {
-        "label": "Deutlich mehr",
-        "value": 3.0
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
    "block": "rm2017_wahrheit",
    "title": "Wahrheit nur in einer Religion · Religionsmonitor 2017",
    "note": "Zustimmung zur Aussage: „Wahrheit gibt es nur in einer Religion.“ Abbildung 18 wurde visuell geprüft. Gewichtete gültige Fälle; Fallzahlen der einzelnen Glaubensrichtungen sind an der Abbildung nicht veröffentlicht. Die Gruppen überschneiden sich: Glaubensrichtung und Geburtsort sind verschiedene Aufschlüsselungen derselben muslimischen Stichprobe. Balken deshalb nicht addieren. Der Bericht unterscheidet Dogmatismus ausdrücklich von Fundamentalismus. Publikation 2019, Daten des Religionsmonitors 2017.",
@@ -10042,6 +9758,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10079,6 +9796,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10116,6 +9834,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10153,6 +9872,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10190,6 +9910,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10227,6 +9948,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10264,6 +9986,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10301,6 +10024,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10338,6 +10062,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10375,6 +10100,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -10403,7 +10129,6 @@
     ],
     "panels": [
      "rm2017_europa_arbeitslos",
-     "rm2017_europa_vollzeit",
      "rm2017_europa_sprache"
     ],
     "title": "Muslime in Europa: Erwerbsstatus und Sprache"
@@ -12427,6 +12152,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12464,6 +12190,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12501,6 +12228,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12538,6 +12266,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12575,6 +12304,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12612,6 +12342,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12649,6 +12380,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12686,6 +12418,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12723,6 +12456,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",
@@ -12760,6 +12494,7 @@
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
      },
+     "response_distribution_complete": true,
      "response_distribution": [
       {
        "label": "Arbeitslos",

@@ -72,12 +72,14 @@ try:
                 kind = block.get('chart', {}).get('kind')
                 if kind == 'collection':
                     assert page.locator('#survey-blocks .survey-panel').count() == len(block['chart']['panels'])
+                elif kind == 'responses':
+                    assert page.locator('#survey-blocks .survey-stack').count() == len(block['items'])
                 elif kind == 'distribution':
                     assert page.locator('#survey-blocks .survey-stack').count() == len(block['chart']['rows'])
                 elif kind == 'time':
                     assert page.locator('#survey-blocks .survey-time circle').count() == len(block['items'])*(1+len(block['chart'].get('related', [])))
                 else:
-                    assert page.locator('#survey-blocks .bar-row').count() >= len(block['items'])
+                    assert page.locator('#survey-blocks .bar-row').count()+page.locator('#survey-blocks .survey-distribution').count() >= len(block['items'])
                 page.locator('#survey-enlarge').click()
                 assert page.locator('#chart-zoom').evaluate('el=>el.open')
                 assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')

@@ -945,18 +945,17 @@ with sync_playwright() as pw:
         "o=>o.findIndex(x=>/religi(öse|ous) (Vielfalt|diversity)/i"
         ".test(x.textContent))"))
     page.wait_for_function("document.querySelectorAll("
-                           "'#survey-blocks .bar-row').length===3")
+                           "'#survey-blocks .survey-stack').length===3")
     vielfalt=page.locator('#befragungen').inner_text()
-    page.locator('#survey-blocks .survey-item-detail summary').first.click()
     scale = page.locator('#survey-blocks .survey-key').first.inner_text()
-    check('the four-point scale can be opened as a segmented bar',
+    check('the four-point scale is shown directly as a segmented bar',
           '14' in scale and '30' in scale and '31' in scale and '19' in scale)
     page.locator('#survey-enlarge').click()
     check('the survey zoom visualises response categories',
           page.locator('#chart-zoom-body .survey-stack').count() == 3)
     page.locator('#chart-zoom-close').click()
     check('only the selected block is drawn',
-          page.locator('#survey-blocks .bar-row').count()==3)
+          page.locator('#survey-blocks .survey-stack').count()==3)
     # Zwei Landesumfragen mit verschiedenen Grundgesamtheiten dürfen nicht als
     # Entwicklung gelesen werden, und das steht oben.
     check('the two state surveys are not presented as a trend',
@@ -976,9 +975,14 @@ with sync_playwright() as pw:
             page.wait_for_timeout(400)
         return page.locator('#befragungen').inner_text()
 
-    zweiter=waehle('Kopft(ücher|uchs|uch)[^a-z]*.*2012|headscarves', 8)
+    zweiter=waehle('Kopft(ücher|uchs|uch)[^a-z]*.*2012|headscarves')
     check('switching the dropdown switches the block',
-          page.locator('#survey-blocks .bar-row').count()==8)
+          page.locator('#survey-blocks .survey-stack').count()==8)
+    headscarf = page.locator('#survey-blocks .survey-distribution').filter(has_text='Befragte ohne Konfession')
+    check('opposite headscarf answers are visible together with percentages',
+          '42,0 %' in headscarf.inner_text() and '57,0 %' in headscarf.inner_text()
+          and 'Stört mich nicht' in headscarf.inner_text()
+          and page.locator('#survey-blocks .survey-item-detail').count()==0)
     check('the 2012 survey separates the confessions and the two halves of the state',
           ('Muslimische Befragte' in zweiter or 'Muslim respondents' in zweiter)
           and 'Württemberg' in zweiter and '3.001' in zweiter)

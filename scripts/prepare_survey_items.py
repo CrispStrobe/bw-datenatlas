@@ -113,16 +113,28 @@ def main() -> None:
         for item in b['items']:
             detail = item.get('detail') or ''
             parts = []
-            if detail.startswith('Zustimmung:') and 'Ablehnung:' in detail:
+            complete = False
+            if b['block'] == 'bw_kopftuch_2012':
+                parts = [('Stört mich', item['value'])]
+                match = re.fullmatch(r'stört mich nicht (\d+)', detail)
+                if match:
+                    parts.append(('Stört mich nicht', float(match[1])))
+                    complete = True
+            elif detail.startswith('Zustimmung:') and 'Ablehnung:' in detail:
                 parts = [(label.strip(), float(value)) for value, label in
                          re.findall(r'(\d+(?:[.,]\d+)?) % ([^+;]+)', detail)]
+                complete = True
             elif b['block'] == 'bw_religioese_vielfalt':
                 parts = [(label.strip(), float(value)) for label, value in
                          re.findall(r'([^·]+?) (\d+)\s*(?:·|$)', detail)]
+                complete = True
             elif re.match(r'^(Eher hilfreich|Arbeitslos|Sehr wichtig|Eher zustimmend):', detail):
                 parts = [(label.strip(), float(value.replace(',', '.'))) for label, value in
                          re.findall(r'([^;]+): (\d+(?:[.,]\d+)?) %', detail)]
+            if detail.startswith('Arbeitslos:'):
+                complete = True
             if parts:
+                item['response_distribution_complete'] = complete
                 item['response_distribution'] = [{'label': label, 'value': value} for label, value in parts]
 
     doc = {
