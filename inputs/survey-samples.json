@@ -2902,6 +2902,148 @@
      "source_locator": "S. 36–37, Tabelle 2.1"
     }
    }
+  ],
+  "sciics_wurzeln": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_wurzeln_christen": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_auslegung": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_auslegung_christen": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_gesetze": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_gesetze_christen": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_alle": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "sciics_alle_christen": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+     "weighted": false,
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "PDF-S. 7"
+    }
+   }
+  ],
+  "rias2026_muslim_antisemitismus": [
+   {
+    "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 712,
+     "description": "Vor dem 7. Oktober 2023",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1119,
+     "description": "Nach dem 7. Oktober 2023",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 712,
+     "description": "Vor dem 7. Oktober 2023",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1119,
+     "description": "Nach dem 7. Oktober 2023",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+    }
+   }
   ]
  }
 }

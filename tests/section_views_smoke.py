@@ -114,6 +114,18 @@ try:
                     assert 'Sozialsystem auszunutzen' in page.locator('#survey-blocks').inner_text()
                     assert page.locator('#survey-blocks table th').filter(has_text='Antwortverteilung').count() == 1
                     assert '19,1 %' in page.locator('#survey-blocks table').text_content()
+                if block['block'] == 'fundamentalismus_sciics':
+                    first_panel = page.locator('#survey-blocks .survey-panel').first
+                    assert first_panel.locator('.survey-dot-row').count() == 6
+                    assert first_panel.locator('.survey-dot').count() == 12
+                    assert '49,9 %' in first_panel.inner_text()
+                    assert '20,5 %' in first_panel.inner_text()
+                    assert 'Wurzeln' in first_panel.locator('.survey-question').inner_text()
+                if block['block'] == 'rias2026_muslim_antisemitismus':
+                    assert page.locator('#survey-blocks .survey-key').count() == 1
+                    assert 'kein Recht zu existieren' in page.locator('#survey-blocks .survey-question').inner_text()
+                    assert '34,8 %' in page.locator('#survey-blocks table').text_content()
+                    assert '712' in page.locator('#survey-blocks table').text_content()
                 if block['block'] == 'evs2017_zugehoerigkeit':
                     assert 'wirklich deutsch' in page.locator('#survey-blocks .survey-question').inner_text()
                 page.locator('#survey-enlarge').click()

@@ -94,3 +94,27 @@ class PublicReportFindings(unittest.TestCase):
         self.assertEqual([i['value'] for i in fra['items']], [18, 33, 50, 65])
         self.assertIn('nicht alle Musliminnen', fra['note'])
         self.assertIn('Diskriminierungsrisiko', fra['note'])
+
+    def test_sciics_joint_agreement_is_not_sum_of_individual_items(self):
+        survey = json.loads((ROOT / 'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in survey['blocks']}
+        for suffix in ('', '_christen'):
+            parts = [blocks['sciics_' + key + suffix]['items']
+                     for key in ('wurzeln', 'auslegung', 'gesetze')]
+            joint = blocks['sciics_alle' + suffix]['items']
+            for index, item in enumerate(joint):
+                self.assertTrue(all(part[index]['label'] == item['label'] for part in parts))
+                self.assertLessEqual(item['value'], min(part[index]['value'] for part in parts))
+        self.assertEqual(blocks['sciics_gesetze']['items'][0]['value'], 45.1)
+        self.assertIn('jeweiligen Landes', blocks['sciics_gesetze']['question']['texts'][0])
+
+    def test_rias_agreement_parts_and_unknown_context_are_preserved(self):
+        survey = json.loads((ROOT / 'docs/data/survey-items.json').read_text())
+        block = next(b for b in survey['blocks'] if b['block'] == 'rias2026_muslim_antisemitismus')
+        for item, row in zip(block['items'], block['chart']['rows']):
+            self.assertAlmostEqual(sum(s['value'] for s in row['segments']), item['value'])
+        self.assertEqual([i['subgroup_sample']['n'] for i in block['items']], [712, 1119, 712, 1119])
+        incidents = self.reports['rias_de_hintergrund_2019_2025']
+        self.assertEqual(incidents['total'], 31213)
+        self.assertEqual(next(i['value'] for i in incidents['items'] if i['label'] == 'Unbekannt'), 17139)
+        self.assertIn('keine festgestellte Religionszugehörigkeit', incidents['note'])

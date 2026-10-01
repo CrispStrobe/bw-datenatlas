@@ -1642,7 +1642,28 @@
   ]
  },
  "fundamentalismus_sciics": {
-  "title": "Zustimmung zu drei Aussagen zum „Fundamentalismus“"
+  "kind": "collection",
+  "title": "„Fundamentalismus“: drei Aussagen und gemeinsames Maß · SCIICS 2008",
+  "related": [
+   "sciics_wurzeln",
+   "sciics_wurzeln_christen",
+   "sciics_auslegung",
+   "sciics_auslegung_christen",
+   "sciics_gesetze",
+   "sciics_gesetze_christen",
+   "sciics_alle",
+   "sciics_alle_christen"
+  ],
+  "panels": [
+   "sciics_wurzeln",
+   "sciics_auslegung",
+   "sciics_gesetze",
+   "sciics_alle",
+   "fundamentalismus_sciics"
+  ],
+  "main_chart": {
+   "title": "Zustimmung zu allen drei Aussagen · Gesamtstichprobe"
+  }
  },
  "rm_offenheit_history": {
   "kind": "time",
@@ -1774,6 +1795,127 @@
       "label": "Stimme voll zu",
       "value": 5.3
      }
+    ]
+   }
+  ]
+ },
+ "sciics_wurzeln": {
+  "kind": "compare",
+  "layout": "dots",
+  "related": [
+   "sciics_wurzeln_christen"
+  ],
+  "series": [
+   "Muslimische Befragte",
+   "Christliche Vergleichsgruppe"
+  ],
+  "title": "Rückkehr zu den religiösen Wurzeln · SCIICS 2008"
+ },
+ "sciics_auslegung": {
+  "kind": "compare",
+  "layout": "dots",
+  "related": [
+   "sciics_auslegung_christen"
+  ],
+  "series": [
+   "Muslimische Befragte",
+   "Christliche Vergleichsgruppe"
+  ],
+  "title": "Nur eine verbindliche Auslegung · SCIICS 2008"
+ },
+ "sciics_gesetze": {
+  "kind": "compare",
+  "layout": "dots",
+  "related": [
+   "sciics_gesetze_christen"
+  ],
+  "series": [
+   "Muslimische Befragte",
+   "Christliche Vergleichsgruppe"
+  ],
+  "title": "Religiöse Regeln vor staatlichen Gesetzen · SCIICS 2008"
+ },
+ "sciics_alle": {
+  "kind": "compare",
+  "layout": "dots",
+  "related": [
+   "sciics_alle_christen"
+  ],
+  "series": [
+   "Muslimische Befragte",
+   "Christliche Vergleichsgruppe"
+  ],
+  "title": "Zustimmung zu allen drei Aussagen zugleich · SCIICS 2008"
+ },
+ "rias2026_muslim_antisemitismus": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
+    "segments": [
+     {
+      "label": "Schwache Zustimmung · Stufe 4",
+      "value": 15.8
+     },
+     {
+      "label": "Starke Zustimmung · Stufen 5–6",
+      "value": 29.6
+     }
+    ]
+   },
+   {
+    "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
+    "segments": [
+     {
+      "label": "Schwache Zustimmung · Stufe 4",
+      "value": 11.9
+     },
+     {
+      "label": "Starke Zustimmung · Stufen 5–6",
+      "value": 34.8
+     }
+    ]
+   },
+   {
+    "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
+    "segments": [
+     {
+      "label": "Schwache Zustimmung · Stufe 4",
+      "value": 7.1
+     },
+     {
+      "label": "Starke Zustimmung · Stufen 5–6",
+      "value": 23
+     }
+    ]
+   },
+   {
+    "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
+    "segments": [
+     {
+      "label": "Schwache Zustimmung · Stufe 4",
+      "value": 7.7
+     },
+     {
+      "label": "Starke Zustimmung · Stufen 5–6",
+      "value": 18.7
+     }
+    ]
+   }
+  ],
+  "groups": [
+   {
+    "label": "Tradierter Antisemitismus",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Israelbezogener Antisemitismus",
+    "items": [
+     2,
+     3
     ]
    }
   ]

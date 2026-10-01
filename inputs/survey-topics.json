@@ -50,6 +50,13 @@
     ]
   },
   {
+    "title": "Antisemitische Einstellungen",
+    "blocks": [
+      "rias2026_muslim_antisemitismus",
+      "rias2026_theologie_antisemitismus"
+    ]
+  },
+  {
     "title": "Diskriminierung und Zugehörigkeit",
     "blocks": [
       "rm2023_differenzierung",

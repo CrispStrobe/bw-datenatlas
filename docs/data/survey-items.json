@@ -53,6 +53,13 @@
    ]
   },
   {
+   "title": "Antisemitische Einstellungen",
+   "blocks": [
+    "rias2026_muslim_antisemitismus",
+    "rias2026_theologie_antisemitismus"
+   ]
+  },
+  {
    "title": "Diskriminierung und Zugehörigkeit",
    "blocks": [
     "rm2023_differenzierung",
@@ -103,7 +110,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 521,
+ "count": 575,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -1302,6 +1309,257 @@
       "items": [
        4,
        5
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "block": "rias2026_theologie_antisemitismus",
+   "title": "Antisemitische Einstellungen: Studierende islamischer Theologie",
+   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik zeigt die gesamte Studierendenstichprobe. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Unterstellung von zu viel Macht und Einfluss",
+     "detail": null,
+     "value": 37.3,
+     "unit": "percent",
+     "study": "Studierendenbefragung 2022 · RIAS-Auswertung 2026",
+     "population": "Muslimische Studierende der Islamischen Theologie oder Religionslehre in Deutschland",
+     "base_n": 252,
+     "field_period": "April bis Juni 2022",
+     "question_ref": null,
+     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Aberkennung des Existenzrechts Israels",
+     "detail": null,
+     "value": 47.2,
+     "unit": "percent",
+     "study": "Studierendenbefragung 2022 · RIAS-Auswertung 2026",
+     "population": "Muslimische Studierende der Islamischen Theologie oder Religionslehre in Deutschland",
+     "base_n": 252,
+     "field_period": "April bis Juni 2022",
+     "question_ref": null,
+     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Juden haben zu viel Macht und Einfluss in der Welt.",
+     "Der Staat Israel hat kein Recht zu existieren."
+    ],
+    "response_scale": "stimme überhaupt nicht zu · stimme eher nicht zu · stimme eher zu · stimme stark zu",
+    "shown": "Gezeigt: stimme eher/stark zu.",
+    "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+    "source_locator": "S. 11, Abbildung 1"
+   }
+  },
+  {
+   "block": "rias2026_muslim_antisemitismus",
+   "title": "Antisemitische Einstellungen: vor und nach dem 7. Oktober 2023",
+   "note": "Gewichtete Stichprobe von 1.887 Musliminnen und Muslimen mit Migrationshintergrund in Deutschland; Juli 2023 bis April 2024. Vor dem 7. Oktober wurden 712, danach 1.119 Personen befragt; 3 % wurden aus dem Vergleich ausgeschlossen. Die beiden Teilstichproben wurden nach Alter, Bildung, Einwanderergeneration und Arbeitslosigkeit an die Gesamtstichprobe angepasst. Es wurden unterschiedliche Personen befragt, keine individuellen Einstellungsänderungen gemessen. Die Quelle beschreibt geringe Veränderungen; der Vergleich allein belegt keine Wirkung des 7. Oktober. Die Grafik unterscheidet schwache Zustimmung (Stufe 4) und starke Zustimmung (Stufen 5–6) auf einer sechsstufigen Skala. Stufen 1–3 bleiben als Lücke; sie werden nicht als eine bestimmte Ablehnungskategorie ergänzt. 1.887 ist die Studienstichprobe, keine gültige Item-Fallzahl. Keine BW-Auswertung und keine Übertragung auf alle Musliminnen und Muslime.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
+     "detail": null,
+     "value": 45.4,
+     "unit": "percent",
+     "study": "Muslimischer Glaube in Deutschland · RIAS-Auswertung 2026",
+     "population": "Musliminnen und Muslime mit Migrationshintergrund in Deutschland",
+     "base_n": 1887,
+     "field_period": "Juli 2023 bis April 2024",
+     "question_ref": null,
+     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "subgroup_sample": {
+      "n": 712,
+      "description": "Vor dem 7. Oktober 2023",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+     }
+    },
+    {
+     "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
+     "detail": null,
+     "value": 46.7,
+     "unit": "percent",
+     "study": "Muslimischer Glaube in Deutschland · RIAS-Auswertung 2026",
+     "population": "Musliminnen und Muslime mit Migrationshintergrund in Deutschland",
+     "base_n": 1887,
+     "field_period": "Juli 2023 bis April 2024",
+     "question_ref": null,
+     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "subgroup_sample": {
+      "n": 1119,
+      "description": "Nach dem 7. Oktober 2023",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+     }
+    },
+    {
+     "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
+     "detail": null,
+     "value": 30.1,
+     "unit": "percent",
+     "study": "Muslimischer Glaube in Deutschland · RIAS-Auswertung 2026",
+     "population": "Musliminnen und Muslime mit Migrationshintergrund in Deutschland",
+     "base_n": 1887,
+     "field_period": "Juli 2023 bis April 2024",
+     "question_ref": null,
+     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "subgroup_sample": {
+      "n": 712,
+      "description": "Vor dem 7. Oktober 2023",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+     }
+    },
+    {
+     "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
+     "detail": null,
+     "value": 26.4,
+     "unit": "percent",
+     "study": "Muslimischer Glaube in Deutschland · RIAS-Auswertung 2026",
+     "population": "Musliminnen und Muslime mit Migrationshintergrund in Deutschland",
+     "base_n": 1887,
+     "field_period": "Juli 2023 bis April 2024",
+     "question_ref": null,
+     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "subgroup_sample": {
+      "n": 1119,
+      "description": "Nach dem 7. Oktober 2023",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Juden haben zu viel Macht und Einfluss in der Welt.",
+     "Der Staat Israel hat kein Recht zu existieren."
+    ],
+    "response_scale": "Sechs Stufen: 1 = stimme überhaupt nicht zu; 6 = stimme voll und ganz zu",
+    "shown": "Gezeigt: Stufe 4 und Stufen 5–6 getrennt; Zustimmung insgesamt = Stufen 4–6.",
+    "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+    "source_locator": "S. 23, Abbildung 2"
+   },
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
+      "segments": [
+       {
+        "label": "Schwache Zustimmung · Stufe 4",
+        "value": 15.8
+       },
+       {
+        "label": "Starke Zustimmung · Stufen 5–6",
+        "value": 29.6
+       }
+      ]
+     },
+     {
+      "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
+      "segments": [
+       {
+        "label": "Schwache Zustimmung · Stufe 4",
+        "value": 11.9
+       },
+       {
+        "label": "Starke Zustimmung · Stufen 5–6",
+        "value": 34.8
+       }
+      ]
+     },
+     {
+      "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
+      "segments": [
+       {
+        "label": "Schwache Zustimmung · Stufe 4",
+        "value": 7.1
+       },
+       {
+        "label": "Starke Zustimmung · Stufen 5–6",
+        "value": 23
+       }
+      ]
+     },
+     {
+      "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
+      "segments": [
+       {
+        "label": "Schwache Zustimmung · Stufe 4",
+        "value": 7.7
+       },
+       {
+        "label": "Starke Zustimmung · Stufen 5–6",
+        "value": 18.7
+       }
+      ]
+     }
+    ],
+    "groups": [
+     {
+      "label": "Tradierter Antisemitismus",
+      "items": [
+       0,
+       1
+      ]
+     },
+     {
+      "label": "Israelbezogener Antisemitismus",
+      "items": [
+       2,
+       3
       ]
      }
     ]
@@ -12388,9 +12646,1407 @@
    }
   },
   {
+   "block": "sciics_auslegung",
+   "title": "Nur eine verbindliche Auslegung · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 57.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 81.7,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 74.3,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 82.2,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 79.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 67.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zur jeweiligen Aussage.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+   },
+   "chart": {
+    "kind": "compare",
+    "layout": "dots",
+    "related": [
+     "sciics_auslegung_christen"
+    ],
+    "series": [
+     "Muslimische Befragte",
+     "Christliche Vergleichsgruppe"
+    ],
+    "title": "Nur eine verbindliche Auslegung · SCIICS 2008"
+   }
+  },
+  {
+   "block": "sciics_auslegung_christen",
+   "title": "Nur eine verbindliche Auslegung · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 14.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 21.9,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 15.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 18.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 17.9,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 9.9,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ]
+  },
+  {
+   "block": "sciics_gesetze",
+   "title": "Religiöse Regeln vor staatlichen Gesetzen · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 45.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 73.2,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 70.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 69.6,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 73.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 52.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze des jeweiligen Landes."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zur jeweiligen Aussage.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+   },
+   "chart": {
+    "kind": "compare",
+    "layout": "dots",
+    "related": [
+     "sciics_gesetze_christen"
+    ],
+    "series": [
+     "Muslimische Befragte",
+     "Christliche Vergleichsgruppe"
+    ],
+    "title": "Religiöse Regeln vor staatlichen Gesetzen · SCIICS 2008"
+   }
+  },
+  {
+   "block": "sciics_gesetze_christen",
+   "title": "Religiöse Regeln vor staatlichen Gesetzen · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 16.2,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 7.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 16.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 11.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 13.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 11.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ]
+  },
+  {
+   "block": "sciics_wurzeln",
+   "title": "Rückkehr zu den religiösen Wurzeln · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 49.9,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 61.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 54.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 66.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 65.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 43.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zur jeweiligen Aussage.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+   },
+   "chart": {
+    "kind": "compare",
+    "layout": "dots",
+    "related": [
+     "sciics_wurzeln_christen"
+    ],
+    "series": [
+     "Muslimische Befragte",
+     "Christliche Vergleichsgruppe"
+    ],
+    "title": "Rückkehr zu den religiösen Wurzeln · SCIICS 2008"
+   }
+  },
+  {
+   "block": "sciics_wurzeln_christen",
+   "title": "Rückkehr zu den religiösen Wurzeln · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 20.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 21.6,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 19.6,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 20.1,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 27.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 8.3,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ]
+  },
+  {
+   "block": "sciics_alle",
+   "title": "Zustimmung zu allen drei Aussagen zugleich · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 29.9,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 52.3,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 44.6,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 52.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 55.2,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 30.8,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Muslimische Befragte türkischer oder marokkanischer Herkunft aus ausgewählten Einwanderungskohorten; in Österreich und Schweden nur türkische Herkunft",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.",
+     "Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.",
+     "Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze des jeweiligen Landes."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zu allen drei Aussagen zugleich.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+   },
+   "chart": {
+    "kind": "compare",
+    "layout": "dots",
+    "related": [
+     "sciics_alle_christen"
+    ],
+    "series": [
+     "Muslimische Befragte",
+     "Christliche Vergleichsgruppe"
+    ],
+    "title": "Zustimmung zu allen drei Aussagen zugleich · SCIICS 2008"
+   }
+  },
+  {
+   "block": "sciics_alle_christen",
+   "title": "Zustimmung zu allen drei Aussagen zugleich · SCIICS 2008",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
+   "scope": "Sechs europäische Länder",
+   "items": [
+    {
+     "label": "Deutschland",
+     "detail": null,
+     "value": 4.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Frankreich",
+     "detail": null,
+     "value": 2.5,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Niederlande",
+     "detail": null,
+     "value": 5.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Belgien",
+     "detail": null,
+     "value": 3.0,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Österreich",
+     "detail": null,
+     "value": 4.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    },
+    {
+     "label": "Schweden",
+     "detail": null,
+     "value": 2.4,
+     "unit": "percent",
+     "study": "SCIICS 2008 (WZB)",
+     "population": "Christliche Befragte der einheimischen Vergleichsgruppe",
+     "base_n": null,
+     "field_period": "2008",
+     "question_ref": null,
+     "source_title": "Koopmans: Religious fundamentalism and out-group hostility among Muslims and Christians",
+     "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+     "source_locator": "Ländertabellen, PDF-S. 20–21; Skala und Wortlaut, PDF-S. 8 und 19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 9000,
+      "description": "Sechs Länder · gerundete Gesamtangabe vor der Religionsauswahl",
+      "weighted": false,
+      "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+      "source_locator": "PDF-S. 7"
+     }
+    }
+   ]
+  },
+  {
    "block": "fundamentalismus_sciics",
    "title": "Zustimmung zu allen drei „Fundamentalismus“-Aussagen",
-   "note": "Wortlaut der drei Aussagen: „Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.\" · „Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.\" · „Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze von Deutschland.\" Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland. Befragt wurden ausschließlich Personen türkischer und marokkanischer Herkunft, deren Eltern oder Großeltern vor 1975 eingewandert sind; die Hälfte der türkeistämmigen Befragten stammt aus bestimmten ländlichen Regionen Zentral- und Ostanatoliens. Koopmans selbst schreibt, die Daten seien deshalb möglicherweise nicht national repräsentativ. Die Vergleichsgruppe der Einheimischen unterlag diesen Einschränkungen nicht — der Vergleich ist also nicht symmetrisch. In Deutschland wurden 489 türkeistämmige und 479 marokkostämmige Personen befragt, insgesamt rund 9.000 in sechs Ländern; 96 Prozent der Befragten mit türkischer oder marokkanischer Herkunft bezeichneten sich als Muslime, 70 Prozent der Einheimischen als Christen. Fallzahlen je Balken sind nicht veröffentlicht. Auf die drei Aussagen einzeln bezogen liegt die Zustimmung unter den befragten Muslimen bei fast 60 Prozent (Rückkehr zu den Wurzeln), 75 Prozent (nur eine Auslegung) und 65 Prozent (religiöse Regeln vor weltlichen Gesetzen); unter den einheimischen Christen nennt der Text für die einzelnen Aussagen eine Spanne von 13 bis 21 Prozent. Weil die Christenwerte je Aussage nicht als einzelne Zahlen veröffentlicht sind, zeigt die Grafik nur das Maß, das für alle Gruppen exakt beziffert ist: die Zustimmung zu allen drei Aussagen zugleich.",
+   "note": "Diese Stichprobe ist keine Stichprobe der Muslime in Deutschland insgesamt. Befragt wurden Personen türkischer und marokkanischer Herkunft aus ausgewählten Einwanderungskohorten und eine einheimische Vergleichsgruppe; in Österreich und Schweden nur türkische Herkunft. Ausgewählte Herkunftsregionen und Einwanderungskohorten begrenzen die Übertragbarkeit. Die Vergleichsgruppe unterliegt diesen Einschränkungen nicht: Der Vergleich ist nicht symmetrisch. Die Länderwerte vergleichen muslimische Befragte dieser Herkunftsgruppen mit christlichen Befragten der einheimischen Vergleichsgruppe, nicht die gesamten muslimischen und christlichen Bevölkerungen. Rund 9.000 ist die Gesamtstichprobe vor der Religionsauswahl; gültige Fallzahlen je Aussage und Religionsgruppe sind in den Tabellen nicht ausgewiesen. Zustimmung, Ablehnung und weder/noch waren getrennte Antworten. Die drei Aussagen sind eigenständig; ihre Zustimmungsanteile werden nicht addiert. Zustimmung zu allen drei zugleich ist ein gesondertes Maß, kein Mittelwert.",
    "scope": "Sechs europäische Länder",
    "items": [
     {
@@ -12602,8 +14258,40 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.",
+     "Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.",
+     "Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze des jeweiligen Landes."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zu allen drei Aussagen zugleich.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19"
+   },
    "chart": {
-    "title": "Zustimmung zu drei Aussagen zum „Fundamentalismus“"
+    "kind": "collection",
+    "title": "„Fundamentalismus“: drei Aussagen und gemeinsames Maß · SCIICS 2008",
+    "related": [
+     "sciics_wurzeln",
+     "sciics_wurzeln_christen",
+     "sciics_auslegung",
+     "sciics_auslegung_christen",
+     "sciics_gesetze",
+     "sciics_gesetze_christen",
+     "sciics_alle",
+     "sciics_alle_christen"
+    ],
+    "panels": [
+     "sciics_wurzeln",
+     "sciics_auslegung",
+     "sciics_gesetze",
+     "sciics_alle",
+     "fundamentalismus_sciics"
+    ],
+    "main_chart": {
+     "title": "Zustimmung zu allen drei Aussagen · Gesamtstichprobe"
+    }
    }
   },
   {

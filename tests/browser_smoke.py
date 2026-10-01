@@ -361,11 +361,14 @@ with sync_playwright() as pw:
     check('the fundamentalism block quotes the three statements verbatim',
           'Wurzeln' in block and 'Auslegung' in block)
     check('the fundamentalism block keeps its Christian comparison',
-          'Katholiken' in block and 'Protestanten' in block)
-    breiten=page.eval_on_selector_all(
-        '#survey-blocks .bar-fill','e=>e.map(x=>parseFloat(x.style.width))')
-    check('percentage bars are measured against 100, not the block maximum',
-          bool(breiten) and abs(max(breiten)-50)<1.5)
+          'Christliche Vergleichsgruppe' in block and 'Muslimische Befragte' in block)
+    positions=page.eval_on_selector_all(
+        '#survey-blocks .survey-panel:first-of-type .survey-dot',
+        'e=>e.map(x=>parseFloat(x.style.left))')
+    check('country comparison uses percentage positions on a 0–100 scale',
+          len(positions)==12 and abs(positions[0]-49.9)<0.01
+          and abs(positions[1]-20.5)<0.01
+          and '100 %' in page.locator('#survey-blocks .survey-dot-scale').first.inner_text())
 
     page.select_option('#population-view', 'estimates')
     vergleich=page.locator('#published-estimates-card').inner_text()

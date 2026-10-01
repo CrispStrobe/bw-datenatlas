@@ -319,6 +319,83 @@ window.ATLAS_REPORT_FINDINGS = {
           }
         }
       ]
+    },
+    {
+      "id": "rias_de_hintergrund_2019_2025",
+      "title": "RIAS: Hintergründe dokumentierter antisemitischer Vorfälle",
+      "group": "Deutschland · Dokumentierte Vorfälle",
+      "kind": "Dokumentierte Vorfälle",
+      "period": "2019–2025",
+      "total": 31213,
+      "items": [
+        {
+          "label": "Christlich / christlicher „Fundamentalismus“",
+          "value": 196,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Politische Mitte",
+          "value": 424,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Islamisch / islamistisch",
+          "value": 564,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Keine Angabe",
+          "value": 584,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Links-antiimperialistisch",
+          "value": 1127,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Verschwörungsideologisch",
+          "value": 2072,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Rechtsextrem",
+          "value": 3662,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Antiisraelischer Aktivismus",
+          "value": 5445,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Unbekannt",
+          "value": 17139,
+          "unit": "count",
+          "basis": null
+        }
+      ],
+      "note": "Von 31.213 dokumentierten Vorfällen ordnet RIAS 564 (1,8 %) einem islamischen/islamistischen Hintergrund zu. Bei 17.139 (54,9 %) bleibt der Hintergrund unbekannt; weitere 584 (1,9 %) haben keine Angabe. Die Zuordnung erfordert Anhaltspunkte im dokumentierten Vorfall und bezeichnet einen politischen oder weltanschaulichen Kontext, keine festgestellte Religionszugehörigkeit der handelnden Person. Islamisch und islamistisch werden zusammengefasst, weil sich religiös-kulturelle und politisch-ideologische Bezüge häufig nicht sicher trennen lassen. Meldungen und Monitoring bilden ein Dunkelfeld nicht vollständig ab; Meldestellen und Erfassung haben sich im Zeitraum verändert. Die Verteilung misst weder Einstellungen in Bevölkerungsgruppen noch deren Anteile an allen tatsächlichen Vorfällen. Die Kategorien werden vollständig gezeigt, damit der große unbekannte Anteil sichtbar bleibt. Keine BW-Aufschlüsselung dieser Gesamtauswertung.",
+      "sources": [
+        {
+          "title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+          "url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+          "locator": "S. 35–39, Abbildung 3; Begriffsabgrenzung S. 4",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
+        }
+      ]
     }
   ],
   "what_this_is": "Feindseligkeit in Baden-Württemberg: dokumentierte Vorfälle und polizeilich erfasste Straftaten. Die Quellen erfassen unterschiedliche Ausschnitte; ihre Zahlen sind keine vollständigen Opferzahlen und werden nicht addiert. Der UEM dient als Forschungsüberblick, nicht als zusätzliche Fallstatistik.",

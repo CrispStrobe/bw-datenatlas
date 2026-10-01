@@ -347,5 +347,74 @@
     "shown": "Gezeigt: nie.",
     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
     "source_locator": "Abbildung 8, S. 37"
+  },
+  "sciics_wurzeln": {
+    "texts": [
+      "Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zur jeweiligen Aussage.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+  },
+  "sciics_auslegung": {
+    "texts": [
+      "Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zur jeweiligen Aussage.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+  },
+  "sciics_gesetze": {
+    "texts": [
+      "Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze des jeweiligen Landes."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zur jeweiligen Aussage.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+  },
+  "sciics_alle": {
+    "texts": [
+      "Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.",
+      "Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.",
+      "Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze des jeweiligen Landes."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zu allen drei Aussagen zugleich.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19; Ländername im dritten Item an die Befragung angepasst"
+  },
+  "fundamentalismus_sciics": {
+    "texts": [
+      "Christen [Muslime] sollten zu den Wurzeln des Christentums [Islam] zurückkehren.",
+      "Es gibt nur eine Auslegung der Bibel [des Korans] und alle Christen [Muslime] müssen sich daran halten.",
+      "Die Regeln der Bibel [des Korans] sind mir wichtiger als die Gesetze des jeweiligen Landes."
+    ],
+    "response_scale": "Zustimmung · Ablehnung · weder/noch",
+    "shown": "Gezeigt: Zustimmung zu allen drei Aussagen zugleich.",
+    "source_url": "https://www.wzb.eu/system/files/docs/sv/iuk/ruud_koopmans_religious_fundamentalism_and_out-group_hostility_among_muslims_and_christian.pdf",
+    "source_locator": "PDF-S. 8 und 19"
+  },
+  "rias2026_muslim_antisemitismus": {
+    "texts": [
+      "Juden haben zu viel Macht und Einfluss in der Welt.",
+      "Der Staat Israel hat kein Recht zu existieren."
+    ],
+    "response_scale": "Sechs Stufen: 1 = stimme überhaupt nicht zu; 6 = stimme voll und ganz zu",
+    "shown": "Gezeigt: Stufe 4 und Stufen 5–6 getrennt; Zustimmung insgesamt = Stufen 4–6.",
+    "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+    "source_locator": "S. 23, Abbildung 2"
+  },
+  "rias2026_theologie_antisemitismus": {
+    "texts": [
+      "Juden haben zu viel Macht und Einfluss in der Welt.",
+      "Der Staat Israel hat kein Recht zu existieren."
+    ],
+    "response_scale": "stimme überhaupt nicht zu · stimme eher nicht zu · stimme eher zu · stimme stark zu",
+    "shown": "Gezeigt: stimme eher/stark zu.",
+    "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+    "source_locator": "S. 11, Abbildung 1"
   }
 }
