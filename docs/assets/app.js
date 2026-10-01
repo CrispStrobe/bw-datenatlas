@@ -1920,6 +1920,29 @@ function renderIruTimeseries(){
 // Befragungsergebnisse, streng getrennt. Die vier Angaben an jeder Zeile —
 // Grundgesamtheit, Fallzahl, Erhebungszeitraum, Fundstelle — sind hier nicht
 // Beiwerk: 88,6 Prozent WOVON ist die ganze Frage.
+function renderReportFindings(){
+ const D=window.ATLAS_REPORT_FINDINGS,field=$('report-findings-select'),host=$('report-findings-body');
+ if(!D||!field||!host)return;
+ $('report-findings-intro').textContent=t(D.what_this_is);
+ if(!field.options.length){
+  const groups=[...new Set(D.reports.map(r=>r.group))];
+  field.innerHTML=groups.map(g=>'<optgroup label="'+esc(t(g))+'">'
+   +D.reports.filter(r=>r.group===g).map(r=>'<option value="'+esc(r.id)+'">'+esc(t(r.title))+'</option>').join('')+'</optgroup>').join('');
+  field.onchange=renderReportFindings;
+ }
+ const r=D.reports.find(r=>r.id===field.value)||D.reports[0];
+ const max=Math.max(1,...r.items.map(i=>i.value));
+ host.innerHTML='<h3>'+esc(t(r.title))+'</h3><p class="tiny">'+esc(t(r.kind))+' · '+esc(r.period)+'</p>'
+  +'<div class="notice warning">'+esc(t(r.note))+'</div>'
+  +(r.total!=null?'<p><strong>'+esc(t('Gesamt'))+': '+integer(r.total)+'</strong></p>':'')
+  +(r.items.length?'<div class="horizontal-bars">'+r.items.map(i=>'<div class="bar-row"><div class="bar-name">'+esc(t(i.label))
+    +(i.detail?'<br><span class="tiny">'+esc(t(i.detail))+'</span>':'')+'</div><div class="bar-track"><div class="bar-fill" style="width:'+i.value/max*100+'%"></div></div><div class="bar-value">'+integer(i.value)+'</div></div>').join('')+'</div>'
+    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))+'</summary><div class="table-scroll"><table><thead><tr><th>'+esc(t('Merkmal'))+'</th><th>'+esc(t('Anzahl'))+'</th><th>'+esc(t('Hinweis'))+'</th></tr></thead><tbody>'+r.items.map(i=>'<tr><td>'+esc(t(i.label))+'</td><td>'+integer(i.value)+'</td><td>'+esc(t(i.detail||''))+'</td></tr>').join('')+'</tbody></table></div></details>':'')
+  +r.sources.map(s=>'<p class="source-note"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+' ↗</a> · '+esc(s.locator)+'</p>').join('')
+  +(r.id==='uem_overview'?'<details class="compact-details"><summary>'+esc(t('16 UEM-Unterstudien: Thema, Methode und Prüfstand'))+'</summary><div class="sources-list">'+D.uem_studies.map(s=>'<article><h4><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+' ↗</a></h4><p class="tiny">'+esc(s.authors)+' · '+s.year+' · '+esc(t(s.method))+'</p><p>'+esc(t(s.review_status))+'</p><p class="source-note">UEM · '+esc(t('Kapitel'))+' '+esc(s.uem_chapter)+'</p></article>').join('')+'</div></details>':'')
+  +(r.id!=='uem_overview'?D.coverage_gaps.map(g=>'<p class="source-note"><a href="'+esc(g.url)+'" target="_blank" rel="noopener">'+esc(g.topic)+' ↗</a> · '+esc(t(g.note))+'</p>').join(''):'');
+}
+
 function renderSurveyItems(){
  const host=$('survey-blocks');if(!host)return;
  const D2=window.ATLAS_SURVEY_ITEMS;
@@ -1940,6 +1963,8 @@ function renderSurveyItems(){
    if(study.startsWith('Religionsmonitor'))return 'Deutschland · '+study;
    if(study.includes('KMU 6'))return 'Deutschland · KMU 6';
    if(study.startsWith('Vielfaltsbarometer'))return 'Deutschland · Vielfaltsbarometer';
+   if(study.startsWith('EKD:'))return 'Deutschland · EKD KMPK';
+   if(study.startsWith('FRA '))return 'Deutschland · FRA';
    if(study.startsWith('European Values Study'))return 'Deutschland · European Values Study';
    return t('Deutschland · Weitere Befragungen');
   };
@@ -2188,7 +2213,7 @@ host.innerHTML=table(['Größe','Art der Quelle','Stichtag','Gebiet','Wofür ver
 const fx=BASES.federal_cross_check;
 $('bases-denominator').innerHTML=esc(BASES.denominator_note)+' '+esc(BASES.census_revision_note||'')+(fx?'<br><br>Gegenprobe: Unsere Landessumme von '+integer(fx.our_population)+' Einwohnern weicht um '+(fx.population_difference_percent>0?'+':'')+pf.format(fx.population_difference_percent)+' % vom Bundeswert ab ('+esc(fx.source)+', '+esc(fx.reference)+'). '+esc(fx.what_it_cannot_show):'');
 }
-window.__layers=layers;initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderCheckedSources();renderResearch();updateLayer();
+window.__layers=layers;initProjection();euEbenenVerdrahten();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();renderReportFindings();renderContext();renderPyramid();renderBases();renderOrigins();renderSources();renderCheckedSources();renderResearch();updateLayer();
 // About / Impressum. Build and provenance fields are read from the shipped data,
 // so the dialog cannot advertise a geometry build the page does not actually have.
 function initAbout(){
@@ -2257,7 +2282,7 @@ window.addEventListener('sprachwechsel',()=>{
  // Der Vergleich der Schätzungen steht in einem data-i18n-skip-Behälter: was das
  // Programm hineinschreibt, übersetzt nur das Programm selbst — und nur, wenn es
  // beim Sprachwechsel noch einmal zeichnet.
- try{renderCheckedSources();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();}catch(e){}
+ try{renderCheckedSources();renderPublishedEstimates();renderOrthodoxCitizenship();renderReligionAge();renderIruTimeseries();renderPublishedAges();renderForeignAge();(function(){const f=$('survey-select');if(f)f.innerHTML='';})();renderSurveyItems();const rf=$('report-findings-select');if(rf)rf.innerHTML='';renderReportFindings();}catch(e){}
 });
 // Diese beiden blättern, also sortiert die Datenschicht und nicht das Dokument.
 dataSorters['area-table']=(col,dir)=>{state.areaSort={col,dir};state.areaPage=0;renderAreaTable();};

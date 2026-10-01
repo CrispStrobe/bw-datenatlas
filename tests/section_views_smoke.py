@@ -37,16 +37,26 @@ try:
                     assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
                     checks += 3
                 page.select_option('#' + field, selected)
+            page.select_option('#basis-view', 'incidents')
+            for value in page.eval_on_selector_all('#report-findings-select option', 'els=>els.map(e=>e.value)'):
+                page.select_option('#report-findings-select', value)
+                report = page.evaluate('id=>window.ATLAS_REPORT_FINDINGS.reports.find(r=>r.id===id)', value)
+                assert page.locator('#report-findings-body .bar-row').count() == len(report['items'])
+                assert all('%' not in text for text in page.locator('#report-findings-body .bar-value').all_text_contents())
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
+                if value == 'uem_overview':
+                    page.locator('#report-findings-body summary').click()
+                    assert page.locator('#report-findings-body .sources-list article').count() == 16
+                checks += 3
+            page.select_option('#basis-view', 'bases')
             for value in page.eval_on_selector_all('#survey-select option', 'els=>els.map(e=>e.value)'):
                 page.select_option('#survey-select', value)
                 assert page.locator('#survey-blocks .bar-row').count() > 0
                 assert page.locator('#survey-blocks table tbody tr').count() == page.locator('#survey-blocks .bar-row').count()
                 block = page.evaluate('n=>window.ATLAS_SURVEY_ITEMS.blocks[Number(n)]', value)
                 if block['block'].startswith('evs2017_'):
-                    page.locator('#survey-blocks details').evaluate('el=>el.open=true')
-                    assert page.locator('#survey-blocks table th').filter(has_text='Gültige Antworten').count() == 1
-                    valid_text = page.locator('#survey-blocks table tbody tr').first.locator('td').nth(4).inner_text()
-                    assert int(''.join(c for c in valid_text if c.isdigit())) == block['items'][0]['valid_n'], valid_text
+                    assert page.locator('#survey-blocks table th').filter(has_text='Gültige Antworten').count() == 0
+                    assert all(i['source_kind'] == 'published_table' for i in block['items'])
                     if len({i['question_ref'] for i in block['items']}) > 1:
                         assert 'Fragen ' not in page.locator('#survey-blocks .survey-meta').inner_text()
                     checks += 2

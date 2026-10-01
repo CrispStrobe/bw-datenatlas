@@ -303,27 +303,22 @@ berichtigt.
 Aus dem Vielfaltsbarometer 2025 sind ausgewählte BW- und Bundesvergleiche der
 Religions- und Vielfaltsakzeptanz sowie Fragen zu öffentlicher Religion und
 Nachbarn aufgenommen. Der Methodenwechsel von Telefon (2018, Publikation 2019)
-zu Online-Panel (2025) steht an den Vergleichswerten. Die 17 EVS-Werte sind eigene
-gewichtete Auswertungen der deutschen EVS-Stichprobe (2.170 Fälle) aus ZA7500 und
-dem gemeinsamen EVS/WVS-Datensatz ZA7505, jeweils v5.0.0. Gültige Fallzahlen werden
-je Frage ausgewiesen. Die gemeinsamen Variablen werden zwischen beiden Dateien
-abgeglichen. Deutsche WVS-Fälle werden nicht mit EVS-Fällen zusammengezählt.
-ZA7505 ist die gemeinsame jüngste Welle, nicht die historische IVS-Zeitreihe.
-Es werden keine BW-Werte behauptet.
-`inputs/additional-survey-review.json` dokumentiert Fundstellen und Prüfsummen.
+zu Online-Panel (2025) steht an den Vergleichswerten. Die 17 EVS-Werte werden
+aus den öffentlich zugänglichen Deutschlandtabellen des EVS/GESIS-Variablenberichts
+2022/05 übernommen. Tabellen-S. und PDF-S. stehen an jedem Wert. Die Auswahl besteht
+aus einzelnen Kategorien und drei ausdrücklich bezeichneten Kategoriensummen.
+Gewichtung und Ausschluss fehlender Antworten folgen den veröffentlichten Tabellen;
+gerundete Werte werden nicht nachträglich normalisiert. Die Studienstichprobe von
+2.170 Personen ist von den gewichteten Häufigkeiten zu unterscheiden. Ungewichtete
+gültige Fallzahlen je Frage bleiben leer. Keine BW-Auswertung.
 
-Reproduktion mit lokal vorliegenden, lizenzierten SAV-Dateien:
-
-```sh
-python -m pip install -r requirements-evs.txt
-python scripts/analyse_evs.py --evs-sav /privater/pfad/ZA7500_v5-0-0.sav --joint-sav /privater/pfad/ZA7505_v5-0-0.sav
-python scripts/prepare_survey_items.py
-```
-
-`inputs/evs-analysis-spec.json` enthält Auswahl, Antwortcodes und Zuordnung der
-harmonisierten Variablen; `inputs/evs-analysis-provenance.json` hält Versionen und
-Dateiprüfsummen fest. `inputs/evs-items.csv` enthält nur Aggregate. Rohdaten bleiben
-lokal; die CI baut die Website aus den gespeicherten Aggregaten ohne Datenzugang.
+Die zuvor in v0.45.0 veröffentlichten Mikrodatenberechnungen wurden aus den aktiven
+Darstellungen entfernt und durch diese Tabellenwerte ersetzt. Die bestätigten
+GESIS-Nutzungsbedingungen untersagen KI-Verarbeitung der Mikrodaten ohne gewährte
+Ausnahme. Der Mikrodaten-Auswertungsworkflow wurde aus dem Repository entfernt;
+der historische Git-Stand dokumentiert die Änderung. Weitere Mikrodaten werden
+nicht ausgewertet. `inputs/additional-survey-review.json` hält die Quellenprüfung
+und den Austausch fest; `inputs/evs-items.csv` enthält nur öffentliche Tabellenwerte.
 
 Aus „Zwischen Pauschalisierung und Differenzierung“ (2024) sind ausgewählte
 Zuschreibungen und differenzierende Aussagen aufgenommen. Sie stammen aus der
@@ -332,3 +327,32 @@ Ausschluss muslimischer Befragter. Das zufällig auf zwei Gruppen verteilte Word
 „Islam“ / „Musliminnen und Muslime“ bleibt kenntlich. Die Modulstichprobe von 1.912
 Personen wird nicht als itembezogene Fallzahl verwendet. Wahrgenommene
 Benachteiligung wird nicht als gezählte Diskriminierung dargestellt.
+
+### Vorfälle und Beratung in Baden-Württemberg
+
+„Daten, Quellen und Methodik“ bündelt unter „Feindseligkeit und Vorfälle in BW“
+die RIAS-Landesstatistik 2025, antisemitische PMK-Straftaten 2023–2025,
+islamfeindliche PMK-Straftaten 2024, antimuslimische Gewaltfälle von LEUCHTLINIE
+2024 und OFEK-Beratungsfälle Oktober 2024 bis September 2025. Die Reihen haben
+unterschiedliche Definitionen und werden nicht addiert. OFEK zählt 164 Fälle
+der Landesberatungsstelle, davon 160 mit regionalem Bezug zu BW; Beratungsfälle
+sind keine Zahl einzelner Vorfälle. Ergänzt wird die qualitative BW-Schulstudie
+mit ihren Erfassungsgrenzen. Die RIAS-Grafik und OFEK-Tabellen wurden visuell
+geprüft; die Seite zeichnet eigene Diagramme.
+
+Der UEM-Eintrag erschließt 16 beauftragte Unterstudien. Bei drei wurden
+öffentliche Vollberichte geprüft, bei 13 die Darstellung im Abschlussbericht.
+Diese Prüfstände stehen einzeln dabei. Allgemeine Medienkorpus-Zahlen werden
+nicht als BW-Befunde dargestellt. Für CLAIM wurde keine belegte BW-Gesamtsumme
+gefunden; die bundesweite Summe wird nicht auf BW übertragen.
+
+```bash
+python scripts/prepare_report_findings.py
+```
+
+`inputs/report-findings.json` enthält Auswahl, Definitionen und Fundstellen.
+Die erzeugten JSON- und JavaScript-Dateien werden ohne externe Abfragen geladen.
+Aus der EKD-Studie „Zwischen Nächstenliebe und Abgrenzung“ werden vier ausgewählte
+Einstellungsvergleiche verwendet (Erhebung 2020, Publikation 2022). FRA EU-MIDIS II
+ergänzt berichtete Diskriminierung der in Deutschland befragten Herkunftsgruppen;
+dies ist weder eine BW-Erhebung noch eine Stichprobe sämtlicher Muslime.

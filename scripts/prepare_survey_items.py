@@ -79,6 +79,7 @@ def main() -> None:
             **({'weighted_valid_n': float(r['weighted_valid_n'])}
                if r.get('weighted_valid_n') else {}),
             **({'valid_n': int(r['valid_n'])} if r.get('valid_n') else {}),
+            **({'source_kind': r['source_kind']} if r.get('source_kind') else {}),
         })
 
     doc = {

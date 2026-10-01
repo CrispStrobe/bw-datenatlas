@@ -25,16 +25,16 @@ Der lokale PDF- und Bildcache dient der Quellenprüfung und ist nicht veröffent
   [Berichts](https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf),
   S. 78, nennt Copyright 2025 und „Alle Rechte vorbehalten“. Übernommen werden
   ausgewählte Aggregate mit eigener Darstellung und Methodeneinordnung.
-- **European Values Study:** Die ausgewählten Deutschlandwerte sind eigene
-  gewichtete Auswertungen von EVS (2022), ZA7500 v5.0.0,
-  [DOI 10.4232/1.13897](https://doi.org/10.4232/1.13897), und EVS/WVS (2024),
-  ZA7505 v5.0.0, [DOI 10.4232/1.14320](https://doi.org/10.4232/1.14320).
-  Veröffentlicht werden Aggregate und Auswertungscode; die Mikrodaten werden
-  nicht weiterverteilt. Für Mikrodaten gelten die
-  [GESIS-Nutzungsbedingungen und Zugangsvoraussetzungen](https://europeanvaluesstudy.eu/surveys/data-access/).
-  Der separate Atlas-Band von 2022 steht unter **CC BY-NC-ND 4.0** laut
-  [Verlag](https://openpress.tilburguniversity.edu/projects/atlas-of-european-values).
-  Diese Buchlizenz wird nicht auf sämtliche EVS-Daten oder Web-Aggregate übertragen.
+- **European Values Study:** Aktuell verwendet werden ausgewählte veröffentlichte
+  Deutschlandtabellen des [EVS/GESIS-Variablenberichts 2022/05](https://access.gesis.org/dbk/65190),
+  mit eigener Darstellung und genauer Fundstelle. Die zuvor veröffentlichten
+  Mikrodatenberechnungen wurden aus den aktiven Darstellungen entfernt. Die
+  bestätigten [GESIS-Nutzungsbedingungen vom 04.02.2026](https://www.gesis.org/institut/datennutzungsbedingungen),
+  § 4, untersagen KI-Verarbeitung der bereitgestellten Datenbasis ohne gewährte
+  Ausnahme. Eine solche Ausnahme liegt hier nicht vor. Weitere Mikrodaten werden
+  deshalb nicht verarbeitet. Die Umstellung der Darstellungen klärt die Zulässigkeit
+  der vorausgegangenen Verarbeitung nicht nachträglich. Eine Klärung mit GESIS
+  ist noch offen. Es wird keine offene Lizenz für sämtliche EVS-Dokumente behauptet.
 
 Urheberrecht und Datenbankrechte sind getrennt zu beurteilen. Einzelne Tatsachen
 und Zahlen sind nicht allein wegen eines Copyright-Vermerks geschützte Werke;
@@ -311,3 +311,20 @@ Weiterverwendung aller Eurostat-Daten gestattet mit Quellenangabe, Beschluss 201
 - **Der Zensus zählt alle Altersstufen, die Arbeitskräfteerhebung nur 15 bis 64.** Deshalb stehen für dieselbe Region zwei Anteile im Ausland Geborener nebeneinander — für den Regierungsbezirk Stuttgart 24,4 Prozent (Zensus 2021, alle Alter) und 31,1 Prozent (Erhebung 2025, 15 bis 64). Beide sind richtig und messen nicht dasselbe; im Profil stehen sie deshalb beide.
 - **Stichprobe.** Sieben der neun Größen stammen aus der Arbeitskräfteerhebung. Für kleine Regionen ist die Unsicherheit entsprechend groß, und Eurostat weist sie je Region nicht aus. Für die Erwerbslosenquote der im Ausland Geborenen liefert Eurostat nur 185 der 294 Regionen — die übrigen bleiben schraffiert, statt durch eine Schätzung ersetzt zu werden.
 - **Jede Größe trägt ihr eigenes Bezugsjahr,** weil die Datensätze unterschiedlich schnell fortgeschrieben werden. Das Jahr steht an der Ebene und im Profil jeder Region, nicht nur hier.
+
+## RIAS, OFEK, UEM, EKD und FRA
+
+Prüfstand: 01.10.2026. Verwendet werden ausgewählte veröffentlichte Aggregate
+und eigene Zusammenfassungen mit verlinkter Fundstelle. Originalgrafiken, Fotos
+und Berichts-PDFs sind nicht Teil der Auslieferung. Die MIT-Lizenz des Projekts
+erfasst diese Originalpublikationen nicht. Die persönlichen Fallnarrative der
+OFEK/KoZe-Schulstudie werden nicht übernommen. Für RIAS, OFEK, UEM und EKD wird
+keine pauschale offene Lizenz behauptet.
+
+Die korrigierte Schulbuch-Unterstudie des UEM von 2024 nennt CC BY 3.0 Deutschland.
+Diese Lizenz wird nicht auf andere UEM-Unterstudien übertragen. Die FRA-Auswertung
+verweist auf den öffentlichen Bericht und übernimmt ausgewählte Tabellenwerte,
+keine Fotografien. Quellen, Bezugszeiträume und Abgrenzungen stehen direkt an den
+Darstellungen sowie in `docs/data/report-findings.json` und
+`docs/data/survey-items.json`. Der lokale Prüfstand ist in
+`inputs/additional-survey-review.json` dokumentiert.

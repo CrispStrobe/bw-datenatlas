@@ -260,6 +260,12 @@ jobs:
       - name: Befragungsergebnisse zusammenstellen
         run: python scripts/prepare_survey_items.py
 
+      - name: Öffentliche Vorfallstatistiken und UEM-Prüfverzeichnis bauen
+        run: python scripts/prepare_report_findings.py
+
+      - name: Abgrenzung und Summen der Vorfallstatistiken prüfen
+        run: python -m unittest discover -s tests -p test_report_findings.py -v
+
       # Die Quelldatei liegt gepackt im Repository, der Schritt braucht kein Netz.
       - name: Alterspyramide der ausländischen Bevölkerung bauen
         run: python scripts/prepare_foreign_age_pyramid.py

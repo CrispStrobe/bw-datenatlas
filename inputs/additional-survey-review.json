@@ -66,17 +66,29 @@
       "url": "https://access.gesis.org/dbk/65190",
       "sha256": "8197a8d0a9f1fc8d5a0a66823ea27b8fa9f89137004c54b751a108594c63212a",
       "reviewed_at": "2026-10-01",
-      "review_scope": "Ausgewählte Deutschlandtabellen als Plausibilitätsprüfung der eigenen Mikrodatenanalyse. Keine vollständige Auswertung des Berichts.",
+      "review_scope": "Ausgewählte Deutschlandzeilen visuell geprüft: v6, v27–29, v36, v51, v54, v56–57, v62 und v64. Ausschließlich veröffentlichte Tabellenwerte; keine erneute Mikrodatenanalyse.",
       "reviewed_pages": [
         21,
+        105,
+        156,
+        158,
+        160,
         182,
         223,
         239,
+        243,
+        245,
         255,
         260
       ],
-      "used_blocks": [],
-      "role": "crosscheck; aggregates calculated from original microdata"
+      "used_blocks": [
+        "evs2017_gottesvorstellungen",
+        "evs2017_nachbarn",
+        "evs2017_praxis",
+        "evs2017_religion",
+        "evs2017_vertrauen"
+      ],
+      "role": "source of published table aggregates"
     },
     {
       "file": "ZA7500_v5-0-0.sav",
@@ -86,13 +98,10 @@
       "reviewed_at": "2026-10-01",
       "review_scope": "Eigene Auswertung ausgewählter Deutschlandfragen; gültige Antworten mit positivem Gewicht. Gemeinsame Variablen zwischen ZA7500 und ZA7505 abgeglichen. Keine WVS-Poolung, keine historische IVS-Auswertung.",
       "url": "https://doi.org/10.4232/1.13897",
-      "used_blocks": [
-        "evs2017_religion",
-        "evs2017_nachbarn",
-        "evs2017_praxis",
-        "evs2017_gottesvorstellungen",
-        "evs2017_vertrauen"
-      ]
+      "used_blocks": [],
+      "status": "withdrawn_from_active_presentations",
+      "withdrawn_on": "2026-10-01",
+      "reason": "Darstellungen auf veröffentlichte Tabellen umgestellt; keine weitere KI-Verarbeitung der Mikrodaten unter den bestätigten GESIS-Bedingungen."
     },
     {
       "file": "ZA7505_v5-0-0.sav",
@@ -102,13 +111,106 @@
       "reviewed_at": "2026-10-01",
       "review_scope": "Eigene Auswertung ausgewählter Deutschlandfragen; gültige Antworten mit positivem Gewicht. Gemeinsame Variablen zwischen ZA7500 und ZA7505 abgeglichen. Keine WVS-Poolung, keine historische IVS-Auswertung.",
       "url": "https://doi.org/10.4232/1.14320",
-      "used_blocks": [
-        "evs2017_religion",
-        "evs2017_nachbarn",
-        "evs2017_praxis",
-        "evs2017_gottesvorstellungen",
-        "evs2017_vertrauen"
-      ]
+      "used_blocks": [],
+      "status": "withdrawn_from_active_presentations",
+      "withdrawn_on": "2026-10-01",
+      "reason": "Darstellungen auf veröffentlichte Tabellen umgestellt; keine weitere KI-Verarbeitung der Mikrodaten unter den bestätigten GESIS-Bedingungen."
+    },
+    {
+      "file": "rias-bw-2025.pdf",
+      "url": "https://report-antisemitism.de/documents/RIAS_BW_Bericht_2025.pdf",
+      "sha256": "1678c72f07863629ff6c73f87570eecc7913ed62cbef6572ecff53aa0f424cbe",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Methode S. 9; Zusammenfassung S. 14–15; Vorfalltypen S. 19 visuell"
+    },
+    {
+      "file": "rias-de-2025.pdf",
+      "url": "https://report-antisemitism.de/documents/17-06-26_RIAS_Bund_Jahresbericht_2025.pdf",
+      "sha256": "b768562f198f2c16e265a636d1acc896b727f2c91912494909b566ceba2ffb1b",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Zeitreihe S. 9 und Tabelle Abb. 7 S. 48, visuell; Bundeslandkarte S. 47"
+    },
+    {
+      "file": "uem-2023.pdf",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "sha256": "c10fd8697aae312bbb3d502d846571bb6f16b0b8079b389289b4191afe29d969",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Fassung April 2024; ausgewählte Kapitel 5–10, MuPe Abb. 5.2 S. 119 visuell; Unterstudienverzeichnis S. 391–392; keine Volltextprüfung aller Unterstudien"
+    },
+    {
+      "file": "uem-media-2022.pdf",
+      "url": "https://www.polsoz.fu-berlin.de/kommwiss/arbeitsstellen/internationale_kommunikation/Projekte-und-Publikationen/Islam-Berichterstattung1/Ergebnisbericht_final_neu.pdf",
+      "sha256": "478e9013cdc061a604f3271d0b45b500f14fa52bd863fdb8cbda7eeba3ed8d01",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Methode S. 6–13; Konfliktkodierung S. 36–38, Abb. 6–7 visuell"
+    },
+    {
+      "file": "uem-schools-alt.pdf",
+      "url": "https://repository.gei.de/server/api/core/bitstreams/506933c2-bf9c-4fa7-823b-a0e2cbeac13e/content",
+      "sha256": "ea5240d6c61448dc07aee59aff4943602cc46fa17f97577c240abbfac3f9b244",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Korrigierte Auflage 2024; Methode S. 7–14, Ergebnisse S. 28–29; Abb. 23 visuell"
+    },
+    {
+      "file": "uem-christian-media.pdf",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/klinkhammer-islamfeindlichkeit-christl-medien.pdf?__blob=publicationFile&v=2",
+      "sha256": "5cdee8434620c77d2e31e688bcb633f037afc64e394a276fa32db0ac7b291d20",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Methode S. 9–12, ausgewählte Analyseabschnitte, Schluss S. 75–79"
+    },
+    {
+      "file": "ekd-naechstenliebe-2022.pdf",
+      "url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf",
+      "sha256": "14f6c22da75de53dad2233ab5f7bcc08f3aa22f1b86d824d2f370f2de733a66c",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Tab. 2.18 S. 46 und Tab. 2.19 S. 49 visuell; Methode und Gruppenfallzahlen"
+    },
+    {
+      "file": "fra2017-muslims-en.pdf",
+      "url": "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2017-eu-minorities-survey-muslims-selected-findings_en.pdf",
+      "sha256": "fca3627104d15190066c9a59a3a74b02ed32bcd851f1f1bc49a41a5688d7a3bb",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Abb. 10 S. 29 visuell; Definition, Erhebung und Gruppenstichproben im Anhang"
+    },
+    {
+      "file": "ofek-bw-0.pdf",
+      "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/OFEK_BaWue_Beratungsstatistik_2024-25.pdf",
+      "sha256": "cf4fd8d00865ddcb6cc59b8337c36073fb3a6cc598720a965ffbb0c9e02b0419",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Stand 27.10.2025; S. 3 und 4 visuell, regionale Abgrenzung und überlappende Kategorien"
+    },
+    {
+      "file": "ofek-bw-1.pdf",
+      "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/250818_KoZe_Forschungsbericht_Antisemitismus-im-Kontext-Schule_BaWue_Web-Final-1.pdf",
+      "sha256": "cf207c3564b9ece3211b03dc72716c86050df86b3c710392f37d8f30277c7152",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Methodik, Sample S. 14; ausgewählte Befunde und Diskussion; keine persönlichen Zitate übernommen"
+    },
+    {
+      "file": "bw-hatecrime-2024.pdf",
+      "url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf",
+      "sha256": "7a056c55e53a9a7106be27222e8de45ce0478c0e778a2bfaebc66aff3b3c5c01",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Landtagsdrucksache 17/8711, S. 6 visuell; Definition S. 2–3"
+    },
+    {
+      "file": "claim-2025.pdf",
+      "url": "https://www.claim-organisation.de/content/uploads/2026/06/20260622_claim_lagebild_amr_2025_sperrfrist_24.6_11.30uhr_web-2.pdf",
+      "sha256": "b9a20a01bc7ceac50467f2fd26148e6892998a769e3d398b11d0c318ccf9677d",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Bundesweites Lagebild und Suche nach regionaler Gesamtsumme; kein belegter BW-Gesamtwert übernommen"
+    },
+    {
+      "url": "https://sicher-bw.de/kriminalitaet/politisch-motivierte-kriminalitaet",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Tabelle „Antisemitische Straftaten“, PMK gesamt / davon Gewaltdelikte",
+      "role": "Öffentliche HTML-Veröffentlichung"
+    },
+    {
+      "url": "https://www.leuchtlinie.de/2025/05/08/rechte-gewalt-in-baden-wuerttemberg-deutlicher-anstieg-haupttatmotiv-rassismus-jugendliche-besonders-betroffen-queerfeindliche-gewalt-verdoppelt/",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Abschnitt „Rassismus bleibt zentrales Tatmotiv“",
+      "role": "Öffentliche HTML-Veröffentlichung"
     }
   ],
   "selection": "Religion und Vielfalt; ausgewählte BW-Vergleiche und bundesweite Einstellungen. Keine vollständige Übernahme der Studien."

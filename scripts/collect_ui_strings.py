@@ -43,7 +43,7 @@ def sammeln(port: int) -> list[str]:
         page.wait_for_timeout(400)
         # Auch das Auswahlfeld der Befragungen: dort wird immer nur ein Block
         # gezeichnet, und die Beschriftungen der übrigen laufen sonst nie durch t().
-        for wahl, feld in (('#layer', 'layer'), ('#survey-select', 'survey'),
+        for wahl, feld in (('#layer', 'layer'), ('#survey-select', 'survey'), ('#report-findings-select', 'reports'),
                            ('#azr-indicator', 'azr'),
                            ('#origin-scope', 'origin'), ('#flow-area-scope', 'flow'),
                            ('#flow-range', 'range'), ('#filter-source', 'quelle')):

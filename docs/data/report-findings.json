@@ -1,0 +1,391 @@
+{
+  "type": "report_findings",
+  "schema_version": "1.0",
+  "reviewed_on": "2026-10-01",
+  "reports": [
+    {
+      "id": "rias_bw_2025",
+      "title": "Antisemitische Vorfälle in Baden-Württemberg 2025",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "kind": "Dokumentierte Vorfälle",
+      "period": "2025",
+      "note": "335 dokumentierte Vorfälle im ersten Erfassungsjahr der Meldestelle. Erfasst werden auch Vorfälle unterhalb der Strafbarkeitsschwelle. Die Zahlen hängen von Meldungen und Monitoring ab; 2025 erfolgte kein systematischer Abgleich mit Polizei oder Schulbehörden. Sie messen weder alle Vorfälle noch die Zahl betroffener Menschen. Der Bundesbericht nennt für BW 338; die beiden Veröffentlichungen werden hier nicht vermischt. 40 Vorfälle fanden an Bildungseinrichtungen statt, davon 60 % an Hochschulen. Dokumentiert wurden außerdem 115 Versammlungen mit antisemitischen Inhalten. Diese Angaben beschreiben Kontexte derselben Vorfälle und werden nicht zur Gesamtsumme hinzugezählt.",
+      "items": [
+        {
+          "label": "Angriffe",
+          "value": 16,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Bedrohungen",
+          "value": 8,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Gezielte Sachbeschädigungen",
+          "value": 31,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Massenzuschriften",
+          "value": 3,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Verletzendes Verhalten",
+          "value": 277,
+          "unit": "count",
+          "basis": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "RIAS Baden-Württemberg: Antisemitische Vorfälle 2025",
+          "url": "https://report-antisemitism.de/documents/RIAS_BW_Bericht_2025.pdf",
+          "locator": "S. 9, 14 und 19"
+        }
+      ],
+      "total": 335
+    },
+    {
+      "id": "pmk_bw_antisemitic",
+      "title": "Antisemitische Straftaten: BW 2023–2025",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "kind": "Polizeilich erfasste Straftaten",
+      "period": "2023–2025",
+      "note": "Polizeiliches Hellfeld der Politisch motivierten Kriminalität (PMK). 2025: 575 Straftaten, darunter 15 Gewaltdelikte. Die Erfassung unterscheidet sich von RIAS: Die beiden Reihen werden nicht addiert oder gegeneinander verrechnet. Die Gesamtzahl sank gegenüber 2024, während die Zahl der Gewaltdelikte stieg. Eine Straftat ist kein verurteilter Täter und keine gezählte betroffene Person.",
+      "items": [
+        {
+          "label": "2023",
+          "value": 668,
+          "unit": "count",
+          "basis": null,
+          "detail": "Darunter 10 Gewaltdelikte"
+        },
+        {
+          "label": "2024",
+          "value": 590,
+          "unit": "count",
+          "basis": null,
+          "detail": "Darunter 9 Gewaltdelikte"
+        },
+        {
+          "label": "2025",
+          "value": 575,
+          "unit": "count",
+          "basis": null,
+          "detail": "Darunter 15 Gewaltdelikte"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Innenministerium BW: Sicherheit in Baden-Württemberg 2025",
+          "url": "https://sicher-bw.de/kriminalitaet/politisch-motivierte-kriminalitaet",
+          "locator": "Tabelle „Antisemitische Straftaten“, PMK gesamt / davon Gewaltdelikte"
+        }
+      ]
+    },
+    {
+      "id": "pmk_bw_islamfeindlich",
+      "title": "Islamfeindliche Straftaten: BW 2024 nach Zuordnung",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "kind": "Polizeilich erfasste Straftaten",
+      "period": "2024",
+      "note": "220 polizeilich erfasste Straftaten im PMK-Unterthemenfeld „Islamfeindlich“ (2023: 156). Die Zuordnung beschreibt die polizeilich eingeschätzte Tatmotivation, nicht die Religion oder Staatsangehörigkeit von Personen. Mehrere Hasskriminalitäts-Themenfelder können auf dieselbe Tat zutreffen. Diese Werte dürfen daher nicht mit antisemitischen Straftaten oder zivilgesellschaftlichen Meldungen zu einer Gesamtsumme addiert werden. Für 2025 wird hier kein ungeprüfter BW-Wert eingesetzt.",
+      "items": [
+        {
+          "label": "PMK · rechts",
+          "value": 196,
+          "unit": "count",
+          "basis": null,
+          "detail": null
+        },
+        {
+          "label": "PMK · ausländische Ideologie",
+          "value": 7,
+          "unit": "count",
+          "basis": null,
+          "detail": null
+        },
+        {
+          "label": "PMK · religiöse Ideologie",
+          "value": 6,
+          "unit": "count",
+          "basis": null,
+          "detail": null
+        },
+        {
+          "label": "PMK · sonstige Zuordnung",
+          "value": 11,
+          "unit": "count",
+          "basis": null,
+          "detail": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Innenministerium BW: Landtagsdrucksache 17/8711",
+          "url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf",
+          "locator": "S. 2–3 (Erfassung), S. 6 (Tabelle „Islamfeindlich“) "
+        }
+      ],
+      "total": 220
+    },
+    {
+      "id": "leuchtlinie_bw_2024",
+      "title": "Antimuslimisch motivierte Gewalt: BW 2024",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "kind": "Zivilgesellschaftliche Gewaltdokumentation",
+      "period": "2024",
+      "note": "LEUCHTLINIE dokumentiert 19 Fälle antimuslimisch motivierter Gewalt in Baden-Württemberg. Die Beratungsstelle erfasst einen Ausschnitt rechter, rassistischer und antisemitischer Gewalt aus Betroffenenperspektive. Das ist keine Gesamtzahl aller antimuslimischen Diskriminierungen und kein mit der PMK identischer Messbereich. Mögliche Überschneidungen mit Polizei- oder CLAIM-Daten werden nicht addiert.",
+      "items": [
+        {
+          "label": "Dokumentierte Fälle antimuslimischer Gewalt",
+          "value": 19,
+          "unit": "count",
+          "basis": null,
+          "detail": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "LEUCHTLINIE: Jahresstatistik 2024",
+          "url": "https://www.leuchtlinie.de/2025/05/08/rechte-gewalt-in-baden-wuerttemberg-deutlicher-anstieg-haupttatmotiv-rassismus-jugendliche-besonders-betroffen-queerfeindliche-gewalt-verdoppelt/",
+          "locator": "Abschnitt „Rassismus bleibt zentrales Tatmotiv“"
+        }
+      ]
+    },
+    {
+      "id": "ofek_bw_2024_25",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "title": "OFEK BW: Beratungsfälle 2024/2025",
+      "kind": "Betroffenenberatung · Standortstatistik",
+      "period": "Oktober 2024 – September 2025",
+      "total": 164,
+      "note": "164 Beratungsfälle des Standorts OFEK BW: 160 aus Baden-Württemberg und vier anonyme Anfragen oder Fälle mit Bezug zu anderen Ländern bzw. dem Ausland. 161 Fälle betreffen Antisemitismus, davon 142 mit konkreten Vorfällen; 105 schildern mehrfache Betroffenheit. Gezählt werden Beratungsfälle, nicht einzelne Vorfälle, Beratungsstunden oder sämtliche Betroffenen im Land. Der Zeitraum ist kein Kalenderjahr. Der Zahlenschluss des Vorjahres lag am 22. September 2024; dessen letzte Septemberwoche wurde hier mitberücksichtigt. Keine Addition mit RIAS oder Polizei.",
+      "items": [
+        {
+          "label": "Schilderung eines antisemitischen Vorfalls",
+          "value": 37,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Schilderung mehrerer antisemitischer Vorfälle",
+          "value": 105,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Antisemitismusbezogene Belastung ohne konkreten Vorfall",
+          "value": 19,
+          "unit": "count",
+          "basis": null
+        },
+        {
+          "label": "Andere Diskriminierungsformen",
+          "value": 3,
+          "unit": "count",
+          "basis": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "OFEK e.V.: BaWü Beratungsstatistik 2024–2025, Stand 27.10.2025",
+          "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/OFEK_BaWue_Beratungsstatistik_2024-25.pdf",
+          "locator": "S. 3 (regionaler Bezug und Zeitraum), S. 4 (Beratungsfälle)"
+        }
+      ]
+    },
+    {
+      "id": "bw_antisemitism_schools",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "title": "BW-Studie: Antisemitismus im Schulalltag",
+      "kind": "Qualitative Studie",
+      "period": "Studie 2021–2023",
+      "note": "Chernivsky und Lorenz-Sinai untersuchen Wahrnehmung und Umgang mit Antisemitismus an BW-Schulen: 42 Teilnehmende, darunter 29 Lehr- und Fachkräfte, sieben Expertinnen und Experten sowie sechs jüdische junge Erwachsene. Die Interviews und Gruppendiskussionen zeigen unter anderem Verharmlosung, Schwierigkeiten beim Erkennen und Benennen von Antisemitismus sowie eine Lücke zwischen Betroffenenerfahrungen und institutionellen Reaktionen. Das hilft, die Grenzen von Meldestatistiken zu verstehen. Die Studie misst keine landesweite Häufigkeit; aus 42 Teilnehmenden wird keine Vorfallquote berechnet. Persönliche Fallzitate werden nicht übernommen.",
+      "items": [],
+      "sources": [
+        {
+          "title": "Chernivsky / Lorenz-Sinai (2023): Antisemitismus im Kontext Schule in Baden-Württemberg",
+          "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/250818_KoZe_Forschungsbericht_Antisemitismus-im-Kontext-Schule_BaWue_Web-Final-1.pdf",
+          "locator": "Studiendesign S. 10–15; Befunde S. 17–34; Diskussion S. 36–37"
+        }
+      ]
+    },
+    {
+      "id": "uem_overview",
+      "title": "UEM: Welche Unterstudie beantwortet welche Frage?",
+      "group": "Forschung · UEM",
+      "kind": "Forschungsüberblick",
+      "period": "2022–2024",
+      "note": "Verwendet wird die öffentlich angebotene Fassung mit Impressumsstand April 2024. Der UEM-Bericht bündelt vorhandene Forschung, 16 beauftragte Studien/Gutachten und Hearings; er ist keine einzelne repräsentative Erhebung. Die MuPe-Onlinebefragung umfasst 473 Personen und ist ausdrücklich nicht repräsentativ. Ihre Ergebnisse werden daher nicht als Häufigkeit unter allen Musliminnen und Muslimen dargestellt.",
+      "items": [],
+      "sources": [
+        {
+          "title": "UEM: Muslimfeindlichkeit – Eine deutsche Bilanz, Stand April 2024",
+          "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+          "locator": "Externe Expertisen S. 391–392; MuPe S. 117–123; Impressum S. 395"
+        }
+      ]
+    }
+  ],
+  "uem_studies": [
+    {
+      "title": "Analyse der Islam-Berichterstattung in deutschen Medien",
+      "authors": "Richter / Paasch-Colberg / Nötzold",
+      "year": 2022,
+      "method": "Inhaltsanalyse",
+      "uem_chapter": "7.1",
+      "url": "https://www.polsoz.fu-berlin.de/kommwiss/arbeitsstellen/internationale_kommunikation/Projekte-und-Publikationen/Islam-Berichterstattung1/Ergebnisbericht_final_neu.pdf",
+      "review_status": "Separater öffentlicher Bericht geprüft"
+    },
+    {
+      "title": "Begriffswelten von Islamfeindlichkeit in deutschen sozialen Medien",
+      "authors": "Jürgens",
+      "year": 2022,
+      "method": "Plattformanalyse",
+      "uem_chapter": "7.2",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Die Islampolitik der im Deutschen Bundestag vertretenen Parteien",
+      "authors": "Dreß",
+      "year": 2022,
+      "method": "Politikanalyse",
+      "uem_chapter": "9.2",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Religiös konnotierte Kleidung und Muslimfeindlichkeit",
+      "authors": "Boos-Niazy / AmF",
+      "year": 2022,
+      "method": "Expertise",
+      "uem_chapter": "6 / 8.3",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Auswirkungen von Moscheeangriffen auf Gemeindemitglieder",
+      "authors": "Gök Akca / Gümüş / Küçükhüseyin / Özcan",
+      "year": 2023,
+      "method": "Qualitative Fallstudie",
+      "uem_chapter": "5.4",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Islam und antimuslimischer Rassismus in Parteiensystem und Bundestag",
+      "authors": "Mustafa",
+      "year": 2022,
+      "method": "Diskursanalyse",
+      "uem_chapter": "8.2.2",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Islam und deutsche Familiengerichtsbarkeit",
+      "authors": "Dutta / Aiwanger",
+      "year": 2023,
+      "method": "Rechtliche Expertise",
+      "uem_chapter": "8.3",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Islamfeindlichkeit in christlichen Medien",
+      "authors": "Klinkhammer / Chilinski / Lütge",
+      "year": 2023,
+      "method": "Qualitative Studie",
+      "uem_chapter": "7.3",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/klinkhammer-islamfeindlichkeit-christl-medien.pdf?__blob=publicationFile&v=2",
+      "review_status": "Separater öffentlicher Bericht geprüft"
+    },
+    {
+      "title": "Muslimische Perspektiven (MuPe)",
+      "authors": "Zick / Demir / Eden; Kulaçatan / Behr / Rumpold / Aydın",
+      "year": 2023,
+      "method": "Mixed Methods",
+      "uem_chapter": "5.6",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Social Media-Selbst(re)präsentation von Muslim*innen",
+      "authors": "von Richthofen / Hafner / Wünsche",
+      "year": 2022,
+      "method": "Qualitative Inhaltsanalyse",
+      "uem_chapter": "7.2.2",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Schulbücher und Muslimfeindlichkeit",
+      "authors": "Düsterhöft / Spielhaus / Shalaby",
+      "year": 2023,
+      "method": "Inhaltsanalyse",
+      "uem_chapter": "6.2.2",
+      "url": "https://repository.gei.de/server/api/core/bitstreams/506933c2-bf9c-4fa7-823b-a0e2cbeac13e/content",
+      "review_status": "Separater öffentlicher Bericht geprüft"
+    },
+    {
+      "title": "Rechtliche Aspekte religiös konnotierter Kleidung",
+      "authors": "Mangold",
+      "year": 2022,
+      "method": "Rechtliche Expertise",
+      "uem_chapter": "8.3",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Rechtliche Rahmenbedingungen muslimischen Lebens",
+      "authors": "Heinig",
+      "year": 2022,
+      "method": "Rechtliche Expertise",
+      "uem_chapter": "9.1",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Islam in deutschsprachigen Spielfilmen und Serien 2001–2021",
+      "authors": "Alkın",
+      "year": 2022,
+      "method": "Filmanalyse",
+      "uem_chapter": "10.1.3",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Theater und Islam",
+      "authors": "Sharifi",
+      "year": 2022,
+      "method": "Theateranalyse",
+      "uem_chapter": "10.2",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    },
+    {
+      "title": "Lehrkräfteperspektiven auf muslimische Schülerinnen und Schüler",
+      "authors": "Yalçın",
+      "year": 2022,
+      "method": "Qualitative Studie",
+      "uem_chapter": "6.3",
+      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+    }
+  ],
+  "what_this_is": "Feindseligkeit in Baden-Württemberg: dokumentierte Vorfälle und polizeilich erfasste Straftaten. Die Quellen erfassen unterschiedliche Ausschnitte; ihre Zahlen sind keine vollständigen Opferzahlen und werden nicht addiert. Der UEM dient als Forschungsüberblick, nicht als zusätzliche Fallstatistik.",
+  "coverage_gaps": [
+    {
+      "topic": "CLAIM · BW",
+      "note": "Im geprüften bundesweiten Lagebild 2025 wurde keine BW-Gesamtsumme gefunden. BW-Fallbeispiele ersetzen keine Landesstatistik.",
+      "url": "https://www.claim-organisation.de/aktuelles/news/bundesweites-lagebild-antimuslimischer-rassismus-2025-veroeffentlicht/"
+    }
+  ]
+}
