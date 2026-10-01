@@ -504,7 +504,7 @@ class DataTests(unittest.TestCase):
         for key in ('kmu6_islam_praxis', 'kmu6_flucht_praxis',
                     'fes2025_migration', 'fes2025_antisemitismus'):
             b = blocks[key]
-            for item, row in zip(b['items'], b['chart']['rows']):
+            for item, row in zip(b['items'], b['chart'].get('main_chart', b['chart'])['rows']):
                 self.assertAlmostEqual(item['value'], sum(s['value'] for s in row['segments'][-2:]))
                 self.assertNotIn('valid_n', item)
         self.assertEqual([i['base_n'] for i in blocks['kmu6_islam_praxis']['items']],
@@ -518,6 +518,33 @@ class DataTests(unittest.TestCase):
                          [40.3, 98.3, 24.2, 98.4, 68.9])
         self.assertEqual([sum(s['value'] for s in r['segments']) for r in
                           blocks['bw_integration_bewertung']['chart']['rows']], [87, 88])
+
+    def test_survey_collections_preserve_every_source_and_matching_groups(self):
+        data = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in data['blocks']}
+        hidden = {key for b in blocks.values() for key in b.get('chart', {}).get('related', [])}
+        roots = set(blocks)-hidden
+        self.assertLessEqual(len(roots), 40)
+        reached = set()
+        def visit(key, trail=()):
+            self.assertNotIn(key, trail, 'Chart dependency cycle')
+            reached.add(key)
+            b = blocks[key]
+            chart = b.get('chart', {})
+            if chart.get('kind') == 'compare':
+                for other in chart['related']:
+                    self.assertEqual(len(b['items']), len(blocks[other]['items']))
+                    if not chart.get('groups'):
+                        self.assertEqual([i['label'] for i in b['items']],
+                                         [i['label'] for i in blocks[other]['items']])
+            for other in chart.get('related', []):
+                visit(other, trail+(key,))
+        for key in roots:
+            visit(key)
+        self.assertEqual(reached, set(blocks))
+        chart = blocks['rm2015_islamwahrnehmung_vergleich']['chart']['main_chart']
+        self.assertEqual(chart['series'], ['2012', '2014'])
+        self.assertEqual([r['items'] for r in chart['rows']], [[0, 1], [2, 3]])
 
     def test_panel_attitudes_keep_randomised_wording_and_unknown_item_counts(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())

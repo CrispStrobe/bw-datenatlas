@@ -89,15 +89,22 @@ def main() -> None:
 
     chart_path = ROOT / 'inputs/survey-charts.json'
     charts = json.loads(chart_path.read_text(encoding='utf-8'))
-    for key, chart in charts.items():
+    def prepare_chart(key, chart):
         if key not in bloecke:
             raise ValueError(f'Unknown chart block: {key}')
+        for related in chart.get('related', []):
+            if related not in bloecke:
+                raise ValueError(f'Unknown related block: {related}')
         for row in chart.get('rows', []):
-            if 'items' in row:
+            if chart['kind'] == 'distribution' and 'items' in row:
                 indices = range(len(bloecke[key]['items'])) if row['items'] == 'all' else row['items']
                 row['segments'] = [
                     {'label': bloecke[key]['items'][i]['label'].split(': ', 1)[-1],
                      'value': bloecke[key]['items'][i]['value']} for i in indices]
+        if chart.get('main_chart'):
+            prepare_chart(key, chart['main_chart'])
+    for key, chart in charts.items():
+        prepare_chart(key, chart)
         bloecke[key]['chart'] = chart
     # These detail strings encode explicitly published categories. Preserve them
     # as structured segments; never infer unreported answers from agreement.

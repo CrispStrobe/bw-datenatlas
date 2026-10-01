@@ -206,59 +206,70 @@
   "kind": "time"
  },
  "fes2025_migration": {
-  "kind": "distribution",
-  "rows": [
-   {
-    "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
-    "segments": [
-     {
-      "label": "Lehne völlig ab",
-      "value": 16.7
-     },
-     {
-      "label": "Lehne eher ab",
-      "value": 17.3
-     },
-     {
-      "label": "Teils/teils",
-      "value": 35.8
-     },
-     {
-      "label": "Stimme eher zu",
-      "value": 12.6
-     },
-     {
-      "label": "Stimme voll zu",
-      "value": 17.6
-     }
-    ]
-   },
-   {
-    "label": "Zuwanderungsverbot für Muslime",
-    "segments": [
-     {
-      "label": "Lehne völlig ab",
-      "value": 45.3
-     },
-     {
-      "label": "Lehne eher ab",
-      "value": 23.7
-     },
-     {
-      "label": "Teils/teils",
-      "value": 22.4
-     },
-     {
-      "label": "Stimme eher zu",
-      "value": 3
-     },
-     {
-      "label": "Stimme voll zu",
-      "value": 5.6
-     }
-    ]
-   }
-  ]
+  "kind": "collection",
+  "related": [
+   "fes2025_antisemitismus"
+  ],
+  "panels": [
+   "fes2025_migration",
+   "fes2025_antisemitismus"
+  ],
+  "title": "FES-Mitte: Ressentiments gegen Geflüchtete, Muslime und Juden",
+  "main_chart": {
+   "kind": "distribution",
+   "rows": [
+    {
+     "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
+     "segments": [
+      {
+       "label": "Lehne völlig ab",
+       "value": 16.7
+      },
+      {
+       "label": "Lehne eher ab",
+       "value": 17.3
+      },
+      {
+       "label": "Teils/teils",
+       "value": 35.8
+      },
+      {
+       "label": "Stimme eher zu",
+       "value": 12.6
+      },
+      {
+       "label": "Stimme voll zu",
+       "value": 17.6
+      }
+     ]
+    },
+    {
+     "label": "Zuwanderungsverbot für Muslime",
+     "segments": [
+      {
+       "label": "Lehne völlig ab",
+       "value": 45.3
+      },
+      {
+       "label": "Lehne eher ab",
+       "value": 23.7
+      },
+      {
+       "label": "Teils/teils",
+       "value": 22.4
+      },
+      {
+       "label": "Stimme eher zu",
+       "value": 3
+      },
+      {
+       "label": "Stimme voll zu",
+       "value": 5.6
+      }
+     ]
+    }
+   ]
+  }
  },
  "fes2025_antisemitismus": {
   "kind": "distribution",
@@ -341,25 +352,36 @@
   ]
  },
  "bw_integration_erwartung": {
-  "kind": "distribution",
-  "rows": [
-   {
-    "label": "Ohne Migrationshintergrund",
-    "items": [
-     0,
-     2,
-     4
-    ]
-   },
-   {
-    "label": "Mit Migrationshintergrund",
-    "items": [
-     1,
-     3,
-     5
-    ]
-   }
-  ]
+  "kind": "collection",
+  "related": [
+   "bw_integration_bewertung"
+  ],
+  "panels": [
+   "bw_integration_erwartung",
+   "bw_integration_bewertung"
+  ],
+  "title": "Integration in BW: heutige Bewertung und Erwartungen",
+  "main_chart": {
+   "kind": "distribution",
+   "rows": [
+    {
+     "label": "Ohne Migrationshintergrund",
+     "items": [
+      0,
+      2,
+      4
+     ]
+    },
+    {
+     "label": "Mit Migrationshintergrund",
+     "items": [
+      1,
+      3,
+      5
+     ]
+    }
+   ]
+  }
  },
  "bw_integration_bewertung": {
   "kind": "distribution",
@@ -424,5 +446,632 @@
    "Religiosität",
    "Spiritualität"
   ]
+ },
+ "rm2015_islamwahrnehmung_vergleich": {
+  "kind": "collection",
+  "related": [
+   "rm2015_islamwahrnehmung_2014"
+  ],
+  "panels": [
+   "rm2015_islamwahrnehmung_vergleich",
+   "rm2015_islamwahrnehmung_2014"
+  ],
+  "title": "Islamwahrnehmung 2012/2014 und Einstellungen zu Muslimen",
+  "main_chart": {
+   "kind": "paired",
+   "series": [
+    "2012",
+    "2014"
+   ],
+   "rows": [
+    {
+     "label": "Islam als bedrohlich wahrgenommen",
+     "items": [
+      0,
+      1
+     ]
+    },
+    {
+     "label": "Islam passt nicht in die westliche Welt",
+     "items": [
+      2,
+      3
+     ]
+    }
+   ]
+  }
+ },
+ "bosch2025_index_bw": {
+  "kind": "paired",
+  "series": [
+   "2019",
+   "2025"
+  ],
+  "rows": [
+   {
+    "label": "Vielfalt insgesamt",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Ethnische Herkunft",
+    "items": [
+     2,
+     3
+    ]
+   },
+   {
+    "label": "Religion",
+    "items": [
+     4,
+     5
+    ]
+   }
+  ]
+ },
+ "bosch2025_index_de": {
+  "kind": "paired",
+  "series": [
+   "2019",
+   "2025"
+  ],
+  "rows": [
+   {
+    "label": "Vielfalt insgesamt",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Ethnische Herkunft",
+    "items": [
+     2,
+     3
+    ]
+   },
+   {
+    "label": "Religion",
+    "items": [
+     4,
+     5
+    ]
+   }
+  ]
+ },
+ "rm2023_zuschreibungen": {
+  "kind": "paired",
+  "series": [
+   "Islam",
+   "Muslimische Menschen"
+  ],
+  "rows": [
+   {
+    "label": "Gegen Freiheitsrechte",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Aufruf zu Gewalt",
+    "items": [
+     2,
+     3
+    ]
+   },
+   {
+    "label": "Frauenfeindlichkeit",
+    "items": [
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Rückständigkeit",
+    "items": [
+     6,
+     7
+    ]
+   }
+  ]
+ },
+ "bosch2025_migration_distanz": {
+  "kind": "paired",
+  "series": [
+   "Nachbarschaft",
+   "Heirat in der Familie"
+  ],
+  "rows": [
+   {
+    "label": "Ausländische Personen",
+    "items": [
+     0,
+     2
+    ]
+   },
+   {
+    "label": "Geflüchtete",
+    "items": [
+     1,
+     3
+    ]
+   }
+  ]
+ },
+ "fra2017_de_discrimination": {
+  "kind": "paired",
+  "series": [
+   "Letzte 12 Monate",
+   "Letzte 5 Jahre"
+  ],
+  "rows": [
+   {
+    "label": "Herkunft Türkei",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Herkunft Subsahara-Afrika",
+    "items": [
+     2,
+     3
+    ]
+   }
+  ]
+ },
+ "rm2026_detail_gesamt": {
+  "kind": "collection",
+  "related": [
+   "rm2026_detail_netze",
+   "rm2026_detail_verbundenheit",
+   "rm2026_detail_gemeinwohl"
+  ],
+  "panels": [
+   "rm2026_detail_gesamt",
+   "rm2026_detail_netze",
+   "rm2026_detail_verbundenheit",
+   "rm2026_detail_gemeinwohl"
+  ],
+  "title": "Zusammenhalt nach Religion und Religiosität: Gesamtindex und Dimensionen",
+  "main_chart": {
+   "kind": "paired",
+   "series": [
+    "Religiosität niedrig",
+    "Religiosität mittel",
+    "Religiosität hoch"
+   ],
+   "rows": [
+    {
+     "label": "Katholisch",
+     "items": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "label": "Evangelisch",
+     "items": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "Muslimisch",
+     "items": [
+      6,
+      7,
+      8
+     ]
+    }
+   ]
+  }
+ },
+ "rm2026_detail_gemeinwohl": {
+  "kind": "paired",
+  "series": [
+   "Religiosität niedrig",
+   "Religiosität mittel",
+   "Religiosität hoch"
+  ],
+  "rows": [
+   {
+    "label": "Katholisch",
+    "items": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "label": "Evangelisch",
+    "items": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Muslimisch",
+    "items": [
+     6,
+     7,
+     8
+    ]
+   }
+  ]
+ },
+ "rm2026_detail_netze": {
+  "kind": "paired",
+  "series": [
+   "Religiosität niedrig",
+   "Religiosität mittel",
+   "Religiosität hoch"
+  ],
+  "rows": [
+   {
+    "label": "Katholisch",
+    "items": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "label": "Evangelisch",
+    "items": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Muslimisch",
+    "items": [
+     6,
+     7,
+     8
+    ]
+   }
+  ]
+ },
+ "rm2026_detail_verbundenheit": {
+  "kind": "paired",
+  "series": [
+   "Religiosität niedrig",
+   "Religiosität mittel",
+   "Religiosität hoch"
+  ],
+  "rows": [
+   {
+    "label": "Katholisch",
+    "items": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "label": "Evangelisch",
+    "items": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Muslimisch",
+    "items": [
+     6,
+     7,
+     8
+    ]
+   }
+  ]
+ },
+ "rm2023_hilfe_syrien": {
+  "kind": "compare",
+  "related": [
+   "rm2023_hilfe_ukraine"
+  ],
+  "title": "Hilfsbereitschaft für Geflüchtete aus Syrien und der Ukraine",
+  "series": [
+   "Syrien",
+   "Ukraine"
+  ]
+ },
+ "rm2023_bedrohung": {
+  "kind": "compare",
+  "related": [
+   "rm2023_bereicherung"
+  ],
+  "title": "Religiöse Vielfalt: Bedrohung und Bereicherung",
+  "series": [
+   "Bedrohung",
+   "Bereicherung"
+  ]
+ },
+ "rm2017_wahrheit": {
+  "kind": "compare",
+  "related": [
+   "rm2017_regeln",
+   "rm2017_offenheit"
+  ],
+  "title": "Religiöse Wahrheit, Regeln und Offenheit · 2017",
+  "series": [
+   "Wahrheit nur in einer Religion",
+   "Nur eine Interpretation religiöser Regeln",
+   "Jede Religion hat einen wahren Kern"
+  ]
+ },
+ "bosch2025_nachbarn": {
+  "kind": "compare",
+  "related": [
+   "bosch2025_familie"
+  ],
+  "title": "Religiöse Vielfalt in Nachbarschaft und Familie",
+  "series": [
+   "Nachbarschaft",
+   "Heirat in der Familie"
+  ],
+  "groups": [
+   "Gläubige Christen",
+   "Praktizierende Juden",
+   "Religiöse Muslime"
+  ]
+ },
+ "rm2023_verschwoerung_anfaellig": {
+  "kind": "collection",
+  "related": [
+   "rm2023_verschwoerung_fundamentalistisch",
+   "rm2023_verschwoerung_de",
+   "rm2023_verschwoerung_religioes"
+  ],
+  "panels": [
+   "rm2023_verschwoerung_anfaellig",
+   "rm2023_verschwoerung_de",
+   "rm2023_verschwoerung_religioes"
+  ],
+  "title": "Verschwörungsanfälligkeit: Länder, Religiosität und Spiritualität",
+  "main_chart": {
+   "kind": "compare",
+   "related": [
+    "rm2023_verschwoerung_fundamentalistisch"
+   ],
+   "title": "Verschwörungsanfälligkeit und Fundamentalismus im Ländervergleich",
+   "series": [
+    "Verschwörungsanfällig",
+    "Verschwörungsfundamentalistisch"
+   ]
+  }
+ },
+ "ekd2020_muslim_rights": {
+  "kind": "collection",
+  "related": [
+   "ekd2020_muslim_immigration",
+   "ekd2020_antisemitic_influence",
+   "ekd2020_antisemitic_israel"
+  ],
+  "panels": [
+   "ekd2020_muslim_rights",
+   "ekd2020_muslim_immigration",
+   "ekd2020_antisemitic_influence",
+   "ekd2020_antisemitic_israel"
+  ],
+  "title": "EKD: Einstellungen zu Muslimen und Juden nach Religionszugehörigkeit"
+ },
+ "evs2017_religion": {
+  "kind": "collection",
+  "related": [
+   "evs2017_praxis",
+   "evs2017_gottesvorstellungen"
+  ],
+  "panels": [
+   "evs2017_religion",
+   "evs2017_praxis",
+   "evs2017_gottesvorstellungen"
+  ],
+  "title": "EVS: Religiosität, Praxis und Gottesvorstellungen"
+ },
+ "evs2017_nachbarn": {
+  "kind": "collection",
+  "related": [
+   "evs2017_vertrauen"
+  ],
+  "panels": [
+   "evs2017_nachbarn",
+   "evs2017_vertrauen"
+  ],
+  "title": "EVS: religiöse Nachbarn und Vertrauen"
+ },
+ "rm2015_freizeit_nichtmuslime": {
+  "kind": "collection",
+  "related": [
+   "rm2015_freizeit_muslime"
+  ],
+  "panels": [
+   "rm2015_freizeit_nichtmuslime",
+   "rm2015_freizeit_muslime"
+  ],
+  "title": "Interreligiöse Freizeitkontakte: beide Perspektiven",
+  "main_chart": {
+   "kind": "distribution",
+   "rows": [
+    {
+     "label": "Alle Befragten",
+     "items": "all"
+    }
+   ]
+  }
+ },
+ "rm2015_freizeit_muslime": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Alle Befragten",
+    "items": "all"
+   }
+  ]
+ },
+ "rm2023_solidaritaet_engagement": {
+  "kind": "collection",
+  "related": [
+   "rm2023_solidaritaet_spenden",
+   "rm2023_spenden_religion",
+   "rm2023_solidaritaet_lotto"
+  ],
+  "panels": [
+   "rm2023_solidaritaet_engagement",
+   "rm2023_solidaritaet_spenden",
+   "rm2023_spenden_religion",
+   "rm2023_solidaritaet_lotto"
+  ],
+  "title": "Religion und Solidarität: Engagement und Spenden"
+ },
+ "rm2026_zusammenhalt": {
+  "kind": "collection",
+  "related": [
+   "rm2026_regions",
+   "rm2026_dimensions",
+   "rm2026_history"
+  ],
+  "panels": [
+   "rm2026_zusammenhalt",
+   "rm2026_regions",
+   "rm2026_dimensions",
+   "rm2026_history"
+  ],
+  "title": "Zusammenhalt nach Religionszugehörigkeit, Regionen und Zeitverlauf · 2026"
+ },
+ "rm2023_pandemie_deutung": {
+  "kind": "collection",
+  "related": [
+   "rm2023_pandemie_bereiche",
+   "rm2023_pandemie_religion",
+   "rm2023_pandemie_praxis"
+  ],
+  "panels": [
+   "rm2023_pandemie_deutung",
+   "rm2023_pandemie_bereiche",
+   "rm2023_pandemie_religion",
+   "rm2023_pandemie_praxis"
+  ],
+  "title": "Religion und Pandemie: Deutung, Hilfe und religiöse Praxis"
+ },
+ "kmu6_verbundenheit": {
+  "kind": "collection",
+  "related": [
+   "kmu6_wandel",
+   "kmu6_islam_praxis",
+   "kmu6_flucht_praxis"
+  ],
+  "panels": [
+   "kmu6_verbundenheit",
+   "kmu6_wandel",
+   "kmu6_islam_praxis",
+   "kmu6_flucht_praxis"
+  ],
+  "title": "KMU 6: Kirchenbindung, Praxis und Einstellungen zu Islam und Flucht"
+ },
+ "rm2013_religiositaet": {
+  "kind": "collection",
+  "related": [
+   "rm2013_praxis",
+   "rm2013_wichtigkeit",
+   "rm2013_synkretismus",
+   "rm2013_dogmatismus"
+  ],
+  "panels": [
+   "rm2013_religiositaet",
+   "rm2013_praxis",
+   "rm2013_wichtigkeit",
+   "rm2013_synkretismus",
+   "rm2013_dogmatismus"
+  ],
+  "title": "Religiosität, Praxis und Überzeugungen · 2013"
+ },
+ "rm2023_religiositaet": {
+  "kind": "collection",
+  "related": [
+   "rm2023_spiritualitaet",
+   "rm2023_gottesglaube",
+   "rm2023_praxis"
+  ],
+  "panels": [
+   "rm2023_religiositaet",
+   "rm2023_spiritualitaet",
+   "rm2023_gottesglaube",
+   "rm2023_praxis"
+  ],
+  "title": "Religiosität, Spiritualität, Gottesglaube und Praxis · 2023"
+ },
+ "bosch2025_religion": {
+  "kind": "collection",
+  "related": [
+   "bosch2025_nachbarn",
+   "bosch2025_migration_distanz"
+  ],
+  "panels": [
+   "bosch2025_religion",
+   "bosch2025_nachbarn",
+   "bosch2025_migration_distanz"
+  ],
+  "title": "Vielfaltsbarometer: Religion, Nachbarschaft und Familie"
+ },
+ "konid_gewalt": {
+  "kind": "collection",
+  "related": [
+   "konid_verfassung",
+   "konid_autoritaet"
+  ],
+  "panels": [
+   "konid_gewalt",
+   "konid_verfassung",
+   "konid_autoritaet"
+  ],
+  "title": "Religiöse Überzeugungen: Gewalt, Verfassung und politische Autorität"
+ },
+ "rm2017_europa_arbeitslos": {
+  "kind": "collection",
+  "related": [
+   "rm2017_europa_vollzeit",
+   "rm2017_europa_sprache"
+  ],
+  "panels": [
+   "rm2017_europa_arbeitslos",
+   "rm2017_europa_vollzeit",
+   "rm2017_europa_sprache"
+  ],
+  "title": "Muslime in Europa: Erwerbsstatus und Sprache"
+ },
+ "rm2017_europa_kontakte": {
+  "kind": "collection",
+  "related": [
+   "rm2017_europa_freunde"
+  ],
+  "panels": [
+   "rm2017_europa_kontakte",
+   "rm2017_europa_freunde"
+  ],
+  "title": "Muslime in Europa: Kontakte und Freundeskreise"
+ },
+ "rm2017_europa_verbundenheit": {
+  "kind": "collection",
+  "related": [
+   "rm2017_europa_diskriminierungsfrei",
+   "rm2017_europa_hochreligioes"
+  ],
+  "panels": [
+   "rm2017_europa_verbundenheit",
+   "rm2017_europa_diskriminierungsfrei",
+   "rm2017_europa_hochreligioes"
+  ],
+  "title": "Muslime in Europa: Zugehörigkeit, Diskriminierung und Religiosität"
  }
 }

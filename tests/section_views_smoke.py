@@ -59,9 +59,20 @@ try:
             for value in page.eval_on_selector_all('#survey-select option', 'els=>els.map(e=>e.value)'):
                 page.select_option('#survey-select', value)
                 block = page.evaluate('n=>window.ATLAS_SURVEY_ITEMS.blocks[Number(n)]', value)
-                assert page.locator('#survey-blocks table tbody tr').count() >= len(block['items'])
+                sources = page.evaluate('''b=>{
+                    const all=window.ATLAS_SURVEY_ITEMS.blocks,seen=new Set();
+                    const visit=b=>{
+                        if(seen.has(b.block))return [];
+                        seen.add(b.block);
+                        return [b,...(b.chart?.related||[]).flatMap(id=>visit(all.find(x=>x.block===id)))];
+                    };
+                    return visit(b);
+                }''', block)
+                assert page.locator('#survey-blocks table tbody tr').count() == sum(len(b['items']) for b in sources), block['block']
                 kind = block.get('chart', {}).get('kind')
-                if kind == 'distribution':
+                if kind == 'collection':
+                    assert page.locator('#survey-blocks .survey-panel').count() == len(block['chart']['panels'])
+                elif kind == 'distribution':
                     assert page.locator('#survey-blocks .survey-stack').count() == len(block['chart']['rows'])
                 elif kind == 'time':
                     assert page.locator('#survey-blocks .survey-time circle').count() == len(block['items'])*(1+len(block['chart'].get('related', [])))
@@ -75,7 +86,7 @@ try:
                 if block['block'].startswith('evs2017_'):
                     assert page.locator('#survey-blocks table th').filter(has_text='Gültige Antworten').count() == 0
                     assert all(i['source_kind'] == 'published_table' for i in block['items'])
-                    if len({i['question_ref'] for i in block['items']}) > 1:
+                    if kind != 'collection' and len({i['question_ref'] for i in block['items']}) > 1:
                         assert 'Fragen ' not in page.locator('#survey-blocks .survey-meta').inner_text()
                     checks += 2
                 assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value

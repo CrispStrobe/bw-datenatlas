@@ -367,3 +367,14 @@ Zugehörigkeit. Alle neuen Werte haben Deutschlandbezug, keine BW-Untergruppen.
 `inputs/survey-charts.json` legt Antwortverteilungen, gemeinsame Vergleiche und
 Zeitreihen ausdrücklich fest. Nicht ausgewiesene Antworten werden nicht ergänzt;
 gerundete Summen knapp über 100 werden nur für die Darstellung angepasst.
+
+### Zusammengeführte Befragungsansichten (v0.49.0)
+
+90 Quellenblöcke mit 526 Werten sind in 38 auswählbaren Ansichten gebündelt
+(zuvor 87). Gemeinsame Vergleichsgruppen erscheinen mit festen Farben für
+Jahre, Fragen oder Perspektiven. Unterschiedliche Stichproben und Skalen
+bleiben in aufklappbaren Teilgrafiken getrennt. Die gemeinsame Tabelle
+enthält alle zugehörigen Quellenblöcke mit ihren jeweiligen Fallzahlen,
+Erhebungszeiten und Fundstellen. Die Zoomansicht öffnet auch Teilgrafiken
+und Methodik. Der Vergleich 2012/2014 verwendet zwei farbige Balken je
+Aussage; er bleibt ein Vergleich unabhängiger Querschnitte.

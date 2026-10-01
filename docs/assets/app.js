@@ -1944,6 +1944,7 @@ function renderReportFindings(){
 }
 
 // Survey chart encodings are explicit metadata, never guessed from translated labels.
+const surveySeriesColors=['#216b7a','#b57935','#76578c','#4e8567','#955a36'];
 const surveyColors=['#216b7a','#529aa4','#b9c6c9','#c89954','#955a36'];
 function surveyDistribution(label,segments){
  const sum=segments.reduce((n,s)=>n+s.value,0),scale=Math.max(100,sum);
@@ -1965,8 +1966,36 @@ function surveyTimeChart(items,otherSeries=[]){
   +otherSeries.map((series,n)=>'<polyline fill="none" stroke="'+surveyColors[n+3]+'" stroke-width="3" stroke-dasharray="6 3" points="'+series.items.map(i=>x(Number(i.label))+','+y(i.value)).join(' ')+'"/>'+series.items.map(i=>'<circle cx="'+x(Number(i.label))+'" cy="'+y(i.value)+'" r="4" fill="'+surveyColors[n+3]+'"/><text x="'+x(Number(i.label))+'" y="'+(y(i.value)+20)+'" text-anchor="middle">'+esc(pf.format(i.value))+'</text>').join('')).join('')
   +points.map(p=>'<circle cx="'+x(p.year)+'" cy="'+y(p.value)+'" r="5" fill="#216b7a"/><text x="'+x(p.year)+'" y="'+(y(p.value)-13)+'" text-anchor="middle">'+esc(pf.format(p.value))+'</text><text x="'+x(p.year)+'" y="252" text-anchor="middle">'+p.year+'</text>').join('')+'</svg>';
 }
+function surveySources(b,D,seen=new Set()){
+ if(seen.has(b.block))return [];
+ seen.add(b.block);
+ return [b,...(b.chart?.related||[]).flatMap(id=>surveySources(D.blocks.find(other=>other.block===id),D,seen))];
+}
+function surveyMetadata(b){
+ const first=b.items[0];
+ return [t(b.scope||''),first.study,t(first.population),
+  new Set(b.items.map(i=>i.base_n)).size===1&&first.base_n
+   ?tf('Studienstichprobe: {0} Befragte',integer(first.base_n)):t('Fallzahlen und Erhebungszeiten siehe Tabelle'),
+  new Set(b.items.map(i=>i.field_period)).size===1?first.field_period:null,
+  first.question_ref&&new Set(b.items.map(i=>i.question_ref)).size===1?tf('Fragen {0}',first.question_ref):null].filter(Boolean).join(' · ');
+}
+function surveyValue(i){return i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value);}
+function surveyEvidence(b,D){
+ const sources=surveySources(b,D);
+ return sources.map(source=>'<details class="compact-details survey-evidence"><summary>'+esc(t('Methode und Grenzen'))+(sources.length>1?' · '+esc(t(source.title)):'')+'</summary><p class="tiny">'+esc(surveyMetadata(source))+'</p>'+(source.note?'<div class="notice warning survey-block-note">'+esc(t(source.note))+'</div>':'')
+  +'<p class="source-note">'+[...new Map(source.items.map(i=>[i.source_url+'|'+i.source_locator,i])).values()].map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_title)+' · '+esc(i.source_locator||'')+'</a>').join(' · ')+'</p></details>').join('');
+}
 function surveyBars(b,D){
  const chart=b.chart;
+ if(chart?.kind==='collection')return chart.panels.map((id,n)=>{
+  const source=D.blocks.find(other=>other.block===id);
+  const panel=id===b.block?{...source,chart:chart.main_chart}:source;
+  return '<details class="survey-panel" data-block="'+esc(id)+'"'+(n===0?' open':'')+'><summary>'+esc(t(panel.chart?.title||source.title))+'</summary><p class="tiny survey-meta">'+esc(surveyMetadata(source))+'</p>'
+   +(source.note?'<div class="notice warning survey-block-note">'+esc(t(source.note))+'</div>':'')+surveyBars(panel,D)+surveyEvidence(panel,D)+'</details>';
+ }).join('');
+ if(chart?.kind==='paired')return chart.rows.map(row=>'<div class="survey-comparison"><strong>'+esc(t(row.label))+'</strong>'+row.items.map((index,n)=>{
+  const item=b.items[index];return '<div class="bar-row"><div class="bar-name"><i class="survey-series-dot" style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+item.value+'%;background:'+surveySeriesColors[n]+'"></div></div><div class="bar-value">'+esc(surveyValue(item))+'</div></div>';
+ }).join('')+'</div>').join('');
  if(chart?.kind==='distribution')return chart.rows.map(r=>surveyDistribution(r.label,r.segments)).join('');
  if(chart?.kind==='time'){
   const related=(chart.related||[]).map(id=>D.blocks.find(other=>other.block===id));
@@ -1974,7 +2003,7 @@ function surveyBars(b,D){
  }
  if(chart?.kind==='compare'){
   const sources=[b,...chart.related.map(id=>D.blocks.find(other=>other.block===id))];
-  return b.items.map((i,k)=>'<div class="survey-comparison"><strong>'+esc(t(i.label))+'</strong>'+sources.map((source,n)=>'<div class="bar-row"><div class="bar-name">'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+source.items[k].value+'%;background:'+surveyColors[n]+'"></div></div><div class="bar-value">'+esc(pct(source.items[k].value))+'</div></div>').join('')+'</div>').join('');
+  return b.items.map((i,k)=>'<div class="survey-comparison"><strong>'+esc(t(chart.groups?.[k]||i.label))+'</strong>'+sources.map((source,n)=>'<div class="bar-row"><div class="bar-name"><i class="survey-series-dot" style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+source.items[k].value+'%;background:'+surveySeriesColors[n]+'"></div></div><div class="bar-value">'+esc(pct(source.items[k].value))+'</div></div>').join('')+'</div>').join('');
  }
  const max=b.items.every(i=>['percent','index'].includes(i.unit)&&i.value<=100)?100:Math.max(...b.items.map(i=>i.value));
  return '<div class="horizontal-bars">'+b.items.map(i=>'<div class="bar-row"><div class="bar-name">'+esc(t(i.label))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+(100*i.value/max).toFixed(1)+'%;background:#216b7a"></div></div><div class="bar-value">'+esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value))+'</div></div>'
@@ -1983,9 +2012,8 @@ function surveyBars(b,D){
 function openSurveyZoom(b,D){
  const dialog=$('chart-zoom'),body=$('chart-zoom-body');
  $('chart-zoom-title').textContent=t(b.chart?.title||b.title);
- body.innerHTML='<p class="tiny">'+esc($('survey-blocks').querySelector('.survey-meta').textContent)+'</p>'+surveyBars(b,D)+(b.note?'<p class="notice warning">'+esc(t(b.note))+'</p>':'')
-  +'<p>'+esc(t('Fundstelle'))+': '+b.items.map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_locator||i.source_title)+'</a>').join(' · ')+'</p>';
- body.querySelectorAll('.survey-item-detail').forEach(detail=>{detail.open=true;});
+ body.innerHTML='<p class="tiny">'+esc(b.chart?.kind==='collection'?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'+surveyBars(b,D)+(b.chart?.kind==='collection'?'':surveyEvidence(b,D));
+ body.querySelectorAll('details').forEach(detail=>{detail.open=true;});
  dialog.showModal();
 }
 function renderSurveyItems(){
@@ -2025,35 +2053,28 @@ function renderSurveyItems(){
  }
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
  host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
-  const tableItems=[b,...(b.chart?.related||[]).map(id=>D2.blocks.find(other=>other.block===id))].flatMap((source,n)=>source.items.map(i=>({...i,label:b.chart?.related?b.chart.series[n]+': '+i.label:i.label})));
-  const erste=b.items[0];
+  const sources=surveySources(b,D2);
+  const tableItems=sources.flatMap(source=>source.items.map(i=>({...i,blockTitle:source.title})));
+  const combined=sources.length>1;
   const hasValidN=tableItems.some(i=>i.valid_n!=null);
+  const isCollection=b.chart?.kind==='collection';
   return '<h4 class="survey-block-title">'+esc(t(b.chart?.title||b.title))+'</h4><button type="button" id="survey-enlarge" class="button button-light">'+esc(t('Vergrößern und Antwortstufen ansehen'))+'</button>'
-   // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
-   // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
-   +'<p class="tiny survey-meta">'+esc([b.scope?t(b.scope):null,erste.study,t(erste.population),
-       new Set(b.items.map(i=>i.base_n)).size===1&&erste.base_n
-        ?tf('Studienstichprobe: {0} Befragte',integer(erste.base_n))
-        :t('Fallzahlen und Erhebungszeiten siehe Tabelle'),
-       new Set(b.items.map(i=>i.field_period)).size===1?erste.field_period:null,
-       erste.question_ref&&new Set(b.items.map(i=>i.question_ref)).size===1
-        ?tf('Fragen {0}',erste.question_ref):null]
-       .filter(Boolean).join(' · '))+'</p>'
-   +(b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
+   +'<p class="tiny survey-meta">'+esc(isCollection?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'
+   +(!isCollection&&b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
    +surveyBars(b,D2)
+   +(!isCollection&&combined?surveyEvidence(b,D2):'')
    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))
    +'</summary><div class="table-scroll">'+table(
-    [t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),
+    [...(combined?[t('Befragungsergebnis')]:[]),t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),
      ...(hasValidN?[t('Gültige Antworten')]:[]),t('Erhebungszeitraum'),t('Fundstelle')],
-    tableItems.map(i=>[esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
+    tableItems.map(i=>[...(combined?[esc(t(i.blockTitle))]:[]),esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
      esc(t(i.population)),i.base_n?integer(i.base_n):esc(t('nicht ausgewiesen')),
      ...(hasValidN?[i.valid_n!=null?integer(i.valid_n):esc(t('nicht ausgewiesen'))]:[]),
      esc(i.field_period),'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
       +esc(i.source_locator||i.source_title)+'</a>']))+'</div></details>';
  }).join('');
  $('survey-enlarge')?.addEventListener('click',()=>openSurveyZoom(D2.blocks[gewaehlt],D2));
- const quellen=[...new Map((D2.blocks[gewaehlt]||{items:[]}).items
-   .map(i=>[i.source_url,i])).values()];
+ const quellen=[...new Map(surveySources(D2.blocks[gewaehlt],D2).flatMap(b=>b.items).map(i=>[i.source_url+'|'+i.source_locator,i])).values()];
  $('survey-note').innerHTML=esc(t(D2.not_in_any_model))+' '
   +quellen.map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
     +esc(i.source_title)+(i.source_locator?', '+esc(i.source_locator):'')+'</a>')
