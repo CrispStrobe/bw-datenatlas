@@ -261,7 +261,7 @@ und Quellenverzeichnissen ab. Die bisherigen Sprunglinks bleiben erreichbar.
 Die Befragungsauswahl gruppiert bundesweite Ergebnisse zusätzlich nach Studie.
 
 `inputs/befragungsitems.csv` enthält die abgelesenen Werte,
-`inputs/evs-items.csv` die aus Mikrodaten berechneten Aggregate, jeweils einschließlich
+`inputs/evs-items.csv` die aus öffentlichen Tabellen übernommenen Werte, jeweils einschließlich
 Grundgesamtheit, Erhebungszeitraum, Einheit und genauer Fundstelle. Abbildungen aus
 den Religionsmonitor-Publikationen 2013, 2015, 2019, 2023, 2024, 2025 und 2026 wurden auch visuell
 geprüft. Unbekannte Untergruppen-Fallzahlen bleiben leer; Gesamtfallzahlen werden
@@ -303,10 +303,10 @@ berichtigt.
 Aus dem Vielfaltsbarometer 2025 sind ausgewählte BW- und Bundesvergleiche der
 Religions- und Vielfaltsakzeptanz sowie Fragen zu öffentlicher Religion und
 Nachbarn aufgenommen. Der Methodenwechsel von Telefon (2018, Publikation 2019)
-zu Online-Panel (2025) steht an den Vergleichswerten. Die 17 EVS-Werte werden
+zu Online-Panel (2025) steht an den Vergleichswerten. Die 22 EVS-Werte werden
 aus den öffentlich zugänglichen Deutschlandtabellen des EVS/GESIS-Variablenberichts
 2022/05 übernommen. Tabellen-S. und PDF-S. stehen an jedem Wert. Die Auswahl besteht
-aus einzelnen Kategorien und drei ausdrücklich bezeichneten Kategoriensummen.
+aus einzelnen Kategorien und acht ausdrücklich bezeichneten Kategoriensummen.
 Gewichtung und Ausschluss fehlender Antworten folgen den veröffentlichten Tabellen;
 gerundete Werte werden nicht nachträglich normalisiert. Die Studienstichprobe von
 2.170 Personen ist von den gewichteten Häufigkeiten zu unterscheiden. Ungewichtete
@@ -356,3 +356,14 @@ Aus der EKD-Studie „Zwischen Nächstenliebe und Abgrenzung“ werden vier ausg
 Einstellungsvergleiche verwendet (Erhebung 2020, Publikation 2022). FRA EU-MIDIS II
 ergänzt berichtete Diskriminierung der in Deutschland befragten Herkunftsgruppen;
 dies ist weder eine BW-Erhebung noch eine Stichprobe sämtlicher Muslime.
+
+
+Zusätzliche Befragungswerte (Oktober 2026): KMU 6 verbindet Kirchenpraxis mit
+Einstellungen zu Islam und Flucht; das Vielfaltsbarometer ergänzt soziale Distanz
+in Familie und Nachbarschaft. Die Leipziger Autoritarismus-Studien liefern eigene
+Ost-/West-Zeitreihen 2014–2024. Die FES-Mitte-Studie 2024/25 bleibt wegen anderer
+Methoden getrennt. EVS ergänzt fünf öffentlich tabellierte Kriterien nationaler
+Zugehörigkeit. Alle neuen Werte haben Deutschlandbezug, keine BW-Untergruppen.
+`inputs/survey-charts.json` legt Antwortverteilungen, gemeinsame Vergleiche und
+Zeitreihen ausdrücklich fest. Nicht ausgewiesene Antworten werden nicht ergänzt;
+gerundete Summen knapp über 100 werden nur für die Darstellung angepasst.

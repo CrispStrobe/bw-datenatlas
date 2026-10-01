@@ -25,6 +25,13 @@ try:
             assert len(ids) == len(set(ids)), 'duplicate IDs'
             assert page.eval_on_selector_all('main>section[id]', 'els=>els.map(e=>e.id)') == [
                 'karte', 'herkunft', 'befragungen', 'grundlagen']
+            assert page.locator('#population-view').input_value() == 'origins'
+            page.select_option('#population-view', 'states')
+            page.locator('nav a[href="#herkunft"]').click()
+            page.wait_for_function("document.querySelector('#population-view').value==='origins'")
+            assert page.locator('#population-view').input_value() == 'origins'
+            assert page.locator('#view-origins').is_visible()
+            checks += 3
             for field in ('population-view', 'basis-view'):
                 selected = page.locator('#' + field).input_value()
                 section = page.locator('#' + field).locator('xpath=ancestor::section')
@@ -51,9 +58,20 @@ try:
             page.select_option('#basis-view', 'bases')
             for value in page.eval_on_selector_all('#survey-select option', 'els=>els.map(e=>e.value)'):
                 page.select_option('#survey-select', value)
-                assert page.locator('#survey-blocks .bar-row').count() > 0
-                assert page.locator('#survey-blocks table tbody tr').count() == page.locator('#survey-blocks .bar-row').count()
                 block = page.evaluate('n=>window.ATLAS_SURVEY_ITEMS.blocks[Number(n)]', value)
+                assert page.locator('#survey-blocks table tbody tr').count() >= len(block['items'])
+                kind = block.get('chart', {}).get('kind')
+                if kind == 'distribution':
+                    assert page.locator('#survey-blocks .survey-stack').count() == len(block['chart']['rows'])
+                elif kind == 'time':
+                    assert page.locator('#survey-blocks .survey-time circle').count() == len(block['items'])*(1+len(block['chart'].get('related', [])))
+                else:
+                    assert page.locator('#survey-blocks .bar-row').count() >= len(block['items'])
+                page.locator('#survey-enlarge').click()
+                assert page.locator('#chart-zoom').evaluate('el=>el.open')
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                page.locator('#chart-zoom-close').click()
+                checks += 3
                 if block['block'].startswith('evs2017_'):
                     assert page.locator('#survey-blocks table th').filter(has_text='Gültige Antworten').count() == 0
                     assert all(i['source_kind'] == 'published_table' for i in block['items'])

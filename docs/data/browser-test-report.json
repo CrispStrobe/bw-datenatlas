@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 360,
+  "check_count": 361,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -1119,7 +1119,11 @@
       "passed": true
     },
     {
-      "name": "the four-point scale is shown beside the summed bar",
+      "name": "the four-point scale can be opened as a segmented bar",
+      "passed": true
+    },
+    {
+      "name": "the survey zoom visualises response categories",
       "passed": true
     },
     {

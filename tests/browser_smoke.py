@@ -947,8 +947,14 @@ with sync_playwright() as pw:
     page.wait_for_function("document.querySelectorAll("
                            "'#survey-blocks .bar-row').length===3")
     vielfalt=page.locator('#befragungen').inner_text()
-    check('the four-point scale is shown beside the summed bar',
-          'voll und ganz 14' in vielfalt or 'strongly agree 14' in vielfalt)
+    page.locator('#survey-blocks .survey-item-detail summary').first.click()
+    scale = page.locator('#survey-blocks .survey-key').first.inner_text()
+    check('the four-point scale can be opened as a segmented bar',
+          '14' in scale and '30' in scale and '31' in scale and '19' in scale)
+    page.locator('#survey-enlarge').click()
+    check('the survey zoom visualises response categories',
+          page.locator('#chart-zoom-body .survey-stack').count() == 3)
+    page.locator('#chart-zoom-close').click()
     check('only the selected block is drawn',
           page.locator('#survey-blocks .bar-row').count()==3)
     # Zwei Landesumfragen mit verschiedenen Grundgesamtheiten dürfen nicht als

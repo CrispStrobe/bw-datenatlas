@@ -87,6 +87,37 @@ def main() -> None:
             **({'source_kind': r['source_kind']} if r.get('source_kind') else {}),
         })
 
+    chart_path = ROOT / 'inputs/survey-charts.json'
+    charts = json.loads(chart_path.read_text(encoding='utf-8'))
+    for key, chart in charts.items():
+        if key not in bloecke:
+            raise ValueError(f'Unknown chart block: {key}')
+        for row in chart.get('rows', []):
+            if 'items' in row:
+                indices = range(len(bloecke[key]['items'])) if row['items'] == 'all' else row['items']
+                row['segments'] = [
+                    {'label': bloecke[key]['items'][i]['label'].split(': ', 1)[-1],
+                     'value': bloecke[key]['items'][i]['value']} for i in indices]
+        bloecke[key]['chart'] = chart
+    # These detail strings encode explicitly published categories. Preserve them
+    # as structured segments; never infer unreported answers from agreement.
+    import re
+    for b in bloecke.values():
+        for item in b['items']:
+            detail = item.get('detail') or ''
+            parts = []
+            if detail.startswith('Zustimmung:') and 'Ablehnung:' in detail:
+                parts = [(label.strip(), float(value)) for value, label in
+                         re.findall(r'(\d+(?:[.,]\d+)?) % ([^+;]+)', detail)]
+            elif b['block'] == 'bw_religioese_vielfalt':
+                parts = [(label.strip(), float(value)) for label, value in
+                         re.findall(r'([^·]+?) (\d+)\s*(?:·|$)', detail)]
+            elif re.match(r'^(Eher hilfreich|Arbeitslos|Sehr wichtig|Eher zustimmend):', detail):
+                parts = [(label.strip(), float(value.replace(',', '.'))) for label, value in
+                         re.findall(r'([^;]+): (\d+(?:[.,]\d+)?) %', detail)]
+            if parts:
+                item['response_distribution'] = [{'label': label, 'value': value} for label, value in parts]
+
     doc = {
         'type': 'survey_items',
         'schema_version': '1.2',

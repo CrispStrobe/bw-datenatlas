@@ -66,7 +66,7 @@
       "url": "https://access.gesis.org/dbk/65190",
       "sha256": "8197a8d0a9f1fc8d5a0a66823ea27b8fa9f89137004c54b751a108594c63212a",
       "reviewed_at": "2026-10-01",
-      "review_scope": "Ausgewählte Deutschlandzeilen visuell geprüft: v6, v27–29, v36, v51, v54, v56–57, v62 und v64. Ausschließlich veröffentlichte Tabellenwerte; keine erneute Mikrodatenanalyse.",
+      "review_scope": "Ausgewählte Deutschlandzeilen visuell geprüft: v6, v27–29, v36, v51, v54, v56–57, v62 und v64. Ausschließlich veröffentlichte Tabellenwerte; keine erneute Mikrodatenanalyse.; Q53 v189–193, S. 581, 583, 585, 587, 589 visuell",
       "reviewed_pages": [
         21,
         105,
@@ -79,14 +79,20 @@
         243,
         245,
         255,
-        260
+        260,
+        581,
+        583,
+        585,
+        587,
+        589
       ],
       "used_blocks": [
         "evs2017_gottesvorstellungen",
         "evs2017_nachbarn",
         "evs2017_praxis",
         "evs2017_religion",
-        "evs2017_vertrauen"
+        "evs2017_vertrauen",
+        "evs2017_zugehoerigkeit"
       ],
       "role": "source of published table aggregates"
     },
@@ -211,6 +217,27 @@
       "reviewed_at": "2026-10-01",
       "review_scope": "Abschnitt „Rassismus bleibt zentrales Tatmotiv“",
       "role": "Öffentliche HTML-Veröffentlichung"
+    },
+    {
+      "file": "kmu6-2024.pdf",
+      "url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+      "sha256": "8621f65bbbcfd72e6387edbc474ae475e6da62566be34d707387036725a4c877",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Abbildung 31.4, S. 586 visuell; Gruppenbildung S. 579–582"
+    },
+    {
+      "file": "las2024.pdf",
+      "url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+      "sha256": "7b7ac42107b20e8a8f403ab16b89d2e17f3da12218da956b7f47f31510fc5a22",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Tabelle 12, S. 67 visuell; Methoden S. 29–33"
+    },
+    {
+      "file": "fes-mitte2025.pdf",
+      "url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+      "sha256": "d363bd6c977a2284c96c40452d99f63d7dd55c6c067cf270ac91dc3c411d967a",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Abbildung 4.2, S. 132–133 visuell; Methoden S. 58–64"
     }
   ],
   "selection": "Religion und Vielfalt; ausgewählte BW-Vergleiche und bundesweite Einstellungen. Keine vollständige Übernahme der Studien."

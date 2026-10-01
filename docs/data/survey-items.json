@@ -20,7 +20,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 477,
+ "count": 526,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -270,7 +270,56 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Ohne Migrationshintergrund",
+      "items": [
+       0,
+       2,
+       4
+      ],
+      "segments": [
+       {
+        "label": "eher verbessert",
+        "value": 34.0
+       },
+       {
+        "label": "eher verschlechtert",
+        "value": 11.0
+       },
+       {
+        "label": "nicht viel verändert",
+        "value": 51.0
+       }
+      ]
+     },
+     {
+      "label": "Mit Migrationshintergrund",
+      "items": [
+       1,
+       3,
+       5
+      ],
+      "segments": [
+       {
+        "label": "eher verbessert",
+        "value": 35.0
+       },
+       {
+        "label": "eher verschlechtert",
+        "value": 15.0
+       },
+       {
+        "label": "nicht viel verändert",
+        "value": 42.0
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "block": "bw_religioese_vielfalt",
@@ -295,7 +344,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 14.0
+      },
+      {
+       "label": "eher zu",
+       "value": 30.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 31.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 19.0
+      }
+     ]
     },
     {
      "label": "Religiöse Bekundungen und Symbole wie Kruzifix, Kopftuch oder Kippah haben in der Öffentlichkeit nichts verloren.",
@@ -314,7 +381,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 23.0
+      },
+      {
+       "label": "eher zu",
+       "value": 20.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 30.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 22.0
+      }
+     ]
     },
     {
      "label": "Gesetzliche Feiertage sollte es in Deutschland auch zu Festen anderer Religionen geben.",
@@ -333,7 +418,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 8.0
+      },
+      {
+       "label": "eher zu",
+       "value": 19.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 37.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 32.0
+      }
+     ]
     }
    ]
   },
@@ -495,7 +598,66 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Im Land",
+      "items": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "segments": [
+       {
+        "label": "sehr gut gelungen",
+        "value": 3.0
+       },
+       {
+        "label": "gut gelungen",
+        "value": 46.0
+       },
+       {
+        "label": "weniger gut gelungen",
+        "value": 35.0
+       },
+       {
+        "label": "überhaupt nicht gelungen",
+        "value": 3.0
+       }
+      ]
+     },
+     {
+      "label": "Am Wohnort",
+      "items": [
+       4,
+       5,
+       6,
+       7
+      ],
+      "segments": [
+       {
+        "label": "sehr gut gelungen",
+        "value": 13.0
+       },
+       {
+        "label": "gut gelungen",
+        "value": 51.0
+       },
+       {
+        "label": "weniger gut gelungen",
+        "value": 20.0
+       },
+       {
+        "label": "überhaupt nicht gelungen",
+        "value": 4.0
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "block": "bw_kopftuch_2012",
@@ -802,7 +964,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher zustimmend",
+       "value": 13.0
+      },
+      {
+       "label": "voll zustimmend",
+       "value": 7.0
+      }
+     ]
     },
     {
      "label": "Pandemie als Strafe Gottes",
@@ -821,7 +993,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher zustimmend",
+       "value": 7.0
+      },
+      {
+       "label": "voll zustimmend",
+       "value": 3.0
+      }
+     ]
     }
    ]
   },
@@ -848,7 +1030,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 42.0
+      },
+      {
+       "label": "eher",
+       "value": 41.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 11.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 6.0
+      }
+     ]
     },
     {
      "label": "Einzelne Handlungen werden der ganzen Gruppe zugeschrieben",
@@ -867,7 +1067,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 41.0
+      },
+      {
+       "label": "eher",
+       "value": 44.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 12.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 4.0
+      }
+     ]
     },
     {
      "label": "Muslime werden häufig benachteiligt oder angefeindet",
@@ -886,7 +1104,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 18.0
+      },
+      {
+       "label": "eher",
+       "value": 42.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 31.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 9.0
+      }
+     ]
     },
     {
      "label": "Muslime erfahren Rassismus",
@@ -905,7 +1141,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 22.0
+      },
+      {
+       "label": "eher",
+       "value": 47.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 24.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 8.0
+      }
+     ]
     }
    ]
   },
@@ -1255,6 +1509,191 @@
      },
      "source_kind": "published_table"
     }
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Alle Befragten",
+      "items": "all",
+      "segments": [
+       {
+        "label": "Persönlicher Gott",
+        "value": 23.5
+       },
+       {
+        "label": "Höheres Wesen oder geistige Macht",
+        "value": 40.3
+       },
+       {
+        "label": "Unklar, was ich glauben soll",
+        "value": 13.5
+       },
+       {
+        "label": "Kein Gott, höheres Wesen oder geistige Macht",
+        "value": 22.7
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "block": "evs2017_zugehoerigkeit",
+   "title": "EVS: Kriterien nationaler Zugehörigkeit",
+   "note": "Öffentliche Deutschlandtabellen, keine Verarbeitung von Mikrodaten. Gewichtete gültige Prozentwerte mit gweight; sehr und ziemlich wichtig werden aus gerundeten Tabellenwerten addiert. 2.170 ist die Studienstichprobe. Gewichtete Häufigkeiten sind keine ungewichteten gültigen Fallzahlen. Fünf getrennte Fragen dazu, was nach Ansicht der Befragten nötig ist, um wirklich deutsch zu sein: keine addierbaren Kategorien und keine rechtlichen Kriterien. Keine BW-Auswertung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "In Deutschland geboren",
+     "detail": "Sehr wichtig: 16.8 %; ziemlich wichtig: 23.5 %",
+     "value": 40.3,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": 2170,
+     "field_period": "2017–2018",
+     "question_ref": "Q53 / v189",
+     "source_title": "EVS 2017 Germany: öffentlich zugänglicher Variablenbericht",
+     "source_url": "https://access.gesis.org/dbk/65190",
+     "source_locator": "v189, S. 581 (PDF-Seite 633)",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "source_kind": "published_table",
+     "response_distribution": [
+      {
+       "label": "Sehr wichtig",
+       "value": 16.8
+      },
+      {
+       "label": "ziemlich wichtig",
+       "value": 23.5
+      }
+     ]
+    },
+    {
+     "label": "Politische Institutionen und Gesetze respektieren",
+     "detail": "Sehr wichtig: 72 %; ziemlich wichtig: 26.3 %",
+     "value": 98.3,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": 2170,
+     "field_period": "2017–2018",
+     "question_ref": "Q53 / v190",
+     "source_title": "EVS 2017 Germany: öffentlich zugänglicher Variablenbericht",
+     "source_url": "https://access.gesis.org/dbk/65190",
+     "source_locator": "v190, S. 583 (PDF-Seite 635)",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "source_kind": "published_table",
+     "response_distribution": [
+      {
+       "label": "Sehr wichtig",
+       "value": 72.0
+      },
+      {
+       "label": "ziemlich wichtig",
+       "value": 26.3
+      }
+     ]
+    },
+    {
+     "label": "Deutsche Vorfahren",
+     "detail": "Sehr wichtig: 8 %; ziemlich wichtig: 16.2 %",
+     "value": 24.2,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": 2170,
+     "field_period": "2017–2018",
+     "question_ref": "Q53 / v191",
+     "source_title": "EVS 2017 Germany: öffentlich zugänglicher Variablenbericht",
+     "source_url": "https://access.gesis.org/dbk/65190",
+     "source_locator": "v191, S. 585 (PDF-Seite 637)",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "source_kind": "published_table",
+     "response_distribution": [
+      {
+       "label": "Sehr wichtig",
+       "value": 8.0
+      },
+      {
+       "label": "ziemlich wichtig",
+       "value": 16.2
+      }
+     ]
+    },
+    {
+     "label": "Deutsch sprechen",
+     "detail": "Sehr wichtig: 72.3 %; ziemlich wichtig: 26.1 %",
+     "value": 98.4,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": 2170,
+     "field_period": "2017–2018",
+     "question_ref": "Q53 / v192",
+     "source_title": "EVS 2017 Germany: öffentlich zugänglicher Variablenbericht",
+     "source_url": "https://access.gesis.org/dbk/65190",
+     "source_locator": "v192, S. 587 (PDF-Seite 639)",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "source_kind": "published_table",
+     "response_distribution": [
+      {
+       "label": "Sehr wichtig",
+       "value": 72.3
+      },
+      {
+       "label": "ziemlich wichtig",
+       "value": 26.1
+      }
+     ]
+    },
+    {
+     "label": "Deutsche Kultur teilen",
+     "detail": "Sehr wichtig: 21.8 %; ziemlich wichtig: 47.1 %",
+     "value": 68.9,
+     "unit": "percent",
+     "study": "European Values Study 2017",
+     "population": "Wohnbevölkerung Deutschlands ab 18 Jahren",
+     "base_n": 2170,
+     "field_period": "2017–2018",
+     "question_ref": "Q53 / v193",
+     "source_title": "EVS 2017 Germany: öffentlich zugänglicher Variablenbericht",
+     "source_url": "https://access.gesis.org/dbk/65190",
+     "source_locator": "v193, S. 589 (PDF-Seite 641)",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "source_kind": "published_table",
+     "response_distribution": [
+      {
+       "label": "Sehr wichtig",
+       "value": 21.8
+      },
+      {
+       "label": "ziemlich wichtig",
+       "value": 47.1
+      }
+     ]
+    }
    ]
   },
   {
@@ -1343,7 +1782,34 @@
      },
      "source_kind": "published_table"
     }
-   ]
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Alle Befragten",
+      "items": "all",
+      "segments": [
+       {
+        "label": "Vertraue völlig",
+        "value": 5.8
+       },
+       {
+        "label": "Vertraue ziemlich",
+        "value": 57.0
+       },
+       {
+        "label": "Vertraue kaum",
+        "value": 30.8
+       },
+       {
+        "label": "Vertraue gar nicht",
+        "value": 6.4
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "block": "evs2017_praxis",
@@ -1564,6 +2030,252 @@
      }
     }
    ]
+  },
+  {
+   "block": "fes2025_migration",
+   "title": "FES-Mitte: Abwertung von Geflüchteten und Muslimen",
+   "note": "Zustimmung ist die Summe der beiden zustimmenden Stufen, keine Summe mit der mittleren Kategorie. Labels fassen die Aussagen zusammen; der vollständige Wortlaut steht an der Fundstelle. Gültige Prozentwerte ohne fehlende Antworten. 2.001 ist die Studienstichprobe, keine ausgewiesene gültige Item-Fallzahl. Telefonische Festnetz-/Mobilbefragung; 2025 erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet. Keine BW-Auswertung; keine gemeinsame Zeitreihe mit den Leipziger Autoritarismus-Studien.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
+     "detail": null,
+     "value": 30.2,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2024/25",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2001,
+     "field_period": "30.05. bis 04.07.2025",
+     "question_ref": null,
+     "source_title": "FES-Mitte-Studie 2024/25",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+     "source_locator": "Abbildung 4.2, S. 132–133; Methodik S. 58–64",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Zuwanderungsverbot für Muslime",
+     "detail": null,
+     "value": 8.6,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2024/25",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2001,
+     "field_period": "30.05. bis 04.07.2025",
+     "question_ref": null,
+     "source_title": "FES-Mitte-Studie 2024/25",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+     "source_locator": "Abbildung 4.2, S. 132–133; Methodik S. 58–64",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 16.7
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 17.3
+       },
+       {
+        "label": "Teils/teils",
+        "value": 35.8
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 12.6
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 17.6
+       }
+      ]
+     },
+     {
+      "label": "Zuwanderungsverbot für Muslime",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 45.3
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 23.7
+       },
+       {
+        "label": "Teils/teils",
+        "value": 22.4
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 3
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 5.6
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "block": "fes2025_antisemitismus",
+   "title": "FES-Mitte: drei Formen antisemitischer Aussagen",
+   "note": "Zustimmung ist die Summe der beiden zustimmenden Stufen, keine Summe mit der mittleren Kategorie. Labels fassen die Aussagen zusammen; der vollständige Wortlaut steht an der Fundstelle. Gültige Prozentwerte ohne fehlende Antworten. 2.001 ist die Studienstichprobe, keine ausgewiesene gültige Item-Fallzahl. Telefonische Festnetz-/Mobilbefragung; 2025 erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet. Keine BW-Auswertung; keine gemeinsame Zeitreihe mit den Leipziger Autoritarismus-Studien.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Schuldzuweisung an Jüdinnen und Juden für ihre Verfolgung",
+     "detail": null,
+     "value": 5.5,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2024/25",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2001,
+     "field_period": "30.05. bis 04.07.2025",
+     "question_ref": null,
+     "source_title": "FES-Mitte-Studie 2024/25",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+     "source_locator": "Abbildung 4.2, S. 132–133; Methodik S. 58–64",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Unterstellung von Vorteilen durch die NS-Vergangenheit",
+     "detail": null,
+     "value": 14.9,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2024/25",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2001,
+     "field_period": "30.05. bis 04.07.2025",
+     "question_ref": null,
+     "source_title": "FES-Mitte-Studie 2024/25",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+     "source_locator": "Abbildung 4.2, S. 132–133; Methodik S. 58–64",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Antisemitische Ablehnung wegen israelischer Politik",
+     "detail": null,
+     "value": 17.0,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2024/25",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2001,
+     "field_period": "30.05. bis 04.07.2025",
+     "question_ref": null,
+     "source_title": "FES-Mitte-Studie 2024/25",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+     "source_locator": "Abbildung 4.2, S. 132–133; Methodik S. 58–64",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Schuldzuweisung an Jüdinnen und Juden für ihre Verfolgung",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 60.6
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 21.2
+       },
+       {
+        "label": "Teils/teils",
+        "value": 12.7
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 1.8
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 3.7
+       }
+      ]
+     },
+     {
+      "label": "Unterstellung von Vorteilen durch die NS-Vergangenheit",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 44.2
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 21.6
+       },
+       {
+        "label": "Teils/teils",
+        "value": 19.3
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 5.9
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 9
+       }
+      ]
+     },
+     {
+      "label": "Antisemitische Ablehnung wegen israelischer Politik",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 34.8
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 25.8
+       },
+       {
+        "label": "Teils/teils",
+        "value": 22.4
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 7.2
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 9.8
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "block": "fra2017_de_discrimination",
@@ -2575,7 +3287,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 38.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 52.0
+      }
+     ]
     },
     {
      "label": "Wissenschaft",
@@ -2594,7 +3316,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 30.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 55.0
+      }
+     ]
     },
     {
      "label": "Gesundheitssystem",
@@ -2613,7 +3345,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 39.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 42.0
+      }
+     ]
     },
     {
      "label": "Nachbarschaft",
@@ -2632,7 +3374,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 52.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 22.0
+      }
+     ]
     },
     {
      "label": "Politik",
@@ -2651,7 +3403,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 38.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 10.0
+      }
+     ]
     },
     {
      "label": "Religion",
@@ -2670,7 +3432,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 21.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 8.0
+      }
+     ]
     }
    ]
   },
@@ -3472,6 +4244,868 @@
    ]
   },
   {
+   "block": "kmu6_islam_praxis",
+   "title": "KMU 6: Islam und deutsche Gesellschaft nach Kirchenpraxis",
+   "note": "KMU 6, Erhebung 2022, Auswertungsband 2024. Zwei ausgewählte Praxisgruppen katholischer und evangelischer Kirchenmitglieder, keine vollständige Aufteilung aller Mitglieder. Praktizierende lesen mindestens selten die Bibel, beten mindestens monatlich und besuchen mehrmals jährlich einen Gottesdienst; die Vergleichsgruppe liest nie die Bibel, betet höchstens mehrmals jährlich und besucht höchstens einmal jährlich einen Gottesdienst. Praktizierende sind im Mittel älter. Die Fallzahlen bezeichnen die Gruppen, nicht gültige Antworten je Frage. Zustimmung addiert die beiden zustimmenden Stufen aus gerundeten Werten. Unterschiede belegen keine Wirkung religiöser Praxis; keine BW-Auswertung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Praktizierende Kirchenmitglieder",
+     "detail": null,
+     "value": 36.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 569,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Kaum oder nicht praktizierende Kirchenmitglieder",
+     "detail": null,
+     "value": 37.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 937,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Aus der Kirche Ausgetretene",
+     "detail": null,
+     "value": 31.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 1262,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Weitere Konfessionslose",
+     "detail": null,
+     "value": 29.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 1015,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Praktizierende Kirchenmitglieder",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 24
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 39
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 27
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 9
+       }
+      ]
+     },
+     {
+      "label": "Kaum oder nicht praktizierende Kirchenmitglieder",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 26
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 38
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 29
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 8
+       }
+      ]
+     },
+     {
+      "label": "Aus der Kirche Ausgetretene",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 32
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 37
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 24
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 7
+       }
+      ]
+     },
+     {
+      "label": "Weitere Konfessionslose",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 36
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 35
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 20
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 9
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "block": "kmu6_flucht_praxis",
+   "title": "KMU 6: Zahl Geflüchteter als zu hoch bewertet nach Kirchenpraxis",
+   "note": "KMU 6, Erhebung 2022, Auswertungsband 2024. Zwei ausgewählte Praxisgruppen katholischer und evangelischer Kirchenmitglieder, keine vollständige Aufteilung aller Mitglieder. Praktizierende lesen mindestens selten die Bibel, beten mindestens monatlich und besuchen mehrmals jährlich einen Gottesdienst; die Vergleichsgruppe liest nie die Bibel, betet höchstens mehrmals jährlich und besucht höchstens einmal jährlich einen Gottesdienst. Praktizierende sind im Mittel älter. Die Fallzahlen bezeichnen die Gruppen, nicht gültige Antworten je Frage. Zustimmung addiert die beiden zustimmenden Stufen aus gerundeten Werten. Unterschiede belegen keine Wirkung religiöser Praxis; keine BW-Auswertung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Praktizierende Kirchenmitglieder",
+     "detail": null,
+     "value": 37.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 569,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Kaum oder nicht praktizierende Kirchenmitglieder",
+     "detail": null,
+     "value": 48.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 937,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Aus der Kirche Ausgetretene",
+     "detail": null,
+     "value": 49.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 1262,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Weitere Konfessionslose",
+     "detail": null,
+     "value": 53.0,
+     "unit": "percent",
+     "study": "KMU 6 (2022), Auswertungsband 2024",
+     "population": "Ausgewählte Gruppen nach Kirchenmitgliedschaft und christlicher Praxis",
+     "base_n": 1015,
+     "field_period": "14.10. bis 22.12.2022",
+     "question_ref": null,
+     "source_title": "KMU 6 (2022), Auswertungsband 2024",
+     "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+     "source_locator": "Abbildung 31.4, S. 586; Gruppenbildung S. 579–582",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Praktizierende Kirchenmitglieder",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 27
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 36
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 22
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 15
+       }
+      ]
+     },
+     {
+      "label": "Kaum oder nicht praktizierende Kirchenmitglieder",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 24
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 29
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 26
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 22
+       }
+      ]
+     },
+     {
+      "label": "Aus der Kirche Ausgetretene",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 26
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 25
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 24
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 25
+       }
+      ]
+     },
+     {
+      "label": "Weitere Konfessionslose",
+      "segments": [
+       {
+        "label": "Stimme gar nicht zu",
+        "value": 24
+       },
+       {
+        "label": "Stimme eher nicht zu",
+        "value": 23
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 26
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 27
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "block": "las_fremdheit_ost",
+   "title": "LAS: Fremdheitsgefühl durch Muslime · Ostdeutschland 2014–2024",
+   "note": "Veröffentlichte Zustimmungsanteile derselben Frage in sechs unabhängigen Querschnitten. Keine individuelle Einstellungsänderung. 2024: 2.504 Befragte, davon 501 im Osten und 2.003 im Westen; frühere Gruppenfallzahlen werden hier nicht ausgewiesen. Hauptfragebogen schriftlich selbst ausgefüllt nach persönlicher Rekrutierung. Westdeutschland ist keine BW-Auswertung. Nicht mit den FES-Mitte-Studien zu einer Zeitreihe verbinden: Verfahren und Gewichtung unterscheiden sich.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "2014",
+     "detail": null,
+     "value": 33.5,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2014",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2016",
+     "detail": null,
+     "value": 50.0,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2016",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2018",
+     "detail": null,
+     "value": 54.4,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2018",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2020",
+     "detail": null,
+     "value": 55.1,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2020",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2022",
+     "detail": null,
+     "value": 42.7,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2022",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2024",
+     "detail": null,
+     "value": 48.7,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": 501,
+     "field_period": "2024",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "time",
+    "related": [
+     "las_fremdheit_west"
+    ],
+    "title": "LAS: Fremdheitsgefühl durch Muslime · Ost und West 2014–2024",
+    "series": [
+     "Ostdeutschland",
+     "Westdeutschland"
+    ]
+   }
+  },
+  {
+   "block": "las_fremdheit_west",
+   "title": "LAS: Fremdheitsgefühl durch Muslime · Westdeutschland 2014–2024",
+   "note": "Veröffentlichte Zustimmungsanteile derselben Frage in sechs unabhängigen Querschnitten. Keine individuelle Einstellungsänderung. 2024: 2.504 Befragte, davon 501 im Osten und 2.003 im Westen; frühere Gruppenfallzahlen werden hier nicht ausgewiesen. Hauptfragebogen schriftlich selbst ausgefüllt nach persönlicher Rekrutierung. Westdeutschland ist keine BW-Auswertung. Nicht mit den FES-Mitte-Studien zu einer Zeitreihe verbinden: Verfahren und Gewichtung unterscheiden sich.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "2014",
+     "detail": null,
+     "value": 44.4,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2014",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2016",
+     "detail": null,
+     "value": 49.2,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2016",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2018",
+     "detail": null,
+     "value": 55.1,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2018",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2020",
+     "detail": null,
+     "value": 44.8,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2020",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2022",
+     "detail": null,
+     "value": 36.6,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2022",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2024",
+     "detail": null,
+     "value": 48.2,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": 2003,
+     "field_period": "2024",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "time"
+   }
+  },
+  {
+   "block": "las_zuwanderung_ost",
+   "title": "LAS: Zuwanderungsverbot für Muslime · Ostdeutschland 2014–2024",
+   "note": "Veröffentlichte Zustimmungsanteile derselben Frage in sechs unabhängigen Querschnitten. Keine individuelle Einstellungsänderung. 2024: 2.504 Befragte, davon 501 im Osten und 2.003 im Westen; frühere Gruppenfallzahlen werden hier nicht ausgewiesen. Hauptfragebogen schriftlich selbst ausgefüllt nach persönlicher Rekrutierung. Westdeutschland ist keine BW-Auswertung. Nicht mit den FES-Mitte-Studien zu einer Zeitreihe verbinden: Verfahren und Gewichtung unterscheiden sich.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "2014",
+     "detail": null,
+     "value": 40.2,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2014",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2016",
+     "detail": null,
+     "value": 53.5,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2016",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2018",
+     "detail": null,
+     "value": 50.4,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2018",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2020",
+     "detail": null,
+     "value": 40.2,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2020",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2022",
+     "detail": null,
+     "value": 46.6,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": null,
+     "field_period": "2022",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2024",
+     "detail": null,
+     "value": 43.2,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Ostdeutschland",
+     "base_n": 501,
+     "field_period": "2024",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "time",
+    "related": [
+     "las_zuwanderung_west"
+    ],
+    "title": "LAS: Zuwanderungsverbot für Muslime · Ost und West 2014–2024",
+    "series": [
+     "Ostdeutschland",
+     "Westdeutschland"
+    ]
+   }
+  },
+  {
+   "block": "las_zuwanderung_west",
+   "title": "LAS: Zuwanderungsverbot für Muslime · Westdeutschland 2014–2024",
+   "note": "Veröffentlichte Zustimmungsanteile derselben Frage in sechs unabhängigen Querschnitten. Keine individuelle Einstellungsänderung. 2024: 2.504 Befragte, davon 501 im Osten und 2.003 im Westen; frühere Gruppenfallzahlen werden hier nicht ausgewiesen. Hauptfragebogen schriftlich selbst ausgefüllt nach persönlicher Rekrutierung. Westdeutschland ist keine BW-Auswertung. Nicht mit den FES-Mitte-Studien zu einer Zeitreihe verbinden: Verfahren und Gewichtung unterscheiden sich.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "2014",
+     "detail": null,
+     "value": 34.6,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2014",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2016",
+     "detail": null,
+     "value": 37.3,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2016",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2018",
+     "detail": null,
+     "value": 41.7,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2018",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2020",
+     "detail": null,
+     "value": 24.2,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2020",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2022",
+     "detail": null,
+     "value": 23.6,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": null,
+     "field_period": "2022",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2024",
+     "detail": null,
+     "value": 32.8,
+     "unit": "percent",
+     "study": "Leipziger Autoritarismus-Studien 2014–2024",
+     "population": "Wohnbevölkerung Deutschlands ab 16 Jahren · Westdeutschland",
+     "base_n": 2003,
+     "field_period": "2024",
+     "question_ref": null,
+     "source_title": "Leipziger Autoritarismus-Studien 2014–2024",
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ],
+   "chart": {
+    "kind": "time"
+   }
+  },
+  {
    "block": "rm2013_synkretismus",
    "title": "Lehren verschiedener Traditionen · Religionsmonitor 2013",
    "note": "Gewichtete Zustimmungsanteile aus Abbildung 4, visuell am Original geprüft. Erhebung Oktober–Dezember 2012, Publikation 2013. Untergruppen-Fallzahlen sind in der Abbildung nicht ausgewiesen. Die fünf Merkmale verwenden verschiedene Antwortschwellen und teils eingeschränkte Grundgesamtheiten; sie bilden keine gemeinsame Skala. Zustimmung zum Rückgriff auf Lehren verschiedener religiöser Traditionen. Die Tabelle 3, S. 13, beschränkt die Auswertung auf mindestens wenig religiöse Befragte; diese Einschränkung gilt auch hier.",
@@ -3547,6 +5181,90 @@
      "source_title": "Religiosität und Zusammenhalt in Deutschland (2013)",
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_und_Zusammenhalt_in_Deutschland.pdf",
      "source_locator": "Abbildung 4, S. 17; Tabellen 1–3, S. 11–13",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ]
+  },
+  {
+   "block": "bosch2025_migration_distanz",
+   "title": "Migration: soziale Distanz in Nachbarschaft und Familie",
+   "note": "Anteil der ablehnenden Antworten zur jeweiligen Nachbarschaft oder Heirat eines Familienmitglieds. Verschiedene Fragen, keine addierbaren Kategorien. Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren; Online-Erhebung 2025. 4.761 ist die Studienstichprobe, keine ausgewiesene gültige Fallzahl je Frage. Keine BW-Untergruppe. Der Methodenwechsel gegenüber der telefonischen Erhebung 2018 verhindert einen unmittelbaren Zeitvergleich.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Ausländische Nachbarn",
+     "detail": null,
+     "value": 32.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Geflüchtete als Nachbarn",
+     "detail": null,
+     "value": 50.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Heirat mit ausländischer Person",
+     "detail": null,
+     "value": 29.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Heirat mit geflüchteter Person",
+     "detail": null,
+     "value": 46.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
@@ -4123,7 +5841,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 30.0
+      },
+      {
+       "label": "eher",
+       "value": 36.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 25.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 9.0
+      }
+     ]
     },
     {
      "label": "Gegen Freiheitsrechte · Muslimische Menschen",
@@ -4142,7 +5878,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 20.0
+      },
+      {
+       "label": "eher",
+       "value": 38.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 30.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 13.0
+      }
+     ]
     },
     {
      "label": "Aufruf zu Gewalt · Islam",
@@ -4161,7 +5915,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 25.0
+      },
+      {
+       "label": "eher",
+       "value": 32.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 30.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 13.0
+      }
+     ]
     },
     {
      "label": "Aufruf zu Gewalt · Muslimische Menschen",
@@ -4180,7 +5952,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 13.0
+      },
+      {
+       "label": "eher",
+       "value": 32.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 37.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 19.0
+      }
+     ]
     },
     {
      "label": "Frauenfeindlichkeit · Islam",
@@ -4199,7 +5989,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 38.0
+      },
+      {
+       "label": "eher",
+       "value": 37.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 19.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 6.0
+      }
+     ]
     },
     {
      "label": "Frauenfeindlichkeit · Muslimische Menschen",
@@ -4218,7 +6026,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 23.0
+      },
+      {
+       "label": "eher",
+       "value": 42.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 24.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 11.0
+      }
+     ]
     },
     {
      "label": "Rückständigkeit · Islam",
@@ -4237,7 +6063,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 33.0
+      },
+      {
+       "label": "eher",
+       "value": 41.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 19.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 7.0
+      }
+     ]
     },
     {
      "label": "Rückständigkeit · Muslimische Menschen",
@@ -4256,7 +6100,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "voll und ganz",
+       "value": 17.0
+      },
+      {
+       "label": "eher",
+       "value": 39.0
+      },
+      {
+       "label": "eher nicht",
+       "value": 31.0
+      },
+      {
+       "label": "überhaupt nicht",
+       "value": 14.0
+      }
+     ]
     }
    ]
   },
@@ -4283,7 +6145,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 8.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 2.0
+      }
+     ]
     },
     {
      "label": "Katholisch",
@@ -4302,7 +6174,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 27.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 7.0
+      }
+     ]
     },
     {
      "label": "Evangelisch",
@@ -4321,7 +6203,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 24.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 8.0
+      }
+     ]
     },
     {
      "label": "Christlich-orthodox",
@@ -4340,7 +6232,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 30.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 13.0
+      }
+     ]
     },
     {
      "label": "Evangelikal-freikirchlich und pfingstkirchlich",
@@ -4359,7 +6261,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 40.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 35.0
+      }
+     ]
     },
     {
      "label": "Islam",
@@ -4378,7 +6290,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 40.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 33.0
+      }
+     ]
     },
     {
      "label": "Buddhismus",
@@ -4397,7 +6319,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 21.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 23.0
+      }
+     ]
     },
     {
      "label": "Hinduismus",
@@ -4416,7 +6348,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 36.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 4.0
+      }
+     ]
     },
     {
      "label": "Andere Religionsgemeinschaft",
@@ -4435,7 +6377,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 27.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 7.0
+      }
+     ]
     },
     {
      "label": "Gesamtbevölkerung",
@@ -4454,7 +6406,17 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Eher hilfreich",
+       "value": 21.0
+      },
+      {
+       "label": "sehr hilfreich",
+       "value": 8.0
+      }
+     ]
     }
    ]
   },
@@ -5134,6 +7096,71 @@
    ]
   },
   {
+   "block": "bosch2025_familie",
+   "title": "Religiöse Vielfalt in der Familie: Ablehnung einer Heirat",
+   "note": "Anteil der ablehnenden Antworten zur jeweiligen Nachbarschaft oder Heirat eines Familienmitglieds. Verschiedene Fragen, keine addierbaren Kategorien. Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren; Online-Erhebung 2025. 4.761 ist die Studienstichprobe, keine ausgewiesene gültige Fallzahl je Frage. Keine BW-Untergruppe. Der Methodenwechsel gegenüber der telefonischen Erhebung 2018 verhindert einen unmittelbaren Zeitvergleich.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Heirat mit gläubiger christlicher Person",
+     "detail": null,
+     "value": 21.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Heirat mit praktizierender jüdischer Person",
+     "detail": null,
+     "value": 36.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "Heirat mit religiöser muslimischer Person",
+     "detail": null,
+     "value": 54.0,
+     "unit": "percent",
+     "study": "Vielfaltsbarometer 2025",
+     "population": "Deutschsprachige Wohnbevölkerung Deutschlands ab 16 Jahren",
+     "base_n": 4761,
+     "field_period": "2. Mai–3. Juni 2025",
+     "question_ref": null,
+     "source_title": "Vielfaltsbarometer 2025",
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Abbildung 4, S. 56",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ]
+  },
+  {
    "block": "rm2013_dogmatismus",
    "title": "Religiöser Dogmatismus · Religionsmonitor 2013",
    "note": "Gewichtete Zustimmungsanteile aus Abbildung 4, visuell am Original geprüft. Erhebung Oktober–Dezember 2012, Publikation 2013. Untergruppen-Fallzahlen sind in der Abbildung nicht ausgewiesen. Die fünf Merkmale verwenden verschiedene Antwortschwellen und teils eingeschränkte Grundgesamtheiten; sie bilden keine gemeinsame Skala. Zustimmung zur Vorrangstellung der eigenen Religion in religiösen Wahrheitsfragen, siehe Tabelle 3, S. 13. Nur Konfessionsangehörige; für Konfessionslose ist kein Wert ausgewiesen. Dieser Wortlaut unterscheidet sich von den drei Aussagen der Erhebung 2017. Kein Zeitvergleich zwischen verschiedenen Items.",
@@ -5757,7 +7784,18 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "chart": {
+    "kind": "compare",
+    "related": [
+     "rm2023_verschwoerung_spirituell"
+    ],
+    "title": "Starke Religiosität und Spiritualität nach Verschwörungsanfälligkeit",
+    "series": [
+     "Religiosität",
+     "Spiritualität"
+    ]
+   }
   },
   {
    "block": "rm2023_verschwoerung_spirituell",
@@ -6272,7 +8310,38 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Alle Befragten",
+      "items": "all",
+      "segments": [
+       {
+        "label": "Deutlich weniger",
+        "value": 3.0
+       },
+       {
+        "label": "Etwas weniger",
+        "value": 4.0
+       },
+       {
+        "label": "Etwa gleich geblieben",
+        "value": 82.0
+       },
+       {
+        "label": "Etwas mehr",
+        "value": 7.0
+       },
+       {
+        "label": "Deutlich mehr",
+        "value": 3.0
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "block": "rm2017_wahrheit",
@@ -6619,7 +8688,10 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "chart": {
+    "kind": "time"
+   }
   },
   {
    "block": "rm2026_detail_gesamt",
@@ -7338,7 +9410,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 5.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 21.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 60.0
+      }
+     ]
     },
     {
      "label": "Deutschland · Nichtmuslimisch",
@@ -7357,7 +9447,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 7.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 20.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 60.0
+      }
+     ]
     },
     {
      "label": "Österreich · Muslimisch",
@@ -7376,7 +9484,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 11.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 21.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 54.0
+      }
+     ]
     },
     {
      "label": "Österreich · Nichtmuslimisch",
@@ -7395,7 +9521,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 3.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 19.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 19.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 59.0
+      }
+     ]
     },
     {
      "label": "Schweiz · Muslimisch",
@@ -7414,7 +9558,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 6.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 11.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 28.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 55.0
+      }
+     ]
     },
     {
      "label": "Schweiz · Nichtmuslimisch",
@@ -7433,7 +9595,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 4.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 34.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 48.0
+      }
+     ]
     },
     {
      "label": "Großbritannien · Muslimisch",
@@ -7452,7 +9632,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 4.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 20.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 17.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 60.0
+      }
+     ]
     },
     {
      "label": "Großbritannien · Nichtmuslimisch",
@@ -7471,7 +9669,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 4.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 17.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 18.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 62.0
+      }
+     ]
     },
     {
      "label": "Frankreich · Muslimisch",
@@ -7490,7 +9706,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 14.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 20.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 14.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 52.0
+      }
+     ]
     },
     {
      "label": "Frankreich · Nichtmuslimisch",
@@ -7509,7 +9743,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 8.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 17.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 9.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 67.0
+      }
+     ]
     }
    ]
   },
@@ -9481,7 +11733,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 5.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 21.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 60.0
+      }
+     ]
     },
     {
      "label": "Deutschland · Nichtmuslimisch",
@@ -9500,7 +11770,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 7.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 20.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 60.0
+      }
+     ]
     },
     {
      "label": "Österreich · Muslimisch",
@@ -9519,7 +11807,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 11.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 21.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 54.0
+      }
+     ]
     },
     {
      "label": "Österreich · Nichtmuslimisch",
@@ -9538,7 +11844,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 3.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 19.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 19.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 59.0
+      }
+     ]
     },
     {
      "label": "Schweiz · Muslimisch",
@@ -9557,7 +11881,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 6.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 11.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 28.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 55.0
+      }
+     ]
     },
     {
      "label": "Schweiz · Nichtmuslimisch",
@@ -9576,7 +11918,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 4.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 14.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 34.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 48.0
+      }
+     ]
     },
     {
      "label": "Großbritannien · Muslimisch",
@@ -9595,7 +11955,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 4.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 20.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 17.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 60.0
+      }
+     ]
     },
     {
      "label": "Großbritannien · Nichtmuslimisch",
@@ -9614,7 +11992,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 4.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 17.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 18.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 62.0
+      }
+     ]
     },
     {
      "label": "Frankreich · Muslimisch",
@@ -9633,7 +12029,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 14.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 20.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 14.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 52.0
+      }
+     ]
     },
     {
      "label": "Frankreich · Nichtmuslimisch",
@@ -9652,7 +12066,25 @@
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
-     }
+     },
+     "response_distribution": [
+      {
+       "label": "Arbeitslos",
+       "value": 8.0
+      },
+      {
+       "label": "Nichterwerbsperson",
+       "value": 17.0
+      },
+      {
+       "label": "Teilzeit",
+       "value": 9.0
+      },
+      {
+       "label": "Vollzeit",
+       "value": 67.0
+      }
+     ]
     }
    ]
   },

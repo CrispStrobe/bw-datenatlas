@@ -1943,6 +1943,51 @@ function renderReportFindings(){
   +(r.id!=='uem_overview'?D.coverage_gaps.map(g=>'<p class="source-note"><a href="'+esc(g.url)+'" target="_blank" rel="noopener">'+esc(g.topic)+' ↗</a> · '+esc(t(g.note))+'</p>').join(''):'');
 }
 
+// Survey chart encodings are explicit metadata, never guessed from translated labels.
+const surveyColors=['#216b7a','#529aa4','#b9c6c9','#c89954','#955a36'];
+function surveyDistribution(label,segments){
+ const sum=segments.reduce((n,s)=>n+s.value,0),scale=Math.max(100,sum);
+ const legend=segments.map((s,n)=>'<span><i style="background:'+surveyColors[Math.min(n,4)]+'"></i>'+esc(t(s.label))+': <strong>'+esc(pct(s.value))+'</strong></span>').join('');
+ return '<div class="survey-distribution"><strong>'+esc(t(label))+'</strong>'
+  +'<div class="survey-stack" role="img" aria-label="'+esc(t(label)+': '+segments.map(s=>t(s.label)+' '+pct(s.value)).join('; '))+'">'
+  +segments.map((s,n)=>'<span style="width:'+s.value/scale*100+'%;background:'+surveyColors[Math.min(n,4)]+';color:'+(n===0||n===4?'#fff':'#183846')+'" title="'+esc(t(s.label)+': '+pct(s.value))+'">'+(s.value>=9?esc(pf.format(s.value)):'')+'</span>').join('')+'</div>'
+  +'<div class="survey-key">'+legend+'</div>'
+  +(sum<98?'<p class="tiny">'+esc(t('Die nicht ausgewiesenen Antworten bleiben als Lücke sichtbar.'))+'</p>':'')
+  +(sum>100?'<p class="tiny">'+esc(t('Gerundete Werte ergeben mehr als 100 Prozent; die Segmentbreiten sind entsprechend angepasst.'))+'</p>':'')+'</div>';
+}
+function surveyTimeChart(items,otherSeries=[]){
+ const points=items.map(i=>({year:Number(i.label),value:i.value})).sort((a,b)=>a.year-b.year);
+ const first=points[0].year,last=points.at(-1).year;
+ const x=y=>55+(y-first)/Math.max(1,last-first)*640,y=v=>225-v*2;
+ return '<svg class="survey-time" viewBox="0 0 750 285" role="img" aria-label="'+esc(t('Zeitreihe'))+'">'
+  +[0,25,50,75,100].map(v=>'<line x1="55" x2="695" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#dde4e6"/><text x="42" y="'+(y(v)+4)+'" text-anchor="end">'+v+'</text>').join('')
+  +'<polyline fill="none" stroke="#216b7a" stroke-width="3" points="'+points.map(p=>x(p.year)+','+y(p.value)).join(' ')+'"/>'
+  +otherSeries.map((series,n)=>'<polyline fill="none" stroke="'+surveyColors[n+3]+'" stroke-width="3" stroke-dasharray="6 3" points="'+series.items.map(i=>x(Number(i.label))+','+y(i.value)).join(' ')+'"/>'+series.items.map(i=>'<circle cx="'+x(Number(i.label))+'" cy="'+y(i.value)+'" r="4" fill="'+surveyColors[n+3]+'"/><text x="'+x(Number(i.label))+'" y="'+(y(i.value)+20)+'" text-anchor="middle">'+esc(pf.format(i.value))+'</text>').join('')).join('')
+  +points.map(p=>'<circle cx="'+x(p.year)+'" cy="'+y(p.value)+'" r="5" fill="#216b7a"/><text x="'+x(p.year)+'" y="'+(y(p.value)-13)+'" text-anchor="middle">'+esc(pf.format(p.value))+'</text><text x="'+x(p.year)+'" y="252" text-anchor="middle">'+p.year+'</text>').join('')+'</svg>';
+}
+function surveyBars(b,D){
+ const chart=b.chart;
+ if(chart?.kind==='distribution')return chart.rows.map(r=>surveyDistribution(r.label,r.segments)).join('');
+ if(chart?.kind==='time'){
+  const related=(chart.related||[]).map(id=>D.blocks.find(other=>other.block===id));
+  return surveyTimeChart(b.items,related)+(related.length?'<div class="survey-key">'+chart.series.map((label,n)=>'<span><i style="background:'+surveyColors[n?3:0]+'"></i>'+esc(t(label))+'</span>').join('')+'</div>':'');
+ }
+ if(chart?.kind==='compare'){
+  const sources=[b,...chart.related.map(id=>D.blocks.find(other=>other.block===id))];
+  return b.items.map((i,k)=>'<div class="survey-comparison"><strong>'+esc(t(i.label))+'</strong>'+sources.map((source,n)=>'<div class="bar-row"><div class="bar-name">'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+source.items[k].value+'%;background:'+surveyColors[n]+'"></div></div><div class="bar-value">'+esc(pct(source.items[k].value))+'</div></div>').join('')+'</div>').join('');
+ }
+ const max=b.items.every(i=>['percent','index'].includes(i.unit)&&i.value<=100)?100:Math.max(...b.items.map(i=>i.value));
+ return '<div class="horizontal-bars">'+b.items.map(i=>'<div class="bar-row"><div class="bar-name">'+esc(t(i.label))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+(100*i.value/max).toFixed(1)+'%;background:#216b7a"></div></div><div class="bar-value">'+esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value))+'</div></div>'
+  +(i.detail?'<details class="survey-item-detail"><summary>'+esc(t('Antwortstufen ansehen'))+'</summary>'+(i.response_distribution?surveyDistribution(i.label,i.response_distribution):'<p class="tiny">'+esc(t(i.detail))+'</p>')+'</details>':'')).join('')+'</div>';
+}
+function openSurveyZoom(b,D){
+ const dialog=$('chart-zoom'),body=$('chart-zoom-body');
+ $('chart-zoom-title').textContent=t(b.chart?.title||b.title);
+ body.innerHTML='<p class="tiny">'+esc($('survey-blocks').querySelector('.survey-meta').textContent)+'</p>'+surveyBars(b,D)+(b.note?'<p class="notice warning">'+esc(t(b.note))+'</p>':'')
+  +'<p>'+esc(t('Fundstelle'))+': '+b.items.map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_locator||i.source_title)+'</a>').join(' · ')+'</p>';
+ body.querySelectorAll('.survey-item-detail').forEach(detail=>{detail.open=true;});
+ dialog.showModal();
+}
 function renderSurveyItems(){
  const host=$('survey-blocks');if(!host)return;
  const D2=window.ATLAS_SURVEY_ITEMS;
@@ -1964,32 +2009,26 @@ function renderSurveyItems(){
    if(study.includes('KMU 6'))return 'Deutschland · KMU 6';
    if(study.startsWith('Vielfaltsbarometer'))return 'Deutschland · Vielfaltsbarometer';
    if(study.startsWith('EKD:'))return 'Deutschland · EKD KMPK';
+   if(study.startsWith('FES-Mitte'))return 'Deutschland · FES-Mitte-Studien';
+   if(study.startsWith('Leipziger Autoritarismus'))return 'Deutschland · Leipziger Autoritarismus-Studien';
    if(study.startsWith('FRA '))return 'Deutschland · FRA';
    if(study.startsWith('European Values Study'))return 'Deutschland · European Values Study';
    return t('Deutschland · Weitere Befragungen');
   };
-  const groups=[...new Set(D2.blocks.map(groupFor))];
+  const hiddenRelated=new Set(D2.blocks.flatMap(b=>b.chart?.related||[]));
+  const groups=[...new Set(D2.blocks.filter(b=>!hiddenRelated.has(b.block)).map(groupFor))];
   feld.innerHTML=groups.map(group=>'<optgroup label="'+esc(t(group))+'">'
-    +D2.blocks.map((b,n)=>[b,n]).filter(([b])=>groupFor(b)===group)
-      .map(([b,n])=>'<option value="'+n+'">'+esc(t(b.title))+'</option>').join('')
+    +D2.blocks.map((b,n)=>[b,n]).filter(([b])=>groupFor(b)===group&&!hiddenRelated.has(b.block))
+      .map(([b,n])=>'<option value="'+n+'">'+esc(t(b.chart?.title||b.title))+'</option>').join('')
     +'</optgroup>').join('');
   feld.onchange=renderSurveyItems;
  }
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
  host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
-  // Prozentbalken werden an 100 gemessen, nicht am größten Wert des Blocks. Sonst
-  // füllt ein Wert von 50 Prozent den ganzen Balken, nur weil kein höherer daneben
-  // steht — und der Block über Zustimmungsquoten hätte ausgesehen wie einer über
-  // Mehrheiten.
-  // Prozentwerte und Indexwerte werden beide an 100 gemessen — ein Index von 0
-  // bis 100 ist keine Quote, also darf kein Prozentzeichen daran, aber die Skala
-  // ist dieselbe.
-  const skala100=b.items.every(i=>(i.unit==='percent'||i.unit==='index')
-    &&i.value<=100);
-  const max=skala100?100:Math.max(...b.items.map(i=>i.value));
+  const tableItems=[b,...(b.chart?.related||[]).map(id=>D2.blocks.find(other=>other.block===id))].flatMap((source,n)=>source.items.map(i=>({...i,label:b.chart?.related?b.chart.series[n]+': '+i.label:i.label})));
   const erste=b.items[0];
-  const hasValidN=b.items.some(i=>i.valid_n!=null);
-  return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
+  const hasValidN=tableItems.some(i=>i.valid_n!=null);
+  return '<h4 class="survey-block-title">'+esc(t(b.chart?.title||b.title))+'</h4><button type="button" id="survey-enlarge" class="button button-light">'+esc(t('Vergrößern und Antwortstufen ansehen'))+'</button>'
    // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
    // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
    +'<p class="tiny survey-meta">'+esc([b.scope?t(b.scope):null,erste.study,t(erste.population),
@@ -2001,23 +2040,18 @@ function renderSurveyItems(){
         ?tf('Fragen {0}',erste.question_ref):null]
        .filter(Boolean).join(' · '))+'</p>'
    +(b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
-   +'<div class="horizontal-bars">'+b.items.map(i=>
-     '<div class="bar-row"><div class="bar-name">'+esc(t(i.label))
-     +(i.detail?'<br><span class="tiny">'+esc(t(i.detail))+'</span>':'')+'</div>'
-     +'<div class="bar-track"><div class="bar-fill" style="width:'
-     +(100*i.value/max).toFixed(1)+'%;background:#6b7f8a"></div></div>'
-     +'<div class="bar-value">'+esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value))+'</div></div>').join('')
-   +'</div>'
+   +surveyBars(b,D2)
    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))
    +'</summary><div class="table-scroll">'+table(
     [t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),
      ...(hasValidN?[t('Gültige Antworten')]:[]),t('Erhebungszeitraum'),t('Fundstelle')],
-    b.items.map(i=>[esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
+    tableItems.map(i=>[esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
      esc(t(i.population)),i.base_n?integer(i.base_n):esc(t('nicht ausgewiesen')),
      ...(hasValidN?[i.valid_n!=null?integer(i.valid_n):esc(t('nicht ausgewiesen'))]:[]),
      esc(i.field_period),'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
       +esc(i.source_locator||i.source_title)+'</a>']))+'</div></details>';
  }).join('');
+ $('survey-enlarge')?.addEventListener('click',()=>openSurveyZoom(D2.blocks[gewaehlt],D2));
  const quellen=[...new Map((D2.blocks[gewaehlt]||{items:[]}).items
    .map(i=>[i.source_url,i])).values()];
  $('survey-note').innerHTML=esc(t(D2.not_in_any_model))+' '
@@ -2251,6 +2285,7 @@ function initViewSelectors(){
  const reveal=()=>{
   let id;try{id=decodeURIComponent(location.hash.slice(1));}catch(e){return;}
   const target=document.getElementById(id);if(!target)return;
+  if(id==='herkunft'){const field=$('population-view');field.value='origins';show(field);}
   const panel=target.closest('.view-panel');
   if(panel){
    const field=panel.closest('section').querySelector('[data-panel-select]');

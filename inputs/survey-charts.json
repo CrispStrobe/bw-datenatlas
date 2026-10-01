@@ -1,0 +1,428 @@
+{
+ "kmu6_islam_praxis": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Praktizierende Kirchenmitglieder",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 24
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 39
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 27
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 9
+     }
+    ]
+   },
+   {
+    "label": "Kaum oder nicht praktizierende Kirchenmitglieder",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 26
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 38
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 29
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 8
+     }
+    ]
+   },
+   {
+    "label": "Aus der Kirche Ausgetretene",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 32
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 37
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 24
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 7
+     }
+    ]
+   },
+   {
+    "label": "Weitere Konfessionslose",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 36
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 35
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 20
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 9
+     }
+    ]
+   }
+  ]
+ },
+ "kmu6_flucht_praxis": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Praktizierende Kirchenmitglieder",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 27
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 36
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 22
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 15
+     }
+    ]
+   },
+   {
+    "label": "Kaum oder nicht praktizierende Kirchenmitglieder",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 24
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 29
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 26
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 22
+     }
+    ]
+   },
+   {
+    "label": "Aus der Kirche Ausgetretene",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 26
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 25
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 24
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 25
+     }
+    ]
+   },
+   {
+    "label": "Weitere Konfessionslose",
+    "segments": [
+     {
+      "label": "Stimme gar nicht zu",
+      "value": 24
+     },
+     {
+      "label": "Stimme eher nicht zu",
+      "value": 23
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 26
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 27
+     }
+    ]
+   }
+  ]
+ },
+ "las_zuwanderung_ost": {
+  "kind": "time",
+  "related": [
+   "las_zuwanderung_west"
+  ],
+  "title": "LAS: Zuwanderungsverbot für Muslime · Ost und West 2014–2024",
+  "series": [
+   "Ostdeutschland",
+   "Westdeutschland"
+  ]
+ },
+ "las_zuwanderung_west": {
+  "kind": "time"
+ },
+ "las_fremdheit_ost": {
+  "kind": "time",
+  "related": [
+   "las_fremdheit_west"
+  ],
+  "title": "LAS: Fremdheitsgefühl durch Muslime · Ost und West 2014–2024",
+  "series": [
+   "Ostdeutschland",
+   "Westdeutschland"
+  ]
+ },
+ "las_fremdheit_west": {
+  "kind": "time"
+ },
+ "fes2025_migration": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 16.7
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 17.3
+     },
+     {
+      "label": "Teils/teils",
+      "value": 35.8
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 12.6
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 17.6
+     }
+    ]
+   },
+   {
+    "label": "Zuwanderungsverbot für Muslime",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 45.3
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 23.7
+     },
+     {
+      "label": "Teils/teils",
+      "value": 22.4
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 3
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 5.6
+     }
+    ]
+   }
+  ]
+ },
+ "fes2025_antisemitismus": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Schuldzuweisung an Jüdinnen und Juden für ihre Verfolgung",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 60.6
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 21.2
+     },
+     {
+      "label": "Teils/teils",
+      "value": 12.7
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 1.8
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 3.7
+     }
+    ]
+   },
+   {
+    "label": "Unterstellung von Vorteilen durch die NS-Vergangenheit",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 44.2
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 21.6
+     },
+     {
+      "label": "Teils/teils",
+      "value": 19.3
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 5.9
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 9
+     }
+    ]
+   },
+   {
+    "label": "Antisemitische Ablehnung wegen israelischer Politik",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 34.8
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 25.8
+     },
+     {
+      "label": "Teils/teils",
+      "value": 22.4
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 7.2
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 9.8
+     }
+    ]
+   }
+  ]
+ },
+ "bw_integration_erwartung": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Ohne Migrationshintergrund",
+    "items": [
+     0,
+     2,
+     4
+    ]
+   },
+   {
+    "label": "Mit Migrationshintergrund",
+    "items": [
+     1,
+     3,
+     5
+    ]
+   }
+  ]
+ },
+ "bw_integration_bewertung": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Im Land",
+    "items": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "label": "Am Wohnort",
+    "items": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  ]
+ },
+ "rm2023_pandemie_praxis": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Alle Befragten",
+    "items": "all"
+   }
+  ]
+ },
+ "evs2017_gottesvorstellungen": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Alle Befragten",
+    "items": "all"
+   }
+  ]
+ },
+ "evs2017_vertrauen": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Alle Befragten",
+    "items": "all"
+   }
+  ]
+ },
+ "rm2026_history": {
+  "kind": "time"
+ },
+ "rm2023_verschwoerung_religioes": {
+  "kind": "compare",
+  "related": [
+   "rm2023_verschwoerung_spirituell"
+  ],
+  "title": "Starke Religiosität und Spiritualität nach Verschwörungsanfälligkeit",
+  "series": [
+   "Religiosität",
+   "Spiritualität"
+  ]
+ }
+}

@@ -254,7 +254,7 @@ Python-Pakete und Actions werden beim Aufbau von ihren jeweiligen Anbietern bezo
 
 - **Streng getrennt von allen Zählungen.** Eigener Abschnitt, eigene Überschrift, keine Karte und keine Kartenebene. Diese Zahlen gehen in keine Modellrechnung ein und werden mit keiner Bevölkerungszahl verrechnet.
 - **Vier Angaben an jeder Zeile**, weil bei Befragungen alles daran hängt: Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, die Fragennummern. „88,6 Prozent" ist ohne die Grundgesamtheit keine Aussage.
-- **Erster Block, und der einzige mit Landesbezug:** Offenheit für religiöse Vielfalt in Baden-Württemberg. Quelle: Integrationsbericht des Landes Baden-Württemberg 2020, Abbildung 9-11, S. 91; erhoben in der Umfrage „Integration unter Druck?" des Ministeriums für Soziales und Integration — **1.587 deutschsprechende Personen ab 18 Jahren mit Hauptwohnsitz in Baden-Württemberg, 09.07. bis 24.07.2019, telefonisch durch die Forschungsgruppe Wahlen.** Der Balken addiert die beiden zustimmenden Kategorien, wie es auch der Bericht im Fließtext tut; die vier Stufen der Skala stehen daneben. Die Daten sollten 2021 ins GESIS-Datenarchiv überführt werden.
+- **Ein Block mit Landesbezug:** Offenheit für religiöse Vielfalt in Baden-Württemberg. Quelle: Integrationsbericht des Landes Baden-Württemberg 2020, Abbildung 9-11, S. 91; erhoben in der Umfrage „Integration unter Druck?" des Ministeriums für Soziales und Integration — **1.587 deutschsprechende Personen ab 18 Jahren mit Hauptwohnsitz in Baden-Württemberg, 09.07. bis 24.07.2019, telefonisch durch die Forschungsgruppe Wahlen.** Der Balken addiert die beiden zustimmenden Kategorien, wie es auch der Bericht im Fließtext tut; die vier Stufen der Skala sind als segmentierte Detailansicht zugänglich. Die Daten sollten 2021 ins GESIS-Datenarchiv überführt werden.
 - **Aufgenommen außerdem:** Gründe für das Tragen eines Kopftuchs (MLD 2020, Abbildung 4-41, S. 121, n = 603, Fragen v401_1–v401_9, nur Musliminnen, die das Kopftuch manchmal, meistens oder immer tragen; Mehrfachnennungen) sowie Selbst- und Fremdbild zur Abgrenzung (Pew Global Attitudes 2006, Erhebung 31.03.–14.05.2006, und Pew 2016/17).
 - **Bewusst nicht aufgenommen, weil nicht belegbar:** Religionsmonitor-Konstrukte „Dogmatismus", „Existenz eines absoluten Maßstabs für Gut und Böse" und „Traditionale Glaubenspraxis" — der Bericht 2023 enthält sie nicht, die Fassung von 2008 ist ein Buch und kein offenes PDF; die Variablen lägen im GESIS-Datensatz ZA5001 hinter einem Zugang. Ebenso Liljeberg International, „Wertewelt" 2009: keine offen zugängliche Fundstelle gefunden.
 
@@ -350,3 +350,17 @@ keine Fotografien. Quellen, Bezugszeiträume und Abgrenzungen stehen direkt an d
 Darstellungen sowie in `docs/data/report-findings.json` und
 `docs/data/survey-items.json`. Der lokale Prüfstand ist in
 `inputs/additional-survey-review.json` dokumentiert.
+
+
+### Ergänzungen aus KMU 6, Vielfaltsbarometer, LAS und FES-Mitte
+
+Die Ergänzungen vom 1. Oktober 2026 übernehmen ausgewählte veröffentlichte
+Zahlen aus Abbildung 31.4 des KMU-6-Auswertungsbands (2024), Abbildung 4 des
+Vielfaltsbarometers 2025, Tabelle 12 der Leipziger Autoritarismus-Studie 2024
+und Abbildung 4.2 der FES-Mitte-Studie 2024/25. Die Originalgrafiken werden
+nicht übernommen. Die FES-Publikation und der LAS-Band behalten ihre jeweiligen
+Verlagsrechte; eine offene Quellenlizenz wird nicht behauptet. Die MIT-Lizenz
+gilt für unseren Code und eigene Erläuterungen, nicht pauschal für diese Quellen.
+Das gilt auch für die strukturierten Antwortstufen in den JSON-Downloads.
+EVS-Zugehörigkeitskriterien stammen ausschließlich aus öffentlichen Tabellen
+(Q53, v189–193); es wurden dafür keine Mikrodaten verarbeitet.

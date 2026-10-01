@@ -494,9 +494,30 @@ class DataTests(unittest.TestCase):
         self.assertAlmostEqual(sum(i['value'] for i in beliefs), 100, places=8)
         self.assertEqual([i['value'] for i in beliefs], [23.5, 40.3, 13.5, 22.7])
         evs_items = [i for b in d['blocks'] if b['block'].startswith('evs2017_') for i in b['items']]
-        self.assertEqual(len(evs_items), 17)
+        self.assertEqual(len(evs_items), 22)
         self.assertTrue(all('valid_n' not in i and 'weighted_valid_n' not in i for i in evs_items))
         self.assertIn('Ungewichtete gültige Fallzahlen', blocks['evs2017_gottesvorstellungen']['note'])
+
+    def test_new_surveys_preserve_categories_and_method_boundaries(self):
+        data = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in data['blocks']}
+        for key in ('kmu6_islam_praxis', 'kmu6_flucht_praxis',
+                    'fes2025_migration', 'fes2025_antisemitismus'):
+            b = blocks[key]
+            for item, row in zip(b['items'], b['chart']['rows']):
+                self.assertAlmostEqual(item['value'], sum(s['value'] for s in row['segments'][-2:]))
+                self.assertNotIn('valid_n', item)
+        self.assertEqual([i['base_n'] for i in blocks['kmu6_islam_praxis']['items']],
+                         [569, 937, 1262, 1015])
+        for suffix, n in [('ost', 501), ('west', 2003)]:
+            b = blocks['las_zuwanderung_'+suffix]
+            self.assertEqual([i['field_period'] for i in b['items']],
+                             ['2014', '2016', '2018', '2020', '2022', '2024'])
+            self.assertEqual([i['base_n'] for i in b['items']], [None]*5+[n])
+        self.assertEqual([i['value'] for i in blocks['evs2017_zugehoerigkeit']['items']],
+                         [40.3, 98.3, 24.2, 98.4, 68.9])
+        self.assertEqual([sum(s['value'] for s in r['segments']) for r in
+                          blocks['bw_integration_bewertung']['chart']['rows']], [87, 88])
 
     def test_panel_attitudes_keep_randomised_wording_and_unknown_item_counts(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
