@@ -2008,7 +2008,7 @@ function surveySampleText(sample){
 function surveySampleCell(sample){
  return sample?'<a href="'+esc(sample.source_url)+'" target="_blank" rel="noreferrer">'+esc(surveySampleText(sample))+'</a><div class="tiny">'+esc(sample.source_locator)+'</div>':esc(t('nicht ausgewiesen'));
 }
-function surveyValue(i){return i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value);}
+function surveyValue(i){return i.unit==='coefficient'?new Intl.NumberFormat(pf.resolvedOptions().locale,{minimumFractionDigits:3,maximumFractionDigits:3,signDisplay:'exceptZero'}).format(i.value):i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value);}
 function surveyEvidence(b,D){
  const sources=surveySources(b,D),notes=[...new Set(sources.map(source=>source.note).filter(Boolean))];
  let common=notes[0]||'';
@@ -2024,7 +2024,7 @@ function surveyQuestions(b,D){
  if(!questions.length)return '';
  const scales=[...new Set(questions.map(q=>q.response_scale).filter(Boolean))];
  const shown=[...new Set(questions.map(q=>q.shown).filter(Boolean))];
- return '<div class="survey-question"><strong>'+esc(t('Wortlaut der Frage / Aussage'))+'</strong>'
+ return '<div class="survey-question"><strong>'+esc(t(questions[0].heading||'Wortlaut der Frage / Aussage'))+'</strong>'
   +(b.chart?.question_in_chart?'':questions.flatMap(q=>q.texts).map(text=>'<p>„'+esc(t(text))+'“</p>').join(''))
   +scales.map(scale=>'<p class="tiny">'+esc(t('Antwortskala'))+': '+esc(t(scale))+'</p>').join('')
   +shown.map(text=>'<p class="tiny">'+esc(t(text))+'</p>').join('')
@@ -2051,7 +2051,10 @@ function surveyBars(b,D){
  }
  if(chart?.kind==='compare'){
   const sources=[b,...chart.related.map(id=>D.blocks.find(other=>other.block===id))];
-  if(chart.layout==='dots')return '<p class="tiny">'+esc(t('Eigenständige Aussagen: Zustimmung kann sich überschneiden. Die Werte werden nicht addiert.'))+'</p><div class="survey-key">'+chart.series.map((s,n)=>'<span><i style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(s))+'</span>').join('')+'</div><div class="survey-dot-rows">'+b.items.map((i,k)=>'<div class="survey-dot-row"><strong>'+esc(t(i.label))+'</strong><div class="survey-dot-axis">'+sources.map((source,n)=>'<span class="survey-dot" style="left:'+source.items[k].value+'%;top:'+(7+n*15)+'px;background:'+surveySeriesColors[n]+'" title="'+esc(t(chart.series[n])+': '+pct(source.items[k].value))+'"></span>').join('')+'</div><div class="survey-dot-values">'+sources.map((source,n)=>'<span style="color:'+surveySeriesColors[n]+'">'+esc(t(chart.series[n]))+': <strong>'+esc(pct(source.items[k].value))+'</strong></span>').join('')+'</div></div>').join('')+'</div><div class="survey-dot-scale"><span>0 %</span><span>50 %</span><span>100 %</span></div>';
+  if(chart.layout==='dots'){
+   const domain=chart.domain||[0,100],position=value=>100*(value-domain[0])/(domain[1]-domain[0]);
+   return '<p class="tiny">'+esc(t(chart.domain?'Standardisierte Modellkoeffizienten: positive Werte stehen für eine positivere, negative für eine negativere Haltung zu Muslimen.':'Eigenständige Aussagen: Zustimmung kann sich überschneiden. Die Werte werden nicht addiert.'))+'</p><div class="survey-key">'+chart.series.map((s,n)=>'<span><i style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(s))+'</span>').join('')+'</div><div class="survey-dot-rows">'+b.items.map((i,k)=>'<div class="survey-dot-row"><strong>'+esc(t(i.label))+'</strong><div class="survey-dot-axis"'+(chart.domain?' style="background:linear-gradient(90deg,transparent 49.6%,#8d999d 49.6%,#8d999d 50.4%,transparent 50.4%)"':'')+'> '+sources.map((source,n)=>'<span class="survey-dot" style="left:'+position(source.items[k].value)+'%;top:'+(7+n*15)+'px;background:'+surveySeriesColors[n]+'" title="'+esc(t(chart.series[n])+': '+surveyValue(source.items[k]))+'"></span>').join('')+'</div><div class="survey-dot-values">'+sources.map((source,n)=>'<span style="color:'+surveySeriesColors[n]+'">'+esc(t(chart.series[n]))+': <strong>'+esc(surveyValue(source.items[k]))+'</strong></span>').join('')+'</div></div>').join('')+'</div><div class="survey-dot-scale"><span>'+esc(chart.domain?surveyValue({unit:b.items[0].unit,value:domain[0]}):'0 %')+'</span><span>'+esc(chart.domain?surveyValue({unit:b.items[0].unit,value:(domain[0]+domain[1])/2}):'50 %')+'</span><span>'+esc(chart.domain?surveyValue({unit:b.items[0].unit,value:domain[1]}):'100 %')+'</span></div>';
+  }
   return b.items.map((i,k)=>'<div class="survey-comparison"><strong>'+esc(t(chart.groups?.[k]||i.label))+'</strong>'+sources.map((source,n)=>'<div class="bar-row"><div class="bar-name"><i class="survey-series-dot" style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+source.items[k].value+'%;background:'+surveySeriesColors[n]+'"></div></div><div class="bar-value">'+esc(pct(source.items[k].value))+'</div></div>').join('')+'</div>').join('');
  }
  if(b.items.length>1&&b.items.every(i=>i.response_distribution)&&b.items.every(i=>i.response_distribution.every(segment=>b.items[0].response_distribution.some(first=>first.label===segment.label))))return surveySharedDistributions(b.items.map(i=>({label:i.label,segments:i.response_distribution})));
@@ -2103,7 +2106,7 @@ function renderSurveyItems(){
    +'</summary>'+(hasStudySample?'<p class="tiny">'+esc(t('Studien-, Modul- und Untergruppenstichproben sind keine Fallzahlen gültiger Antworten auf einzelne Fragen. Gewichtete Fallzahlen sind ausdrücklich gekennzeichnet.'))+'</p>':'')+'<div class="table-scroll">'+table(
     [...(combined?[t('Befragungsergebnis')]:[]),t('Gruppe'),t('Wert'),...(hasDistributions?[t('Antwortverteilung')]:[]),t('Grundgesamtheit'),t('Studienstichprobe'),
      ...(hasSubgroupN?[t('Modul-/Untergruppenstichprobe')]:[]),...(hasValidN?[t('Gültige Antworten')]:[]),t('Erhebungszeitraum'),t('Fundstelle')],
-    tableItems.map(i=>[...(combined?[esc(t(i.blockTitle))]:[]),esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
+    tableItems.map(i=>[...(combined?[esc(t(i.blockTitle))]:[]),esc(t(i.label)),esc(surveyValue(i)),
      ...(hasDistributions?[i.answerDistribution?i.answerDistribution.map(segment=>esc(t(segment.label))+': '+esc(pct(segment.value))).join('<br>'):esc(t('nicht ausgewiesen'))]:[]),
      esc(t(i.population)),i.study_sample?surveySampleCell(i.study_sample):i.base_n?(i.sample_source_url?'<a href="'+esc(i.sample_source_url)+'" target="_blank" rel="noreferrer">'+integer(i.base_n)+'</a>':integer(i.base_n)):esc(t('nicht ausgewiesen')),
      ...(hasSubgroupN?[surveySampleCell(i.module_sample||i.subgroup_sample)]:[]),

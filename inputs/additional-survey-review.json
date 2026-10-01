@@ -238,6 +238,13 @@
       "sha256": "d363bd6c977a2284c96c40452d99f63d7dd55c6c067cf270ac91dc3c411d967a",
       "reviewed_at": "2026-10-01",
       "review_scope": "Abbildung 4.2, S. 132–133 visuell; Methoden S. 58–64"
+    },
+    {
+      "file": "978-3-531-18679-5.pdf",
+      "sha256": "6b2266ee3f7e0295af8d0b5de93e34291f3258e089d619f2f5f8d6c9c6c7d0e5",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Studiendesign S. 15–16; Tabelle 4.4 S. 74 und A4.1 S. 77 visuell; Fragewortlaute S. 77–78. Ausgewählte veröffentlichte Aggregatwerte, keine Mikrodaten oder Übernahme von Abbildungen.",
+      "url": "https://doi.org/10.1007/978-3-531-18679-5"
     }
   ],
   "selection": "Religion und Vielfalt; ausgewählte BW-Vergleiche und bundesweite Einstellungen. Keine vollständige Übernahme der Studien."

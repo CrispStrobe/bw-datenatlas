@@ -607,6 +607,29 @@ class DataTests(unittest.TestCase):
         self.assertIn('überschneiden', rules['note'])
         self.assertIn('Oktober', dogma['items'][0]['field_period'])
 
+    def test_earlier_religionsmonitor_and_pollack_do_not_invent_comparable_populations(self):
+        blocks = {b['block']: b for b in json.loads((ROOT/'docs/data/survey-items.json').read_text())['blocks']}
+        earlier = blocks['rm2008_offenheit']
+        self.assertEqual([i['value'] for i in earlier['items']], [86, 67, 33, 24])
+        self.assertTrue(all(i['study_sample']['n'] == 2007 and i['field_period'] == 'Sommer 2008'
+                            for i in earlier['items']))
+        self.assertEqual(earlier['question']['heading'], 'Aussagen laut Ergebnisbericht')
+        self.assertIn('Namensauswahl', earlier['note'])
+        self.assertIn('rm2008_offenheit', blocks['rm2017_wahrheit']['chart']['panels'])
+        self.assertNotIn('2008', [i['label'] for i in blocks['rm_offenheit_history']['items']])
+        self.assertEqual([(i['label'], i['value']) for i in blocks['rm_kern_history']['items']],
+                         [('2013', 72), ('2017', 70), ('2023', 59)])
+        west, east = blocks['pollack2010_model'], blocks['pollack2010_model_ost']
+        self.assertEqual([i['value'] for i in west['items']], [.277, .113, -.170, .081, -.096])
+        self.assertEqual([i['value'] for i in east['items']], [.183, .122, -.128, .074, -.103])
+        self.assertTrue(all(i['unit'] == 'coefficient' for i in west['items'] + east['items']))
+        self.assertEqual(west['chart']['main_chart']['domain'], [-.3, .3])
+        bw = blocks['pollack2010_contacts_bw']
+        self.assertEqual(bw['items'][0]['value'], 46.2)
+        self.assertIn('überschneiden', bw['note'])
+        self.assertTrue(all('subgroup_sample' not in i for i in bw['items']))
+        self.assertIn('keine genaue BW-Fallzahl', bw['note'])
+
     def test_religionsmonitor_cohesion_separates_dimensions_and_wave_samples(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
         blocks = {b['block']: b for b in d['blocks']}

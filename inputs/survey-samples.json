@@ -3080,6 +3080,98 @@
      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
     }
    }
+  ],
+  "rm2008_offenheit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2007,
+     "description": "Deutschland · gesamte Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+     "source_locator": "Studienbeschreibung: 2.007 Befragte, Sommer 2008"
+    }
+   }
+  ],
+  "pollack2010_model": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2043,
+     "description": "Deutschland · gesamte Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+    }
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1041,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16"
+    }
+   }
+  ],
+  "pollack2010_model_ost": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2043,
+     "description": "Deutschland · gesamte Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+    }
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1002,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16"
+    }
+   }
+  ],
+  "pollack2010_contacts_bw": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2043,
+     "description": "Deutschland · gesamte Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+    }
+   }
+  ],
+  "pollack2010_contacts_west": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2043,
+     "description": "Deutschland · gesamte Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+    }
+   }
+  ],
+  "pollack2010_contacts_ost": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2043,
+     "description": "Deutschland · gesamte Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+    }
+   }
   ]
  }
 }

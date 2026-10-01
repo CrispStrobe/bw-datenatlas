@@ -36,6 +36,7 @@
    "title": "Religiöse Offenheit und Wahrheitsansprüche",
    "blocks": [
     "rm2017_wahrheit",
+    "pollack2010_model",
     "konid_gewalt",
     "fundamentalismus_sciics"
    ]
@@ -110,7 +111,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 579,
+ "count": 611,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -534,6 +535,167 @@
       }
      ]
     }
+   }
+  },
+  {
+   "block": "pollack2010_contacts_bw",
+   "title": "Kontakte zu Muslimen · BW im Vergleich 2010",
+   "note": "Emnid-Erhebung Juni–August 2010, Deutschland insgesamt 2.043 Befragte (West 1.041, Ost 1.002). Die Kontakte werden auf alle Befragten der jeweiligen Region bezogen, nicht nur auf Personen mit Kontakten. „Kontakte insgesamt“ ist der Anteil mit Kontakten, die vier Kontaktorte können sich überschneiden und werden nicht addiert. Der Band nennt in dieser Tabelle keine genaue BW-Fallzahl; 2.043 ist die Deutschlandstichprobe. Kein Vergleich als Zeitreihe mit anderen Kontaktfragen.",
+   "scope": "Baden-Württemberg",
+   "items": [
+    {
+     "label": "Kontakte insgesamt",
+     "detail": null,
+     "value": 46.2,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "Im Privatleben",
+     "detail": null,
+     "value": 23.6,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "Auf der Arbeit",
+     "detail": null,
+     "value": 23.0,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "In der Nachbarschaft",
+     "detail": null,
+     "value": 16.8,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "In einem anderen Bereich",
+     "detail": null,
+     "value": 6.8,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Haben Sie viel Kontakt zu Mitgliedern folgender religiöser Gemeinschaften? – Muslime",
+     "Wo finden diese Kontakte statt?"
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Anteil an allen Befragten der jeweiligen Region; mehrere Kontaktorte je Person möglich.",
+    "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+    "source_locator": "Tabelle A4.1 und Frageformulierungen, S. 77"
+   },
+   "chart": {
+    "kind": "compare",
+    "related": [
+     "pollack2010_contacts_west",
+     "pollack2010_contacts_ost"
+    ],
+    "series": [
+     "Baden-Württemberg",
+     "Westdeutschland",
+     "Ostdeutschland"
+    ],
+    "layout": "dots"
    }
   },
   {
@@ -5459,6 +5621,179 @@
    ]
   },
   {
+   "block": "pollack2010_model_ost",
+   "title": "Haltung zu Muslimen · Modell Ostdeutschland",
+   "note": "Emnid-Erhebung Juni–August 2010; 1.041 Befragte in West- und 1.002 in Ostdeutschland, insgesamt 2.043. Ausgewählte standardisierte Koeffizienten aus den getrennten Strukturgleichungsmodellen von Alexander Yendell, Tabelle 4.4. Zielgröße ist die persönliche Haltung zu Muslimen von 1 = sehr negativ bis 4 = sehr positiv. Die Zahlen sind Modellkoeffizienten, keine Prozentanteile und keine einfachen Korrelationen. Alle gezeigten Koeffizienten sind im Bericht mit p < 0,01 markiert; Konfidenzintervalle und gültige Modellfallzahlen stehen an der Tabelle nicht. Weitere Merkmale sind im jeweiligen Modell berücksichtigt. „Dogmatismus“ wird mit der Aussage „Es gibt nur eine wahre Religion“ erfasst; er ist nicht mit Religiosität oder Gottesdienstbesuch gleichzusetzen. Gottesdienstbesuch und Kontakte haben hier positive, der ausschließliche Wahrheitsanspruch und das Benachteiligungsgefühl negative Zusammenhänge mit der Haltung zu Muslimen. Die Querschnittsbefragung belegt keine Ursache oder Wirkung; die Modelle beziehen sich auf West-/Ostdeutschland, nicht auf BW allein. R²: West 0,218, Ost 0,173.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Kontakthäufigkeit mit Muslimen",
+     "detail": null,
+     "value": 0.183,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1002,
+      "description": "Ostdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Häufigkeit des Gottesdienstbesuchs",
+     "detail": null,
+     "value": 0.122,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1002,
+      "description": "Ostdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Zustimmung zu „Es gibt nur eine wahre Religion“",
+     "detail": null,
+     "value": -0.128,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1002,
+      "description": "Ostdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Lehren verschiedener religiöser Traditionen",
+     "detail": null,
+     "value": 0.074,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1002,
+      "description": "Ostdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Gefühl relativer Benachteiligung",
+     "detail": null,
+     "value": -0.103,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1002,
+      "description": "Ostdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    }
+   ]
+  },
+  {
    "block": "kmu6_wandel",
    "title": "Hat die Verbundenheit zur Kirche nachgelassen?",
    "note": "Rückblickende Selbsteinschätzung, keine gemessene Veränderung: gefragt war, ob das Verbundenheitsgefühl im Vergleich zu früher nachgelassen oder zugenommen hat. Der Abstand zwischen den Konfessionen ist der eigentliche Befund — bei den Katholischen berichtet fast das Doppelte einen Rückgang. Die Karte „Beide Kirchen · Veränderung 2011 bis 2022“ zeigt dasselbe Land von der anderen Seite: dort die gezählten Mitgliedschaften, hier das Empfinden derer, die geblieben sind.",
@@ -6508,6 +6843,496 @@
       ]
      }
     ]
+   }
+  },
+  {
+   "block": "pollack2010_contacts_ost",
+   "title": "Kontakte zu Muslimen · Ostdeutschland 2010",
+   "note": "Emnid-Erhebung Juni–August 2010, Deutschland insgesamt 2.043 Befragte (West 1.041, Ost 1.002). Die Kontakte werden auf alle Befragten der jeweiligen Region bezogen, nicht nur auf Personen mit Kontakten. „Kontakte insgesamt“ ist der Anteil mit Kontakten, die vier Kontaktorte können sich überschneiden und werden nicht addiert. Der Band nennt in dieser Tabelle keine genaue BW-Fallzahl; 2.043 ist die Deutschlandstichprobe. Kein Vergleich als Zeitreihe mit anderen Kontaktfragen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Kontakte insgesamt",
+     "detail": null,
+     "value": 16.1,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "Im Privatleben",
+     "detail": null,
+     "value": 8.6,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "Auf der Arbeit",
+     "detail": null,
+     "value": 6.7,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "In der Nachbarschaft",
+     "detail": null,
+     "value": 7.3,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "In einem anderen Bereich",
+     "detail": null,
+     "value": 4.5,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    }
+   ]
+  },
+  {
+   "block": "pollack2010_contacts_west",
+   "title": "Kontakte zu Muslimen · Westdeutschland 2010",
+   "note": "Emnid-Erhebung Juni–August 2010, Deutschland insgesamt 2.043 Befragte (West 1.041, Ost 1.002). Die Kontakte werden auf alle Befragten der jeweiligen Region bezogen, nicht nur auf Personen mit Kontakten. „Kontakte insgesamt“ ist der Anteil mit Kontakten, die vier Kontaktorte können sich überschneiden und werden nicht addiert. Der Band nennt in dieser Tabelle keine genaue BW-Fallzahl; 2.043 ist die Deutschlandstichprobe. Kein Vergleich als Zeitreihe mit anderen Kontaktfragen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Kontakte insgesamt",
+     "detail": null,
+     "value": 40.4,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "Im Privatleben",
+     "detail": null,
+     "value": 20.0,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "Auf der Arbeit",
+     "detail": null,
+     "value": 19.8,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "In der Nachbarschaft",
+     "detail": null,
+     "value": 19.1,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    },
+    {
+     "label": "In einem anderen Bereich",
+     "detail": null,
+     "value": 8.4,
+     "unit": "percent",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Alle Befragten der jeweiligen Region",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle A4.1, S. 77; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     }
+    }
+   ]
+  },
+  {
+   "block": "pollack2010_model",
+   "title": "Kontakte, Religiosität und Haltung zu Muslimen · 2010",
+   "note": "Emnid-Erhebung Juni–August 2010; 1.041 Befragte in West- und 1.002 in Ostdeutschland, insgesamt 2.043. Ausgewählte standardisierte Koeffizienten aus den getrennten Strukturgleichungsmodellen von Alexander Yendell, Tabelle 4.4. Zielgröße ist die persönliche Haltung zu Muslimen von 1 = sehr negativ bis 4 = sehr positiv. Die Zahlen sind Modellkoeffizienten, keine Prozentanteile und keine einfachen Korrelationen. Alle gezeigten Koeffizienten sind im Bericht mit p < 0,01 markiert; Konfidenzintervalle und gültige Modellfallzahlen stehen an der Tabelle nicht. Weitere Merkmale sind im jeweiligen Modell berücksichtigt. „Dogmatismus“ wird mit der Aussage „Es gibt nur eine wahre Religion“ erfasst; er ist nicht mit Religiosität oder Gottesdienstbesuch gleichzusetzen. Gottesdienstbesuch und Kontakte haben hier positive, der ausschließliche Wahrheitsanspruch und das Benachteiligungsgefühl negative Zusammenhänge mit der Haltung zu Muslimen. Die Querschnittsbefragung belegt keine Ursache oder Wirkung; die Modelle beziehen sich auf West-/Ostdeutschland, nicht auf BW allein. R²: West 0,218, Ost 0,173.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Kontakthäufigkeit mit Muslimen",
+     "detail": null,
+     "value": 0.277,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1041,
+      "description": "Westdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Häufigkeit des Gottesdienstbesuchs",
+     "detail": null,
+     "value": 0.113,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1041,
+      "description": "Westdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Zustimmung zu „Es gibt nur eine wahre Religion“",
+     "detail": null,
+     "value": -0.17,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1041,
+      "description": "Westdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Lehren verschiedener religiöser Traditionen",
+     "detail": null,
+     "value": 0.081,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1041,
+      "description": "Westdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    },
+    {
+     "label": "Gefühl relativer Benachteiligung",
+     "detail": null,
+     "value": -0.096,
+     "unit": "coefficient",
+     "study": "Emnid 2010 · Grenzen der Toleranz",
+     "population": "Befragte in West-/Ostdeutschland; getrennte Regionalmodelle",
+     "base_n": 2043,
+     "field_period": "Juni–August 2010",
+     "question_ref": null,
+     "source_title": "Pollack/Müller/Rosta/Friedrichs/Yendell (2014): Grenzen der Toleranz; Kapitel 4 von Alexander Yendell",
+     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+     "source_locator": "Tabelle 4.4, S. 74; Fragewortlaute S. 77–78; Stichprobe S. 15–16",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2043,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
+     },
+     "subgroup_sample": {
+      "n": 1041,
+      "description": "Westdeutschland",
+      "weighted": false,
+      "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+      "source_locator": "Studiendesign, S. 15–16"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Wie ist Ihre persönliche Haltung zu den Mitgliedern folgender religiöser Gruppen? – Muslime",
+     "Haben Sie viel Kontakt zu Mitgliedern folgender religiöser Gemeinschaften? – Muslime",
+     "Wie oft besuchen Sie den Gottesdienst?",
+     "Es gibt nur eine wahre Religion.",
+     "Ich greife für mich selbst auf Lehren verschiedener religiöser Traditionen zurück.",
+     "Im Vergleich dazu, wie andere hier in (Land) leben: Glauben Sie, dass Sie Ihren gerechten Anteil erhalten, mehr als Ihren gerechten Anteil, etwas weniger oder sehr viel weniger?"
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zusammenhänge mit der Haltung zu Muslimen im kontrollierten Modell, keine Zustimmungsanteile.",
+    "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+    "source_locator": "Tabelle 4.4, S. 74; Wortlaut und Kodierungen S. 77–78"
+   },
+   "chart": {
+    "kind": "collection",
+    "title": "Kontakte, „Dogmatismus“ und Haltung zu Muslimen",
+    "related": [
+     "pollack2010_model_ost",
+     "pollack2010_contacts_bw"
+    ],
+    "panels": [
+     "pollack2010_model",
+     "pollack2010_contacts_bw"
+    ],
+    "main_chart": {
+     "kind": "compare",
+     "related": [
+      "pollack2010_model_ost"
+     ],
+     "series": [
+      "Westdeutschland",
+      "Ostdeutschland"
+     ],
+     "layout": "dots",
+     "domain": [
+      -0.3,
+      0.3
+     ]
+    }
    }
   },
   {
@@ -8266,8 +9091,137 @@
    }
   },
   {
+   "block": "rm2008_offenheit",
+   "title": "Offenheit und Wahrheitsansprüche · Muslimische Befragte 2008",
+   "note": "Sonderbefragung unter 2.007 Musliminnen und Muslimen ab 18 Jahren im Sommer 2008. Telefonische Befragung in Deutsch und Herkunftssprachen; Namensauswahl anhand türkischer, bosnischer, persischer und arabischer Nachnamen, Gewichtung nach kulturell-sprachlicher Herkunft. Andere Herkunftsgruppen und Konvertierte werden damit nicht vollständig abgedeckt. Veröffentlicht sind gerundete Zustimmungsanteile; gültige Fallzahlen je Aussage fehlen. Die Broschüre beschreibt die Aussagen im Ergebnistext, druckt hier aber keinen Fragebogen ab. Die Anzeige kennzeichnet diesen Berichtswortlaut. Vier eigenständige Aussagen; Zustimmung kann sich überschneiden. 2008 ist eine eigene muslimische Sonderstichprobe, während die späteren Wellen andere Altersgrenzen, Auswahlverfahren und Untergruppen haben. Die Werte werden deshalb nicht als durchgehende Zeitreihe mit 2013, 2017 oder 2023 verbunden.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Offen gegenüber allen Religionen",
+     "detail": null,
+     "value": 86.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2008 · muslimische Sonderbefragung",
+     "population": "Musliminnen und Muslime in Deutschland ab 18 Jahren; ausgewählte Herkunftssprachgruppen",
+     "base_n": 2007,
+     "sample_source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+     "field_period": "Sommer 2008",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2008): Muslimische Religiosität in Deutschland",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_2008_Muslimische_Religiositaet.pdf",
+     "source_locator": "Ergebnistext S. 17; Auswahlverfahren S. 10–11",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2007,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+      "source_locator": "Studienbeschreibung: 2.007 Befragte, Sommer 2008"
+     }
+    },
+    {
+     "label": "Jede Religion hat einen wahren Kern",
+     "detail": null,
+     "value": 67.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2008 · muslimische Sonderbefragung",
+     "population": "Musliminnen und Muslime in Deutschland ab 18 Jahren; ausgewählte Herkunftssprachgruppen",
+     "base_n": 2007,
+     "sample_source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+     "field_period": "Sommer 2008",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2008): Muslimische Religiosität in Deutschland",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_2008_Muslimische_Religiositaet.pdf",
+     "source_locator": "Ergebnistext S. 17; Auswahlverfahren S. 10–11",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2007,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+      "source_locator": "Studienbeschreibung: 2.007 Befragte, Sommer 2008"
+     }
+    },
+    {
+     "label": "Lehren verschiedener religiöser Traditionen",
+     "detail": null,
+     "value": 33.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2008 · muslimische Sonderbefragung",
+     "population": "Musliminnen und Muslime in Deutschland ab 18 Jahren; ausgewählte Herkunftssprachgruppen",
+     "base_n": 2007,
+     "sample_source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+     "field_period": "Sommer 2008",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2008): Muslimische Religiosität in Deutschland",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_2008_Muslimische_Religiositaet.pdf",
+     "source_locator": "Ergebnistext S. 17; Auswahlverfahren S. 10–11",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2007,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+      "source_locator": "Studienbeschreibung: 2.007 Befragte, Sommer 2008"
+     }
+    },
+    {
+     "label": "Eigene Religion hat recht, andere eher unrecht",
+     "detail": null,
+     "value": 24.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2008 · muslimische Sonderbefragung",
+     "population": "Musliminnen und Muslime in Deutschland ab 18 Jahren; ausgewählte Herkunftssprachgruppen",
+     "base_n": 2007,
+     "sample_source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+     "field_period": "Sommer 2008",
+     "question_ref": null,
+     "source_title": "Bertelsmann Stiftung (2008): Muslimische Religiosität in Deutschland",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_2008_Muslimische_Religiositaet.pdf",
+     "source_locator": "Ergebnistext S. 17; Auswahlverfahren S. 10–11",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2007,
+      "description": "Deutschland · gesamte Studienstichprobe",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/de/presse/pressemitteilungen/pressemitteilung/pid/muslime-in-deutschland-sind-sehr-religioes-und-orientieren-sich-auch-im-alltag-an-ihren-glaubensvors",
+      "source_locator": "Studienbeschreibung: 2.007 Befragte, Sommer 2008"
+     }
+    }
+   ],
+   "question": {
+    "heading": "Aussagen laut Ergebnisbericht",
+    "texts": [
+     "Man sollte offen gegenüber allen Religionen sein.",
+     "Jede Religion hat einen wahren Kern.",
+     "Für sich selbst auf Lehren verschiedener religiöser Traditionen zurückgreifen.",
+     "In religiösen Fragen hat die eigene Religion vor allem recht und andere Religionen eher unrecht."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: veröffentlichte Zustimmungsanteile. Die Formulierungen folgen dem Ergebnistext; ein vollständiger Fragebogen ist dort nicht abgedruckt.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_2008_Muslimische_Religiositaet.pdf",
+    "source_locator": "Ergebnistext S. 17"
+   }
+  },
+  {
    "block": "rm_offenheit_history",
-   "title": "Offenheit gegenüber allen Religionen · 2013–2023",
+   "title": "Offenheit und religiöse Wahrheit · 2013–2023",
    "note": "Zustimmung zur Aussage über Offenheit gegenüber allen Religionen. Veröffentlichte Erhebungswellen 2013, 2017 und 2023; keine Interpolation. Die Stichproben und Erhebungsverfahren unterscheiden sich zwischen den Wellen. Für 2023 kombiniert die Studie Melderegister- und Onlinepanel-Interviews; der Vergleich beschreibt veröffentlichte Befunde und isoliert keinen reinen Einstellungswandel. Abbildung 23 im Bericht 2019 zeigt für 2013 88 Prozent; der Bericht 2023 nennt rückblickend 89 Prozent. Hier wird für 2013 der direkt in der Abbildung ausgewiesene Wert verwendet.",
    "scope": "Deutschland",
    "items": [
@@ -8332,16 +9286,24 @@
    ],
    "question": {
     "texts": [
-     "Man sollte allen Religionen gegenüber offen sein."
+     "Man sollte allen Religionen gegenüber offen sein.",
+     "Für mich hat jede Religion einen wahren Kern."
     ],
     "response_scale": "",
-    "shown": "Gezeigt: Zustimmung. Der Bericht 2023 formuliert die Aussage als „Man sollte gegenüber allen Religionen offen sein.“",
+    "shown": "Gezeigt: Zustimmung zu zwei eigenständigen Aussagen; die Anteile werden nicht addiert. Der Bericht 2023 formuliert die Offenheitsaussage als „Man sollte gegenüber allen Religionen offen sein.“",
     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
     "source_locator": "Abbildung 23, S. 72; Religionsmonitor 2023, Abbildung 10, S. 51"
    },
    "chart": {
     "kind": "time",
-    "title": "Offenheit gegenüber allen Religionen · 2013–2023"
+    "title": "Offenheit und religiöse Wahrheit · 2013–2023",
+    "related": [
+     "rm_kern_history"
+    ],
+    "series": [
+     "Offen gegenüber allen Religionen",
+     "Jede Religion hat einen wahren Kern"
+    ]
    }
   },
   {
@@ -11667,6 +12629,72 @@
    ]
   },
   {
+   "block": "rm_kern_history",
+   "title": "Wahrer Kern aller Religionen · 2013–2023",
+   "note": "Zustimmung zur Aussage „Für mich hat jede Religion einen wahren Kern“. Abbildung 23 des Berichts 2019 weist für Deutschland 72 Prozent (2013) und 70 Prozent (2017) aus; Abbildung 10 des Berichts 2023 nennt 59 Prozent. Jeweils Bevölkerung Deutschlands, gültige Fälle, gewichtet; die muslimische Sonderstichprobe 2008 gehört nicht in diese Reihe. Die Auswahlverfahren und Zusammensetzung unterscheiden sich zwischen den Wellen. 2023 kombiniert Melderegister- und Onlinepanel-Interviews. Der Vergleich beschreibt veröffentlichte Befunde, keinen isolierten Einstellungswandel.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "2013",
+     "detail": null,
+     "value": 72.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung Deutschlands; jeweilige Erhebungswelle",
+     "base_n": 2000,
+     "sample_source_url": "https://www.bertelsmann-stiftung.de/de/publikationen/publikation/did/religionsmonitor-verstehen-was-verbindet-religioesitaet-und-zusammenhalt-in-deutschland/",
+     "field_period": "Oktober–Dezember 2012",
+     "question_ref": null,
+     "source_title": "Weltanschauliche Vielfalt und Demokratie (2019)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72: 2013",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2017",
+     "detail": null,
+     "value": 70.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung Deutschlands; jeweilige Erhebungswelle",
+     "base_n": 1508,
+     "field_period": "Religionsmonitor 2017; Feldmonate in dieser Abbildung nicht angegeben",
+     "question_ref": null,
+     "source_title": "Weltanschauliche Vielfalt und Demokratie (2019)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72: 2017",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    },
+    {
+     "label": "2023",
+     "detail": null,
+     "value": 59.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Bevölkerung Deutschlands; jeweilige Erhebungswelle",
+     "base_n": 4363,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Zusammenleben in religiöser Vielfalt (2023)",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Abbildung 10, S. 51; Einordnung S. 52",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     }
+    }
+   ]
+  },
+  {
    "block": "rm2017_wahrheit",
    "title": "Wahrheit nur in einer Religion · Religionsmonitor 2017",
    "note": "Zustimmung zur Aussage: „Wahrheit gibt es nur in einer Religion.“ Abbildung 18 wurde visuell geprüft. Gewichtete gültige Fälle; Fallzahlen der einzelnen Glaubensrichtungen sind an der Abbildung nicht veröffentlicht. Die Gruppen überschneiden sich: Glaubensrichtung und Geburtsort sind verschiedene Aufschlüsselungen derselben muslimischen Stichprobe. Balken deshalb nicht addieren. Der Bericht unterscheidet Dogmatismus ausdrücklich von Fundamentalismus. Publikation 2019, Daten des Religionsmonitors 2017.",
@@ -11925,9 +12953,11 @@
      "rm2013_synkretismus",
      "rm2013_dogmatismus",
      "rm2023_freiheit",
-     "rm_offenheit_history"
+     "rm_offenheit_history",
+     "rm2008_offenheit"
     ],
     "panels": [
+     "rm2008_offenheit",
      "rm2013_synkretismus",
      "rm2013_dogmatismus",
      "rm2017_wahrheit",

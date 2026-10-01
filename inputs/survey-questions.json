@@ -67,10 +67,11 @@
   },
   "rm_offenheit_history": {
     "texts": [
-      "Man sollte allen Religionen gegenüber offen sein."
+      "Man sollte allen Religionen gegenüber offen sein.",
+      "Für mich hat jede Religion einen wahren Kern."
     ],
     "response_scale": "",
-    "shown": "Gezeigt: Zustimmung. Der Bericht 2023 formuliert die Aussage als „Man sollte gegenüber allen Religionen offen sein.“",
+    "shown": "Gezeigt: Zustimmung zu zwei eigenständigen Aussagen; die Anteile werden nicht addiert. Der Bericht 2023 formuliert die Offenheitsaussage als „Man sollte gegenüber allen Religionen offen sein.“",
     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
     "source_locator": "Abbildung 23, S. 72; Religionsmonitor 2023, Abbildung 10, S. 51"
   },
@@ -416,5 +417,42 @@
     "shown": "Gezeigt: stimme eher/stark zu.",
     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
     "source_locator": "S. 11, Abbildung 1"
+  },
+  "rm2008_offenheit": {
+    "heading": "Aussagen laut Ergebnisbericht",
+    "texts": [
+      "Man sollte offen gegenüber allen Religionen sein.",
+      "Jede Religion hat einen wahren Kern.",
+      "Für sich selbst auf Lehren verschiedener religiöser Traditionen zurückgreifen.",
+      "In religiösen Fragen hat die eigene Religion vor allem recht und andere Religionen eher unrecht."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: veröffentlichte Zustimmungsanteile. Die Formulierungen folgen dem Ergebnistext; ein vollständiger Fragebogen ist dort nicht abgedruckt.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_2008_Muslimische_Religiositaet.pdf",
+    "source_locator": "Ergebnistext S. 17"
+  },
+  "pollack2010_model": {
+    "texts": [
+      "Wie ist Ihre persönliche Haltung zu den Mitgliedern folgender religiöser Gruppen? – Muslime",
+      "Haben Sie viel Kontakt zu Mitgliedern folgender religiöser Gemeinschaften? – Muslime",
+      "Wie oft besuchen Sie den Gottesdienst?",
+      "Es gibt nur eine wahre Religion.",
+      "Ich greife für mich selbst auf Lehren verschiedener religiöser Traditionen zurück.",
+      "Im Vergleich dazu, wie andere hier in (Land) leben: Glauben Sie, dass Sie Ihren gerechten Anteil erhalten, mehr als Ihren gerechten Anteil, etwas weniger oder sehr viel weniger?"
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zusammenhänge mit der Haltung zu Muslimen im kontrollierten Modell, keine Zustimmungsanteile.",
+    "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+    "source_locator": "Tabelle 4.4, S. 74; Wortlaut und Kodierungen S. 77–78"
+  },
+  "pollack2010_contacts_bw": {
+    "texts": [
+      "Haben Sie viel Kontakt zu Mitgliedern folgender religiöser Gemeinschaften? – Muslime",
+      "Wo finden diese Kontakte statt?"
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Anteil an allen Befragten der jeweiligen Region; mehrere Kontaktorte je Person möglich.",
+    "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
+    "source_locator": "Tabelle A4.1 und Frageformulierungen, S. 77"
   }
 }

@@ -1076,9 +1076,11 @@
    "rm2013_synkretismus",
    "rm2013_dogmatismus",
    "rm2023_freiheit",
-   "rm_offenheit_history"
+   "rm_offenheit_history",
+   "rm2008_offenheit"
   ],
   "panels": [
+   "rm2008_offenheit",
    "rm2013_synkretismus",
    "rm2013_dogmatismus",
    "rm2017_wahrheit",
@@ -1667,7 +1669,14 @@
  },
  "rm_offenheit_history": {
   "kind": "time",
-  "title": "Offenheit gegenüber allen Religionen · 2013–2023"
+  "title": "Offenheit und religiöse Wahrheit · 2013–2023",
+  "related": [
+   "rm_kern_history"
+  ],
+  "series": [
+   "Offen gegenüber allen Religionen",
+   "Jede Religion hat einen wahren Kern"
+  ]
  },
  "fes2023_ressentiments": {
   "kind": "distribution",
@@ -1933,5 +1942,45 @@
    "Masterstudierende"
   ],
   "title": "Antisemitische Einstellungen: Bachelor- und Masterstudierende"
+ },
+ "pollack2010_contacts_bw": {
+  "kind": "compare",
+  "related": [
+   "pollack2010_contacts_west",
+   "pollack2010_contacts_ost"
+  ],
+  "series": [
+   "Baden-Württemberg",
+   "Westdeutschland",
+   "Ostdeutschland"
+  ],
+  "layout": "dots"
+ },
+ "pollack2010_model": {
+  "kind": "collection",
+  "title": "Kontakte, „Dogmatismus“ und Haltung zu Muslimen",
+  "related": [
+   "pollack2010_model_ost",
+   "pollack2010_contacts_bw"
+  ],
+  "panels": [
+   "pollack2010_model",
+   "pollack2010_contacts_bw"
+  ],
+  "main_chart": {
+   "kind": "compare",
+   "related": [
+    "pollack2010_model_ost"
+   ],
+   "series": [
+    "Westdeutschland",
+    "Ostdeutschland"
+   ],
+   "layout": "dots",
+   "domain": [
+    -0.3,
+    0.3
+   ]
+  }
  }
 }

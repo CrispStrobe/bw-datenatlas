@@ -94,6 +94,17 @@ try:
                 kind = block.get('chart', {}).get('kind')
                 if kind == 'collection':
                     assert page.locator('#survey-blocks > .survey-panel').count() == len(block['chart']['panels'])
+                    if block['block'] == 'pollack2010_model':
+                        panel = page.locator('#survey-blocks .survey-panel').first
+                        positions = panel.locator('.survey-dot').evaluate_all('els=>els.map(el=>parseFloat(el.style.left))')
+                        assert len(positions) == 10
+                        assert abs(positions[0] - 96.1667) < .001
+                        assert positions[4] < 50 and positions[5] < 50
+                        values = panel.locator('.survey-dot-values').all_text_contents()
+                        assert '-0,170' in values[2] and '+0,113' in values[1]
+                        assert all('%' not in value for value in values)
+                        assert '-0,300' in panel.locator('.survey-dot-scale').inner_text()
+                        checks += 6
                 elif kind == 'responses':
                     assert page.locator('#survey-blocks .survey-stack').count() == len(block['items'])
                 elif kind == 'distribution':
