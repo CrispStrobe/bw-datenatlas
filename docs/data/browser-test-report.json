@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 362,
+  "check_count": 361,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -95,10 +95,6 @@
       "passed": true
     },
     {
-      "name": "Restkategorie tile present and carries its value",
-      "passed": true
-    },
-    {
       "name": "published BW range displayed",
       "passed": true
     },
@@ -111,7 +107,7 @@
       "passed": true
     },
     {
-      "name": "the residual tile says the estimate sits inside it",
+      "name": "the hero avoids an overlapping residual tile",
       "passed": true
     },
     {
@@ -1095,11 +1091,11 @@
       "passed": true
     },
     {
-      "name": "the dropdown groups the blocks by the area they cover",
+      "name": "the dropdown groups the blocks by topic",
       "passed": true
     },
     {
-      "name": "the first group is this state",
+      "name": "the first topic covers integration and migration",
       "passed": true
     },
     {
@@ -1431,7 +1427,7 @@
       "passed": true
     },
     {
-      "name": "untranslated german does not grow outside the sources (45 nodes)",
+      "name": "untranslated german does not grow outside the sources (46 nodes)",
       "passed": true
     },
     {

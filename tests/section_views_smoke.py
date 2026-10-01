@@ -26,12 +26,20 @@ try:
             assert page.eval_on_selector_all('main>section[id]', 'els=>els.map(e=>e.id)') == [
                 'karte', 'herkunft', 'befragungen', 'grundlagen']
             assert page.locator('#population-view').input_value() == 'origins'
+            assert page.locator('#map-bamf-definition').is_hidden()
+            page.select_option('#layer', 'religion_estimate')
+            assert page.locator('#map-bamf-definition').is_visible()
+            page.select_option('#layer', 'district_population')
+            assert page.locator('#map-bamf-definition').is_hidden()
             page.select_option('#population-view', 'states')
             page.locator('nav a[href="#herkunft"]').click()
             page.wait_for_function("document.querySelector('#population-view').value==='origins'")
             assert page.locator('#population-view').input_value() == 'origins'
             assert page.locator('#view-origins').is_visible()
-            checks += 3
+            assert page.locator('#view-incidents').locator('xpath=ancestor::section').get_attribute('id') == 'herkunft'
+            assert page.locator('#view-estimates').locator('xpath=ancestor::section').get_attribute('id') == 'herkunft'
+            assert page.locator('#basis-view option[value=incidents], #basis-view option[value=estimates]').count() == 0
+            checks += 6
             for field in ('population-view', 'basis-view'):
                 selected = page.locator('#' + field).input_value()
                 section = page.locator('#' + field).locator('xpath=ancestor::section')
@@ -44,7 +52,7 @@ try:
                     assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
                     checks += 3
                 page.select_option('#' + field, selected)
-            page.select_option('#basis-view', 'incidents')
+            page.select_option('#population-view', 'incidents')
             for value in page.eval_on_selector_all('#report-findings-select option', 'els=>els.map(e=>e.value)'):
                 page.select_option('#report-findings-select', value)
                 report = page.evaluate('id=>window.ATLAS_REPORT_FINDINGS.reports.find(r=>r.id===id)', value)
@@ -55,6 +63,7 @@ try:
                     page.locator('#report-findings-body summary').click()
                     assert page.locator('#report-findings-body .sources-list article').count() == 16
                 checks += 3
+            page.select_option('#population-view', 'origins')
             page.select_option('#basis-view', 'bases')
             for value in page.eval_on_selector_all('#survey-select option', 'els=>els.map(e=>e.value)'):
                 page.select_option('#survey-select', value)
@@ -68,14 +77,16 @@ try:
                     };
                     return visit(b);
                 }''', block)
-                assert page.locator('#survey-blocks table tbody tr').count() == sum(len(b['items']) for b in sources), block['block']
+                assert page.locator('#survey-blocks .compact-details table tbody tr').count() == sum(len(b['items']) for b in sources), block['block']
                 kind = block.get('chart', {}).get('kind')
                 if kind == 'collection':
-                    assert page.locator('#survey-blocks .survey-panel').count() == len(block['chart']['panels'])
+                    assert page.locator('#survey-blocks > .survey-panel').count() == len(block['chart']['panels'])
                 elif kind == 'responses':
                     assert page.locator('#survey-blocks .survey-stack').count() == len(block['items'])
                 elif kind == 'distribution':
                     assert page.locator('#survey-blocks .survey-stack').count() == len(block['chart']['rows'])
+                elif kind == 'matrix':
+                    assert page.locator('#survey-blocks .survey-matrix tbody td').count() == len(block['items'])
                 elif kind == 'time':
                     assert page.locator('#survey-blocks .survey-time circle').count() == len(block['items'])*(1+len(block['chart'].get('related', [])))
                 else:
@@ -102,6 +113,8 @@ try:
             assert page.locator('#pyramid-card').is_visible()
             assert page.locator('#population-view').input_value() == 'pyramid'
             for anchor, field, value in [('kontext', 'population-view', 'flows'),
+                                          ('published-estimates-card', 'population-view', 'estimates'),
+                                          ('view-incidents', 'population-view', 'incidents'),
                                           ('daten', 'basis-view', 'downloads'),
                                           ('methodik', 'basis-view', 'method'),
                                           ('quellen', 'basis-view', 'sources')]:

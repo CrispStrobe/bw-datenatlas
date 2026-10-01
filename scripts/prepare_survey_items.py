@@ -89,6 +89,31 @@ def main() -> None:
             **({'source_kind': r['source_kind']} if r.get('source_kind') else {}),
         })
 
+    # Public method tables describe whole studies, modules and subgroups.
+    # Keep these separate from item-valid N and the older base_n field.
+    sample_path = ROOT / 'inputs/survey-samples.json'
+    samples = json.loads(sample_path.read_text(encoding='utf-8'))
+    for key, rules in samples['blocks'].items():
+        if key not in bloecke:
+            raise ValueError(f'Unknown sample block: {key}')
+        for item in bloecke[key]['items']:
+            for rule in rules:
+                if rule.get('label') is not None and rule['label'] != item['label']:
+                    continue
+                sample = rule['sample']
+                if sample['n'] <= 0 or not sample.get('source_locator'):
+                    raise ValueError(f'Incomplete sample evidence: {key}')
+                field = rule['field']
+                if field in item:
+                    raise ValueError(f'Duplicate {field}: {key}, {item["label"]}')
+                item[field] = sample
+
+    questions = json.loads((ROOT / 'inputs/survey-questions.json').read_text(encoding='utf-8'))
+    for key, question in questions.items():
+        if key not in bloecke or not question['texts'] or not question['source_locator']:
+            raise ValueError(f'Incomplete question evidence: {key}')
+        bloecke[key]['question'] = question
+
     chart_path = ROOT / 'inputs/survey-charts.json'
     charts = json.loads(chart_path.read_text(encoding='utf-8'))
     def prepare_chart(key, chart):
@@ -141,7 +166,8 @@ def main() -> None:
 
     doc = {
         'type': 'survey_items',
-        'schema_version': '1.2',
+        'schema_version': '1.3',
+        'topics': json.loads((ROOT/'inputs/survey-topics.json').read_text(encoding='utf-8')),
         'rights': export_rights(),
         'what_this_is': ('Antworten auf Fragen, nicht gezählte Menschen. Ein eigener '
                          'Abschnitt, weil eine Prozentzahl wie die andere aussieht und '

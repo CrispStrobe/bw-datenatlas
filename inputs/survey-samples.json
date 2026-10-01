@@ -1,0 +1,2895 @@
+{
+ "reviewed_at": "2026-10-01",
+ "method": "Veröffentlichte Methodentabellen und Abbildungen; keine Mikrodatenanalyse. study_sample, module_sample und subgroup_sample sind keine valid_n. base_n bleibt als bisherige Angabe erhalten; die Anzeige verwendet die getrennt belegten sample-Felder.",
+ "blocks": {
+  "bosch2025_index_bw": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2937,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Vielfaltsbarometer 2019, Tabellen; 2.937 auswertbare Fälle"
+    },
+    "label": "Vielfalt insgesamt · 2019"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 309,
+     "description": "Baden-Württemberg · Länderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Tabelle 17, S. 109"
+    },
+    "label": "Vielfalt insgesamt · 2019"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4761,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Vielfaltsbarometer 2025, S. 70"
+    },
+    "label": "Vielfalt insgesamt · 2025"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 518,
+     "description": "Baden-Württemberg · Länderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle A, S. 72"
+    },
+    "label": "Vielfalt insgesamt · 2025"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2937,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Vielfaltsbarometer 2019, Tabellen; 2.937 auswertbare Fälle"
+    },
+    "label": "Ethnische Herkunft · 2019"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 309,
+     "description": "Baden-Württemberg · Länderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Tabelle 17, S. 109"
+    },
+    "label": "Ethnische Herkunft · 2019"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4761,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Vielfaltsbarometer 2025, S. 70"
+    },
+    "label": "Ethnische Herkunft · 2025"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 518,
+     "description": "Baden-Württemberg · Länderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle A, S. 72"
+    },
+    "label": "Ethnische Herkunft · 2025"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2937,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Vielfaltsbarometer 2019, Tabellen; 2.937 auswertbare Fälle"
+    },
+    "label": "Religion · 2019"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 309,
+     "description": "Baden-Württemberg · Länderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Tabelle 17, S. 109"
+    },
+    "label": "Religion · 2019"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4761,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Vielfaltsbarometer 2025, S. 70"
+    },
+    "label": "Religion · 2025"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 518,
+     "description": "Baden-Württemberg · Länderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Tabelle A, S. 72"
+    },
+    "label": "Religion · 2025"
+   }
+  ],
+  "bosch2025_index_de": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2937,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Vielfaltsbarometer 2019, Tabellen; 2.937 auswertbare Fälle"
+    },
+    "label": "Vielfalt insgesamt · 2019"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4761,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Vielfaltsbarometer 2025, S. 70"
+    },
+    "label": "Vielfalt insgesamt · 2025"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2937,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Vielfaltsbarometer 2019, Tabellen; 2.937 auswertbare Fälle"
+    },
+    "label": "Ethnische Herkunft · 2019"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4761,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Vielfaltsbarometer 2025, S. 70"
+    },
+    "label": "Ethnische Herkunft · 2025"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2937,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2019-03/Vielfaltsbarometer%202019_Studie%20Zusammenhalt%20in%20Vielfalt.pdf",
+     "source_locator": "Vielfaltsbarometer 2019, Tabellen; 2.937 auswertbare Fälle"
+    },
+    "label": "Religion · 2019"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4761,
+     "description": "Deutschland · auswertbare Fälle",
+     "weighted": false,
+     "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+     "source_locator": "Vielfaltsbarometer 2025, S. 70"
+    },
+    "label": "Religion · 2025"
+   }
+  ],
+  "rm2023_differenzierung": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · gesamte Erhebung",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Methodensteckbrief, S. 66"
+    }
+   },
+   {
+    "field": "module_sample",
+    "sample": {
+     "n": 1912,
+     "description": "Nichtmuslimische Befragte des Online-Panels",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Methodensteckbrief, S. 66"
+    }
+   }
+  ],
+  "rm2023_solidaritaet_engagement": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Methodensteckbrief, S. 7"
+    }
+   }
+  ],
+  "rm2026_detail_gemeinwohl": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "rm2026_regions": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "rm2026_zusammenhalt": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "rm2023_gottesglaube": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2023_hilfe_syrien": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Methodensteckbrief, S. 7"
+    }
+   }
+  ],
+  "rm2023_hilfe_ukraine": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Methodensteckbrief, S. 7"
+    }
+   }
+  ],
+  "rm2017_offenheit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1508,
+     "description": "Deutschland · Hauptstichprobe; zusätzlich muslimische Sonderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 1, S. 6; Methodenbeschreibung, S. 29"
+    }
+   }
+  ],
+  "rm2023_praxis": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2026_dimensions": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "rm2017_regeln": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1508,
+     "description": "Deutschland · Hauptstichprobe; zusätzlich muslimische Sonderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 1, S. 6; Methodenbeschreibung, S. 29"
+    }
+   }
+  ],
+  "rm2023_zuschreibungen": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · gesamte Erhebung",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Methodensteckbrief, S. 66"
+    }
+   },
+   {
+    "field": "module_sample",
+    "sample": {
+     "n": 1912,
+     "description": "Nichtmuslimische Befragte des Online-Panels",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Methodensteckbrief, S. 66"
+    }
+   }
+  ],
+  "rm2023_pandemie_religion": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1568,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Ohne Religionszugehörigkeit"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 975,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Katholisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 954,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Evangelisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 82,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Christlich-orthodox"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 48,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Evangelikal-freikirchlich und pfingstkirchlich"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 371,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Islam"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 39,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Buddhismus"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 56,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Hinduismus"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 245,
+     "description": "Religionsgruppe in der Gesamtstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
+     "source_locator": "Tabelle 1, S. 22"
+    },
+    "label": "Andere Religionsgemeinschaft"
+   }
+  ],
+  "rm2023_freiheit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2023_religiositaet": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2023_bedrohung": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2023_bereicherung": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2026_detail_netze": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "rm2023_spenden_religion": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Methodensteckbrief, S. 7"
+    }
+   }
+  ],
+  "rm2023_solidaritaet_spenden": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Methodensteckbrief, S. 7"
+    }
+   }
+  ],
+  "rm2023_solidaritaet_lotto": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+     "source_locator": "Methodensteckbrief, S. 7"
+    }
+   }
+  ],
+  "rm2023_spiritualitaet": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+     "source_locator": "Methodensteckbrief, S. 8"
+    }
+   }
+  ],
+  "rm2023_verschwoerung_religioes": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Methodensteckbrief, S. 15"
+    }
+   }
+  ],
+  "rm2023_verschwoerung_spirituell": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 4363,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Verschwoerungsglaube_Februar2025_de.pdf",
+     "source_locator": "Methodensteckbrief, S. 15"
+    }
+   }
+  ],
+  "rm2026_detail_verbundenheit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "rm2017_wahrheit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1508,
+     "description": "Deutschland · Hauptstichprobe; zusätzlich muslimische Sonderstichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 1, S. 6; Methodenbeschreibung, S. 29"
+    }
+   }
+  ],
+  "rm2026_detail_gesamt": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · Analysestichprobe",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+    }
+   }
+  ],
+  "konid_gewalt": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2363,
+     "description": "Deutschland · Hauptstichprobe; zusätzliche Sonderstichproben",
+     "weighted": false,
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Methodenbeschreibung, S. 3–4"
+    }
+   }
+  ],
+  "konid_verfassung": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2363,
+     "description": "Deutschland · Hauptstichprobe; zusätzliche Sonderstichproben",
+     "weighted": false,
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Methodenbeschreibung, S. 3–4"
+    }
+   }
+  ],
+  "konid_autoritaet": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2363,
+     "description": "Deutschland · Hauptstichprobe; zusätzliche Sonderstichproben",
+     "weighted": false,
+     "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+     "source_locator": "Methodenbeschreibung, S. 3–4"
+    }
+   }
+  ],
+  "fundamentalismus_sciics": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 9000,
+     "description": "Sechs Länder · gerundete Gesamtangabe",
+     "weighted": false,
+     "source_url": "https://bibliothek.wzb.eu/artikel/2013/f-18232.pdf",
+     "source_locator": "WZB Mitteilungen 142, S. 21"
+    }
+   }
+  ],
+  "rm2017_nachbarn_europa": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Deutschland · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 982,
+     "description": "Österreich · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 992,
+     "description": "Schweiz · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 966,
+     "description": "Großbritannien · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 951,
+     "description": "Frankreich · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich"
+   }
+  ],
+  "rm2017_europa_arbeitslos": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nichtmuslimisch"
+   }
+  ],
+  "rm2017_europa_hochreligioes": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Muslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1114,
+     "description": "Deutschland · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nichtmuslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Deutschland · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Muslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Österreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nichtmuslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 982,
+     "description": "Österreich · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Muslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Schweiz · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nichtmuslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 992,
+     "description": "Schweiz · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Muslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 500,
+     "description": "Großbritannien · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nichtmuslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 966,
+     "description": "Großbritannien · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Muslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 502,
+     "description": "Frankreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nichtmuslimisch"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 951,
+     "description": "Frankreich · nichtmuslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nichtmuslimisch"
+   }
+  ],
+  "rm2017_europa_kontakte": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1114,
+     "description": "Deutschland · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Österreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Schweiz · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 500,
+     "description": "Großbritannien · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 502,
+     "description": "Frankreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   }
+  ],
+  "rm2017_europa_sprache": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1114,
+     "description": "Deutschland · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Österreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Schweiz · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 500,
+     "description": "Großbritannien · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 502,
+     "description": "Frankreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   }
+  ],
+  "rm2017_europa_freunde": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1114,
+     "description": "Deutschland · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Österreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Schweiz · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 500,
+     "description": "Großbritannien · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 502,
+     "description": "Frankreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   }
+  ],
+  "rm2017_europa_diskriminierungsfrei": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1114,
+     "description": "Deutschland · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Österreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Schweiz · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 500,
+     "description": "Großbritannien · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 502,
+     "description": "Frankreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   }
+  ],
+  "rm2017_europa_verbundenheit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1114,
+     "description": "Deutschland · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Österreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Schweiz · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 500,
+     "description": "Großbritannien · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Gesamt"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Erste Generation"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nachfolgegeneration"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 502,
+     "description": "Frankreich · muslimische Stichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Gesamt"
+   }
+  ],
+  "rm2017_europa_vollzeit": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2567,
+     "description": "Deutschland · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Deutschland · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1485,
+     "description": "Österreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Österreich · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1493,
+     "description": "Schweiz · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Schweiz · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1466,
+     "description": "Großbritannien · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Großbritannien · Nichtmuslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Muslimisch"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 1453,
+     "description": "Frankreich · kombinierte Länderstichprobe",
+     "weighted": true,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+     "source_locator": "Abbildung 1, S. 14"
+    },
+    "label": "Frankreich · Nichtmuslimisch"
+   }
+  ],
+  "abgrenzung": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 902,
+     "description": "Deutschland · gesamte Erhebung einschließlich Aufstockung",
+     "weighted": false,
+     "source_url": "https://www.pewresearch.org/global/2006/06/22/methodological-appendix-3/",
+     "source_locator": "Methodological Appendix, Germany"
+    },
+    "label": "Befragte Muslime: Zuwandernde Muslime wollen sich anpassen"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 413,
+     "description": "Muslimische Aufstockungsstichprobe",
+     "weighted": false,
+     "source_url": "https://www.pewresearch.org/global/2006/06/22/methodological-appendix-3/",
+     "source_locator": "Methodological Appendix, Germany"
+    },
+    "label": "Befragte Muslime: Zuwandernde Muslime wollen sich anpassen"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 902,
+     "description": "Deutschland · gesamte Erhebung einschließlich Aufstockung",
+     "weighted": false,
+     "source_url": "https://www.pewresearch.org/global/2006/06/22/methodological-appendix-3/",
+     "source_locator": "Methodological Appendix, Germany"
+    },
+    "label": "Befragte Muslime: Zuwandernde Muslime wollen sich abgrenzen"
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 413,
+     "description": "Muslimische Aufstockungsstichprobe",
+     "weighted": false,
+     "source_url": "https://www.pewresearch.org/global/2006/06/22/methodological-appendix-3/",
+     "source_locator": "Methodological Appendix, Germany"
+    },
+    "label": "Befragte Muslime: Zuwandernde Muslime wollen sich abgrenzen"
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 902,
+     "description": "Deutschland · gesamte Erhebung einschließlich Aufstockung",
+     "weighted": false,
+     "source_url": "https://www.pewresearch.org/global/2006/06/22/methodological-appendix-3/",
+     "source_locator": "Methodological Appendix, Germany"
+    },
+    "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen"
+   },
+   {
+    "label": "Allgemeinbevölkerung: Muslime wollen sich abgrenzen (zehn Jahre später)",
+    "field": "study_sample",
+    "sample": {
+     "n": 1000,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.pewresearch.org/global/wp-content/uploads/sites/2/2016/07/Pew-Research-Center-EU-Refugees-and-National-Identity-TOPLINE-FOR-RELEASE-July-11-2016.pdf",
+     "source_locator": "Topline, S. 2, Germany Spring 2016"
+    }
+   }
+  ],
+  "las_fremdheit_ost": [
+   {
+    "label": "2014",
+    "field": "study_sample",
+    "sample": {
+     "n": 2432,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2014",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "study_sample",
+    "sample": {
+     "n": 2420,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "study_sample",
+    "sample": {
+     "n": 2416,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 498,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 2503,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2020/11/05/die-leipziger-autoritarismus-studie-2020-methode-ergebnisse-und-langzeitverlauf",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2022",
+    "field": "study_sample",
+    "sample": {
+     "n": 2522,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2022/11/09/methode-und-ergebnisse-der-autoritarismus-studie-2022",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "study_sample",
+    "sample": {
+     "n": 2504,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   }
+  ],
+  "las_fremdheit_west": [
+   {
+    "label": "2014",
+    "field": "study_sample",
+    "sample": {
+     "n": 2432,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2014",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1929,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "study_sample",
+    "sample": {
+     "n": 2420,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1917,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "study_sample",
+    "sample": {
+     "n": 2416,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1918,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 2503,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2020/11/05/die-leipziger-autoritarismus-studie-2020-methode-ergebnisse-und-langzeitverlauf",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2022",
+    "field": "study_sample",
+    "sample": {
+     "n": 2522,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2022/11/09/methode-und-ergebnisse-der-autoritarismus-studie-2022",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "study_sample",
+    "sample": {
+     "n": 2504,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 2003,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   }
+  ],
+  "las_zuwanderung_ost": [
+   {
+    "label": "2014",
+    "field": "study_sample",
+    "sample": {
+     "n": 2432,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2014",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "study_sample",
+    "sample": {
+     "n": 2420,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 503,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "study_sample",
+    "sample": {
+     "n": 2416,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 498,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 2503,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2020/11/05/die-leipziger-autoritarismus-studie-2020-methode-ergebnisse-und-langzeitverlauf",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2022",
+    "field": "study_sample",
+    "sample": {
+     "n": 2522,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2022/11/09/methode-und-ergebnisse-der-autoritarismus-studie-2022",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "study_sample",
+    "sample": {
+     "n": 2504,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 501,
+     "description": "Ostdeutschland",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   }
+  ],
+  "las_zuwanderung_west": [
+   {
+    "label": "2014",
+    "field": "study_sample",
+    "sample": {
+     "n": 2432,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2014",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1929,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Mitte_Studie_2014.pdf",
+     "source_locator": "Tabelle 1, S. 30–31"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "study_sample",
+    "sample": {
+     "n": 2420,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2016",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1917,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Buch_Mitte_Studie_Uni_Leipzig_2016.pdf",
+     "source_locator": "Tabelle 1, S. 26–27"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "study_sample",
+    "sample": {
+     "n": 2416,
+     "description": "Deutschland · Auswertungsstichprobe deutscher Staatsangehöriger",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2018",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 1918,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.theol.uni-leipzig.de/fileadmin/Fakult%C3%A4t_Theologie/Fotos/KreDo/Flucht_ins_Autoritaere.pdf",
+     "source_locator": "Tabelle 1, S. 69–70"
+    }
+   },
+   {
+    "label": "2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 2503,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2020/11/05/die-leipziger-autoritarismus-studie-2020-methode-ergebnisse-und-langzeitverlauf",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2022",
+    "field": "study_sample",
+    "sample": {
+     "n": 2522,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/de/2022/11/09/methode-und-ergebnisse-der-autoritarismus-studie-2022",
+     "source_locator": "Abschnitt Methode"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "study_sample",
+    "sample": {
+     "n": 2504,
+     "description": "Deutschland · Studienstichprobe",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   },
+   {
+    "label": "2024",
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 2003,
+     "description": "Westdeutschland",
+     "weighted": false,
+     "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+     "source_locator": "Methodik S. 29–33"
+    }
+   }
+  ]
+ }
+}

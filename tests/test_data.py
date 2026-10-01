@@ -142,15 +142,14 @@ class DataTests(unittest.TestCase):
                        .read_text(encoding='utf-8'))['state_total']
         html = (ROOT/'docs/index.html').read_text(encoding='utf-8')
         kacheln = re.findall(r'<article class="kpi[^"]*">(.*?)</article>', html, re.S)
-        self.assertEqual(len(kacheln), 4)
+        self.assertEqual(len(kacheln), 3)
         def gesetzt(stichwort):
             k = [x for x in kacheln if stichwort in x]
             self.assertEqual(len(k), 1, stichwort)
             return k[0]
         for stichwort, anteil, absolut in (
                 ('katholische', 'catholic_pct', 'catholic'),
-                ('Evangelische', 'evangelical_pct', 'evangelical'),
-                ('Sonstige', 'other_none_unstated_pct', 'other_none_unstated')):
+                ('Evangelische', 'evangelical_pct', 'evangelical')):
             kachel = gesetzt(stichwort)
             self.assertIn(f'{z[anteil]:.1f}'.replace('.', ','), kachel)
             self.assertIn(f'{z[absolut]/1e6:.2f}'.replace('.', ',') + ' Mio.', kachel)
@@ -160,7 +159,7 @@ class DataTests(unittest.TestCase):
                                + z['other_none_unstated_pct'], 100, places=1)
         # Und die Schätzung liegt in der Restkategorie, nicht daneben: die Kachel sagt
         # das, und die Zahl erlaubt es auch.
-        self.assertIn('enthalten', gesetzt('Sonstige'))
+        self.assertFalse(any('Sonstige' in k for k in kacheln))
         self.assertLess(10.7, z['other_none_unstated_pct'])
 
     def test_fundamentalism_block_keeps_its_comparison_and_its_limits(self):
@@ -678,5 +677,41 @@ class DataTests(unittest.TestCase):
                          [{'label': 'Stört mich', 'value': 42}, {'label': 'Stört mich nicht', 'value': 57}])
         self.assertTrue(headscarf['response_distribution_complete'])
         self.assertFalse(blocks['bw_kopftuch_2012']['items'][-1]['response_distribution_complete'])
+
+    def test_thematic_topics_and_matrix_source_values(self):
+        data = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in data['blocks']}
+        hidden = {key for b in blocks.values() for key in b.get('chart', {}).get('related', [])}
+        selected = [key for topic in data['topics'] for key in topic['blocks']]
+        self.assertEqual(set(selected), set(blocks)-hidden)
+        self.assertEqual(len(selected), len(set(selected)))
+        for b in blocks.values():
+            chart = b.get('chart', {})
+            if chart.get('kind') == 'matrix':
+                indices = [n for row in chart['rows'] for n in row['items']]
+                self.assertEqual(sorted(indices), list(range(len(b['items']))))
+                self.assertTrue(all(len(row['items']) == len(chart['columns']) for row in chart['rows']))
+        self.assertEqual(blocks['rm2017_wahrheit']['chart']['main_chart']['layout'], 'dots')
+
+    def test_question_wording_and_distinct_sample_context(self):
+        data = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in data['blocks']}
+        self.assertEqual(blocks['rm2013_synkretismus']['question']['texts'],
+                         ['Ich greife für mich selbst auf Lehren verschiedener religiöser Traditionen zurück.'])
+        self.assertIn('mindestens wenig', blocks['rm2013_synkretismus']['question']['shown'])
+        self.assertEqual([i['value'] for i in blocks['rm_offenheit_history']['items']], [88, 87, 80])
+        for b in blocks.values():
+            for i in b['items']:
+                for field in ['study_sample', 'module_sample', 'subgroup_sample']:
+                    if field in i:
+                        self.assertGreater(i[field]['n'], 0)
+                        self.assertTrue(i[field]['source_url'].startswith('https://'))
+                        self.assertTrue(i[field]['source_locator'])
+        panel = blocks['rm2023_differenzierung']['items'][0]
+        self.assertEqual(panel['study_sample']['n'], 4363)
+        self.assertEqual(panel['module_sample']['n'], 1912)
+        self.assertIsNone(panel['base_n'])
+        bw = blocks['bosch2025_index_bw']['items']
+        self.assertEqual([i['subgroup_sample']['n'] for i in bw], [309, 518]*3)
 
 if __name__=='__main__': unittest.main(verbosity=2)

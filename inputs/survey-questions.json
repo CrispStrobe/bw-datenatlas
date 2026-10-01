@@ -1,0 +1,77 @@
+{
+  "rm2013_synkretismus": {
+    "texts": [
+      "Ich greife für mich selbst auf Lehren verschiedener religiöser Traditionen zurück."
+    ],
+    "response_scale": "stimme gar nicht zu · stimme eher nicht zu · stimme eher zu · stimme voll und ganz zu",
+    "shown": "Gezeigt: stimme eher/voll und ganz zu; mindestens wenig religiöse Befragte.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_und_Zusammenhalt_in_Deutschland.pdf",
+    "source_locator": "Tabelle 3, S. 13"
+  },
+  "rm2013_dogmatismus": {
+    "texts": [
+      "Ich bin davon überzeugt, dass in religiösen Fragen vor allem meine eigene Religion recht hat und andere Religionen eher unrecht haben."
+    ],
+    "response_scale": "stimme gar nicht zu · stimme eher nicht zu · stimme eher zu · stimme voll und ganz zu",
+    "shown": "Gezeigt: stimme eher/voll und ganz zu; nur Konfessionsangehörige.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_und_Zusammenhalt_in_Deutschland.pdf",
+    "source_locator": "Tabelle 3, S. 13"
+  },
+  "rm2013_religiositaet": {
+    "texts": [
+      "Als wie religiös würden Sie sich selbst bezeichnen?"
+    ],
+    "response_scale": "gar nicht · wenig · mittel · ziemlich · sehr",
+    "shown": "Gezeigt: ziemlich/sehr religiös.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_und_Zusammenhalt_in_Deutschland.pdf",
+    "source_locator": "Tabelle 2, S. 12"
+  },
+  "rm2017_wahrheit": {
+    "texts": [
+      "Wahrheit gibt es nur in einer Religion."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 18, S. 61"
+  },
+  "rm2017_regeln": {
+    "texts": [
+      "Es gibt nur eine Interpretation religiöser Regeln und jede religiöse Person muss sich daran halten."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 18, S. 61"
+  },
+  "rm2017_offenheit": {
+    "texts": [
+      "Für mich hat jede Religion einen wahren Kern."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 18, S. 61"
+  },
+  "rm2023_freiheit": {
+    "texts": [
+      "Jeder sollte die Freiheit haben, seine Religion zu wechseln oder abzulegen.",
+      "Man sollte gegenüber allen Religionen offen sein.",
+      "Für mich hat jede Religion einen wahren Kern.",
+      "Religion passt nicht mehr in unsere Zeit."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung voll/eher zu vier eigenständigen Aussagen.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ST_DZ_Religionsmonitor_Zusammenleben_in_religioeser_Vielfalt_2023.pdf",
+    "source_locator": "Abbildung 10, S. 51"
+  },
+  "rm_offenheit_history": {
+    "texts": [
+      "Man sollte allen Religionen gegenüber offen sein."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung. Der Bericht 2023 formuliert die Aussage als „Man sollte gegenüber allen Religionen offen sein.“",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 23, S. 72; Religionsmonitor 2023, Abbildung 10, S. 51"
+  }
+}

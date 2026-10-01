@@ -108,10 +108,10 @@ with sync_playwright() as pw:
     # und weil zwei der vier Zahlen gezählt und eine geschätzt ist, muss der Unterschied
     # an der Kachel selbst ablesbar sein, nicht nur im Fließtext weiter unten.
     kacheln=page.locator('.kpi-grid .kpi')
-    check('the hero shows the composition, not one confession',kacheln.count()==4)
+    check('the hero shows the composition, not one confession',kacheln.count()==3)
     kachel=[kacheln.nth(n).inner_text() for n in range(kacheln.count())]
     for wort,zahl in (('katholisch','29,9'),('Evangelische','25,9'),
-                      ('Muslimische','10,1–10,7'),('Restkategorie','44,2')):
+                      ('Muslimische','10,1–10,7')):
         treffer=[k for k in kachel if wort in k]
         check(f'{wort} tile present and carries its value',
               len(treffer)==1 and zahl in treffer[0])
@@ -121,8 +121,8 @@ with sync_playwright() as pw:
           'Geschätzt' in muslimisch and 'Hauptwohnsitzhaushalte' in muslimisch)
     check('the counted tiles say so',
           all('Gezählt' in k for k in kachel if 'Muslimische' not in k))
-    check('the residual tile says the estimate sits inside it',
-          'enthalten' in [k for k in kachel if 'Restkategorie' in k][0])
+    check('the hero avoids an overlapping residual tile',
+          not any('Restkategorie' in k for k in kachel))
     check('the estimated tile is marked apart from the counted ones',
           page.locator('.kpi.is-estimate').count()==1)
     # Die zweite veröffentlichte Zahl. Sie lag längst in den Beobachtungen, stand aber
@@ -191,8 +191,8 @@ with sync_playwright() as pw:
     check('the citizenship chart shows the protestant share for contrast',
           '1,2 %' in text or '1.2 %' in text)
     check('the citizenship chart leaves the suppressed rows empty',
-          text.count('41') and ('geheim gehalten' in text
-                                or 'kept confidential' in text))
+          text.count('41') and ('nicht publiziert' in text
+                                or 'not published' in text))
     check('the citizenship chart says the passport is not the origin',
           'Pass, nicht die Herkunft' in text
           or 'passport, not the origin' in text)
@@ -367,7 +367,7 @@ with sync_playwright() as pw:
     check('percentage bars are measured against 100, not the block maximum',
           bool(breiten) and abs(max(breiten)-50)<1.5)
 
-    page.select_option('#basis-view', 'estimates')
+    page.select_option('#population-view', 'estimates')
     vergleich=page.locator('#published-estimates-card').inner_text()
     check('the published estimates are shown side by side',
           page.locator('#published-estimates-bars .bar-row').count()>=6)
@@ -586,7 +586,7 @@ with sync_playwright() as pw:
         return bar(panels[0]) > bar(panels[1]) * 1.4;}'''))
     check('pyramid legend names all three categories',page.locator('#pyramid-legend span').count()==3)
     check('pyramid separates the two classifications','nicht dasselbe wie Migrationshintergrund' in page.locator('#pyramid-card').inner_text())
-    check('pyramid reports suppression','geheim gehaltene' in page.locator('#pyramid-note').inner_text())
+    check('pyramid reports suppression','nicht publizierte' in page.locator('#pyramid-note').inner_text())
     page.select_option('#layer','mh_change')
     check('change layer covers all districts',page.evaluate('[...document.querySelectorAll("#map-features path")].filter(p=>!p.getAttribute("fill").includes("url")).length')==44)
     check('change layer refuses a backcast of the model','nicht in die Vergangenheit' in page.locator('#map-note').inner_text())
@@ -921,11 +921,11 @@ with sync_playwright() as pw:
     # Die Blöcke mit Landesbezug stehen vorn. Das war lange ein einziger, deshalb
     # prüfte der Test die erste Zeile auf den Landesnamen — inzwischen sind es vier,
     # und die Bedingung ist, dass keiner von ihnen hinter einen bundesweiten rutscht.
-    check('the dropdown groups the blocks by the area they cover',
+    check('the dropdown groups the blocks by topic',
           page.locator('#survey-select optgroup').count()>=3)
-    check('the first group is this state',
+    check('the first topic covers integration and migration',
           page.locator('#survey-select optgroup').first.get_attribute('label')
-          in ('Baden-Württemberg',))
+          in ('Integration und Migration',))
     check('the block header leads with its area',
           page.locator('.survey-meta').first.inner_text()
           .startswith(('Baden-Württemberg','Deutschland')))

@@ -665,8 +665,8 @@
   }
  },
  "rm2026_detail_gemeinwohl": {
-  "kind": "paired",
-  "series": [
+  "kind": "matrix",
+  "columns": [
    "Religiosität niedrig",
    "Religiosität mittel",
    "Religiosität hoch"
@@ -699,8 +699,8 @@
   ]
  },
  "rm2026_detail_netze": {
-  "kind": "paired",
-  "series": [
+  "kind": "matrix",
+  "columns": [
    "Religiosität niedrig",
    "Religiosität mittel",
    "Religiosität hoch"
@@ -733,8 +733,8 @@
   ]
  },
  "rm2026_detail_verbundenheit": {
-  "kind": "paired",
-  "series": [
+  "kind": "matrix",
+  "columns": [
    "Religiosität niedrig",
    "Religiosität mittel",
    "Religiosität hoch"
@@ -789,17 +789,37 @@
   ]
  },
  "rm2017_wahrheit": {
-  "kind": "compare",
+  "kind": "collection",
+  "title": "Religiöse Offenheit und Wahrheitsansprüche",
   "related": [
    "rm2017_regeln",
-   "rm2017_offenheit"
+   "rm2017_offenheit",
+   "rm2013_synkretismus",
+   "rm2013_dogmatismus",
+   "rm2023_freiheit",
+   "rm_offenheit_history"
   ],
-  "title": "Religiöse Wahrheit, Regeln und Offenheit · 2017",
-  "series": [
-   "Wahrheit nur in einer Religion",
-   "Nur eine Interpretation religiöser Regeln",
-   "Jede Religion hat einen wahren Kern"
-  ]
+  "panels": [
+   "rm2013_synkretismus",
+   "rm2013_dogmatismus",
+   "rm2017_wahrheit",
+   "rm2023_freiheit",
+   "rm_offenheit_history"
+  ],
+  "main_chart": {
+   "kind": "compare",
+   "related": [
+    "rm2017_regeln",
+    "rm2017_offenheit"
+   ],
+   "title": "Religiöse Wahrheit, Regeln und Offenheit · 2017",
+   "series": [
+    "Wahrheit nur in einer Religion",
+    "Nur eine Interpretation religiöser Regeln",
+    "Jede Religion hat einen wahren Kern"
+   ],
+   "layout": "dots"
+  }
  },
  "bosch2025_nachbarn": {
   "kind": "compare",
@@ -835,7 +855,7 @@
    "related": [
     "rm2023_verschwoerung_fundamentalistisch"
    ],
-   "title": "Verschwörungsanfälligkeit und Fundamentalismus im Ländervergleich",
+   "title": "Verschwörungsanfälligkeit und „Fundamentalismus“ im Ländervergleich",
    "series": [
     "Verschwörungsanfällig",
     "Verschwörungsfundamentalistisch"
@@ -960,17 +980,15 @@
   "related": [
    "rm2013_praxis",
    "rm2013_wichtigkeit",
-   "rm2013_synkretismus",
-   "rm2013_dogmatismus"
+   "rm2023_religiositaet"
   ],
   "panels": [
    "rm2013_religiositaet",
    "rm2013_praxis",
    "rm2013_wichtigkeit",
-   "rm2013_synkretismus",
-   "rm2013_dogmatismus"
+   "rm2023_religiositaet"
   ],
-  "title": "Religiosität, Praxis und Überzeugungen · 2013"
+  "title": "Religiosität und religiöse Praxis · Erhebungen 2013 und 2023"
  },
  "rm2023_religiositaet": {
   "kind": "collection",
@@ -1034,7 +1052,57 @@
    "rm2017_europa_kontakte",
    "rm2017_europa_freunde"
   ],
-  "title": "Muslime in Europa: Kontakte und Freundeskreise"
+  "title": "Muslime in Europa: Kontakte und Freundeskreise",
+  "main_chart": {
+   "kind": "matrix",
+   "columns": [
+    "Erste Generation",
+    "Nachfolgegeneration",
+    "Gesamt"
+   ],
+   "rows": [
+    {
+     "label": "Deutschland",
+     "items": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "label": "Österreich",
+     "items": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "Schweiz",
+     "items": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "label": "Großbritannien",
+     "items": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "label": "Frankreich",
+     "items": [
+      12,
+      13,
+      14
+     ]
+    }
+   ]
+  }
  },
  "rm2017_europa_verbundenheit": {
   "kind": "collection",
@@ -1047,9 +1115,216 @@
    "rm2017_europa_diskriminierungsfrei",
    "rm2017_europa_hochreligioes"
   ],
-  "title": "Muslime in Europa: Zugehörigkeit, Diskriminierung und Religiosität"
+  "title": "Muslime in Europa: Zugehörigkeit, Diskriminierung und Religiosität",
+  "main_chart": {
+   "kind": "matrix",
+   "columns": [
+    "Erste Generation",
+    "Nachfolgegeneration",
+    "Gesamt"
+   ],
+   "rows": [
+    {
+     "label": "Deutschland",
+     "items": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "label": "Österreich",
+     "items": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "Schweiz",
+     "items": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "label": "Großbritannien",
+     "items": [
+      9,
+      10,
+      11
+     ]
+    },
+    {
+     "label": "Frankreich",
+     "items": [
+      12,
+      13,
+      14
+     ]
+    }
+   ]
+  }
  },
  "bw_kopftuch_2012": {
   "kind": "responses"
+ },
+ "rm2017_europa_sprache": {
+  "kind": "matrix",
+  "columns": [
+   "Erste Generation",
+   "Nachfolgegeneration",
+   "Gesamt"
+  ],
+  "rows": [
+   {
+    "label": "Deutschland",
+    "items": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "label": "Österreich",
+    "items": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Schweiz",
+    "items": [
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "label": "Großbritannien",
+    "items": [
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "label": "Frankreich",
+    "items": [
+     12,
+     13,
+     14
+    ]
+   }
+  ]
+ },
+ "rm2017_europa_freunde": {
+  "kind": "matrix",
+  "columns": [
+   "Erste Generation",
+   "Nachfolgegeneration",
+   "Gesamt"
+  ],
+  "rows": [
+   {
+    "label": "Deutschland",
+    "items": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "label": "Österreich",
+    "items": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Schweiz",
+    "items": [
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "label": "Großbritannien",
+    "items": [
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "label": "Frankreich",
+    "items": [
+     12,
+     13,
+     14
+    ]
+   }
+  ]
+ },
+ "rm2017_europa_diskriminierungsfrei": {
+  "kind": "matrix",
+  "columns": [
+   "Erste Generation",
+   "Nachfolgegeneration",
+   "Gesamt"
+  ],
+  "rows": [
+   {
+    "label": "Deutschland",
+    "items": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "label": "Österreich",
+    "items": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Schweiz",
+    "items": [
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "label": "Großbritannien",
+    "items": [
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "label": "Frankreich",
+    "items": [
+     12,
+     13,
+     14
+    ]
+   }
+  ]
+ },
+ "fundamentalismus_sciics": {
+  "title": "Zustimmung zu drei Aussagen zum „Fundamentalismus“"
+ },
+ "rm_offenheit_history": {
+  "kind": "time",
+  "title": "Offenheit gegenüber allen Religionen · 2013–2023"
  }
 }
