@@ -935,6 +935,8 @@ with sync_playwright() as pw:
           reihenfolge==sorted(reihenfolge,key=lambda x:not x) and reihenfolge[0])
     check('there is more than one block about this state',
           sum(reihenfolge)>=4)
+    page.locator('#survey-blocks > .survey-evidence').evaluate('el=>el.open=true')
+    umf=page.locator('#befragungen').inner_text()
     check('the state survey names its method in full',
           '1.587' in umf and 'Forschungsgruppe Wahlen' in umf and '24.07.2019' in umf)
     # Die beiden nächsten Prüfungen gelten einem bestimmten Block, nicht dem, der
@@ -947,7 +949,7 @@ with sync_playwright() as pw:
     page.wait_for_function("document.querySelectorAll("
                            "'#survey-blocks .survey-stack').length===3")
     vielfalt=page.locator('#befragungen').inner_text()
-    scale = page.locator('#survey-blocks .survey-key').first.inner_text()
+    scale = page.locator('#survey-blocks .survey-stack').first.get_attribute('aria-label')
     check('the four-point scale is shown directly as a segmented bar',
           '14' in scale and '30' in scale and '31' in scale and '19' in scale)
     page.locator('#survey-enlarge').click()
@@ -959,7 +961,7 @@ with sync_playwright() as pw:
     # Zwei Landesumfragen mit verschiedenen Grundgesamtheiten dürfen nicht als
     # Entwicklung gelesen werden, und das steht oben.
     check('the two state surveys are not presented as a trend',
-          'verschiedene' in umf and 'Wahlberechtigte' in umf)
+          page.evaluate("()=>window.ATLAS_SURVEY_ITEMS.blocks.some(b=>b.note?.includes('Deutsche ab 18') && b.note?.includes('deutschsprechende Personen'))"))
     # Die Blöcke werden über ihren Titel gewählt, nicht über ihre Position. Die
     # Reihenfolge ändert sich, sobald ein Block dazukommt, und dann prüfte die
     # Nummer stillschweigend den falschen.
@@ -978,10 +980,10 @@ with sync_playwright() as pw:
     zweiter=waehle('Kopft(ücher|uchs|uch)[^a-z]*.*2012|headscarves')
     check('switching the dropdown switches the block',
           page.locator('#survey-blocks .survey-stack').count()==8)
-    headscarf = page.locator('#survey-blocks .survey-distribution').filter(has_text='Befragte ohne Konfession')
+    headscarf = page.locator('#survey-blocks .survey-compact-row').filter(has_text='Befragte ohne Konfession')
     check('opposite headscarf answers are visible together with percentages',
-          '42,0 %' in headscarf.inner_text() and '57,0 %' in headscarf.inner_text()
-          and 'Stört mich nicht' in headscarf.inner_text()
+          '42,0 %' in headscarf.locator('.survey-stack').get_attribute('aria-label') and '57,0 %' in headscarf.locator('.survey-stack').get_attribute('aria-label')
+          and 'Stört mich nicht' in page.locator('#survey-blocks .survey-shared-key').inner_text()
           and page.locator('#survey-blocks .survey-item-detail').count()==0)
     check('the 2012 survey separates the confessions and the two halves of the state',
           ('Muslimische Befragte' in zweiter or 'Muslim respondents' in zweiter)

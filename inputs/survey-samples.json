@@ -2890,6 +2890,18 @@
      "source_locator": "Methodik S. 29–33"
     }
    }
+  ],
+  "fes2023_ressentiments": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 2027,
+     "description": "Deutschland · vollständige Interviews",
+     "weighted": false,
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+     "source_locator": "S. 36–37, Tabelle 2.1"
+    }
+   }
   ]
  }
 }

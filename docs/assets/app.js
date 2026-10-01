@@ -1931,16 +1931,17 @@ function renderReportFindings(){
   field.onchange=renderReportFindings;
  }
  const r=D.reports.find(r=>r.id===field.value)||D.reports[0];
- const max=Math.max(1,...r.items.map(i=>i.value));
+ const plotted=r.time_series?r.time_series.map(point=>({label:point.year,value:point.value})):r.items;
+ const tableItems=r.time_series?[...r.time_series.map(point=>({label:point.year,value:point.value,detail:point.source_locator})),...r.items.map(item=>({...item,label:item.label+' · '+r.period.split('–').at(-1)}))]:r.items;
+ const max=Math.max(1,...plotted.map(i=>i.value));
  host.innerHTML='<h3>'+esc(t(r.title))+'</h3><p class="tiny">'+esc(t(r.kind))+' · '+esc(r.period)+'</p>'
-  +'<div class="notice warning">'+esc(t(r.note))+'</div>'
-  +(r.total!=null?'<p><strong>'+esc(t('Gesamt'))+': '+integer(r.total)+'</strong></p>':'')
-  +(r.items.length?'<div class="horizontal-bars">'+r.items.map(i=>'<div class="bar-row"><div class="bar-name">'+esc(t(i.label))
+  +(r.total!=null?'<p><strong>'+esc(t(r.total_label||'Gesamt'))+': '+integer(r.total)+'</strong></p>':'')
+  +(r.items.length?'<div class="horizontal-bars">'+plotted.map(i=>'<div class="bar-row"><div class="bar-name">'+esc(t(i.label))
     +(i.detail?'<br><span class="tiny">'+esc(t(i.detail))+'</span>':'')+'</div><div class="bar-track"><div class="bar-fill" style="width:'+i.value/max*100+'%"></div></div><div class="bar-value">'+integer(i.value)+'</div></div>').join('')+'</div>'
-    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))+'</summary><div class="table-scroll"><table><thead><tr><th>'+esc(t('Merkmal'))+'</th><th>'+esc(t('Anzahl'))+'</th><th>'+esc(t('Hinweis'))+'</th></tr></thead><tbody>'+r.items.map(i=>'<tr><td>'+esc(t(i.label))+'</td><td>'+integer(i.value)+'</td><td>'+esc(t(i.detail||''))+'</td></tr>').join('')+'</tbody></table></div></details>':'')
+    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))+'</summary><div class="table-scroll"><table><thead><tr><th>'+esc(t('Merkmal'))+'</th><th>'+esc(t('Anzahl'))+'</th><th>'+esc(t('Hinweis'))+'</th></tr></thead><tbody>'+tableItems.map(i=>'<tr><td>'+esc(t(i.label))+'</td><td>'+integer(i.value)+'</td><td>'+esc(t(i.detail||''))+'</td></tr>').join('')+'</tbody></table></div></details>':'')
+  +'<div class="notice warning">'+esc(t(r.note))+'</div>'
   +r.sources.map(s=>'<p class="source-note"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+' ↗</a> · '+esc(s.locator)+'</p>').join('')
-  +(r.id==='uem_overview'?'<details class="compact-details"><summary>'+esc(t('16 UEM-Unterstudien: Thema, Methode und Prüfstand'))+'</summary><div class="sources-list">'+D.uem_studies.map(s=>'<article><h4><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+' ↗</a></h4><p class="tiny">'+esc(s.authors)+' · '+s.year+' · '+esc(t(s.method))+'</p><p>'+esc(t(s.review_status))+'</p><p class="source-note">UEM · '+esc(t('Kapitel'))+' '+esc(s.uem_chapter)+'</p></article>').join('')+'</div></details>':'')
-  +(r.id!=='uem_overview'?D.coverage_gaps.map(g=>'<p class="source-note"><a href="'+esc(g.url)+'" target="_blank" rel="noopener">'+esc(g.topic)+' ↗</a> · '+esc(t(g.note))+'</p>').join(''):'');
+  ;
 }
 
 // Survey chart encodings are explicit metadata, never guessed from translated labels.
@@ -1954,7 +1955,21 @@ function surveyDistribution(label,segments){
   +segments.map((s,n)=>'<span style="width:'+s.value/scale*100+'%;background:'+surveyColors[Math.min(n,4)]+';color:'+(n===0||n===4?'#fff':'#183846')+'" title="'+esc(t(s.label)+': '+pct(s.value))+'">'+(s.value>=9?esc(pf.format(s.value)):'')+'</span>').join('')+'</div>'
   +'<div class="survey-key">'+legend+'</div>'
   +(sum<98?'<p class="tiny">'+esc(t('Die nicht ausgewiesenen Antworten bleiben als Lücke sichtbar.'))+'</p>':'')
-  +(sum>100?'<p class="tiny">'+esc(t('Gerundete Werte ergeben mehr als 100 Prozent; die Segmentbreiten sind entsprechend angepasst.'))+'</p>':'')+'</div>';
+  +(sum>100.000001?'<p class="tiny">'+esc(t('Gerundete Werte ergeben mehr als 100 Prozent; die Segmentbreiten sind entsprechend angepasst.'))+'</p>':'')+'</div>';
+}
+function surveySharedDistributions(rows,groups=[]){
+ const labels=rows[0].segments.map(s=>s.label);
+ const same=rows.every(row=>row.segments.every(segment=>labels.includes(segment.label)));
+ if(!same)return rows.map(row=>surveyDistribution(row.label,row.segments)).join('');
+ const legend='<div class="survey-key survey-shared-key">'+labels.map((label,n)=>'<span><i style="background:'+surveyColors[Math.min(n,4)]+'"></i>'+esc(t(label))+'</span>').join('')+'</div>';
+ const renderRow=(row,label)=>{
+  const sum=row.segments.reduce((v,s)=>v+s.value,0),scale=Math.max(100,sum);
+  return '<div class="survey-compact-row"><strong>'+esc(t(label||row.label))+'</strong><div class="survey-stack" role="img" tabindex="0" aria-label="'+esc(t(row.label)+': '+row.segments.map(s=>t(s.label)+' '+pct(s.value)).join('; '))+'">'+row.segments.map(segment=>{const n=labels.indexOf(segment.label);return '<span style="width:'+segment.value/scale*100+'%;background:'+surveyColors[Math.min(n,4)]+';color:'+(n===0||n===4?'#fff':'#183846')+'" title="'+esc(t(segment.label)+': '+pct(segment.value))+'">'+(segment.value>=8?esc(pf.format(segment.value)):'')+'</span>';}).join('')+'</div></div>';
+ };
+ return '<div class="survey-shared-distributions">'+legend+(groups.length?groups.map(group=>'<div class="survey-country-group"><h5>'+esc(t(group.label))+'</h5>'+group.items.map(index=>renderRow(rows[index],rows[index].label.split(' · ').at(-1))).join('')+'</div>').join(''):rows.map(row=>renderRow(row)).join(''))
+  +'<p class="tiny">'+esc(t('Segmentwerte in Prozent; alle Antwortwerte stehen in der Belegtabelle.'))+'</p>'
+  +(rows.some(row=>row.segments.reduce((v,s)=>v+s.value,0)>100.000001)?'<p class="tiny">'+esc(t('Gerundete Werte ergeben mehr als 100 Prozent; die Segmentbreiten sind entsprechend angepasst.'))+'</p>':'')
+  +(rows.some(row=>row.segments.reduce((v,s)=>v+s.value,0)<98)?'<p class="tiny">'+esc(t('Die nicht ausgewiesenen Antworten bleiben als Lücke sichtbar.'))+'</p>':'')+'</div>';
 }
 function surveyTimeChart(items,otherSeries=[]){
  const points=items.map(i=>({year:Number(i.label),value:i.value})).sort((a,b)=>a.year-b.year);
@@ -1972,6 +1987,7 @@ function surveySources(b,D,seen=new Set()){
  return [b,...(b.chart?.related||[]).flatMap(id=>surveySources(D.blocks.find(other=>other.block===id),D,seen))];
 }
 function surveyMetadata(b){
+ if(b.chart?.metadata)return t(b.chart.metadata);
  const first=b.items[0];
  const samples=b.items.map(i=>i.study_sample);
  const sharedSample=samples.every(s=>s&&JSON.stringify(s)===JSON.stringify(samples[0]));
@@ -1990,13 +2006,25 @@ function surveySampleCell(sample){
 }
 function surveyValue(i){return i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value);}
 function surveyEvidence(b,D){
- const sources=surveySources(b,D);
- return sources.map(source=>'<details class="compact-details survey-evidence"><summary>'+esc(t('Methode und Grenzen'))+(sources.length>1?' · '+esc(t(source.title)):'')+'</summary><p class="tiny">'+esc(surveyMetadata(source))+'</p>'+(source.note?'<div class="notice warning survey-block-note">'+esc(t(source.note))+'</div>':'')
-  +'<p class="source-note">'+[...new Map(source.items.map(i=>[i.source_url+'|'+i.source_locator,i])).values()].map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_title)+' · '+esc(i.source_locator||'')+'</a>').join(' · ')+'</p></details>').join('');
+ const sources=surveySources(b,D),notes=[...new Set(sources.map(source=>source.note).filter(Boolean))];
+ let common=notes[0]||'';
+ for(const note of notes){let k=0;while(k<common.length&&common[k]===note[k])k++;common=common.slice(0,k);}
+ const end=common.lastIndexOf('. ');common=notes.length>1&&end>=120?common.slice(0,end+1):'';
+ const remaining=notes.map(note=>common?note.slice(common.length).trim():note).filter(Boolean);
+ const paragraphs=[...(common?[common]:[]),...remaining];
+ return '<details class="compact-details survey-evidence" open><summary>'+esc(t('Methode und Grenzen'))+'</summary>'+[...new Set(paragraphs)].map(note=>'<p>'+esc(t(note))+'</p>').join('')+'<p class="source-note">'+[...new Map(sources.flatMap(source=>source.items).map(i=>[i.source_url+'|'+i.source_locator,i])).values()].map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_title)+' · '+esc(i.source_locator||'')+'</a>').join(' · ')+'</p></details>';
 }
 function surveyQuestions(b,D){
  const sources=b.chart?.kind==='compare'?[b,...b.chart.related.map(id=>D.blocks.find(other=>other.block===id))]:[b];
- return sources.filter(source=>source.question).map((source,n)=>{const q=source.question;return '<div class="survey-question"><strong>'+esc(t('Wortlaut der Frage / Aussage'))+'</strong>'+q.texts.map(text=>'<p>„'+esc(t(text))+'“</p>').join('')+(q.response_scale?'<p class="tiny">'+esc(t('Antwortskala'))+': '+esc(t(q.response_scale))+'</p>':'')+'<p class="tiny">'+esc(t(q.shown))+'</p><a class="tiny" href="'+esc(q.source_url)+'" target="_blank" rel="noreferrer">'+esc(q.source_locator)+' ↗</a></div>';}).join('');
+ const questions=sources.filter(source=>source.question).map(source=>source.question);
+ if(!questions.length)return '';
+ const scales=[...new Set(questions.map(q=>q.response_scale).filter(Boolean))];
+ const shown=[...new Set(questions.map(q=>q.shown).filter(Boolean))];
+ return '<div class="survey-question"><strong>'+esc(t('Wortlaut der Frage / Aussage'))+'</strong>'
+  +(b.chart?.question_in_chart?'':questions.flatMap(q=>q.texts).map(text=>'<p>„'+esc(t(text))+'“</p>').join(''))
+  +scales.map(scale=>'<p class="tiny">'+esc(t('Antwortskala'))+': '+esc(t(scale))+'</p>').join('')
+  +shown.map(text=>'<p class="tiny">'+esc(t(text))+'</p>').join('')
+  +[...new Map(questions.map(q=>[q.source_url+'|'+q.source_locator,q])).values()].map(q=>'<a class="tiny" href="'+esc(q.source_url)+'" target="_blank" rel="noreferrer">'+esc(q.source_locator)+' ↗</a>').join(' · ')+'</div>';
 }
 function surveyBars(b,D){
  const chart=b.chart;
@@ -2006,13 +2034,13 @@ function surveyBars(b,D){
   const source=D.blocks.find(other=>other.block===id);
   const panel=id===b.block?{...source,chart:chart.main_chart}:source;
   return '<details class="survey-panel" data-block="'+esc(id)+'"'+(n===0?' open':'')+'><summary>'+esc(t(panel.chart?.title||source.title))+'</summary><p class="tiny survey-meta">'+esc(surveyMetadata(source))+'</p>'
-   +surveyQuestions(panel,D)+(source.note?'<div class="notice warning survey-block-note">'+esc(t(source.note))+'</div>':'')+surveyBars({...panel,questionRendered:true},D)+surveyEvidence(panel,D)+'</details>';
+   +surveyQuestions(panel,D)+surveyBars({...panel,questionRendered:true},D)+'</details>';
  }).join('');
- if(chart?.kind==='responses')return b.items.map(i=>surveyDistribution(i.label,i.response_distribution)).join('');
+ if(chart?.kind==='responses')return surveySharedDistributions(b.items.map(i=>({label:i.label,segments:i.response_distribution})),chart.groups||[]);
  if(chart?.kind==='paired')return chart.rows.map(row=>'<div class="survey-comparison"><strong>'+esc(t(row.label))+'</strong>'+row.items.map((index,n)=>{
   const item=b.items[index];if(item.response_distribution_complete)return surveyDistribution(chart.series[n],item.response_distribution);return '<div class="bar-row"><div class="bar-name"><i class="survey-series-dot" style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+item.value+'%;background:'+surveySeriesColors[n]+'"></div></div><div class="bar-value">'+esc(surveyValue(item))+'</div></div>';
  }).join('')+'</div>').join('');
- if(chart?.kind==='distribution')return chart.rows.map(r=>surveyDistribution(r.label,r.segments)).join('');
+ if(chart?.kind==='distribution')return surveySharedDistributions(chart.rows,chart.groups||[]);
  if(chart?.kind==='time'){
   const related=(chart.related||[]).map(id=>D.blocks.find(other=>other.block===id));
   return surveyTimeChart(b.items,related)+(related.length?'<div class="survey-key">'+chart.series.map((label,n)=>'<span><i style="background:'+surveyColors[n?3:0]+'"></i>'+esc(t(label))+'</span>').join('')+'</div>':'');
@@ -2022,6 +2050,7 @@ function surveyBars(b,D){
   if(chart.layout==='dots')return '<p class="tiny">'+esc(t('Eigenständige Aussagen: Zustimmung kann sich überschneiden. Die Werte werden nicht addiert.'))+'</p><div class="survey-key">'+chart.series.map((s,n)=>'<span><i style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(s))+'</span>').join('')+'</div><div class="survey-dot-rows">'+b.items.map((i,k)=>'<div class="survey-dot-row"><strong>'+esc(t(i.label))+'</strong><div class="survey-dot-axis">'+sources.map((source,n)=>'<span class="survey-dot" style="left:'+source.items[k].value+'%;top:'+(7+n*15)+'px;background:'+surveySeriesColors[n]+'" title="'+esc(t(chart.series[n])+': '+pct(source.items[k].value))+'"></span>').join('')+'</div><div class="survey-dot-values">'+sources.map((source,n)=>'<span style="color:'+surveySeriesColors[n]+'">'+esc(t(chart.series[n]))+': <strong>'+esc(pct(source.items[k].value))+'</strong></span>').join('')+'</div></div>').join('')+'</div><div class="survey-dot-scale"><span>0 %</span><span>50 %</span><span>100 %</span></div>';
   return b.items.map((i,k)=>'<div class="survey-comparison"><strong>'+esc(t(chart.groups?.[k]||i.label))+'</strong>'+sources.map((source,n)=>'<div class="bar-row"><div class="bar-name"><i class="survey-series-dot" style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+source.items[k].value+'%;background:'+surveySeriesColors[n]+'"></div></div><div class="bar-value">'+esc(pct(source.items[k].value))+'</div></div>').join('')+'</div>').join('');
  }
+ if(b.items.length>1&&b.items.every(i=>i.response_distribution)&&b.items.every(i=>i.response_distribution.every(segment=>b.items[0].response_distribution.some(first=>first.label===segment.label))))return surveySharedDistributions(b.items.map(i=>({label:i.label,segments:i.response_distribution})));
  const max=b.items.every(i=>['percent','index'].includes(i.unit)&&i.value<=100)?100:Math.max(...b.items.map(i=>i.value));
  const commonDetail=b.items[0]?.detail&&b.items.every(i=>i.detail===b.items[0].detail)?b.items[0].detail:null;
  return (commonDetail?'<p class="tiny">'+esc(t(commonDetail))+'</p>':'')+'<div class="horizontal-bars">'+b.items.map(i=>{
@@ -2033,7 +2062,7 @@ function surveyBars(b,D){
 function openSurveyZoom(b,D){
  const dialog=$('chart-zoom'),body=$('chart-zoom-body');
  $('chart-zoom-title').textContent=t(b.chart?.title||b.title);
- body.innerHTML='<p class="tiny">'+esc(b.chart?.kind==='collection'?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'+surveyBars(b,D)+(b.chart?.kind==='collection'?'':surveyEvidence(b,D));
+ body.innerHTML='<p class="tiny">'+esc(b.chart?.kind==='collection'?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'+surveyBars(b,D)+surveyEvidence(b,D);
  body.querySelectorAll('details').forEach(detail=>{detail.open=true;});
  dialog.showModal();
 }
@@ -2041,8 +2070,7 @@ function renderSurveyItems(){
  const host=$('survey-blocks');if(!host)return;
  const D2=window.ATLAS_SURVEY_ITEMS;
  if(!D2||!D2.blocks){const k=host.closest('section');if(k)k.hidden=true;return;}
- $('survey-warning').textContent=t(D2.what_this_is)+' '+t(D2.why_the_metadata_matters)
-  +(D2.why_2012_and_2019_are_not_a_trend?' '+t(D2.why_2012_and_2019_are_not_a_trend):'');
+ $('survey-warning').textContent=t('Befragungsergebnisse: Fragewortlaut, Antworten und Belege.');
  // Ein Auswahlfeld wie über der Karte: bei Befragungen ist jeder Block eine
  // eigene Frage an eine eigene Grundgesamtheit, und untereinander gestapelt lädt
  // das dazu ein, sie als eine Reihe zu lesen. Einer nach dem anderen.
@@ -2055,7 +2083,8 @@ function renderSurveyItems(){
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
  host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
   const sources=surveySources(b,D2);
-  const tableItems=sources.flatMap(source=>source.items.map(i=>({...i,blockTitle:source.title})));
+  const tableItems=sources.flatMap(source=>source.items.map((i,n)=>({...i,blockTitle:source.title,answerDistribution:i.response_distribution||source.chart?.item_distributions?.[n]||(source.chart?.kind==='distribution'&&source.chart.rows.length===source.items.length?source.chart.rows[n].segments:null)})));
+  const hasDistributions=tableItems.some(i=>i.answerDistribution);
   const combined=sources.length>1;
   const hasValidN=tableItems.some(i=>i.valid_n!=null);
   const hasSubgroupN=tableItems.some(i=>i.subgroup_sample||i.module_sample);
@@ -2064,14 +2093,14 @@ function renderSurveyItems(){
   return '<h4 class="survey-block-title">'+esc(t(b.chart?.title||b.title))+'</h4><button type="button" id="survey-enlarge" class="button button-light">'+esc(t('Vergrößern'))+'</button>'
    +'<p class="tiny survey-meta">'+esc(isCollection?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'
    +(!isCollection?surveyQuestions(b,D2):'')
-   +(!isCollection&&b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
-   +surveyBars({...b,questionRendered:true},D2)
-   +(!isCollection&&combined?surveyEvidence(b,D2):'')
+      +surveyBars({...b,questionRendered:true},D2)
+   +surveyEvidence(b,D2)
    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))
    +'</summary>'+(hasStudySample?'<p class="tiny">'+esc(t('Studien-, Modul- und Untergruppenstichproben sind keine Fallzahlen gültiger Antworten auf einzelne Fragen. Gewichtete Fallzahlen sind ausdrücklich gekennzeichnet.'))+'</p>':'')+'<div class="table-scroll">'+table(
-    [...(combined?[t('Befragungsergebnis')]:[]),t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),
+    [...(combined?[t('Befragungsergebnis')]:[]),t('Gruppe'),t('Wert'),...(hasDistributions?[t('Antwortverteilung')]:[]),t('Grundgesamtheit'),t('Studienstichprobe'),
      ...(hasSubgroupN?[t('Modul-/Untergruppenstichprobe')]:[]),...(hasValidN?[t('Gültige Antworten')]:[]),t('Erhebungszeitraum'),t('Fundstelle')],
     tableItems.map(i=>[...(combined?[esc(t(i.blockTitle))]:[]),esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
+     ...(hasDistributions?[i.answerDistribution?i.answerDistribution.map(segment=>esc(t(segment.label))+': '+esc(pct(segment.value))).join('<br>'):esc(t('nicht ausgewiesen'))]:[]),
      esc(t(i.population)),i.study_sample?surveySampleCell(i.study_sample):i.base_n?(i.sample_source_url?'<a href="'+esc(i.sample_source_url)+'" target="_blank" rel="noreferrer">'+integer(i.base_n)+'</a>':integer(i.base_n)):esc(t('nicht ausgewiesen')),
      ...(hasSubgroupN?[surveySampleCell(i.module_sample||i.subgroup_sample)]:[]),
      ...(hasValidN?[i.valid_n!=null?integer(i.valid_n):esc(t('nicht ausgewiesen'))]:[]),
@@ -2308,8 +2337,8 @@ function initViewSelectors(){
   requestAnimationFrame(()=>{fitStackLabels();window.dispatchEvent(new Event('resize'));});
  };
  fields.forEach(field=>{field.addEventListener('change',()=>show(field));show(field);});
- const reveal=()=>{
-  let id;try{id=decodeURIComponent(location.hash.slice(1));}catch(e){return;}
+ const reveal=(hash=location.hash)=>{
+  let id;try{id=decodeURIComponent(hash.slice(1));}catch(e){return;}
   const target=document.getElementById(id);if(!target)return;
   if(id==='herkunft'){const field=$('population-view');field.value='origins';show(field);}
   const panel=target.closest('.view-panel');
@@ -2322,10 +2351,10 @@ function initViewSelectors(){
   }
   requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
  };
- window.addEventListener('hashchange',reveal);
+ window.addEventListener('hashchange',()=>reveal());
  document.addEventListener('click',event=>{
   const link=event.target.closest('a[href^="#"]');
-  if(link&&link.hash===location.hash)reveal();
+  if(link)reveal(link.hash);
  });
  if(location.hash)reveal();
 }

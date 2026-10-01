@@ -503,7 +503,10 @@ class DataTests(unittest.TestCase):
         for key in ('kmu6_islam_praxis', 'kmu6_flucht_praxis',
                     'fes2025_migration', 'fes2025_antisemitismus'):
             b = blocks[key]
-            for item, row in zip(b['items'], b['chart'].get('main_chart', b['chart'])['rows']):
+            chart_rows = b['chart'].get('main_chart', b['chart'])['rows']
+            if key == 'fes2025_migration':
+                chart_rows = [chart_rows[1], chart_rows[3]]
+            for item, row in zip(b['items'], chart_rows):
                 self.assertAlmostEqual(item['value'], sum(s['value'] for s in row['segments'][-2:]))
                 self.assertNotIn('valid_n', item)
         self.assertEqual([i['base_n'] for i in blocks['kmu6_islam_praxis']['items']],
@@ -544,6 +547,22 @@ class DataTests(unittest.TestCase):
         chart = blocks['rm2015_islamwahrnehmung_vergleich']['chart']['main_chart']
         self.assertEqual(chart['series'], ['2012', '2014'])
         self.assertEqual([r['items'] for r in chart['rows']], [[0, 1], [2, 3]])
+
+    def test_fes_comparison_preserves_published_categories_and_questions(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        old = blocks['fes2023_ressentiments']
+        self.assertEqual([i['value'] for i in old['items']], [34.1, 18.1, 7.2, 16.5, 15.4])
+        self.assertTrue(all(i['study_sample']['n'] == 2027 and 'valid_n' not in i for i in old['items']))
+        chart = blocks['fes2025_migration']['chart']
+        self.assertEqual(len(chart['rows']), 10)
+        self.assertEqual([r['label'] for r in chart['rows']], ['2023', '2025']*5)
+        self.assertEqual(chart['groups'][0]['label'], 'Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.')
+        self.assertIn('Gewichtungseffekte', blocks['fes2025_migration']['note'])
+        self.assertIn('wirklich deutsch', blocks['evs2017_zugehoerigkeit']['question']['texts'][0])
+        self.assertEqual(blocks['kmu6_islam_praxis']['question']['texts'], ['Der Islam passt in die deutsche Gesellschaft.'])
+        for key in ('konid_gewalt', 'konid_verfassung', 'konid_autoritaet'):
+            self.assertTrue(blocks[key]['question']['texts'])
 
     def test_panel_attitudes_keep_randomised_wording_and_unknown_item_counts(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())

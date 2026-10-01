@@ -33,11 +33,15 @@ class PublicReportFindings(unittest.TestCase):
         self.assertEqual([i['value'] for i in ofek['items']], [37, 105, 19, 3])
 
     def test_uem_inventory_does_not_claim_all_full_texts_reviewed(self):
-        studies = self.doc['uem_studies']
+        internal = json.loads((ROOT / 'inputs/report-findings.json').read_text())
+        studies = internal['uem_studies']
         self.assertEqual(len(studies), 16)
         full = [s for s in studies if s['review_status'] == 'Separater öffentlicher Bericht geprüft']
         self.assertEqual(len(full), 3)
-        self.assertIn('nicht repräsentativ', self.reports['uem_overview']['note'])
+        self.assertNotIn('uem_studies', self.doc)
+        self.assertNotIn('uem_overview', self.reports)
+        self.assertNotIn('bw_antisemitism_schools', self.reports)
+        self.assertIn('research_notes', internal)
         self.assertFalse(any(r['id'] == 'uem_media' for r in self.doc['reports']))
 
     def test_source_and_built_files_agree(self):
@@ -48,8 +52,8 @@ class PublicReportFindings(unittest.TestCase):
         for report in built['reports']:
             for published_source in report['sources']:
                 published_source.pop('source_rights')
-        for study in built['uem_studies']:
-            study.pop('source_rights')
+        for key in ('uem_studies', 'research_notes', 'coverage_gaps'):
+            source.pop(key, None)
         self.assertEqual(built, source)
         self.assertIn('window.ATLAS_REPORT_FINDINGS', (ROOT / 'docs/data/report-findings-data.js').read_text())
 
@@ -63,10 +67,20 @@ class PublicReportFindings(unittest.TestCase):
             self.assertFalse(rights['third_party_material']['relicensed_by_atlas'])
         sources = [i for b in survey['blocks'] for i in b['items']]
         sources += [s for r in self.doc['reports'] for s in r['sources']]
-        sources += self.doc['uem_studies']
         for source in sources:
             self.assertFalse(source['source_rights']['relicensed_by_atlas'])
             self.assertEqual(source['source_rights']['license_status'], 'not_recorded_in_export')
+
+    def test_bw_time_series_keep_measure_and_period_separate(self):
+        pmk = self.reports['pmk_bw_islamfeindlich']
+        self.assertEqual([(p['year'], p['value']) for p in pmk['time_series']],
+                         [('2021', 57), ('2022', 48), ('2023', 156), ('2024', 220)])
+        self.assertTrue(all(p.get('source_url') and p.get('source_locator') for p in pmk['time_series']))
+        ads = self.reports['ads_bw_antimuslimisch']
+        self.assertEqual([i['value'] for i in ads['items']], [13, 16, 13])
+        self.assertIn('vorläufig', ads['note'])
+        self.assertIn('nicht zur Polizeistatistik addiert', ads['note'])
+        self.assertTrue(all('Halbjahr' in i['label'] for i in ads['items']))
 
     def test_ekd_and_fra_use_the_published_subsamples(self):
         survey = json.loads((ROOT / 'docs/data/survey-items.json').read_text())

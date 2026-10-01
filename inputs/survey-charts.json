@@ -206,70 +206,349 @@
   "kind": "time"
  },
  "fes2025_migration": {
-  "kind": "collection",
+  "kind": "distribution",
+  "title": "FES-Mitte: Ressentiments 2023 und 2025",
   "related": [
-   "fes2025_antisemitismus"
+   "fes2025_antisemitismus",
+   "fes2023_ressentiments"
   ],
-  "panels": [
-   "fes2025_migration",
-   "fes2025_antisemitismus"
+  "rows": [
+   {
+    "label": "2023",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 19.1
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 17.4
+     },
+     {
+      "label": "Teils/teils",
+      "value": 29.3
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 15.1
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 19
+     }
+    ]
+   },
+   {
+    "label": "2025",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 16.7
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 17.3
+     },
+     {
+      "label": "Teils/teils",
+      "value": 35.8
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 12.6
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 17.6
+     }
+    ]
+   },
+   {
+    "label": "2023",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 41.1
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 17.7
+     },
+     {
+      "label": "Teils/teils",
+      "value": 23
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 9.7
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 8.4
+     }
+    ]
+   },
+   {
+    "label": "2025",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 45.3
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 23.7
+     },
+     {
+      "label": "Teils/teils",
+      "value": 22.4
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 3
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 5.6
+     }
+    ]
+   },
+   {
+    "label": "2023",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 68
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 14
+     },
+     {
+      "label": "Teils/teils",
+      "value": 10.8
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 4.1
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 3.1
+     }
+    ]
+   },
+   {
+    "label": "2025",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 60.6
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 21.2
+     },
+     {
+      "label": "Teils/teils",
+      "value": 12.7
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 1.8
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 3.7
+     }
+    ]
+   },
+   {
+    "label": "2023",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 44.8
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 20
+     },
+     {
+      "label": "Teils/teils",
+      "value": 18.8
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 8.8
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 7.7
+     }
+    ]
+   },
+   {
+    "label": "2025",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 44.2
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 21.6
+     },
+     {
+      "label": "Teils/teils",
+      "value": 19.3
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 5.9
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 9
+     }
+    ]
+   },
+   {
+    "label": "2023",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 40.2
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 20.2
+     },
+     {
+      "label": "Teils/teils",
+      "value": 24.2
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 10.1
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 5.3
+     }
+    ]
+   },
+   {
+    "label": "2025",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 34.8
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 25.8
+     },
+     {
+      "label": "Teils/teils",
+      "value": 22.4
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 7.2
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 9.8
+     }
+    ]
+   }
   ],
-  "title": "FES-Mitte: Ressentiments gegen Geflüchtete, Muslime und Juden",
-  "main_chart": {
-   "kind": "distribution",
-   "rows": [
+  "groups": [
+   {
+    "label": "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+    "items": [
+     2,
+     3
+    ]
+   },
+   {
+    "label": "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+    "items": [
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+    "items": [
+     6,
+     7
+    ]
+   },
+   {
+    "label": "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat.",
+    "items": [
+     8,
+     9
+    ]
+   }
+  ],
+  "question_in_chart": true,
+  "metadata": "Deutschland · FES-Mitte 2023 und 2025 · Erwachsene Wohnbevölkerung · Studienstichproben: 2.027 (2023), 2.001 (2025) · Erhebung: Januar–Februar 2023 / Mai–Juli 2025",
+  "item_distributions": [
+   [
     {
-     "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
-     "segments": [
-      {
-       "label": "Lehne völlig ab",
-       "value": 16.7
-      },
-      {
-       "label": "Lehne eher ab",
-       "value": 17.3
-      },
-      {
-       "label": "Teils/teils",
-       "value": 35.8
-      },
-      {
-       "label": "Stimme eher zu",
-       "value": 12.6
-      },
-      {
-       "label": "Stimme voll zu",
-       "value": 17.6
-      }
-     ]
+     "label": "Lehne völlig ab",
+     "value": 16.7
     },
     {
-     "label": "Zuwanderungsverbot für Muslime",
-     "segments": [
-      {
-       "label": "Lehne völlig ab",
-       "value": 45.3
-      },
-      {
-       "label": "Lehne eher ab",
-       "value": 23.7
-      },
-      {
-       "label": "Teils/teils",
-       "value": 22.4
-      },
-      {
-       "label": "Stimme eher zu",
-       "value": 3
-      },
-      {
-       "label": "Stimme voll zu",
-       "value": 5.6
-      }
-     ]
+     "label": "Lehne eher ab",
+     "value": 17.3
+    },
+    {
+     "label": "Teils/teils",
+     "value": 35.8
+    },
+    {
+     "label": "Stimme eher zu",
+     "value": 12.6
+    },
+    {
+     "label": "Stimme voll zu",
+     "value": 17.6
+    }
+   ],
+   [
+    {
+     "label": "Lehne völlig ab",
+     "value": 45.3
+    },
+    {
+     "label": "Lehne eher ab",
+     "value": 23.7
+    },
+    {
+     "label": "Teils/teils",
+     "value": 22.4
+    },
+    {
+     "label": "Stimme eher zu",
+     "value": 3
+    },
+    {
+     "label": "Stimme voll zu",
+     "value": 5.6
     }
    ]
-  }
+  ]
  },
  "fes2025_antisemitismus": {
   "kind": "distribution",
@@ -1019,17 +1298,18 @@
   "title": "Vielfaltsbarometer: Religion, Nachbarschaft und Familie"
  },
  "konid_gewalt": {
-  "kind": "collection",
+  "kind": "compare",
+  "title": "Religiöse Überzeugungen: Gewalt, Verfassung und politische Autorität",
+  "layout": "dots",
   "related": [
    "konid_verfassung",
    "konid_autoritaet"
   ],
-  "panels": [
-   "konid_gewalt",
-   "konid_verfassung",
-   "konid_autoritaet"
-  ],
-  "title": "Religiöse Überzeugungen: Gewalt, Verfassung und politische Autorität"
+  "series": [
+   "Gewaltbereitschaft",
+   "Vorrang vor der Verfassung",
+   "Politische Autorität"
+  ]
  },
  "rm2017_europa_arbeitslos": {
   "kind": "collection",
@@ -1041,7 +1321,48 @@
    "rm2017_europa_arbeitslos",
    "rm2017_europa_sprache"
   ],
-  "title": "Muslime in Europa: Erwerbsstatus und Sprache"
+  "title": "Muslime in Europa: Erwerbsstatus und Sprache",
+  "main_chart": {
+   "kind": "responses",
+   "title": "Erwerbsstatus nach Land und Religionszugehörigkeit",
+   "groups": [
+    {
+     "label": "Deutschland",
+     "items": [
+      0,
+      1
+     ]
+    },
+    {
+     "label": "Österreich",
+     "items": [
+      2,
+      3
+     ]
+    },
+    {
+     "label": "Schweiz",
+     "items": [
+      4,
+      5
+     ]
+    },
+    {
+     "label": "Großbritannien",
+     "items": [
+      6,
+      7
+     ]
+    },
+    {
+     "label": "Frankreich",
+     "items": [
+      8,
+      9
+     ]
+    }
+   ]
+  }
  },
  "rm2017_europa_kontakte": {
   "kind": "collection",
@@ -1326,5 +1647,135 @@
  "rm_offenheit_history": {
   "kind": "time",
   "title": "Offenheit gegenüber allen Religionen · 2013–2023"
+ },
+ "fes2023_ressentiments": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 19.1
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 17.4
+     },
+     {
+      "label": "Teils/teils",
+      "value": 29.3
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 15.1
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 19
+     }
+    ]
+   },
+   {
+    "label": "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 41.1
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 17.7
+     },
+     {
+      "label": "Teils/teils",
+      "value": 23
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 9.7
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 8.4
+     }
+    ]
+   },
+   {
+    "label": "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 68
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 14
+     },
+     {
+      "label": "Teils/teils",
+      "value": 10.8
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 4.1
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 3.1
+     }
+    ]
+   },
+   {
+    "label": "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 44.8
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 20
+     },
+     {
+      "label": "Teils/teils",
+      "value": 18.8
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 8.8
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 7.7
+     }
+    ]
+   },
+   {
+    "label": "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat.",
+    "segments": [
+     {
+      "label": "Lehne völlig ab",
+      "value": 40.2
+     },
+     {
+      "label": "Lehne eher ab",
+      "value": 20.2
+     },
+     {
+      "label": "Teils/teils",
+      "value": 24.2
+     },
+     {
+      "label": "Stimme eher zu",
+      "value": 10.1
+     },
+     {
+      "label": "Stimme voll zu",
+      "value": 5.3
+     }
+    ]
+   }
+  ]
  }
 }

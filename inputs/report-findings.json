@@ -91,10 +91,10 @@
     },
     {
       "id": "pmk_bw_islamfeindlich",
-      "title": "Islamfeindliche Straftaten: BW 2024 nach Zuordnung",
+      "title": "Islamfeindliche Straftaten: BW 2021–2024",
       "group": "Baden-Württemberg · Vorfälle und Straftaten",
       "kind": "Polizeilich erfasste Straftaten",
-      "period": "2024",
+      "period": "2021–2024",
       "note": "220 polizeilich erfasste Straftaten im PMK-Unterthemenfeld „Islamfeindlich“ (2023: 156). Die Zuordnung beschreibt die polizeilich eingeschätzte Tatmotivation, nicht die Religion oder Staatsangehörigkeit von Personen. Mehrere Hasskriminalitäts-Themenfelder können auf dieselbe Tat zutreffen. Diese Werte dürfen daher nicht mit antisemitischen Straftaten oder zivilgesellschaftlichen Meldungen zu einer Gesamtsumme addiert werden. Für 2025 wird hier kein ungeprüfter BW-Wert eingesetzt.",
       "items": [
         {
@@ -131,9 +131,41 @@
           "title": "Innenministerium BW: Landtagsdrucksache 17/8711",
           "url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf",
           "locator": "S. 2–3 (Erfassung), S. 6 (Tabelle „Islamfeindlich“) "
+        },
+        {
+          "title": "Landtag BW: Innenausschuss zur Hasskriminalität 2022",
+          "url": "https://www.landtag-bw.de/de/aktuelles/pressemitteilungen/zahl-der-hass-straftaten-ist-in-baden-wuerttemberg-leicht-gesunken--419432",
+          "locator": "Innenausschuss, 14.06.2023; Themenfeld Islamfeindlich"
         }
       ],
-      "total": 220
+      "total": 220,
+      "total_label": "Straftaten 2024",
+      "time_series": [
+        {
+          "year": "2021",
+          "value": 57,
+          "source_url": "https://www.landtag-bw.de/de/aktuelles/pressemitteilungen/zahl-der-hass-straftaten-ist-in-baden-wuerttemberg-leicht-gesunken--419432",
+          "source_locator": "Innenausschuss, 14.06.2023; Themenfeld Islamfeindlich"
+        },
+        {
+          "year": "2022",
+          "value": 48,
+          "source_url": "https://www.landtag-bw.de/de/aktuelles/pressemitteilungen/zahl-der-hass-straftaten-ist-in-baden-wuerttemberg-leicht-gesunken--419432",
+          "source_locator": "Innenausschuss, 14.06.2023; Themenfeld Islamfeindlich"
+        },
+        {
+          "year": "2023",
+          "value": 156,
+          "source_locator": "S. 6, Tabelle „Islamfeindlich“, Vorjahreswerte in Klammern",
+          "source_url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf"
+        },
+        {
+          "year": "2024",
+          "value": 220,
+          "source_locator": "S. 6, Tabelle „Islamfeindlich“",
+          "source_url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf"
+        }
+      ]
     },
     {
       "id": "leuchtlinie_bw_2024",
@@ -202,34 +234,44 @@
       ]
     },
     {
-      "id": "bw_antisemitism_schools",
+      "id": "ads_bw_antimuslimisch",
+      "title": "Antimuslimische Diskriminierung: gemeldete BW-Fälle 2025–2026",
       "group": "Baden-Württemberg · Vorfälle und Straftaten",
-      "title": "BW-Studie: Antisemitismus im Schulalltag",
-      "kind": "Qualitative Studie",
-      "period": "Studie 2021–2023",
-      "note": "Chernivsky und Lorenz-Sinai untersuchen Wahrnehmung und Umgang mit Antisemitismus an BW-Schulen: 42 Teilnehmende, darunter 29 Lehr- und Fachkräfte, sieben Expertinnen und Experten sowie sechs jüdische junge Erwachsene. Die Interviews und Gruppendiskussionen zeigen unter anderem Verharmlosung, Schwierigkeiten beim Erkennen und Benennen von Antisemitismus sowie eine Lücke zwischen Betroffenenerfahrungen und institutionellen Reaktionen. Das hilft, die Grenzen von Meldestatistiken zu verstehen. Die Studie misst keine landesweite Häufigkeit; aus 42 Teilnehmenden wird keine Vorfallquote berechnet. Persönliche Fallzitate werden nicht übernommen.",
-      "items": [],
-      "sources": [
+      "kind": "Beratungsanfragen an die Antidiskriminierungsstelle des Bundes",
+      "period": "Halbjahre 2025–2026",
+      "note": "Fälle mit Tatort Baden-Württemberg, die der Antidiskriminierungsstelle des Bundes gemeldet wurden. Erfasst werden religionsbezogene Diskriminierung entlang einer zugeschriebenen muslimischen Zugehörigkeit und antimuslimischer Rassismus. Alle drei Angaben sind vorläufig und können im Beratungsverlauf neu kategorisiert werden. Sie messen gemeldete Fälle, keine Häufigkeit unter allen Musliminnen und Muslimen. Halbjahre werden nicht auf ganze Jahre hochgerechnet; diese Beratungsfälle werden nicht zur Polizeistatistik addiert.",
+      "items": [
         {
-          "title": "Chernivsky / Lorenz-Sinai (2023): Antisemitismus im Kontext Schule in Baden-Württemberg",
-          "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/250818_KoZe_Forschungsbericht_Antisemitismus-im-Kontext-Schule_BaWue_Web-Final-1.pdf",
-          "locator": "Studiendesign S. 10–15; Befunde S. 17–34; Diskussion S. 36–37"
+          "label": "1. Halbjahr 2025",
+          "value": 13,
+          "unit": "count"
+        },
+        {
+          "label": "2. Halbjahr 2025",
+          "value": 16,
+          "unit": "count"
+        },
+        {
+          "label": "1. Halbjahr 2026",
+          "value": 13,
+          "unit": "count"
         }
-      ]
-    },
-    {
-      "id": "uem_overview",
-      "title": "UEM: Welche Unterstudie beantwortet welche Frage?",
-      "group": "Forschung · UEM",
-      "kind": "Forschungsüberblick",
-      "period": "2022–2024",
-      "note": "Verwendet wird die öffentlich angebotene Fassung mit Impressumsstand April 2024. Der UEM-Bericht bündelt vorhandene Forschung, 16 beauftragte Studien/Gutachten und Hearings; er ist keine einzelne repräsentative Erhebung. Die MuPe-Onlinebefragung umfasst 473 Personen und ist ausdrücklich nicht repräsentativ. Ihre Ergebnisse werden daher nicht als Häufigkeit unter allen Musliminnen und Muslimen dargestellt.",
-      "items": [],
+      ],
       "sources": [
         {
-          "title": "UEM: Muslimfeindlichkeit – Eine deutsche Bilanz, Stand April 2024",
-          "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-          "locator": "Externe Expertisen S. 391–392; MuPe S. 117–123; Impressum S. 395"
+          "title": "Bundesregierung: Antimuslimische Vorfälle, 1. Halbjahr 2025",
+          "url": "https://dserver.bundestag.de/btd/21/007/2100741.pdf",
+          "locator": "Antwort zu Frage 1, S. 3; Tatort Baden-Württemberg"
+        },
+        {
+          "title": "Bundesregierung: Antimuslimische Vorfälle, 2. Halbjahr 2025",
+          "url": "https://dserver.bundestag.de/btd/21/042/2104220.pdf",
+          "locator": "Antwort zu Frage 1, S. 3; Tatort Baden-Württemberg"
+        },
+        {
+          "title": "Bundesregierung: Antimuslimische Vorfälle, 1. Halbjahr 2026",
+          "url": "https://dserver.bundestag.de/btd/21/074/2107478.pdf",
+          "locator": "Antwort zu Frage 1, S. 3; Tatort Baden-Württemberg"
         }
       ]
     }
@@ -386,6 +428,61 @@
       "topic": "CLAIM · BW",
       "note": "Im geprüften bundesweiten Lagebild 2025 wurde keine BW-Gesamtsumme gefunden. BW-Fallbeispiele ersetzen keine Landesstatistik.",
       "url": "https://www.claim-organisation.de/aktuelles/news/bundesweites-lagebild-antimuslimischer-rassismus-2025-veroeffentlicht/"
+    }
+  ],
+  "research_notes": [
+    {
+      "id": "bw_antisemitism_schools",
+      "group": "Baden-Württemberg · Vorfälle und Straftaten",
+      "title": "BW-Studie: Antisemitismus im Schulalltag",
+      "kind": "Qualitative Studie",
+      "period": "Studie 2021–2023",
+      "note": "Chernivsky und Lorenz-Sinai untersuchen Wahrnehmung und Umgang mit Antisemitismus an BW-Schulen: 42 Teilnehmende, darunter 29 Lehr- und Fachkräfte, sieben Expertinnen und Experten sowie sechs jüdische junge Erwachsene. Die Interviews und Gruppendiskussionen zeigen unter anderem Verharmlosung, Schwierigkeiten beim Erkennen und Benennen von Antisemitismus sowie eine Lücke zwischen Betroffenenerfahrungen und institutionellen Reaktionen. Das hilft, die Grenzen von Meldestatistiken zu verstehen. Die Studie misst keine landesweite Häufigkeit; aus 42 Teilnehmenden wird keine Vorfallquote berechnet. Persönliche Fallzitate werden nicht übernommen.",
+      "items": [],
+      "sources": [
+        {
+          "title": "Chernivsky / Lorenz-Sinai (2023): Antisemitismus im Kontext Schule in Baden-Württemberg",
+          "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/250818_KoZe_Forschungsbericht_Antisemitismus-im-Kontext-Schule_BaWue_Web-Final-1.pdf",
+          "locator": "Studiendesign S. 10–15; Befunde S. 17–34; Diskussion S. 36–37"
+        }
+      ]
+    },
+    {
+      "id": "uem_overview",
+      "title": "UEM: Welche Unterstudie beantwortet welche Frage?",
+      "group": "Forschung · UEM",
+      "kind": "Forschungsüberblick",
+      "period": "2022–2024",
+      "note": "Verwendet wird die öffentlich angebotene Fassung mit Impressumsstand April 2024. Der UEM-Bericht bündelt vorhandene Forschung, 16 beauftragte Studien/Gutachten und Hearings; er ist keine einzelne repräsentative Erhebung. Die MuPe-Onlinebefragung umfasst 473 Personen und ist ausdrücklich nicht repräsentativ. Ihre Ergebnisse werden daher nicht als Häufigkeit unter allen Musliminnen und Muslimen dargestellt.",
+      "items": [],
+      "sources": [
+        {
+          "title": "UEM: Muslimfeindlichkeit – Eine deutsche Bilanz, Stand April 2024",
+          "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
+          "locator": "Externe Expertisen S. 391–392; MuPe S. 117–123; Impressum S. 395"
+        }
+      ]
+    },
+    {
+      "id": "parliamentary_followup",
+      "title": "Weitere parlamentarische Angaben, nicht in die Jahresreihe übernommen",
+      "sources": [
+        {
+          "url": "https://www.landtag-bw.de/files/live/sites/LTBW/files/dokumente/WP17/Drucksachen/5000/17_5848_D.pdf",
+          "locator": "S. 2, Antwort zu Frage 1",
+          "value": 37,
+          "period": "1. Halbjahr 2023",
+          "measure": "BW, PMK Islamfeindlich"
+        },
+        {
+          "url": "https://dserver.bundestag.de/btd/21/074/2107478.pdf",
+          "locator": "S. 2 und 4",
+          "value": 231,
+          "period": "1. Halbjahr 2026",
+          "measure": "Deutschland, PMK Islamfeindlich",
+          "note": "Technische Umstellung zum 01.06.2026: Nachmeldungen ausstehend; keine Vergleichbarkeit zum Vorjahreszeitraum."
+        }
+      ]
     }
   ]
 }

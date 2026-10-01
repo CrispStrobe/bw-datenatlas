@@ -1,6 +1,6 @@
 {
   "type": "report_findings",
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "reviewed_on": "2026-10-01",
   "reports": [
     {
@@ -101,10 +101,10 @@
     },
     {
       "id": "pmk_bw_islamfeindlich",
-      "title": "Islamfeindliche Straftaten: BW 2024 nach Zuordnung",
+      "title": "Islamfeindliche Straftaten: BW 2021–2024",
       "group": "Baden-Württemberg · Vorfälle und Straftaten",
       "kind": "Polizeilich erfasste Straftaten",
-      "period": "2024",
+      "period": "2021–2024",
       "note": "220 polizeilich erfasste Straftaten im PMK-Unterthemenfeld „Islamfeindlich“ (2023: 156). Die Zuordnung beschreibt die polizeilich eingeschätzte Tatmotivation, nicht die Religion oder Staatsangehörigkeit von Personen. Mehrere Hasskriminalitäts-Themenfelder können auf dieselbe Tat zutreffen. Diese Werte dürfen daher nicht mit antisemitischen Straftaten oder zivilgesellschaftlichen Meldungen zu einer Gesamtsumme addiert werden. Für 2025 wird hier kein ungeprüfter BW-Wert eingesetzt.",
       "items": [
         {
@@ -146,9 +146,46 @@
             "license_status": "not_recorded_in_export",
             "relicensed_by_atlas": false
           }
+        },
+        {
+          "title": "Landtag BW: Innenausschuss zur Hasskriminalität 2022",
+          "url": "https://www.landtag-bw.de/de/aktuelles/pressemitteilungen/zahl-der-hass-straftaten-ist-in-baden-wuerttemberg-leicht-gesunken--419432",
+          "locator": "Innenausschuss, 14.06.2023; Themenfeld Islamfeindlich",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ],
-      "total": 220
+      "total": 220,
+      "total_label": "Straftaten 2024",
+      "time_series": [
+        {
+          "year": "2021",
+          "value": 57,
+          "source_url": "https://www.landtag-bw.de/de/aktuelles/pressemitteilungen/zahl-der-hass-straftaten-ist-in-baden-wuerttemberg-leicht-gesunken--419432",
+          "source_locator": "Innenausschuss, 14.06.2023; Themenfeld Islamfeindlich"
+        },
+        {
+          "year": "2022",
+          "value": 48,
+          "source_url": "https://www.landtag-bw.de/de/aktuelles/pressemitteilungen/zahl-der-hass-straftaten-ist-in-baden-wuerttemberg-leicht-gesunken--419432",
+          "source_locator": "Innenausschuss, 14.06.2023; Themenfeld Islamfeindlich"
+        },
+        {
+          "year": "2023",
+          "value": 156,
+          "source_locator": "S. 6, Tabelle „Islamfeindlich“, Vorjahreswerte in Klammern",
+          "source_url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf"
+        },
+        {
+          "year": "2024",
+          "value": 220,
+          "source_locator": "S. 6, Tabelle „Islamfeindlich“",
+          "source_url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf"
+        }
+      ]
     },
     {
       "id": "leuchtlinie_bw_2024",
@@ -227,18 +264,54 @@
       ]
     },
     {
-      "id": "bw_antisemitism_schools",
+      "id": "ads_bw_antimuslimisch",
+      "title": "Antimuslimische Diskriminierung: gemeldete BW-Fälle 2025–2026",
       "group": "Baden-Württemberg · Vorfälle und Straftaten",
-      "title": "BW-Studie: Antisemitismus im Schulalltag",
-      "kind": "Qualitative Studie",
-      "period": "Studie 2021–2023",
-      "note": "Chernivsky und Lorenz-Sinai untersuchen Wahrnehmung und Umgang mit Antisemitismus an BW-Schulen: 42 Teilnehmende, darunter 29 Lehr- und Fachkräfte, sieben Expertinnen und Experten sowie sechs jüdische junge Erwachsene. Die Interviews und Gruppendiskussionen zeigen unter anderem Verharmlosung, Schwierigkeiten beim Erkennen und Benennen von Antisemitismus sowie eine Lücke zwischen Betroffenenerfahrungen und institutionellen Reaktionen. Das hilft, die Grenzen von Meldestatistiken zu verstehen. Die Studie misst keine landesweite Häufigkeit; aus 42 Teilnehmenden wird keine Vorfallquote berechnet. Persönliche Fallzitate werden nicht übernommen.",
-      "items": [],
+      "kind": "Beratungsanfragen an die Antidiskriminierungsstelle des Bundes",
+      "period": "Halbjahre 2025–2026",
+      "note": "Fälle mit Tatort Baden-Württemberg, die der Antidiskriminierungsstelle des Bundes gemeldet wurden. Erfasst werden religionsbezogene Diskriminierung entlang einer zugeschriebenen muslimischen Zugehörigkeit und antimuslimischer Rassismus. Alle drei Angaben sind vorläufig und können im Beratungsverlauf neu kategorisiert werden. Sie messen gemeldete Fälle, keine Häufigkeit unter allen Musliminnen und Muslimen. Halbjahre werden nicht auf ganze Jahre hochgerechnet; diese Beratungsfälle werden nicht zur Polizeistatistik addiert.",
+      "items": [
+        {
+          "label": "1. Halbjahr 2025",
+          "value": 13,
+          "unit": "count"
+        },
+        {
+          "label": "2. Halbjahr 2025",
+          "value": 16,
+          "unit": "count"
+        },
+        {
+          "label": "1. Halbjahr 2026",
+          "value": 13,
+          "unit": "count"
+        }
+      ],
       "sources": [
         {
-          "title": "Chernivsky / Lorenz-Sinai (2023): Antisemitismus im Kontext Schule in Baden-Württemberg",
-          "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/250818_KoZe_Forschungsbericht_Antisemitismus-im-Kontext-Schule_BaWue_Web-Final-1.pdf",
-          "locator": "Studiendesign S. 10–15; Befunde S. 17–34; Diskussion S. 36–37",
+          "title": "Bundesregierung: Antimuslimische Vorfälle, 1. Halbjahr 2025",
+          "url": "https://dserver.bundestag.de/btd/21/007/2100741.pdf",
+          "locator": "Antwort zu Frage 1, S. 3; Tatort Baden-Württemberg",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
+        },
+        {
+          "title": "Bundesregierung: Antimuslimische Vorfälle, 2. Halbjahr 2025",
+          "url": "https://dserver.bundestag.de/btd/21/042/2104220.pdf",
+          "locator": "Antwort zu Frage 1, S. 3; Tatort Baden-Württemberg",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
+        },
+        {
+          "title": "Bundesregierung: Antimuslimische Vorfälle, 1. Halbjahr 2026",
+          "url": "https://dserver.bundestag.de/btd/21/074/2107478.pdf",
+          "locator": "Antwort zu Frage 1, S. 3; Tatort Baden-Württemberg",
           "source_rights": {
             "license": null,
             "license_status": "not_recorded_in_export",
@@ -246,263 +319,9 @@
           }
         }
       ]
-    },
-    {
-      "id": "uem_overview",
-      "title": "UEM: Welche Unterstudie beantwortet welche Frage?",
-      "group": "Forschung · UEM",
-      "kind": "Forschungsüberblick",
-      "period": "2022–2024",
-      "note": "Verwendet wird die öffentlich angebotene Fassung mit Impressumsstand April 2024. Der UEM-Bericht bündelt vorhandene Forschung, 16 beauftragte Studien/Gutachten und Hearings; er ist keine einzelne repräsentative Erhebung. Die MuPe-Onlinebefragung umfasst 473 Personen und ist ausdrücklich nicht repräsentativ. Ihre Ergebnisse werden daher nicht als Häufigkeit unter allen Musliminnen und Muslimen dargestellt.",
-      "items": [],
-      "sources": [
-        {
-          "title": "UEM: Muslimfeindlichkeit – Eine deutsche Bilanz, Stand April 2024",
-          "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-          "locator": "Externe Expertisen S. 391–392; MuPe S. 117–123; Impressum S. 395",
-          "source_rights": {
-            "license": null,
-            "license_status": "not_recorded_in_export",
-            "relicensed_by_atlas": false
-          }
-        }
-      ]
-    }
-  ],
-  "uem_studies": [
-    {
-      "title": "Analyse der Islam-Berichterstattung in deutschen Medien",
-      "authors": "Richter / Paasch-Colberg / Nötzold",
-      "year": 2022,
-      "method": "Inhaltsanalyse",
-      "uem_chapter": "7.1",
-      "url": "https://www.polsoz.fu-berlin.de/kommwiss/arbeitsstellen/internationale_kommunikation/Projekte-und-Publikationen/Islam-Berichterstattung1/Ergebnisbericht_final_neu.pdf",
-      "review_status": "Separater öffentlicher Bericht geprüft",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Begriffswelten von Islamfeindlichkeit in deutschen sozialen Medien",
-      "authors": "Jürgens",
-      "year": 2022,
-      "method": "Plattformanalyse",
-      "uem_chapter": "7.2",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Die Islampolitik der im Deutschen Bundestag vertretenen Parteien",
-      "authors": "Dreß",
-      "year": 2022,
-      "method": "Politikanalyse",
-      "uem_chapter": "9.2",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Religiös konnotierte Kleidung und Muslimfeindlichkeit",
-      "authors": "Boos-Niazy / AmF",
-      "year": 2022,
-      "method": "Expertise",
-      "uem_chapter": "6 / 8.3",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Auswirkungen von Moscheeangriffen auf Gemeindemitglieder",
-      "authors": "Gök Akca / Gümüş / Küçükhüseyin / Özcan",
-      "year": 2023,
-      "method": "Qualitative Fallstudie",
-      "uem_chapter": "5.4",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Islam und antimuslimischer Rassismus in Parteiensystem und Bundestag",
-      "authors": "Mustafa",
-      "year": 2022,
-      "method": "Diskursanalyse",
-      "uem_chapter": "8.2.2",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Islam und deutsche Familiengerichtsbarkeit",
-      "authors": "Dutta / Aiwanger",
-      "year": 2023,
-      "method": "Rechtliche Expertise",
-      "uem_chapter": "8.3",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Islamfeindlichkeit in christlichen Medien",
-      "authors": "Klinkhammer / Chilinski / Lütge",
-      "year": 2023,
-      "method": "Qualitative Studie",
-      "uem_chapter": "7.3",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/klinkhammer-islamfeindlichkeit-christl-medien.pdf?__blob=publicationFile&v=2",
-      "review_status": "Separater öffentlicher Bericht geprüft",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Muslimische Perspektiven (MuPe)",
-      "authors": "Zick / Demir / Eden; Kulaçatan / Behr / Rumpold / Aydın",
-      "year": 2023,
-      "method": "Mixed Methods",
-      "uem_chapter": "5.6",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Social Media-Selbst(re)präsentation von Muslim*innen",
-      "authors": "von Richthofen / Hafner / Wünsche",
-      "year": 2022,
-      "method": "Qualitative Inhaltsanalyse",
-      "uem_chapter": "7.2.2",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Schulbücher und Muslimfeindlichkeit",
-      "authors": "Düsterhöft / Spielhaus / Shalaby",
-      "year": 2023,
-      "method": "Inhaltsanalyse",
-      "uem_chapter": "6.2.2",
-      "url": "https://repository.gei.de/server/api/core/bitstreams/506933c2-bf9c-4fa7-823b-a0e2cbeac13e/content",
-      "review_status": "Separater öffentlicher Bericht geprüft",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Rechtliche Aspekte religiös konnotierter Kleidung",
-      "authors": "Mangold",
-      "year": 2022,
-      "method": "Rechtliche Expertise",
-      "uem_chapter": "8.3",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Rechtliche Rahmenbedingungen muslimischen Lebens",
-      "authors": "Heinig",
-      "year": 2022,
-      "method": "Rechtliche Expertise",
-      "uem_chapter": "9.1",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Islam in deutschsprachigen Spielfilmen und Serien 2001–2021",
-      "authors": "Alkın",
-      "year": 2022,
-      "method": "Filmanalyse",
-      "uem_chapter": "10.1.3",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Theater und Islam",
-      "authors": "Sharifi",
-      "year": 2022,
-      "method": "Theateranalyse",
-      "uem_chapter": "10.2",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
-    },
-    {
-      "title": "Lehrkräfteperspektiven auf muslimische Schülerinnen und Schüler",
-      "authors": "Yalçın",
-      "year": 2022,
-      "method": "Qualitative Studie",
-      "uem_chapter": "6.3",
-      "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
-      "source_rights": {
-        "license": null,
-        "license_status": "not_recorded_in_export",
-        "relicensed_by_atlas": false
-      }
     }
   ],
   "what_this_is": "Feindseligkeit in Baden-Württemberg: dokumentierte Vorfälle und polizeilich erfasste Straftaten. Die Quellen erfassen unterschiedliche Ausschnitte; ihre Zahlen sind keine vollständigen Opferzahlen und werden nicht addiert. Der UEM dient als Forschungsüberblick, nicht als zusätzliche Fallstatistik.",
-  "coverage_gaps": [
-    {
-      "topic": "CLAIM · BW",
-      "note": "Im geprüften bundesweiten Lagebild 2025 wurde keine BW-Gesamtsumme gefunden. BW-Fallbeispiele ersetzen keine Landesstatistik.",
-      "url": "https://www.claim-organisation.de/aktuelles/news/bundesweites-lagebild-antimuslimischer-rassismus-2025-veroeffentlicht/"
-    }
-  ],
   "rights": {
     "license": null,
     "license_status": "no_blanket_open_license",

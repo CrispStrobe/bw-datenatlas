@@ -103,7 +103,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 516,
+ "count": 521,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -350,7 +350,7 @@
   {
    "block": "bw_integration_erwartung",
    "title": "Erwartung zum Stand der Integration in Baden-Württemberg in fünf Jahren",
-   "note": "Dieselbe Erhebung, dieselbe Erläuterung des Begriffs „Zuwanderer\". Die Aufteilung nach Migrationshintergrund stammt aus der Selbstauskunft der Befragten. Die zu 100 Prozent fehlenden Anteile entfallen auf Befragte ohne Angabe.",
+   "note": "Dieselbe Erhebung, dieselbe Erläuterung des Begriffs „Zuwanderer\". Die Aufteilung nach Migrationshintergrund stammt aus der Selbstauskunft der Befragten. Die zu 100 Prozent fehlenden Anteile entfallen auf Befragte ohne Angabe. Die Landesumfragen haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, 2019 deutschsprechende Personen ab 18 Jahren. Ein Vergleich der Jahre umfasst damit auch eine veränderte Abgrenzung der Bevölkerung.",
    "scope": "Baden-Württemberg",
    "items": [
     {
@@ -873,7 +873,7 @@
   {
    "block": "bw_kopftuch_2012",
    "title": "„Stört mich\": das Tragen von Kopftüchern, Baden-Württemberg 2012",
-   "note": "Gezeigt werden die veröffentlichten Antworten „stört mich“ und, soweit angegeben, „stört mich nicht“. Nicht aufgeschlüsselte Restanteile bleiben als Lücke sichtbar und werden keiner Antwort zugeordnet. Für die Landesteile Baden und Württemberg liegt hier nur der Anteil „stört mich“ vor.",
+   "note": "Gezeigt werden die veröffentlichten Antworten „stört mich“ und, soweit angegeben, „stört mich nicht“. Nicht aufgeschlüsselte Restanteile bleiben als Lücke sichtbar und werden keiner Antwort zugeordnet. Für die Landesteile Baden und Württemberg liegt hier nur der Anteil „stört mich“ vor. Die Landesumfragen haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, 2019 deutschsprechende Personen ab 18 Jahren. Ein Vergleich der Jahre umfasst damit auch eine veränderte Abgrenzung der Bevölkerung.",
    "scope": "Baden-Württemberg",
    "items": [
     {
@@ -1586,7 +1586,16 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Durch die israelische Politik werden mir die Juden immer unsympathischer."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=47",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+   }
   },
   {
    "block": "ekd2020_antisemitic_influence",
@@ -1651,7 +1660,16 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Auch heute noch ist der Einfluss der Juden zu groß."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=47",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+   }
   },
   {
    "block": "ekd2020_muslim_rights",
@@ -1717,6 +1735,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Muslimen stehen in Deutschland die gleichen Rechte zu wie allen anderen."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=50",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+   },
    "chart": {
     "kind": "collection",
     "related": [
@@ -1796,7 +1823,16 @@
       "relicensed_by_atlas": false
      }
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=50",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+   }
   },
   {
    "block": "evs2017_gottesvorstellungen",
@@ -1885,6 +1921,15 @@
      "source_kind": "published_table"
     }
    ],
+   "question": {
+    "texts": [
+     "Welche dieser Aussagen kommt Ihren Überzeugungen am nächsten?"
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: alle vier Überzeugungen als getrennte Antwortmöglichkeiten.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q20"
+   },
    "chart": {
     "kind": "distribution",
     "rows": [
@@ -2044,7 +2089,7 @@
      ]
     },
     {
-     "label": "Deutsche Kultur teilen",
+     "label": "Nach der deutschen Lebensart und -weise leben",
      "detail": "Sehr wichtig: 21.8 %; ziemlich wichtig: 47.1 %",
      "value": 68.9,
      "unit": "percent",
@@ -2074,7 +2119,16 @@
       }
      ]
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Einige Menschen sagen, die folgenden Dinge seien wichtig, um wirklich deutsch zu sein. Andere dagegen sagen, sie seien nicht wichtig. Was meinen Sie, wie wichtig jedes dieser Dinge ist?"
+    ],
+    "response_scale": "Sehr wichtig · ziemlich wichtig · nicht wichtig · überhaupt nicht wichtig",
+    "shown": "Gezeigt: sehr und ziemlich wichtig; fünf unabhängig bewertete Kriterien.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q53 / v189–v193"
+   }
   },
   {
    "block": "evs2017_vertrauen",
@@ -2163,6 +2217,15 @@
      "source_kind": "published_table"
     }
    ],
+   "question": {
+    "texts": [
+     "Ich möchte gerne wissen, wie viel Vertrauen Sie verschiedenen Gruppen von Menschen entgegenbringen. Können Sie mir für die Menschen jeder der folgenden Gruppen sagen, wie sehr Sie ihnen vertrauen? Vertrauen Sie ihnen völlig, ziemlich, kaum oder gar nicht?"
+    ],
+    "response_scale": "Völlig · ziemlich · kaum · gar nicht",
+    "shown": "Gezeigt: völlig und ziemlich; Menschen anderer Religion und anderer Nationalität.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q8"
+   },
    "chart": {
     "kind": "distribution",
     "rows": [
@@ -2257,7 +2320,18 @@
      },
      "source_kind": "published_table"
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Gehören Sie einer Religionsgemeinschaft an?",
+     "Einmal abgesehen von Hochzeiten, Beerdigungen und Taufen: Wie oft nehmen Sie zurzeit an Gottesdiensten teil?",
+     "Wie oft beten Sie außerhalb von Gottesdiensten? Würden Sie sagen..."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zugehörigkeit (ja), Gottesdienst mindestens monatlich und Gebet mindestens wöchentlich. Drei getrennte Fragen.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q13, Q15 und Q22"
+   }
   },
   {
    "block": "evs2017_nachbarn",
@@ -2326,6 +2400,15 @@
      "source_kind": "published_table"
     }
    ],
+   "question": {
+    "texts": [
+     "Auf dieser Liste stehen eine Reihe ganz verschiedener Personengruppen. Könnten Sie einmal alle diejenigen benennen, die Sie nicht gern als Nachbarn hätten?"
+    ],
+    "response_scale": "Genannt · nicht genannt",
+    "shown": "Gezeigt: genannt; ausgewählte Gruppen Christen, Juden und Muslime.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q6"
+   },
    "chart": {
     "kind": "collection",
     "related": [
@@ -2425,7 +2508,7 @@
   {
    "block": "fes2025_migration",
    "title": "FES-Mitte: Abwertung von Geflüchteten und Muslimen",
-   "note": "Zustimmung ist die Summe der beiden zustimmenden Stufen, keine Summe mit der mittleren Kategorie. Labels fassen die Aussagen zusammen; der vollständige Wortlaut steht an der Fundstelle. Gültige Prozentwerte ohne fehlende Antworten. 2.001 ist die Studienstichprobe, keine ausgewiesene gültige Item-Fallzahl. Telefonische Festnetz-/Mobilbefragung; 2025 erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet. Keine BW-Auswertung; keine gemeinsame Zeitreihe mit den Leipziger Autoritarismus-Studien.",
+   "note": "FES-Mitte 2023 und 2025: identische Aussagen, fünf Antwortstufen, gültige Prozentwerte ohne fehlende Antworten. Die Originalskala 2023 lautet „stimme überhaupt nicht zu“ bis „stimme voll und ganz zu“; die Legende fasst beide Jahre als Ablehnung/Zustimmung zusammen. Telefonbefragungen: 2023 insgesamt 2.027 Interviews, 2025 insgesamt 2.001. Diese Studienstichproben sind keine gültigen Fallzahlen je Aussage. 2025 wird erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet; Veränderungen können auch Gewichtungseffekte enthalten. Keine BW-Auswertung.",
    "scope": "Deutschland",
    "items": [
     {
@@ -2467,77 +2550,647 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+     "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "Lehne völlig ab · Lehne eher ab · Teils/teils · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle Antwortstufen; die beiden zustimmenden Stufen bilden den Zustimmungsanteil.",
+    "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+    "source_locator": "Abbildung 4.2, S. 132–133"
+   },
    "chart": {
-    "kind": "collection",
+    "kind": "distribution",
+    "title": "FES-Mitte: Ressentiments 2023 und 2025",
     "related": [
-     "fes2025_antisemitismus"
+     "fes2025_antisemitismus",
+     "fes2023_ressentiments"
     ],
-    "panels": [
-     "fes2025_migration",
-     "fes2025_antisemitismus"
+    "rows": [
+     {
+      "label": "2023",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 19.1
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 17.4
+       },
+       {
+        "label": "Teils/teils",
+        "value": 29.3
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 15.1
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 19
+       }
+      ]
+     },
+     {
+      "label": "2025",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 16.7
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 17.3
+       },
+       {
+        "label": "Teils/teils",
+        "value": 35.8
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 12.6
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 17.6
+       }
+      ]
+     },
+     {
+      "label": "2023",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 41.1
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 17.7
+       },
+       {
+        "label": "Teils/teils",
+        "value": 23
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 9.7
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 8.4
+       }
+      ]
+     },
+     {
+      "label": "2025",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 45.3
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 23.7
+       },
+       {
+        "label": "Teils/teils",
+        "value": 22.4
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 3
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 5.6
+       }
+      ]
+     },
+     {
+      "label": "2023",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 68
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 14
+       },
+       {
+        "label": "Teils/teils",
+        "value": 10.8
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 4.1
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 3.1
+       }
+      ]
+     },
+     {
+      "label": "2025",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 60.6
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 21.2
+       },
+       {
+        "label": "Teils/teils",
+        "value": 12.7
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 1.8
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 3.7
+       }
+      ]
+     },
+     {
+      "label": "2023",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 44.8
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 20
+       },
+       {
+        "label": "Teils/teils",
+        "value": 18.8
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 8.8
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 7.7
+       }
+      ]
+     },
+     {
+      "label": "2025",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 44.2
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 21.6
+       },
+       {
+        "label": "Teils/teils",
+        "value": 19.3
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 5.9
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 9
+       }
+      ]
+     },
+     {
+      "label": "2023",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 40.2
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 20.2
+       },
+       {
+        "label": "Teils/teils",
+        "value": 24.2
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 10.1
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 5.3
+       }
+      ]
+     },
+     {
+      "label": "2025",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 34.8
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 25.8
+       },
+       {
+        "label": "Teils/teils",
+        "value": 22.4
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 7.2
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 9.8
+       }
+      ]
+     }
     ],
-    "title": "FES-Mitte: Ressentiments gegen Geflüchtete, Muslime und Juden",
-    "main_chart": {
-     "kind": "distribution",
-     "rows": [
+    "groups": [
+     {
+      "label": "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+      "items": [
+       0,
+       1
+      ]
+     },
+     {
+      "label": "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+      "items": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+      "items": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+      "items": [
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat.",
+      "items": [
+       8,
+       9
+      ]
+     }
+    ],
+    "question_in_chart": true,
+    "metadata": "Deutschland · FES-Mitte 2023 und 2025 · Erwachsene Wohnbevölkerung · Studienstichproben: 2.027 (2023), 2.001 (2025) · Erhebung: Januar–Februar 2023 / Mai–Juli 2025",
+    "item_distributions": [
+     [
       {
-       "label": "Unterstellung von Sozialleistungsmissbrauch durch Geflüchtete",
-       "segments": [
-        {
-         "label": "Lehne völlig ab",
-         "value": 16.7
-        },
-        {
-         "label": "Lehne eher ab",
-         "value": 17.3
-        },
-        {
-         "label": "Teils/teils",
-         "value": 35.8
-        },
-        {
-         "label": "Stimme eher zu",
-         "value": 12.6
-        },
-        {
-         "label": "Stimme voll zu",
-         "value": 17.6
-        }
-       ]
+       "label": "Lehne völlig ab",
+       "value": 16.7
       },
       {
-       "label": "Zuwanderungsverbot für Muslime",
-       "segments": [
-        {
-         "label": "Lehne völlig ab",
-         "value": 45.3
-        },
-        {
-         "label": "Lehne eher ab",
-         "value": 23.7
-        },
-        {
-         "label": "Teils/teils",
-         "value": 22.4
-        },
-        {
-         "label": "Stimme eher zu",
-         "value": 3
-        },
-        {
-         "label": "Stimme voll zu",
-         "value": 5.6
-        }
-       ]
+       "label": "Lehne eher ab",
+       "value": 17.3
+      },
+      {
+       "label": "Teils/teils",
+       "value": 35.8
+      },
+      {
+       "label": "Stimme eher zu",
+       "value": 12.6
+      },
+      {
+       "label": "Stimme voll zu",
+       "value": 17.6
+      }
+     ],
+     [
+      {
+       "label": "Lehne völlig ab",
+       "value": 45.3
+      },
+      {
+       "label": "Lehne eher ab",
+       "value": 23.7
+      },
+      {
+       "label": "Teils/teils",
+       "value": 22.4
+      },
+      {
+       "label": "Stimme eher zu",
+       "value": 3
+      },
+      {
+       "label": "Stimme voll zu",
+       "value": 5.6
       }
      ]
+    ]
+   }
+  },
+  {
+   "block": "fes2023_ressentiments",
+   "title": "FES-Mitte: Ressentiments 2023",
+   "note": "FES-Mitte 2023 und 2025: identische Aussagen, fünf Antwortstufen, gültige Prozentwerte ohne fehlende Antworten. Die Originalskala 2023 lautet „stimme überhaupt nicht zu“ bis „stimme voll und ganz zu“; die Legende fasst beide Jahre als Ablehnung/Zustimmung zusammen. Telefonbefragungen: 2023 insgesamt 2.027 Interviews, 2025 insgesamt 2.001. Diese Studienstichproben sind keine gültigen Fallzahlen je Aussage. 2025 wird erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet; Veränderungen können auch Gewichtungseffekte enthalten. Keine BW-Auswertung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+     "detail": null,
+     "value": 34.1,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2022/23",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2027,
+     "field_period": "02.01. bis 28.02.2023",
+     "question_ref": null,
+     "source_title": "Zick/Küpper/Mokros (2023): Die distanzierte Mitte",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+     "source_locator": "Tabelle 5.1, S. 160–161; Methode S. 36–37",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2027,
+      "description": "Deutschland · vollständige Interviews",
+      "weighted": false,
+      "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+      "source_locator": "S. 36–37, Tabelle 2.1"
+     }
+    },
+    {
+     "label": "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+     "detail": null,
+     "value": 18.1,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2022/23",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2027,
+     "field_period": "02.01. bis 28.02.2023",
+     "question_ref": null,
+     "source_title": "Zick/Küpper/Mokros (2023): Die distanzierte Mitte",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+     "source_locator": "Tabelle 5.1, S. 160–161; Methode S. 36–37",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2027,
+      "description": "Deutschland · vollständige Interviews",
+      "weighted": false,
+      "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+      "source_locator": "S. 36–37, Tabelle 2.1"
+     }
+    },
+    {
+     "label": "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+     "detail": null,
+     "value": 7.2,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2022/23",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2027,
+     "field_period": "02.01. bis 28.02.2023",
+     "question_ref": null,
+     "source_title": "Zick/Küpper/Mokros (2023): Die distanzierte Mitte",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+     "source_locator": "Tabelle 5.1, S. 160–161; Methode S. 36–37",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2027,
+      "description": "Deutschland · vollständige Interviews",
+      "weighted": false,
+      "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+      "source_locator": "S. 36–37, Tabelle 2.1"
+     }
+    },
+    {
+     "label": "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+     "detail": null,
+     "value": 16.5,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2022/23",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2027,
+     "field_period": "02.01. bis 28.02.2023",
+     "question_ref": null,
+     "source_title": "Zick/Küpper/Mokros (2023): Die distanzierte Mitte",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+     "source_locator": "Tabelle 5.1, S. 160–161; Methode S. 36–37",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2027,
+      "description": "Deutschland · vollständige Interviews",
+      "weighted": false,
+      "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+      "source_locator": "S. 36–37, Tabelle 2.1"
+     }
+    },
+    {
+     "label": "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat.",
+     "detail": null,
+     "value": 15.4,
+     "unit": "percent",
+     "study": "FES-Mitte-Studie 2022/23",
+     "population": "Erwachsene Wohnbevölkerung Deutschlands",
+     "base_n": 2027,
+     "field_period": "02.01. bis 28.02.2023",
+     "question_ref": null,
+     "source_title": "Zick/Küpper/Mokros (2023): Die distanzierte Mitte",
+     "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+     "source_locator": "Tabelle 5.1, S. 160–161; Methode S. 36–37",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 2027,
+      "description": "Deutschland · vollständige Interviews",
+      "weighted": false,
+      "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+      "source_locator": "S. 36–37, Tabelle 2.1"
+     }
     }
+   ],
+   "question": {
+    "texts": [
+     "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+     "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+     "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+     "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+     "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat."
+    ],
+    "response_scale": "Stimme überhaupt nicht zu · Stimme eher nicht zu · Teils/teils · Stimme eher zu · Stimme voll und ganz zu",
+    "shown": "Gezeigt: alle Antwortstufen.",
+    "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+    "source_locator": "Tabelle 5.1, S. 160–161"
+   },
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 19.1
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 17.4
+       },
+       {
+        "label": "Teils/teils",
+        "value": 29.3
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 15.1
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 19
+       }
+      ]
+     },
+     {
+      "label": "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 41.1
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 17.7
+       },
+       {
+        "label": "Teils/teils",
+        "value": 23
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 9.7
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 8.4
+       }
+      ]
+     },
+     {
+      "label": "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 68
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 14
+       },
+       {
+        "label": "Teils/teils",
+        "value": 10.8
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 4.1
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 3.1
+       }
+      ]
+     },
+     {
+      "label": "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 44.8
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 20
+       },
+       {
+        "label": "Teils/teils",
+        "value": 18.8
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 8.8
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 7.7
+       }
+      ]
+     },
+     {
+      "label": "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat.",
+      "segments": [
+       {
+        "label": "Lehne völlig ab",
+        "value": 40.2
+       },
+       {
+        "label": "Lehne eher ab",
+        "value": 20.2
+       },
+       {
+        "label": "Teils/teils",
+        "value": 24.2
+       },
+       {
+        "label": "Stimme eher zu",
+        "value": 10.1
+       },
+       {
+        "label": "Stimme voll zu",
+        "value": 5.3
+       }
+      ]
+     }
+    ]
    }
   },
   {
    "block": "fes2025_antisemitismus",
    "title": "FES-Mitte: drei Formen antisemitischer Aussagen",
-   "note": "Zustimmung ist die Summe der beiden zustimmenden Stufen, keine Summe mit der mittleren Kategorie. Labels fassen die Aussagen zusammen; der vollständige Wortlaut steht an der Fundstelle. Gültige Prozentwerte ohne fehlende Antworten. 2.001 ist die Studienstichprobe, keine ausgewiesene gültige Item-Fallzahl. Telefonische Festnetz-/Mobilbefragung; 2025 erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet. Keine BW-Auswertung; keine gemeinsame Zeitreihe mit den Leipziger Autoritarismus-Studien.",
+   "note": "FES-Mitte 2023 und 2025: identische Aussagen, fünf Antwortstufen, gültige Prozentwerte ohne fehlende Antworten. Die Originalskala 2023 lautet „stimme überhaupt nicht zu“ bis „stimme voll und ganz zu“; die Legende fasst beide Jahre als Ablehnung/Zustimmung zusammen. Telefonbefragungen: 2023 insgesamt 2.027 Interviews, 2025 insgesamt 2.001. Diese Studienstichproben sind keine gültigen Fallzahlen je Aussage. 2025 wird erstmals zusätzlich nach erinnerter Bundestagswahlentscheidung gewichtet; Veränderungen können auch Gewichtungseffekte enthalten. Keine BW-Auswertung.",
    "scope": "Deutschland",
    "items": [
     {
@@ -2598,6 +3251,17 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+     "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+     "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat."
+    ],
+    "response_scale": "Lehne völlig ab · Lehne eher ab · Teils/teils · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle Antwortstufen; die beiden zustimmenden Stufen bilden den Zustimmungsanteil.",
+    "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+    "source_locator": "Abbildung 4.2, S. 132–133"
+   },
    "chart": {
     "kind": "distribution",
     "rows": [
@@ -5159,6 +5823,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Der Islam passt in die deutsche Gesellschaft."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle vier Antwortstufen.",
+    "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+    "source_locator": "Abbildungen 31.4–31.5, S. 586–587"
+   },
    "chart": {
     "kind": "distribution",
     "rows": [
@@ -5332,6 +6005,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Es gibt heute in Deutschland zu viele Asylsuchende und Geflüchtete, es sollten nicht mehr so viele aufgenommen werden."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle vier Antwortstufen.",
+    "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+    "source_locator": "Abbildungen 31.4–31.5, S. 586–587"
+   },
    "chart": {
     "kind": "distribution",
     "rows": [
@@ -5613,6 +6295,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Durch die vielen Muslime hier fühle ich mich manchmal wie ein Fremder im eigenen Land."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+   },
    "chart": {
     "kind": "time",
     "related": [
@@ -5816,6 +6507,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Durch die vielen Muslime hier fühle ich mich manchmal wie ein Fremder im eigenen Land."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+   },
    "chart": {
     "kind": "time"
    }
@@ -6011,6 +6711,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+   },
    "chart": {
     "kind": "time",
     "related": [
@@ -6214,6 +6923,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+   },
    "chart": {
     "kind": "time"
    }
@@ -8186,6 +8904,17 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "In Deutschland gibt es viele christliche Feiertage. Ich finde, dass es gesetzliche Feiertage auch zu den Festen anderer Religionen geben sollte.",
+     "Der Islam passt durchaus auch in die westliche Welt.",
+     "Religion ist Privatsache. Religiöse Bekundungen und Symbole, wie Kruzifix, Kopftuch oder Kippah haben in der Öffentlichkeit nichts verloren."
+    ],
+    "response_scale": "Stimmt gar nicht · stimmt wenig · stimmt ziemlich · stimmt völlig",
+    "shown": "Gezeigt: stimmt ziemlich und stimmt völlig; weiß nicht/keine Angabe bleiben im Nenner.",
+    "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+    "source_locator": "Tabelle 7, S. 24"
+   },
    "chart": {
     "kind": "collection",
     "related": [
@@ -8472,6 +9201,17 @@
      "source_kind": "published_table"
     }
    ],
+   "question": {
+    "texts": [
+     "Einmal abgesehen davon, ob Sie in die Kirche gehen oder nicht: Würden Sie sagen, Sie sind...",
+     "Bitte geben Sie für die folgenden Dinge an, ob Sie daran glauben.",
+     "Ich möchte Ihnen jetzt verschiedene Bereiche vorlesen und Sie fragen, wie wichtig diese in Ihrem Leben sind. Bitte sagen Sie mir für jeden Bereich, ob er Ihnen sehr wichtig, ziemlich wichtig, nicht wichtig oder überhaupt nicht wichtig ist."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Q17 religiöser Mensch; Q18 Glaube an Gott (ja); Q1 Religion im Leben sehr oder ziemlich wichtig. Die drei Fragen verwenden unterschiedliche Antwortskalen.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q17, Q18 und Q1"
+   },
    "chart": {
     "kind": "collection",
     "related": [
@@ -11381,18 +12121,28 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Ich wäre bereit, meine religiösen Überzeugungen auch mit Gewalt durchzusetzen."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: die beiden zustimmenden Antwortstufen.",
+    "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+    "source_locator": "Abbildung 5.3, S. 26"
+   },
    "chart": {
-    "kind": "collection",
+    "kind": "compare",
+    "title": "Religiöse Überzeugungen: Gewalt, Verfassung und politische Autorität",
+    "layout": "dots",
     "related": [
      "konid_verfassung",
      "konid_autoritaet"
     ],
-    "panels": [
-     "konid_gewalt",
-     "konid_verfassung",
-     "konid_autoritaet"
-    ],
-    "title": "Religiöse Überzeugungen: Gewalt, Verfassung und politische Autorität"
+    "series": [
+     "Gewaltbereitschaft",
+     "Vorrang vor der Verfassung",
+     "Politische Autorität"
+    ]
    }
   },
   {
@@ -11505,7 +12255,16 @@
       "source_locator": "Methodenbeschreibung, S. 3–4"
      }
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Meine Religion hat im Konfliktfall Vorrang vor der Verfassung."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: die beiden zustimmenden Antwortstufen.",
+    "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+    "source_locator": "Abbildung 5.3, S. 26"
+   }
   },
   {
    "block": "konid_autoritaet",
@@ -11617,7 +12376,16 @@
       "source_locator": "Methodenbeschreibung, S. 3–4"
      }
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Religion sollte die einzige und letztgültige politische Autorität sein."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: die beiden zustimmenden Antwortstufen.",
+    "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+    "source_locator": "Abbildung 5.3, S. 26"
+   }
   },
   {
    "block": "fundamentalismus_sciics",
@@ -12009,7 +12777,16 @@
       "source_locator": "Abbildung 1, S. 14"
      }
     }
-   ]
+   ],
+   "question": {
+    "texts": [
+     "Ich werde Ihnen eine Reihe verschiedener Personengruppen vorlesen. Bitte sagen Sie mir jeweils, welche Sie nicht gerne als Nachbarn hätten bzw. ob Ihnen dies egal ist: Muslime."
+    ],
+    "response_scale": "Nicht gerne als Nachbarn · egal",
+    "shown": "Gezeigt: nicht gerne als Nachbarn; nichtmuslimische Befragte.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 2, S. 18"
+   }
   },
   {
    "block": "rm2017_europa_arbeitslos",
@@ -12478,7 +13255,48 @@
      "rm2017_europa_arbeitslos",
      "rm2017_europa_sprache"
     ],
-    "title": "Muslime in Europa: Erwerbsstatus und Sprache"
+    "title": "Muslime in Europa: Erwerbsstatus und Sprache",
+    "main_chart": {
+     "kind": "responses",
+     "title": "Erwerbsstatus nach Land und Religionszugehörigkeit",
+     "groups": [
+      {
+       "label": "Deutschland",
+       "items": [
+        0,
+        1
+       ]
+      },
+      {
+       "label": "Österreich",
+       "items": [
+        2,
+        3
+       ]
+      },
+      {
+       "label": "Schweiz",
+       "items": [
+        4,
+        5
+       ]
+      },
+      {
+       "label": "Großbritannien",
+       "items": [
+        6,
+        7
+       ]
+      },
+      {
+       "label": "Frankreich",
+       "items": [
+        8,
+        9
+       ]
+      }
+     ]
+    }
    }
   },
   {
@@ -13251,6 +14069,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Und wenn Sie nun an Ihre regelmäßigen Freizeitkontakte insgesamt denken: Wie häufig haben Sie in Ihrer Freizeit Kontakt zu Menschen anderer Religionen?"
+    ],
+    "response_scale": "Sehr häufig · eher häufig · eher selten · selten · gar nicht",
+    "shown": "Gezeigt: sehr und eher häufig.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 5, S. 32"
+   },
    "chart": {
     "kind": "collection",
     "related": [
@@ -13745,6 +14572,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Ist [Aufnahmelandsprache] die erste Sprache, die Sie im Kindesalter gelernt haben?"
+    ],
+    "response_scale": "Ja · Ja, aber gemeinsam mit einer anderen Sprache · Nein, ich habe zuerst eine andere Sprache erlernt",
+    "shown": "Gezeigt: die beiden Ja-Antworten zusammen.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 3, S. 28"
+   },
    "chart": {
     "kind": "matrix",
     "columns": [
@@ -14228,6 +15064,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Wenn Sie nun an die Menschen denken, die Sie zu Ihrem engen Freundeskreis zählen, wie viele davon gehören der gleichen Religion an, wie Sie selbst?"
+    ],
+    "response_scale": "Keiner · weniger als die Hälfte · etwa die Hälfte · mehr als die Hälfte · alle",
+    "shown": "Gezeigt: keiner, weniger als die Hälfte und etwa die Hälfte; mindestens zur Hälfte nichtmuslimische Freunde.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 9, S. 38"
+   },
    "chart": {
     "kind": "matrix",
     "columns": [
@@ -14711,6 +15556,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Es kann vorkommen, dass man in verschiedenen Situationen benachteiligt wird, z. B. in Behörden oder am Arbeitsplatz. Wenn Sie an die letzten zwölf Monate zurückdenken: Wie häufig sind Sie in diesem Zeitraum diskriminiert worden?"
+    ],
+    "response_scale": "Nie · selten · gelegentlich · oft · sehr oft",
+    "shown": "Gezeigt: nie.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 8, S. 37"
+   },
    "chart": {
     "kind": "matrix",
     "columns": [
@@ -15194,6 +16048,15 @@
      }
     }
    ],
+   "question": {
+    "texts": [
+     "Wie verbunden fühlen Sie sich mit [jeweiliges Land]?"
+    ],
+    "response_scale": "Sehr verbunden · eher verbunden · eher nicht verbunden · überhaupt nicht verbunden",
+    "shown": "Gezeigt: sehr und eher verbunden.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 6, S. 33"
+   },
    "chart": {
     "kind": "collection",
     "related": [

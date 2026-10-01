@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build selected public incident statistics and the UEM research index."""
+"""Build selected public incident statistics with an internal research inventory."""
 import json
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -24,24 +24,28 @@ def validate(doc):
                 raise ValueError('Incident statistics must be non-negative integer counts')
         if 'total' in report and sum(i['value'] for i in report['items']) != report['total']:
             raise ValueError('Incident types do not reconcile with the source total')
-    if len(doc['uem_studies']) != 16:
+        for point in report.get('time_series', []):
+            if not isinstance(point['value'], int) or point['value'] < 0 or not point.get('source_locator'):
+                raise ValueError('Incomplete time-series evidence')
+    if 'uem_studies' in doc and len(doc['uem_studies']) != 16:
         raise ValueError('UEM study inventory must cover the 16 commissioned studies/reports')
 
 
 def main():
     doc = json.loads((ROOT / 'inputs/report-findings.json').read_text())
     validate(doc)
-    doc['schema_version'] = '1.1'
+    doc['schema_version'] = '1.2'
     doc['rights'] = export_rights()
     for report in doc['reports']:
         for source in report['sources']:
             source['source_rights'] = source_rights()
-    for study in doc['uem_studies']:
-        study['source_rights'] = source_rights()
+    doc.pop('research_notes', None)
+    doc.pop('uem_studies', None)
+    doc.pop('coverage_gaps', None)
     text = json.dumps(doc, ensure_ascii=False, indent=2) + '\n'
     (ROOT / 'docs/data/report-findings.json').write_text(text)
     (ROOT / 'docs/data/report-findings-data.js').write_text('window.ATLAS_REPORT_FINDINGS = ' + text.rstrip() + ';\n')
-    print(f"{len(doc['reports'])} Berichtsansichten; {len(doc['uem_studies'])} UEM-Unterstudien")
+    print(f"{len(doc['reports'])} quantitative Berichtsansichten")
 
 
 if __name__ == '__main__':

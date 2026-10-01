@@ -73,5 +73,279 @@
     "shown": "Gezeigt: Zustimmung. Der Bericht 2023 formuliert die Aussage als „Man sollte gegenüber allen Religionen offen sein.“",
     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
     "source_locator": "Abbildung 23, S. 72; Religionsmonitor 2023, Abbildung 10, S. 51"
+  },
+  "konid_gewalt": {
+    "texts": [
+      "Ich wäre bereit, meine religiösen Überzeugungen auch mit Gewalt durchzusetzen."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: die beiden zustimmenden Antwortstufen.",
+    "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+    "source_locator": "Abbildung 5.3, S. 26"
+  },
+  "konid_verfassung": {
+    "texts": [
+      "Meine Religion hat im Konfliktfall Vorrang vor der Verfassung."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: die beiden zustimmenden Antwortstufen.",
+    "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+    "source_locator": "Abbildung 5.3, S. 26"
+  },
+  "konid_autoritaet": {
+    "texts": [
+      "Religion sollte die einzige und letztgültige politische Autorität sein."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: die beiden zustimmenden Antwortstufen.",
+    "source_url": "https://www.resic.info/wp-content/uploads/2019/12/KONID-Bericht-2019_Religion-trennt-verbindet.pdf",
+    "source_locator": "Abbildung 5.3, S. 26"
+  },
+  "kmu6_islam_praxis": {
+    "texts": [
+      "Der Islam passt in die deutsche Gesellschaft."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle vier Antwortstufen.",
+    "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+    "source_locator": "Abbildungen 31.4–31.5, S. 586–587"
+  },
+  "kmu6_flucht_praxis": {
+    "texts": [
+      "Es gibt heute in Deutschland zu viele Asylsuchende und Geflüchtete, es sollten nicht mehr so viele aufgenommen werden."
+    ],
+    "response_scale": "Stimme gar nicht zu · Stimme eher nicht zu · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle vier Antwortstufen.",
+    "source_url": "https://kmu.ekd.de/fileadmin/user_upload/kirchenmitgliedschaftsuntersuchung/PDF/KMU6_Auswertung_EVA_2024_WEB_FINAL.pdf",
+    "source_locator": "Abbildungen 31.4–31.5, S. 586–587"
+  },
+  "evs2017_zugehoerigkeit": {
+    "texts": [
+      "Einige Menschen sagen, die folgenden Dinge seien wichtig, um wirklich deutsch zu sein. Andere dagegen sagen, sie seien nicht wichtig. Was meinen Sie, wie wichtig jedes dieser Dinge ist?"
+    ],
+    "response_scale": "Sehr wichtig · ziemlich wichtig · nicht wichtig · überhaupt nicht wichtig",
+    "shown": "Gezeigt: sehr und ziemlich wichtig; fünf unabhängig bewertete Kriterien.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q53 / v189–v193"
+  },
+  "evs2017_nachbarn": {
+    "texts": [
+      "Auf dieser Liste stehen eine Reihe ganz verschiedener Personengruppen. Könnten Sie einmal alle diejenigen benennen, die Sie nicht gern als Nachbarn hätten?"
+    ],
+    "response_scale": "Genannt · nicht genannt",
+    "shown": "Gezeigt: genannt; ausgewählte Gruppen Christen, Juden und Muslime.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q6"
+  },
+  "evs2017_vertrauen": {
+    "texts": [
+      "Ich möchte gerne wissen, wie viel Vertrauen Sie verschiedenen Gruppen von Menschen entgegenbringen. Können Sie mir für die Menschen jeder der folgenden Gruppen sagen, wie sehr Sie ihnen vertrauen? Vertrauen Sie ihnen völlig, ziemlich, kaum oder gar nicht?"
+    ],
+    "response_scale": "Völlig · ziemlich · kaum · gar nicht",
+    "shown": "Gezeigt: völlig und ziemlich; Menschen anderer Religion und anderer Nationalität.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q8"
+  },
+  "evs2017_gottesvorstellungen": {
+    "texts": [
+      "Welche dieser Aussagen kommt Ihren Überzeugungen am nächsten?"
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: alle vier Überzeugungen als getrennte Antwortmöglichkeiten.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q20"
+  },
+  "evs2017_religion": {
+    "texts": [
+      "Einmal abgesehen davon, ob Sie in die Kirche gehen oder nicht: Würden Sie sagen, Sie sind...",
+      "Bitte geben Sie für die folgenden Dinge an, ob Sie daran glauben.",
+      "Ich möchte Ihnen jetzt verschiedene Bereiche vorlesen und Sie fragen, wie wichtig diese in Ihrem Leben sind. Bitte sagen Sie mir für jeden Bereich, ob er Ihnen sehr wichtig, ziemlich wichtig, nicht wichtig oder überhaupt nicht wichtig ist."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Q17 religiöser Mensch; Q18 Glaube an Gott (ja); Q1 Religion im Leben sehr oder ziemlich wichtig. Die drei Fragen verwenden unterschiedliche Antwortskalen.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q17, Q18 und Q1"
+  },
+  "evs2017_praxis": {
+    "texts": [
+      "Gehören Sie einer Religionsgemeinschaft an?",
+      "Einmal abgesehen von Hochzeiten, Beerdigungen und Taufen: Wie oft nehmen Sie zurzeit an Gottesdiensten teil?",
+      "Wie oft beten Sie außerhalb von Gottesdiensten? Würden Sie sagen..."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zugehörigkeit (ja), Gottesdienst mindestens monatlich und Gebet mindestens wöchentlich. Drei getrennte Fragen.",
+    "source_url": "https://www.gesis.org/en/european-values-study/data-and-documentation",
+    "source_locator": "Deutscher CAPI-Fragebogen ZA7500, Q13, Q15 und Q22"
+  },
+  "ekd2020_muslim_rights": {
+    "texts": [
+      "Muslimen stehen in Deutschland die gleichen Rechte zu wie allen anderen."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=50",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+  },
+  "ekd2020_muslim_immigration": {
+    "texts": [
+      "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=50",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+  },
+  "ekd2020_antisemitic_influence": {
+    "texts": [
+      "Auch heute noch ist der Einfluss der Juden zu groß."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=47",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+  },
+  "ekd2020_antisemitic_israel": {
+    "texts": [
+      "Durch die israelische Politik werden mir die Juden immer unsympathischer."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage.",
+    "source_url": "https://www.ekd.de/ekd_de/ds_doc/Naechstenliebe_EVA_2022.pdf#page=47",
+    "source_locator": "Tabellen 2.18–2.19, S. 46–49"
+  },
+  "las_zuwanderung_ost": {
+    "texts": [
+      "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+  },
+  "las_zuwanderung_west": {
+    "texts": [
+      "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+  },
+  "las_fremdheit_ost": {
+    "texts": [
+      "Durch die vielen Muslime hier fühle ich mich manchmal wie ein Fremder im eigenen Land."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+  },
+  "las_fremdheit_west": {
+    "texts": [
+      "Durch die vielen Muslime hier fühle ich mich manchmal wie ein Fremder im eigenen Land."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: Zustimmung zur Aussage, nach Erhebungsjahr und Ost-/Westdeutschland.",
+    "source_url": "https://www.boell.de/sites/default/files/2024-11/leipziger-autoritarismus-studie-2024-vereint-im-ressentiment-autoritaere-dynamiken-und-rechtsextreme-einstellungen.pdf",
+    "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
+  },
+  "bosch2025_religion": {
+    "texts": [
+      "In Deutschland gibt es viele christliche Feiertage. Ich finde, dass es gesetzliche Feiertage auch zu den Festen anderer Religionen geben sollte.",
+      "Der Islam passt durchaus auch in die westliche Welt.",
+      "Religion ist Privatsache. Religiöse Bekundungen und Symbole, wie Kruzifix, Kopftuch oder Kippah haben in der Öffentlichkeit nichts verloren."
+    ],
+    "response_scale": "Stimmt gar nicht · stimmt wenig · stimmt ziemlich · stimmt völlig",
+    "shown": "Gezeigt: stimmt ziemlich und stimmt völlig; weiß nicht/keine Angabe bleiben im Nenner.",
+    "source_url": "https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf",
+    "source_locator": "Tabelle 7, S. 24"
+  },
+  "fes2025_migration": {
+    "texts": [
+      "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+      "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden."
+    ],
+    "response_scale": "Lehne völlig ab · Lehne eher ab · Teils/teils · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle Antwortstufen; die beiden zustimmenden Stufen bilden den Zustimmungsanteil.",
+    "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+    "source_locator": "Abbildung 4.2, S. 132–133"
+  },
+  "fes2025_antisemitismus": {
+    "texts": [
+      "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+      "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+      "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat."
+    ],
+    "response_scale": "Lehne völlig ab · Lehne eher ab · Teils/teils · Stimme eher zu · Stimme voll zu",
+    "shown": "Gezeigt: alle Antwortstufen; die beiden zustimmenden Stufen bilden den Zustimmungsanteil.",
+    "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=159776&t=f&token=c046b94f061255878306ea930e95f1bee68c2006",
+    "source_locator": "Abbildung 4.2, S. 132–133"
+  },
+  "fes2023_ressentiments": {
+    "texts": [
+      "Die meisten Flüchtlinge kommen nur hierher, um das Sozialsystem auszunutzen.",
+      "Muslimen sollte die Zuwanderung nach Deutschland untersagt werden.",
+      "Durch ihr Verhalten sind Juden an ihren Verfolgungen mitschuldig.",
+      "Viele Juden versuchen, aus der Vergangenheit des Dritten Reiches heute ihren Vorteil zu ziehen.",
+      "Bei der Politik, die Israel macht, kann ich gut verstehen, dass man etwas gegen Juden hat."
+    ],
+    "response_scale": "Stimme überhaupt nicht zu · Stimme eher nicht zu · Teils/teils · Stimme eher zu · Stimme voll und ganz zu",
+    "shown": "Gezeigt: alle Antwortstufen.",
+    "source_url": "https://www.fes.de/index.php?eID=dumpFile&f=91776&t=f&token=3821fe2a05aff649791e9e7ebdb18eabdae3e0fd",
+    "source_locator": "Tabelle 5.1, S. 160–161"
+  },
+  "rm2017_europa_sprache": {
+    "texts": [
+      "Ist [Aufnahmelandsprache] die erste Sprache, die Sie im Kindesalter gelernt haben?"
+    ],
+    "response_scale": "Ja · Ja, aber gemeinsam mit einer anderen Sprache · Nein, ich habe zuerst eine andere Sprache erlernt",
+    "shown": "Gezeigt: die beiden Ja-Antworten zusammen.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 3, S. 28"
+  },
+  "rm2017_europa_kontakte": {
+    "texts": [
+      "Und wenn Sie nun an Ihre regelmäßigen Freizeitkontakte insgesamt denken: Wie häufig haben Sie in Ihrer Freizeit Kontakt zu Menschen anderer Religionen?"
+    ],
+    "response_scale": "Sehr häufig · eher häufig · eher selten · selten · gar nicht",
+    "shown": "Gezeigt: sehr und eher häufig.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 5, S. 32"
+  },
+  "rm2017_europa_freunde": {
+    "texts": [
+      "Wenn Sie nun an die Menschen denken, die Sie zu Ihrem engen Freundeskreis zählen, wie viele davon gehören der gleichen Religion an, wie Sie selbst?"
+    ],
+    "response_scale": "Keiner · weniger als die Hälfte · etwa die Hälfte · mehr als die Hälfte · alle",
+    "shown": "Gezeigt: keiner, weniger als die Hälfte und etwa die Hälfte; mindestens zur Hälfte nichtmuslimische Freunde.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 9, S. 38"
+  },
+  "rm2017_europa_verbundenheit": {
+    "texts": [
+      "Wie verbunden fühlen Sie sich mit [jeweiliges Land]?"
+    ],
+    "response_scale": "Sehr verbunden · eher verbunden · eher nicht verbunden · überhaupt nicht verbunden",
+    "shown": "Gezeigt: sehr und eher verbunden.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 6, S. 33"
+  },
+  "rm2017_nachbarn_europa": {
+    "texts": [
+      "Ich werde Ihnen eine Reihe verschiedener Personengruppen vorlesen. Bitte sagen Sie mir jeweils, welche Sie nicht gerne als Nachbarn hätten bzw. ob Ihnen dies egal ist: Muslime."
+    ],
+    "response_scale": "Nicht gerne als Nachbarn · egal",
+    "shown": "Gezeigt: nicht gerne als Nachbarn; nichtmuslimische Befragte.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 2, S. 18"
+  },
+  "rm2017_europa_diskriminierungsfrei": {
+    "texts": [
+      "Es kann vorkommen, dass man in verschiedenen Situationen benachteiligt wird, z. B. in Behörden oder am Arbeitsplatz. Wenn Sie an die letzten zwölf Monate zurückdenken: Wie häufig sind Sie in diesem Zeitraum diskriminiert worden?"
+    ],
+    "response_scale": "Nie · selten · gelegentlich · oft · sehr oft",
+    "shown": "Gezeigt: nie.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Studie_LW_Religionsmonitor-2017_Muslime-in-Europa.pdf",
+    "source_locator": "Abbildung 8, S. 37"
   }
 }

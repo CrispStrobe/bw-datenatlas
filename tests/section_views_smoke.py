@@ -40,6 +40,14 @@ try:
             assert page.locator('#view-estimates').locator('xpath=ancestor::section').get_attribute('id') == 'herkunft'
             assert page.locator('#basis-view option[value=incidents], #basis-view option[value=estimates]').count() == 0
             checks += 6
+            assert page.locator('#all-origins').locator('xpath=ancestor::*[contains(@class, "chart-card")]').count() == 1
+            method_link = page.locator('.kpi.is-estimate a[href="#bamf-methodik"]')
+            assert method_link.count() == 1
+            method_link.click()
+            assert page.locator('#bamf-methodik').is_visible()
+            assert 'Mikrozensus 2025' in page.locator('#bamf-methodik').inner_text()
+            page.select_option('#population-view', 'origins')
+            checks += 4
             for field in ('population-view', 'basis-view'):
                 selected = page.locator('#' + field).input_value()
                 section = page.locator('#' + field).locator('xpath=ancestor::section')
@@ -56,12 +64,12 @@ try:
             for value in page.eval_on_selector_all('#report-findings-select option', 'els=>els.map(e=>e.value)'):
                 page.select_option('#report-findings-select', value)
                 report = page.evaluate('id=>window.ATLAS_REPORT_FINDINGS.reports.find(r=>r.id===id)', value)
-                assert page.locator('#report-findings-body .bar-row').count() == len(report['items'])
+                assert page.locator('#report-findings-body .bar-row').count() == len(report.get('time_series', report['items']))
                 assert all('%' not in text for text in page.locator('#report-findings-body .bar-value').all_text_contents())
                 assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
-                if value == 'uem_overview':
-                    page.locator('#report-findings-body summary').click()
-                    assert page.locator('#report-findings-body .sources-list article').count() == 16
+                assert value not in ('uem_overview', 'bw_antisemitism_schools')
+                assert page.locator('#report-findings-body .notice').evaluate(
+                    "el=>!!(el.compareDocumentPosition(document.querySelector('#report-findings-body .horizontal-bars')) & Node.DOCUMENT_POSITION_PRECEDING)")
                 checks += 3
             page.select_option('#population-view', 'origins')
             page.select_option('#basis-view', 'bases')
@@ -87,10 +95,22 @@ try:
                     assert page.locator('#survey-blocks .survey-stack').count() == len(block['chart']['rows'])
                 elif kind == 'matrix':
                     assert page.locator('#survey-blocks .survey-matrix tbody td').count() == len(block['items'])
+                elif kind == 'compare' and block['chart'].get('layout') == 'dots':
+                    assert page.locator('#survey-blocks .survey-dot-row').count() == len(block['items'])
                 elif kind == 'time':
                     assert page.locator('#survey-blocks .survey-time circle').count() == len(block['items'])*(1+len(block['chart'].get('related', [])))
                 else:
-                    assert page.locator('#survey-blocks .bar-row').count()+page.locator('#survey-blocks .survey-distribution').count() >= len(block['items'])
+                    assert page.locator('#survey-blocks .bar-row').count()+page.locator('#survey-blocks .survey-distribution, #survey-blocks .survey-compact-row').count() >= len(block['items'])
+                assert page.locator('#survey-blocks > .survey-evidence').count() == 1
+                for diagram in page.locator('#survey-blocks .survey-shared-distributions').all():
+                    assert diagram.locator('.survey-key').count() == 1
+                if block['block'] == 'fes2025_migration':
+                    assert page.locator('#survey-blocks .survey-country-group').count() == 5
+                    assert 'Sozialsystem auszunutzen' in page.locator('#survey-blocks').inner_text()
+                    assert page.locator('#survey-blocks table th').filter(has_text='Antwortverteilung').count() == 1
+                    assert '19,1 %' in page.locator('#survey-blocks table').text_content()
+                if block['block'] == 'evs2017_zugehoerigkeit':
+                    assert 'wirklich deutsch' in page.locator('#survey-blocks .survey-question').inner_text()
                 page.locator('#survey-enlarge').click()
                 assert page.locator('#chart-zoom').evaluate('el=>el.open')
                 assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')

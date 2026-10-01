@@ -136,3 +136,5 @@ th[aria-sort="ascending"] .th-sort,th[aria-sort="descending"] .th-sort{color:var
 @media(max-width:600px){.survey-dot-row{grid-template-columns:95px minmax(0,1fr);gap:8px 10px}.survey-dot-scale{margin-left:105px}.survey-matrix th,.survey-matrix td{padding:12px 5px;font-size:11px}.kpi-grid{grid-template-columns:1fr}}
 
 .survey-matrix th{text-transform:none;letter-spacing:0;line-height:1.4;hyphens:auto}.survey-matrix th:first-child{width:31%}
+
+.survey-shared-key{margin:14px 0 22px}.survey-compact-row{display:grid;grid-template-columns:minmax(100px,220px) minmax(0,1fr);gap:15px;align-items:center;margin:10px 0}.survey-compact-row>strong{font-size:12px;font-weight:550}.survey-compact-row .survey-stack{margin:0;height:30px}.survey-country-group{margin:18px 0}.survey-country-group h5{margin:0 0 8px;font-size:14px}.survey-shared-distributions>.tiny{margin:12px 0}.survey-compact-row .survey-stack span{font-size:11px}@media(max-width:600px){.survey-compact-row{grid-template-columns:1fr;gap:4px;margin:12px 0}.survey-compact-row .survey-stack{height:28px}}
