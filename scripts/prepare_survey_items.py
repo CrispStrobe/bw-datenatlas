@@ -26,6 +26,10 @@ import argparse
 import csv
 import json
 from pathlib import Path
+try:
+    from .export_rights import export_rights, source_rights
+except ImportError:
+    from export_rights import export_rights, source_rights
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -76,6 +80,7 @@ def main() -> None:
             'source_title': r['source_title'],
             'source_url': r['source_url'],
             'source_locator': r['source_locator'] or None,
+            'source_rights': source_rights(),
             **({'weighted_valid_n': float(r['weighted_valid_n'])}
                if r.get('weighted_valid_n') else {}),
             **({'valid_n': int(r['valid_n'])} if r.get('valid_n') else {}),
@@ -84,7 +89,8 @@ def main() -> None:
 
     doc = {
         'type': 'survey_items',
-        'schema_version': '1.1',
+        'schema_version': '1.2',
+        'rights': export_rights(),
         'what_this_is': ('Antworten auf Fragen, nicht gezählte Menschen. Ein eigener '
                          'Abschnitt, weil eine Prozentzahl wie die andere aussieht und '
                          'niemand einem Balken ansieht, ob dahinter ein Register steht '

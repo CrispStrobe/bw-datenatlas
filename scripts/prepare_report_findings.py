@@ -3,6 +3,10 @@
 import json
 from pathlib import Path
 from urllib.parse import urlsplit
+try:
+    from .export_rights import export_rights, source_rights
+except ImportError:
+    from export_rights import export_rights, source_rights
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -27,6 +31,13 @@ def validate(doc):
 def main():
     doc = json.loads((ROOT / 'inputs/report-findings.json').read_text())
     validate(doc)
+    doc['schema_version'] = '1.1'
+    doc['rights'] = export_rights()
+    for report in doc['reports']:
+        for source in report['sources']:
+            source['source_rights'] = source_rights()
+    for study in doc['uem_studies']:
+        study['source_rights'] = source_rights()
     text = json.dumps(doc, ensure_ascii=False, indent=2) + '\n'
     (ROOT / 'docs/data/report-findings.json').write_text(text)
     (ROOT / 'docs/data/report-findings-data.js').write_text('window.ATLAS_REPORT_FINDINGS = ' + text.rstrip() + ';\n')

@@ -10,6 +10,28 @@ Der Anwendungscode, die Aufbereitungsskripte und die Projektdokumentation stehen
 
 Es wird **keine pauschale offene Lizenz für sämtliche zugrunde liegenden statistischen Quellen behauptet**. Für Weiterverwendung und Veröffentlichung sind die jeweiligen Nutzungsbedingungen der Originalanbieter maßgeblich. Insbesondere sind ein Downloadlink, die Veröffentlichung einer Zahl und eine Lizenz für einen vollständigen Bericht nicht dasselbe. Das Projekt verteilt nicht die Original-PDFs mit ihren Abbildungen und Fotos. Bei Zitaten und Weiterverwendung müssen die Originalquelle, Tabelle, Bezugszeit und gegebenenfalls Modellannahmen erhalten bleiben.
 
+## Herunterladbare Studien- und Berichtsauszüge
+
+`docs/data/survey-items.json` und `docs/data/report-findings.json` sind
+maschinenlesbare Belegsammlungen ausgewählter veröffentlichter Ergebnisse.
+Sie werden **nicht als vollständig offen lizenzierte Datensätze angeboten**.
+Die Metadaten `rights` unterscheiden die MIT-Lizenz für eigene Erläuterungen und
+etwaige eigene Zusammenstellungsrechte von etwaigen Rechten Dritter.
+`source_rights` steht bei jeder Befragungszeile, Berichtsquelle und UEM-Unterstudie.
+
+`license: null` bedeutet hier, dass keine pauschale Lizenz vergeben bzw. keine
+Quellenlizenz im Export dokumentiert ist. Dies ist weder eine Behauptung der
+Gemeinfreiheit noch ein Verbot, einzelne ungeschützte Tatsachen zu nutzen.
+Die Veröffentlichung eines begrenzten Auszugs ist keine Zusicherung, dass seine
+Inhalte beliebig vervielfältigt, mit weiteren Auszügen zusammengeführt oder neu
+lizenziert werden dürfen. Quellenrechte und gegebenenfalls vertragliche
+Bedingungen sind getrennt zu prüfen. Das Dateiformat JSON ändert daran nichts.
+
+Ein vollständig offen nachnutzbarer Export darf nur entsprechend geklärte
+Inhalte enthalten. Diese gemischten Studienauszüge gehören nicht automatisch
+zu einem solchen Export. Die einzelnen Quellen und Fundstellen bleiben erhalten.
+Die Originalberichte werden durch den Atlas nicht neu lizenziert.
+
 ## Religionsmonitor, Vielfaltsbarometer und European Values Study
 
 Prüfstand: 30.09.2026. Die Seite erstellt eigene Diagramme aus ausgewählten,

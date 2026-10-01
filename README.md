@@ -250,7 +250,7 @@ Europäische Quellen helfen hier nicht: Eurostat weist Staatsangehörigkeit auf 
 
 ## Lizenzen
 
-Code: `LICENSE` (MIT). Quellendaten, BKG-Namensnennung und Grenzen der Weiterverwendung: `DATA_LICENSES.md`.
+Code: `LICENSE` (MIT). Quellendaten, BKG-Namensnennung und Grenzen der Weiterverwendung: `DATA_LICENSES.md`. Die JSON-Downloads der Befragungs- und Berichtsauszüge enthalten eigene Rechtehinweise und werden nicht als vollständig offen lizenzierte Datensätze angeboten.
 
 ## Religionsmonitor und Befragungen
 

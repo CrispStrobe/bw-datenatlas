@@ -1,6 +1,6 @@
 window.ATLAS_REPORT_FINDINGS = {
   "type": "report_findings",
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "reviewed_on": "2026-10-01",
   "reports": [
     {
@@ -46,7 +46,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "RIAS Baden-Württemberg: Antisemitische Vorfälle 2025",
           "url": "https://report-antisemitism.de/documents/RIAS_BW_Bericht_2025.pdf",
-          "locator": "S. 9, 14 und 19"
+          "locator": "S. 9, 14 und 19",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ],
       "total": 335
@@ -85,7 +90,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "Innenministerium BW: Sicherheit in Baden-Württemberg 2025",
           "url": "https://sicher-bw.de/kriminalitaet/politisch-motivierte-kriminalitaet",
-          "locator": "Tabelle „Antisemitische Straftaten“, PMK gesamt / davon Gewaltdelikte"
+          "locator": "Tabelle „Antisemitische Straftaten“, PMK gesamt / davon Gewaltdelikte",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ]
     },
@@ -130,7 +140,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "Innenministerium BW: Landtagsdrucksache 17/8711",
           "url": "https://www.landtag-bw.de/resource/blob/569460/c19c1ef750916bec8e5ce6a6eff94770/17_8711_D.pdf",
-          "locator": "S. 2–3 (Erfassung), S. 6 (Tabelle „Islamfeindlich“) "
+          "locator": "S. 2–3 (Erfassung), S. 6 (Tabelle „Islamfeindlich“) ",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ],
       "total": 220
@@ -155,7 +170,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "LEUCHTLINIE: Jahresstatistik 2024",
           "url": "https://www.leuchtlinie.de/2025/05/08/rechte-gewalt-in-baden-wuerttemberg-deutlicher-anstieg-haupttatmotiv-rassismus-jugendliche-besonders-betroffen-queerfeindliche-gewalt-verdoppelt/",
-          "locator": "Abschnitt „Rassismus bleibt zentrales Tatmotiv“"
+          "locator": "Abschnitt „Rassismus bleibt zentrales Tatmotiv“",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ]
     },
@@ -197,7 +217,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "OFEK e.V.: BaWü Beratungsstatistik 2024–2025, Stand 27.10.2025",
           "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/OFEK_BaWue_Beratungsstatistik_2024-25.pdf",
-          "locator": "S. 3 (regionaler Bezug und Zeitraum), S. 4 (Beratungsfälle)"
+          "locator": "S. 3 (regionaler Bezug und Zeitraum), S. 4 (Beratungsfälle)",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ]
     },
@@ -213,7 +238,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "Chernivsky / Lorenz-Sinai (2023): Antisemitismus im Kontext Schule in Baden-Württemberg",
           "url": "https://ofek-beratung.de/wp-content/uploads/2026/02/250818_KoZe_Forschungsbericht_Antisemitismus-im-Kontext-Schule_BaWue_Web-Final-1.pdf",
-          "locator": "Studiendesign S. 10–15; Befunde S. 17–34; Diskussion S. 36–37"
+          "locator": "Studiendesign S. 10–15; Befunde S. 17–34; Diskussion S. 36–37",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ]
     },
@@ -229,7 +259,12 @@ window.ATLAS_REPORT_FINDINGS = {
         {
           "title": "UEM: Muslimfeindlichkeit – Eine deutsche Bilanz, Stand April 2024",
           "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-          "locator": "Externe Expertisen S. 391–392; MuPe S. 117–123; Impressum S. 395"
+          "locator": "Externe Expertisen S. 391–392; MuPe S. 117–123; Impressum S. 395",
+          "source_rights": {
+            "license": null,
+            "license_status": "not_recorded_in_export",
+            "relicensed_by_atlas": false
+          }
         }
       ]
     }
@@ -242,7 +277,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Inhaltsanalyse",
       "uem_chapter": "7.1",
       "url": "https://www.polsoz.fu-berlin.de/kommwiss/arbeitsstellen/internationale_kommunikation/Projekte-und-Publikationen/Islam-Berichterstattung1/Ergebnisbericht_final_neu.pdf",
-      "review_status": "Separater öffentlicher Bericht geprüft"
+      "review_status": "Separater öffentlicher Bericht geprüft",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Begriffswelten von Islamfeindlichkeit in deutschen sozialen Medien",
@@ -251,7 +291,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Plattformanalyse",
       "uem_chapter": "7.2",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Die Islampolitik der im Deutschen Bundestag vertretenen Parteien",
@@ -260,7 +305,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Politikanalyse",
       "uem_chapter": "9.2",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Religiös konnotierte Kleidung und Muslimfeindlichkeit",
@@ -269,7 +319,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Expertise",
       "uem_chapter": "6 / 8.3",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Auswirkungen von Moscheeangriffen auf Gemeindemitglieder",
@@ -278,7 +333,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Qualitative Fallstudie",
       "uem_chapter": "5.4",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Islam und antimuslimischer Rassismus in Parteiensystem und Bundestag",
@@ -287,7 +347,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Diskursanalyse",
       "uem_chapter": "8.2.2",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Islam und deutsche Familiengerichtsbarkeit",
@@ -296,7 +361,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Rechtliche Expertise",
       "uem_chapter": "8.3",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Islamfeindlichkeit in christlichen Medien",
@@ -305,7 +375,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Qualitative Studie",
       "uem_chapter": "7.3",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/klinkhammer-islamfeindlichkeit-christl-medien.pdf?__blob=publicationFile&v=2",
-      "review_status": "Separater öffentlicher Bericht geprüft"
+      "review_status": "Separater öffentlicher Bericht geprüft",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Muslimische Perspektiven (MuPe)",
@@ -314,7 +389,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Mixed Methods",
       "uem_chapter": "5.6",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Social Media-Selbst(re)präsentation von Muslim*innen",
@@ -323,7 +403,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Qualitative Inhaltsanalyse",
       "uem_chapter": "7.2.2",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Schulbücher und Muslimfeindlichkeit",
@@ -332,7 +417,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Inhaltsanalyse",
       "uem_chapter": "6.2.2",
       "url": "https://repository.gei.de/server/api/core/bitstreams/506933c2-bf9c-4fa7-823b-a0e2cbeac13e/content",
-      "review_status": "Separater öffentlicher Bericht geprüft"
+      "review_status": "Separater öffentlicher Bericht geprüft",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Rechtliche Aspekte religiös konnotierter Kleidung",
@@ -341,7 +431,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Rechtliche Expertise",
       "uem_chapter": "8.3",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Rechtliche Rahmenbedingungen muslimischen Lebens",
@@ -350,7 +445,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Rechtliche Expertise",
       "uem_chapter": "9.1",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Islam in deutschsprachigen Spielfilmen und Serien 2001–2021",
@@ -359,7 +459,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Filmanalyse",
       "uem_chapter": "10.1.3",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Theater und Islam",
@@ -368,7 +473,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Theateranalyse",
       "uem_chapter": "10.2",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     },
     {
       "title": "Lehrkräfteperspektiven auf muslimische Schülerinnen und Schüler",
@@ -377,7 +487,12 @@ window.ATLAS_REPORT_FINDINGS = {
       "method": "Qualitative Studie",
       "uem_chapter": "6.3",
       "url": "https://www.deutsche-islam-konferenz.de/SharedDocs/Anlagen/DE/Publikationen/Studien/uem-abschlussbericht.pdf?__blob=publicationFile&v=11",
-      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet"
+      "review_status": "Im UEM-Bericht erschlossen; separater Volltext hier nicht ausgewertet",
+      "source_rights": {
+        "license": null,
+        "license_status": "not_recorded_in_export",
+        "relicensed_by_atlas": false
+      }
     }
   ],
   "what_this_is": "Feindseligkeit in Baden-Württemberg: dokumentierte Vorfälle und polizeilich erfasste Straftaten. Die Quellen erfassen unterschiedliche Ausschnitte; ihre Zahlen sind keine vollständigen Opferzahlen und werden nicht addiert. Der UEM dient als Forschungsüberblick, nicht als zusätzliche Fallstatistik.",
@@ -387,5 +502,20 @@ window.ATLAS_REPORT_FINDINGS = {
       "note": "Im geprüften bundesweiten Lagebild 2025 wurde keine BW-Gesamtsumme gefunden. BW-Fallbeispiele ersetzen keine Landesstatistik.",
       "url": "https://www.claim-organisation.de/aktuelles/news/bundesweites-lagebild-antimuslimischer-rassismus-2025-veroeffentlicht/"
     }
-  ]
+  ],
+  "rights": {
+    "license": null,
+    "license_status": "no_blanket_open_license",
+    "atlas_material": {
+      "license": "MIT",
+      "scope": "Eigene Erläuterungen und etwaige eigene Rechte an Auswahl und Anordnung."
+    },
+    "third_party_material": {
+      "relicensed_by_atlas": false,
+      "scope": "Etwaige Rechte an übernommenen Quelleninhalten und Zusammenstellungen."
+    },
+    "notice": "Dieser Export enthält ausgewählte veröffentlichte Ergebnisse verschiedener Quellen. Es wird keine pauschale offene Lizenz für sämtliche Inhalte vergeben. Die MIT-Lizenz erfasst nur eigenes Material und eigene Rechte des Atlas. Etwaige Rechte Dritter bleiben unberührt. Ungeschützte Tatsachen werden durch diesen Hinweis nicht mit neuen Nutzungsbeschränkungen belegt. Quellen, Fundstellen und Bezugszeiträume sind bei Weiterverwendung zu berücksichtigen.",
+    "documentation_url": "https://github.com/CrispStrobe/bw-datenatlas/blob/main/DATA_LICENSES.md",
+    "source_license_null_means": "Eine Quellenlizenz ist in diesem Export nicht dokumentiert. Dies bedeutet weder Gemeinfreiheit noch ein Verbot der Nutzung einzelner Tatsachen."
+  }
 };
