@@ -3044,6 +3044,42 @@
      "source_locator": "S. 21; Teilstichproben, keine gültigen Item-Fallzahlen"
     }
    }
+  ],
+  "rias2026_theologie_antisemitismus": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 252,
+     "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+    }
+   }
+  ],
+  "rias2026_theologie_antisemitismus_ba": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 252,
+     "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+    }
+   }
+  ],
+  "rias2026_theologie_antisemitismus_ma": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 252,
+     "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+     "weighted": false,
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+    }
+   }
   ]
  }
 }

@@ -118,3 +118,16 @@ class PublicReportFindings(unittest.TestCase):
         self.assertEqual(incidents['total'], 31213)
         self.assertEqual(next(i['value'] for i in incidents['items'] if i['label'] == 'Unbekannt'), 17139)
         self.assertIn('keine festgestellte Religionszugehörigkeit', incidents['note'])
+
+    def test_degree_comparison_does_not_present_total_n_as_subgroup_n(self):
+        survey = json.loads((ROOT / 'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in survey['blocks']}
+        key = 'rias2026_theologie_antisemitismus'
+        self.assertEqual([i['value'] for i in blocks[key + '_ba']['items']], [40.3, 49.0])
+        self.assertEqual([i['value'] for i in blocks[key + '_ma']['items']], [32.3, 44.1])
+        for suffix in ('_ba', '_ma'):
+            for item in blocks[key + suffix]['items']:
+                self.assertIsNone(item['base_n'])
+                self.assertEqual(item['study_sample']['n'], 252)
+                self.assertNotIn('subgroup_sample', item)
+        self.assertIn('unterschiedliche Personen', blocks[key]['note'])

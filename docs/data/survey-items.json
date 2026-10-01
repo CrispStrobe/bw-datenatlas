@@ -110,7 +110,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 575,
+ "count": 579,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -1315,9 +1315,129 @@
    }
   },
   {
+   "block": "rias2026_theologie_antisemitismus_ba",
+   "title": "Antisemitische Einstellungen: Bachelorstudierende islamischer Theologie",
+   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik vergleicht die gesamte Studierendenstichprobe mit Bachelor- und Masterstudierenden. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung. Weitere Ergebnisse dieser Studierendenbefragung: Antisemitische Einstellungen hängen mit „fundamentalistischen“ und islamistischen Orientierungen, geringer innerislamischer Kritikfähigkeit, einer als besonders einheitlich wahrgenommenen Eigengruppe sowie empfundener Nähe zu DITIB, IGMG, VIKZ und ATIB zusammen. Konkrete persönliche Diskriminierungserfahrungen im letzten Jahr erklären die Einstellungen in dieser Analyse nicht. Diese Zusammenhänge belegen weder einen ursächlichen Verbandseinfluss noch Einstellungen aller Verbandsmitglieder; sie gelten für die untersuchte Studierendenstichprobe. Masterstudierende stimmen beiden Aussagen seltener zu als Bachelorstudierende: 32,3 statt 40,3 % beim tradierten und 44,1 statt 49,0 % beim israelbezogenen Antisemitismus. Verglichen werden unterschiedliche Personen, keine Veränderung derselben Studierenden. Die Abbildung nennt keine Teilgruppenfallzahlen oder Unsicherheitsintervalle. Ob Ausbildung, Altersunterschiede oder unterschiedliche Zusammensetzung der Gruppen den Abstand erklären, bleibt offen; Demmrich fordert dafür eine längsschnittliche Begleitung der Studierenden.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Unterstellung von zu viel Macht und Einfluss",
+     "detail": null,
+     "value": 40.3,
+     "unit": "percent",
+     "study": "Studierendenbefragung 2022 · RIAS-Auswertung 2026",
+     "population": "Muslimische Bachelorstudierende der Islamischen Theologie oder Religionslehre in Deutschland",
+     "base_n": null,
+     "field_period": "April bis Juni 2022",
+     "question_ref": null,
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Bachelor/Master-Einordnung S. 13; Zusammenhänge S. 14–17",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 252,
+      "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+     }
+    },
+    {
+     "label": "Aberkennung des Existenzrechts Israels",
+     "detail": null,
+     "value": 49.0,
+     "unit": "percent",
+     "study": "Studierendenbefragung 2022 · RIAS-Auswertung 2026",
+     "population": "Muslimische Bachelorstudierende der Islamischen Theologie oder Religionslehre in Deutschland",
+     "base_n": null,
+     "field_period": "April bis Juni 2022",
+     "question_ref": null,
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Bachelor/Master-Einordnung S. 13; Zusammenhänge S. 14–17",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 252,
+      "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+     }
+    }
+   ]
+  },
+  {
+   "block": "rias2026_theologie_antisemitismus_ma",
+   "title": "Antisemitische Einstellungen: Masterstudierende islamischer Theologie",
+   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik vergleicht die gesamte Studierendenstichprobe mit Bachelor- und Masterstudierenden. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung. Weitere Ergebnisse dieser Studierendenbefragung: Antisemitische Einstellungen hängen mit „fundamentalistischen“ und islamistischen Orientierungen, geringer innerislamischer Kritikfähigkeit, einer als besonders einheitlich wahrgenommenen Eigengruppe sowie empfundener Nähe zu DITIB, IGMG, VIKZ und ATIB zusammen. Konkrete persönliche Diskriminierungserfahrungen im letzten Jahr erklären die Einstellungen in dieser Analyse nicht. Diese Zusammenhänge belegen weder einen ursächlichen Verbandseinfluss noch Einstellungen aller Verbandsmitglieder; sie gelten für die untersuchte Studierendenstichprobe. Masterstudierende stimmen beiden Aussagen seltener zu als Bachelorstudierende: 32,3 statt 40,3 % beim tradierten und 44,1 statt 49,0 % beim israelbezogenen Antisemitismus. Verglichen werden unterschiedliche Personen, keine Veränderung derselben Studierenden. Die Abbildung nennt keine Teilgruppenfallzahlen oder Unsicherheitsintervalle. Ob Ausbildung, Altersunterschiede oder unterschiedliche Zusammensetzung der Gruppen den Abstand erklären, bleibt offen; Demmrich fordert dafür eine längsschnittliche Begleitung der Studierenden.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Unterstellung von zu viel Macht und Einfluss",
+     "detail": null,
+     "value": 32.3,
+     "unit": "percent",
+     "study": "Studierendenbefragung 2022 · RIAS-Auswertung 2026",
+     "population": "Muslimische Masterstudierende der Islamischen Theologie oder Religionslehre in Deutschland",
+     "base_n": null,
+     "field_period": "April bis Juni 2022",
+     "question_ref": null,
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Bachelor/Master-Einordnung S. 13; Zusammenhänge S. 14–17",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 252,
+      "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+     }
+    },
+    {
+     "label": "Aberkennung des Existenzrechts Israels",
+     "detail": null,
+     "value": 44.1,
+     "unit": "percent",
+     "study": "Studierendenbefragung 2022 · RIAS-Auswertung 2026",
+     "population": "Muslimische Masterstudierende der Islamischen Theologie oder Religionslehre in Deutschland",
+     "base_n": null,
+     "field_period": "April bis Juni 2022",
+     "question_ref": null,
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Bachelor/Master-Einordnung S. 13; Zusammenhänge S. 14–17",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 252,
+      "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
+     }
+    }
+   ]
+  },
+  {
    "block": "rias2026_theologie_antisemitismus",
    "title": "Antisemitische Einstellungen: Studierende islamischer Theologie",
-   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik zeigt die gesamte Studierendenstichprobe. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung. Weitere Ergebnisse dieser Studierendenbefragung: Antisemitische Einstellungen hängen mit „fundamentalistischen“ und islamistischen Orientierungen, geringer innerislamischer Kritikfähigkeit, einer als besonders einheitlich wahrgenommenen Eigengruppe sowie empfundener Nähe zu DITIB, IGMG, VIKZ und ATIB zusammen. Konkrete persönliche Diskriminierungserfahrungen im letzten Jahr erklären die Einstellungen in dieser Analyse nicht. Diese Zusammenhänge belegen weder einen ursächlichen Verbandseinfluss noch Einstellungen aller Verbandsmitglieder; sie gelten für die untersuchte Studierendenstichprobe.",
+   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik vergleicht die gesamte Studierendenstichprobe mit Bachelor- und Masterstudierenden. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung. Weitere Ergebnisse dieser Studierendenbefragung: Antisemitische Einstellungen hängen mit „fundamentalistischen“ und islamistischen Orientierungen, geringer innerislamischer Kritikfähigkeit, einer als besonders einheitlich wahrgenommenen Eigengruppe sowie empfundener Nähe zu DITIB, IGMG, VIKZ und ATIB zusammen. Konkrete persönliche Diskriminierungserfahrungen im letzten Jahr erklären die Einstellungen in dieser Analyse nicht. Diese Zusammenhänge belegen weder einen ursächlichen Verbandseinfluss noch Einstellungen aller Verbandsmitglieder; sie gelten für die untersuchte Studierendenstichprobe. Masterstudierende stimmen beiden Aussagen seltener zu als Bachelorstudierende: 32,3 statt 40,3 % beim tradierten und 44,1 statt 49,0 % beim israelbezogenen Antisemitismus. Verglichen werden unterschiedliche Personen, keine Veränderung derselben Studierenden. Die Abbildung nennt keine Teilgruppenfallzahlen oder Unsicherheitsintervalle. Ob Ausbildung, Altersunterschiede oder unterschiedliche Zusammensetzung der Gruppen den Abstand erklären, bleibt offen; Demmrich fordert dafür eine längsschnittliche Begleitung der Studierenden.",
    "scope": "Deutschland",
    "items": [
     {
@@ -1332,11 +1452,18 @@
      "question_ref": null,
      "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Zusammenhänge S. 14–17",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Bachelor/Master-Einordnung S. 13; Zusammenhänge S. 14–17",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 252,
+      "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
      }
     },
     {
@@ -1351,11 +1478,18 @@
      "question_ref": null,
      "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Zusammenhänge S. 14–17",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Bachelor/Master-Einordnung S. 13; Zusammenhänge S. 14–17",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
       "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 252,
+      "description": "Gesamte Studierendenstichprobe; keine Bachelor-/Master-Fallzahl",
+      "weighted": false,
+      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
+      "source_locator": "S. 10; Abbildung 1 auf S. 11 weist keine Teilgruppenfallzahlen aus"
      }
     }
    ],
@@ -1368,6 +1502,20 @@
     "shown": "Gezeigt: stimme eher/stark zu.",
     "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
     "source_locator": "S. 11, Abbildung 1"
+   },
+   "chart": {
+    "kind": "compare",
+    "layout": "dots",
+    "related": [
+     "rias2026_theologie_antisemitismus_ba",
+     "rias2026_theologie_antisemitismus_ma"
+    ],
+    "series": [
+     "Gesamte Studierendenstichprobe",
+     "Bachelorstudierende",
+     "Masterstudierende"
+    ],
+    "title": "Antisemitische Einstellungen: Bachelor- und Masterstudierende"
    }
   },
   {

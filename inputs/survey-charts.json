@@ -1919,5 +1919,19 @@
     ]
    }
   ]
+ },
+ "rias2026_theologie_antisemitismus": {
+  "kind": "compare",
+  "layout": "dots",
+  "related": [
+   "rias2026_theologie_antisemitismus_ba",
+   "rias2026_theologie_antisemitismus_ma"
+  ],
+  "series": [
+   "Gesamte Studierendenstichprobe",
+   "Bachelorstudierende",
+   "Masterstudierende"
+  ],
+  "title": "Antisemitische Einstellungen: Bachelor- und Masterstudierende"
  }
 }
