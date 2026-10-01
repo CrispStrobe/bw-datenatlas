@@ -75,6 +75,8 @@ def main() -> None:
             'study': r['study'],
             'population': r['population'],
             'base_n': int(r['base_n']) if r['base_n'] else None,
+            **({'sample_source_url': r['sample_source_url']}
+               if r.get('sample_source_url') else {}),
             'field_period': r['field_period'],
             'question_ref': r['question_ref'] or None,
             'source_title': r['source_title'],

@@ -2073,7 +2073,7 @@ function renderSurveyItems(){
     [...(combined?[t('Befragungsergebnis')]:[]),t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),
      ...(hasValidN?[t('Gültige Antworten')]:[]),t('Erhebungszeitraum'),t('Fundstelle')],
     tableItems.map(i=>[...(combined?[esc(t(i.blockTitle))]:[]),esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
-     esc(t(i.population)),i.base_n?integer(i.base_n):esc(t('nicht ausgewiesen')),
+     esc(t(i.population)),i.base_n?(i.sample_source_url?'<a href="'+esc(i.sample_source_url)+'" target="_blank" rel="noreferrer">'+integer(i.base_n)+'</a>':integer(i.base_n)):esc(t('nicht ausgewiesen')),
      ...(hasValidN?[i.valid_n!=null?integer(i.valid_n):esc(t('nicht ausgewiesen'))]:[]),
      esc(i.field_period),'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
       +esc(i.source_locator||i.source_title)+'</a>']))+'</div></details>';

@@ -572,6 +572,13 @@ class DataTests(unittest.TestCase):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
         blocks = {b['block']: b for b in d['blocks']}
         dogma = blocks['rm2013_dogmatismus']
+        for key, block in blocks.items():
+            if key.startswith('rm2013_'):
+                for item in block['items']:
+                    self.assertEqual(item['base_n'], 2000)
+                    self.assertIn('/publikationen/publikation/', item['sample_source_url'])
+                    self.assertNotIn('valid_n', item)
+                self.assertIn('keine Fallzahl der jeweiligen Religionsgruppe', block['note'])
         self.assertEqual({i['label']: i['value'] for i in dogma['items']},
                          {'Katholisch': 12, 'Evangelisch': 11, 'Muslimisch': 39})
         self.assertNotIn('Konfessionslos', [i['label'] for i in dogma['items']])
