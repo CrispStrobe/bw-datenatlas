@@ -1317,7 +1317,7 @@
   {
    "block": "rias2026_theologie_antisemitismus",
    "title": "Antisemitische Einstellungen: Studierende islamischer Theologie",
-   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik zeigt die gesamte Studierendenstichprobe. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung.",
+   "note": "Onlinebefragung von 252 muslimischen Studierenden der Islamischen Theologie oder Religionslehre im April–Juni 2022. Einladungen wurden über Studienkoordinierende und Fachschaften der elf anbietenden Universitäten verbreitet. Die Teilnahme war freiwillig; die Stichprobe entspricht etwa 11 % der Studierendengruppe und ist keine Zufallsstichprobe aller Musliminnen und Muslime. Zustimmung addiert die beiden zustimmenden Antworten der vierstufigen Skala. Die Grafik zeigt die gesamte Studierendenstichprobe. Die Werte sind wegen anderer Stichprobe und Skala keine Zeitpunkte derselben Reihe wie die Befragung 2023/24. Keine BW-Auswertung. Weitere Ergebnisse dieser Studierendenbefragung: Antisemitische Einstellungen hängen mit „fundamentalistischen“ und islamistischen Orientierungen, geringer innerislamischer Kritikfähigkeit, einer als besonders einheitlich wahrgenommenen Eigengruppe sowie empfundener Nähe zu DITIB, IGMG, VIKZ und ATIB zusammen. Konkrete persönliche Diskriminierungserfahrungen im letzten Jahr erklären die Einstellungen in dieser Analyse nicht. Diese Zusammenhänge belegen weder einen ursächlichen Verbandseinfluss noch Einstellungen aller Verbandsmitglieder; sie gelten für die untersuchte Studierendenstichprobe.",
    "scope": "Deutschland",
    "items": [
     {
@@ -1330,9 +1330,9 @@
      "base_n": 252,
      "field_period": "April bis Juni 2022",
      "question_ref": null,
-     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 10–11, Abbildung 1",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Zusammenhänge S. 14–17",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
@@ -1349,9 +1349,9 @@
      "base_n": 252,
      "field_period": "April bis Juni 2022",
      "question_ref": null,
-     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 10–11, Abbildung 1",
+     "source_locator": "Demmrich, S. 10–11, Abbildung 1; Zusammenhänge S. 14–17",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
@@ -1373,7 +1373,7 @@
   {
    "block": "rias2026_muslim_antisemitismus",
    "title": "Antisemitische Einstellungen: vor und nach dem 7. Oktober 2023",
-   "note": "Gewichtete Stichprobe von 1.887 Musliminnen und Muslimen mit Migrationshintergrund in Deutschland; Juli 2023 bis April 2024. Vor dem 7. Oktober wurden 712, danach 1.119 Personen befragt; 3 % wurden aus dem Vergleich ausgeschlossen. Die beiden Teilstichproben wurden nach Alter, Bildung, Einwanderergeneration und Arbeitslosigkeit an die Gesamtstichprobe angepasst. Es wurden unterschiedliche Personen befragt, keine individuellen Einstellungsänderungen gemessen. Die Quelle beschreibt geringe Veränderungen; der Vergleich allein belegt keine Wirkung des 7. Oktober. Die Grafik unterscheidet schwache Zustimmung (Stufe 4) und starke Zustimmung (Stufen 5–6) auf einer sechsstufigen Skala. Stufen 1–3 bleiben als Lücke; sie werden nicht als eine bestimmte Ablehnungskategorie ergänzt. 1.887 ist die Studienstichprobe, keine gültige Item-Fallzahl. Keine BW-Auswertung und keine Übertragung auf alle Musliminnen und Muslime.",
+   "note": "Gewichtete Stichprobe von 1.887 Musliminnen und Muslimen mit Migrationshintergrund in Deutschland; Juli 2023 bis April 2024. Vor dem 7. Oktober wurden 712, danach 1.119 Personen befragt; 3 % wurden aus dem Vergleich ausgeschlossen. Die beiden Teilstichproben wurden nach Alter, Bildung, Einwanderergeneration und Arbeitslosigkeit an die Gesamtstichprobe angepasst. Es wurden unterschiedliche Personen befragt, keine individuellen Einstellungsänderungen gemessen. Die Quelle beschreibt geringe Veränderungen; der Vergleich allein belegt keine Wirkung des 7. Oktober. Die Grafik unterscheidet schwache Zustimmung (Stufe 4) und starke Zustimmung (Stufen 5–6) auf einer sechsstufigen Skala. Stufen 1–3 bleiben als Lücke; sie werden nicht als eine bestimmte Ablehnungskategorie ergänzt. 1.887 ist die Studienstichprobe, keine gültige Item-Fallzahl. Keine BW-Auswertung und keine Übertragung auf alle Musliminnen und Muslime. Weitere Ergebnisse derselben Studie: Trotz weitgehend stabiler Zustimmungsanteile berichtet Demmrich nach dem 7. Oktober stärkere Zusammenhänge antisemitischer Einstellungen mit radikalen Haltungen. „Fundamentalistische“ Religiosität hängt besonders eng mit israelbezogenem Antisemitismus zusammen; Moscheebesuche zeigen in der Analyse keinen relevanten eigenständigen Zusammenhang. Konkrete persönliche Diskriminierungserfahrungen und wahrgenommene kollektive Bedrohung sind unterschiedliche Merkmale: Letztere wird nach dem 7. Oktober bedeutsamer. Geringes institutionelles Vertrauen ist ebenfalls mit Antisemitismus verbunden. Das sind statistische Zusammenhänge, keine nachgewiesenen Ursachen; die Ergebnisse reichen bis April 2024. Der RIAS-Beitrag beziffert die einzelnen Korrelations- und Regressionskoeffizienten nicht.",
    "scope": "Deutschland",
    "items": [
     {
@@ -1386,9 +1386,9 @@
      "base_n": 1887,
      "field_period": "Juli 2023 bis April 2024",
      "question_ref": null,
-     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2; Zusammenhänge S. 25–27",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
@@ -1412,9 +1412,9 @@
      "base_n": 1887,
      "field_period": "Juli 2023 bis April 2024",
      "question_ref": null,
-     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2; Zusammenhänge S. 25–27",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
@@ -1438,9 +1438,9 @@
      "base_n": 1887,
      "field_period": "Juli 2023 bis April 2024",
      "question_ref": null,
-     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2; Zusammenhänge S. 25–27",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
@@ -1464,9 +1464,9 @@
      "base_n": 1887,
      "field_period": "Juli 2023 bis April 2024",
      "question_ref": null,
-     "source_title": "Bundesverband RIAS (2026): Antisemitismus in islamischen und islamistischen Kontexten",
+     "source_title": "Sarah Demmrich (2026): Antisemitismus unter Muslim:innen jenseits islamistischer Milieus, in: Bundesverband RIAS, Antisemitismus in islamischen und islamistischen Kontexten",
      "source_url": "https://report-antisemitism.de/documents/26-09_30_BVRIAS_Antisemitismus_isl_Kontexte.pdf",
-     "source_locator": "Demmrich, S. 21–23, Abbildung 2",
+     "source_locator": "Demmrich, S. 21–23, Abbildung 2; Zusammenhänge S. 25–27",
      "source_rights": {
       "license": null,
       "license_status": "not_recorded_in_export",
