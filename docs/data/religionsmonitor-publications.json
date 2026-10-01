@@ -442,16 +442,15 @@
       "sha256": "b2bbe9c2b7a2c5114a02d9928e040dc0231f6c4b94510e1e0b027b7731c90235",
       "bytes": 2504107,
       "status": "downloaded",
-      "review_status": "selected_figures_visually_verified",
+      "review_status": "reviewed",
       "reviewed_pages": [
-        60,
         61,
-        62
+        72
       ],
       "used_blocks": [
         "rm2017_wahrheit",
-        "rm2017_regeln",
-        "rm2017_offenheit"
+        "rm_countries_kernel",
+        "rm_countries_open"
       ]
     },
     {
@@ -785,5 +784,51 @@
       "status": "downloaded",
       "review_status": "not_reviewed"
     }
-  ]
+  ],
+  "openness_truth_recheck": {
+    "reviewed_on": "2026-10-01",
+    "scope": "Erneute Prüfung der lokal gespeicherten Religionsmonitor-PDFs auf Wahrheitsansprüche, Auslegungsregeln, Synkretismus und Offenheit; Zahlen nur aus belegten Abbildungen oder Ergebnistexten. Keine Aussage über unveröffentlichte Fragebogenmodule.",
+    "findings": [
+      {
+        "publication": "Religionsmonitor 2008 | EUROPA",
+        "field_year": 2007,
+        "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Presse/imported/downloads/xcms_bst_dms_25787_25788_2.pdf",
+        "finding": "Der ausschließliche Wahrheitsanspruch ist bereits als Frageformulierung enthalten. Kein zusätzliches Deutschland-Aggregat aus diesem Text übernommen."
+      },
+      {
+        "publication": "Muslimische Religiosität in Deutschland (2008)",
+        "field_year": 2008,
+        "sample_n": 2007,
+        "finding": "S. 17 am Original geprüft: Offenheit 86, wahrer Kern 67, Lehren verschiedener Traditionen 33, Vorrang eigener Religion 24 Prozent. Eigene Sonderbefragung; nicht an Bevölkerungszeitreihe angehängt. Berichtswortlaut als solcher markiert."
+      },
+      {
+        "publication": "Internationaler Vergleich 2014 / Sonderauswertung Islam 2015",
+        "field_year": 2012,
+        "finding": "Weitere Publikationen der Welle Religionsmonitor 2013, keine neuen Erhebungsjahre."
+      },
+      {
+        "publication": "Weltanschauliche Vielfalt und Demokratie (2019)",
+        "field_year": 2017,
+        "finding": "Abbildung 18 enthält Wahrheits-, Regel- und Offenheitsfragen. Abbildung 23, S. 72 visuell geprüft: Deutschland wahrer Kern 2013=72, 2017=70; Offenheit 2013=88, 2017=87."
+      },
+      {
+        "publication": "Zusammenleben in religiöser Vielfalt (2023)",
+        "field_year": 2022,
+        "finding": "Abbildung 10, S. 51 und Text S. 52–53: wahrer Kern 59 Prozent. Rückblick auf 2013: 13 Prozentpunkte höher, konsistent mit Abbildung 23 von 2019."
+      },
+      {
+        "publication": "Corona-Teilstudie 2020 / Religion als Ressource der Krisenbewältigung (2023)",
+        "finding": "Krisen- und Verschwörungsfragen sowie Zusammenhänge mit religiösen Orientierungstypen; kein zusätzliches verifiziertes Deutschland-Aggregat der hier verglichenen Aussagen übernommen."
+      },
+      {
+        "publication": "Gesellschaftlicher Zusammenhalt und die Rolle von Religion (2026)",
+        "field_year": 2026,
+        "finding": "Alle 16 Seiten einschließlich Abbildungen überblickt; keine veröffentlichten Zustimmungswerte zu den hier geprüften Wahrheits- und Auslegungsfragen. Das belegt nicht, dass solche Fragen nicht erhoben wurden."
+      },
+      {
+        "publication": "Internationaler Vergleich (2013) / Weltanschauliche Vielfalt und Demokratie (2019)",
+        "finding": "Abbildung 14 (2013) visuell geprüft: unbezifferte Balkenhöhen widersprechen teils den bezifferten Rückblickswerten in Abbildung 23 (2019). Nicht still vereinheitlicht. Länder-/Wellenmatrix nutzt einheitlich Abbildung 23 mit leerer Österreich-Zelle 2013, keine digitalisierten Pseudogenauigkeiten."
+      }
+    ]
+  }
 }

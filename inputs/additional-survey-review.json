@@ -245,6 +245,41 @@
       "reviewed_at": "2026-10-01",
       "review_scope": "Studiendesign S. 15–16; Tabelle 4.4 S. 74 und A4.1 S. 77 visuell; Fragewortlaute S. 77–78. Ausgewählte veröffentlichte Aggregatwerte, keine Mikrodaten oder Übernahme von Abbildungen.",
       "url": "https://doi.org/10.1007/978-3-531-18679-5"
+    },
+    {
+      "file": "empirica-jugendstudie-2018.pdf",
+      "sha256": "981a965e57f4c7687059cbc6a7d60e781140d1ec9adbaf0c6a0eabf14683ae4a",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Originaldiagramme S. 65 visuell; Stichprobe S. 31–33, 42; Originalfrage V11 S. 242. Mittelwerte, keine Prozentwerte, keine repräsentative Bevölkerungsstichprobe.",
+      "url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf"
+    },
+    {
+      "file": "fgz-zusammenhalt-1-2023.pdf",
+      "sha256": "9e03626aad72a31aa47c0708c1fb950784a6d68b97120b08c2974543da9f415b",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Abbildung 3-2 S. 29 und Originalfragebogenabbildung A3-1 S. 105 visuell; Methodik S. 17–19, 25. Errata-Dokument aus DOI-Repository geprüft: Netzwerkabbildung unverändert.",
+      "url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf"
+    },
+    {
+      "file": "fgz-zusammenhalt-2-2025.pdf",
+      "sha256": "f1da0abd0d22fbba56b27d26b2f5089c2781ddd9dab19638af7afc3179b34e3e",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Kapitel 5 (Migrationseinstellungen) und 12 (Vertrauen nach Religion/Nationalität), ergänzt durch Online-Anhang A5.2/A12.6/A12.7. Noch keine neuen Diagrammwerte übernommen: überwiegend Beziehungen zu Klimatypen, keine BW-Auswertung.",
+      "url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht/Zweiter_Zusammenhaltsbericht_FGZ_web.pdf"
+    },
+    {
+      "file": "fgz-zusammenhalt-2-anhang.pdf",
+      "sha256": "41ee35007e9105260d59b177bb7c88dc1cdba74c19e87c0c8dafb9f0093ad737",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Tabellen A12.6 und A12.7: Osten vs Westen unter Kontrollen geringeres Vertrauen zu Menschen anderer Religion (-0,203) und Nationalität (-0,225); Migrationshintergrund vs keiner: 0,041 n.s. bzw. 0,095 p<0,01. Zielgrößen z-standardisiert, Koeffizienten unstandardisiert. Befragungsjahre je Variable unterscheiden sich (A2.2). Nicht als Prozentanteile verwenden.",
+      "url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht_FGZ_Online-Anhang.pdf"
+    },
+    {
+      "file": "fhnw-religionstheologie.pdf",
+      "sha256": "12eac73c839fb6246d737caea6815451312b63048ebc0053d421e2586e44fc26",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Held, Bachelorarbeit 2016: S. 38, ideologische Orientierung lokaler reformierter Gemeindemitglieder. Ortsunterschiede tatsächlich ausgewiesen (pluralistisch: 48,1/74,5/21,7); keine BW-Daten oder repräsentativen Regionalwerte. Auf Nutzerwunsch nur interne Einordnung.",
+      "url": "https://irf.fhnw.ch/server/api/core/bitstreams/0613c0ba-6fff-4c91-8b33-7c20e5003739/content"
     }
   ],
   "selection": "Religion und Vielfalt; ausgewählte BW-Vergleiche und bundesweite Einstellungen. Keine vollständige Übernahme der Studien."

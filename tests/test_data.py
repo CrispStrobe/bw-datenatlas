@@ -630,6 +630,27 @@ class DataTests(unittest.TestCase):
         self.assertTrue(all('subgroup_sample' not in i for i in bw['items']))
         self.assertIn('keine genaue BW-Fallzahl', bw['note'])
 
+    def test_international_openness_and_youth_means_keep_missing_values_and_units(self):
+        blocks = {b['block']: b for b in json.loads((ROOT/'docs/data/survey-items.json').read_text())['blocks']}
+        for key in ('rm_countries_kernel', 'rm_countries_open'):
+            block = blocks[key]
+            self.assertEqual(len(block['items']), 11)
+            self.assertEqual(block['chart']['rows'][1]['items'], [None, 2])
+            self.assertFalse(any(i['label'] == 'Österreich · 2013' for i in block['items']))
+            self.assertIn('weichen', block['note'])
+            self.assertTrue(all(i['study_sample']['more_than'] for i in block['items'] if '2017' in i['label']))
+        high, moderate = blocks['empirica2018_truth'], blocks['empirica2018_truth_religious']
+        self.assertEqual([i['value'] for i in high['items']], [2.7, 3.6, 2.8, 4])
+        self.assertEqual([i['value'] for i in moderate['items']], [3.8, 2.3, 3.9, 2.3])
+        self.assertTrue(all(i['unit'] == 'mean' for i in high['items'] + moderate['items']))
+        self.assertEqual(high['chart']['domain'], [1, 5])
+        self.assertIn('keine repräsentative', high['note'].lower())
+        self.assertIn('Karlsruhe', high['note'])
+        fgz = blocks['fgz2023_network_religion']
+        self.assertEqual(fgz['chart']['rows'][2]['segments'][-1]['value'], 31)
+        self.assertIn('unbekannte Zusammensetzungen', fgz['note'])
+        self.assertTrue(all(i['study_sample']['n'] == 12104 and 'valid_n' not in i for i in fgz['items']))
+
     def test_religionsmonitor_cohesion_separates_dimensions_and_wave_samples(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
         blocks = {b['block']: b for b in d['blocks']}
@@ -730,7 +751,7 @@ class DataTests(unittest.TestCase):
         for b in blocks.values():
             chart = b.get('chart', {})
             if chart.get('kind') == 'matrix':
-                indices = [n for row in chart['rows'] for n in row['items']]
+                indices = [n for row in chart['rows'] for n in row['items'] if n is not None]
                 self.assertEqual(sorted(indices), list(range(len(b['items']))))
                 self.assertTrue(all(len(row['items']) == len(chart['columns']) for row in chart['rows']))
         self.assertEqual(blocks['rm2017_wahrheit']['chart']['main_chart']['layout'], 'dots')

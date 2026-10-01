@@ -442,16 +442,15 @@
       "sha256": "b2bbe9c2b7a2c5114a02d9928e040dc0231f6c4b94510e1e0b027b7731c90235",
       "bytes": 2504107,
       "status": "downloaded",
-      "review_status": "selected_figures_visually_verified",
+      "review_status": "reviewed",
       "reviewed_pages": [
-        60,
         61,
-        62
+        72
       ],
       "used_blocks": [
         "rm2017_wahrheit",
-        "rm2017_regeln",
-        "rm2017_offenheit"
+        "rm_countries_kernel",
+        "rm_countries_open"
       ]
     },
     {
@@ -825,6 +824,10 @@
         "publication": "Gesellschaftlicher Zusammenhalt und die Rolle von Religion (2026)",
         "field_year": 2026,
         "finding": "Alle 16 Seiten einschließlich Abbildungen überblickt; keine veröffentlichten Zustimmungswerte zu den hier geprüften Wahrheits- und Auslegungsfragen. Das belegt nicht, dass solche Fragen nicht erhoben wurden."
+      },
+      {
+        "publication": "Internationaler Vergleich (2013) / Weltanschauliche Vielfalt und Demokratie (2019)",
+        "finding": "Abbildung 14 (2013) visuell geprüft: unbezifferte Balkenhöhen widersprechen teils den bezifferten Rückblickswerten in Abbildung 23 (2019). Nicht still vereinheitlicht. Länder-/Wellenmatrix nutzt einheitlich Abbildung 23 mit leerer Österreich-Zelle 2013, keine digitalisierten Pseudogenauigkeiten."
       }
     ]
   }

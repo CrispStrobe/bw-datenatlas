@@ -71,6 +71,7 @@
   {
    "title": "Kontakte und Freundeskreise",
    "blocks": [
+    "fgz2023_network_religion",
     "rm2015_freizeit_nichtmuslime",
     "rm2017_europa_kontakte"
    ]
@@ -111,7 +112,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 611,
+ "count": 653,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -9222,7 +9223,7 @@
   {
    "block": "rm_offenheit_history",
    "title": "Offenheit und religiöse Wahrheit · 2013–2023",
-   "note": "Zustimmung zur Aussage über Offenheit gegenüber allen Religionen. Veröffentlichte Erhebungswellen 2013, 2017 und 2023; keine Interpolation. Die Stichproben und Erhebungsverfahren unterscheiden sich zwischen den Wellen. Für 2023 kombiniert die Studie Melderegister- und Onlinepanel-Interviews; der Vergleich beschreibt veröffentlichte Befunde und isoliert keinen reinen Einstellungswandel. Abbildung 23 im Bericht 2019 zeigt für 2013 88 Prozent; der Bericht 2023 nennt rückblickend 89 Prozent. Hier wird für 2013 der direkt in der Abbildung ausgewiesene Wert verwendet.",
+   "note": "Zustimmung zur Aussage über Offenheit gegenüber allen Religionen. Veröffentlichte Erhebungswellen 2013, 2017 und 2023; keine Interpolation. Die Stichproben und Erhebungsverfahren unterscheiden sich zwischen den Wellen. Für 2023 kombiniert die Studie Melderegister- und Onlinepanel-Interviews; der Vergleich beschreibt veröffentlichte Befunde und isoliert keinen reinen Einstellungswandel. Abbildung 23 im Bericht 2019 zeigt für 2013 88 Prozent; der Bericht 2023 nennt rückblickend 89 Prozent. Hier wird für 2013 der direkt in der Abbildung ausgewiesene Wert verwendet. Die ausdrücklich bezifferten Rückblickswerte für 2013 in Abbildung 23 des Berichts 2019 weichen von den unbezifferten Balkenhöhen in Abbildung 14 des internationalen Berichts 2013 ab, auch für Deutschland. Die Ursache ist in diesen Fundstellen nicht erklärt. Verwendet werden hier einheitlich die Zahlen aus Abbildung 23; Balkenhöhen werden nicht als weitere exakte Prozentwerte ausgegeben.",
    "scope": "Deutschland",
    "items": [
     {
@@ -10860,6 +10861,146 @@
    }
   },
   {
+   "block": "empirica2018_truth_religious",
+   "title": "Religiöse Vergleichsgruppe · empirica 2018",
+   "note": "Mittelwerte der fünfstufigen Zustimmungsskala (1 = stimme überhaupt nicht zu, 5 = stimme voll und ganz zu), keine Prozentanteile. Evangelische Jugendliche und junge Erwachsene zwischen 14 und 29 Jahren; selbst zugeordnete landeskirchliche, gemeinschaftliche und freikirchliche Zugehörigkeit. Selbstselektierte Teilnahme auf dem Christival 2016 in Karlsruhe, dem Jugendkirchentag 2016 und über einen ergänzenden Onlinefragebogen. 3.187 auswertbare Fälle nach Auswahl und Bereinigung, davon 2.386 hochreligiös; die religiöse Vergleichsgruppe umfasst rechnerisch 801 Fälle. Nichtreligiöse und katholische Teilnehmende wurden ausgeschlossen. Die Abbildung bezeichnet gültige Item-Fallzahlen nur als „N=verschieden“. Hochreligiosität wird mit dem Zentralitätsindex abgegrenzt, nicht anhand dieser vier Wahrheitsaussagen. Keine repräsentative Aussage über alle Jugendlichen oder alle Christinnen und Christen; Karlsruhe als Erhebungsort ergibt keine BW-Stichprobe. Unterschiede zwischen Gruppen sind keine zeitliche Entwicklung oder Wirkung stärkerer Religiosität. Publikation 2018; Online-Feldzeitraum im Bericht nicht vollständig datiert.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Für mich hat jede Religion einen wahren Kern.",
+     "detail": null,
+     "value": 3.8,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 801,
+      "description": "Religiöse · 3.187 minus 2.386; keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    },
+    {
+     "label": "Ich bin davon überzeugt, dass in religiösen Fragen vor allem meine eigene Religion Recht hat und andere Religionen eher Unrecht haben.",
+     "detail": null,
+     "value": 2.3,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 801,
+      "description": "Religiöse · 3.187 minus 2.386; keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    },
+    {
+     "label": "Ich denke, dass es in Glaubensfragen keine Gewissheit gibt.",
+     "detail": null,
+     "value": 3.9,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 801,
+      "description": "Religiöse · 3.187 minus 2.386; keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    },
+    {
+     "label": "Ich bin davon überzeugt, dass nur der christliche Glaube zum Heil führt.",
+     "detail": null,
+     "value": 2.3,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 801,
+      "description": "Religiöse · 3.187 minus 2.386; keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    }
+   ]
+  },
+  {
    "block": "rm2023_bedrohung",
    "title": "Religiöse Vielfalt als Bedrohung · Religionsmonitor 2023",
    "note": "Erhebung Juni–Juli 2022, veröffentlicht als Religionsmonitor 2023. Analysestichprobe Deutschland: 4.363 Interviews (2.038 Melderegister, 2.325 Onlinepanel), gewichtet; muslimische Befragte wurden aufgestockt. 4.363 ist die Gesamtfallzahl, keine Fallzahl einer Religionsgruppe. Untergruppen-Fallzahlen stehen an der Abbildung nicht. Kleine Religionsgruppen sind besonders vorsichtig zu lesen; kein direkter Zeitvergleich mit 2013 wegen anderer Stichprobenzusammensetzung. Anteil, der zunehmende Vielfalt religiöser Gruppen als Bedrohung wahrnimmt; alle Befragten: 34 Prozent.",
@@ -11210,6 +11351,578 @@
      }
     }
    ]
+  },
+  {
+   "block": "empirica2018_truth",
+   "title": "Religiöse Wahrheit bei evangelischen Jugendlichen · empirica 2018",
+   "note": "Mittelwerte der fünfstufigen Zustimmungsskala (1 = stimme überhaupt nicht zu, 5 = stimme voll und ganz zu), keine Prozentanteile. Evangelische Jugendliche und junge Erwachsene zwischen 14 und 29 Jahren; selbst zugeordnete landeskirchliche, gemeinschaftliche und freikirchliche Zugehörigkeit. Selbstselektierte Teilnahme auf dem Christival 2016 in Karlsruhe, dem Jugendkirchentag 2016 und über einen ergänzenden Onlinefragebogen. 3.187 auswertbare Fälle nach Auswahl und Bereinigung, davon 2.386 hochreligiös; die religiöse Vergleichsgruppe umfasst rechnerisch 801 Fälle. Nichtreligiöse und katholische Teilnehmende wurden ausgeschlossen. Die Abbildung bezeichnet gültige Item-Fallzahlen nur als „N=verschieden“. Hochreligiosität wird mit dem Zentralitätsindex abgegrenzt, nicht anhand dieser vier Wahrheitsaussagen. Keine repräsentative Aussage über alle Jugendlichen oder alle Christinnen und Christen; Karlsruhe als Erhebungsort ergibt keine BW-Stichprobe. Unterschiede zwischen Gruppen sind keine zeitliche Entwicklung oder Wirkung stärkerer Religiosität. Publikation 2018; Online-Feldzeitraum im Bericht nicht vollständig datiert.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Für mich hat jede Religion einen wahren Kern.",
+     "detail": null,
+     "value": 2.7,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 2386,
+      "description": "Hochreligiöse · keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    },
+    {
+     "label": "Ich bin davon überzeugt, dass in religiösen Fragen vor allem meine eigene Religion Recht hat und andere Religionen eher Unrecht haben.",
+     "detail": null,
+     "value": 3.6,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 2386,
+      "description": "Hochreligiöse · keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    },
+    {
+     "label": "Ich denke, dass es in Glaubensfragen keine Gewissheit gibt.",
+     "detail": null,
+     "value": 2.8,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 2386,
+      "description": "Hochreligiöse · keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    },
+    {
+     "label": "Ich bin davon überzeugt, dass nur der christliche Glaube zum Heil führt.",
+     "detail": null,
+     "value": 4.0,
+     "unit": "mean",
+     "study": "empirica Jugendstudie 2018",
+     "population": "Ausgewählte evangelische Jugendliche und junge Erwachsene in Deutschland, 14–29 Jahre",
+     "base_n": 3187,
+     "field_period": "2016 (Veranstaltungen); ergänzende Online-Erhebung",
+     "question_ref": null,
+     "source_title": "Faix/Künkler (2018): empirica Jugendstudie, Forschungsbericht",
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Mittelwertgrafiken S. 65; Frage V11 S. 242; Stichprobe S. 31–33 und 42",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 3187,
+      "description": "Deutschland · auswertbare Gesamtstichprobe",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Bereinigung und Stichprobe S. 42"
+     },
+     "subgroup_sample": {
+      "n": 2386,
+      "description": "Hochreligiöse · keine gültige Item-Fallzahl",
+      "weighted": false,
+      "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+      "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Für mich hat jede Religion einen wahren Kern.",
+     "Ich bin davon überzeugt, dass in religiösen Fragen vor allem meine eigene Religion Recht hat und andere Religionen eher Unrecht haben.",
+     "Ich denke, dass es in Glaubensfragen keine Gewissheit gibt.",
+     "Ich bin davon überzeugt, dass nur der christliche Glaube zum Heil führt."
+    ],
+    "response_scale": "1 = Stimme überhaupt nicht zu · 2 = Stimme eher nicht zu · 3 = Habe dazu keine feste Meinung · 4 = Stimme eher zu · 5 = Stimme voll und ganz zu",
+    "shown": "Frage V11: „Wie stark stimmst du folgenden Aussagen zu?“ Gezeigt: Mittelwerte, keine Zustimmungsprozente; vollständige Aussagen stehen an den Diagrammzeilen.",
+    "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+    "source_locator": "Frage V11, S. 242; Ergebnisse S. 65"
+   },
+   "chart": {
+    "kind": "compare",
+    "related": [
+     "empirica2018_truth_religious"
+    ],
+    "series": [
+     "Hochreligiöse Jugendliche",
+     "Religiöse Vergleichsgruppe"
+    ],
+    "layout": "dots",
+    "domain": [
+     1,
+     5
+    ],
+    "axis_note": "Mittlere Zustimmung auf der Skala von 1 bis 5. Höhere Werte bedeuten stärkere Zustimmung zur jeweiligen Aussage; die Aussagen bilden keine gemeinsame Skala.",
+    "question_in_chart": true
+   }
+  },
+  {
+   "block": "fgz2023_network_religion",
+   "title": "Religiöse Zusammensetzung von Bekanntenkreisen · FGZ 2023",
+   "note": "German Social Cohesion Panel, erste Rekrutierungswelle September 2021 bis April 2022, gewichtete Häufigkeiten. Auswertungsstichprobe des Berichts: 12.104 Ankerpersonen aus Privathaushalten ab 18 Jahren. Für die Netzwerkmerkmale nennt Abbildung 3-2 insgesamt 9.446–11.982 gültige Fälle, keine genaue gültige Fallzahl je gezeigter Religionsgruppe. Die muslimische Gruppe umfasst in der Studienübersicht 294 Befragte; diese Zahl ist keine gültige Item-Fallzahl. Erfasst werden Einschätzungen des Bekanntenkreises, keine gezählten Personen und keine räumliche Segregation. „Eher christlich“ und „eher muslimisch“ sind aus zwei Fragen gebildete Kategorien; die Mittelgruppe „divers/andere“ enthält auch andere homogene Netzwerke und unbekannte Zusammensetzungen. Gruppenanteile allein belegen keine Abschottung: Homogenität hängt auch von der Verbreitung eines Merkmals in der Bevölkerung ab. Keine BW-Auswertung. Das Erratum korrigiert Fußnote 3 auf S. 18 und Beschriftungen ab S. 89; Abbildung 3-2 ist davon nicht betroffen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Alle Befragten: Eher christlicher Bekanntenkreis",
+     "detail": null,
+     "value": 44.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Alle Befragten: Divers/andere · auch unbekannt",
+     "detail": null,
+     "value": 54.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Alle Befragten: Eher muslimischer Bekanntenkreis",
+     "detail": null,
+     "value": 2.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Christliche Befragte: Eher christlicher Bekanntenkreis",
+     "detail": null,
+     "value": 61.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Christliche Befragte: Divers/andere · auch unbekannt",
+     "detail": null,
+     "value": 39.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Christliche Befragte: Eher muslimischer Bekanntenkreis",
+     "detail": null,
+     "value": 0.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Muslimische Befragte: Eher christlicher Bekanntenkreis",
+     "detail": null,
+     "value": 3.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Muslimische Befragte: Divers/andere · auch unbekannt",
+     "detail": null,
+     "value": 66.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Muslimische Befragte: Eher muslimischer Bekanntenkreis",
+     "detail": null,
+     "value": 31.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Konfessionslose Befragte: Eher christlicher Bekanntenkreis",
+     "detail": null,
+     "value": 27.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Konfessionslose Befragte: Divers/andere · auch unbekannt",
+     "detail": null,
+     "value": 73.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    },
+    {
+     "label": "Konfessionslose Befragte: Eher muslimischer Bekanntenkreis",
+     "detail": null,
+     "value": 1.0,
+     "unit": "percent",
+     "study": "German Social Cohesion Panel · Welle 1",
+     "population": "Wohnbevölkerung Deutschlands in Privathaushalten ab 18 Jahren; jeweilige Gruppe",
+     "base_n": 12104,
+     "field_period": "September 2021 bis April 2022",
+     "question_ref": null,
+     "source_title": "Teichler u.a. (2023): Entkoppelte Lebenswelten? Erster Zusammenhaltsbericht des FGZ",
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Abbildung 3-2, S. 29; Kategorien S. 25; Fragebogenabbildung A3-1 S. 105; Stichprobe S. 17–19",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 12104,
+      "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+      "weighted": false,
+      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+      "source_locator": "Tabelle 2.1 S. 17"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Wie viele von Ihren Bekannten … sind gläubige Muslime?",
+     "Wie viele von Ihren Bekannten … sind gläubige Christen?"
+    ],
+    "response_scale": "Keiner · Wenige von ihnen · Einige von ihnen · Viele von ihnen · Die meisten · Alle · Weiß nicht",
+    "shown": "Bekannte sind Personen, deren Namen man kennt und mit denen man sich bei zufälliger Begegnung kurz unterhalten würde. Gezeigt: die aus beiden Fragen gebildete Netzwerkzusammensetzung, keine direkte Antwortverteilung eines einzelnen Items.",
+    "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+    "source_locator": "Originalfragebogen: Abbildung A3-1 S. 105; Kategorienbildung S. 25"
+   },
+   "chart": {
+    "kind": "distribution",
+    "rows": [
+     {
+      "label": "Alle Befragten",
+      "segments": [
+       {
+        "label": "Eher christlicher Bekanntenkreis",
+        "value": 44
+       },
+       {
+        "label": "Divers/andere · auch unbekannt",
+        "value": 54
+       },
+       {
+        "label": "Eher muslimischer Bekanntenkreis",
+        "value": 2
+       }
+      ]
+     },
+     {
+      "label": "Christliche Befragte",
+      "segments": [
+       {
+        "label": "Eher christlicher Bekanntenkreis",
+        "value": 61
+       },
+       {
+        "label": "Divers/andere · auch unbekannt",
+        "value": 39
+       },
+       {
+        "label": "Eher muslimischer Bekanntenkreis",
+        "value": 0
+       }
+      ]
+     },
+     {
+      "label": "Muslimische Befragte",
+      "segments": [
+       {
+        "label": "Eher christlicher Bekanntenkreis",
+        "value": 3
+       },
+       {
+        "label": "Divers/andere · auch unbekannt",
+        "value": 66
+       },
+       {
+        "label": "Eher muslimischer Bekanntenkreis",
+        "value": 31
+       }
+      ]
+     },
+     {
+      "label": "Konfessionslose Befragte",
+      "segments": [
+       {
+        "label": "Eher christlicher Bekanntenkreis",
+        "value": 27
+       },
+       {
+        "label": "Divers/andere · auch unbekannt",
+        "value": 73
+       },
+       {
+        "label": "Eher muslimischer Bekanntenkreis",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "block": "rm2013_dogmatismus",
@@ -12631,7 +13344,7 @@
   {
    "block": "rm_kern_history",
    "title": "Wahrer Kern aller Religionen · 2013–2023",
-   "note": "Zustimmung zur Aussage „Für mich hat jede Religion einen wahren Kern“. Abbildung 23 des Berichts 2019 weist für Deutschland 72 Prozent (2013) und 70 Prozent (2017) aus; Abbildung 10 des Berichts 2023 nennt 59 Prozent. Jeweils Bevölkerung Deutschlands, gültige Fälle, gewichtet; die muslimische Sonderstichprobe 2008 gehört nicht in diese Reihe. Die Auswahlverfahren und Zusammensetzung unterscheiden sich zwischen den Wellen. 2023 kombiniert Melderegister- und Onlinepanel-Interviews. Der Vergleich beschreibt veröffentlichte Befunde, keinen isolierten Einstellungswandel.",
+   "note": "Zustimmung zur Aussage „Für mich hat jede Religion einen wahren Kern“. Abbildung 23 des Berichts 2019 weist für Deutschland 72 Prozent (2013) und 70 Prozent (2017) aus; Abbildung 10 des Berichts 2023 nennt 59 Prozent. Jeweils Bevölkerung Deutschlands, gültige Fälle, gewichtet; die muslimische Sonderstichprobe 2008 gehört nicht in diese Reihe. Die Auswahlverfahren und Zusammensetzung unterscheiden sich zwischen den Wellen. 2023 kombiniert Melderegister- und Onlinepanel-Interviews. Der Vergleich beschreibt veröffentlichte Befunde, keinen isolierten Einstellungswandel. Die ausdrücklich bezifferten Rückblickswerte für 2013 in Abbildung 23 des Berichts 2019 weichen von den unbezifferten Balkenhöhen in Abbildung 14 des internationalen Berichts 2013 ab, auch für Deutschland. Die Ursache ist in diesen Fundstellen nicht erklärt. Verwendet werden hier einheitlich die Zahlen aus Abbildung 23; Balkenhöhen werden nicht als weitere exakte Prozentwerte ausgegeben.",
    "scope": "Deutschland",
    "items": [
     {
@@ -12954,7 +13667,10 @@
      "rm2013_dogmatismus",
      "rm2023_freiheit",
      "rm_offenheit_history",
-     "rm2008_offenheit"
+     "rm2008_offenheit",
+     "rm_countries_kernel",
+     "rm_countries_open",
+     "empirica2018_truth"
     ],
     "panels": [
      "rm2008_offenheit",
@@ -12962,7 +13678,10 @@
      "rm2013_dogmatismus",
      "rm2017_wahrheit",
      "rm2023_freiheit",
-     "rm_offenheit_history"
+     "rm_offenheit_history",
+     "rm_countries_kernel",
+     "rm_countries_open",
+     "empirica2018_truth"
     ],
     "main_chart": {
      "kind": "compare",
@@ -18483,6 +19202,373 @@
    }
   },
   {
+   "block": "rm_countries_open",
+   "title": "Offenheit gegenüber Religionen · Ländervergleich 2013/2017",
+   "note": "Ländervergleich der beiden eigenständigen Aussagen, gültige Fälle gewichtet. Alle Werte stammen aus der ausdrücklich bezifferten Abbildung 23, S. 72, des Berichts 2019, einschließlich ihrer Rückblickswerte für 2013. Für Österreich steht dort 2013 kein Wert; die leere Zelle ist kein Nullwert. Wellen- und Ländervergleiche hängen auch von Stichprobenzusammensetzung und Erhebungsverfahren ab. 2013 umfasst die internationale Studie 14.000 Befragte aus 13 Ländern; 2017 mehr als 10.000 aus sechs Ländern. Das sind Studiengesamtzahlen, keine gültigen Item-Fallzahlen je Land. Die Hauptstichproben und muslimischen Sonderstichproben sind zu unterscheiden. Deutschland 2013 wurde im Oktober–Dezember 2012 befragt; die internationale Welle 2017 von Juli 2016 bis März 2017. Keine BW-Auswertung. Die ausdrücklich bezifferten Rückblickswerte für 2013 in Abbildung 23 des Berichts 2019 weichen von den unbezifferten Balkenhöhen in Abbildung 14 des internationalen Berichts 2013 ab, auch für Deutschland. Die Ursache ist in diesen Fundstellen nicht erklärt. Verwendet werden hier einheitlich die Zahlen aus Abbildung 23; Balkenhöhen werden nicht als weitere exakte Prozentwerte ausgegeben.",
+   "scope": "Mehrere Länder",
+   "items": [
+    {
+     "label": "Deutschland · 2013",
+     "detail": null,
+     "value": 88.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Oktober–Dezember 2012",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Deutschland · 2017",
+     "detail": null,
+     "value": 87.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Österreich · 2017",
+     "detail": null,
+     "value": 86.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Schweiz · 2013",
+     "detail": null,
+     "value": 84.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Schweiz · 2017",
+     "detail": null,
+     "value": 89.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Frankreich · 2013",
+     "detail": null,
+     "value": 79.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Frankreich · 2017",
+     "detail": null,
+     "value": 85.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Großbritannien · 2013",
+     "detail": null,
+     "value": 82.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Großbritannien · 2017",
+     "detail": null,
+     "value": 80.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Türkei · 2013",
+     "detail": null,
+     "value": 36.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Türkei · 2017",
+     "detail": null,
+     "value": 69.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Man sollte allen Religionen gegenüber offen sein."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: stimme voll und ganz/eher zu; die beiden Aussagen werden nicht addiert.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 23, S. 72"
+   },
+   "chart": {
+    "kind": "matrix",
+    "columns": [
+     "2013",
+     "2017"
+    ],
+    "rows": [
+     {
+      "label": "Deutschland",
+      "items": [
+       0,
+       1
+      ]
+     },
+     {
+      "label": "Österreich",
+      "items": [
+       null,
+       2
+      ]
+     },
+     {
+      "label": "Schweiz",
+      "items": [
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Frankreich",
+      "items": [
+       5,
+       6
+      ]
+     },
+     {
+      "label": "Großbritannien",
+      "items": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Türkei",
+      "items": [
+       9,
+       10
+      ]
+     }
+    ],
+    "axis_note": "Dunklere Felder zeigen höhere Zustimmungsanteile auf derselben Skala von 0 bis 100. Die Spalten vergleichen Erhebungswellen. „Nicht publiziert“ ist kein Nullwert.",
+    "metadata": "Mehrere Länder · Religionsmonitor 2013 und 2017 · gewichtete gültige Antworten · Studiengesamtzahlen und Erhebungszeiten siehe Tabelle"
+   }
+  },
+  {
    "block": "rm2017_europa_verbundenheit",
    "title": "Verbundenheit muslimischer Befragter mit ihrem Wohnland",
    "note": "Erhoben von Juli 2016 bis März 2017 in 15 Sprachen. Selbstzuordnung zum Islam; neu im Zuge der damaligen Fluchtmigration Angekommene sind nicht enthalten. Telefonische Befragung, in Österreich zusätzlich persönliche Interviews. Gewichtung und Auswahlverfahren unterscheiden sich zwischen Ländern. Die Abbildungen verwenden gültige Antworten; deren Fallzahlen je Balken fehlen. Abbildung 1 nennt gewichtete Stichprobenumfänge, keine gesicherten Fallzahlen der einzelnen Fragen. Generationen sind gleichzeitig befragte Gruppen, keine Verlaufsbeobachtung derselben Personen. Gezeigt sind sehr und eher verbundene Befragte. Die Frage erfasst subjektive Verbundenheit mit dem Wohnland, keine Staatsangehörigkeit und keinen Zusammenhaltsindex. Gesamt und Generationen überlappen und dürfen nicht addiert werden.",
@@ -19751,6 +20837,373 @@
      ]
     }
    ]
+  },
+  {
+   "block": "rm_countries_kernel",
+   "title": "Wahrer Kern aller Religionen · Ländervergleich 2013/2017",
+   "note": "Ländervergleich der beiden eigenständigen Aussagen, gültige Fälle gewichtet. Alle Werte stammen aus der ausdrücklich bezifferten Abbildung 23, S. 72, des Berichts 2019, einschließlich ihrer Rückblickswerte für 2013. Für Österreich steht dort 2013 kein Wert; die leere Zelle ist kein Nullwert. Wellen- und Ländervergleiche hängen auch von Stichprobenzusammensetzung und Erhebungsverfahren ab. 2013 umfasst die internationale Studie 14.000 Befragte aus 13 Ländern; 2017 mehr als 10.000 aus sechs Ländern. Das sind Studiengesamtzahlen, keine gültigen Item-Fallzahlen je Land. Die Hauptstichproben und muslimischen Sonderstichproben sind zu unterscheiden. Deutschland 2013 wurde im Oktober–Dezember 2012 befragt; die internationale Welle 2017 von Juli 2016 bis März 2017. Keine BW-Auswertung. Die ausdrücklich bezifferten Rückblickswerte für 2013 in Abbildung 23 des Berichts 2019 weichen von den unbezifferten Balkenhöhen in Abbildung 14 des internationalen Berichts 2013 ab, auch für Deutschland. Die Ursache ist in diesen Fundstellen nicht erklärt. Verwendet werden hier einheitlich die Zahlen aus Abbildung 23; Balkenhöhen werden nicht als weitere exakte Prozentwerte ausgegeben.",
+   "scope": "Mehrere Länder",
+   "items": [
+    {
+     "label": "Deutschland · 2013",
+     "detail": null,
+     "value": 72.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Oktober–Dezember 2012",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Deutschland · 2017",
+     "detail": null,
+     "value": 70.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Österreich · 2017",
+     "detail": null,
+     "value": 77.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Schweiz · 2013",
+     "detail": null,
+     "value": 77.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Schweiz · 2017",
+     "detail": null,
+     "value": 80.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Frankreich · 2013",
+     "detail": null,
+     "value": 73.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Frankreich · 2017",
+     "detail": null,
+     "value": 63.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Großbritannien · 2013",
+     "detail": null,
+     "value": 80.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Großbritannien · 2017",
+     "detail": null,
+     "value": 61.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    },
+    {
+     "label": "Türkei · 2013",
+     "detail": null,
+     "value": 53.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2013",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Welle 2013; Feldmonate je Land hier nicht ausgewiesen",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 14000,
+      "more_than": false,
+      "description": "13 Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+      "source_locator": "Vorwort, S. 6"
+     }
+    },
+    {
+     "label": "Türkei · 2017",
+     "detail": null,
+     "value": 63.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2017",
+     "population": "Bevölkerung des jeweiligen Landes; gültige Fälle, gewichtet",
+     "base_n": null,
+     "field_period": "Juli 2016 bis März 2017",
+     "question_ref": null,
+     "source_title": "Pickel (2019): Weltanschauliche Vielfalt und Demokratie",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Abbildung 23, S. 72; Erhebungsdesign 2017 S. 23",
+     "source_rights": {
+      "license": null,
+      "license_status": "not_recorded_in_export",
+      "relicensed_by_atlas": false
+     },
+     "study_sample": {
+      "n": 10000,
+      "more_than": true,
+      "description": "Sechs Länder · gesamte Studie",
+      "weighted": false,
+      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+      "source_locator": "Erhebungsdesign, S. 23"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Für mich hat jede Religion einen wahren Kern."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: stimme voll und ganz/eher zu; die beiden Aussagen werden nicht addiert.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 23, S. 72"
+   },
+   "chart": {
+    "kind": "matrix",
+    "columns": [
+     "2013",
+     "2017"
+    ],
+    "rows": [
+     {
+      "label": "Deutschland",
+      "items": [
+       0,
+       1
+      ]
+     },
+     {
+      "label": "Österreich",
+      "items": [
+       null,
+       2
+      ]
+     },
+     {
+      "label": "Schweiz",
+      "items": [
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Frankreich",
+      "items": [
+       5,
+       6
+      ]
+     },
+     {
+      "label": "Großbritannien",
+      "items": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Türkei",
+      "items": [
+       9,
+       10
+      ]
+     }
+    ],
+    "axis_note": "Dunklere Felder zeigen höhere Zustimmungsanteile auf derselben Skala von 0 bis 100. Die Spalten vergleichen Erhebungswellen. „Nicht publiziert“ ist kein Nullwert.",
+    "metadata": "Mehrere Länder · Religionsmonitor 2013 und 2017 · gewichtete gültige Antworten · Studiengesamtzahlen und Erhebungszeiten siehe Tabelle"
+   }
   },
   {
    "block": "abgrenzung",

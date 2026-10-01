@@ -1077,7 +1077,10 @@
    "rm2013_dogmatismus",
    "rm2023_freiheit",
    "rm_offenheit_history",
-   "rm2008_offenheit"
+   "rm2008_offenheit",
+   "rm_countries_kernel",
+   "rm_countries_open",
+   "empirica2018_truth"
   ],
   "panels": [
    "rm2008_offenheit",
@@ -1085,7 +1088,10 @@
    "rm2013_dogmatismus",
    "rm2017_wahrheit",
    "rm2023_freiheit",
-   "rm_offenheit_history"
+   "rm_offenheit_history",
+   "rm_countries_kernel",
+   "rm_countries_open",
+   "empirica2018_truth"
   ],
   "main_chart": {
    "kind": "compare",
@@ -1982,5 +1988,201 @@
     0.3
    ]
   }
+ },
+ "rm_countries_kernel": {
+  "kind": "matrix",
+  "columns": [
+   "2013",
+   "2017"
+  ],
+  "rows": [
+   {
+    "label": "Deutschland",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Österreich",
+    "items": [
+     null,
+     2
+    ]
+   },
+   {
+    "label": "Schweiz",
+    "items": [
+     3,
+     4
+    ]
+   },
+   {
+    "label": "Frankreich",
+    "items": [
+     5,
+     6
+    ]
+   },
+   {
+    "label": "Großbritannien",
+    "items": [
+     7,
+     8
+    ]
+   },
+   {
+    "label": "Türkei",
+    "items": [
+     9,
+     10
+    ]
+   }
+  ],
+  "axis_note": "Dunklere Felder zeigen höhere Zustimmungsanteile auf derselben Skala von 0 bis 100. Die Spalten vergleichen Erhebungswellen. „Nicht publiziert“ ist kein Nullwert.",
+  "metadata": "Mehrere Länder · Religionsmonitor 2013 und 2017 · gewichtete gültige Antworten · Studiengesamtzahlen und Erhebungszeiten siehe Tabelle"
+ },
+ "rm_countries_open": {
+  "kind": "matrix",
+  "columns": [
+   "2013",
+   "2017"
+  ],
+  "rows": [
+   {
+    "label": "Deutschland",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Österreich",
+    "items": [
+     null,
+     2
+    ]
+   },
+   {
+    "label": "Schweiz",
+    "items": [
+     3,
+     4
+    ]
+   },
+   {
+    "label": "Frankreich",
+    "items": [
+     5,
+     6
+    ]
+   },
+   {
+    "label": "Großbritannien",
+    "items": [
+     7,
+     8
+    ]
+   },
+   {
+    "label": "Türkei",
+    "items": [
+     9,
+     10
+    ]
+   }
+  ],
+  "axis_note": "Dunklere Felder zeigen höhere Zustimmungsanteile auf derselben Skala von 0 bis 100. Die Spalten vergleichen Erhebungswellen. „Nicht publiziert“ ist kein Nullwert.",
+  "metadata": "Mehrere Länder · Religionsmonitor 2013 und 2017 · gewichtete gültige Antworten · Studiengesamtzahlen und Erhebungszeiten siehe Tabelle"
+ },
+ "empirica2018_truth": {
+  "kind": "compare",
+  "related": [
+   "empirica2018_truth_religious"
+  ],
+  "series": [
+   "Hochreligiöse Jugendliche",
+   "Religiöse Vergleichsgruppe"
+  ],
+  "layout": "dots",
+  "domain": [
+   1,
+   5
+  ],
+  "axis_note": "Mittlere Zustimmung auf der Skala von 1 bis 5. Höhere Werte bedeuten stärkere Zustimmung zur jeweiligen Aussage; die Aussagen bilden keine gemeinsame Skala.",
+  "question_in_chart": true
+ },
+ "fgz2023_network_religion": {
+  "kind": "distribution",
+  "rows": [
+   {
+    "label": "Alle Befragten",
+    "segments": [
+     {
+      "label": "Eher christlicher Bekanntenkreis",
+      "value": 44
+     },
+     {
+      "label": "Divers/andere · auch unbekannt",
+      "value": 54
+     },
+     {
+      "label": "Eher muslimischer Bekanntenkreis",
+      "value": 2
+     }
+    ]
+   },
+   {
+    "label": "Christliche Befragte",
+    "segments": [
+     {
+      "label": "Eher christlicher Bekanntenkreis",
+      "value": 61
+     },
+     {
+      "label": "Divers/andere · auch unbekannt",
+      "value": 39
+     },
+     {
+      "label": "Eher muslimischer Bekanntenkreis",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "label": "Muslimische Befragte",
+    "segments": [
+     {
+      "label": "Eher christlicher Bekanntenkreis",
+      "value": 3
+     },
+     {
+      "label": "Divers/andere · auch unbekannt",
+      "value": 66
+     },
+     {
+      "label": "Eher muslimischer Bekanntenkreis",
+      "value": 31
+     }
+    ]
+   },
+   {
+    "label": "Konfessionslose Befragte",
+    "segments": [
+     {
+      "label": "Eher christlicher Bekanntenkreis",
+      "value": 27
+     },
+     {
+      "label": "Divers/andere · auch unbekannt",
+      "value": 73
+     },
+     {
+      "label": "Eher muslimischer Bekanntenkreis",
+      "value": 1
+     }
+    ]
+   }
+  ]
  }
 }

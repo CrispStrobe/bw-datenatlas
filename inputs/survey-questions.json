@@ -454,5 +454,45 @@
     "shown": "Gezeigt: Anteil an allen Befragten der jeweiligen Region; mehrere Kontaktorte je Person möglich.",
     "source_url": "https://doi.org/10.1007/978-3-531-18679-5",
     "source_locator": "Tabelle A4.1 und Frageformulierungen, S. 77"
+  },
+  "rm_countries_kernel": {
+    "texts": [
+      "Für mich hat jede Religion einen wahren Kern."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: stimme voll und ganz/eher zu; die beiden Aussagen werden nicht addiert.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 23, S. 72"
+  },
+  "rm_countries_open": {
+    "texts": [
+      "Man sollte allen Religionen gegenüber offen sein."
+    ],
+    "response_scale": "",
+    "shown": "Gezeigt: stimme voll und ganz/eher zu; die beiden Aussagen werden nicht addiert.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+    "source_locator": "Abbildung 23, S. 72"
+  },
+  "empirica2018_truth": {
+    "texts": [
+      "Für mich hat jede Religion einen wahren Kern.",
+      "Ich bin davon überzeugt, dass in religiösen Fragen vor allem meine eigene Religion Recht hat und andere Religionen eher Unrecht haben.",
+      "Ich denke, dass es in Glaubensfragen keine Gewissheit gibt.",
+      "Ich bin davon überzeugt, dass nur der christliche Glaube zum Heil führt."
+    ],
+    "response_scale": "1 = Stimme überhaupt nicht zu · 2 = Stimme eher nicht zu · 3 = Habe dazu keine feste Meinung · 4 = Stimme eher zu · 5 = Stimme voll und ganz zu",
+    "shown": "Frage V11: „Wie stark stimmst du folgenden Aussagen zu?“ Gezeigt: Mittelwerte, keine Zustimmungsprozente; vollständige Aussagen stehen an den Diagrammzeilen.",
+    "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+    "source_locator": "Frage V11, S. 242; Ergebnisse S. 65"
+  },
+  "fgz2023_network_religion": {
+    "texts": [
+      "Wie viele von Ihren Bekannten … sind gläubige Muslime?",
+      "Wie viele von Ihren Bekannten … sind gläubige Christen?"
+    ],
+    "response_scale": "Keiner · Wenige von ihnen · Einige von ihnen · Viele von ihnen · Die meisten · Alle · Weiß nicht",
+    "shown": "Bekannte sind Personen, deren Namen man kennt und mit denen man sich bei zufälliger Begegnung kurz unterhalten würde. Gezeigt: die aus beiden Fragen gebildete Netzwerkzusammensetzung, keine direkte Antwortverteilung eines einzelnen Items.",
+    "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+    "source_locator": "Originalfragebogen: Abbildung A3-1 S. 105; Kategorienbildung S. 25"
   }
 }

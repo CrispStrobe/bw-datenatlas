@@ -3172,6 +3172,330 @@
      "source_locator": "Studiendesign, S. 15–16: West 1.041, Ost 1.002"
     }
    }
+  ],
+  "rm_countries_kernel": [
+   {
+    "field": "study_sample",
+    "label": "Deutschland · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Deutschland · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Österreich · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Schweiz · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Schweiz · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Frankreich · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Frankreich · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Großbritannien · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Großbritannien · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Türkei · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Türkei · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   }
+  ],
+  "rm_countries_open": [
+   {
+    "field": "study_sample",
+    "label": "Deutschland · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Deutschland · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Österreich · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Schweiz · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Schweiz · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Frankreich · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Frankreich · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Großbritannien · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Großbritannien · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Türkei · 2013",
+    "sample": {
+     "n": 14000,
+     "more_than": false,
+     "description": "13 Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Religionsmonitor_verstehen_was_verbindet_Religioesitaet_im_internationalen_Vergleich.pdf",
+     "source_locator": "Vorwort, S. 6"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Türkei · 2017",
+    "sample": {
+     "n": 10000,
+     "more_than": true,
+     "description": "Sechs Länder · gesamte Studie",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
+     "source_locator": "Erhebungsdesign, S. 23"
+    }
+   }
+  ],
+  "empirica2018_truth": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 3187,
+     "description": "Deutschland · auswertbare Gesamtstichprobe",
+     "weighted": false,
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Bereinigung und Stichprobe S. 42"
+    }
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 2386,
+     "description": "Hochreligiöse · keine gültige Item-Fallzahl",
+     "weighted": false,
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+    }
+   }
+  ],
+  "empirica2018_truth_religious": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 3187,
+     "description": "Deutschland · auswertbare Gesamtstichprobe",
+     "weighted": false,
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Bereinigung und Stichprobe S. 42"
+    }
+   },
+   {
+    "field": "subgroup_sample",
+    "sample": {
+     "n": 801,
+     "description": "Religiöse · 3.187 minus 2.386; keine gültige Item-Fallzahl",
+     "weighted": false,
+     "source_url": "https://www.cvjm-hochschule.de/fileadmin/2_Dokumente/5_FORSCHUNG/empirica/2018_Jugendstudie-Forschungsbericht.pdf",
+     "source_locator": "Stichprobe S. 42; Item-Fallzahlen S. 65 variieren"
+    }
+   }
+  ],
+  "fgz2023_network_religion": [
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 12104,
+     "description": "Deutschland · Ankerpersonen, Auswertungsstichprobe",
+     "weighted": false,
+     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
+     "source_locator": "Tabelle 2.1 S. 17"
+    }
+   }
   ]
  }
 }

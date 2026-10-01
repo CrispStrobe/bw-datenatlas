@@ -94,6 +94,21 @@ try:
                 kind = block.get('chart', {}).get('kind')
                 if kind == 'collection':
                     assert page.locator('#survey-blocks > .survey-panel').count() == len(block['chart']['panels'])
+                    if block['block'] == 'rm2017_wahrheit':
+                        country = page.locator('#survey-blocks .survey-panel[data-block="rm_countries_kernel"]')
+                        country.evaluate('el=>el.open=true')
+                        assert country.locator('.survey-matrix tbody td').count() == 12
+                        assert country.locator('.survey-matrix tbody tr').nth(1).locator('td').first.inner_text() == 'nicht publiziert'
+                        assert '72,0 %' in country.locator('.survey-matrix tbody tr').first.inner_text()
+                        youth = page.locator('#survey-blocks .survey-panel[data-block="empirica2018_truth"]')
+                        youth.evaluate('el=>el.open=true')
+                        assert youth.locator('.survey-dot-row').count() == 4
+                        assert '%' not in youth.locator('.survey-dot-scale').inner_text()
+                        assert '1,0' in youth.locator('.survey-dot-scale').inner_text()
+                        positions = youth.locator('.survey-dot').evaluate_all('els=>els.map(el=>parseFloat(el.style.left))')
+                        assert abs(positions[0] - 42.5) < .001 and abs(positions[1] - 70) < .001
+                        assert youth.locator('.survey-key').count() == 1
+                        checks += 8
                     if block['block'] == 'pollack2010_model':
                         panel = page.locator('#survey-blocks .survey-panel').first
                         positions = panel.locator('.survey-dot').evaluate_all('els=>els.map(el=>parseFloat(el.style.left))')
