@@ -5,7 +5,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 438,
+ "count": 450,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -612,6 +612,70 @@
      "source_title": "Religion als Ressource der Krisenbewältigung? Religionsmonitor 2023",
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/ReligionKrisenbew_2023_final2.pdf",
      "source_locator": "Abbildung 12, S. 38"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_differenzierung",
+   "title": "Differenzierung und wahrgenommene Benachteiligung",
+   "note": "Gewichtete gültige Antworten aus dem deutschen Online-Panel, erhoben Juni–Juli 2022; veröffentlicht im Juni 2024. Für dieses Modul wurden muslimische Befragte ausgeschlossen. Die verbleibenden 1.912 Personen sind die Modulstichprobe, nicht die Fallzahl eines Balkens. Gültige Item-Fallzahlen fehlen; deshalb bleibt die Fallzahl leer. Die Zahlen gelten weder für die gesamte Bevölkerung noch für Baden-Württemberg. Zustimmung = Summe der gerundeten Kategorien „voll und ganz“ und „eher“; die vier Antwortstufen haben keine neutrale Mitte. Erfasst wird die Zustimmung zu differenzierenden Aussagen und zur Wahrnehmung von Benachteiligung. Die Werte messen keine Diskriminierungserfahrungen und keine Häufigkeit tatsächlicher Übergriffe. Die Labels sind Zusammenfassungen; der vollständige Wortlaut steht in Abbildung 5. Summen gerundeter Kategorien können von Anteilen aus ungerundeten Daten abweichen.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Unterschiedliche Grade muslimischer Religiosität",
+     "detail": "Zustimmung: 42 % voll und ganz + 41 % eher; Ablehnung: 11 % eher nicht + 6 % überhaupt nicht",
+     "value": 83.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 5, S. 49; Methoden S. 66"
+    },
+    {
+     "label": "Einzelne Handlungen werden der ganzen Gruppe zugeschrieben",
+     "detail": "Zustimmung: 41 % voll und ganz + 44 % eher; Ablehnung: 12 % eher nicht + 4 % überhaupt nicht",
+     "value": 85.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 5, S. 49; Methoden S. 66"
+    },
+    {
+     "label": "Muslime werden häufig benachteiligt oder angefeindet",
+     "detail": "Zustimmung: 18 % voll und ganz + 42 % eher; Ablehnung: 31 % eher nicht + 9 % überhaupt nicht",
+     "value": 60.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 5, S. 49; Methoden S. 66"
+    },
+    {
+     "label": "Muslime erfahren Rassismus",
+     "detail": "Zustimmung: 22 % voll und ganz + 47 % eher; Ablehnung: 24 % eher nicht + 8 % überhaupt nicht",
+     "value": 69.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 5, S. 49; Methoden S. 66"
     }
    ]
   },
@@ -2572,6 +2636,126 @@
      "source_title": "Weltanschauliche Vielfalt und Demokratie (2019)",
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Religionsmonitor_Vielfalt_und_Demokratie_7_2019.pdf",
      "source_locator": "Abbildung 18, S. 61; Einordnung S. 60–62"
+    }
+   ]
+  },
+  {
+   "block": "rm2023_zuschreibungen",
+   "title": "Pauschale Zuschreibungen: Frage nach Islam oder Muslimen",
+   "note": "Gewichtete gültige Antworten aus dem deutschen Online-Panel, erhoben Juni–Juli 2022; veröffentlicht im Juni 2024. Für dieses Modul wurden muslimische Befragte ausgeschlossen. Die verbleibenden 1.912 Personen sind die Modulstichprobe, nicht die Fallzahl eines Balkens. Gültige Item-Fallzahlen fehlen; deshalb bleibt die Fallzahl leer. Die Zahlen gelten weder für die gesamte Bevölkerung noch für Baden-Württemberg. Zustimmung = Summe der gerundeten Kategorien „voll und ganz“ und „eher“; die vier Antwortstufen haben keine neutrale Mitte. Die Formulierungen „Islam“ und „Musliminnen und Muslime“ wurden zufällig auf zwei Befragtengruppen verteilt. Es sind keine zwei Antworten derselben Personen. Gezeigt werden geäußerte pauschalisierende Zuschreibungen, keine Eigenschaften des Islams oder muslimischer Menschen. Die Labels fassen die Aussagen zusammen; der genaue Wortlaut steht in Abbildungen 1 und 2. Die Abstände sind deskriptiv und werden hier nicht als statistisch gesichert bezeichnet.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Gegen Freiheitsrechte · Islam",
+     "detail": "Zustimmung: 30 % voll und ganz + 36 % eher; Ablehnung: 25 % eher nicht + 9 % überhaupt nicht",
+     "value": 66.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 1, S. 24; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Gegen Freiheitsrechte · Muslimische Menschen",
+     "detail": "Zustimmung: 20 % voll und ganz + 38 % eher; Ablehnung: 30 % eher nicht + 13 % überhaupt nicht",
+     "value": 58.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 2, S. 25; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Aufruf zu Gewalt · Islam",
+     "detail": "Zustimmung: 25 % voll und ganz + 32 % eher; Ablehnung: 30 % eher nicht + 13 % überhaupt nicht",
+     "value": 57.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 1, S. 24; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Aufruf zu Gewalt · Muslimische Menschen",
+     "detail": "Zustimmung: 13 % voll und ganz + 32 % eher; Ablehnung: 37 % eher nicht + 19 % überhaupt nicht",
+     "value": 45.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 2, S. 25; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Frauenfeindlichkeit · Islam",
+     "detail": "Zustimmung: 38 % voll und ganz + 37 % eher; Ablehnung: 19 % eher nicht + 6 % überhaupt nicht",
+     "value": 75.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 1, S. 24; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Frauenfeindlichkeit · Muslimische Menschen",
+     "detail": "Zustimmung: 23 % voll und ganz + 42 % eher; Ablehnung: 24 % eher nicht + 11 % überhaupt nicht",
+     "value": 65.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 2, S. 25; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Rückständigkeit · Islam",
+     "detail": "Zustimmung: 33 % voll und ganz + 41 % eher; Ablehnung: 19 % eher nicht + 7 % überhaupt nicht",
+     "value": 74.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 1, S. 24; Fragebogendesign S. 22; Methoden S. 66"
+    },
+    {
+     "label": "Rückständigkeit · Muslimische Menschen",
+     "detail": "Zustimmung: 17 % voll und ganz + 39 % eher; Ablehnung: 31 % eher nicht + 14 % überhaupt nicht",
+     "value": 56.0,
+     "unit": "percent",
+     "study": "Religionsmonitor 2023",
+     "population": "Nichtmuslimische Befragte des Online-Access-Panels in Deutschland ab 16 Jahren",
+     "base_n": null,
+     "field_period": "Juni–Juli 2022",
+     "question_ref": null,
+     "source_title": "Diekmann/Janzen (2024): Zwischen Pauschalisierung und Differenzierung",
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/51_Religionsmonitor/Zwischen_Pauschalisierung_und_Differenzierung.pdf",
+     "source_locator": "Abbildung 2, S. 25; Fragebogendesign S. 22; Methoden S. 66"
     }
    ]
   },

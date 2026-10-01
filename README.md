@@ -307,3 +307,11 @@ aus veröffentlichten Deutschland-Aggregaten des Atlas of European Values,
 Welle 2017. Ihre itembezogenen Fallzahlen und Gewichtung sind im Web-Atlas nicht
 ausgewiesen; es werden keine eigenen Mikrodatenanalysen oder BW-Werte behauptet.
 `inputs/additional-survey-review.json` dokumentiert Fundstellen und Prüfsummen.
+
+Aus „Zwischen Pauschalisierung und Differenzierung“ (2024) sind ausgewählte
+Zuschreibungen und differenzierende Aussagen aufgenommen. Sie stammen aus der
+Online-Teilstichprobe des Religionsmonitors 2023, erhoben Juni–Juli 2022, mit
+Ausschluss muslimischer Befragter. Das zufällig auf zwei Gruppen verteilte Wording
+„Islam“ / „Musliminnen und Muslime“ bleibt kenntlich. Die Modulstichprobe von 1.912
+Personen wird nicht als itembezogene Fallzahl verwendet. Wahrgenommene
+Benachteiligung wird nicht als gezählte Diskriminierung dargestellt.

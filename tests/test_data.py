@@ -484,6 +484,28 @@ class DataTests(unittest.TestCase):
             self.assertIn('map_wave=2017', i['source_url'])
             self.assertEqual(i['field_period'], '2017–2018')
 
+    def test_panel_attitudes_keep_randomised_wording_and_unknown_item_counts(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        compare = blocks['rm2023_zuschreibungen']
+        self.assertEqual([i['value'] for i in compare['items']],
+                         [66, 58, 57, 45, 75, 65, 74, 56])
+        self.assertIn('zufällig auf zwei Befragtengruppen', compare['note'])
+        self.assertIn('keine Eigenschaften', compare['note'])
+        self.assertIn('1.912', compare['note'])
+        for i in compare['items']:
+            self.assertIsNone(i['base_n'])
+            self.assertEqual(i['field_period'], 'Juni–Juli 2022')
+            self.assertIn('Nichtmuslimische', i['population'])
+            self.assertIn('Online-Access-Panel', i['population'])
+            self.assertIsNone(i['question_ref'])
+        counter = blocks['rm2023_differenzierung']
+        # Rounded category sums are retained, not normalised to 100 or silently
+        # replaced by a number derived from unpublished unrounded responses.
+        self.assertEqual([i['value'] for i in counter['items']], [83, 85, 60, 69])
+        self.assertIn('keine Diskriminierungserfahrungen', counter['note'])
+        self.assertIn('gerundeter Kategorien', counter['note'])
+
     def test_religionsmonitor_figures_keep_distinct_items_and_missing_values(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
         blocks = {b['block']: b for b in d['blocks']}

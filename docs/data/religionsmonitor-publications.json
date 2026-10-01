@@ -729,7 +729,18 @@
       "sha256": "11750709808375300b3e6f114b1de9668bcb63c078be9fbd830e2174ad24abdb",
       "bytes": 1046789,
       "status": "downloaded",
-      "review_status": "not_reviewed"
+      "review_status": "selected_figures_visually_verified",
+      "reviewed_pages": [
+        22,
+        24,
+        25,
+        49,
+        66
+      ],
+      "used_blocks": [
+        "rm2023_zuschreibungen",
+        "rm2023_differenzierung"
+      ]
     },
     {
       "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
