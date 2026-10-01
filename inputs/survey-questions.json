@@ -494,5 +494,83 @@
     "shown": "Bekannte sind Personen, deren Namen man kennt und mit denen man sich bei zufälliger Begegnung kurz unterhalten würde. Gezeigt: die aus beiden Fragen gebildete Netzwerkzusammensetzung, keine direkte Antwortverteilung eines einzelnen Items.",
     "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
     "source_locator": "Originalfragebogen: Abbildung A3-1 S. 105; Kategorienbildung S. 25"
+  },
+  "fgz2025_trust_region": {
+    "heading": "Erfasste Merkmale laut Methodenbericht",
+    "texts": [
+      "Vertrauen in Menschen mit anderer Religion",
+      "Vertrauen in Menschen mit anderer Nationalität"
+    ],
+    "response_scale": "0 = Vertraue überhaupt nicht · 10 = Vertraue voll und ganz",
+    "shown": "Der Methodenbericht nennt die Merkmale und Skalenanker, nicht den vollständigen Fragebogenwortlaut. Gezeigt werden kontrollierte Modellzusammenhänge mit diesen Vertrauensmaßen.",
+    "source_url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht/Zweiter_Zusammenhaltsbericht_FGZ_web.pdf",
+    "source_locator": "Methodisches Vorgehen, S. 116"
+  },
+  "rm2026_zusammenhalt": {
+    "texts": [
+      "Soziale Netze: Wie oft treffen Sie sich mit Freunden, Bekannten oder privat mit Arbeitskollegen? [sehr selten/eher selten/manchmal/eher häufig/sehr häufig]",
+      "Vertrauen in die Mitmenschen: Manche Leute sagen, dass man den meisten Menschen vertrauen kann. Andere meinen, dass man nicht vorsichtig genug sein kann. Wie ist das Ihrer Meinung nach? Verwenden Sie bitte die Zahlen zwischen 0 und 10. [0 man kann nicht vorsichtig genug sein bis 10 man kann den meisten Menschen vertrauen]",
+      "Akzeptanz von Diversität: Nun denken Sie bitte an das Leben hier in Deutschland. Würden Sie sagen, dass das Leben in Deutschland im Allgemeinen durch zunehmende Vielfalt bedroht oder bereichert wird? Verwenden Sie bitte die Zahlen zwischen 0 und 10. [0 zunehmende Vielfalt bedroht das Leben in Deutschland bis 10 zunehmende Vielfalt bereichert das Leben in Deutschland]",
+      "Identifikation: Man kann sich ja unterschiedlich stark, zum Beispiel mit seiner Stadt oder seinem Land, verbunden fühlen. Wie stark fühlen Sie sich mit dem Ort, an dem Sie leben, verbunden? [überhaupt nicht verbunden/nicht sehr verbunden/teils-teils/ziemlich verbunden/sehr verbunden]",
+      "Vertrauen in Institutionen: Bitte geben Sie an, wie viel Vertrauen Sie in die Bundesregierung haben. [überhaupt kein Vertrauen/geringes Vertrauen/teils-teils/großes Vertrauen/sehr großes Vertrauen]",
+      "Gerechtigkeitsempfinden: Inwiefern stimmt die folgende Aussage Ihrer Meinung nach? Die wirtschaftlichen Gewinne werden heute in Deutschland im Großen und Ganzen gerecht verteilt. [gar nicht/wenig/teils-teils/ziemlich/völlig]",
+      "Solidarität und Hilfsbereitschaft: Im Folgenden geht es um freiwillig übernommene Funktionen oder freiwillige Tätigkeiten, die man unbezahlt oder gegen eine geringe Aufwandsentschädigung ausübt. Wie oft sind Sie in Ihrer Freizeit ehrenamtlich tätig, um anderen Menschen zu helfen, z. B. in Vereinen, Organisationen, Verbänden oder sozialen Diensten? [nie/zurzeit nicht, aber früher einmal/seltener (als einmal im Monat)/mindestens einmal pro Monat/mindestens einmal pro Woche/täglich]",
+      "Anerkennung sozialer Regeln: Gibt es bei Ihnen in der Nähe – so im Umkreis von einem Kilometer – irgendeine Gegend, in die Sie nachts nicht alleine gehen möchten? [nein/ja]",
+      "Gesellschaftliche Teilhabe: Wie sehr interessieren Sie sich für Politik? [überhaupt nicht/wenig/mittel/stark/sehr stark]"
+    ],
+    "response_scale": "",
+    "shown": "Originalfragen und Antwortskalen aus Tabelle 1. Die Antworten werden für den Kurzindex auf 0–100 umgerechnet; die gezeigten Punkte sind keine Zustimmungsprozente. Die Bezeichnungen vor den Fragen benennen die zugehörigen Dimensionen.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+    "source_locator": "Tabelle 1, S. 4; Berechnung und Vergleichbarkeit S. 5",
+    "collapsed": true,
+    "position": "after",
+    "shared": true
+  },
+  "rm2026_detail_gesamt": {
+    "texts": [
+      "Soziale Netze: Wie oft treffen Sie sich mit Freunden, Bekannten oder privat mit Arbeitskollegen? [sehr selten/eher selten/manchmal/eher häufig/sehr häufig]",
+      "Vertrauen in die Mitmenschen: Manche Leute sagen, dass man den meisten Menschen vertrauen kann. Andere meinen, dass man nicht vorsichtig genug sein kann. Wie ist das Ihrer Meinung nach? Verwenden Sie bitte die Zahlen zwischen 0 und 10. [0 man kann nicht vorsichtig genug sein bis 10 man kann den meisten Menschen vertrauen]",
+      "Akzeptanz von Diversität: Nun denken Sie bitte an das Leben hier in Deutschland. Würden Sie sagen, dass das Leben in Deutschland im Allgemeinen durch zunehmende Vielfalt bedroht oder bereichert wird? Verwenden Sie bitte die Zahlen zwischen 0 und 10. [0 zunehmende Vielfalt bedroht das Leben in Deutschland bis 10 zunehmende Vielfalt bereichert das Leben in Deutschland]",
+      "Identifikation: Man kann sich ja unterschiedlich stark, zum Beispiel mit seiner Stadt oder seinem Land, verbunden fühlen. Wie stark fühlen Sie sich mit dem Ort, an dem Sie leben, verbunden? [überhaupt nicht verbunden/nicht sehr verbunden/teils-teils/ziemlich verbunden/sehr verbunden]",
+      "Vertrauen in Institutionen: Bitte geben Sie an, wie viel Vertrauen Sie in die Bundesregierung haben. [überhaupt kein Vertrauen/geringes Vertrauen/teils-teils/großes Vertrauen/sehr großes Vertrauen]",
+      "Gerechtigkeitsempfinden: Inwiefern stimmt die folgende Aussage Ihrer Meinung nach? Die wirtschaftlichen Gewinne werden heute in Deutschland im Großen und Ganzen gerecht verteilt. [gar nicht/wenig/teils-teils/ziemlich/völlig]",
+      "Solidarität und Hilfsbereitschaft: Im Folgenden geht es um freiwillig übernommene Funktionen oder freiwillige Tätigkeiten, die man unbezahlt oder gegen eine geringe Aufwandsentschädigung ausübt. Wie oft sind Sie in Ihrer Freizeit ehrenamtlich tätig, um anderen Menschen zu helfen, z. B. in Vereinen, Organisationen, Verbänden oder sozialen Diensten? [nie/zurzeit nicht, aber früher einmal/seltener (als einmal im Monat)/mindestens einmal pro Monat/mindestens einmal pro Woche/täglich]",
+      "Anerkennung sozialer Regeln: Gibt es bei Ihnen in der Nähe – so im Umkreis von einem Kilometer – irgendeine Gegend, in die Sie nachts nicht alleine gehen möchten? [nein/ja]",
+      "Gesellschaftliche Teilhabe: Wie sehr interessieren Sie sich für Politik? [überhaupt nicht/wenig/mittel/stark/sehr stark]"
+    ],
+    "response_scale": "",
+    "shown": "Originalfragen und Antwortskalen aus Tabelle 1. Die Antworten werden für den Kurzindex auf 0–100 umgerechnet; die gezeigten Punkte sind keine Zustimmungsprozente. Die Bezeichnungen vor den Fragen benennen die zugehörigen Dimensionen.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+    "source_locator": "Tabelle 1, S. 4; Berechnung und Vergleichbarkeit S. 5",
+    "collapsed": true,
+    "position": "after",
+    "shared": true
+  },
+  "rm2023_solidaritaet_engagement": {
+    "texts": [
+      "Engagieren Sie sich zurzeit freiwillig?"
+    ],
+    "response_scale": "Ja · Nein",
+    "shown": "Gezeigt: Anteil der Befragten, die mit „Ja“ geantwortet haben.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+    "source_locator": "Tabelle 1, S. 23"
+  },
+  "rm2023_solidaritaet_spenden": {
+    "texts": [
+      "Haben Sie in den letzten 12 Monaten gespendet?"
+    ],
+    "response_scale": "Ja · Nein",
+    "shown": "Gezeigt: Anteil der Befragten, die mit „Ja“ geantwortet haben.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+    "source_locator": "Tabelle 1, S. 23"
+  },
+  "rm2023_solidaritaet_lotto": {
+    "texts": [
+      "Angenommen, Sie hätten 100.000 Euro im Lotto gewonnen, würden Sie einen Teil für wohltätige/gemeinnützige Zwecke spenden?"
+    ],
+    "response_scale": "Ja · Nein",
+    "shown": "Gezeigt: Anteil der Befragten, die mit „Ja“ geantwortet haben.",
+    "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
+    "source_locator": "Tabelle 1, S. 23"
   }
 }

@@ -2113,76 +2113,196 @@
   "question_in_chart": true
  },
  "fgz2023_network_religion": {
-  "kind": "distribution",
+  "kind": "collection",
+  "title": "Religiöse Bekanntenkreise und Vertrauen über Gruppengrenzen · FGZ",
+  "main_chart": {
+   "kind": "distribution",
+   "rows": [
+    {
+     "label": "Alle Befragten",
+     "segments": [
+      {
+       "label": "Eher christlicher Bekanntenkreis",
+       "value": 44
+      },
+      {
+       "label": "Divers/andere · auch unbekannt",
+       "value": 54
+      },
+      {
+       "label": "Eher muslimischer Bekanntenkreis",
+       "value": 2
+      }
+     ]
+    },
+    {
+     "label": "Christliche Befragte",
+     "segments": [
+      {
+       "label": "Eher christlicher Bekanntenkreis",
+       "value": 61
+      },
+      {
+       "label": "Divers/andere · auch unbekannt",
+       "value": 39
+      },
+      {
+       "label": "Eher muslimischer Bekanntenkreis",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "label": "Muslimische Befragte",
+     "segments": [
+      {
+       "label": "Eher christlicher Bekanntenkreis",
+       "value": 3
+      },
+      {
+       "label": "Divers/andere · auch unbekannt",
+       "value": 66
+      },
+      {
+       "label": "Eher muslimischer Bekanntenkreis",
+       "value": 31
+      }
+     ]
+    },
+    {
+     "label": "Konfessionslose Befragte",
+     "segments": [
+      {
+       "label": "Eher christlicher Bekanntenkreis",
+       "value": 27
+      },
+      {
+       "label": "Divers/andere · auch unbekannt",
+       "value": 73
+      },
+      {
+       "label": "Eher muslimischer Bekanntenkreis",
+       "value": 1
+      }
+     ]
+    }
+   ]
+  },
+  "related": [
+   "fgz2025_trust_region"
+  ],
+  "panels": [
+   "fgz2023_network_religion",
+   "fgz2025_trust_region"
+  ]
+ },
+ "rm2026_dimensions": {
+  "kind": "matrix",
+  "columns": [
+   "2017",
+   "2020",
+   "2023",
+   "2026"
+  ],
   "rows": [
    {
-    "label": "Alle Befragten",
-    "segments": [
-     {
-      "label": "Eher christlicher Bekanntenkreis",
-      "value": 44
-     },
-     {
-      "label": "Divers/andere · auch unbekannt",
-      "value": 54
-     },
-     {
-      "label": "Eher muslimischer Bekanntenkreis",
-      "value": 2
-     }
+    "label": "Soziale Netze",
+    "items": [
+     0,
+     1,
+     2,
+     3
     ]
    },
    {
-    "label": "Christliche Befragte",
-    "segments": [
-     {
-      "label": "Eher christlicher Bekanntenkreis",
-      "value": 61
-     },
-     {
-      "label": "Divers/andere · auch unbekannt",
-      "value": 39
-     },
-     {
-      "label": "Eher muslimischer Bekanntenkreis",
-      "value": 0
-     }
+    "label": "Vertrauen in die Mitmenschen",
+    "items": [
+     4,
+     5,
+     6,
+     7
     ]
    },
    {
-    "label": "Muslimische Befragte",
-    "segments": [
-     {
-      "label": "Eher christlicher Bekanntenkreis",
-      "value": 3
-     },
-     {
-      "label": "Divers/andere · auch unbekannt",
-      "value": 66
-     },
-     {
-      "label": "Eher muslimischer Bekanntenkreis",
-      "value": 31
-     }
+    "label": "Akzeptanz von Diversität",
+    "items": [
+     8,
+     9,
+     10,
+     11
     ]
    },
    {
-    "label": "Konfessionslose Befragte",
-    "segments": [
-     {
-      "label": "Eher christlicher Bekanntenkreis",
-      "value": 27
-     },
-     {
-      "label": "Divers/andere · auch unbekannt",
-      "value": 73
-     },
-     {
-      "label": "Eher muslimischer Bekanntenkreis",
-      "value": 1
-     }
+    "label": "Identifikation mit dem Wohnort",
+    "items": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "label": "Vertrauen in die Bundesregierung",
+    "items": [
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "label": "Gerechtigkeitsempfinden",
+    "items": [
+     20,
+     21,
+     22,
+     23
+    ]
+   },
+   {
+    "label": "Solidarität und Hilfsbereitschaft",
+    "items": [
+     24,
+     25,
+     26,
+     27
+    ]
+   },
+   {
+    "label": "Anerkennung sozialer Regeln",
+    "items": [
+     28,
+     29,
+     30,
+     31
+    ]
+   },
+   {
+    "label": "Gesellschaftliche Teilhabe",
+    "items": [
+     32,
+     33,
+     34,
+     35
     ]
    }
-  ]
+  ],
+  "axis_note": "Dunklere Felder zeigen höhere Indexpunkte auf derselben Skala von 0 bis 100. Die Spalten vergleichen Erhebungsjahre; die Zeilen bilden unterschiedliche Dimensionen ab."
+ },
+ "fgz2025_trust_region": {
+  "kind": "compare",
+  "layout": "dots",
+  "domain": [
+   -0.3,
+   0.3
+  ],
+  "series": [
+   "Ostdeutschland gegenüber Westdeutschland",
+   "Mit gegenüber ohne Migrationshintergrund"
+  ],
+  "related": [
+   "fgz2025_trust_migration"
+  ],
+  "axis_note": "Modellkoeffizienten in Standardabweichungen des Vertrauensmaßes. Positive Werte stehen für höheres, negative für geringeres Vertrauen gegenüber der jeweiligen Vergleichsgruppe. Der Zusammenhang zwischen Migrationshintergrund und Vertrauen in Menschen anderer Religion ist nicht statistisch signifikant."
  }
 }

@@ -647,7 +647,7 @@ class DataTests(unittest.TestCase):
         self.assertIn('keine repräsentative', high['note'].lower())
         self.assertIn('Karlsruhe', high['note'])
         fgz = blocks['fgz2023_network_religion']
-        self.assertEqual(fgz['chart']['rows'][2]['segments'][-1]['value'], 31)
+        self.assertEqual(fgz['chart']['main_chart']['rows'][2]['segments'][-1]['value'], 31)
         self.assertIn('unbekannte Zusammensetzungen', fgz['note'])
         self.assertTrue(all(i['study_sample']['n'] == 12104 and 'valid_n' not in i for i in fgz['items']))
 
@@ -667,6 +667,31 @@ class DataTests(unittest.TestCase):
                           ('2023', 46, 5004), ('2026', 51, 5231)])
         dimensions = blocks['rm2026_dimensions']
         self.assertIn('abweichend 67', dimensions['note'])
+        self.assertEqual(dimensions['chart']['columns'], ['2017', '2020', '2023', '2026'])
+        self.assertEqual(len(dimensions['items']), 36)
+        diversity = [i for i in dimensions['items'] if i['label'].startswith('Akzeptanz von Diversität')]
+        self.assertEqual([i['value'] for i in diversity], [62, 66, 47, 55])
+        self.assertEqual([i['study_sample']['n'] for i in diversity], [4968, 3010, 5004, 5231])
+        self.assertTrue(all(i['unit'] == 'index' for i in dimensions['items']))
+        questions = blocks['rm2026_zusammenhalt']['question']
+        self.assertEqual(len(questions['texts']), 9)
+        self.assertIn('Bundesregierung', questions['texts'][4])
+        self.assertTrue(questions['collapsed'] and questions['shared'])
+        self.assertEqual(questions['position'], 'after')
+        self.assertNotIn('question', dimensions)
+        self.assertNotIn('question', blocks['rm2026_history'])
+
+    def test_fgz_trust_models_keep_outcomes_samples_and_non_significance_distinct(self):
+        blocks = {b['block']: b for b in json.loads((ROOT/'docs/data/survey-items.json').read_text())['blocks']}
+        region, migration = blocks['fgz2025_trust_region'], blocks['fgz2025_trust_migration']
+        self.assertEqual([i['value'] for i in region['items']], [-.203, -.225])
+        self.assertEqual([i['value'] for i in migration['items']], [.041, .095])
+        self.assertTrue(all(i['module_sample']['n'] == 4878 and i['study_sample']['n'] == 8642
+                            and i['unit'] == 'coefficient' and i['base_n'] is None
+                            for i in region['items'] + migration['items']))
+        self.assertIn('nicht statistisch signifikant', region['chart']['axis_note'])
+        self.assertIn('z-standardisiert', region['note'])
+        self.assertEqual(region['question']['heading'], 'Erfasste Merkmale laut Methodenbericht')
 
     def test_religionsmonitor_download_inventory_distinguishes_reviews(self):
         d = json.loads((ROOT/'inputs/religionsmonitor-publications.json').read_text())

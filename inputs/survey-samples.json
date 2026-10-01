@@ -336,13 +336,399 @@
   ],
   "rm2026_dimensions": [
    {
+    "label": "Soziale Netze · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Soziale Netze · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Soziale Netze · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Soziale Netze · 2026",
     "field": "study_sample",
     "sample": {
      "n": 5231,
-     "description": "Deutschland · Analysestichprobe",
+     "description": "Deutschland · jeweilige Erhebungswelle",
      "weighted": false,
      "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
-     "source_locator": "Methodensteckbrief, S. 5; 5.302 realisiert, 5.231 nach Bereinigung"
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Mitmenschen · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Mitmenschen · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Mitmenschen · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Mitmenschen · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Akzeptanz von Diversität · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Akzeptanz von Diversität · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Akzeptanz von Diversität · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Akzeptanz von Diversität · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Identifikation mit dem Wohnort · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Identifikation mit dem Wohnort · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Identifikation mit dem Wohnort · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Identifikation mit dem Wohnort · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Bundesregierung · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Bundesregierung · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Bundesregierung · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Vertrauen in die Bundesregierung · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gerechtigkeitsempfinden · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gerechtigkeitsempfinden · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gerechtigkeitsempfinden · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gerechtigkeitsempfinden · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Solidarität und Hilfsbereitschaft · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Solidarität und Hilfsbereitschaft · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Solidarität und Hilfsbereitschaft · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Solidarität und Hilfsbereitschaft · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Anerkennung sozialer Regeln · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Anerkennung sozialer Regeln · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Anerkennung sozialer Regeln · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Anerkennung sozialer Regeln · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gesellschaftliche Teilhabe · 2017",
+    "field": "study_sample",
+    "sample": {
+     "n": 4968,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gesellschaftliche Teilhabe · 2020",
+    "field": "study_sample",
+    "sample": {
+     "n": 3010,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gesellschaftliche Teilhabe · 2023",
+    "field": "study_sample",
+    "sample": {
+     "n": 5004,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
+    }
+   },
+   {
+    "label": "Gesellschaftliche Teilhabe · 2026",
+    "field": "study_sample",
+    "sample": {
+     "n": 5231,
+     "description": "Deutschland · jeweilige Erhebungswelle",
+     "weighted": false,
+     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/Projekte/Zusammen_in_Vielfalt/Religionsmonitor_Kompakt_Gesellschaftlicher_Zusammenhalt_2026.pdf",
+     "source_locator": "Tabelle 2, S. 7; Studienfallzahlen, keine gültigen Item-Fallzahlen"
     }
    }
   ],
@@ -3494,6 +3880,50 @@
      "weighted": false,
      "source_url": "https://fgz-risc.de/fileadmin/media/documents/FGZ_Zusammenhaltsbericht_2023.pdf",
      "source_locator": "Tabelle 2.1 S. 17"
+    }
+   }
+  ],
+  "fgz2025_trust_region": [
+   {
+    "field": "module_sample",
+    "sample": {
+     "n": 4878,
+     "description": "Vollständige Fälle des jeweiligen Vertrauensmodells",
+     "weighted": false,
+     "source_url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht_FGZ_Online-Anhang.pdf",
+     "source_locator": "Tabellen A12.6 und A12.7, S. 56 und 58"
+    }
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 8642,
+     "description": "Welle 2 · Teilnahmen vor Auswahl vollständiger Modellfälle",
+     "weighted": false,
+     "source_url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht_FGZ_Online-Anhang.pdf",
+     "source_locator": "Tabelle A2.1, S. 7; Ankerpersonen und weitere Haushaltsmitglieder"
+    }
+   }
+  ],
+  "fgz2025_trust_migration": [
+   {
+    "field": "module_sample",
+    "sample": {
+     "n": 4878,
+     "description": "Vollständige Fälle des jeweiligen Vertrauensmodells",
+     "weighted": false,
+     "source_url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht_FGZ_Online-Anhang.pdf",
+     "source_locator": "Tabellen A12.6 und A12.7, S. 56 und 58"
+    }
+   },
+   {
+    "field": "study_sample",
+    "sample": {
+     "n": 8642,
+     "description": "Welle 2 · Teilnahmen vor Auswahl vollständiger Modellfälle",
+     "weighted": false,
+     "source_url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht_FGZ_Online-Anhang.pdf",
+     "source_locator": "Tabelle A2.1, S. 7; Ankerpersonen und weitere Haushaltsmitglieder"
     }
    }
   ]

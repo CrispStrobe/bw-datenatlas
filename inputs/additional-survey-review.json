@@ -264,14 +264,14 @@
       "file": "fgz-zusammenhalt-2-2025.pdf",
       "sha256": "f1da0abd0d22fbba56b27d26b2f5089c2781ddd9dab19638af7afc3179b34e3e",
       "reviewed_at": "2026-10-01",
-      "review_scope": "Kapitel 5 (Migrationseinstellungen) und 12 (Vertrauen nach Religion/Nationalität), ergänzt durch Online-Anhang A5.2/A12.6/A12.7. Noch keine neuen Diagrammwerte übernommen: überwiegend Beziehungen zu Klimatypen, keine BW-Auswertung.",
+      "review_scope": "Kapitel 12 S. 116 und Online-Anhang A12.6/A12.7: ausgewählte Vertrauensmodelle zu Religion, Nationalität, Region und Migrationshintergrund übernommen. Kein wörtlicher Fragebogenstamm im Methodenbericht; Erhebungsmerkmale entsprechend gekennzeichnet. Keine BW-Auswertung.",
       "url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht/Zweiter_Zusammenhaltsbericht_FGZ_web.pdf"
     },
     {
       "file": "fgz-zusammenhalt-2-anhang.pdf",
       "sha256": "41ee35007e9105260d59b177bb7c88dc1cdba74c19e87c0c8dafb9f0093ad737",
       "reviewed_at": "2026-10-01",
-      "review_scope": "Tabellen A12.6 und A12.7: Osten vs Westen unter Kontrollen geringeres Vertrauen zu Menschen anderer Religion (-0,203) und Nationalität (-0,225); Migrationshintergrund vs keiner: 0,041 n.s. bzw. 0,095 p<0,01. Zielgrößen z-standardisiert, Koeffizienten unstandardisiert. Befragungsjahre je Variable unterscheiden sich (A2.2). Nicht als Prozentanteile verwenden.",
+      "review_scope": "Tabellen A12.6 und A12.7 S. 56/58 visuell geprüft; vier Koeffizienten samt Standardfehlern und Signifikanzangaben übernommen. Vollständige Modellfälle N=4.878; Feldzeiten A2.1 und ergänzte Kontrollmerkmale A2.2. Zielgrößen z-standardisiert, Koeffizienten unstandardisiert.",
       "url": "https://fgz-risc.de/fileadmin/media/publikationen/Zweiter_Zusammenhaltsbericht_FGZ_Online-Anhang.pdf"
     },
     {

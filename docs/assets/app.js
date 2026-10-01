@@ -2024,22 +2024,27 @@ function surveyQuestions(b,D){
  if(!questions.length)return '';
  const scales=[...new Set(questions.map(q=>q.response_scale).filter(Boolean))];
  const shown=[...new Set(questions.map(q=>q.shown).filter(Boolean))];
- return '<div class="survey-question"><strong>'+esc(t(questions[0].heading||'Wortlaut der Frage / Aussage'))+'</strong>'
+ const content='<div class="survey-question"><strong>'+esc(t(questions[0].heading||'Wortlaut der Frage / Aussage'))+'</strong>'
   +(b.chart?.question_in_chart?'':questions.flatMap(q=>q.texts).map(text=>'<p>„'+esc(t(text))+'“</p>').join(''))
   +scales.map(scale=>'<p class="tiny">'+esc(t('Antwortskala'))+': '+esc(t(scale))+'</p>').join('')
   +shown.map(text=>'<p class="tiny">'+esc(t(text))+'</p>').join('')
   +[...new Map(questions.map(q=>[q.source_url+'|'+q.source_locator,q])).values()].map(q=>'<a class="tiny" href="'+esc(q.source_url)+'" target="_blank" rel="noreferrer">'+esc(q.source_locator)+' ↗</a>').join(' · ')+'</div>';
+ return b.question?.collapsed?'<details class="compact-details survey-question-details"><summary>'+esc(t('Fragen und Antwortskalen'))+'</summary>'+content+'</details>':content;
 }
 function surveyBars(b,D){
  const chart=b.chart;
- if((b.question||chart?.kind==='compare')&&chart?.kind!=='collection'&&!b.questionRendered)return surveyQuestions(b,D)+surveyBars({...b,questionRendered:true},D);
+ if((b.question||chart?.kind==='compare')&&chart?.kind!=='collection'&&!b.questionRendered){
+  const questions=surveyQuestions(b,D),diagram=surveyBars({...b,questionRendered:true},D);
+  return b.question?.position==='after'?diagram+questions:questions+diagram;
+ }
  if(chart?.kind==='matrix')return '<div class="table-scroll"><table class="survey-matrix"><thead><tr><th>'+esc(t('Gruppe'))+'</th>'+chart.columns.map(c=>'<th>'+esc(t(c)).replace('Nachfolgegeneration','Nachfolge<wbr>generation')+'</th>').join('')+'</tr></thead><tbody>'+chart.rows.map(row=>'<tr><th scope="row">'+esc(t(row.label))+'</th>'+row.items.map(index=>{if(index===null)return '<td class="tiny">'+esc(t('nicht publiziert'))+'</td>';const i=b.items[index],alpha=0.08+i.value/100*0.42;return '<td style="background:rgba(33,107,122,'+alpha+');color:'+'#183846'+'">'+esc(surveyValue(i))+'</td>';}).join('')+'</tr>').join('')+'</tbody></table></div><p class="tiny">'+esc(t(chart.axis_note||'Dunklere Felder zeigen höhere Werte auf derselben Skala von 0 bis 100. Die Spalten vergleichen gleichzeitig befragte Gruppen, keine Zeitpunkte.'))+'</p>';
  if(chart?.kind==='collection')return chart.panels.map((id,n)=>{
   const source=D.blocks.find(other=>other.block===id);
   const panel=id===b.block?{...source,chart:chart.main_chart}:source;
+  if(b.question?.shared&&id===b.block)panel.question=null;
   return '<details class="survey-panel" data-block="'+esc(id)+'"'+(n===0?' open':'')+'><summary>'+esc(t(panel.chart?.title||source.title))+'</summary><p class="tiny survey-meta">'+esc(surveyMetadata(source))+'</p>'
-   +surveyQuestions(panel,D)+surveyBars({...panel,questionRendered:true},D)+'</details>';
- }).join('');
+   +surveyBars(panel,D)+'</details>';
+ }).join('')+(b.question?.shared?surveyQuestions(b,D):'');
  if(chart?.kind==='responses')return surveySharedDistributions(b.items.map(i=>({label:i.label,segments:i.response_distribution})),chart.groups||[]);
  if(chart?.kind==='paired')return chart.rows.map(row=>'<div class="survey-comparison"><strong>'+esc(t(row.label))+'</strong>'+row.items.map((index,n)=>{
   const item=b.items[index];if(item.response_distribution_complete)return surveyDistribution(chart.series[n],item.response_distribution);return '<div class="bar-row"><div class="bar-name"><i class="survey-series-dot" style="background:'+surveySeriesColors[n]+'"></i>'+esc(t(chart.series[n]))+'</div><div class="bar-track"><div class="bar-fill" style="width:'+item.value+'%;background:'+surveySeriesColors[n]+'"></div></div><div class="bar-value">'+esc(surveyValue(item))+'</div></div>';
@@ -2099,8 +2104,7 @@ function renderSurveyItems(){
   const isCollection=b.chart?.kind==='collection';
   return '<h4 class="survey-block-title">'+esc(t(b.chart?.title||b.title))+'</h4><button type="button" id="survey-enlarge" class="button button-light">'+esc(t('Vergrößern'))+'</button>'
    +'<p class="tiny survey-meta">'+esc(isCollection?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'
-   +(!isCollection?surveyQuestions(b,D2):'')
-      +surveyBars({...b,questionRendered:true},D2)
+   +surveyBars(b,D2)
    +surveyEvidence(b,D2)
    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))
    +'</summary>'+(hasStudySample?'<p class="tiny">'+esc(t('Studien-, Modul- und Untergruppenstichproben sind keine Fallzahlen gültiger Antworten auf einzelne Fragen. Gewichtete Fallzahlen sind ausdrücklich gekennzeichnet.'))+'</p>':'')+'<div class="table-scroll">'+table(

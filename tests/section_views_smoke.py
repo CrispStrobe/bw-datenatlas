@@ -94,6 +94,30 @@ try:
                 kind = block.get('chart', {}).get('kind')
                 if kind == 'collection':
                     assert page.locator('#survey-blocks > .survey-panel').count() == len(block['chart']['panels'])
+                    if block['block'] == 'rm2026_zusammenhalt':
+                        dimensions = page.locator('#survey-blocks .survey-panel[data-block="rm2026_dimensions"]')
+                        dimensions.evaluate('el=>el.open=true')
+                        assert dimensions.locator('.survey-matrix tbody td').count() == 36
+                        assert dimensions.locator('.survey-matrix tbody tr').nth(2).locator('td').all_text_contents() == ['62,0 Punkte', '66,0 Punkte', '47,0 Punkte', '55,0 Punkte']
+                        questions = page.locator('#survey-blocks > .survey-question-details')
+                        assert questions.count() == 1
+                        assert not questions.evaluate('el=>el.open')
+                        assert dimensions.evaluate("el=>!!(el.querySelector('.survey-matrix').compareDocumentPosition(document.querySelector('#survey-blocks > .survey-question-details')) & Node.DOCUMENT_POSITION_FOLLOWING)")
+                        questions.locator('summary').click()
+                        assert 'zunehmende Vielfalt' in questions.inner_text()
+                        assert 'Bundesregierung' in questions.inner_text()
+                        checks += 6
+                    if block['block'] == 'fgz2023_network_religion':
+                        model = page.locator('#survey-blocks .survey-panel[data-block="fgz2025_trust_region"]')
+                        model.evaluate('el=>el.open=true')
+                        assert model.locator('.survey-dot-row').count() == 2
+                        assert model.locator('.survey-key').count() == 1
+                        assert 'nicht statistisch signifikant' in model.inner_text()
+                        assert 'Erfasste Merkmale laut Methodenbericht' in model.inner_text()
+                        positions = model.locator('.survey-dot').evaluate_all('els=>els.map(el=>parseFloat(el.style.left))')
+                        assert positions[0] < 50 < positions[1]
+                        assert '%' not in model.locator('.survey-dot-values').first.inner_text()
+                        checks += 6
                     if block['block'] == 'rm2017_wahrheit':
                         country = page.locator('#survey-blocks .survey-panel[data-block="rm_countries_kernel"]')
                         country.evaluate('el=>el.open=true')
