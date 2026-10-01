@@ -1963,6 +1963,7 @@ function renderSurveyItems(){
     &&i.value<=100);
   const max=skala100?100:Math.max(...b.items.map(i=>i.value));
   const erste=b.items[0];
+  const hasValidN=b.items.some(i=>i.valid_n!=null);
   return '<h4 class="survey-block-title">'+esc(t(b.title))+'</h4>'
    // Die Beschreibung der Grundgesamtheit ist Fließtext und wird übersetzt; der
    // Name der Studie und der Titel der Quelle bleiben stehen, wie sie heißen.
@@ -1971,7 +1972,8 @@ function renderSurveyItems(){
         ?tf('Studienstichprobe: {0} Befragte',integer(erste.base_n))
         :t('Fallzahlen und Erhebungszeiten siehe Tabelle'),
        new Set(b.items.map(i=>i.field_period)).size===1?erste.field_period:null,
-       erste.question_ref?tf('Fragen {0}',erste.question_ref):null]
+       erste.question_ref&&new Set(b.items.map(i=>i.question_ref)).size===1
+        ?tf('Fragen {0}',erste.question_ref):null]
        .filter(Boolean).join(' · '))+'</p>'
    +(b.note?'<div class="notice warning survey-block-note">'+esc(t(b.note))+'</div>':'')
    +'<div class="horizontal-bars">'+b.items.map(i=>
@@ -1983,9 +1985,11 @@ function renderSurveyItems(){
    +'</div>'
    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))
    +'</summary><div class="table-scroll">'+table(
-    [t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),t('Erhebungszeitraum'),t('Fundstelle')],
+    [t('Gruppe'),t('Wert'),t('Grundgesamtheit'),t('Studienstichprobe'),
+     ...(hasValidN?[t('Gültige Antworten')]:[]),t('Erhebungszeitraum'),t('Fundstelle')],
     b.items.map(i=>[esc(t(i.label)),esc(i.unit==='index'?pf.format(i.value)+' '+t('Punkte'):pct(i.value)),
      esc(t(i.population)),i.base_n?integer(i.base_n):esc(t('nicht ausgewiesen')),
+     ...(hasValidN?[i.valid_n!=null?integer(i.valid_n):esc(t('nicht ausgewiesen'))]:[]),
      esc(i.field_period),'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'
       +esc(i.source_locator||i.source_title)+'</a>']))+'</div></details>';
  }).join('');

@@ -38,45 +38,52 @@ RAUM_RANG = {'Baden-Württemberg': 0, 'Deutschland': 1,
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--input', type=Path, default=ROOT / 'inputs/befragungsitems.csv')
+    ap.add_argument('--evs-input', type=Path, default=ROOT / 'inputs/evs-items.csv')
     ap.add_argument('--out', type=Path, default=ROOT / 'docs/data/survey-items.json')
     args = ap.parse_args()
 
     bloecke: dict[str, dict] = {}
-    with args.input.open(encoding='utf-8') as fh:
-        for r in csv.DictReader(fh):
-            b = bloecke.setdefault(r['block'], {
-                'block': r['block'], 'title': r['block_title'],
-                # Was für den ganzen Block gilt und nicht an eine Zeile gehört: der
-                # Wortlaut der Fragen und das, was die Stichprobe nicht hergibt. Die
-                # Kopfzeile eines Blocks stammt aus seiner ersten Zeile; wo die Balken
-                # verschiedene Grundgesamtheiten haben, reicht das nicht.
-                'note': r.get('block_note') or None,
-                # Über welches Gebiet der Block spricht. Bei zehn Blöcken sieht
-                # man das dem Titel nicht mehr an, und ein Wert aus sechs
-                # Ländern liest sich sonst wie einer über dieses Land.
-                'scope': r.get('scope') or None, 'items': []})
-            b['items'].append({
-                'label': r['label'],
-                # Die Skala im Einzelnen. Ein Balken, der die beiden zustimmenden
-                # Kategorien addiert, ist die Rechnung, die auch die Quelle im Text
-                # macht — aber die vier Stufen gehören daneben, sonst verschwindet
-                # der Unterschied zwischen "voll und ganz" und "eher zu".
-                'detail': r.get('detail') or None,
-                'value': float(r['value']),
-                'unit': r['unit'],
-                'study': r['study'],
-                'population': r['population'],
-                'base_n': int(r['base_n']) if r['base_n'] else None,
-                'field_period': r['field_period'],
-                'question_ref': r['question_ref'] or None,
-                'source_title': r['source_title'],
-                'source_url': r['source_url'],
-                'source_locator': r['source_locator'] or None,
-            })
+    rows = []
+    for path in (args.input, args.evs_input):
+        with path.open(encoding='utf-8') as fh:
+            rows.extend(csv.DictReader(fh))
+    for r in rows:
+        b = bloecke.setdefault(r['block'], {
+            'block': r['block'], 'title': r['block_title'],
+            # Was für den ganzen Block gilt und nicht an eine Zeile gehört: der
+            # Wortlaut der Fragen und das, was die Stichprobe nicht hergibt. Die
+            # Kopfzeile eines Blocks stammt aus seiner ersten Zeile; wo die Balken
+            # verschiedene Grundgesamtheiten haben, reicht das nicht.
+            'note': r.get('block_note') or None,
+            # Über welches Gebiet der Block spricht. Bei zehn Blöcken sieht
+            # man das dem Titel nicht mehr an, und ein Wert aus sechs
+            # Ländern liest sich sonst wie einer über dieses Land.
+            'scope': r.get('scope') or None, 'items': []})
+        b['items'].append({
+            'label': r['label'],
+            # Die Skala im Einzelnen. Ein Balken, der die beiden zustimmenden
+            # Kategorien addiert, ist die Rechnung, die auch die Quelle im Text
+            # macht — aber die vier Stufen gehören daneben, sonst verschwindet
+            # der Unterschied zwischen "voll und ganz" und "eher zu".
+            'detail': r.get('detail') or None,
+            'value': float(r['value']),
+            'unit': r['unit'],
+            'study': r['study'],
+            'population': r['population'],
+            'base_n': int(r['base_n']) if r['base_n'] else None,
+            'field_period': r['field_period'],
+            'question_ref': r['question_ref'] or None,
+            'source_title': r['source_title'],
+            'source_url': r['source_url'],
+            'source_locator': r['source_locator'] or None,
+            **({'weighted_valid_n': float(r['weighted_valid_n'])}
+               if r.get('weighted_valid_n') else {}),
+            **({'valid_n': int(r['valid_n'])} if r.get('valid_n') else {}),
+        })
 
     doc = {
         'type': 'survey_items',
-        'schema_version': '1.0',
+        'schema_version': '1.1',
         'what_this_is': ('Antworten auf Fragen, nicht gezählte Menschen. Ein eigener '
                          'Abschnitt, weil eine Prozentzahl wie die andere aussieht und '
                          'niemand einem Balken ansieht, ob dahinter ein Register steht '

@@ -41,6 +41,15 @@ try:
                 page.select_option('#survey-select', value)
                 assert page.locator('#survey-blocks .bar-row').count() > 0
                 assert page.locator('#survey-blocks table tbody tr').count() == page.locator('#survey-blocks .bar-row').count()
+                block = page.evaluate('n=>window.ATLAS_SURVEY_ITEMS.blocks[Number(n)]', value)
+                if block['block'].startswith('evs2017_'):
+                    page.locator('#survey-blocks details').evaluate('el=>el.open=true')
+                    assert page.locator('#survey-blocks table th').filter(has_text='Gültige Antworten').count() == 1
+                    valid_text = page.locator('#survey-blocks table tbody tr').first.locator('td').nth(4).inner_text()
+                    assert int(''.join(c for c in valid_text if c.isdigit())) == block['items'][0]['valid_n'], valid_text
+                    if len({i['question_ref'] for i in block['items']}) > 1:
+                        assert 'Fragen ' not in page.locator('#survey-blocks .survey-meta').inner_text()
+                    checks += 2
                 assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), value
                 checks += 3
             assert not page.locator('#source-directory').get_attribute('open')

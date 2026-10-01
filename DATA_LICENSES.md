@@ -25,9 +25,12 @@ Der lokale PDF- und Bildcache dient der Quellenprüfung und ist nicht veröffent
   [Berichts](https://www.bosch-stiftung.de/sites/default/files/publications/pdf/2025-09/Vielfaltsbarometer2025-final.pdf),
   S. 78, nennt Copyright 2025 und „Alle Rechte vorbehalten“. Übernommen werden
   ausgewählte Aggregate mit eigener Darstellung und Methodeneinordnung.
-- **European Values Study:** Die hier verwendeten sechs Deutschlandwerte stammen
-  aus den veröffentlichten Aggregaten des [Atlas of European Values](https://www.atlasofeuropeanvalues.eu/maptool.html).
-  Sie sind keine eigene Mikrodatenanalyse. Für Mikrodaten gelten die
+- **European Values Study:** Die ausgewählten Deutschlandwerte sind eigene
+  gewichtete Auswertungen von EVS (2022), ZA7500 v5.0.0,
+  [DOI 10.4232/1.13897](https://doi.org/10.4232/1.13897), und EVS/WVS (2024),
+  ZA7505 v5.0.0, [DOI 10.4232/1.14320](https://doi.org/10.4232/1.14320).
+  Veröffentlicht werden Aggregate und Auswertungscode; die Mikrodaten werden
+  nicht weiterverteilt. Für Mikrodaten gelten die
   [GESIS-Nutzungsbedingungen und Zugangsvoraussetzungen](https://europeanvaluesstudy.eu/surveys/data-access/).
   Der separate Atlas-Band von 2022 steht unter **CC BY-NC-ND 4.0** laut
   [Verlag](https://openpress.tilburguniversity.edu/projects/atlas-of-european-values).

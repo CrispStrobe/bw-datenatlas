@@ -476,13 +476,30 @@ class DataTests(unittest.TestCase):
                          [22, 24, 50])
         self.assertIn('bleiben im Nenner', blocks['bosch2025_religion']['note'])
         evs = blocks['evs2017_nachbarn']
-        self.assertEqual([i['value'] for i in evs['items']], [1.65, 4.29, 13.83])
-        self.assertTrue(all(i['base_n'] is None and i['question_ref'] is None
-                            for i in evs['items']))
+        for item, expected in zip(evs['items'], [1.65, 4.29, 13.83]):
+            self.assertAlmostEqual(item['value'], expected, delta=0.01)
+        self.assertTrue(all(i['base_n'] == 2170 and i['question_ref']
+                            and 0 < i['valid_n'] <= i['base_n']
+                            and i['weighted_valid_n'] > 0 for i in evs['items']))
         self.assertIn('keine direkten Niveauvergleiche', evs['note'])
         for i in evs['items']:
-            self.assertIn('map_wave=2017', i['source_url'])
+            self.assertIn('doi.org/10.4232/1.13897', i['source_url'])
             self.assertEqual(i['field_period'], '2017–2018')
+
+    def test_evs_microdata_preserve_denominators_and_uncertainty_answer(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        religion = blocks['evs2017_religion']['items']
+        self.assertEqual([i['valid_n'] for i in religion], [2078, 1986, 2124])
+        self.assertAlmostEqual(religion[0]['value'], 54.61321141844145, places=8)
+        beliefs = blocks['evs2017_gottesvorstellungen']['items']
+        self.assertAlmostEqual(sum(i['value'] for i in beliefs), 100, places=8)
+        self.assertTrue(all(i['valid_n'] == beliefs[0]['valid_n'] for i in beliefs))
+        spec = json.loads((ROOT/'inputs/evs-analysis-spec.json').read_text())
+        unsure = next(r for r in spec['items'] if r['label'] == 'Unklar, was ich glauben soll')
+        self.assertEqual(unsure['selected_codes'], [3])
+        self.assertNotIn(-1, unsure['valid_codes'])
+        self.assertEqual(spec['joint_study'], 1)
 
     def test_panel_attitudes_keep_randomised_wording_and_unknown_item_counts(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())

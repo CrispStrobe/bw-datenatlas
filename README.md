@@ -260,7 +260,8 @@ schließt die Seite mit Datengrundlagen, Methodik, Downloads, Forschungssammlung
 und Quellenverzeichnissen ab. Die bisherigen Sprunglinks bleiben erreichbar.
 Die Befragungsauswahl gruppiert bundesweite Ergebnisse zusätzlich nach Studie.
 
-`inputs/befragungsitems.csv` enthält die abgelesenen Werte einschließlich
+`inputs/befragungsitems.csv` enthält die abgelesenen Werte,
+`inputs/evs-items.csv` die aus Mikrodaten berechneten Aggregate, jeweils einschließlich
 Grundgesamtheit, Erhebungszeitraum, Einheit und genauer Fundstelle. Abbildungen aus
 den Religionsmonitor-Publikationen 2013, 2015, 2019, 2023, 2024, 2025 und 2026 wurden auch visuell
 geprüft. Unbekannte Untergruppen-Fallzahlen bleiben leer; Gesamtfallzahlen werden
@@ -302,11 +303,27 @@ berichtigt.
 Aus dem Vielfaltsbarometer 2025 sind ausgewählte BW- und Bundesvergleiche der
 Religions- und Vielfaltsakzeptanz sowie Fragen zu öffentlicher Religion und
 Nachbarn aufgenommen. Der Methodenwechsel von Telefon (2018, Publikation 2019)
-zu Online-Panel (2025) steht an den Vergleichswerten. Die sechs EVS-Werte stammen
-aus veröffentlichten Deutschland-Aggregaten des Atlas of European Values,
-Welle 2017. Ihre itembezogenen Fallzahlen und Gewichtung sind im Web-Atlas nicht
-ausgewiesen; es werden keine eigenen Mikrodatenanalysen oder BW-Werte behauptet.
+zu Online-Panel (2025) steht an den Vergleichswerten. Die 17 EVS-Werte sind eigene
+gewichtete Auswertungen der deutschen EVS-Stichprobe (2.170 Fälle) aus ZA7500 und
+dem gemeinsamen EVS/WVS-Datensatz ZA7505, jeweils v5.0.0. Gültige Fallzahlen werden
+je Frage ausgewiesen. Die gemeinsamen Variablen werden zwischen beiden Dateien
+abgeglichen. Deutsche WVS-Fälle werden nicht mit EVS-Fällen zusammengezählt.
+ZA7505 ist die gemeinsame jüngste Welle, nicht die historische IVS-Zeitreihe.
+Es werden keine BW-Werte behauptet.
 `inputs/additional-survey-review.json` dokumentiert Fundstellen und Prüfsummen.
+
+Reproduktion mit lokal vorliegenden, lizenzierten SAV-Dateien:
+
+```sh
+python -m pip install -r requirements-evs.txt
+python scripts/analyse_evs.py --evs-sav /privater/pfad/ZA7500_v5-0-0.sav --joint-sav /privater/pfad/ZA7505_v5-0-0.sav
+python scripts/prepare_survey_items.py
+```
+
+`inputs/evs-analysis-spec.json` enthält Auswahl, Antwortcodes und Zuordnung der
+harmonisierten Variablen; `inputs/evs-analysis-provenance.json` hält Versionen und
+Dateiprüfsummen fest. `inputs/evs-items.csv` enthält nur Aggregate. Rohdaten bleiben
+lokal; die CI baut die Website aus den gespeicherten Aggregaten ohne Datenzugang.
 
 Aus „Zwischen Pauschalisierung und Differenzierung“ (2024) sind ausgewählte
 Zuschreibungen und differenzierende Aussagen aufgenommen. Sie stammen aus der

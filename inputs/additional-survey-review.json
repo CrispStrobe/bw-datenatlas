@@ -12,42 +12,103 @@
       "sha256": "9d8e94b44cf90552ae3df8c27938864fcb28e6efa0693183ee5f96ad618beeb3",
       "reviewed_at": "2026-09-30",
       "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
-      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V56a&world=false"
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V56a&world=false",
+      "status": "superseded_by_microdata_analysis",
+      "superseded_on": "2026-10-01"
     },
     {
       "file": "evs-V57-2017.html",
       "sha256": "15ba634d7ca6bd6f3ecbb1c526c0316a8c4e324f7def612df6dc860c6c06d8c3",
       "reviewed_at": "2026-09-30",
       "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
-      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V57&world=false"
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V57&world=false",
+      "status": "superseded_by_microdata_analysis",
+      "superseded_on": "2026-10-01"
     },
     {
       "file": "evs-V6-2017.html",
       "sha256": "b25045296b2c5925bf63561da570644d4f686f25fd10b5e33798de93e54f6e20",
       "reviewed_at": "2026-09-30",
       "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
-      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V6&world=false"
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V6&world=false",
+      "status": "superseded_by_microdata_analysis",
+      "superseded_on": "2026-10-01"
     },
     {
       "file": "evs-V27-2017.html",
       "sha256": "af283661bbd7092e27120ab1f1fae7d8e09949a202a863274b25dbfaa5f497d6",
       "reviewed_at": "2026-09-30",
       "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
-      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V27&world=false"
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V27&world=false",
+      "status": "superseded_by_microdata_analysis",
+      "superseded_on": "2026-10-01"
     },
     {
       "file": "evs-V29-2017.html",
       "sha256": "bcbcf72bf4b77d23d94b9b7c0702ee5a6f29b51a2a3325c025ce4f8116077d78",
       "reviewed_at": "2026-09-30",
       "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
-      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V29&world=false"
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V29&world=false",
+      "status": "superseded_by_microdata_analysis",
+      "superseded_on": "2026-10-01"
     },
     {
       "file": "evs-V28-2017.html",
       "sha256": "e07ce5b1d7def715979e58b7ec253d716133749452cc2d94537cc47a972017ea",
       "reviewed_at": "2026-09-30",
       "review_scope": "Öffentliches Deutschland-Aggregat und Kartendefinition; keine eigene Mikrodatenanalyse",
-      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V28&world=false"
+      "url": "https://www.atlasofeuropeanvalues.eu/map.php?lng=en&map_wave=2017&map_response_group=total&map=V28&world=false",
+      "status": "superseded_by_microdata_analysis",
+      "superseded_on": "2026-10-01"
+    },
+    {
+      "file": "evs-variable-report.pdf",
+      "url": "https://access.gesis.org/dbk/65190",
+      "sha256": "8197a8d0a9f1fc8d5a0a66823ea27b8fa9f89137004c54b751a108594c63212a",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Ausgewählte Deutschlandtabellen als Plausibilitätsprüfung der eigenen Mikrodatenanalyse. Keine vollständige Auswertung des Berichts.",
+      "reviewed_pages": [
+        21,
+        182,
+        223,
+        239,
+        255,
+        260
+      ],
+      "used_blocks": [],
+      "role": "crosscheck; aggregates calculated from original microdata"
+    },
+    {
+      "file": "ZA7500_v5-0-0.sav",
+      "sha256": "95096c2474b81ef12004726e4ed5b0919b1ea7bb672baff676ae40fb1b629bd2",
+      "doi": "10.4232/1.13897",
+      "version": "5.0.0",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Eigene Auswertung ausgewählter Deutschlandfragen; gültige Antworten mit positivem Gewicht. Gemeinsame Variablen zwischen ZA7500 und ZA7505 abgeglichen. Keine WVS-Poolung, keine historische IVS-Auswertung.",
+      "url": "https://doi.org/10.4232/1.13897",
+      "used_blocks": [
+        "evs2017_religion",
+        "evs2017_nachbarn",
+        "evs2017_praxis",
+        "evs2017_gottesvorstellungen",
+        "evs2017_vertrauen"
+      ]
+    },
+    {
+      "file": "ZA7505_v5-0-0.sav",
+      "sha256": "6edb78837bf2c435c246f334ea5fbe116378abc00cb4aa9efafd051c5313b118",
+      "doi": "10.4232/1.14320",
+      "version": "5.0.0",
+      "reviewed_at": "2026-10-01",
+      "review_scope": "Eigene Auswertung ausgewählter Deutschlandfragen; gültige Antworten mit positivem Gewicht. Gemeinsame Variablen zwischen ZA7500 und ZA7505 abgeglichen. Keine WVS-Poolung, keine historische IVS-Auswertung.",
+      "url": "https://doi.org/10.4232/1.14320",
+      "used_blocks": [
+        "evs2017_religion",
+        "evs2017_nachbarn",
+        "evs2017_praxis",
+        "evs2017_gottesvorstellungen",
+        "evs2017_vertrauen"
+      ]
     }
   ],
   "selection": "Religion und Vielfalt; ausgewählte BW-Vergleiche und bundesweite Einstellungen. Keine vollständige Übernahme der Studien."

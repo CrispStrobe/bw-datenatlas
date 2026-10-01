@@ -1,0 +1,3 @@
+# Optional, only for rebuilding aggregates from privately held licensed SAV files.
+pyreadstat==1.3.6
+pandas==3.0.6

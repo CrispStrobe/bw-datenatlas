@@ -1,0 +1,27 @@
+{
+  "analysis": "Weighted valid-response shares; Germany EVS only",
+  "spec_sha256": "4412d1a3f11ebdc822bb85e5a99d288ff426f4bda8f2289275c219061344806c",
+  "sources": [
+    {
+      "file": "ZA7500_v5-0-0.sav",
+      "sha256": "95096c2474b81ef12004726e4ed5b0919b1ea7bb672baff676ae40fb1b629bd2",
+      "doi": "10.4232/1.13897",
+      "version": "5.0.0"
+    },
+    {
+      "file": "ZA7505_v5-0-0.sav",
+      "sha256": "6edb78837bf2c435c246f334ea5fbe116378abc00cb4aa9efafd051c5313b118",
+      "doi": "10.4232/1.14320",
+      "version": "5.0.0"
+    }
+  ],
+  "software": {
+    "pyreadstat": "1.3.6"
+  },
+  "country_code": 276,
+  "joint_study_code": 1,
+  "sample_n": 2170,
+  "items": 17,
+  "common_core_crosscheck": "All selected common items match ZA7500 and ZA7505",
+  "not_included": "German WVS cases, matrix samples, historical IVS trend"
+}
