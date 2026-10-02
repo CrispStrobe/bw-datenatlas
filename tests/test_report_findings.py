@@ -69,7 +69,15 @@ class PublicReportFindings(unittest.TestCase):
         sources += [s for r in self.doc['reports'] for s in r['sources']]
         for source in sources:
             self.assertFalse(source['source_rights']['relicensed_by_atlas'])
-            self.assertEqual(source['source_rights']['license_status'], 'not_recorded_in_export')
+            rights = source['source_rights']
+            if rights['license'] is not None:
+                self.assertEqual(rights['license'], 'CC-BY-4.0')
+                self.assertEqual(rights['license_status'], 'verified_publisher_license')
+                self.assertEqual(rights['license_url'], 'https://creativecommons.org/licenses/by/4.0/')
+                self.assertTrue(rights['attribution'] and rights['changes'])
+            else:
+                self.assertIn(rights['license_status'], ('not_recorded_in_export',
+                              'no_open_license_identified', 'all_rights_reserved'))
 
     def test_bw_time_series_keep_measure_and_period_separate(self):
         pmk = self.reports['pmk_bw_islamfeindlich']
@@ -111,7 +119,7 @@ class PublicReportFindings(unittest.TestCase):
     def test_rias_agreement_parts_and_unknown_context_are_preserved(self):
         survey = json.loads((ROOT / 'docs/data/survey-items.json').read_text())
         block = next(b for b in survey['blocks'] if b['block'] == 'rias2026_muslim_antisemitismus')
-        for item, row in zip(block['items'], block['chart']['rows']):
+        for item, row in zip(block['items'], block['chart']['main_chart']['rows']):
             self.assertAlmostEqual(sum(s['value'] for s in row['segments']), item['value'])
         self.assertEqual([i['subgroup_sample']['n'] for i in block['items']], [712, 1119, 712, 1119])
         incidents = self.reports['rias_de_hintergrund_2019_2025']

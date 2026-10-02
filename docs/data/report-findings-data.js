@@ -398,7 +398,7 @@ window.ATLAS_REPORT_FINDINGS = {
       ]
     }
   ],
-  "what_this_is": "Feindseligkeit in Baden-Württemberg: dokumentierte Vorfälle und polizeilich erfasste Straftaten. Die Quellen erfassen unterschiedliche Ausschnitte; ihre Zahlen sind keine vollständigen Opferzahlen und werden nicht addiert. Der UEM dient als Forschungsüberblick, nicht als zusätzliche Fallstatistik.",
+  "what_this_is": "Feindseligkeit in Baden-Württemberg: dokumentierte Vorfälle und polizeilich erfasste Straftaten. Die Quellen erfassen unterschiedliche Ausschnitte; ihre Zahlen sind keine vollständigen Opferzahlen und werden nicht addiert.",
   "rights": {
     "license": null,
     "license_status": "no_blanket_open_license",

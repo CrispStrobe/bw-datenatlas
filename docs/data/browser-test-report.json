@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "check_count": 361,
+  "check_count": 362,
   "checks": [
     {
       "name": "real prepared geography present",
@@ -323,7 +323,7 @@
       "passed": true
     },
     {
-      "name": "percentage bars are measured against 100, not the block maximum",
+      "name": "country comparison uses percentage positions on a 0–100 scale",
       "passed": true
     },
     {
@@ -667,7 +667,11 @@
       "passed": true
     },
     {
-      "name": "the record refuses a population reading",
+      "name": "the record describes municipality-level precision",
+      "passed": true
+    },
+    {
+      "name": "the record omits removed explanatory filler",
       "passed": true
     },
     {

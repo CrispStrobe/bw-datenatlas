@@ -39,18 +39,7 @@ def main() -> None:
     doc = {
         'type': 'checked_not_used',
         'schema_version': '1.0',
-        'what_this_is': (
-            'Quellen, die für diesen Atlas geprüft und nicht verwendet wurden, mit '
-            'dem Grund. Ein Quellenverzeichnis sagt, worauf sich die Zahlen stützen; '
-            'dies hier sagt, was angesehen und verworfen wurde.'),
-        'why': (
-            'Wer nachbaut, läuft sonst dieselben Sackgassen ab. Und eine Auskunft '
-            'darüber, was nicht taugt, ist schwerer zu bekommen als eine über das, '
-            'was taugt — sie steht nirgends, weil niemand sie aufschreibt.'),
-        'dated_on_purpose': (
-            'Das Prüfdatum steht dabei, weil es altert: eine Tabelle, die heute mit '
-            'einem Fehler antwortet, kann nächstes Jahr antworten, und eine Studie '
-            'kann einen Ergänzungsband bekommen.'),
+        'what_this_is': 'Für bestimmte Fragestellungen nicht verwendete Quellen und ihre methodischen Grenzen.',
         'count': len(zeilen),
         'entries': zeilen,
     }

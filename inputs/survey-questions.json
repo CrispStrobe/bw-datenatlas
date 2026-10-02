@@ -572,5 +572,42 @@
     "shown": "Gezeigt: Anteil der Befragten, die mit „Ja“ geantwortet haben.",
     "source_url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/Ressourcen_fuer_Solidaritaet_Layout_9.pdf",
     "source_locator": "Tabelle 1, S. 23"
+  },
+  "svr2026_politisches_vertrauen": {
+    "texts": [
+      "Sagen Sie mir bitte, wie sehr Sie persönlich den folgenden Institutionen in Deutschland vertrauen."
+    ],
+    "response_scale": "Vertraue voll und ganz · Vertraue eher · Vertraue eher nicht · Vertraue gar nicht",
+    "shown": "Ausgewählte Institutionen: Bundesregierung und Bundestag. Gezeigt: die beiden vertrauenden Antwortstufen zusammen.",
+    "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+    "source_locator": "Fragewortlaut und Skala: Abbildung 2, S. 9",
+    "position": "after",
+    "collapsed": true
+  },
+  "nadira2025_politisches_vertrauen": {
+    "heading": "Erfasste Merkmale laut Methodenbericht",
+    "texts": [
+      "Vertrauen in die Bundesregierung und in Politikerinnen und Politiker"
+    ],
+    "response_scale": "Sieben Stufen: 1 = vertraue überhaupt nicht; 7 = vertraue voll und ganz",
+    "shown": "Beschreibung der Merkmale, kein wörtliches Fragezitat. Der Kurzbericht veröffentlicht den vollständigen Fragewortlaut nicht. Gezeigt sind die Stufen 5–7 zusammen sowie Stufe 1; keine vollständige Antwortverteilung.",
+    "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+    "source_locator": "Methoden S. 9; Abbildungen 1–2, S. 5–6",
+    "collapsed": true,
+    "position": "after",
+    "verbatim": false
+  },
+  "demmrich2025_institutionenvertrauen": {
+    "heading": "Erfasste Frage · deutsche Übersetzung des Atlas",
+    "texts": [
+      "Bitte geben Sie an, wie sehr Sie persönlich jeder der folgenden öffentlichen Institutionen oder Personengruppen vertrauen."
+    ],
+    "response_scale": "0 = überhaupt kein Vertrauen · 10 = volles Vertrauen",
+    "shown": "Zusammengefasst werden sechs Angaben: Bundestag, Bundesregierung, Justiz, Polizei, Europaparlament und Medien.",
+    "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+    "source_locator": "Abschnitt 4.2.2: Trust in public institutions and authorities",
+    "position": "after",
+    "collapsed": true,
+    "verbatim": false
   }
 }

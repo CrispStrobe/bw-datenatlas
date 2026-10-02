@@ -89,6 +89,13 @@ def main() -> None:
             **({'source_kind': r['source_kind']} if r.get('source_kind') else {}),
         })
 
+    rights_path = ROOT / 'inputs/survey-source-rights.json'
+    for key, rights in json.loads(rights_path.read_text(encoding='utf-8')).items():
+        if key not in bloecke or not rights.get('attribution') or not rights.get('source_url'):
+            raise ValueError(f'Incomplete source rights: {key}')
+        for item in bloecke[key]['items']:
+            item['source_rights'] = rights.copy()
+
     # Public method tables describe whole studies, modules and subgroups.
     # Keep these separate from item-valid N and the older base_n field.
     sample_path = ROOT / 'inputs/survey-samples.json'

@@ -173,9 +173,9 @@ try:
                     assert 'Wurzeln' in first_panel.locator('.survey-question').inner_text()
                 if block['block'] == 'rias2026_muslim_antisemitismus':
                     assert page.locator('#survey-blocks .survey-key').count() == 1
-                    assert 'kein Recht zu existieren' in page.locator('#survey-blocks .survey-question').inner_text()
-                    assert '34,8 %' in page.locator('#survey-blocks table').text_content()
-                    assert '712' in page.locator('#survey-blocks table').text_content()
+                    assert 'kein Recht zu existieren' in page.locator('#survey-blocks .survey-panel[data-block="rias2026_muslim_antisemitismus"] .survey-question').inner_text()
+                    assert '34,8 %' in page.locator('#survey-blocks table:not(.survey-matrix)').text_content()
+                    assert '712' in page.locator('#survey-blocks table:not(.survey-matrix)').text_content()
                 if block['block'] == 'evs2017_zugehoerigkeit':
                     assert 'wirklich deutsch' in page.locator('#survey-blocks .survey-question').inner_text()
                 page.locator('#survey-enlarge').click()

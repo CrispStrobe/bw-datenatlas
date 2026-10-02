@@ -17,8 +17,6 @@
     "bw_religioese_vielfalt",
     "bw_kopftuch_2012",
     "bosch2025_index_bw",
-    "bosch2025_index_de",
-    "bosch2025_religion",
     "evs2017_nachbarn",
     "rm2017_nachbarn_europa"
    ]
@@ -48,7 +46,6 @@
     "rm2023_zuschreibungen",
     "rm2023_bedrohung",
     "las_fremdheit_ost",
-    "las_zuwanderung_ost",
     "ekd2020_muslim_rights",
     "fes2025_migration"
    ]
@@ -71,9 +68,13 @@
   {
    "title": "Kontakte und Freundeskreise",
    "blocks": [
-    "fgz2023_network_religion",
-    "rm2015_freizeit_nichtmuslime",
-    "rm2017_europa_kontakte"
+    "fgz2023_network_religion"
+   ]
+  },
+  {
+   "title": "Politisches Vertrauen",
+   "blocks": [
+    "svr2026_politisches_vertrauen"
    ]
   },
   {
@@ -112,7 +113,7 @@
  "why_the_metadata_matters": "Bei Befragungen entscheidet über das Ergebnis, wer gefragt wurde, wie viele es waren und wie die Frage lautete. An jeder Zeile stehen deshalb Grundgesamtheit, Fallzahl, Erhebungszeitraum und Fundstelle — und wo die Quelle sie nennt, auch die Fragennummern.",
  "why_2012_and_2019_are_not_a_trend": "Die beiden Landesumfragen von 2012 und 2019 haben verschiedene Grundgesamtheiten: 2012 wurden Deutsche ab 18 Jahren befragt, also Wahlberechtigte, 2019 deutschsprechende Personen ab 18 Jahren. Wer die Werte als Entwicklung liest, vergleicht auch zwei verschieden abgegrenzte Bevölkerungen. Der Landesbericht weist selbst darauf hin.",
  "not_in_any_model": "Diese Zahlen gehen in keine Modellrechnung dieses Atlas ein und werden mit keiner Bevölkerungszahl verrechnet.",
- "count": 684,
+ "count": 706,
  "scope_order": [
   "Baden-Württemberg",
   "Deutschland",
@@ -326,33 +327,46 @@
     }
    ],
    "chart": {
-    "kind": "paired",
-    "series": [
-     "2019",
-     "2025"
+    "kind": "collection",
+    "title": "Vielfaltsbarometer: Akzeptanz, Nachbarschaft und Familie",
+    "main_chart": {
+     "kind": "paired",
+     "series": [
+      "2019",
+      "2025"
+     ],
+     "rows": [
+      {
+       "label": "Vielfalt insgesamt",
+       "items": [
+        0,
+        1
+       ]
+      },
+      {
+       "label": "Ethnische Herkunft",
+       "items": [
+        2,
+        3
+       ]
+      },
+      {
+       "label": "Religion",
+       "items": [
+        4,
+        5
+       ]
+      }
+     ]
+    },
+    "related": [
+     "bosch2025_index_de",
+     "bosch2025_religion"
     ],
-    "rows": [
-     {
-      "label": "Vielfalt insgesamt",
-      "items": [
-       0,
-       1
-      ]
-     },
-     {
-      "label": "Ethnische Herkunft",
-      "items": [
-       2,
-       3
-      ]
-     },
-     {
-      "label": "Religion",
-      "items": [
-       4,
-       5
-      ]
-     }
+    "panels": [
+     "bosch2025_index_bw",
+     "bosch2025_index_de",
+     "bosch2025_religion"
     ]
    }
   },
@@ -1803,76 +1817,87 @@
     "source_locator": "S. 23, Abbildung 2"
    },
    "chart": {
-    "kind": "distribution",
-    "rows": [
-     {
-      "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
-      "segments": [
-       {
-        "label": "Schwache Zustimmung · Stufe 4",
-        "value": 15.8
-       },
-       {
-        "label": "Starke Zustimmung · Stufen 5–6",
-        "value": 29.6
-       }
-      ]
-     },
-     {
-      "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
-      "segments": [
-       {
-        "label": "Schwache Zustimmung · Stufe 4",
-        "value": 11.9
-       },
-       {
-        "label": "Starke Zustimmung · Stufen 5–6",
-        "value": 34.8
-       }
-      ]
-     },
-     {
-      "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
-      "segments": [
-       {
-        "label": "Schwache Zustimmung · Stufe 4",
-        "value": 7.1
-       },
-       {
-        "label": "Starke Zustimmung · Stufen 5–6",
-        "value": 23
-       }
-      ]
-     },
-     {
-      "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
-      "segments": [
-       {
-        "label": "Schwache Zustimmung · Stufe 4",
-        "value": 7.7
-       },
-       {
-        "label": "Starke Zustimmung · Stufen 5–6",
-        "value": 18.7
-       }
-      ]
-     }
+    "kind": "collection",
+    "title": "Antisemitische Einstellungen und Institutionenvertrauen",
+    "main_chart": {
+     "kind": "distribution",
+     "rows": [
+      {
+       "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
+       "segments": [
+        {
+         "label": "Schwache Zustimmung · Stufe 4",
+         "value": 15.8
+        },
+        {
+         "label": "Starke Zustimmung · Stufen 5–6",
+         "value": 29.6
+        }
+       ]
+      },
+      {
+       "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
+       "segments": [
+        {
+         "label": "Schwache Zustimmung · Stufe 4",
+         "value": 11.9
+        },
+        {
+         "label": "Starke Zustimmung · Stufen 5–6",
+         "value": 34.8
+        }
+       ]
+      },
+      {
+       "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
+       "segments": [
+        {
+         "label": "Schwache Zustimmung · Stufe 4",
+         "value": 7.1
+        },
+        {
+         "label": "Starke Zustimmung · Stufen 5–6",
+         "value": 23
+        }
+       ]
+      },
+      {
+       "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
+       "segments": [
+        {
+         "label": "Schwache Zustimmung · Stufe 4",
+         "value": 7.7
+        },
+        {
+         "label": "Starke Zustimmung · Stufen 5–6",
+         "value": 18.7
+        }
+       ]
+      }
+     ],
+     "groups": [
+      {
+       "label": "Tradierter Antisemitismus",
+       "items": [
+        0,
+        1
+       ]
+      },
+      {
+       "label": "Israelbezogener Antisemitismus",
+       "items": [
+        2,
+        3
+       ]
+      }
+     ]
+    },
+    "related": [
+     "demmrich2025_institutionenvertrauen"
     ],
-    "groups": [
-     {
-      "label": "Tradierter Antisemitismus",
-      "items": [
-       0,
-       1
-      ]
-     },
-     {
-      "label": "Israelbezogener Antisemitismus",
-      "items": [
-       2,
-       3
-      ]
-     }
+    "panels": [
+     "rias2026_muslim_antisemitismus",
+     "demmrich2025_institutionenvertrauen"
     ]
    }
   },
@@ -6143,6 +6168,112 @@
    ]
   },
   {
+   "block": "demmrich2025_institutionenvertrauen",
+   "title": "Institutionenvertrauen vor und nach dem 7. Oktober 2023",
+   "note": "Mittelwert auf einer Skala von 0 bis 10 aus Bundestag, Bundesregierung, Justiz, Polizei, Europaparlament und Medien. Muslimische Befragte mit Migrationshintergrund; Befragung Juli 2023 bis April 2024. Vorher und nachher wurden unterschiedliche Personen befragt, kein Personenpanel. Der Unterschied ist nicht signifikant (p = 0,56). Die Studie berichtet Zusammenhänge von geringem Vertrauen mit antisemitischen Einstellungen, keinen gemessenen Einfluss der deutschen Israelpolitik. Auswahl und deutsche Erläuterung durch den Atlas; Quelle CC BY 4.0.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Vor dem 7. Oktober 2023",
+     "detail": null,
+     "value": 5.76,
+     "unit": "mean",
+     "study": "Demmrich / Pollack / Müller / Rosta (2025)",
+     "population": "Muslimische Befragte mit Migrationshintergrund in Deutschland",
+     "base_n": 1887,
+     "sample_source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+     "field_period": "Juli 2023 bis April 2024",
+     "question_ref": null,
+     "source_title": "Demmrich / Pollack / Müller / Rosta (2025)",
+     "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+     "source_locator": "Abschnitt 4.2.2; Fußnote 7",
+     "source_rights": {
+      "license": "CC-BY-4.0",
+      "license_status": "verified_publisher_license",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "relicensed_by_atlas": false,
+      "attribution": "Sarah Demmrich, Detlef Pollack, Olaf Müller, Gergely Rosta (2025): Antisemitism among Muslims in Germany before and after October 7, 2023. DOI: 10.1007/s41682-025-00233-7",
+      "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+      "changes": "Auswahl von zwei Mittelwerten, eigene Darstellung und deutsche Übersetzung der Frage und Erläuterungen."
+     },
+     "study_sample": {
+      "n": 1887,
+      "description": "Gesamte Studie; nicht gültige Antworten auf den Vertrauensindex",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+      "source_locator": "Abschnitt 4.1"
+     }
+    },
+    {
+     "label": "Nach dem 7. Oktober 2023",
+     "detail": null,
+     "value": 5.69,
+     "unit": "mean",
+     "study": "Demmrich / Pollack / Müller / Rosta (2025)",
+     "population": "Muslimische Befragte mit Migrationshintergrund in Deutschland",
+     "base_n": 1887,
+     "sample_source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+     "field_period": "Juli 2023 bis April 2024",
+     "question_ref": null,
+     "source_title": "Demmrich / Pollack / Müller / Rosta (2025)",
+     "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+     "source_locator": "Abschnitt 4.2.2; Fußnote 7",
+     "source_rights": {
+      "license": "CC-BY-4.0",
+      "license_status": "verified_publisher_license",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "relicensed_by_atlas": false,
+      "attribution": "Sarah Demmrich, Detlef Pollack, Olaf Müller, Gergely Rosta (2025): Antisemitism among Muslims in Germany before and after October 7, 2023. DOI: 10.1007/s41682-025-00233-7",
+      "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+      "changes": "Auswahl von zwei Mittelwerten, eigene Darstellung und deutsche Übersetzung der Frage und Erläuterungen."
+     },
+     "study_sample": {
+      "n": 1887,
+      "description": "Gesamte Studie; nicht gültige Antworten auf den Vertrauensindex",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+      "source_locator": "Abschnitt 4.1"
+     }
+    }
+   ],
+   "question": {
+    "heading": "Erfasste Frage · deutsche Übersetzung des Atlas",
+    "texts": [
+     "Bitte geben Sie an, wie sehr Sie persönlich jeder der folgenden öffentlichen Institutionen oder Personengruppen vertrauen."
+    ],
+    "response_scale": "0 = überhaupt kein Vertrauen · 10 = volles Vertrauen",
+    "shown": "Zusammengefasst werden sechs Angaben: Bundestag, Bundesregierung, Justiz, Polizei, Europaparlament und Medien.",
+    "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+    "source_locator": "Abschnitt 4.2.2: Trust in public institutions and authorities",
+    "position": "after",
+    "collapsed": true,
+    "verbatim": false
+   },
+   "chart": {
+    "kind": "matrix",
+    "columns": [
+     "Vor dem 7. Oktober 2023",
+     "Nach dem 7. Oktober 2023"
+    ],
+    "rows": [
+     {
+      "label": "Mittleres Vertrauen · Skala 0–10",
+      "items": [
+       0,
+       1
+      ]
+     }
+    ],
+    "domain": [
+     0,
+     10
+    ],
+    "axis_note": "Mittelwerte auf derselben Skala von 0 bis 10, keine Prozentwerte. Der Unterschied ist nicht signifikant (p = 0,56)."
+   }
+  },
+  {
    "block": "rm2015_islamwahrnehmung_vergleich",
    "title": "Islamwahrnehmung 2012 und 2014 · zwei Erhebungen",
    "note": "Die Grafik vergleicht Religionsmonitor 2013 (erhoben 2012) mit Emnid 2014. Zwei unabhängige Querschnitte; dieselben Personen wurden nicht wiederholt befragt. Bedrohung umfasst eher oder sehr bedrohlich, Unvereinbarkeit die Ablehnung der positiv formulierten Aussage über die Zugehörigkeit zur westlichen Welt. Die Fallzahlen 1.683 und 937 beziehen sich auf die jeweiligen nichtmuslimischen Studienstichproben. Unterschiede können auch von den Erhebungsverfahren abhängen; keine persönliche Einstellungsänderung und keine Verbindung zur anders gemessenen Bedrohungsfrage 2023.",
@@ -7566,14 +7697,26 @@
     "source_locator": "Tabelle 12, S. 67; Methodik S. 29–33"
    },
    "chart": {
-    "kind": "time",
+    "kind": "collection",
+    "title": "Islamwahrnehmung und Zuwanderungsverbot · LAS-Zeitreihen",
+    "main_chart": {
+     "kind": "time",
+     "related": [
+      "las_fremdheit_west"
+     ],
+     "title": "LAS: Fremdheitsgefühl durch Muslime · Ost und West 2014–2024",
+     "series": [
+      "Ostdeutschland",
+      "Westdeutschland"
+     ]
+    },
     "related": [
-     "las_fremdheit_west"
+     "las_fremdheit_west",
+     "las_zuwanderung_ost"
     ],
-    "title": "LAS: Fremdheitsgefühl durch Muslime · Ost und West 2014–2024",
-    "series": [
-     "Ostdeutschland",
-     "Westdeutschland"
+    "panels": [
+     "las_fremdheit_ost",
+     "las_zuwanderung_ost"
     ]
    }
   },
@@ -10593,6 +10736,754 @@
    }
   },
   {
+   "block": "nadira2025_politisches_vertrauen",
+   "title": "Politisches Vertrauen muslimischer Befragter · NaDiRa",
+   "note": "Muslimische Selbstidentifikation im NaDiRa.panel, auch Mehrfachzugehörigkeiten möglich. Gewichtete Querschnittsvergleiche zweier Panelwellen, keine Auswertung individueller Veränderungen. Vertrauen umfasst die Stufen 5–7 und überhaupt kein Vertrauen nur Stufe 1. Die mittleren Antwortstufen sind nicht dargestellt; die Kennwerte bilden keine vollständige Antwortverteilung. Die Welle 2024 lief bis Januar 2025. Die angegebenen Analyseumfänge betreffen alle Gruppen, nicht die muslimische Teilgruppe. Die muslimische Gruppengröße und der vollständige Fragewortlaut stehen im Bericht nicht. Der Bericht diskutiert den Nahostkonflikt als mögliche Erklärung; ein Einfluss der deutschen Israelpolitik wurde nicht gemessen. Keine BW-Auswertung.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Bundesregierung · Vertrauen · 2022",
+     "detail": null,
+     "value": 41.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "Januar bis März 2022",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 18094,
+      "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 1, S. 5"
+     }
+    },
+    {
+     "label": "Bundesregierung · Vertrauen · 2024",
+     "detail": null,
+     "value": 28.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "August 2024 bis Januar 2025",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 8480,
+      "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 1, S. 5"
+     }
+    },
+    {
+     "label": "Bundesregierung · überhaupt kein Vertrauen · 2022",
+     "detail": null,
+     "value": 12.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "Januar bis März 2022",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 18094,
+      "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 1, S. 5"
+     }
+    },
+    {
+     "label": "Bundesregierung · überhaupt kein Vertrauen · 2024",
+     "detail": null,
+     "value": 22.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "August 2024 bis Januar 2025",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 8480,
+      "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 1, S. 5"
+     }
+    },
+    {
+     "label": "Politikerinnen und Politiker · Vertrauen · 2022",
+     "detail": null,
+     "value": 20.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "Januar bis März 2022",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 18030,
+      "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 2, S. 6"
+     }
+    },
+    {
+     "label": "Politikerinnen und Politiker · Vertrauen · 2024",
+     "detail": null,
+     "value": 14.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "August 2024 bis Januar 2025",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 8496,
+      "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 2, S. 6"
+     }
+    },
+    {
+     "label": "Politikerinnen und Politiker · überhaupt kein Vertrauen · 2022",
+     "detail": null,
+     "value": 23.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "Januar bis März 2022",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 18030,
+      "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 2, S. 6"
+     }
+    },
+    {
+     "label": "Politikerinnen und Politiker · überhaupt kein Vertrauen · 2024",
+     "detail": null,
+     "value": 34.0,
+     "unit": "percent",
+     "study": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "population": "Muslimisch selbstidentifizierte Befragte des NaDiRa.panels; 18–70 Jahre bei Panelstart 2022",
+     "base_n": null,
+     "sample_source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "field_period": "August 2024 bis Januar 2025",
+     "question_ref": null,
+     "source_title": "NaDiRa.panel · Demokratie unter Druck (2025)",
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5; Abbildung 2, S. 6; Methoden S. 9",
+     "source_rights": {
+      "license": null,
+      "license_status": "all_rights_reserved",
+      "relicensed_by_atlas": false,
+      "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "module_sample": {
+      "n": 8496,
+      "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+      "weighted": true,
+      "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+      "source_locator": "Abbildung 2, S. 6"
+     }
+    }
+   ],
+   "question": {
+    "heading": "Erfasste Merkmale laut Methodenbericht",
+    "texts": [
+     "Vertrauen in die Bundesregierung und in Politikerinnen und Politiker"
+    ],
+    "response_scale": "Sieben Stufen: 1 = vertraue überhaupt nicht; 7 = vertraue voll und ganz",
+    "shown": "Beschreibung der Merkmale, kein wörtliches Fragezitat. Der Kurzbericht veröffentlicht den vollständigen Fragewortlaut nicht. Gezeigt sind die Stufen 5–7 zusammen sowie Stufe 1; keine vollständige Antwortverteilung.",
+    "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+    "source_locator": "Methoden S. 9; Abbildungen 1–2, S. 5–6",
+    "collapsed": true,
+    "position": "after",
+    "verbatim": false
+   },
+   "chart": {
+    "kind": "matrix",
+    "columns": [
+     "2022",
+     "2024"
+    ],
+    "rows": [
+     {
+      "label": "Bundesregierung · Vertrauen",
+      "items": [
+       0,
+       1
+      ]
+     },
+     {
+      "label": "Bundesregierung · überhaupt kein Vertrauen",
+      "items": [
+       2,
+       3
+      ],
+      "tone": "distrust"
+     },
+     {
+      "label": "Politikerinnen und Politiker · Vertrauen",
+      "items": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Politikerinnen und Politiker · überhaupt kein Vertrauen",
+      "items": [
+       6,
+       7
+      ],
+      "tone": "distrust"
+     }
+    ],
+    "axis_note": "Blau: Vertrauen. Orange: überhaupt kein Vertrauen. Dunklere Felder zeigen höhere Anteile; die Spalten vergleichen Erhebungswellen. Keine vollständige Antwortverteilung."
+   }
+  },
+  {
+   "block": "svr2026_politisches_vertrauen",
+   "title": "Politisches Vertrauen nach Migrationshintergrund · SVR",
+   "note": "Gezeigt ist Vertrauen in Bundesregierung und Bundestag: Summe aus „voll und ganz“ und „eher“ aus gerundeten veröffentlichten Werten. Drei wiederholte Bevölkerungsbefragungen, kein Personenpanel. Migrationshintergrund bezeichnet eine andere Gruppierung als muslimische Selbstidentifikation. Keine BW-Auswertung und keine Messung des Einflusses der deutschen Israelpolitik.",
+   "scope": "Deutschland",
+   "items": [
+    {
+     "label": "Bundesregierung · Ohne Migrationshintergrund · 2020",
+     "detail": null,
+     "value": 64.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2020",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2019 bis Anfang August 2020",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2020",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15095,
+      "description": "Gesamte Erhebungswelle 2020",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/presse/ib2020/",
+      "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+     }
+    },
+    {
+     "label": "Bundesregierung · Ohne Migrationshintergrund · 2022",
+     "detail": null,
+     "value": 65.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2022",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2021 bis Anfang Juli 2022",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2022",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15005,
+      "description": "Gesamte Erhebungswelle 2022",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundesregierung · Ohne Migrationshintergrund · 2024",
+     "detail": null,
+     "value": 44.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2024",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2023 bis Anfang Juli 2024",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2024",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15020,
+      "description": "Gesamte Erhebungswelle 2024",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundesregierung · Mit Migrationshintergrund · 2020",
+     "detail": null,
+     "value": 79.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2020",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2019 bis Anfang August 2020",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2020",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15095,
+      "description": "Gesamte Erhebungswelle 2020",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/presse/ib2020/",
+      "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+     }
+    },
+    {
+     "label": "Bundesregierung · Mit Migrationshintergrund · 2022",
+     "detail": null,
+     "value": 72.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2022",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2021 bis Anfang Juli 2022",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2022",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15005,
+      "description": "Gesamte Erhebungswelle 2022",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundesregierung · Mit Migrationshintergrund · 2024",
+     "detail": null,
+     "value": 60.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2024",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2023 bis Anfang Juli 2024",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2024",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15020,
+      "description": "Gesamte Erhebungswelle 2024",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundestag · Ohne Migrationshintergrund · 2020",
+     "detail": null,
+     "value": 66.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2020",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2019 bis Anfang August 2020",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2020",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15095,
+      "description": "Gesamte Erhebungswelle 2020",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/presse/ib2020/",
+      "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+     }
+    },
+    {
+     "label": "Bundestag · Ohne Migrationshintergrund · 2022",
+     "detail": null,
+     "value": 66.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2022",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2021 bis Anfang Juli 2022",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2022",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15005,
+      "description": "Gesamte Erhebungswelle 2022",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundestag · Ohne Migrationshintergrund · 2024",
+     "detail": null,
+     "value": 53.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2024",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2023 bis Anfang Juli 2024",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2024",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15020,
+      "description": "Gesamte Erhebungswelle 2024",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundestag · Mit Migrationshintergrund · 2020",
+     "detail": null,
+     "value": 78.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2020",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2019 bis Anfang August 2020",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2020",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15095,
+      "description": "Gesamte Erhebungswelle 2020",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/presse/ib2020/",
+      "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+     }
+    },
+    {
+     "label": "Bundestag · Mit Migrationshintergrund · 2022",
+     "detail": null,
+     "value": 70.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2022",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2021 bis Anfang Juli 2022",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2022",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15005,
+      "description": "Gesamte Erhebungswelle 2022",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    },
+    {
+     "label": "Bundestag · Mit Migrationshintergrund · 2024",
+     "detail": null,
+     "value": 61.0,
+     "unit": "percent",
+     "study": "SVR-Integrationsbarometer 2024",
+     "population": "Wohnbevölkerung Deutschlands ab 15 Jahren in Privathaushalten; jeweilige Gruppe",
+     "base_n": null,
+     "sample_source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "field_period": "Ende November 2023 bis Anfang Juli 2024",
+     "question_ref": null,
+     "source_title": "SVR-Integrationsbarometer 2024",
+     "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+     "source_locator": "Abbildung 2, S. 9; Methodik: Info-Box 1, S. 10",
+     "source_rights": {
+      "license": null,
+      "license_status": "no_open_license_identified",
+      "relicensed_by_atlas": false,
+      "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+      "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+      "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+     },
+     "study_sample": {
+      "n": 15020,
+      "description": "Gesamte Erhebungswelle 2024",
+      "weighted": false,
+      "approximate": false,
+      "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+      "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+     }
+    }
+   ],
+   "question": {
+    "texts": [
+     "Sagen Sie mir bitte, wie sehr Sie persönlich den folgenden Institutionen in Deutschland vertrauen."
+    ],
+    "response_scale": "Vertraue voll und ganz · Vertraue eher · Vertraue eher nicht · Vertraue gar nicht",
+    "shown": "Ausgewählte Institutionen: Bundesregierung und Bundestag. Gezeigt: die beiden vertrauenden Antwortstufen zusammen.",
+    "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+    "source_locator": "Fragewortlaut und Skala: Abbildung 2, S. 9",
+    "position": "after",
+    "collapsed": true
+   },
+   "chart": {
+    "kind": "collection",
+    "title": "Politisches Vertrauen: Migration und Religion",
+    "main_chart": {
+     "kind": "matrix",
+     "title": "Politisches Vertrauen nach Migrationshintergrund · SVR",
+     "columns": [
+      "2020",
+      "2022",
+      "2024"
+     ],
+     "rows": [
+      {
+       "label": "Bundesregierung · Ohne Migrationshintergrund",
+       "items": [
+        0,
+        1,
+        2
+       ]
+      },
+      {
+       "label": "Bundesregierung · Mit Migrationshintergrund",
+       "items": [
+        3,
+        4,
+        5
+       ]
+      },
+      {
+       "label": "Bundestag · Ohne Migrationshintergrund",
+       "items": [
+        6,
+        7,
+        8
+       ]
+      },
+      {
+       "label": "Bundestag · Mit Migrationshintergrund",
+       "items": [
+        9,
+        10,
+        11
+       ]
+      }
+     ],
+     "axis_note": "Dunklere Felder zeigen höhere Anteile. Die Spalten vergleichen Erhebungswellen; alle Werte in Prozent."
+    },
+    "related": [
+     "nadira2025_politisches_vertrauen"
+    ],
+    "panels": [
+     "svr2026_politisches_vertrauen",
+     "nadira2025_politisches_vertrauen"
+    ],
+    "metadata": "Deutschland · SVR-Integrationsbarometer 2020, 2022 und 2024 · Wohnbevölkerung ab 15 Jahren · Stichproben und Erhebungszeiten siehe Belegtabelle"
+   }
+  },
+  {
    "block": "rm2023_pandemie_religion",
    "title": "Religion als hilfreich für die Pandemiebewältigung nach Religionszugehörigkeit",
    "note": "Religionsmonitor 2023, erhoben im Juni und Juli 2022. Deutschland: 4.363 vollständige Interviews aus Melderegisterstichprobe und Online-Panel, einschließlich gewichteter muslimischer Aufstockung. Die Pandemiefragen sind rückblickende Selbstauskünfte oder Bewertungen; sie messen keine beobachtete Wirksamkeit. Die Abbildungen werten gültige Antworten aus, nennen aber keine Fallzahl je Frage. Die Gesamtfallzahl bezeichnet die Studienstichprobe. Gezeigt ist die Summe der gerundeten Anteile eher hilfreich und sehr hilfreich; die beiden Anteile stehen daneben. Kleine Gruppen sind besonders unsicher. Tabelle 1 auf S. 22 nennt Religionsgruppen-Fallzahlen, die zusammen 4.338 statt der dort ausgewiesenen Gesamtzahl 4.363 ergeben. Außerdem sind dies keine Fallzahlen gültiger Antworten auf diese Frage; deshalb bleiben die Untergruppen-Nenner hier offen.",
@@ -12676,7 +13567,7 @@
    },
    "chart": {
     "kind": "collection",
-    "title": "Religiöse Bekanntenkreise und Vertrauen über Gruppengrenzen · FGZ",
+    "title": "Kontakte, Bekanntenkreise und Vertrauen über Gruppengrenzen",
     "main_chart": {
      "kind": "distribution",
      "rows": [
@@ -12751,11 +13642,15 @@
      ]
     },
     "related": [
-     "fgz2025_trust_region"
+     "fgz2025_trust_region",
+     "rm2015_freizeit_nichtmuslime",
+     "rm2017_europa_kontakte"
     ],
     "panels": [
      "fgz2023_network_religion",
-     "fgz2025_trust_region"
+     "fgz2025_trust_region",
+     "rm2015_freizeit_nichtmuslime",
+     "rm2017_europa_kontakte"
     ]
    }
   },

@@ -192,14 +192,26 @@
   "kind": "time"
  },
  "las_fremdheit_ost": {
-  "kind": "time",
+  "kind": "collection",
+  "title": "Islamwahrnehmung und Zuwanderungsverbot · LAS-Zeitreihen",
+  "main_chart": {
+   "kind": "time",
+   "related": [
+    "las_fremdheit_west"
+   ],
+   "title": "LAS: Fremdheitsgefühl durch Muslime · Ost und West 2014–2024",
+   "series": [
+    "Ostdeutschland",
+    "Westdeutschland"
+   ]
+  },
   "related": [
-   "las_fremdheit_west"
+   "las_fremdheit_west",
+   "las_zuwanderung_ost"
   ],
-  "title": "LAS: Fremdheitsgefühl durch Muslime · Ost und West 2014–2024",
-  "series": [
-   "Ostdeutschland",
-   "Westdeutschland"
+  "panels": [
+   "las_fremdheit_ost",
+   "las_zuwanderung_ost"
   ]
  },
  "las_fremdheit_west": {
@@ -752,33 +764,46 @@
   }
  },
  "bosch2025_index_bw": {
-  "kind": "paired",
-  "series": [
-   "2019",
-   "2025"
+  "kind": "collection",
+  "title": "Vielfaltsbarometer: Akzeptanz, Nachbarschaft und Familie",
+  "main_chart": {
+   "kind": "paired",
+   "series": [
+    "2019",
+    "2025"
+   ],
+   "rows": [
+    {
+     "label": "Vielfalt insgesamt",
+     "items": [
+      0,
+      1
+     ]
+    },
+    {
+     "label": "Ethnische Herkunft",
+     "items": [
+      2,
+      3
+     ]
+    },
+    {
+     "label": "Religion",
+     "items": [
+      4,
+      5
+     ]
+    }
+   ]
+  },
+  "related": [
+   "bosch2025_index_de",
+   "bosch2025_religion"
   ],
-  "rows": [
-   {
-    "label": "Vielfalt insgesamt",
-    "items": [
-     0,
-     1
-    ]
-   },
-   {
-    "label": "Ethnische Herkunft",
-    "items": [
-     2,
-     3
-    ]
-   },
-   {
-    "label": "Religion",
-    "items": [
-     4,
-     5
-    ]
-   }
+  "panels": [
+   "bosch2025_index_bw",
+   "bosch2025_index_de",
+   "bosch2025_religion"
   ]
  },
  "bosch2025_index_de": {
@@ -1863,76 +1888,87 @@
   "title": "Zustimmung zu allen drei Aussagen zugleich · SCIICS 2008"
  },
  "rias2026_muslim_antisemitismus": {
-  "kind": "distribution",
-  "rows": [
-   {
-    "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
-    "segments": [
-     {
-      "label": "Schwache Zustimmung · Stufe 4",
-      "value": 15.8
-     },
-     {
-      "label": "Starke Zustimmung · Stufen 5–6",
-      "value": 29.6
-     }
-    ]
-   },
-   {
-    "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
-    "segments": [
-     {
-      "label": "Schwache Zustimmung · Stufe 4",
-      "value": 11.9
-     },
-     {
-      "label": "Starke Zustimmung · Stufen 5–6",
-      "value": 34.8
-     }
-    ]
-   },
-   {
-    "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
-    "segments": [
-     {
-      "label": "Schwache Zustimmung · Stufe 4",
-      "value": 7.1
-     },
-     {
-      "label": "Starke Zustimmung · Stufen 5–6",
-      "value": 23
-     }
-    ]
-   },
-   {
-    "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
-    "segments": [
-     {
-      "label": "Schwache Zustimmung · Stufe 4",
-      "value": 7.7
-     },
-     {
-      "label": "Starke Zustimmung · Stufen 5–6",
-      "value": 18.7
-     }
-    ]
-   }
+  "kind": "collection",
+  "title": "Antisemitische Einstellungen und Institutionenvertrauen",
+  "main_chart": {
+   "kind": "distribution",
+   "rows": [
+    {
+     "label": "Tradierter Antisemitismus · vor dem 7. Oktober 2023",
+     "segments": [
+      {
+       "label": "Schwache Zustimmung · Stufe 4",
+       "value": 15.8
+      },
+      {
+       "label": "Starke Zustimmung · Stufen 5–6",
+       "value": 29.6
+      }
+     ]
+    },
+    {
+     "label": "Tradierter Antisemitismus · nach dem 7. Oktober 2023",
+     "segments": [
+      {
+       "label": "Schwache Zustimmung · Stufe 4",
+       "value": 11.9
+      },
+      {
+       "label": "Starke Zustimmung · Stufen 5–6",
+       "value": 34.8
+      }
+     ]
+    },
+    {
+     "label": "Israelbezogener Antisemitismus · vor dem 7. Oktober 2023",
+     "segments": [
+      {
+       "label": "Schwache Zustimmung · Stufe 4",
+       "value": 7.1
+      },
+      {
+       "label": "Starke Zustimmung · Stufen 5–6",
+       "value": 23
+      }
+     ]
+    },
+    {
+     "label": "Israelbezogener Antisemitismus · nach dem 7. Oktober 2023",
+     "segments": [
+      {
+       "label": "Schwache Zustimmung · Stufe 4",
+       "value": 7.7
+      },
+      {
+       "label": "Starke Zustimmung · Stufen 5–6",
+       "value": 18.7
+      }
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "label": "Tradierter Antisemitismus",
+     "items": [
+      0,
+      1
+     ]
+    },
+    {
+     "label": "Israelbezogener Antisemitismus",
+     "items": [
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  "related": [
+   "demmrich2025_institutionenvertrauen"
   ],
-  "groups": [
-   {
-    "label": "Tradierter Antisemitismus",
-    "items": [
-     0,
-     1
-    ]
-   },
-   {
-    "label": "Israelbezogener Antisemitismus",
-    "items": [
-     2,
-     3
-    ]
-   }
+  "panels": [
+   "rias2026_muslim_antisemitismus",
+   "demmrich2025_institutionenvertrauen"
   ]
  },
  "rias2026_theologie_antisemitismus": {
@@ -2114,7 +2150,7 @@
  },
  "fgz2023_network_religion": {
   "kind": "collection",
-  "title": "Religiöse Bekanntenkreise und Vertrauen über Gruppengrenzen · FGZ",
+  "title": "Kontakte, Bekanntenkreise und Vertrauen über Gruppengrenzen",
   "main_chart": {
    "kind": "distribution",
    "rows": [
@@ -2189,11 +2225,15 @@
    ]
   },
   "related": [
-   "fgz2025_trust_region"
+   "fgz2025_trust_region",
+   "rm2015_freizeit_nichtmuslime",
+   "rm2017_europa_kontakte"
   ],
   "panels": [
    "fgz2023_network_religion",
-   "fgz2025_trust_region"
+   "fgz2025_trust_region",
+   "rm2015_freizeit_nichtmuslime",
+   "rm2017_europa_kontakte"
   ]
  },
  "rm2026_dimensions": {
@@ -2304,5 +2344,122 @@
    "fgz2025_trust_migration"
   ],
   "axis_note": "Modellkoeffizienten in Standardabweichungen des Vertrauensmaßes. Positive Werte stehen für höheres, negative für geringeres Vertrauen gegenüber der jeweiligen Vergleichsgruppe. Der Zusammenhang zwischen Migrationshintergrund und Vertrauen in Menschen anderer Religion ist nicht statistisch signifikant."
+ },
+ "svr2026_politisches_vertrauen": {
+  "kind": "collection",
+  "title": "Politisches Vertrauen: Migration und Religion",
+  "main_chart": {
+   "kind": "matrix",
+   "title": "Politisches Vertrauen nach Migrationshintergrund · SVR",
+   "columns": [
+    "2020",
+    "2022",
+    "2024"
+   ],
+   "rows": [
+    {
+     "label": "Bundesregierung · Ohne Migrationshintergrund",
+     "items": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "label": "Bundesregierung · Mit Migrationshintergrund",
+     "items": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "Bundestag · Ohne Migrationshintergrund",
+     "items": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "label": "Bundestag · Mit Migrationshintergrund",
+     "items": [
+      9,
+      10,
+      11
+     ]
+    }
+   ],
+   "axis_note": "Dunklere Felder zeigen höhere Anteile. Die Spalten vergleichen Erhebungswellen; alle Werte in Prozent."
+  },
+  "related": [
+   "nadira2025_politisches_vertrauen"
+  ],
+  "panels": [
+   "svr2026_politisches_vertrauen",
+   "nadira2025_politisches_vertrauen"
+  ],
+  "metadata": "Deutschland · SVR-Integrationsbarometer 2020, 2022 und 2024 · Wohnbevölkerung ab 15 Jahren · Stichproben und Erhebungszeiten siehe Belegtabelle"
+ },
+ "nadira2025_politisches_vertrauen": {
+  "kind": "matrix",
+  "columns": [
+   "2022",
+   "2024"
+  ],
+  "rows": [
+   {
+    "label": "Bundesregierung · Vertrauen",
+    "items": [
+     0,
+     1
+    ]
+   },
+   {
+    "label": "Bundesregierung · überhaupt kein Vertrauen",
+    "items": [
+     2,
+     3
+    ],
+    "tone": "distrust"
+   },
+   {
+    "label": "Politikerinnen und Politiker · Vertrauen",
+    "items": [
+     4,
+     5
+    ]
+   },
+   {
+    "label": "Politikerinnen und Politiker · überhaupt kein Vertrauen",
+    "items": [
+     6,
+     7
+    ],
+    "tone": "distrust"
+   }
+  ],
+  "axis_note": "Blau: Vertrauen. Orange: überhaupt kein Vertrauen. Dunklere Felder zeigen höhere Anteile; die Spalten vergleichen Erhebungswellen. Keine vollständige Antwortverteilung."
+ },
+ "demmrich2025_institutionenvertrauen": {
+  "kind": "matrix",
+  "columns": [
+   "Vor dem 7. Oktober 2023",
+   "Nach dem 7. Oktober 2023"
+  ],
+  "rows": [
+   {
+    "label": "Mittleres Vertrauen · Skala 0–10",
+    "items": [
+     0,
+     1
+    ]
+   }
+  ],
+  "domain": [
+   0,
+   10
+  ],
+  "axis_note": "Mittelwerte auf derselben Skala von 0 bis 10, keine Prozentwerte. Der Unterschied ist nicht signifikant (p = 0,56)."
  }
 }

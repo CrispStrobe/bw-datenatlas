@@ -562,7 +562,8 @@ with sync_playwright() as pw:
     page.locator('#map-features .inst-point').first.dispatch_event('click')
     check('clicking an institution opens its record',page.locator('#detail-kind').inner_text().strip().lower()=='einrichtung')
     check('the record links to its public source',page.locator('#detail-content .inst-links a').count()>=1)
-    check('the record refuses a population reading','keine Personenzahl' in page.locator('#detail-content').inner_text())
+    check('the record describes municipality-level precision','und bezeichnet kein Gebäude' in page.locator('#detail-content').inner_text())
+    check('the record omits removed explanatory filler','Eine Einrichtung ist keine Personenzahl' not in page.locator('#detail-content').inner_text() and 'wer eine sucht' not in page.locator('#detail-content').inner_text())
     check('every institution carries a source link',page.evaluate('Atlas.getState&&window.ATLAS_INSTITUTIONS.institutions.every(i=>!!i.source_url)'))
     check('no personal data reaches the browser',page.evaluate('''()=>{
         const s=JSON.stringify((window.ATLAS_INSTITUTIONS||{}).institutions||[]);

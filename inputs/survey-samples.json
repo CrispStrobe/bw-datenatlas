@@ -3926,6 +3926,268 @@
      "source_locator": "Tabelle A2.1, S. 7; Ankerpersonen und weitere Haushaltsmitglieder"
     }
    }
+  ],
+  "svr2026_politisches_vertrauen": [
+   {
+    "field": "study_sample",
+    "label": "Bundesregierung · Ohne Migrationshintergrund · 2020",
+    "sample": {
+     "n": 15095,
+     "description": "Gesamte Erhebungswelle 2020",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/presse/ib2020/",
+     "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundesregierung · Ohne Migrationshintergrund · 2022",
+    "sample": {
+     "n": 15005,
+     "description": "Gesamte Erhebungswelle 2022",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundesregierung · Ohne Migrationshintergrund · 2024",
+    "sample": {
+     "n": 15020,
+     "description": "Gesamte Erhebungswelle 2024",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundesregierung · Mit Migrationshintergrund · 2020",
+    "sample": {
+     "n": 15095,
+     "description": "Gesamte Erhebungswelle 2020",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/presse/ib2020/",
+     "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundesregierung · Mit Migrationshintergrund · 2022",
+    "sample": {
+     "n": 15005,
+     "description": "Gesamte Erhebungswelle 2022",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundesregierung · Mit Migrationshintergrund · 2024",
+    "sample": {
+     "n": 15020,
+     "description": "Gesamte Erhebungswelle 2024",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundestag · Ohne Migrationshintergrund · 2020",
+    "sample": {
+     "n": 15095,
+     "description": "Gesamte Erhebungswelle 2020",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/presse/ib2020/",
+     "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundestag · Ohne Migrationshintergrund · 2022",
+    "sample": {
+     "n": 15005,
+     "description": "Gesamte Erhebungswelle 2022",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundestag · Ohne Migrationshintergrund · 2024",
+    "sample": {
+     "n": 15020,
+     "description": "Gesamte Erhebungswelle 2024",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundestag · Mit Migrationshintergrund · 2020",
+    "sample": {
+     "n": 15095,
+     "description": "Gesamte Erhebungswelle 2020",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/presse/ib2020/",
+     "source_locator": "Erhebungsbeschreibung: 15.095 Interviews, November 2019 bis August 2020"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundestag · Mit Migrationshintergrund · 2022",
+    "sample": {
+     "n": 15005,
+     "description": "Gesamte Erhebungswelle 2022",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2022/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Bundestag · Mit Migrationshintergrund · 2024",
+    "sample": {
+     "n": 15020,
+     "description": "Gesamte Erhebungswelle 2024",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://www.svr-migration.de/publikationen/barometer/integrationsbarometer-2024/",
+     "source_locator": "Erhebungsbeschreibung des Integrationsbarometers"
+    }
+   }
+  ],
+  "nadira2025_politisches_vertrauen": [
+   {
+    "field": "module_sample",
+    "label": "Bundesregierung · Vertrauen · 2022",
+    "sample": {
+     "n": 18094,
+     "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Bundesregierung · Vertrauen · 2024",
+    "sample": {
+     "n": 8480,
+     "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Bundesregierung · überhaupt kein Vertrauen · 2022",
+    "sample": {
+     "n": 18094,
+     "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Bundesregierung · überhaupt kein Vertrauen · 2024",
+    "sample": {
+     "n": 8480,
+     "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 1, S. 5"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Politikerinnen und Politiker · Vertrauen · 2022",
+    "sample": {
+     "n": 18030,
+     "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 2, S. 6"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Politikerinnen und Politiker · Vertrauen · 2024",
+    "sample": {
+     "n": 8496,
+     "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 2, S. 6"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Politikerinnen und Politiker · überhaupt kein Vertrauen · 2022",
+    "sample": {
+     "n": 18030,
+     "description": "Analyseumfang aller Gruppen · 2022; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 2, S. 6"
+    }
+   },
+   {
+    "field": "module_sample",
+    "label": "Politikerinnen und Politiker · überhaupt kein Vertrauen · 2024",
+    "sample": {
+     "n": 8496,
+     "description": "Analyseumfang aller Gruppen · 2024; nicht muslimische Teilgruppe",
+     "weighted": true,
+     "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+     "source_locator": "Abbildung 2, S. 6"
+    }
+   }
+  ],
+  "demmrich2025_institutionenvertrauen": [
+   {
+    "field": "study_sample",
+    "label": "Vor dem 7. Oktober 2023",
+    "sample": {
+     "n": 1887,
+     "description": "Gesamte Studie; nicht gültige Antworten auf den Vertrauensindex",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+     "source_locator": "Abschnitt 4.1"
+    }
+   },
+   {
+    "field": "study_sample",
+    "label": "Nach dem 7. Oktober 2023",
+    "sample": {
+     "n": 1887,
+     "description": "Gesamte Studie; nicht gültige Antworten auf den Vertrauensindex",
+     "weighted": false,
+     "approximate": false,
+     "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+     "source_locator": "Abschnitt 4.1"
+    }
+   }
   ]
  }
 }

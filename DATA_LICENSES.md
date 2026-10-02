@@ -364,3 +364,11 @@ gilt für unseren Code und eigene Erläuterungen, nicht pauschal für diese Quel
 Das gilt auch für die strukturierten Antwortstufen in den JSON-Downloads.
 EVS-Zugehörigkeitskriterien stammen ausschließlich aus öffentlichen Tabellen
 (Q53, v189–193); es wurden dafür keine Mikrodaten verarbeitet.
+
+## Politisches Vertrauen: ergänzte Quellen
+
+- **SVR, Fabian Gülzau (2026), Policy Brief 2026-2:** © SVR gGmbH; keine offene Quellenlizenz festgestellt. Zwölf ausgewählte veröffentlichte Vertrauensanteile, eigene Darstellung. Keine Übernahme von Originalgrafiken, vollständigen Tabellen oder Mikrodaten.
+- **DeZIM (2025), Demokratie unter Druck:** Impressum: alle Rechte vorbehalten. Acht ausgewählte veröffentlichte Zahlen, eigene Darstellung. Keine offene Lizenz für den Bericht behauptet.
+- **Demmrich / Pollack / Müller / Rosta (2025):** [Artikel](https://doi.org/10.1007/s41682-025-00233-7) unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Namensnennung, DOI, Lizenzlink und Änderungen (Zahlenauswahl, eigene Darstellung, Übersetzung) stehen in `source_rights` der beiden ergänzten Mittelwerte.
+
+Die Auswahl einzelner veröffentlichter statistischer Tatsachen bedeutet keine Lizenzierung der geschützten Berichte oder ihrer Zusammenstellungen. Der JSON-Export behält deshalb seine getrennten Quellenrechte und erhält keine pauschale offene Lizenz. Die spezifischen Rechteangaben werden aus `inputs/survey-source-rights.json` übernommen.

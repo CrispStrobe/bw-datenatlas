@@ -43,7 +43,7 @@ jobs:
       - name: Daten und Rechenexperiment prüfen
         run: |
           python -m unittest discover -s tests -p test_data.py -v
-          node --test tests/model.test.cjs
+          node --test tests/model.test.cjs tests/survey_renderer.test.cjs
           node --check docs/assets/app.js
       - name: Werkzeuge für Berichte und Geodaten installieren
         run: |

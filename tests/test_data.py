@@ -456,7 +456,7 @@ class DataTests(unittest.TestCase):
         aus_kmu = [b for b in umfragen['blocks']
                    if any('KMU 6' in i['study'] for i in b['items'])]
         self.assertTrue(aus_kmu, 'KMU 6 wird nirgends verwendet')
-        self.assertIn('nicht eine Quelle', kmu[0]['warum_nicht'])
+        self.assertIn('nur für den Vergleich mit Muslimen', kmu[0]['quelle'])
 
     def test_bosch_and_evs_keep_methods_and_question_wording_separate(self):
         d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
@@ -801,5 +801,29 @@ class DataTests(unittest.TestCase):
         self.assertIsNone(panel['base_n'])
         bw = blocks['bosch2025_index_bw']['items']
         self.assertEqual([i['subgroup_sample']['n'] for i in bw], [309, 518]*3)
+
+    def test_political_trust_keeps_scales_samples_and_source_rights_separate(self):
+        d = json.loads((ROOT/'docs/data/survey-items.json').read_text())
+        blocks = {b['block']: b for b in d['blocks']}
+        svr = blocks['svr2026_politisches_vertrauen']
+        self.assertEqual([i['value'] for i in svr['items']],
+                         [64, 65, 44, 79, 72, 60, 66, 66, 53, 78, 70, 61])
+        self.assertEqual([i['study_sample']['n'] for i in svr['items']],
+                         [15095, 15005, 15020]*4)
+        nadira = blocks['nadira2025_politisches_vertrauen']
+        self.assertEqual([i['value'] for i in nadira['items']], [41, 28, 12, 22, 20, 14, 23, 34])
+        self.assertTrue(all(i['base_n'] is None and 'subgroup_sample' not in i
+                            for i in nadira['items']))
+        self.assertFalse(nadira['question']['verbatim'])
+        means = blocks['demmrich2025_institutionenvertrauen']
+        self.assertEqual([i['value'] for i in means['items']], [5.76, 5.69])
+        self.assertTrue(all(i['unit'] == 'mean' for i in means['items']))
+        self.assertEqual(means['chart']['domain'], [0, 10])
+        self.assertIn('nicht signifikant', means['note'])
+        manifest = json.loads((ROOT/'inputs/survey-source-rights.json').read_text())
+        for key, rights in manifest.items():
+            for item in blocks[key]['items']:
+                self.assertEqual(item['source_rights'], rights)
+        self.assertEqual(sum(len(t['blocks']) for t in d['topics']), 36)
 
 if __name__=='__main__': unittest.main(verbosity=2)

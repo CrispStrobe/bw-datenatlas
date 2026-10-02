@@ -14,8 +14,6 @@
       "bw_religioese_vielfalt",
       "bw_kopftuch_2012",
       "bosch2025_index_bw",
-      "bosch2025_index_de",
-      "bosch2025_religion",
       "evs2017_nachbarn",
       "rm2017_nachbarn_europa"
     ]
@@ -45,7 +43,6 @@
       "rm2023_zuschreibungen",
       "rm2023_bedrohung",
       "las_fremdheit_ost",
-      "las_zuwanderung_ost",
       "ekd2020_muslim_rights",
       "fes2025_migration"
     ]
@@ -68,9 +65,13 @@
   {
     "title": "Kontakte und Freundeskreise",
     "blocks": [
-      "fgz2023_network_religion",
-      "rm2015_freizeit_nichtmuslime",
-      "rm2017_europa_kontakte"
+      "fgz2023_network_religion"
+    ]
+  },
+  {
+    "title": "Politisches Vertrauen",
+    "blocks": [
+      "svr2026_politisches_vertrauen"
     ]
   },
   {

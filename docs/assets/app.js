@@ -127,7 +127,7 @@ const layers={
  foreign_share:{title:'Ausländische Staatsangehörige · Kreisanteil',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[10,15,20,25,30],unit:'percent',note:'Anteil der Bevölkerung ohne deutsche Staatsangehörigkeit. Selbst berechnet aus gleichzeitigen amtlichen Beständen. Keine Aussage über Religion, Geburtsland oder Herkunft der Eltern.'},
  district_population:{title:'Bevölkerung insgesamt · Kreise',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.11.2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[150000,250000,350000,500000,750000],unit:'persons',note:'Absolute Einwohnerzahl, keine Bevölkerungsdichte. Bevölkerung der Gemeinden wird mit einem anderen Stichtag ausgewiesen.'},
  municipality_population:{title:'Bevölkerung insgesamt · Gemeinden',badge:'Amtliche Bevölkerungsdaten',date:'Stichtag 30.06.2024 · 1.101 statistische Gemeinden',source:'stala_gemeinden_2024_06',thresholds:[2000,5000,10000,20000,50000],unit:'persons',note:'Einwohnerzahl zum 30.06.2024. Grau schraffiert: kein zugeordneter statistischer Wert. Amtliche Gemeindeschlüssel werden beim Geodatenaufbau über Namen innerhalb desselben Kreises zugeordnet; unklare Treffer bleiben offen.'},
- institutions:{title:'Islamische und alevitische Einrichtungen',badge:'Selbstveröffentlicht',date:'Ortsebene · eigene Verzeichnisse der Verbände, Kommunen, Drucksachen und OpenStreetMap · Stand 2026',source:'bamf_fb55',unit:'points',note:'Punkte sind Einrichtungen, keine Bevölkerungszahlen. Jeder Punkt liegt in der Ortsmitte seiner Gemeinde und bezeichnet kein Gebäude: Dieser Atlas führt keine Anschriftenliste zusammen. Belegt ist der Ort, und jeder Eintrag verlinkt die Quelle, auf der die Anschrift steht: die eigene Seite der Einrichtung, das Verzeichnis ihres Verbands, ein Vereinsverzeichnis der Stadt, eine Landtagsdrucksache oder OpenStreetMap. Gebetsstätten ohne Verband stammen überwiegend aus OpenStreetMap (© OpenStreetMap-Mitwirkende, ODbL), das hier auch als zweiter, unabhängiger Beleg dient. Aufgenommen ist, was öffentlich bekannt und öffentlich belegt ist. Eine Verbandszugehörigkeit wird nur genannt, wenn eine Quelle sie selbst behauptet, und dann mit Urheber und Datum; sonst steht die Einrichtung ohne Verband. Keine personenbezogenen Angaben. Aus Einrichtungen lässt sich keine Zahl von Gläubigen ableiten.'},
+ institutions:{title:'Islamische und alevitische Einrichtungen',badge:'Selbstveröffentlicht',date:'Ortsebene · eigene Verzeichnisse der Verbände, Kommunen, Drucksachen und OpenStreetMap · Stand 2026',source:'bamf_fb55',unit:'points',note:'Punkte sind Einrichtungen, keine Bevölkerungszahlen. Jeder Punkt liegt in der Ortsmitte seiner Gemeinde und bezeichnet kein Gebäude: Dieser Atlas führt keine Anschriftenliste zusammen. Belegt ist der Ort, und jeder Eintrag verlinkt die Quelle, auf der die Anschrift steht: die eigene Seite der Einrichtung, das Verzeichnis ihres Verbands, ein Vereinsverzeichnis der Stadt, eine Landtagsdrucksache oder OpenStreetMap. OpenStreetMap wird als Quelle und ergänzender Beleg genutzt (© OpenStreetMap-Mitwirkende, ODbL). Aufgenommen ist, was öffentlich bekannt und öffentlich belegt ist. Eine Verbandszugehörigkeit wird nur genannt, wenn eine Quelle sie selbst behauptet, und dann mit Urheber und Datum; sonst steht die Einrichtung ohne Verband. Keine personenbezogenen Angaben. Aus Einrichtungen lässt sich keine Zahl von Gläubigen ableiten.'},
  muni_under25:{title:'Unter 25-Jährige · Gemeinden',badge:'Vollerhebung',date:'Zensus 2022 · Stichtag 15.05.2022 · 1.101 Gemeinden',source:'bamf_fb55',thresholds:[21,23,25,27,29],unit:'percent',note:'Anteil der unter 25-Jährigen an der Bevölkerung, aus dem Zensus 2022. Anders als die Kreisebene aus dem Mikrozensus ist dies eine Vollerhebung und für alle Gemeinden vorhanden. Keine Angabe zur Religionszugehörigkeit und keine Größe der Modellrechnung.'},
  mh_change:{title:'Veränderung des Migrationshintergrunds · 2021 bis 2025',badge:'Amtliche Erhebung',date:'Mikrozensus 2021 bis 2025 · 44 Kreise',source:'stala_pm_2025',thresholds:[0,2,4,6,8],unit:'points',note:'Veränderung des Anteils der Bevölkerung mit Migrationshintergrund in Prozentpunkten über den gesamten Zeitraum. Stichprobenerhebung: einzelne Jahre schwanken stärker als die Entwicklung. Die Modellrechnung zur muslimischen Bevölkerung wird nicht in die Vergangenheit fortgeschrieben.'},
  second_generation:{title:'Zweite Generation mit deutschem Pass',badge:'Amtliche Erhebung',date:'Mikrozensus 2024 · 44 Kreise',source:'stala_pm_2025',thresholds:[27,29,31,33,35],unit:'percent',note:'Anteil der hier geborenen Menschen mit deutschem Pass an der Bevölkerung mit Migrationshintergrund. Genau diese Menschen fehlen in der Ausländerstatistik – deshalb braucht die Modellrechnung eine Korrektur um Eingebürgerte und Nachkommen. Keine Angabe zur Religionszugehörigkeit.'},
@@ -434,8 +434,7 @@ function renderDetail(){
    // niemand die Ortsmitte für das Gebäude hält.
    html+=metric('Genauigkeit dieses Punktes','Ort, nicht Anschrift',
      'Der Punkt liegt in der Ortsmitte von '+esc(i.municipality||i.city)
-     +' und bezeichnet kein Gebäude. Anschriften führt dieser Atlas nicht zusammen; '
-     +'wer eine sucht, folgt dem Beleg zur Quelle.'
+     +' und bezeichnet kein Gebäude.'
      +(i.why_no_address?' '+esc(i.why_no_address):''));
    const links=[];
    if(i.website)links.push([siteName(i.website),i.website]);
@@ -479,7 +478,6 @@ function renderDetail(){
       +' <a href="'+esc(i.state_characterisation_url)+'" target="_blank" rel="noopener">Drucksache 16/1462 ↗</a>'
       +' <strong>Der Stand ist 2017.</strong> Ob die Aussage heute noch gilt, sagt die Quelle nicht.');
    }
-   html+=metric('Was dieser Punkt nicht sagt','Keine Bevölkerungszahl','Eine Einrichtung ist keine Personenzahl. Aus der Zahl der Moscheen lässt sich weder die Zahl der Gläubigen noch ihr Anteil ableiten; diese Punkte gehen in keine Modellrechnung ein.');
    $('detail-content').innerHTML=html;
    return;
   }
@@ -1739,8 +1737,7 @@ function renderCheckedSources(){
  const host=$('checked-list');if(!host)return;
  if(!GEPRUEFT||!GEPRUEFT.entries){const k=$('checked-heading');
   if(k)k.hidden=true;host.hidden=true;return;}
- $('checked-intro').textContent=t(GEPRUEFT.what_this_is)+' '+t(GEPRUEFT.why)+' '
-  +t(GEPRUEFT.dated_on_purpose);
+ $('checked-intro').textContent=t(GEPRUEFT.what_this_is);
  host.innerHTML=GEPRUEFT.entries.map(e=>'<article class="source-item">'
   +(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noreferrer">'
      +esc(e.quelle)+' ↗</a>':'<strong>'+esc(e.quelle)+'</strong>')
@@ -1990,6 +1987,9 @@ function surveySources(b,D,seen=new Set()){
  seen.add(b.block);
  return [b,...(b.chart?.related||[]).flatMap(id=>surveySources(D.blocks.find(other=>other.block===id),D,seen))];
 }
+function surveyCollectionMetadata(b,D){
+ return [...new Set(surveySources(b,D).map(source=>source.scope).filter(Boolean))].map(t).join(' / ')+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.');
+}
 function surveyMetadata(b){
  if(b.chart?.metadata)return t(b.chart.metadata);
  const first=b.items[0];
@@ -2016,7 +2016,7 @@ function surveyEvidence(b,D){
  const end=common.lastIndexOf('. ');common=notes.length>1&&end>=120?common.slice(0,end+1):'';
  const remaining=notes.map(note=>common?note.slice(common.length).trim():note).filter(Boolean);
  const paragraphs=[...(common?[common]:[]),...remaining];
- return '<details class="compact-details survey-evidence" open><summary>'+esc(t('Methode und Grenzen'))+'</summary>'+[...new Set(paragraphs)].map(note=>'<p>'+esc(t(note))+'</p>').join('')+'<p class="source-note">'+[...new Map(sources.flatMap(source=>source.items).map(i=>[i.source_url+'|'+i.source_locator,i])).values()].map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_title)+' · '+esc(i.source_locator||'')+'</a>').join(' · ')+'</p></details>';
+ return '<details class="compact-details survey-evidence" open><summary>'+esc(t('Methode und Grenzen'))+'</summary>'+[...new Set(paragraphs)].map(note=>'<p>'+esc(t(note))+'</p>').join('')+'<p class="source-note">'+[...new Map(sources.flatMap(source=>source.items).map(i=>[i.source_url+'|'+i.source_locator,i])).values()].map(i=>'<a href="'+esc(i.source_url)+'" target="_blank" rel="noreferrer">'+esc(i.source_title)+' · '+esc(i.source_locator||'')+'</a>').join(' · ')+'</p>'+[...new Map(sources.flatMap(source=>source.items).filter(i=>i.source_rights?.license_url).map(i=>[i.source_rights.source_url,i.source_rights])).values()].map(r=>'<p class="tiny">'+esc(r.attribution)+' · <a href="'+esc(r.license_url)+'" target="_blank" rel="noreferrer">'+esc(r.license)+'</a>'+(r.changes?' · '+esc(t(r.changes)):'')+'</p>').join('')+'</details>';
 }
 function surveyQuestions(b,D){
  const sources=b.chart?.kind==='compare'?[b,...b.chart.related.map(id=>D.blocks.find(other=>other.block===id))]:[b];
@@ -2025,7 +2025,7 @@ function surveyQuestions(b,D){
  const scales=[...new Set(questions.map(q=>q.response_scale).filter(Boolean))];
  const shown=[...new Set(questions.map(q=>q.shown).filter(Boolean))];
  const content='<div class="survey-question"><strong>'+esc(t(questions[0].heading||'Wortlaut der Frage / Aussage'))+'</strong>'
-  +(b.chart?.question_in_chart?'':questions.flatMap(q=>q.texts).map(text=>'<p>„'+esc(t(text))+'“</p>').join(''))
+  +(b.chart?.question_in_chart?'':questions.flatMap(q=>q.texts.map(text=>'<p>'+(q.verbatim===false?'':'„')+esc(t(text))+(q.verbatim===false?'':'“')+'</p>')).join(''))
   +scales.map(scale=>'<p class="tiny">'+esc(t('Antwortskala'))+': '+esc(t(scale))+'</p>').join('')
   +shown.map(text=>'<p class="tiny">'+esc(t(text))+'</p>').join('')
   +[...new Map(questions.map(q=>[q.source_url+'|'+q.source_locator,q])).values()].map(q=>'<a class="tiny" href="'+esc(q.source_url)+'" target="_blank" rel="noreferrer">'+esc(q.source_locator)+' ↗</a>').join(' · ')+'</div>';
@@ -2037,7 +2037,7 @@ function surveyBars(b,D){
   const questions=surveyQuestions(b,D),diagram=surveyBars({...b,questionRendered:true},D);
   return b.question?.position==='after'?diagram+questions:questions+diagram;
  }
- if(chart?.kind==='matrix')return '<div class="table-scroll"><table class="survey-matrix"><thead><tr><th>'+esc(t('Gruppe'))+'</th>'+chart.columns.map(c=>'<th>'+esc(t(c)).replace('Nachfolgegeneration','Nachfolge<wbr>generation')+'</th>').join('')+'</tr></thead><tbody>'+chart.rows.map(row=>'<tr><th scope="row">'+esc(t(row.label))+'</th>'+row.items.map(index=>{if(index===null)return '<td class="tiny">'+esc(t('nicht publiziert'))+'</td>';const i=b.items[index],alpha=0.08+i.value/100*0.42;return '<td style="background:rgba(33,107,122,'+alpha+');color:'+'#183846'+'">'+esc(surveyValue(i))+'</td>';}).join('')+'</tr>').join('')+'</tbody></table></div><p class="tiny">'+esc(t(chart.axis_note||'Dunklere Felder zeigen höhere Werte auf derselben Skala von 0 bis 100. Die Spalten vergleichen gleichzeitig befragte Gruppen, keine Zeitpunkte.'))+'</p>';
+ if(chart?.kind==='matrix')return '<div class="table-scroll"><table class="survey-matrix"><thead><tr><th>'+esc(t('Gruppe'))+'</th>'+chart.columns.map(c=>'<th>'+esc(t(c)).replace('Nachfolgegeneration','Nachfolge<wbr>generation')+'</th>').join('')+'</tr></thead><tbody>'+chart.rows.map(row=>'<tr><th scope="row">'+esc(t(row.label))+'</th>'+row.items.map(index=>{if(index===null)return '<td class="tiny">'+esc(t('nicht publiziert'))+'</td>';const i=b.items[index],domain=chart.domain||[0,100],alpha=0.08+Math.max(0,Math.min(1,(i.value-domain[0])/(domain[1]-domain[0])))*0.42;return '<td style="background:rgba('+(row.tone==='distrust'?'149,90,54':'33,107,122')+','+alpha+');color:'+'#183846'+'">'+esc(surveyValue(i))+'</td>';}).join('')+'</tr>').join('')+'</tbody></table></div><p class="tiny">'+esc(t(chart.axis_note||'Dunklere Felder zeigen höhere Werte auf derselben Skala von 0 bis 100. Die Spalten vergleichen gleichzeitig befragte Gruppen, keine Zeitpunkte.'))+'</p>';
  if(chart?.kind==='collection')return chart.panels.map((id,n)=>{
   const source=D.blocks.find(other=>other.block===id);
   const panel=id===b.block?{...source,chart:chart.main_chart}:source;
@@ -2074,7 +2074,7 @@ function surveyBars(b,D){
 function openSurveyZoom(b,D){
  const dialog=$('chart-zoom'),body=$('chart-zoom-body');
  $('chart-zoom-title').textContent=t(b.chart?.title||b.title);
- body.innerHTML='<p class="tiny">'+esc(b.chart?.kind==='collection'?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'+surveyBars(b,D)+surveyEvidence(b,D);
+ body.innerHTML='<p class="tiny">'+esc(b.chart?.kind==='collection'?surveyCollectionMetadata(b,D):surveyMetadata(b))+'</p>'+surveyBars(b,D)+surveyEvidence(b,D);
  body.querySelectorAll('details').forEach(detail=>{detail.open=true;});
  dialog.showModal();
 }
@@ -2095,7 +2095,10 @@ function renderSurveyItems(){
  const gewaehlt=feld&&feld.value!==''?Number(feld.value):0;
  host.innerHTML=[D2.blocks[gewaehlt]].filter(Boolean).map(b=>{
   const sources=surveySources(b,D2);
-  const tableItems=sources.flatMap(source=>source.items.map((i,n)=>({...i,blockTitle:source.title,answerDistribution:i.response_distribution||source.chart?.item_distributions?.[n]||(source.chart?.kind==='distribution'&&source.chart.rows.length===source.items.length?source.chart.rows[n].segments:null)})));
+  const tableItems=sources.flatMap(source=>source.items.map((i,n)=>{
+   const chart=source.chart?.kind==='collection'?source.chart.main_chart:source.chart;
+   return {...i,blockTitle:source.title,answerDistribution:i.response_distribution||chart?.item_distributions?.[n]||(chart?.kind==='distribution'&&chart.rows.length===source.items.length?chart.rows[n].segments:null)};
+  }));
   const hasDistributions=tableItems.some(i=>i.answerDistribution);
   const combined=sources.length>1;
   const hasValidN=tableItems.some(i=>i.valid_n!=null);
@@ -2103,7 +2106,7 @@ function renderSurveyItems(){
   const hasStudySample=tableItems.some(i=>i.study_sample);
   const isCollection=b.chart?.kind==='collection';
   return '<h4 class="survey-block-title">'+esc(t(b.chart?.title||b.title))+'</h4><button type="button" id="survey-enlarge" class="button button-light">'+esc(t('Vergrößern'))+'</button>'
-   +'<p class="tiny survey-meta">'+esc(isCollection?t(b.scope)+' · '+t('Die Teilgrafiken führen ihre eigenen Fragen, Fallzahlen und Quellen.'):surveyMetadata(b))+'</p>'
+   +'<p class="tiny survey-meta">'+esc(isCollection?surveyCollectionMetadata(b,D2):surveyMetadata(b))+'</p>'
    +surveyBars(b,D2)
    +surveyEvidence(b,D2)
    +'<details class="compact-details"><summary>'+esc(t('Werte und Belege als Tabelle'))

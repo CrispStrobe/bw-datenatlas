@@ -1,0 +1,27 @@
+{
+  "svr2026_politisches_vertrauen": {
+    "license": null,
+    "license_status": "no_open_license_identified",
+    "relicensed_by_atlas": false,
+    "attribution": "Fabian Gülzau (2026), SVR-Policy Brief 2026-2, © SVR gGmbH",
+    "source_url": "https://www.svr-migration.de/wp-content/uploads/2026/07/SVR-Policy-Brief_Institutionenvertrauen.pdf",
+    "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+  },
+  "nadira2025_politisches_vertrauen": {
+    "license": null,
+    "license_status": "all_rights_reserved",
+    "relicensed_by_atlas": false,
+    "attribution": "Massa Gahein-Sama, Klara Podkowik, Kien Tran, Zerrin Salikutluk (2025): Demokratie unter Druck. DeZIM Data.insights 17; © DeZIM",
+    "source_url": "https://www.dezim-institut.de/fileadmin/user_upload/fis/publikation_pdf/FA-6257.pdf",
+    "scope": "Ausgewählte veröffentlichte Zahlen; eigene Darstellung, keine Originalgrafiken oder vollständigen Tabellen."
+  },
+  "demmrich2025_institutionenvertrauen": {
+    "license": "CC-BY-4.0",
+    "license_status": "verified_publisher_license",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "relicensed_by_atlas": false,
+    "attribution": "Sarah Demmrich, Detlef Pollack, Olaf Müller, Gergely Rosta (2025): Antisemitism among Muslims in Germany before and after October 7, 2023. DOI: 10.1007/s41682-025-00233-7",
+    "source_url": "https://doi.org/10.1007/s41682-025-00233-7",
+    "changes": "Auswahl von zwei Mittelwerten, eigene Darstellung und deutsche Übersetzung der Frage und Erläuterungen."
+  }
+}
