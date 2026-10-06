@@ -1058,20 +1058,27 @@ function renderInstitutionCoverage(){
 const CLUSTER_SCREEN_PX = 26;   // how close is "too close to tell apart"
 const MAP_WIDTH = 760;
 
-// Named in a Landtag paper: the 2011 ADÜTDF and IGMG attributions, the later
-// restatements, and the associations the Innenministerium listed in 2017. It is a
-// property of the DOCUMENT — "an official paper names this entry" — not a judgement
-// this atlas makes about the institution, which is why the filter is worded that way
-// and why it mixes federation members with unaffiliated mosques.
-function namedInLandtagPaper(i){
- return Boolean(i.state_characterisation_url||i.affiliation_restated_url
-   ||(i.affiliation_source_url&&/landtag-bw\.de/.test(i.affiliation_source_url)));
+// Select documented historical security contexts, not every mention in parliament.
+// The Kultusministerium's regular Ahmadiyya list (16/1209) is outside this scope.
+const SECURITY_LANDTAG_DOCUMENTS=new Set([
+ '15_0362_D.pdf','15_362_D.pdf','15_0383_D.pdf','15_383_D.pdf',
+ '16_1462_D.pdf','16_4674_D.pdf'
+]);
+function namedInSecurityLandtagPaper(i){
+ return ['source_url','state_characterisation_url','affiliation_restated_url','affiliation_source_url'].some(key=>{
+  if(!i[key])return false;
+  try{
+   const url=new URL(i[key]);
+   return ['landtag-bw.de','www.landtag-bw.de'].includes(url.hostname)
+    &&SECURITY_LANDTAG_DOCUMENTS.has(url.pathname.split('/').at(-1));
+  }catch{return false;}
+ });
 }
 // Pairs, not a filtered array: every other part of the page addresses an institution
 // by its index in INST.institutions — the detail panel, the export, the group list —
 // so filtering must not renumber them.
 function matchesInstitutionFilter(i){
- if(state.onlyLandtag&&!namedInLandtagPaper(i))return false;
+ if(state.onlyLandtag&&!namedInSecurityLandtagPaper(i))return false;
  if(state.instOrganisation&&i.organisation!==state.instOrganisation)return false;
  if(state.instSource==='two'&&!i.second_source_url)return false;
  if(state.instSource==='one'&&i.second_source_url)return false;

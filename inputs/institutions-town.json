@@ -22,10 +22,9 @@
   "Union der Islamisch-albanischen Zentren (UIAZD)": 7,
   "Alevitische Gemeinde Deutschland": 40,
   "Islamische Gemeinschaft der Bosniaken (IGBD)": 19,
-  "Einzeln belegte Einrichtungen": 78,
+  "Einzeln belegte Einrichtungen": 88,
   "Türkisch-Demokratische Idealistenvereine (ADÜTDF)": 22,
   "LBE-BW": 49,
-  "Unabhängig, keinem Verband zugeordnet": 10,
   "OpenStreetMap (nur dort verzeichnet)": 104
  },
  "not_yet_harvested": {},
@@ -1089,7 +1088,7 @@
    "lat": 48.8728
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitischer Kulturverein / Alevitisches Kulturzentrum Aalen",
    "city": "Aalen",
    "postcode": "73430",
@@ -1104,7 +1103,7 @@
    "lat": 48.82443
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Aleviten Kulturverein",
    "city": "Albstadt",
    "postcode": "72458",
@@ -1119,7 +1118,7 @@
    "lat": 48.23715
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Muslimgemeinde e.V.",
    "city": "Albstadt/Ebingen",
    "postcode": "72458",
@@ -1134,7 +1133,7 @@
    "lat": 48.23715
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Asperg",
    "postcode": "71679",
@@ -1149,7 +1148,7 @@
    "lat": 48.90701
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein e.V.",
    "city": "Backnang",
    "postcode": "71522",
@@ -1164,7 +1163,7 @@
    "lat": 48.94765
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gwemeinschaft Gaggenau",
    "city": "Baden-Baden",
    "postcode": "76532",
@@ -1181,7 +1180,7 @@
    "lat": 48.75679
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Biberach Camii",
    "city": "Biberach",
    "postcode": "88400",
@@ -1216,7 +1215,7 @@
    "lat": 48.08826
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft M.G.",
    "city": "Blaubeuren",
    "postcode": "89143",
@@ -1231,7 +1230,7 @@
    "lat": 48.40578
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Sozial- und Kulturverein",
    "city": "Bretten",
    "postcode": "75015",
@@ -1246,7 +1245,7 @@
    "lat": 49.04302
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Gemeinde",
    "city": "Calw",
    "postcode": "75365",
@@ -1265,7 +1264,7 @@
    "lat": 48.70495
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Crailsheim",
    "postcode": "74564",
@@ -1280,7 +1279,7 @@
    "lat": 49.13225
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-Islamischer Kulturverein e.V.",
    "city": "Ehingen (Donau)",
    "postcode": "89584",
@@ -1295,7 +1294,7 @@
    "lat": 48.28631
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Idealistenverein",
    "city": "Eislingen",
    "postcode": "73054",
@@ -1312,7 +1311,7 @@
    "lat": 48.70138
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bosnischer Verein",
    "city": "Emmendingen",
    "postcode": "79312",
@@ -1327,7 +1326,7 @@
    "lat": 48.12296
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-islamische Gemeinde zu Freudenstadt e.V.",
    "city": "Freudenstadt",
    "postcode": "72250",
@@ -1346,7 +1345,7 @@
    "lat": 48.48949
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Idealistenverein",
    "city": "Geislingen",
    "postcode": "73312",
@@ -1363,7 +1362,7 @@
    "lat": 48.61468
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Gundelsheim",
    "postcode": "74831",
@@ -1378,7 +1377,7 @@
    "lat": 49.28978
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Gebetszentrum Ahmadiyya",
    "city": "Göppingen",
    "postcode": "73033",
@@ -1393,7 +1392,7 @@
    "lat": 48.71442
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Hausach",
    "postcode": "77756",
@@ -1412,7 +1411,7 @@
    "lat": 48.29875
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamisches Zentrum",
    "city": "Heidelberg",
    "postcode": "69126",
@@ -1427,7 +1426,7 @@
    "lat": 49.40621
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch Islamische Kultur Verein e.V.",
    "city": "Kehl",
    "postcode": "77694",
@@ -1446,7 +1445,7 @@
    "lat": 48.56286
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Gemeinde und Kulturzentrum",
    "city": "Kirchheim unter Teck",
    "postcode": "73230",
@@ -1464,7 +1463,7 @@
    "lat": 48.64032
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Lauda-Königshofen",
    "postcode": "97922",
@@ -1479,7 +1478,7 @@
    "lat": 49.5537
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisches Kulturzentrum",
    "city": "Ludwigsburg",
    "postcode": "71636",
@@ -1500,7 +1499,7 @@
    "lat": 48.90282
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Magstadt",
    "postcode": "71106",
@@ -1517,7 +1516,7 @@
    "lat": 48.74627
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bosnische Moschee",
    "city": "Mannheim",
    "postcode": "68199",
@@ -1539,7 +1538,7 @@
    "lat": 49.50003
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch Islamische Kultur Verein e.V. Mosbach",
    "city": "Mosbach",
    "postcode": "74821",
@@ -1556,7 +1555,7 @@
    "lat": 49.39086
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein Murrhardt e.V.",
    "city": "Murrhardt",
    "postcode": "71540",
@@ -1571,7 +1570,7 @@
    "lat": 48.97998
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Mössingen",
    "postcode": "72116",
@@ -1588,7 +1587,7 @@
    "lat": 48.39774
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Mühlacker",
    "postcode": "75417",
@@ -1607,7 +1606,7 @@
    "lat": 48.94882
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Glaubensgemeinschaft Nagold e.V.",
    "city": "Nagold",
    "postcode": "72202",
@@ -1625,7 +1624,7 @@
    "lat": 48.54289
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Verein Oberkirch e.V.",
    "city": "Oberkirch",
    "postcode": "77704",
@@ -1642,7 +1641,7 @@
    "lat": 48.51319
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bosnischer und Herzegov. Verein",
    "city": "Oberndorf",
    "postcode": "78727",
@@ -1657,7 +1656,7 @@
    "lat": 48.29613
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Verein e.V.",
    "city": "Philippsburg-Huttenheim",
    "postcode": "76661",
@@ -1676,7 +1675,7 @@
    "lat": 49.22528
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch Islamische Kultur Verein e.V.",
    "city": "Pleidelsheim",
    "postcode": "74385",
@@ -1693,7 +1692,7 @@
    "lat": 48.95741
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Kulturgemeinde",
    "city": "Weingarten",
    "postcode": "88250",
@@ -1711,7 +1710,7 @@
    "lat": 47.80586
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Albanischer Kulturverein",
    "city": "Rottweil",
    "postcode": "78628",
@@ -1726,7 +1725,7 @@
    "lat": 48.16907
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Moscheeverein",
    "city": "Sachsenheim",
    "postcode": "74343",
@@ -1741,7 +1740,7 @@
    "lat": 48.99393
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Verein e.V.",
    "city": "Schelklingen",
    "postcode": "89601",
@@ -1756,7 +1755,7 @@
    "lat": 48.3868
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-islamischer Kulturverein",
    "city": "Schramberg",
    "postcode": "78713",
@@ -1773,7 +1772,7 @@
    "lat": 48.21881
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-Deutscher Kulturverein",
    "city": "Schwäbisch Hall",
    "postcode": "74523",
@@ -1788,7 +1787,7 @@
    "lat": 49.10714
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft M.G.",
    "city": "Sindelfingen",
    "postcode": "71063",
@@ -1807,7 +1806,7 @@
    "lat": 48.71052
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Gebetszentrum Radolfzell / Singen (Hohentwiel)",
    "city": "Singen (Hohentwiel)",
    "postcode": "78224",
@@ -1822,7 +1821,7 @@
    "lat": 47.75697
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevi Toplumu ATAG e.V.",
    "city": "Stuttgart",
    "postcode": "70199",
@@ -1839,7 +1838,7 @@
    "lat": 48.77878
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft",
    "city": "Stuttgart",
    "postcode": "70376",
@@ -1859,7 +1858,7 @@
    "lat": 48.77878
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Kuba Mescid",
    "city": "Triberg",
    "postcode": "78098",
@@ -1874,7 +1873,7 @@
    "lat": 48.14105
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "IGMG Islamische Gemeinschaft Milli Görüs",
    "city": "Ulm",
    "postcode": "89079",
@@ -1895,7 +1894,7 @@
    "lat": 48.38881
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-deutscher Kulturverein",
    "city": "Wannweil",
    "postcode": "72827",
@@ -1912,7 +1911,7 @@
    "lat": 48.51313
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitisches Kulturzentrum",
    "city": "Wendlingen",
    "postcode": "73240",
@@ -1929,7 +1928,7 @@
    "lat": 48.6673
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Vereinigung e.V.",
    "city": "Wiesloch",
    "postcode": "69168",
@@ -7340,7 +7339,7 @@
    "lat": 47.72299
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Union Deutschland e. V. (Ibadu’r Rahmaan Moschee)",
    "city": "Freiburg im Breisgau",
    "postcode": "79104",
@@ -7358,7 +7357,7 @@
    "lat": 47.98687
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Arabisches Kulturzentrum Göppingen e. V. (Masjid As-Salam)",
    "city": "Göppingen",
    "postcode": "73033",
@@ -7377,7 +7376,7 @@
    "lat": 48.71442
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bilal Verein e. V. (Bilal Moschee)",
    "city": "Heilbronn",
    "postcode": "74076",
@@ -7399,7 +7398,7 @@
    "lat": 49.15151
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Verein der islamischen Kultur e. V. (Masjid Sunna)",
    "city": "Karlsruhe",
    "postcode": "76133",
@@ -7416,7 +7415,7 @@
    "lat": 49.01795
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Integration und Verständigung e. V. (Al-Hidaya Moschee)",
    "city": "Kehl",
    "postcode": "77694",
@@ -7435,7 +7434,7 @@
    "lat": 48.56286
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Arbeiterverein Mannheim e. V. (Omar Al-Faruq Center)",
    "city": "Mannheim",
    "postcode": "68169",
@@ -7454,7 +7453,7 @@
    "lat": 49.50003
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Gemeinschaft Deutschsprachiger Muslime e. V. (Al-Baraka Moschee)",
    "city": "Pforzheim",
    "postcode": "75175",
@@ -7471,7 +7470,7 @@
    "lat": 48.87439
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Al Maghreb Kulturverein e. V.",
    "city": "Stuttgart",
    "postcode": "70180",
@@ -7489,7 +7488,7 @@
    "lat": 48.77878
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Bund e. V. (Khalid-Ibn-al-Walid Moschee)",
    "city": "Stuttgart",
    "postcode": "70372",
@@ -7507,7 +7506,7 @@
    "lat": 48.77878
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft Al-Huda e. V.",
    "city": "Villingen-Schwenningen",
    "postcode": "78054",
@@ -8419,7 +8418,7 @@
    "lat": 48.87439
   },
   {
-   "organisation": "Alevitische Gemeinde",
+   "organisation": "Alevitische Gemeinde Deutschland",
    "name": "Alevitisches Kulturzentrum",
    "city": "Möglingen",
    "postcode": "71696",
@@ -8432,7 +8431,7 @@
    "lat": 48.87905
   },
   {
-   "organisation": "Islamische Gemeinschaft Milli Görüş",
+   "organisation": "Islamische Gemeinschaft Millî Görüş (IGMG)",
    "name": "Mevlana Moschee",
    "city": "Nürtingen",
    "postcode": "72622",
@@ -8447,7 +8446,7 @@
    "lat": 48.61644
   },
   {
-   "organisation": "Türkisch-Demokratische Idealistenvereine",
+   "organisation": "Türkisch-Demokratische Idealistenvereine (ADÜTDF)",
    "name": "Kulturverein Menzil",
    "city": "Singen",
    "postcode": "78224",
@@ -9045,7 +9044,7 @@
    "lat": 49.3789
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-islamische Gemeinde zu Freudenstadt e.V.",
    "city": "Freudenstadt",
    "source": "www.ditib.de",
@@ -9059,7 +9058,7 @@
    "lat": 48.48949
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Albanisch-islamischer Kulturverein",
    "city": "Karlsruhe",
    "source": "ka.stadtwiki.net",

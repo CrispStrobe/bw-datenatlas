@@ -68,6 +68,18 @@ class TestPublishedDirectory(unittest.TestCase):
             self.assertTrue(set(row) <= ALLOWED,
                             f'unexpected field: {set(row) - ALLOWED}')
 
+    def test_federation_labels_do_not_split_known_aliases(self):
+        from build_town_institutions import ORGANISATION_ALIASES
+        from collections import Counter
+        counts = Counter(row['organisation'] for row in self.rows)
+        self.assertTrue(set(counts).isdisjoint(ORGANISATION_ALIASES))
+        self.assertEqual(counts['Alevitische Gemeinde Deutschland'], 40)
+        self.assertEqual(counts['Islamische Gemeinschaft Millî Görüş (IGMG)'], 64)
+        self.assertEqual(counts['Türkisch-Demokratische Idealistenvereine (ADÜTDF)'], 31)
+        self.assertEqual(counts['Verbandszugehörigkeit nicht belegt'], 62)
+        self.assertEqual(sum(bool(row.get('state_characterisation_url')) for row in self.rows if row['organisation']=='Verbandszugehörigkeit nicht belegt'), 10)
+        self.assertEqual(sum(counts.values()), 555)
+
     def test_every_entry_has_a_source(self):
         for row in self.rows:
             self.assertTrue(row.get('source_url'), f'{row["name"]} has no source')

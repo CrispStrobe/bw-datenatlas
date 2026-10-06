@@ -32,6 +32,16 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from bw_geography import Municipalities  # noqa: E402
 
+ORGANISATION_ALIASES = {
+    'Einzeln belegt (Verbandszugehörigkeit nicht belegt)': 'Verbandszugehörigkeit nicht belegt',
+    'Unabhängig, keinem Verband zugeordnet': 'Verbandszugehörigkeit nicht belegt',
+    'Alevitische Gemeinde': 'Alevitische Gemeinde Deutschland',
+    'Islamische Gemeinschaft Milli Görüş': 'Islamische Gemeinschaft Millî Görüş (IGMG)',
+    'Islamische Gemeinschaft Milli Görüş (IGMG)': 'Islamische Gemeinschaft Millî Görüş (IGMG)',
+    'Türkisch-Demokratische Idealistenvereine': 'Türkisch-Demokratische Idealistenvereine (ADÜTDF)',
+}
+
+
 FORBIDDEN = ('street', 'postcode_of_building', 'lat_of_building')
 # Was aus dem Eintrag entfernt wird, statt die Veröffentlichung abzubrechen: die
 # Postleitzahl steht im nichtöffentlichen Auszug und wird hier fallen gelassen.
@@ -74,6 +84,7 @@ def main() -> None:
             raise SystemExit(f'unknown municipality for {entry.get("name")}: '
                              f'{entry.get("municipality_id")}')
         row = {k: v for k, v in entry.items() if k not in ENTFERNT}
+        row['organisation'] = ORGANISATION_ALIASES.get(row['organisation'], row['organisation'])
         # Recomputed, never copied: the input could carry anything, and this is the one
         # place that decides what coordinate is published.
         row['lon'] = round(props['label_point'][0], 5)

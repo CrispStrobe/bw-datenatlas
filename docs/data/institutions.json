@@ -22,10 +22,9 @@
   "Union der Islamisch-albanischen Zentren (UIAZD)": 7,
   "Alevitische Gemeinde Deutschland": 40,
   "Islamische Gemeinschaft der Bosniaken (IGBD)": 19,
-  "Einzeln belegte Einrichtungen": 78,
+  "Einzeln belegte Einrichtungen": 88,
   "Türkisch-Demokratische Idealistenvereine (ADÜTDF)": 22,
   "LBE-BW": 49,
-  "Unabhängig, keinem Verband zugeordnet": 10,
   "OpenStreetMap (nur dort verzeichnet)": 104
  },
  "not_yet_harvested": {},
@@ -1217,7 +1216,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitischer Kulturverein / Alevitisches Kulturzentrum Aalen",
    "city": "Aalen",
    "source": "Schwäbische Post (Aalen)",
@@ -1234,7 +1233,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Aleviten Kulturverein",
    "city": "Albstadt",
    "source": "marktplatz-albstadt.de",
@@ -1251,7 +1250,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Muslimgemeinde e.V.",
    "city": "Albstadt/Ebingen",
    "source": "marktplatz-albstadt.de",
@@ -1268,7 +1267,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Asperg",
    "source": "marktplatz-asperg.de",
@@ -1285,7 +1284,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein e.V.",
    "city": "Backnang",
    "source": "www.marktplatz-backnang.de",
@@ -1302,7 +1301,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gwemeinschaft Gaggenau",
    "city": "Baden-Baden",
    "source": "baden-baden.branchen-info.net",
@@ -1321,7 +1320,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Biberach Camii",
    "city": "Biberach",
    "source": "marktplatz-biberach.de",
@@ -1360,7 +1359,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft M.G.",
    "city": "Blaubeuren",
    "source": "www.dasoertliche.de",
@@ -1377,7 +1376,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Sozial- und Kulturverein",
    "city": "Bretten",
    "source": "www.gelbeseiten.de",
@@ -1394,7 +1393,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Gemeinde",
    "city": "Calw",
    "source": "www.pfenz.de",
@@ -1415,7 +1414,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Crailsheim",
    "source": "marktplatz-crailsheim.de",
@@ -1432,7 +1431,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-Islamischer Kulturverein e.V.",
    "city": "Ehingen (Donau)",
    "source": "Das Örtliche (business directory)",
@@ -1449,7 +1448,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Idealistenverein",
    "city": "Eislingen",
    "source": "eislingen-online.de",
@@ -1468,7 +1467,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bosnischer Verein",
    "city": "Emmendingen",
    "source": "www.emmendingen.de",
@@ -1485,7 +1484,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-islamische Gemeinde zu Freudenstadt e.V.",
    "city": "Freudenstadt",
    "source": "www.freudenstadt.de",
@@ -1506,7 +1505,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Idealistenverein",
    "city": "Geislingen",
    "source": "marktplatz-geislingen.de",
@@ -1525,7 +1524,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Gundelsheim",
    "source": "www.finanzberater.biz",
@@ -1542,7 +1541,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Gebetszentrum Ahmadiyya",
    "city": "Göppingen",
    "source": "www.gelbeseiten.de",
@@ -1559,7 +1558,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Hausach",
    "source": "fischerbach.stadtbranchenbuch.com",
@@ -1580,7 +1579,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamisches Zentrum",
    "city": "Heidelberg",
    "source": "marktplatz-heidelberg.de",
@@ -1597,7 +1596,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch Islamische Kultur Verein e.V.",
    "city": "Kehl",
    "source": "OpenStreetMap",
@@ -1618,7 +1617,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Gemeinde und Kulturzentrum",
    "city": "Kirchheim unter Teck",
    "source": "www.friedenskooperative.de",
@@ -1638,7 +1637,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Lauda-Königshofen",
    "source": "www.lauda-koenigshofen.de",
@@ -1655,7 +1654,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisches Kulturzentrum",
    "city": "Ludwigsburg",
    "source": "merhabamap.com",
@@ -1678,7 +1677,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Magstadt",
    "source": "magstadt.staedte-info.net",
@@ -1697,7 +1696,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bosnische Moschee",
    "city": "Mannheim",
    "source": "dzemat-mannheim.de",
@@ -1721,7 +1720,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch Islamische Kultur Verein e.V. Mosbach",
    "city": "Mosbach",
    "source": "OpenStreetMap (ÖPNV-Haltestelle 'Mosbach, Moschee' unmittelbar neben dem Gebäude Alte [Straße])",
@@ -1740,7 +1739,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein Murrhardt e.V.",
    "city": "Murrhardt",
    "source": "Stadt Murrhardt, Vereinsverzeichnis",
@@ -1757,7 +1756,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Mössingen",
    "source": "www.moessingen.de",
@@ -1776,7 +1775,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Kulturverein",
    "city": "Mühlacker",
    "source": "pray.zone",
@@ -1797,7 +1796,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Glaubensgemeinschaft Nagold e.V.",
    "city": "Nagold",
    "source": "Stadt Nagold – Vereine und Institutionen",
@@ -1817,7 +1816,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkischer Verein Oberkirch e.V.",
    "city": "Oberkirch",
    "source": "Wikipedia – Oberkirch (Baden)",
@@ -1836,7 +1835,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bosnischer und Herzegov. Verein",
    "city": "Oberndorf",
    "source": "www.feuerbach.de",
@@ -1853,7 +1852,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Verein e.V.",
    "city": "Philippsburg-Huttenheim",
    "source": "Das Telefonbuch (Branchenverzeichnis)",
@@ -1874,7 +1873,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch Islamische Kultur Verein e.V.",
    "city": "Pleidelsheim",
    "source": "zentralrat.de",
@@ -1893,7 +1892,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitische Kulturgemeinde",
    "city": "Weingarten",
    "source": "ravensburg.stadtbranchenbuch.com",
@@ -1913,7 +1912,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Albanischer Kulturverein",
    "city": "Rottweil",
    "source": "www.nrwz.de",
@@ -1930,7 +1929,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Moscheeverein",
    "city": "Sachsenheim",
    "source": "sachsenheim.staedte-info.net",
@@ -1947,7 +1946,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Verein e.V.",
    "city": "Schelklingen",
    "source": "de.readkong.com",
@@ -1964,7 +1963,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-islamischer Kulturverein",
    "city": "Schramberg",
    "source": "moscheesuche.de – Moscheen in Schramberg (archiviert); corroboriert durch Wikipedia",
@@ -1983,7 +1982,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-Deutscher Kulturverein",
    "city": "Schwäbisch Hall",
    "source": "www.aktuell-verein.de",
@@ -2000,7 +1999,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft M.G.",
    "city": "Sindelfingen",
    "source": "www.marktplatz-sindelfingen.com",
@@ -2021,7 +2020,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Gebetszentrum Radolfzell / Singen (Hohentwiel)",
    "city": "Singen (Hohentwiel)",
    "source": "www.miteinander-in-singen.de",
@@ -2038,7 +2037,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevi Toplumu ATAG e.V.",
    "city": "Stuttgart",
    "source": "Alevi Toplumu Alevitische Gemeinde ATAG e.V. (own website)",
@@ -2057,7 +2056,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft",
    "city": "Stuttgart",
    "source": "igstuttgart.de",
@@ -2079,7 +2078,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Kuba Mescid",
    "city": "Triberg",
    "source": "prayersconnect.com",
@@ -2096,7 +2095,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "IGMG Islamische Gemeinschaft Milli Görüs",
    "city": "Ulm",
    "source": "www.dasoertliche.de",
@@ -2119,7 +2118,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-deutscher Kulturverein",
    "city": "Wannweil",
    "source": "wannweil.de",
@@ -2138,7 +2137,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Alevitisches Kulturzentrum",
    "city": "Wendlingen",
    "source": "www.ntz.de",
@@ -2157,7 +2156,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Vereinigung e.V.",
    "city": "Wiesloch",
    "source": "www.gelbeseiten.de",
@@ -8220,7 +8219,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Union Deutschland e. V. (Ibadu’r Rahmaan Moschee)",
    "city": "Freiburg im Breisgau",
    "source": "integreat.app",
@@ -8240,7 +8239,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Arabisches Kulturzentrum Göppingen e. V. (Masjid As-Salam)",
    "city": "Göppingen",
    "source": "masjid-as-salam.com",
@@ -8261,7 +8260,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Bilal Verein e. V. (Bilal Moschee)",
    "city": "Heilbronn",
    "source": "bilal-verein.de",
@@ -8285,7 +8284,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Verein der islamischen Kultur e. V. (Masjid Sunna)",
    "city": "Karlsruhe",
    "source": "assunnamoschee.de",
@@ -8304,7 +8303,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Integration und Verständigung e. V. (Al-Hidaya Moschee)",
    "city": "Kehl",
    "source": "iuv-kehl.com",
@@ -8325,7 +8324,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Arbeiterverein Mannheim e. V. (Omar Al-Faruq Center)",
    "city": "Mannheim",
    "source": "alfaruq-mannheim.de",
@@ -8346,7 +8345,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Gemeinschaft Deutschsprachiger Muslime e. V. (Al-Baraka Moschee)",
    "city": "Pforzheim",
    "source": "muslime-pforzheim.de",
@@ -8365,7 +8364,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Al Maghreb Kulturverein e. V.",
    "city": "Stuttgart",
    "source": "almaghreb-kulturverein-stuttgart.de",
@@ -8385,7 +8384,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamischer Bund e. V. (Khalid-Ibn-al-Walid Moschee)",
    "city": "Stuttgart",
    "source": "11880.com",
@@ -8405,7 +8404,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Unabhängig, keinem Verband zugeordnet",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Islamische Gemeinschaft Al-Huda e. V.",
    "city": "Villingen-Schwenningen",
    "source": "suedkurier.de",
@@ -9435,7 +9434,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Alevitische Gemeinde",
+   "organisation": "Alevitische Gemeinde Deutschland",
    "name": "Alevitisches Kulturzentrum",
    "city": "Möglingen",
    "source": "Branchenverzeichnis",
@@ -9450,7 +9449,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Islamische Gemeinschaft Milli Görüş",
+   "organisation": "Islamische Gemeinschaft Millî Görüş (IGMG)",
    "name": "Mevlana Moschee",
    "city": "Nürtingen",
    "source": "Sammelverzeichnis",
@@ -9467,7 +9466,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Türkisch-Demokratische Idealistenvereine",
+   "organisation": "Türkisch-Demokratische Idealistenvereine (ADÜTDF)",
    "name": "Kulturverein Menzil",
    "city": "Singen",
    "source": "Branchenverzeichnis",
@@ -10164,7 +10163,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Türkisch-islamische Gemeinde zu Freudenstadt e.V.",
    "city": "Freudenstadt",
    "source": "www.ditib.de",
@@ -10181,7 +10180,7 @@
    "has_published_coordinates": false
   },
   {
-   "organisation": "Einzeln belegt (Verbandszugehörigkeit nicht belegt)",
+   "organisation": "Verbandszugehörigkeit nicht belegt",
    "name": "Albanisch-islamischer Kulturverein",
    "city": "Karlsruhe",
    "source": "ka.stadtwiki.net",
