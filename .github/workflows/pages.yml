@@ -37,7 +37,7 @@ jobs:
           python-version: '3.12'
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
       - name: Ansichten aus unverändertem Datensnapshot bauen
         run: python scripts/build_data.py
       - name: Daten und Rechenexperiment prüfen
